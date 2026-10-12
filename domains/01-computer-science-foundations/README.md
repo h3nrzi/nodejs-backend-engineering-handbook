@@ -4,7 +4,7 @@
 **Project PRDs:** P01–P04 approved at product-scope level; product questions and limits remain open.  
 **Learning assessments:** deferred until the learner explicitly starts the learning phase.  
 **Implementation:** not started.  
-**Next authoring focus:** D02 — JavaScript & TypeScript curriculum blueprint, after D01 tracker reconciliation.
+**Next authoring focus:** D03 — Node.js Internals curriculum planning; D01 and D02 content authoring is complete.
 
 ## Learning purpose
 
@@ -42,4 +42,6 @@ Approvals cover the product direction and documented requirements, not resolutio
 
 ## Handoff
 
-[Canonical state](../../tracking/state.json) · [Human-readable tracker](../../TRACKER.md) · [Workflow rules](../../docs/workflow.md). D02 content authoring is the recommended next step; study and practical tests remain deferred.
+[Canonical state](../../tracking/state.json) · [Human-readable tracker](../../TRACKER.md) · [Workflow rules](../../docs/workflow.md). D03 curriculum planning is the next authoring step; study and practical tests remain deferred.
+
+[Coverage matrix](../../projects/coverage-matrix.md) reconciled on 2026-10-12; educational mapping is separate from implementation and assessment evidence.

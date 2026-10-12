@@ -7,7 +7,7 @@
 3. Review lesson against `docs/quality-gates.md`; mark review status honestly.
 4. Propose distinctly valuable project concepts aligned to coverage goals; avoid many overlapping CRUDs.
 5. For approved concepts, write separate **product PRDs**, using `templates/project-prd.md`. Prioritize the problem, intended users, product goals, **in-scope / out-of-scope / deferred boundaries**, core journeys and observable outcomes. Record unresolved policies as explicit questions instead of forcing detailed decisions prematurely. Never prescribe technical solutions.
-6. Update tracker with committed evidence and the next precise task. Obtain learner review before marking approved.
+6. Reconcile `projects/coverage-matrix.md` with affected lessons, project catalogs/PRDs and canonical statuses; update the matrix and both trackers together, or record a dated evidence-backed no-change review. Obtain learner review before marking approved; do not close the domain content gate without this coverage review.
 
 ## Local implementation journey (outside handbook)
 
@@ -38,3 +38,7 @@ The learner's current phase is **content authoring and portfolio-project plannin
 ## Approved per-domain authoring sequence (2026-10-12)
 
 Apply this order to every domain: **(1) Curriculum planning and learner approval → (2) complete individual lessons with chapter-by-chapter review → (3) develop and review a distinct project candidate catalog → (4) author and review implementation-neutral product PRDs → (5) close the domain content-authoring gate and move to the next domain.** Preliminary project ideas may inform curriculum planning but the actual catalog and PRDs are finalized only after lesson authoring. Do not start learner assessments during authoring. Implementation projects and Codex decisions remain separate. This sequencing is learner-approved; it does not itself approve an individual curriculum blueprint.
+
+## Mandatory coverage-matrix reconciliation
+
+For every project/catalog/PRD creation, edit, approval, scope/status change, rename/move/removal, or new external implementation evidence, read `projects/coverage-matrix.md` and reconcile affected competencies, lesson links, PRD links, gaps and evidence against canonical state before declaring completion. Also reconcile mapped lesson changes and domain content closure. Update the matrix, `tracking/state.json` and `TRACKER.md` in the same change; if the mapping is unchanged, record a dated “reviewed; no mapping change” result with affected paths and evidence in both trackers. Missing review is a completion blocker. Keep taught/editorially approved, planned PRD challenge, assessed competency and externally verified implementation distinct. Never close a gap by silently expanding scope or prescribing a technical solution. Retain historical approvals; this rule does not retroactively revoke D01/D02 approvals.

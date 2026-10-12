@@ -1,8 +1,70 @@
 # Engineering competency coverage matrix
 
-Status: scaffold only. Fill incrementally after approved domain lessons and project PRDs.
+**Status:** D01/D02 editorial coverage mapped; implementation not started.  
+**Reviewed:** 2026-10-12 against all nine approved PRDs, domain indexes/catalogs, lesson contents, workflow and canonical state.  
+**Baseline:** `48f227313e52a85246c0a65e1acbea3f511a1d0b`.  
+**Audit:** [Coverage reconciliation report](../docs/coverage-matrix-audit-2026-10-12.md).
 
-| Competency ID | Domain | Taught in lesson | PRD challenge | Implemented evidence | Gap |
+## Interpretation and authority
+
+- Competency IDs below are local chapter-level traceability IDs introduced by this audit, not a pre-existing certification taxonomy or exhaustive subtopic checklist.
+- “Taught” means authored lesson content with editorial approval recorded in [canonical state](../tracking/state.json); it does not certify mastery or independent execution of educational examples.
+- “PRD challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
+- Every project remains an optional portfolio candidate with `approved_by_learner` product-scope status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
+- Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
+- D03–D16 are not started; no taught, planned-project or implemented coverage is inferred for them. D03 curriculum planning remains next.
+
+## Project traceability — all nine approved PRDs
+
+| Project ID | Authoritative PRD | Approved product challenge | Implemented evidence |
+|---|---|---|---|
+| D01-P01 | [Workload & Complexity Observatory](../domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) | Comparable operation outputs, per-size measurements, variance and honest reproducibility | None — not_started |
+| D01-P02 | [Concurrent Resource Allocation Simulator](../domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md) | Capacity safety, stable retry identity, cancellation and authoritative versus observed outcomes | None — not_started |
+| D01-P03 | [Dependency Workflow Simulator](../domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md) | Dependency validation, cycle rejection, eligibility and coherent attempt transitions | None — not_started |
+| D01-P04 | [Large Dataset Processing Workspace](../domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md) | Bounded structured-text processing, reconciled counts, intact output and honest restart | None — not_started |
+| D02-P01 | [ContractGuard](../domains/02-javascript-typescript/projects/p01-contractguard-api-data-contract-studio-prd.md) | Runtime payload evaluation, immutable contract versions and qualified compatibility reports | None — not_started |
+| D02-P02 | [DispatchDesk](../domains/02-javascript-typescript/projects/p02-dispatchdesk-multi-recipient-delivery-operations-prd.md) | Batch recipient validation, partial delivery, cancellation, retry and unknown-outcome reconciliation | None — not_started |
+| D02-P03 | [PolicyLens](../domains/02-javascript-typescript/projects/p03-policylens-business-rule-decision-workspace-prd.md) | Restricted policy evaluation, explainable decisions, explicit precedence and version comparison | None — not_started |
+| D02-P04 | [PackagePassport](../domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-prd.md) | Release/export claims versus observed compatibility, provenance and contradictory evidence | None — not_started |
+| D02-P05 | [SubscriptionHub](../domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md) | Subscription lifetimes, event order/duplicates, reconnection and evidence-qualified gaps | None — not_started |
+
+## Chapter-level competency crosswalk
+
+Project IDs link through the registry above. All gaps below also have **no implementation evidence**; rows do not claim exhaustive coverage of every lesson subtopic.
+
+| Competency ID | Domain | Taught in lesson | PRD challenge | Implemented evidence | Gap / qualification |
 |---|---|---|---|---|---|
+| D01-C01 | D01 | [01 — Correctness, cost models and measurement](../domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md) | D01-P01; D01-P02 | None — not_started | Direct challenges; no executed benchmark or correctness evidence. |
+| D01-C02 | D01 | [02 — Linear and associative structures](../domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md) | D01-P01; D01-P02 | None — not_started | Educational relevance; no particular structure is mandated. |
+| D01-C03 | D01 | [03 — Trees, heaps and graphs](../domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md) | D01-P03; D01-P01 | None — not_started | Dependency graphs are direct; heaps/trees are optional techniques, not promised implementations. |
+| D01-C04 | D01 | [04 — Algorithmic problem-solving](../domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md) | D01-P01; D01-P03 | None — not_started | Comparison/graph challenges; no requirement to implement every algorithm, greedy method or DP. |
+| D01-C05 | D01 | [05 — Discrete predicates and reasoning](../domains/01-computer-science-foundations/lessons/05-discrete-foundations.md) | D01-P02; D01-P03; D01-P01 | None — not_started | Invariants/graph validity are direct; probability is supporting measurement knowledge. |
+| D01-C06 | D01 | [06 — Architecture and performance](../domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md) | D01-P01; D01-P04 | None — not_started | Measurement/resource context; CPU/cache internals are not a product requirement. |
+| D01-C07 | D01 | [07 — OS scheduling and resources](../domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md) | D01-P02; D01-P04 | None — not_started | Supporting context; no kernel/process-scheduler implementation coverage claimed. |
+| D01-C08 | D01 | [08 — Memory lifetimes and bounded use](../domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md) | D01-P01; D01-P04 | None — not_started | Measurement/bounds are challenges; GC internals remain supporting theory. |
+| D01-C09 | D01 | [09 — Filesystem I/O and integrity](../domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md) | D01-P04 | None — not_started | Direct input/output integrity challenge; no storage technology or exact resume mandated. |
+| D01-C10 | D01 | [10 — Concurrency safety and interleavings](../domains/01-computer-science-foundations/lessons/10-concurrent-execution.md) | D01-P02; D01-P03 | None — not_started | Direct outcome/state challenges; no lock or concurrency mechanism selected. |
+| D01-C11 | D01 | [11 — Liveness, cancellation and uncertainty](../domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md) | D01-P02; D01-P03; D01-P04 | None — not_started | Direct lifecycle challenges; no distributed progress guarantee inferred. |
+| D01-C12 | D01 | [12 — State machines and invariants](../domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md) | D01-P02; D01-P03; D01-P04 | None — not_started | Direct transition integrity; formal verification/model-based tests are not executed evidence. |
+| D01-C13 | D01 | [13 — Backend case-study synthesis](../domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md) | D01-P02; D01-P03; D01-P04 | None — not_started | Applied reasoning relevance; design defense has not been performed. |
+| D01-C14 | D01 | [14 — Assessment and transfer](../domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md) | None — assessment is deferred | None — not_started | Assessment gap intentionally remains until explicit study phase; not a missing product feature. |
+| D02-C01 | D02 | [01 — Values, absence, equality and coercion](../domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) | D02-P01 | None — not_started | Direct sample-validation challenge; supported representations remain subject to policy. |
+| D02-C02 | D02 | [02 — Scope, closures and captured state](../domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) | D02-P02 (catalog relevance) | None — not_started | Supporting implementation knowledge; no PRD requirement forces closure/TDZ demonstrations. |
+| D02-C03 | D02 | [03 — Functions and invocation](../domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) | D02-P03 (composition relevance) | None — not_started | Supporting knowledge; this/call/bind/recursion are not mandated product behaviors. |
+| D02-C04 | D02 | [04 — Objects, prototypes and classes](../domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md) | D02-P01; D02-P03 | None — not_started | Object-contract challenges; class/prototype/inheritance mechanisms are not required. |
+| D02-C05 | D02 | [05 — Collections and iteration](../domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md) | D02-P01; D02-P02; D02-P05 | None — not_started | Payload/recipient/event handling; no Map/Set/generator implementation prescribed. |
+| D02-C06 | D02 | [06 — Modules and public boundaries](../domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md) | D02-P04; D02-P01 | None — not_started | Public contract/module claims are direct; runtime loading is excluded from PackagePassport. |
+| D02-C07 | D02 | [07 — Errors and resource lifetimes](../domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md) | D02-P02; D02-P05; D02-P01 | None — not_started | Explicit errors, uncertainty and lifetime challenges; execution/cleanup evidence absent. |
+| D02-C08 | D02 | [08 — Promises and async outcomes](../domains/02-javascript-typescript/lessons/08-promises-and-async-await.md) | D02-P02; D02-P05 | None — not_started | Async outcome challenges; no specific Promise combinator or host behavior mandated. |
+| D02-C09 | D02 | [09 — Async composition and cancellation](../domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md) | D02-P02; D02-P05 | None — not_started | Direct partial/unknown/cancelled outcomes; policies remain open at kickoff. |
+| D02-C10 | D02 | [10 — Iteration, events and subscriptions](../domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md) | D02-P05 | None — not_started | Direct lifecycle/gap challenge; Node stream/transport implementation remains separate. |
+| D02-C11 | D02 | [11 — TypeScript static/runtime boundaries](../domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md) | D02-P01; D02-P04 | None — not_started | Contracts versus runtime claims; compiler checks are not runtime proof. |
+| D02-C12 | D02 | [12 — Unions, narrowing and domain states](../domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md) | D02-P01; D02-P02; D02-P03; D02-P05 | None — not_started | Distinct decisions/outcomes are direct; discriminated union implementation is optional. |
+| D02-C13 | D02 | [13 — Generics and advanced type relations](../domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md) | D02-P01 (educational relevance) | None — not_started | Supporting type-modeling knowledge; no advanced-type usage or exhaustive feature coverage promised. |
+| D02-C14 | D02 | [14 — TS declarations, configuration and interop](../domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md) | D02-P04 | None — not_started | Declaration/environment claims are direct; compiling/executing packages is excluded. |
+| D02-C15 | D02 | [15 — Runtime validation and trust boundaries](../domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md) | D02-P01; D02-P03; D02-P05 | None — not_started | Direct malformed-input and decision distinctions; not a production authorization gateway. |
+| D02-C16 | D02 | [16 — Backend language case-study transfer](../domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md) | D02-P01; D02-P02; D02-P03; D02-P04; D02-P05 | None — not_started | Synthesis relevance only; no learner assessment or implementation evidence. |
 
-Do not infer implementation coverage from a lesson or draft PRD.
+## Mandatory maintenance
+
+After creating, editing, approving, renaming, moving or removing a project/catalog/PRD, changing project scope or status, or registering external implementation evidence, review this matrix before completion. Also review when mapped lessons or domain closure change. Update affected rows and links in the same change as `tracking/state.json` and `TRACKER.md`, or record a dated, evidence-backed “reviewed; no mapping change” result there. A project/domain change is incomplete without that recorded review. See [workflow](../docs/workflow.md) and [quality gates](../docs/quality-gates.md). Gaps must be recorded honestly; closing them by expanding scope needs separate learner approval.

@@ -6,7 +6,7 @@
   "active_domain_id": "D03",
   "next_domain_id": "D03",
   "active_deliverable": "D03 Node.js Internals curriculum blueprint authoring (not started)",
-  "last_completed_step": "D02 content gate closed: all 16 lessons and all 5 PRDs learner-approved; product questions remain open",
+  "last_completed_step": "D01/D02 global coverage matrix reconciled with all nine approved PRDs and 30 authored lessons; mandatory coverage review recorded; approvals and implementation statuses preserved",
   "next_action": "Draft D03 Node.js Internals curriculum blueprint for learner editorial review; do not start D03 lessons until curriculum approval.",
   "blockers": [],
   "open_decisions": [],
@@ -466,6 +466,22 @@
         "domains/01-computer-science-foundations/projects/catalog.md",
         "domains/02-javascript-typescript/projects/catalog.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Reconciled global coverage matrix with all nine D01/D02 PRDs and 30 chapter mappings; corrected stale catalog/handoff and prerequisite wording; added mandatory coverage completion gate. No new product scope/approval, assessment or implementation.",
+      "evidence": [
+        "projects/coverage-matrix.md",
+        "AGENTS.md",
+        "docs/workflow.md",
+        "docs/quality-gates.md",
+        "domains/01-computer-science-foundations/projects/catalog.md",
+        "domains/02-javascript-typescript/projects/catalog.md",
+        "domains/01-computer-science-foundations/README.md",
+        "docs/prd-scope-alignment-audit-2026-10-12.md",
+        "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md",
+        "docs/coverage-matrix-audit-2026-10-12.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -481,5 +497,21 @@
     "scope_change_control": "User explicitly approves changes to audience, essential behavior, in/out scope or non-goals. Skills and Codex cannot silently expand scope.",
     "technical_work": "Architecture, technical specifications, ADRs, implementation and testing occur in the separate project repo after necessary product rules are decided.",
     "status": "learner_agreed_2026-10-12"
+  },
+  "coverage_matrix_review": {
+    "reviewed_on": "2026-10-12",
+    "status": "reconciled_documentation_only",
+    "path": "projects/coverage-matrix.md",
+    "report": "docs/coverage-matrix-audit-2026-10-12.md",
+    "baseline_commit": "48f227313e52a85246c0a65e1acbea3f511a1d0b",
+    "domains": [
+      "D01",
+      "D02"
+    ],
+    "prd_count": 9,
+    "chapter_mapping_count": 30,
+    "implementation_evidence": "none_not_started",
+    "assessment": "deferred",
+    "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review."
   }
 }

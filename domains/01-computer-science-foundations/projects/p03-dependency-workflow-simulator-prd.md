@@ -80,7 +80,7 @@ Empty workflow; single task; several independent tasks; multiple prerequisites; 
 ## 10. Acceptance scenarios
 
 - **AC-01:** Independent tasks A and B are both eligible; no unsupported precedence is imposed.
-- **AC-02:** If A is required for B, B cannot begin before A satisfies the declared success rule.
+- **AC-02:** If A is required for B, B cannot begin before A satisfies the published prerequisite-satisfaction condition.
 - **AC-03:** A→B→A is reported as cyclic and blocked from valid start.
 - **AC-04:** An unknown prerequisite reference produces a targeted correction message.
 - **AC-05:** If B requires A and C, after only A succeeds, B remains blocked with C identified.

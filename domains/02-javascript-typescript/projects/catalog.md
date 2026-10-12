@@ -39,7 +39,7 @@ Choose products that solve **different user problems**, not four variants of one
 
 **Problem:** sending many messages produces partial success, duplicate attempts, unclear timeouts and uncertain final outcomes, leaving staff unable to safely reconcile delivery.
 
-**Product concept:** staff prepare recipient batches, initiate a delivery campaign, review per-recipient states, pause or cancel eligible pending work and reconcile unknown attempts.
+**Product concept:** staff prepare recipient batches, initiate a delivery campaign, review per-recipient states, cancel eligible unstarted work and reconcile unknown attempts.
 
 **Distinctive product capabilities:** draft and preview a campaign; validate recipients and message requirements; initiate a batch; show queued/in-progress/delivered/rejected/unknown results; request cancellation; retry eligible items without duplicating confirmed outcomes; export an audit-oriented result summary.
 
@@ -111,4 +111,6 @@ Choose products that solve **different user problems**, not four variants of one
 
 ## Review gate
 
-All five project concepts were approved. Product PRDs are reviewed individually; the final review gate is currently P05 SubscriptionHub, followed by D02 content gate closure after learner approval. Product PRDs should later cover actors, workflows, scope, non-goals, product invariants and acceptance criteria only. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
+All five concepts and all five individual PRDs are learner-approved at product scope; the D02 content-authoring gate is closed. The next handbook task is D03 curriculum planning and learner review. The approved PRDs cover actors, workflows, scope, non-goals, product invariants and acceptance criteria; necessary first-version product questions remain for learner-approved Matt/Codex discovery at the separate project kickoff. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
+
+**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all five approved PRDs on 2026-10-12; no implementation evidence recorded.

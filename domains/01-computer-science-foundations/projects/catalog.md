@@ -15,7 +15,7 @@ These are distinct product ideas with observable goals and target learning cover
 - **Engineering challenge:** comparable experiments, transparent metrics, representative inputs, reproducibility and honest reporting of variance.
 - **Learning coverage:** complexity analysis, arrays/maps/trees, search/sort, CPU/cache effects, experimental design.
 - **Why worthwhile:** portfolio evidence of scientific performance reasoning instead of anecdotal optimization.
-- **Next:** product scope approved; unresolved product limits need confirmation before any implementation; no technical approach selected.
+- **Next:** product scope approved; resolve necessary first-version limits at the separate Matt/Codex kickoff with learner approval before dependent technical work; no technical approach selected.
 
 ## P02 — Concurrent Resource Allocation Simulator
 
@@ -49,12 +49,12 @@ These are distinct product ideas with observable goals and target learning cover
 
 - **Problem:** teams need to process datasets bigger than available memory while retaining verifiable and recoverable results.
 - **Users:** data operations and backend developers processing large exports/imports.
-- **Product outcome:** accept large inputs, provide processing progress and failure outcomes, produce validated output and integrity summaries, resume or restart work in a specified user-visible way.
+- **Product outcome:** accept large inputs, provide processing progress and failure outcomes, produce validated output and integrity summaries, restart work in a specified user-visible way; exact mid-file resume is deferred.
 - **Not in scope:** commercial object storage or full ETL orchestration platform.
 - **Engineering challenge:** bounded resource use, partial failures, correctness and data integrity.
 - **Learning coverage:** file I/O, buffering, memory, throughput/latency, OS resources.
 - **Why worthwhile:** demonstrates systems fundamentals; implementation-specific Streams details are taught in lessons/D03, not forced by PRD.
-- **Next:** candidate PRD after review.
+- **Next:** P04 PRD already learner-approved; resolve necessary first-version choices at its separate Matt/Codex kickoff with learner approval.
 
 ## Selection and overlap check
 
@@ -69,4 +69,6 @@ These are distinct product ideas with observable goals and target learning cover
 - P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
 - P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
 
-All four PRDs are learner-approved for product scope, but the projects remain optional portfolio candidates. No implementation was selected or started. Outstanding product questions and numerical limits must be resolved before a Codex implementation handoff. Study assessments are deferred until the learner explicitly begins studying.
+All four PRDs are learner-approved for product scope, but the projects remain optional portfolio candidates. No implementation was selected or started. Necessary first-version product questions and limits are resolved with installed Matt Pocock skills and Codex at the selected project’s kickoff, with learner approval before dependent technical work. Safely deferred questions may remain open. Study assessments are deferred until the learner explicitly begins studying.
+
+**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all four approved PRDs on 2026-10-12; no implementation evidence recorded.

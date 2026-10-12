@@ -39,3 +39,7 @@
 The open product questions are intentionally retained. Some—such as the target audience, product's first supported business domain or evidence policy—could materially affect the build boundary. During kickoff, any proposal that *changes* the approved audience, in-scope capabilities or a non-goal requires separate learner approval, not a quiet assumption. Other fine-grained policies and numeric thresholds can be settled in the ordinary product discovery process.
 
 This was a **document consistency audit**, not a runtime test, independent verification of educational code or proof of implementation readiness. Existing editorial approvals from 2026-10-12 were preserved; no fresh endorsement of unapproved product decisions is asserted.
+
+## Coverage limitation discovered in follow-up audit
+
+This report’s scope was the nine PRDs. It did not establish that the global `projects/coverage-matrix.md` or domain catalog/handoff prose had been reconciled. The matrix remained an empty scaffold and stale catalog/next-step wording survived. See [coverage follow-up audit](coverage-matrix-audit-2026-10-12.md) for the evidence, corrections and new mandatory review gate. The nine PRD product-scope approvals remain unchanged.

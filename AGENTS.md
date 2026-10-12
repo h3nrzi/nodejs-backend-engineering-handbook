@@ -1,6 +1,6 @@
 # Agent operating contract
 
-Read this file first, then `tracking/state.json`, `TRACKER.md`, `docs/workflow.md`, and the relevant domain files. This repo is a **learning handbook and product requirements catalog**, NOT the implementation repo.
+Read this file first, then `tracking/state.json`, `TRACKER.md`, `docs/workflow.md`, `projects/coverage-matrix.md`, and the relevant domain files. This repo is a **learning handbook and product requirements catalog**, NOT the implementation repo.
 
 ## Non-negotiable boundaries
 
@@ -26,3 +26,7 @@ Read this file first, then `tracking/state.json`, `TRACKER.md`, `docs/workflow.m
 ## Completion gates
 
 Lesson: beginner-to-advanced narrative, runnable *educational* examples where relevant, exercises, edge cases, references, review; project catalog: meaningful distinct projects; PRD: clear problem, users, build/not-build boundaries and essential behavior without chosen technical approach. Nonessential product choices may remain open for learner-approved Matt-guided discovery at implementation kickoff. Implementation: evidenced in external repository. See `docs/quality-gates.md`.
+
+## Mandatory coverage-matrix reconciliation
+
+For every project/catalog/PRD creation, edit, approval, scope/status change, rename/move/removal, or new external implementation evidence, read `projects/coverage-matrix.md` and reconcile affected competencies, lesson links, PRD links, gaps and evidence against canonical state before declaring completion. Also reconcile mapped lesson changes and domain content closure. Update the matrix, `tracking/state.json` and `TRACKER.md` in the same change; if the mapping is unchanged, record a dated “reviewed; no mapping change” result with affected paths and evidence in both trackers. Missing review is a completion blocker. Keep taught/editorially approved, planned PRD challenge, assessed competency and externally verified implementation distinct. Never close a gap by silently expanding scope or prescribing a technical solution. Retain historical approvals; this rule does not retroactively revoke D01/D02 approvals.

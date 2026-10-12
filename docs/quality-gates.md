@@ -28,3 +28,10 @@
 - Status supported by file/commit/test/report link where applicable; no fabricating progress.
 - Machine state and human tracker updated together and consistent.
 - Explicit next action, blockers, decisions and review gate.
+
+## Coverage-matrix completion gate
+
+- Review `projects/coverage-matrix.md` after every project/catalog/PRD mutation (including approval, scope/status changes and rename/move/removal), mapped lesson change, domain closure or external implementation-evidence update.
+- Verify affected lesson/PRD links, project inventory and status against canonical state; distinguish direct product challenges from supporting theory or optional implementation techniques.
+- In the same change update the matrix and both trackers, or record a dated “reviewed; no mapping change” with affected paths and evidence in `tracking/state.json` and `TRACKER.md`. Completion is blocked until review is recorded.
+- Keep unmapped/partial coverage and deferred assessments visible. No fabricated implementation evidence, inferred competency, forced stack or automatic scope expansion. Historical D01/D02 approvals are preserved.
