@@ -2,7 +2,7 @@
 
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
-**Lesson chapters:** 01–12 approved; 13 drafted / awaiting review; 14 not_started  
+**Lesson chapters:** 01–13 approved; 14 drafted / awaiting review; practical assessment not_started  
 **Project PRDs:** not_started  
 **Implementation:** not_started
 
@@ -45,3 +45,5 @@ Curriculum plan approved. Chapter 10 awaits review. Project candidates remain un
 **New lesson:** [Chapter 12 — State Machines and Formal Reasoning](lessons/12-state-machines-and-formal-reasoning.md) (draft, pending learner review).
 
 **Chapter 13:** [Backend Case-Study Workshop](lessons/13-backend-case-study-workshop.md) — draft, pending learner review.
+
+**Chapter 14:** [Assessment and Transfer](lessons/14-assessment-and-transfer.md) — draft pending learner approval. The separate practical competency assessment is not complete.
