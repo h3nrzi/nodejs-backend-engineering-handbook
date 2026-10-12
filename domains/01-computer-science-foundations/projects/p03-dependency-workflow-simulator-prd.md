@@ -4,6 +4,8 @@
 **Status:** approved_by_learner
 **Product approval:** approved 2026-10-12
 **Implementation:** not started
+**Approval meaning:** product problem, intended users, in/out/deferred scope and indispensable observable behavior are approved; remaining detailed product questions are not silently decided.
+**Matt kickoff:** use the actually installed Matt Pocock skills with Codex to clarify build-blocking first-version behavior, request learner approval and preserve scope before dependent architecture work.
 
 ## 1. Problem
 
@@ -90,16 +92,19 @@ Empty workflow; single task; several independent tasks; multiple prerequisites; 
 - **AC-11:** Changing the definition does not change historical run records.
 - **AC-12:** An exported result is interpretable without the original live session.
 
-## 11. Product decisions awaiting review
+## 11. Approved scope and product questions for kickoff
 
-1. Simulator only (no real job execution)? **Recommend yes.**
-2. Prerequisite satisfied only on success? **Recommend yes.**
-3. Failed prerequisites leave dependents visibly blocked? **Recommend yes.**
-4. Retry represented as new attempt preserving earlier outcome? **Recommend yes.**
-5. Terminal outcomes immutable? **Recommend yes.**
-6. Failed/cancelled tasks prevent an all-success result? **Recommend yes.**
-7. Text list plus optional graph visualization? **Recommend both, text accessible by default.**
-8. Supported maximum task/link counts? **Open for explicit product review.**
+**Already approved in the product boundary:** this is a simulator, **not** an engine that executes real production jobs (Sections 1, 4 and 12). Users can define task dependencies, validate graphs, inspect blockers and simulate outcomes. Retried work has a distinct attempt identity; a terminal attempt is not silently rewritten. The workflow must remain understandable in a textual view; a diagram is optional. These are not pending approvals.
+
+**Details for learner-approved Matt-guided discovery when this project starts:**
+
+1. Does satisfying a prerequisite require successful completion only, or are other explicit outcomes eligible?
+2. What does failure/cancellation of a prerequisite mean for dependents: blocked, skipped or an explicitly recoverable state?
+3. What is the chosen policy for cancellation near completion, and what counts as overall run success?
+4. Should optional graphical visualization be included in the first version or deferred? Keep the readable text view in either case.
+5. What limits apply to task count, prerequisite links, run length and retained history?
+
+Decide only the first-version answers needed before dependent technical design. Preserve the approved simulator-only boundary and obtain learner approval for any proposed change in scope.
 
 ## 12. Explicit non-goals
 
@@ -111,4 +116,4 @@ Illustrates graph validity and order (D01 Chapters 03–05), transition invarian
 
 ## 14. Approval
 
-Drafted 2026-10-12. **Learner approved 2026-10-12; remaining product questions retained.** No architecture, implementation, ADR, ticket or test execution claimed. Next: review product behavior before P04.
+Drafted and **editorially approved by learner on 2026-10-12**, including the simulator-only product boundary. The detailed questions in Section 11 are deferred to learner-approved discovery using installed Matt Pocock skills when this project starts. No architecture, implementation, ADR, ticket or test execution claimed.
