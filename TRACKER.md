@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D02 — Chapter 01 editorial review  
+**Current authoring focus:** D02 — Chapter 02 editorial review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -25,11 +25,11 @@
 
 ## Remaining domains
 
-**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) drafted pending editorial approval. Projects and PRDs not started. **D03–D16:** not started.
+**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) drafted pending review. Projects and PRDs not started. **D03–D16:** not started.
 
 ## Next action
 
-Learner reviews D02 Chapter 01 and approves or requests revisions before Chapter 02 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+Learner reviews D02 Chapter 02 and approves or requests revisions before Chapter 03 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## AI handoff rules
 
