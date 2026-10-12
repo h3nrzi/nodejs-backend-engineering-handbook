@@ -2,7 +2,7 @@
 
 **Status:** five_concepts_approved_by_learner
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** approved concepts; PRD authoring one product at a time. [P01 ContractGuard PRD](p01-contractguard-api-data-contract-studio-prd.md) approved (open decisions); [P02 DispatchDesk PRD](p02-dispatchdesk-multi-recipient-delivery-operations-prd.md) drafted pending review; P03–P05 not started.
+**Phase:** approved concepts; PRDs authored sequentially. P01 ContractGuard, P02 DispatchDesk and P03 PolicyLens approved by learner (open product decisions remain); [P04 PackagePassport PRD](p04-packagepassport-integration-compatibility-registry-prd.md) drafted pending learner review; P05 not started.
 **Scope rule:** specify product users, problems, essential capabilities and distinct learning coverage; do not select framework, storage, hosting, APIs, implementation architecture or code.
 
 ## Selection principle
@@ -103,4 +103,4 @@ Choose products that solve **different user problems**, not four variants of one
 
 ## Review gate
 
-Learner chooses, rejects or revises candidate concepts and their distinct boundaries **before** any PRDs are authored. Product PRDs should later cover actors, workflows, scope, non-goals, product invariants and acceptance criteria only. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
+All five project concepts were approved. Product PRDs are reviewed individually, currently P04 PackagePassport. Product PRDs should later cover actors, workflows, scope, non-goals, product invariants and acceptance criteria only. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
