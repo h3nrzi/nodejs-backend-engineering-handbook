@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 11 authoring",
-  "last_completed_step": "D01 Chapter 10 approved",
-  "next_action": "Draft and publish Chapter 11 lesson, then request learner review.",
+  "active_deliverable": "D01 Chapter 11 learner review",
+  "last_completed_step": "D01 Chapter 11 drafted",
+  "next_action": "Learner reviews Chapter 11, request revisions or approve before Chapter 12.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -24,6 +24,7 @@
       "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
         "10": "approved_by_learner",
+        "11": "drafted_pending_review",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -33,7 +34,7 @@
         "07": "approved_by_learner",
         "08": "approved_by_learner",
         "09": "approved_by_learner",
-        "11-14": "not_started"
+        "12-14": "not_started"
       }
     },
     {
@@ -274,6 +275,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
         "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 10 and Chapter 11 lesson drafted for review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+        "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md"
       ]
     }
   ]
