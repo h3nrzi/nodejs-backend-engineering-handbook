@@ -12,7 +12,7 @@
 - “PRD challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Every project remains an optional portfolio candidate with `approved_by_learner` product-scope status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03–D16 are not started; no taught, planned-project or implemented coverage is inferred for them. D03 curriculum planning remains next.
+- D03 curriculum blueprint is drafted and in_review; no lessons, project catalog, PRDs, assessment or implementation are started. D04–D16 remain not_started. Planned curriculum is not taught or project coverage.
 
 ## Project traceability — all nine approved PRDs
 
@@ -64,6 +64,14 @@ Project IDs link through the registry above. All gaps below also have **no imple
 | D02-C14 | D02 | [14 — TS declarations, configuration and interop](../domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md) | D02-P04 | None — not_started | Declaration/environment claims are direct; compiling/executing packages is excluded. |
 | D02-C15 | D02 | [15 — Runtime validation and trust boundaries](../domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md) | D02-P01; D02-P03; D02-P05 | None — not_started | Direct malformed-input and decision distinctions; not a production authorization gateway. |
 | D02-C16 | D02 | [16 — Backend language case-study transfer](../domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md) | D02-P01; D02-P02; D02-P03; D02-P04; D02-P05 | None — not_started | Synthesis relevance only; no learner assessment or implementation evidence. |
+
+## Planned domains — no taught or project coverage
+
+| Domain | Curriculum planning | Taught lessons | PRD challenge | Implemented evidence | Current gap |
+|---|---|---|---|---|---|
+| D03 | [18-chapter blueprint](../domains/03-nodejs-internals/curriculum.md) — in_review, not learner-approved | None — not_started | None — catalog/PRDs not_started | None — not_started | Obtain curriculum approval before authoring Chapter 01; planned D03-C01–C18 IDs do not claim acquired coverage. |
+
+**Review — 2026-10-12:** D03 curriculum/index/state transition reconciled; existing D01/D02 nine-project and 30-chapter mappings unchanged. No new product or implementation coverage inferred.
 
 ## Mandatory maintenance
 

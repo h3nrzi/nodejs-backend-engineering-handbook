@@ -2,14 +2,21 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "no_pending_review_D03_curriculum_not_started",
+  "review": "pending_learner_review_D03_curriculum",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Node.js Internals curriculum blueprint authoring (not started)",
-  "last_completed_step": "D01/D02 global coverage matrix reconciled with all nine approved PRDs and 30 authored lessons; mandatory coverage review recorded; approvals and implementation statuses preserved",
-  "next_action": "Draft D03 Node.js Internals curriculum blueprint for learner editorial review; do not start D03 lessons until curriculum approval.",
+  "active_deliverable": "D03 Node.js Internals 18-chapter curriculum blueprint (drafted; awaiting learner editorial approval)",
+  "last_completed_step": "Drafted D03 curriculum blueprint and reconciled domain index, coverage matrix and both trackers; no D03 lesson or project authoring started",
+  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/curriculum.md; after explicit approval, author D03 Chapter 01 only and request its editorial review.",
   "blockers": [],
-  "open_decisions": [],
+  "open_decisions": [
+    {
+      "id": "D03-curriculum-approval",
+      "question": "Approve or revise the proposed 18-chapter Node.js Internals curriculum breadth, sequence and boundaries.",
+      "status": "awaiting_learner_review",
+      "evidence": "domains/03-nodejs-internals/curriculum.md"
+    }
+  ],
   "current_implementation_project": null,
   "domains": [
     {
@@ -87,11 +94,15 @@
       "id": "D03",
       "name": "Node.js Internals",
       "slug": "nodejs-internals",
-      "status": "not_started",
+      "status": "in_progress",
       "lesson_status": "not_started",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
-      "source_outline": "prior_conversation_outline_only"
+      "source_outline": "prior_conversation_outline_only",
+      "curriculum_blueprint_status": "in_review",
+      "curriculum_blueprint_path": "domains/03-nodejs-internals/curriculum.md",
+      "proposed_chapter_count": 18,
+      "assessment_status": "deferred_until_learning_phase"
     },
     {
       "id": "D04",
@@ -482,6 +493,16 @@
         "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md",
         "docs/coverage-matrix-audit-2026-10-12.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "User authorized moving to D03. Drafted 18-chapter Node.js Internals curriculum for learner editorial review; consulted official Node.js documentation via Context7 for scheduling, streams and worker boundaries. Curriculum not yet approved; lessons, catalog/PRDs and implementation not started; assessment deferred. Coverage matrix reviewed and planning-only status added.",
+      "evidence": [
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -500,18 +521,25 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_documentation_only",
+    "status": "reconciled_D03_curriculum_planning_only",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "48f227313e52a85246c0a65e1acbea3f511a1d0b",
+    "baseline_commit": "d2f6c296d27e44a281a04914a1d9eebdc1252fea",
     "domains": [
       "D01",
-      "D02"
+      "D02",
+      "D03"
     ],
     "prd_count": 9,
     "chapter_mapping_count": 30,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
-    "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review."
+    "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
+    "latest_review_evidence": [
+      "domains/03-nodejs-internals/curriculum.md",
+      "domains/03-nodejs-internals/README.md",
+      "projects/coverage-matrix.md"
+    ],
+    "mapping_change": "Added separate D03 planning row; D01/D02 9-project and 30-authored-chapter mappings unchanged; no D03 taught/PRD/implementation mapping."
   }
 }

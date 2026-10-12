@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Node.js Internals curriculum planning (not yet started)  
+**Current authoring focus:** D03 — Node.js Internals curriculum blueprint drafted, awaiting learner editorial review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,11 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03–D16:** not started.
+**D03 — Node.js Internals:** [18-chapter curriculum blueprint](domains/03-nodejs-internals/curriculum.md) drafted and in_review. No authored lessons, project catalog/PRDs or implementation; assessment deferred.
+
+**D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. Draft D03 Node.js Internals curriculum blueprint, present it for learner editorial approval, then begin D03 lessons only after approval. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. Review and explicitly approve or revise the drafted D03 curriculum blueprint. After approval, author Chapter 01 only and request its editorial review. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -58,10 +60,16 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum is the next planning deliverable and has not been authored or approved.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum blueprint is drafted and awaits explicit learner approval.
 
 ## Global coverage reconciliation — 2026-10-12
 
 [Coverage matrix](projects/coverage-matrix.md) reviewed and updated against all nine approved D01/D02 PRDs and all 30 authored lessons at baseline `48f227313e52a85246c0a65e1acbea3f511a1d0b`. [Detailed findings and correction evidence](docs/coverage-matrix-audit-2026-10-12.md). Nine project entries and 30 chapter-level competency mappings distinguish direct challenges, supporting theory, gaps and absent implementation evidence. Corrected stale catalog/next-step wording and P03 prerequisite terminology; no approved product scope or status changed. All implementation remains not started; assessment deferred. D03 curriculum planning remains next.
 
 **Mandatory completion gate:** after any project/catalog/PRD mutation, mapped lesson change, domain closure or external implementation-evidence update, reconcile the matrix and update both trackers in the same change. If mapping is unchanged, record a dated, evidence-backed “reviewed; no mapping change” result with affected paths in both trackers. Work cannot be declared complete without that record. See [agent contract](AGENTS.md), [workflow](docs/workflow.md) and [quality gates](docs/quality-gates.md).
+
+## D03 curriculum planning — 2026-10-12
+
+[Proposed 18-chapter plan](domains/03-nodejs-internals/curriculum.md) drafted after user authorization to move to the next domain. Covers runtime/startup, event loop and scheduling, events, buffers/files/streams, native work, workers/processes, runtime modules, V8 memory, async context, failure/shutdown, diagnostics and integrated case studies. Official Node.js v24 documentation consulted through Context7 for scheduling, streams and workers; exact example runtime remains to be recorded during lesson authoring. This is a plan awaiting learner review, not taught content or product-scope approval.
+
+**Coverage review:** reviewed and updated [matrix](projects/coverage-matrix.md) against the D03 blueprint/index and canonical state. Added a separate planning-only D03 row; existing D01/D02 30 lesson mappings and nine PRD entries unchanged. D03 has no taught, assessed or implementation evidence. Next: learner approves/revises curriculum, then Chapter 01 only. Project catalogs/PRDs follow lessons; assessment and implementation remain deferred.

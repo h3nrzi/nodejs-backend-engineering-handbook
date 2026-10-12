@@ -1,11 +1,26 @@
 # D03 — Node.js Internals
 
-**Status:** not_started (scaffold only)
+**Status:** in_progress — curriculum blueprint in_review.  
+**Curriculum:** [Proposed 18-chapter plan](curriculum.md), awaiting learner editorial approval.  
+**Lessons:** not_started (0 authored, 0 approved).  
+**Project catalog / PRDs:** not_started.  
+**Assessment:** deferred_until_learning_phase.  
+**Implementation:** not_started.
 
-This domain has no authored lesson or approved PRD yet. A preliminary high-level outline was discussed in a prior conversation, but was not a comprehensive lesson.
+## Purpose and boundary
 
-When authorized, build lessons chapter-by-chapter and add project candidates, followed by product-level PRDs after review. Use `templates/domain-readme.md`, `templates/lesson.md` and `templates/project-prd.md`.
+Explain Node.js runtime execution, scheduling, I/O, byte/memory ownership, workers/processes, module loading, resource lifetimes and diagnostic evidence. D01 supplies systems fundamentals; D02 supplies language/type/async abstractions. Protocols, distributed architecture, production operations and comprehensive performance/observability strategies remain in their later domains.
 
-- Lessons: `lessons/` (created with actual content)
-- Projects: [catalog](projects/catalog.md)
-- Review state: [tracker](../../tracking/state.json)
+## Proposed progression
+
+Runtime architecture/startup → event loop/scheduling/events → buffers/files/streams/native work → workers/processes/modules → V8 memory/async context/failure → diagnostics and integrated case studies.
+
+These are planned topics, not authored lessons or approved project requirements. No lesson links are created before lesson content exists.
+
+## Next action and handoff
+
+Review and explicitly approve or revise the [curriculum blueprint](curriculum.md). After approval, author Chapter 01 only and obtain its editorial review before progressing. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+
+[Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
+
+**Coverage review — 2026-10-12:** D03 curriculum planning is recorded separately; D01/D02 mappings remain unchanged. D03 has no taught, assessed, PRD or implementation coverage yet.
