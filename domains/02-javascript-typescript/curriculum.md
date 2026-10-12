@@ -1,6 +1,6 @@
 # D02 Curriculum Blueprint — JavaScript & TypeScript
 
-**Status:** draft_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning phase:** not started; assessment deferred until learner explicitly opts in.  
 **Authoring rule:** one substantial chapter per approval, after this blueprint is approved.  
 **Boundary:** language behavior and TypeScript's static analysis; Node.js runtime internals remain D03. Product PRDs must remain implementation-neutral.
