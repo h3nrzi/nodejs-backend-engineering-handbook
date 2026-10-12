@@ -1,7 +1,7 @@
 # Chapter 01 — Values, Types and Coercion
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning assessments:** deferred until explicit study phase  
 **Examples:** educational; not independently executed
 
