@@ -1,39 +1,36 @@
-# Human-readable tracker
+# Handbook progress tracker
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Active domain:** D01 — Computer Science Foundations  
-**Current gate:** All 14 D01 chapters approved; assessment deferred until explicit study phase. Next: project catalog and implementation-neutral PRDs.  
+**Current authoring focus:** D02 — JavaScript & TypeScript  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
-## Verified progress
+## D01 — Computer Science Foundations
 
-- D01 curriculum blueprint: approved by learner.
-- [Chapter 01 — Cost Models and Correctness](domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md): approved by learner.
-- [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
-- [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): approved by learner.
-- [Chapter 04 — Algorithmic Problem-Solving](domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md): drafted, awaiting learner review. Code examples have not been independently executed.
-- All 14 chapters approved by learner; practical assessment deferred until the learner explicitly begins study.
-- Project candidates: initial catalog only; no approved project PRDs or implementation repositories.
+- **Curriculum:** learner-approved.
+- **Lessons:** all 14 authored and learner-approved (editorial approval; examples not independently verified).
+- **Project catalog:** four differentiated ideas, each with a learner-approved product-scope PRD.
+- **Open PRD decisions:** product policies, numeric limits and acceptance thresholds remain unresolved; approval does not mean implementation-ready.
+- **Learning assessment:** deferred until learner explicitly enters the study phase; no answers, grades or practice evidence recorded.
+- **Implementation projects:** none selected, created or implemented under this handbook workflow.
+
+### Approved project PRDs
+
+1. [P01 — Workload & Complexity Observatory](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md)
+2. [P02 — Concurrent Resource Allocation Simulator](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md)
+3. [P03 — Dependency Workflow Simulator](domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md)
+4. [P04 — Large Dataset Processing Workspace](domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md)
+
+[All fourteen chapters and project index](domains/01-computer-science-foundations/README.md) · [Project differentiation](domains/01-computer-science-foundations/projects/catalog.md)
+
+## Remaining domains
+
+**D02–D16:** not started. D02 is the next authoring target, beginning with a curriculum blueprint for learner review. Do not imply D02 lessons have already been written.
 
 ## Next action
 
-Learner reviews Chapter 05. Obtain approval before Chapter 06.
+Draft the D02 — JavaScript & TypeScript curriculum blueprint in the handbook and request editorial approval before drafting lessons. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
-## AI handoff
+## AI handoff rules
 
-Read AGENTS.md, tracking/state.json, D01 curriculum and the lesson files. Approved means learner approval of educational content, not independent test execution. Project PRDs must remain implementation-neutral; technical design is reserved for Codex skill-guided local project discovery.
-
-## Authoring vs. learning (learner decision, 2026-10-12)
-
-The learner is currently building the handbook, completing lesson content and selecting/documenting distinct portfolio projects. They are **not currently studying or taking assessments**. Never initiate or score Chapter 14 exams during content production. Keep assessment exercises available in their lessons and mark them `deferred_until_learning_phase`. Begin quizzes, applied exercises and evidence reviews only when the learner explicitly starts the learning phase.
-
-**Next work:** D01 project catalog review, select project concepts and draft nonprescriptive product PRDs one at a time. Implementation and architecture remain separate Codex responsibilities.
-
-## D01 project catalog — current handoff
-
-- Four distinct project concepts are documented in [catalog](domains/01-computer-science-foundations/projects/catalog.md): P01 performance experiments, P02 capacity races, P03 dependency workflows, P04 memory-bounded dataset processing.
-- [P01 Workload & Complexity Observatory PRD](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) is **approved by learner**, not implemented; unresolved product thresholds remain.
-- [P02 Concurrent Resource Allocation Simulator PRD](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md) is approved by learner. [P03 Dependency Workflow Simulator PRD](domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md) is drafted pending learner review. P04 remains candidate only.
-- **Next:** review P03 product scope and eight open questions; revise/approve before P04.
-- No learner assessment should be initiated until the learner explicitly starts studying.
+Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state before work. The **product PRDs state what/why and observable criteria**, never prescribe implementation. Codex owns future architecture, ADRs, tickets, implementation and tests in separate repositories. Do not infer implementation from PRD approval or competence from lesson approval.
