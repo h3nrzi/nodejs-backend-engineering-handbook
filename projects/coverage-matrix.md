@@ -1,6 +1,6 @@
 # Engineering competency coverage matrix
 
-**Status:** D01/D02 editorial coverage mapped; implementation not started.  
+**Status:** D01/D02 approved editorial coverage mapped; D03 Chapter 01 authored/in_review; implementation not started.  
 **Reviewed:** 2026-10-12 against all nine approved PRDs, domain indexes/catalogs, lesson contents, workflow and canonical state.  
 **Baseline:** `48f227313e52a85246c0a65e1acbea3f511a1d0b`.  
 **Audit:** [Coverage reconciliation report](../docs/coverage-matrix-audit-2026-10-12.md).
@@ -12,7 +12,7 @@
 - “PRD challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Every project remains an optional portfolio candidate with `approved_by_learner` product-scope status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum blueprint is drafted and in_review; no lessons, project catalog, PRDs, assessment or implementation are started. D04–D16 remain not_started. Planned curriculum is not taught or project coverage.
+- D03 curriculum is learner-approved; Chapter 01 is authored/in_review, Chapters 02–18 not_started. No D03 project catalog/PRDs or implementation; assessment deferred. D04–D16 remain not_started. Curriculum approval is separate from approved taught content.
 
 ## Project traceability — all nine approved PRDs
 
@@ -65,13 +65,13 @@ Project IDs link through the registry above. All gaps below also have **no imple
 | D02-C15 | D02 | [15 — Runtime validation and trust boundaries](../domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md) | D02-P01; D02-P03; D02-P05 | None — not_started | Direct malformed-input and decision distinctions; not a production authorization gateway. |
 | D02-C16 | D02 | [16 — Backend language case-study transfer](../domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md) | D02-P01; D02-P02; D02-P03; D02-P04; D02-P05 | None — not_started | Synthesis relevance only; no learner assessment or implementation evidence. |
 
-## Planned domains — no taught or project coverage
+## D03 authoring and planned coverage — separate from approved taught content
 
-| Domain | Curriculum planning | Taught lessons | PRD challenge | Implemented evidence | Current gap |
+| Domain | Curriculum | Authored lessons / approval | PRD challenge | Implemented evidence | Current gap |
 |---|---|---|---|---|---|
-| D03 | [18-chapter blueprint](../domains/03-nodejs-internals/curriculum.md) — in_review, not learner-approved | None — not_started | None — catalog/PRDs not_started | None — not_started | Obtain curriculum approval before authoring Chapter 01; planned D03-C01–C18 IDs do not claim acquired coverage. |
+| D03 | [18-chapter curriculum](../domains/03-nodejs-internals/curriculum.md) — approved_by_learner | [D03-C01 — Runtime architecture](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — authored/in_review, not learner-approved | None — catalog/PRDs not_started | None — not_started | Chapter 01 editorial review pending; C02–C18 planned/not_started; no learner assessment. Three local educational example runs are not product implementation evidence. |
 
-**Review — 2026-10-12:** D03 curriculum/index/state transition reconciled; existing D01/D02 nine-project and 30-chapter mappings unchanged. No new product or implementation coverage inferred.
+**Review — 2026-10-12:** curriculum approval and D03-C01 authored/in_review mapping reconciled with lesson, domain index and canonical state; existing D01/D02 nine-project and 30-approved-chapter mappings unchanged. Total authored chapter mappings: 31 (30 approved + 1 in_review). No new product or implementation coverage inferred.
 
 ## Mandatory maintenance
 

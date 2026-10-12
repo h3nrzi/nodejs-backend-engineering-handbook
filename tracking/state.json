@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_curriculum",
+  "review": "pending_learner_review_D03_chapter_01",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Node.js Internals 18-chapter curriculum blueprint (drafted; awaiting learner editorial approval)",
-  "last_completed_step": "Drafted D03 curriculum blueprint and reconciled domain index, coverage matrix and both trackers; no D03 lesson or project authoring started",
-  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/curriculum.md; after explicit approval, author D03 Chapter 01 only and request its editorial review.",
+  "active_deliverable": "D03 Chapter 01 Runtime Architecture and Execution Boundaries (authored; in_review)",
+  "last_completed_step": "Learner approved D03 18-chapter curriculum; Chapter 01 authored, author quality review completed and three educational examples executed; coverage and trackers reconciled",
+  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md; after explicit approval, author Chapter 02 only and request editorial review.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-curriculum-approval",
-      "question": "Approve or revise the proposed 18-chapter Node.js Internals curriculum breadth, sequence and boundaries.",
+      "id": "D03-chapter-01-review",
+      "question": "Approve or revise D03 Chapter 01 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/curriculum.md"
+      "evidence": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md"
     }
   ],
   "current_implementation_project": null,
@@ -95,14 +95,49 @@
       "name": "Node.js Internals",
       "slug": "nodejs-internals",
       "status": "in_progress",
-      "lesson_status": "not_started",
+      "lesson_status": "in_progress",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
-      "curriculum_blueprint_status": "in_review",
+      "curriculum_blueprint_status": "approved_by_learner",
       "curriculum_blueprint_path": "domains/03-nodejs-internals/curriculum.md",
       "proposed_chapter_count": 18,
-      "assessment_status": "deferred_until_learning_phase"
+      "assessment_status": "deferred_until_learning_phase",
+      "curriculum_approved_on": "2026-10-12",
+      "chapter_progress": {
+        "10": "not_started",
+        "11": "not_started",
+        "12": "not_started",
+        "13": "not_started",
+        "14": "not_started",
+        "15": "not_started",
+        "16": "not_started",
+        "17": "not_started",
+        "18": "not_started",
+        "01": "in_review",
+        "02": "not_started",
+        "03": "not_started",
+        "04": "not_started",
+        "05": "not_started",
+        "06": "not_started",
+        "07": "not_started",
+        "08": "not_started",
+        "09": "not_started"
+      },
+      "chapter_execution_evidence": {
+        "01": {
+          "status": "three_educational_examples_executed",
+          "evidence": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+          "checked_on": "2026-10-12",
+          "node": "v26.4.0",
+          "v8": "14.6.202.34-node.21",
+          "uv": "1.52.1",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "ESM (.mjs)",
+          "limits": "One local environment; no learner assessment, project implementation or cross-platform guarantee."
+        }
+      }
     },
     {
       "id": "D04",
@@ -503,6 +538,17 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner explicitly approved D03 18-chapter curriculum. Authored Chapter 01 only, checked against quality gates and executed three educational examples. Chapter 01 submitted for learner editorial review; Chapters 02–18 not_started; projects and assessment deferred. Updated D03-C01 coverage mapping and both trackers.",
+      "evidence": [
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+        "domains/03-nodejs-internals/README.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -521,25 +567,28 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_curriculum_planning_only",
+    "status": "reconciled_D03_chapter_01_authored_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "d2f6c296d27e44a281a04914a1d9eebdc1252fea",
+    "baseline_commit": "9a32a965c4bbea755d26d71ea4f6661df5042702",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 30,
+    "chapter_mapping_count": 31,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
+      "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "projects/coverage-matrix.md"
     ],
-    "mapping_change": "Added separate D03 planning row; D01/D02 9-project and 30-authored-chapter mappings unchanged; no D03 taught/PRD/implementation mapping."
+    "mapping_change": "D03 curriculum approved and D03-C01 mapped as authored/in_review; D01/D02 30 approved mappings and 9 PRD entries unchanged; educational executions are not implemented-project evidence.",
+    "approved_chapter_mapping_count": 30,
+    "in_review_chapter_mapping_count": 1
   }
 }
