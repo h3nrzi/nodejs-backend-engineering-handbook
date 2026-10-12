@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 chapter 02 authoring",
-  "last_completed_step": "D01 chapter 01 approved by learner",
-  "next_action": "Write Chapter 02 — Linear and Associative Data Structures as complete lesson, then request learner review.",
+  "active_deliverable": "D01 chapter 02 review",
+  "last_completed_step": "D01 chapter 02 drafted",
+  "next_action": "Learner reviews Chapter 02; then make corrections or record approval before Chapter 03.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -24,7 +24,8 @@
       "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
         "01": "approved_by_learner",
-        "02-14": "not_started"
+        "02": "drafted_pending_review",
+        "03-14": "not_started"
       }
     },
     {
@@ -210,6 +211,13 @@
       "event": "Learner explicitly approved D01 Chapter 01",
       "evidence": [
         "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Chapter 02 drafted pending learner review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md"
       ]
     }
   ]
