@@ -2,7 +2,7 @@
 
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
-**Lesson chapters:** 01–13 approved; 14 drafted / awaiting review; practical assessment not_started  
+**Lesson chapters:** 01–14 approved; practical assessment not_started  
 **Project PRDs:** not_started  
 **Implementation:** not_started
 
@@ -46,4 +46,4 @@ Curriculum plan approved. Chapter 10 awaits review. Project candidates remain un
 
 **Chapter 13:** [Backend Case-Study Workshop](lessons/13-backend-case-study-workshop.md) — draft, pending learner review.
 
-**Chapter 14:** [Assessment and Transfer](lessons/14-assessment-and-transfer.md) — draft pending learner approval. The separate practical competency assessment is not complete.
+**Chapter 14:** [Assessment and Transfer](lessons/14-assessment-and-transfer.md) — approved by learner. The separate practical competency assessment is not complete.
