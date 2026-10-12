@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 11 learner review",
-  "last_completed_step": "D01 Chapter 11 drafted",
-  "next_action": "Learner reviews Chapter 11, request revisions or approve before Chapter 12.",
+  "active_deliverable": "D01 Chapter 12 learner review",
+  "last_completed_step": "D01 Chapter 12 drafted",
+  "next_action": "Learner reviews Chapter 12; revise or approve before authoring Chapter 13.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -24,7 +24,8 @@
       "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
         "10": "approved_by_learner",
-        "11": "drafted_pending_review",
+        "11": "approved_by_learner",
+        "12": "drafted_pending_review",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -34,7 +35,7 @@
         "07": "approved_by_learner",
         "08": "approved_by_learner",
         "09": "approved_by_learner",
-        "12-14": "not_started"
+        "13-14": "not_started"
       }
     },
     {
@@ -283,6 +284,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
         "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 11 and Chapter 12 drafted pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
+        "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md"
       ]
     }
   ]
