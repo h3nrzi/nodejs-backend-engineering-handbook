@@ -1,9 +1,9 @@
 # Human-readable tracker
 
 **Updated:** 2026-10-12  
-**Phase:** domain_assessment  
+**Phase:** content_and_project_planning  
 **Active domain:** D01 — Computer Science Foundations  
-**Current gate:** All 14 D01 chapters approved; practical assessment not started.  
+**Current gate:** All 14 D01 chapters approved; assessment deferred until explicit study phase. Next: project catalog and implementation-neutral PRDs.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Verified progress
@@ -13,7 +13,7 @@
 - [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
 - [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): approved by learner.
 - [Chapter 04 — Algorithmic Problem-Solving](domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md): drafted, awaiting learner review. Code examples have not been independently executed.
-- All 14 chapters approved by learner; practical assessment outstanding.
+- All 14 chapters approved by learner; practical assessment deferred until the learner explicitly begins study.
 - Project candidates: initial catalog only; no approved project PRDs or implementation repositories.
 
 ## Next action
@@ -23,3 +23,9 @@ Learner reviews Chapter 05. Obtain approval before Chapter 06.
 ## AI handoff
 
 Read AGENTS.md, tracking/state.json, D01 curriculum and the lesson files. Approved means learner approval of educational content, not independent test execution. Project PRDs must remain implementation-neutral; technical design is reserved for Codex skill-guided local project discovery.
+
+## Authoring vs. learning (learner decision, 2026-10-12)
+
+The learner is currently building the handbook, completing lesson content and selecting/documenting distinct portfolio projects. They are **not currently studying or taking assessments**. Never initiate or score Chapter 14 exams during content production. Keep assessment exercises available in their lessons and mark them `deferred_until_learning_phase`. Begin quizzes, applied exercises and evidence reviews only when the learner explicitly starts the learning phase.
+
+**Next work:** D01 project catalog review, select project concepts and draft nonprescriptive product PRDs one at a time. Implementation and architecture remain separate Codex responsibilities.
