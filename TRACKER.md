@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D02 — P05 SubscriptionHub PRD editorial review  
+**Current authoring focus:** D03 — Node.js Internals curriculum planning (not yet started)  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -25,11 +25,21 @@
 
 ## Remaining domains
 
-**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) approved; [Chapter 03 — Functions and Invocation](domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) approved; [Chapter 04 — Objects, Prototypes and Classes](domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md) approved; [Chapter 05 — Collections, Iteration and Data Handling](domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md) approved; [Chapter 06 — Modules and Package Boundaries](domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md) approved; [Chapter 07 approved; [Chapter 08](domains/02-javascript-typescript/lessons/08-promises-and-async-await.md) and [Chapter 09](domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md) approved; [Chapter 10 — Iteration, Streams and Event Abstractions](domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md) approved; [Chapter 11 — TypeScript Type System Fundamentals](domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md) approved; [Chapter 12 — Unions, Narrowing and Domain Modeling](domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md) approved; [Chapter 13 — Generics, Constraints and Advanced Types](domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md) approved; [Chapter 14 — TypeScript Modules, Configuration and Interop](domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md) approved; [Chapter 15 — Runtime Validation and Boundary Safety](domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md) approved; [Chapter 16 — Backend Language Case Studies and Transfer](domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md) approved; all 16 chapters learner-approved. [Five project candidates](domains/02-javascript-typescript/projects/catalog.md) approved; [P01 ContractGuard PRD](domains/02-javascript-typescript/projects/p01-contractguard-api-data-contract-studio-prd.md) approved (open product questions remain); [P02 DispatchDesk PRD](domains/02-javascript-typescript/projects/p02-dispatchdesk-multi-recipient-delivery-operations-prd.md) approved; [P03 PolicyLens PRD](domains/02-javascript-typescript/projects/p03-policylens-business-rule-decision-workspace-prd.md) approved; [P04 PackagePassport PRD](domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-prd.md) approved (open product decisions remain); [P05 SubscriptionHub PRD](domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md) drafted pending learner review. **D03–D16:** not started.
+**D02 — JavaScript & TypeScript: content authoring complete (2026-10-12).**
+
+- **Curriculum:** learner-approved, 16 chapters.
+- **Lessons:** all 16 authored and learner-approved editorially; educational examples not independently verified.
+- **Project catalog:** [five distinct concepts](domains/02-javascript-typescript/projects/catalog.md), all learner-approved.
+- **Product PRDs:** all five learner-approved at product scope: [P01 ContractGuard](domains/02-javascript-typescript/projects/p01-contractguard-api-data-contract-studio-prd.md), [P02 DispatchDesk](domains/02-javascript-typescript/projects/p02-dispatchdesk-multi-recipient-delivery-operations-prd.md), [P03 PolicyLens](domains/02-javascript-typescript/projects/p03-policylens-business-rule-decision-workspace-prd.md), [P04 PackagePassport](domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-prd.md), [P05 SubscriptionHub](domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md).
+- **Open product decisions:** assumptions, policy details, quantities and acceptance thresholds remain in the PRDs. Editorial approval does not imply implementation-readiness.
+- **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
+- **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
+
+**D03–D16:** not started.
 
 ## Next action
 
-Learner reviews P05 SubscriptionHub PRD; after approval, complete the D02 content gate while leaving study assessments and implementation deferred. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. Draft D03 Node.js Internals curriculum blueprint, present it for learner editorial approval, then begin D03 lessons only after approval. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## AI handoff rules
 
@@ -37,4 +47,4 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. The D02 curriculum and all sixteen lessons are learner-approved; current editorial gate is the P05 SubscriptionHub PRD.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum is the next planning deliverable and has not been authored or approved.
