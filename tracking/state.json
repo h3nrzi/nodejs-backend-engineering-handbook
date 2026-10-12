@@ -5,9 +5,9 @@
   "review": "content_authoring",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 project catalog and product PRD planning",
-  "last_completed_step": "D01 all 14 lessons approved by learner",
-  "next_action": "Review D01 project candidates and produce implementation-neutral product PRDs one by one; defer all learner assessments until the learner explicitly starts the study phase.",
+  "active_deliverable": "D01 P01 product PRD review",
+  "last_completed_step": "D01 P01 PRD drafted, project differentiation reviewed",
+  "next_action": "Learner reviews P01 Workload & Complexity Observatory PRD and product scope; revise before approval, then proceed to P02 PRD.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -18,7 +18,7 @@
       "slug": "computer-science-foundations",
       "status": "in_progress",
       "lesson_status": "completed",
-      "project_specs_status": "not_started",
+      "project_specs_status": "in_progress",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
@@ -38,7 +38,13 @@
         "08": "approved_by_learner",
         "09": "approved_by_learner"
       },
-      "assessment_status": "deferred_until_learning_phase"
+      "assessment_status": "deferred_until_learning_phase",
+      "project_progress": {
+        "P01": "prd_drafted_pending_learner_review",
+        "P02": "candidate_only",
+        "P03": "candidate_only",
+        "P04": "candidate_only"
+      }
     },
     {
       "id": "D02",
@@ -324,6 +330,14 @@
       "event": "Learner clarified current phase is handbook and project planning, not studying. Defer chapter 14 assessment until learner explicitly begins studying; proceed with project catalog and PRDs.",
       "evidence": [
         "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Reviewed four D01 candidate projects; drafted P01 behavior-only PRD pending learner approval; study assessments deferred",
+      "evidence": [
+        "domains/01-computer-science-foundations/projects/catalog.md",
+        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md"
       ]
     }
   ]
