@@ -1,11 +1,22 @@
 # D02 — JavaScript & TypeScript
 
-**Status:** not_started (scaffold only)
+**Status:** curriculum blueprint drafted, pending learner editorial approval.  
+**Lessons:** not started (16 chapters proposed).  
+**Project catalog:** not started; concepts only.  
+**Product PRDs:** not started.  
+**Practical learning assessments:** deferred until explicit study phase.  
+**Implementation:** not started.
 
-This domain has no authored lesson or approved PRD yet. A preliminary high-level outline was discussed in a prior conversation, but was not a comprehensive lesson.
+## Purpose
 
-When authorized, build lessons chapter-by-chapter and add project candidates, followed by product-level PRDs after review. Use `templates/domain-readme.md`, `templates/lesson.md` and `templates/project-prd.md`.
+Teach JavaScript runtime-language semantics and TypeScript static modeling from first principles through backend-relevant examples, with clear boundaries around what belongs in D03 Node.js Internals.
 
-- Lessons: `lessons/` (created with actual content)
-- Projects: [catalog](projects/catalog.md)
-- Review state: [tracker](../../tracking/state.json)
+## Authoring roadmap
+
+Read the [16-chapter curriculum blueprint](curriculum.md), covering language semantics, async control flow, TypeScript fundamentals, advanced types, validation and applied reasoning.
+
+**Current gate:** learner reviews and approves/revises the chapter blueprint. No chapter lesson has been authored yet.
+
+Future project concepts and product PRDs remain separate from the lesson-writing gate. Never prescribe implementation in a product PRD.
+
+[Canonical state](../../tracking/state.json) · [Tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md).
