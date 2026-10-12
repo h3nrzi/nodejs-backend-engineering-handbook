@@ -1,7 +1,7 @@
 # P05 — SubscriptionHub: Live Event Subscription Console — Product Requirements
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** draft_pending_learner_review  
+**Status:** approved_by_learner  
 **Concept:** learner-approved on 2026-10-12  
 **PRD approval:** pending learner editorial review  
 **Implementation:** not started; no runtime, transport, persistence, framework or architecture selected
