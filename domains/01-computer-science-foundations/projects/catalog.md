@@ -1,6 +1,6 @@
 # D01 — Project candidate catalog
 
-**Status:** four differentiated concepts; P01 PRD approved; P02 PRD approved; P03 PRD drafted pending learner review; P04 remains a candidate. **No implementations started.**
+**Status:** Four differentiated product concepts; P01–P04 PRDs learner-approved at product-scope level. Open product decisions remain; no implementations started.
 
 These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a PRD is approved.
 
@@ -28,11 +28,11 @@ These are distinct product ideas with observable goals and target learning cover
 - **Engineering challenge:** capacity invariants under concurrency, unknown outcomes and recovery; **implementation strategy intentionally unspecified**.
 - **Learning coverage:** interleavings, atomicity, safety vs liveness, state machines, concurrency testing.
 - **Why worthwhile:** demonstrates correctness reasoning under contention; avoid overlap with commerce project by keeping it a general-purpose simulator.
-- **Next:** candidate for a product PRD after review.
+- **Next:** retain open product questions and choose for implementation only after a separate decision.
 
 ## P03 — Dependency Workflow Simulator
 
-**Draft PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-prd.md) — pending learner review.
+**Approved PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-prd.md) — learner-approved; open product questions remain.
 
 - **Problem:** complex activities depend on other activities; cycles and invalid transitions can make plans impossible to execute correctly.
 - **Users:** platform developers, engineering trainees, operations teams modeling workflows.
@@ -41,9 +41,11 @@ These are distinct product ideas with observable goals and target learning cover
 - **Engineering challenge:** dependency consistency, invalid graphs, scheduling constraints, state transition correctness.
 - **Learning coverage:** graphs, topological ordering, traversal, heaps/priority policy concepts, state machines and invariants.
 - **Why worthwhile:** distinct graph and correctness focus, with a later D10/D11 distributed implementation possible only as a separate scope decision.
-- **Next:** candidate PRD after review; no algorithm mandated.
+- **Next:** retain open product questions; no algorithm mandated.
 
 ## P04 — Large Dataset Processing Workspace
+
+**Approved PRD:** [Large Dataset Processing Workspace](p04-large-dataset-processing-workspace-prd.md) — learner-approved; open product questions remain.
 
 - **Problem:** teams need to process datasets bigger than available memory while retaining verifiable and recoverable results.
 - **Users:** data operations and backend developers processing large exports/imports.
@@ -57,7 +59,7 @@ These are distinct product ideas with observable goals and target learning cover
 ## Selection and overlap check
 
 - These four **candidates**, not commitments, cover different strengths: performance evaluation, concurrency correctness, graph/state reasoning and resource-limited I/O.
-- A future PRD should specify measurable acceptance boundaries, actors and edge cases more fully, without converting engineering challenges into a chosen technical solution.
+- All four PRDs specify observable behavior, requirements and acceptance criteria without selecting technical solutions. Some product thresholds and details are still open.
 - Check overlaps with D03 Node.js Internals, D07 Database Engineering and D10 Distributed Systems at selection time. No need to build all four.
 
 ## Portfolio differentiation review (2026-10-12)
@@ -67,4 +69,4 @@ These are distinct product ideas with observable goals and target learning cover
 - P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
 - P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
 
-All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 approved; P02 approved; P03 PRD pending review; P04 remains a candidate concept. Study assessments are deferred until the learner explicitly begins learning.
+All four PRDs are learner-approved for product scope, but the projects remain optional portfolio candidates. No implementation was selected or started. Outstanding product questions and numerical limits must be resolved before a Codex implementation handoff. Study assessments are deferred until the learner explicitly begins studying.
