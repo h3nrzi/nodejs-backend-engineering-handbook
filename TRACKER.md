@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapter 01 authored, awaiting learner editorial review (curriculum approved)  
+**Current authoring focus:** D03 — Chapter 02 authored, awaiting learner editorial review (Chapter 01 approved)  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) authored/in_review; 0 lessons learner-approved, Chapters 02–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) authored/in_review; 1 lesson learner-approved, Chapters 03–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. Review and explicitly approve or revise authored D03 Chapter 01. After chapter approval, author Chapter 02 only and request its editorial review. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. Review and explicitly approve or revise authored D03 Chapter 02. After chapter approval, author Chapter 03 only and request its editorial review. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -60,7 +60,7 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum is learner-approved and Chapter 01 awaits explicit learner editorial review.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapter 01 are learner-approved; Chapter 02 awaits explicit learner editorial review.
 
 ## Global coverage reconciliation — 2026-10-12
 
@@ -79,3 +79,9 @@ Curriculum blueprint approval → chapter-by-chapter lessons → project catalog
 Learner explicitly approved the 18-chapter curriculum in this chat. [Chapter 01 — Runtime Architecture and Execution Boundaries](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) authored and reviewed against quality gates, covering engine/host/native/OS responsibilities, process/thread/isolate, concurrency versus parallelism and submission/completion/observation. Three standalone educational examples executed on Node v26.4.0, V8 14.6.202.34-node.21, libuv 1.52.1, darwin/arm64, ESM. Outcomes and limitations are recorded in the lesson. No learner score or implemented product is claimed.
 
 **Coverage review:** D03-C01 added as authored/in_review, separately from 30 approved D01/D02 mappings and nine approved PRDs. Curriculum approval recorded; remaining 17 chapters not_started. Matrix, domain index and machine state reconciled in this change. Next: learner reviews Chapter 01 before Chapter 02 is authored. Catalog/PRDs follow lessons; assessment and implementation remain deferred.
+
+## D03 Chapter 01 approval and Chapter 02 — 2026-10-12
+
+Learner explicitly approved Chapter 01 in this chat. [Chapter 02 — Startup, Configuration and Runtime Identity](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) authored/in_review, covering launch identity, runtime versus application arguments, cwd versus module resources, configuration parsing, env-file precedence, startup options, preloads and failure stages. Four educational JavaScript fixtures checked in 16 execution scenarios on Node v26.4.0, darwin/arm64, ESM entries and CommonJS preload. Exact evidence and limits are in the lesson; no learner assessment or implemented product claimed.
+
+**Coverage review:** D03-C01 approved mapping and D03-C02 authored/in_review mapping reconciled with both lesson files, curriculum, domain index and state. Total authored mappings: 32, including 31 editorially approved and 1 in_review; D01/D02 project coverage unchanged. Chapters 03–18 not_started. Next: learner reviews Chapter 02, then Chapter 03 only. Catalog/PRDs and implementation remain not_started; assessment deferred.

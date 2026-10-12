@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 1 authored and in_review; 0 learner-approved; Chapters 02–18 not_started.  
+**Lessons:** 2 authored; Chapter 01 learner-approved, Chapter 02 in_review; Chapters 03–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -17,12 +17,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 ## Authored lessons
 
-1. [Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) — in_review; three educational examples executed on Node v26.4.0, darwin/arm64. Execution evidence is scoped to those fixtures and is separate from editorial approval, learner competence and project implementation.
+1. [Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) — approved_by_learner on 2026-10-12; three educational examples executed on Node v26.4.0, darwin/arm64. Execution evidence is scoped to those fixtures and is separate from editorial approval, learner competence and project implementation.
+
+2. [Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) — in_review; 16 educational execution scenarios passed on Node v26.4.0, darwin/arm64. No learner assessment or implemented product is claimed.
 
 ## Next action and handoff
 
-Learner reviews and approves or revises Chapter 01. After explicit chapter approval, author Chapter 02 only and request its editorial review. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Learner reviews and approves or revises Chapter 02. After explicit chapter approval, author Chapter 03 only and request its editorial review. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-12:** D03-C01 mapped as authored/in_review separately from the 30 approved D01/D02 lesson mappings. Remaining D03 chapters are planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-12:** D03-C01 mapped as approved and D03-C02 as authored/in_review; the 30 approved D01/D02 mappings remain unchanged. C03–C18 remain planned; no PRD, learner assessment or implementation evidence exists.

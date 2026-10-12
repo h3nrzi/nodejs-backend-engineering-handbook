@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_01",
+  "review": "pending_learner_review_D03_chapter_02",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 01 Runtime Architecture and Execution Boundaries (authored; in_review)",
-  "last_completed_step": "Learner approved D03 18-chapter curriculum; Chapter 01 authored, author quality review completed and three educational examples executed; coverage and trackers reconciled",
-  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md; after explicit approval, author Chapter 02 only and request editorial review.",
+  "active_deliverable": "D03 Chapter 02 Startup, Configuration and Runtime Identity (authored; in_review)",
+  "last_completed_step": "Learner approved D03 Chapter 01; Chapter 02 authored, author quality review completed and 16 educational execution scenarios passed; coverage and trackers reconciled",
+  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md; after explicit approval, author Chapter 03 only and request editorial review.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-01-review",
-      "question": "Approve or revise D03 Chapter 01 editorial content.",
+      "id": "D03-chapter-02-review",
+      "question": "Approve or revise D03 Chapter 02 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md"
+      "evidence": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md"
     }
   ],
   "current_implementation_project": null,
@@ -114,8 +114,8 @@
         "16": "not_started",
         "17": "not_started",
         "18": "not_started",
-        "01": "in_review",
-        "02": "not_started",
+        "01": "approved_by_learner",
+        "02": "in_review",
         "03": "not_started",
         "04": "not_started",
         "05": "not_started",
@@ -136,7 +136,22 @@
           "arch": "arm64",
           "module_context": "ESM (.mjs)",
           "limits": "One local environment; no learner assessment, project implementation or cross-platform guarantee."
+        },
+        "02": {
+          "status": "16_educational_execution_scenarios_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+          "checked_on": "2026-10-12",
+          "node": "v26.4.0",
+          "v8": "14.6.202.34-node.21",
+          "uv": "1.52.1",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "ESM entry (.mjs); CJS preload (.cjs)",
+          "limits": "One local environment; no learner assessment, project implementation or cross-platform guarantee."
         }
+      },
+      "chapter_approval_dates": {
+        "01": "2026-10-12"
       }
     },
     {
@@ -549,6 +564,18 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner explicitly approved D03 Chapter 01. Authored Chapter 02 only, checked official docs through Context7 and author quality gates; 16 educational execution scenarios passed. Chapter 02 submitted for learner review; Chapters 03–18 not_started; assessment and projects deferred. Reconciled matrix and both trackers.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+        "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -567,28 +594,29 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_chapter_01_authored_in_review",
+    "status": "reconciled_D03_chapter_01_approved_chapter_02_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "9a32a965c4bbea755d26d71ea4f6661df5042702",
+    "baseline_commit": "63624790caf7346e15041723c1007b3433f0d50b",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 31,
+    "chapter_mapping_count": 32,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
       "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "projects/coverage-matrix.md"
     ],
-    "mapping_change": "D03 curriculum approved and D03-C01 mapped as authored/in_review; D01/D02 30 approved mappings and 9 PRD entries unchanged; educational executions are not implemented-project evidence.",
-    "approved_chapter_mapping_count": 30,
+    "mapping_change": "D03-C01 editorial approval recorded and D03-C02 mapped as authored/in_review; D01/D02 30 approved mappings and 9 PRDs unchanged; no implemented-project evidence.",
+    "approved_chapter_mapping_count": 31,
     "in_review_chapter_mapping_count": 1
   }
 }

@@ -2,7 +2,7 @@
 
 **Status:** approved_by_learner — 18-chapter breadth, sequence and boundaries confirmed on 2026-10-12.  
 **Authored:** 2026-10-12.  
-**Lessons:** Chapter 01 authored and in_review; Chapters 02–18 not_started. This blueprint is not lesson content.  
+**Lessons:** Chapter 01 learner-approved; Chapter 02 authored/in_review; Chapters 03–18 not_started. This blueprint is not lesson content.  
 **Project catalog / PRDs / implementation:** not_started.  
 **Assessment:** deferred_until_learning_phase.
 
@@ -41,7 +41,7 @@ Separate documented public guarantees, source-level implementation observations 
 | 17 / D03-C17 | Runtime diagnostics and measurement | Inspector, CPU profiles, heap snapshots, diagnostic reports, perf_hooks loop delay/utilization, resource usage and controlled experiments; privacy/overhead caveats | Choose evidence for loop blocking, pool contention, memory retention or handle leaks; state limits of each measurement. | 03,10,14–16 |
 | 18 / D03-C18 | Integrated runtime case studies and transfer | Delayed callbacks, stalled pipeline, saturated native work, worker transfer bug, memory retention, module mismatch and incomplete shutdown; correlate competing explanations | Write a falsifiable diagnosis, evidence plan and limitations; review cross-domain boundaries and remaining gaps. | 01–17 |
 
-The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is authored and awaiting learner editorial review; Chapters 02–18 remain planned. No learner assessment or project implementation evidence is inferred.
+The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is learner-approved editorially; [Chapter 02 — Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) is authored/in_review; Chapters 03–18 remain planned. No learner assessment or project implementation evidence is inferred.
 
 ## Why this order
 
@@ -85,12 +85,12 @@ A runtime learning objective does not force a particular worker, stream, queue o
 ## Approval, tracking and next action
 
 1. **Completed 2026-10-12:** learner explicitly approved the 18-chapter breadth, sequence and domain boundaries.
-2. **Chapter 01 authored and in_review:** learner reviews it before Chapter 02 is authored. Curriculum approval does not automatically approve the lesson.
+2. **Chapter 01 approved; Chapter 02 authored/in_review:** learner reviews Chapter 02 before Chapter 03 authoring. Curriculum approval does not automatically approve any lesson.
 3. Reconcile the global coverage matrix whenever a lesson/project mapping changes, record it with both trackers, and keep planned versus authored/approved/evidenced progress separate.
 4. After lesson authoring: catalog review → separate product PRDs → coverage audit → domain content closure.
 5. Study assessments and project implementations remain deferred until explicitly initiated.
 
-**Pending editorial decision:** approve or revise Chapter 01. Its examples were run on Node v26.4.0 (environment and limits in the lesson); later examples must record their own exact versions and conditions. This does not mandate a project runtime.
+**Pending editorial decision:** approve or revise Chapter 02. The first two chapters’ examples were run on Node v26.4.0 (environment and limits in each lesson); later examples must record their own exact versions and conditions. This does not mandate a project runtime.
 
 ## Starting official references
 

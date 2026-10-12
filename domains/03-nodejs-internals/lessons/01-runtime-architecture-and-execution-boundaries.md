@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C01  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — explicitly confirmed on 2026-10-12.  
 **Curriculum approval:** learner confirmed the 18-chapter plan on 2026-10-12.  
 **Educational example execution:** see Section 14 for exact environment and observations.  
 **Assessment / project implementation:** deferred / not_started.
@@ -318,8 +318,8 @@ Additional official entry points for the next chapters: [Node API reference](htt
 | Edge cases and trade-offs | Read rejection, JS/native congestion, preparation cost, ownership/isolation and instrumentation limits. |
 | Exercises and answer guidance | Seven future-study exercises; no active assessment. |
 | References and version honesty | Official references, dated checks and exact execution manifest. |
-| Coverage and gaps | D03-C01 authored; not yet learner-approved. No PRD or implementation mapping. |
+| Coverage and gaps | D03-C01 authored and learner-approved editorially; no assessed competency or PRD/implementation mapping. |
 
 **Remaining coverage:** startup details → Chapter 02; loop/queue order → 03–04; events → 05; byte and file ownership → 06–07; stream internals → 08–09; pool contention → 10; Worker/process lifecycle and shared-memory synchronization → 11–12; runtime module loading → 13; V8/GC → 14; async context → 15; failure/shutdown → 16; detailed profiling → 17; integrated investigations → 18. This chapter does not claim exhaustive Node internals, native-addon safety or formal correctness.
 
-**Review outcome:** author quality-gate review completed; chapter submitted for learner editorial review. Next: learner approves or revises Chapter 01 before Chapter 02 is authored.
+**Review outcome:** author quality-gate review completed and learner editorial approval explicitly confirmed on 2026-10-12. Chapter 02 is now authored and awaiting its own review; learner assessment remains deferred.
