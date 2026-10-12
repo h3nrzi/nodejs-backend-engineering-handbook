@@ -2,7 +2,7 @@
 
 **Status:** five_concepts_approved_by_learner
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** approved concepts; PRD authoring one product at a time. [P01 ContractGuard PRD](p01-contractguard-api-data-contract-studio-prd.md) drafted pending learner review; P02–P05 PRDs not started.
+**Phase:** approved concepts; PRD authoring one product at a time. [P01 ContractGuard PRD](p01-contractguard-api-data-contract-studio-prd.md) approved (open decisions); [P02 DispatchDesk PRD](p02-dispatchdesk-multi-recipient-delivery-operations-prd.md) drafted pending review; P03–P05 not started.
 **Scope rule:** specify product users, problems, essential capabilities and distinct learning coverage; do not select framework, storage, hosting, APIs, implementation architecture or code.
 
 ## Selection principle
