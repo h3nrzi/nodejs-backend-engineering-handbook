@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "chapter_01_pending_learner_review",
+  "review": "chapter_02_pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 Chapter 01 editorial review",
-  "last_completed_step": "D02 curriculum approved and Chapter 01 drafted",
-  "next_action": "Learner reviews D02 Chapter 01 Values, Types and Coercion; revise or approve before Chapter 02.",
+  "active_deliverable": "D02 Chapter 02 editorial review",
+  "last_completed_step": "D02 Chapter 01 approved; Chapter 02 drafted",
+  "next_action": "Review D02 Chapter 02 before Chapter 03.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -57,7 +57,8 @@
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
-        "01": "drafted_pending_learner_review"
+        "01": "approved_by_learner",
+        "02": "drafted_pending_learner_review"
       }
     },
     {
