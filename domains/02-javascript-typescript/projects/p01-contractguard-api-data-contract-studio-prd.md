@@ -5,6 +5,8 @@
 **Concept:** approved by learner, 2026-10-12  
 **PRD approval:** learner-approved, 2026-10-12; product questions remain open  
 **Implementation:** not started; technical choices deliberately excluded
+**Approval boundary:** editorially approved problem, users, in/out/deferred scope and indispensable product behavior; detailed open policies do not block this approval.
+**Decision timing:** use installed Matt Pocock skills with Codex at this project's kickoff for unresolved first-version decisions; learner approves consequential choices and any scope change before dependent technical design.
 
 ## 1. Problem and motivation
 
@@ -80,7 +82,7 @@ Users can (a) express a contract unambiguously, (b) see whether a sample matches
 
 ## 8. Quality expectations
 
-Evaluation and reporting should provide understandable failure explanations, keyboard-usable workflows and clear loading/empty/error states. Contract/payload complexity, sample counts and report sizes require explicit product limits before implementation planning. The service must not execute code embedded in submitted examples or contract descriptions. User-controlled text is displayed safely. Personal and confidential sample-data handling requires documented retention, deletion and access rules.
+Evaluation and reporting should provide understandable failure explanations, keyboard-usable workflows and clear loading/empty/error states. Contract/payload complexity, sample counts and report sizes need explicit first-version product limits at Matt-guided project kickoff, with learner approval before design and implementation decisions that depend on those limits. The service must not execute code embedded in submitted examples or contract descriptions. User-controlled text is displayed safely. Personal and confidential sample-data handling requires documented retention, deletion and access rules.
 
 ## 9. Edge cases, failures and recovery
 
@@ -128,7 +130,7 @@ Evaluation and reporting should provide understandable failure explanations, key
 7. Visibility of sensitive samples; workspace ownership and reviewer roles.
 8. Are reusable contract fragments necessary for initial launch?
 
-Recommended starting defaults for review: internal engineering teams; guided authoring; explicit per-version extra-field policy; separate draft/published distinction; compare definitions plus saved examples with qualified conclusions. **These recommendations are not approved decisions yet.**
+Recommended starting defaults for review: internal engineering teams; guided authoring; explicit per-version extra-field policy; separate draft/published distinction; compare definitions plus saved examples with qualified conclusions. **These recommendations are not approved decisions yet.** They can be evaluated with Codex using installed Matt Pocock skills when the project starts; changes to the approved in/out scope require separate learner approval.
 
 ## 12. Explicit non-goals
 
