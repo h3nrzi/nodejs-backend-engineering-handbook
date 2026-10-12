@@ -3,7 +3,7 @@
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
 **Lesson chapters:** 01–14 approved; practical assessment not_started  
-**Project PRDs:** not_started  
+**Project PRDs:** P01 drafted / pending learner review; P02–P04 candidate only  
 **Implementation:** not_started
 
 ## Purpose
@@ -47,3 +47,7 @@ Curriculum plan approved. Chapter 10 awaits review. Project candidates remain un
 **Chapter 13:** [Backend Case-Study Workshop](lessons/13-backend-case-study-workshop.md) — draft, pending learner review.
 
 **Chapter 14:** [Assessment and Transfer](lessons/14-assessment-and-transfer.md) — approved by learner. The separate practical competency assessment is not complete.
+
+## Current project planning
+
+The [project catalog](projects/catalog.md) contains four distinct D01 candidates. The first behavior-only PRD, [P01 Workload & Complexity Observatory](projects/p01-workload-complexity-observatory-prd.md), is drafted and awaiting learner review. No implementation choices or product PRD approvals have been made. Practical assessments remain deferred until the explicit study phase.
