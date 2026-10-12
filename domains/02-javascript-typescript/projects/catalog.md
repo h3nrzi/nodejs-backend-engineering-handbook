@@ -1,8 +1,16 @@
 # D02 — JavaScript & TypeScript Project Catalog
 
-**Status:** five_concepts_approved_by_learner
+**Status:** content_complete_five_concepts_and_prds_approved
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** approved concepts; product PRDs authored sequentially. P01 ContractGuard, P02 DispatchDesk, P03 PolicyLens and [P04 PackagePassport](p04-packagepassport-integration-compatibility-registry-prd.md) learner-approved (product decisions remain open); [P05 SubscriptionHub PRD](p05-subscriptionhub-live-event-subscription-console-prd.md) drafted pending learner review.
+**Phase:** content-authoring complete. All five PRDs approved at product scope; unresolved product choices remain explicitly documented in each PRD.
+
+### Approved product PRDs
+
+1. [P01 — ContractGuard](p01-contractguard-api-data-contract-studio-prd.md)
+2. [P02 — DispatchDesk](p02-dispatchdesk-multi-recipient-delivery-operations-prd.md)
+3. [P03 — PolicyLens](p03-policylens-business-rule-decision-workspace-prd.md)
+4. [P04 — PackagePassport](p04-packagepassport-integration-compatibility-registry-prd.md)
+5. [P05 — SubscriptionHub](p05-subscriptionhub-live-event-subscription-console-prd.md)
 **Scope rule:** specify product users, problems, essential capabilities and distinct learning coverage; do not select framework, storage, hosting, APIs, implementation architecture or code.
 
 ## Selection principle
