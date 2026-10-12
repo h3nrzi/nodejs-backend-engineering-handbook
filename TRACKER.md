@@ -34,6 +34,6 @@ The learner is currently building the handbook, completing lesson content and se
 
 - Four distinct project concepts are documented in [catalog](domains/01-computer-science-foundations/projects/catalog.md): P01 performance experiments, P02 capacity races, P03 dependency workflows, P04 memory-bounded dataset processing.
 - [P01 Workload & Complexity Observatory PRD](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) is **approved by learner**, not implemented; unresolved product thresholds remain.
-- [P02 Concurrent Resource Allocation Simulator PRD](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md) is drafted pending learner review. P03–P04 remain candidate briefs.
-- **Next:** review P02 product scope and seven policy questions; revise/approve before P03.
+- [P02 Concurrent Resource Allocation Simulator PRD](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md) is approved by learner. [P03 Dependency Workflow Simulator PRD](domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md) is drafted pending learner review. P04 remains candidate only.
+- **Next:** review P03 product scope and eight open questions; revise/approve before P04.
 - No learner assessment should be initiated until the learner explicitly starts studying.
