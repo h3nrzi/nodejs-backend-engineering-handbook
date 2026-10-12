@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "content_ready_next_domain",
+  "review": "pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 curriculum blueprint draft",
-  "last_completed_step": "D01 lessons and four product-scope PRDs approved; repository status reconciled",
-  "next_action": "Author D02 JavaScript & TypeScript curriculum blueprint for learner review. Do not start studying, assessments or implementation.",
+  "active_deliverable": "D02 curriculum blueprint learner review",
+  "last_completed_step": "D02 16-chapter blueprint drafted",
+  "next_action": "Learner reviews D02 curriculum blueprint; revise or approve before starting Chapter 01.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -50,11 +50,15 @@
       "id": "D02",
       "name": "JavaScript & TypeScript",
       "slug": "javascript-typescript",
-      "status": "not_started",
+      "status": "in_progress",
       "lesson_status": "not_started",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
-      "source_outline": "prior_conversation_outline_only"
+      "source_outline": "prior_conversation_outline_only",
+      "curriculum_blueprint_status": "drafted_pending_learner_review",
+      "chapter_progress": {
+        "01-16": "not_started"
+      }
     },
     {
       "id": "D03",
@@ -362,6 +366,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/projects/catalog.md",
         "domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "D02 JavaScript & TypeScript sixteen-chapter curriculum blueprint drafted pending learner editorial review; no chapters, PRDs or implementation started",
+      "evidence": [
+        "domains/02-javascript-typescript/curriculum.md",
+        "domains/02-javascript-typescript/README.md"
       ]
     }
   ]
