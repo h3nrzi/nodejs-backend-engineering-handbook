@@ -1,7 +1,7 @@
 # Chapter 03 — Functions and Invocation
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Study and assessment:** deferred until the learner explicitly begins studying  
 **Example execution:** not independently verified
 
