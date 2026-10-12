@@ -21,3 +21,7 @@
 ## AI-to-AI handoff
 
 Before finishing, persist current task, status, exact file paths, links, open questions, decisions approved by learner, evidence and next action in `tracking/state.json` and `TRACKER.md`. Unanswered Codex questions belong in external project notes and may be summarized/link-referenced here. No implied approvals. Handoff works from the repo alone, without conversation memory.
+
+## Separate authoring from studying (2026-10-12)
+
+The learner's current phase is **content authoring and portfolio-project planning**, not personal study. During authoring, finish domain lessons, project catalogs, implementation-neutral PRDs and trackers. The exercises and assessment rubric in Chapter 14 remain ready for future use but are **deferred**. Do not initiate, grade or require any learner quiz, practical defense or assessment evidence unless the learner explicitly starts the study phase. Domain chapter editorial approval does not certify competence. Keep project architecture/technical implementation decisions in separate Codex workflows.
