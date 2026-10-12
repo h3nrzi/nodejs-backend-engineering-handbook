@@ -1,6 +1,6 @@
 # P03 — PolicyLens PRD
 
-**Status:** draft_pending_learner_review
+**Status:** approved_by_learner
 
 ## Product overview
 Policy authors define versioned, restricted (non-executable) business rules; analysts evaluate cases and see an allowed/denied/needs_review decision with matched-rule explanation. Reviewers publish immutable versions; auditors inspect historical decisions and compare version changes.
