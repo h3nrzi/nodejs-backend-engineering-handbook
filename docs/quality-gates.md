@@ -16,11 +16,12 @@
 
 ## Project catalog / PRD
 
-- Distinct real problem, audience, value, clear in/out scope and user journeys.
-- Functional requirements, observable nonfunctional requirements, measurable invariants, failure/recovery behavior, acceptance cases.
+- Distinct real problem, audience, value, explicit **in / out / deferred scope** and core user journeys. The boundary of what gets built is the primary approval criterion.
+- Sufficient functional requirements, essential observable invariants and acceptance cases to explain the intended product. Do not require every numeric limit, exception policy or technical-dependent choice to be decided in the handbook.
 - PRD must avoid prescribing architecture, data stores, infrastructure, libraries, algorithms, queues, locks, topology, deployment or directory layout.
 - Engineering challenges may be named without specifying mechanisms. No technical solution hidden as a nonfunctional requirement.
-- Review ambiguous/untestable criteria and scope creep before approval.
+- Review ambiguity that affects **what product is being built**, in/out scope or non-negotiable behavior before approval. Identify narrower unanswered details explicitly for the later Matt-guided project kickoff; unresolved minutiae alone do not block editorial approval.
+- At implementation kickoff, use installed Matt Pocock skills and learner review to resolve product behaviors that are necessary for the selected first version **before** dependent technical decisions. Preserve the approved scope and require user approval for any expansion.
 
 ## Tracking
 
