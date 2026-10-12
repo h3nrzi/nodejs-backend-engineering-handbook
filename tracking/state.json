@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-12",
-  "phase": "domain_authoring",
-  "review": "pending_learner_review",
+  "phase": "domain_assessment",
+  "review": "assessment_not_started",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 14 learner review",
-  "last_completed_step": "D01 Chapter 14 drafted",
-  "next_action": "Learner reviews Chapter 14, then review the completed lesson series separately from outstanding assessment evidence and project PRDs.",
+  "active_deliverable": "D01 practical assessment evidence",
+  "last_completed_step": "D01 all 14 lessons approved by learner",
+  "next_action": "Collect and review D01 Chapter 14 assessment evidence; keep project PRDs and implementation not_started.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -17,7 +17,7 @@
       "name": "Computer Science Foundations",
       "slug": "computer-science-foundations",
       "status": "in_progress",
-      "lesson_status": "in_progress",
+      "lesson_status": "completed",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
@@ -27,7 +27,7 @@
         "11": "approved_by_learner",
         "12": "approved_by_learner",
         "13": "approved_by_learner",
-        "14": "drafted_pending_review",
+        "14": "approved_by_learner",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -308,6 +308,13 @@
       "event": "Learner approved Chapter 13; Chapter 14 authored, pending review",
       "evidence": [
         "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+        "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 14; all 14 D01 lessons approved; practical assessment and project PRDs remain outstanding",
+      "evidence": [
         "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
       ]
     }
