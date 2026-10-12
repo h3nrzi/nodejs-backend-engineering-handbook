@@ -1,10 +1,10 @@
 # Domain roadmap
 
-This is a curriculum **index**, not completed educational content. Status is tracked separately for content, PRDs, assessments and implementation. D01 and D02 authored content is complete at learner-approved editorial scope; study assessments and implementations are deferred. D03 curriculum and Chapters 01–07 are learner-approved; Chapter 08 is authored/in_review. Earlier chat outlines alone do not count as lessons.
+This is a curriculum **index**, not completed educational content. Status is tracked separately for content, PRDs, assessments and implementation. D01 and D02 authored content is complete at learner-approved editorial scope; study assessments and implementations are deferred. D03 curriculum and Chapters 01–08 are learner-approved; Chapter 09 is authored/in_review. Earlier chat outlines alone do not count as lessons.
 
 - [x] **D01** — Computer Science Foundations (14 lessons and 4 product-scope PRDs approved; assessment deferred) (`domains/01-computer-science-foundations/README.md`)
 - [x] **D02** — JavaScript & TypeScript (16 lessons, 5 project concepts and 5 product-scope PRDs approved; open product decisions; assessment and implementation deferred) (`domains/02-javascript-typescript/README.md`)
-- [ ] **D03** — Node.js Internals (18-chapter curriculum approved; Chapters 01–07 approved; Chapter 08 in_review; Chapters 09–18 and projects not started) (`domains/03-nodejs-internals/README.md`)
+- [ ] **D03** — Node.js Internals (18-chapter curriculum approved; Chapters 01–08 approved; Chapter 09 in_review; Chapters 10–18 and projects not started) (`domains/03-nodejs-internals/README.md`)
 - [ ] **D04** — Network & Protocol Engineering (`domains/04-network-protocol-engineering/README.md`)
 - [ ] **D05** — API Engineering (`domains/05-api-engineering/README.md`)
 - [ ] **D06** — Software Architecture (`domains/06-software-architecture/README.md`)

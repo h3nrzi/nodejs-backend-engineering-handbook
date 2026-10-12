@@ -1,8 +1,8 @@
 # Handbook progress tracker
 
-**Updated:** 2026-10-12  
+**Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–07 learner-approved; Chapter 08 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–08 learner-approved; Chapter 09 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 7 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) approved_by_learner; [Chapter 04](domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) approved_by_learner; [Chapter 05](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) approved_by_learner; [Chapter 06](domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md) approved_by_learner; [Chapter 07](domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md) approved_by_learner; [Chapter 08](domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md) authored/in_review; Chapters 09–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 8 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) approved_by_learner; [Chapter 04](domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) approved_by_learner; [Chapter 05](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) approved_by_learner; [Chapter 06](domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md) approved_by_learner; [Chapter 07](domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md) approved_by_learner; [Chapter 08](domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md) approved_by_learner; [Chapter 09](domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md) authored/in_review; Chapters 10–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. D03 Chapters 01–07 learner-approved; review Chapter 08 — Readable and Writable Stream Mechanics — before authoring Chapter 09 only; Chapter 09 is blocked on explicit learner approval of Chapter 08. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. D03 Chapters 01–08 learner-approved; review Chapter 09 — Pipelines, Transforms and Cancellation — before authoring Chapter 10 only; explicit Chapter 09 approval is required. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -60,7 +60,7 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–06 are learner-approved; Chapter 07 is authored/in_review.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–08 are learner-approved; Chapter 09 is authored/in_review.
 
 ## Global coverage reconciliation — 2026-10-12
 
@@ -131,3 +131,13 @@ The learner explicitly instructed this chat to record approval of [Chapter 07 �
 **Mandatory coverage review:** D03-C07 approved crosswalk added; D03-C08 separately mapped as authored/in_review. Matrix, both lesson statuses, curriculum, root/domain indexes and canonical state reconciled together. Total authored mappings 38: 37 approved, 1 in_review. D01/D02 thirty approved mappings and nine PRDs unchanged. Chapters 09–18 not_started; catalog/PRDs and implementation not_started; assessment deferred. No project architecture or implementation selected.
 
 **Handoff:** active domain D03, active deliverable Chapter 08/in_review; no technical blockers. Only pending question: learner editorial approval/revision of Chapter 08. Do not author Chapter 09 until explicit approval. Verified baseline: `c08dd49767761ca9662749f59792518e7615fb39`; resulting change is identified by its containing Git commit.
+
+## D03 Chapter 08 explicit approval and Chapter 09 — 2026-10-13
+
+Learner explicitly confirmed “تایید بریم بعدی” in this chat after the Chapter 08 review handoff. [Chapter 08](domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md) transitioned `in_review → approved_by_learner` on 2026-10-13. [Chapter 09 — Pipelines, Transforms and Cancellation](domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md) authored in English: `not_started → in_progress → drafted → in_review`. Only Chapter 09 was authored.
+
+**Evidence:** five exact lesson blocks passed fifteen standalone ESM scenarios on Node v26.4.0, V8 14.6.202.34-node.21, libuv 1.52.1, darwin/arm64. Source/transform/sink/flush failures, generator abort/finally, finished wait-abort versus stream operation, premature close, iterator ownership and Web conversion/cancellation checked. The final examples incorporate observed AggregateError abort causes and retained fromWeb locks. Commands/results/limits are in Chapter 09 Section 13. Official pinned API documents and Context7 checked; author quality gates reviewed. Logical resource release is not a real descriptor/transport test.
+
+**Coverage reconciliation:** D03-C08 approved crosswalk added; D03-C09 separately mapped as authored/in_review. Both lessons, curriculum, domain/root indexes, matrix and canonical state reconciled in this change. Total authored mappings 39: 38 approved, 1 in_review. D01/D02 thirty approved mappings and nine product PRDs preserved; no assessed competency or external implementation evidence.
+
+**Handoff:** baseline `b6f1b6e097774b0da1d857ba3162aea00fd8058e`; resulting change identified by its containing commit. D03 active, Chapter 09/in_review; no technical blockers. Pending decision: approve/revise Chapter 09. Chapters 10–18 remain not_started; do not author Chapter 10 until explicit learner approval. Catalog/PRDs and implementation not_started; assessment deferred. No project architecture or implementation decisions made.

@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 8 authored: Chapters 01–07 learner-approved; Chapter 08 in_review; Chapters 09–18 not_started.  
+**Lessons:** 9 authored: Chapters 01–08 learner-approved; Chapter 09 in_review; Chapters 10–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -31,12 +31,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 7. [Chapter 07 — Filesystem I/O and Resource Ownership](lessons/07-filesystem-io-and-resource-ownership.md) — approved_by_learner on 2026-10-12; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Temporary-file cleanup verified after every scenario; partial-write fault injection labeled. No learner assessment, cross-platform durability or implemented product claimed.
 
-8. [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) — authored/in_review; thirteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Bounded pressure, accounting and lifecycle assertions verified; no actual network/descriptor, memory bound, learner assessment or implemented product claimed.
+8. [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) — approved_by_learner on 2026-10-13; thirteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Bounded pressure, accounting and lifecycle assertions verified; no actual network/descriptor, memory bound, learner assessment or implemented product claimed.
+
+9. [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) — authored/in_review; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Stage/flush failure, cooperative cancellation, finished observation, early iterator exit and Node/Web adapter outcomes checked; no real transport/descriptor, rollback, learner assessment or product implementation claim.
 
 ## Next action and handoff
 
-Chapters 01–07 are learner-approved. Review Chapter 08 — Readable and Writable Stream Mechanics — before authoring Chapter 09. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–08 are learner-approved. Review Chapter 09 — Pipelines, Transforms and Cancellation — before authoring Chapter 10; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-12:** D03-C01 through D03-C07 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C08 is mapped separately as authored/in_review; C09–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C08 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C09 is mapped separately as authored/in_review; C10–C18 remain planned; no PRD, learner assessment or implementation evidence exists.

@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C08  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — explicit approval recorded on 2026-10-13.  
 **Prerequisite review:** learner explicitly approved Chapter 07 on 2026-10-12.  
 **Educational execution:** Section 12 records executed fixtures and limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -361,10 +361,10 @@ Future self-assessment: explain all fixture outcomes, distinguish source/sink/re
 - [x] Backend symptoms, async-listener concurrency and aliasing.
 - [x] Executable examples, expected/observed evidence and version limits.
 - [x] Exercises/rubric, references and coverage reconciliation.
-- [ ] Learner editorial approval — pending.
+- [x] Learner editorial approval — explicit confirmation on 2026-10-13.
 
 Gaps: no exhaustive API inventory, `_writev`/cork tuning, native C++ stream internals, production recovery or assessed competency. Transform/Duplex composition, pipeline/finished, cancellation, early consumer exit and Node/Web interoperability belong to Chapter 09. D03 catalog/PRDs and implementation remain not_started.
 
-**Author review outcome — 2026-10-12:** checked against `docs/quality-gates.md` and the approved D03-C08 scope. Progressive teaching, consumption/accounting/pressure mechanisms, finite failure and lifecycle examples, references, exercises and evidence limits are present. The four exact code blocks passed thirteen scenarios; canonical state, indexes and coverage matrix reconciled. Editorial approval remains pending.
+**Author review outcome — 2026-10-12:** checked against `docs/quality-gates.md` and the approved D03-C08 scope. Progressive teaching, consumption/accounting/pressure mechanisms, finite failure and lifecycle examples, references, exercises and evidence limits are present. The four exact code blocks passed thirteen scenarios; canonical state, indexes and coverage matrix reconciled. Learner editorial approval recorded on 2026-10-13.
 
-**Next action:** learner reviews Chapter 08. Do not start Chapter 09 before explicit approval.
+**Review outcome:** learner explicitly approved Chapter 08 on 2026-10-13. Chapter 09 is now authored/in_review; review Chapter 09 before Chapter 10.

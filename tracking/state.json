@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-12",
+  "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_08",
+  "review": "pending_learner_review_D03_chapter_09",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 08 Readable and Writable Stream Mechanics (authored; in_review)",
-  "last_completed_step": "Recorded explicit learner approval of D03 Chapter 07; authored Chapter 08 only with thirteen verified educational execution scenarios; reconciled matrix, trackers and indexes.",
-  "next_action": "Learner reviews and explicitly approves or revises domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md; do not start Chapter 09 before explicit approval.",
+  "active_deliverable": "D03 Chapter 09 Pipelines, Transforms and Cancellation (authored; in_review)",
+  "last_completed_step": "Recorded explicit Chapter 08 learner approval; authored Chapter 09 only with fifteen verified educational scenarios, including observed cancellation aggregation and adapter lock states; reconciled coverage, trackers and indexes.",
+  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md; do not start Chapter 10 before explicit approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-08-review",
-      "question": "Approve or revise D03 Chapter 08 editorial content. Chapter 09 cannot start before explicit approval.",
+      "id": "D03-chapter-09-review",
+      "question": "Approve or revise Chapter 09 editorial content before authoring Chapter 10.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md"
+      "evidence": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md"
     }
   ],
   "current_implementation_project": null,
@@ -121,8 +121,8 @@
         "05": "approved_by_learner",
         "06": "approved_by_learner",
         "07": "approved_by_learner",
-        "08": "in_review",
-        "09": "not_started"
+        "08": "approved_by_learner",
+        "09": "in_review"
       },
       "chapter_execution_evidence": {
         "01": {
@@ -222,6 +222,18 @@
           "arch": "arm64",
           "module_context": "Standalone ESM (.mjs) child processes",
           "limits": "One local environment; finite synthetic sinks, pressure/accounting and logical cleanup assertions. Intentional errors asserted. No real socket/descriptor, RSS bound, cross-platform guarantee, learner assessment or implemented product."
+        },
+        "09": {
+          "status": "15_educational_execution_scenarios_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+          "checked_on": "2026-10-13",
+          "node": "v26.4.0",
+          "v8": "14.6.202.34-node.21",
+          "uv": "1.52.1",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "Standalone ESM (.mjs) child processes",
+          "limits": "Finite local synthetic streams and logical resource counters; error/cancellation, listener cleanup, iterator and Web adapter outcomes checked. Aggregate abort error and retained fromWeb locks scoped to this version. No actual transport/descriptor, rollback, heap proof, cross-platform result, learner assessment or product implementation."
         }
       },
       "chapter_approval_dates": {
@@ -231,7 +243,8 @@
         "04": "2026-10-12",
         "05": "2026-10-12",
         "06": "2026-10-12",
-        "07": "2026-10-12"
+        "07": "2026-10-12",
+        "08": "2026-10-13"
       }
     },
     {
@@ -752,6 +765,21 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Explicit learner confirmation of Chapter 08: in_review → approved_by_learner. Authored Chapter 09 only: not_started → in_progress → drafted → in_review. Five exact lesson blocks passed fifteen educational scenarios; documented observed AggregateError cancellation and retained adapter locks. Context7/pinned official docs and quality gates checked; coverage matrix, trackers and indexes reconciled. Chapter 10 not_started until explicit Chapter 09 approval; no project decisions or implementation.",
+      "approval_source": "Current user message: تایید بریم بعدی, following Chapter 08 review handoff.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+        "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -769,24 +797,24 @@
     "status": "learner_agreed_2026-10-12"
   },
   "coverage_matrix_review": {
-    "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_chapter_07_approved_chapter_08_in_review",
+    "reviewed_on": "2026-10-13",
+    "status": "reconciled_D03_chapter_08_approved_chapter_09_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "c08dd49767761ca9662749f59792518e7615fb39",
+    "baseline_commit": "b6f1b6e097774b0da1d857ba3162aea00fd8058e",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 38,
+    "chapter_mapping_count": 39,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
       "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
@@ -794,8 +822,8 @@
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C07 approved crosswalk added; D03-C08 separately mapped as authored/in_review. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 37,
+    "mapping_change": "D03-C08 approved crosswalk added; D03-C09 separately mapped as authored/in_review. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
+    "approved_chapter_mapping_count": 38,
     "in_review_chapter_mapping_count": 1
   }
 }
