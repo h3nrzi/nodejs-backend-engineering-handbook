@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C03  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — learner authorized progression after the Chapter 03 review request on 2026-10-12.  
 **Prerequisite review:** learner authorized progression after the Chapter 02 review request on 2026-10-12; Chapter 02 is recorded as editorially approved.  
 **Educational execution:** Section 14 records actual tests and their limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -308,6 +308,6 @@ Additional official references: [process](https://github.com/nodejs/node/blob/ma
 | Practical examples | Three executed fixtures; seven checked scenarios. |
 | Exercises and answers | Seven future-study exercises; no present grading. |
 | Version/reference honesty | Exact execution manifest and qualified libuv timer-placement change. |
-| Coverage and gaps | D03-C03 authored/in_review; Chapters 01–02 editorially approved; no PRD or project evidence. |
+| Coverage and gaps | D03-C03 approved_by_learner; Chapters 01–03 editorially approved; no PRD or project evidence. |
 
-**Review outcome:** author quality-gate review completed; Chapter 03 submitted for learner editorial review. Next: learner approves or revises Chapter 03 before Chapter 04 is authored.
+**Review outcome:** author quality-gate review completed; learner authorized progression after the Chapter 03 review request on 2026-10-12. Chapter 03 is editorially approved. Next: Chapter 04 — Scheduling Queues and Timers — is authored/in_review and requires learner review before Chapter 05.

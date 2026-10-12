@@ -2,7 +2,7 @@
 
 **Status:** approved_by_learner — 18-chapter breadth, sequence and boundaries confirmed on 2026-10-12.  
 **Authored:** 2026-10-12.  
-**Lessons:** Chapters 01–02 learner-approved; Chapter 03 authored/in_review; Chapters 04–18 not_started. This blueprint is not lesson content.  
+**Lessons:** Chapters 01–03 learner-approved; Chapter 04 authored/in_review; Chapters 05–18 not_started. This blueprint is not lesson content.  
 **Project catalog / PRDs / implementation:** not_started.  
 **Assessment:** deferred_until_learning_phase.
 
@@ -41,7 +41,7 @@ Separate documented public guarantees, source-level implementation observations 
 | 17 / D03-C17 | Runtime diagnostics and measurement | Inspector, CPU profiles, heap snapshots, diagnostic reports, perf_hooks loop delay/utilization, resource usage and controlled experiments; privacy/overhead caveats | Choose evidence for loop blocking, pool contention, memory retention or handle leaks; state limits of each measurement. | 03,10,14–16 |
 | 18 / D03-C18 | Integrated runtime case studies and transfer | Delayed callbacks, stalled pipeline, saturated native work, worker transfer bug, memory retention, module mismatch and incomplete shutdown; correlate competing explanations | Write a falsifiable diagnosis, evidence plan and limitations; review cross-domain boundaries and remaining gaps. | 01–17 |
 
-The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is learner-approved editorially; [Chapter 02 — Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) is learner-approved editorially; [Chapter 03 — The Event Loop and I/O Lifecycle](lessons/03-event-loop-and-io-lifecycle.md) is authored/in_review; Chapters 04–18 remain planned. No learner assessment or project implementation evidence is inferred.
+The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is learner-approved editorially; [Chapter 02 — Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) is learner-approved editorially; [Chapter 03 — The Event Loop and I/O Lifecycle](lessons/03-event-loop-and-io-lifecycle.md) is learner-approved editorially; [Chapter 04 — Scheduling Queues and Timers](lessons/04-scheduling-queues-and-timers.md) is authored/in_review; Chapters 05–18 remain planned. No learner assessment or project implementation evidence is inferred.
 
 ## Why this order
 
@@ -85,12 +85,12 @@ A runtime learning objective does not force a particular worker, stream, queue o
 ## Approval, tracking and next action
 
 1. **Completed 2026-10-12:** learner explicitly approved the 18-chapter breadth, sequence and domain boundaries.
-2. **Chapters 01 and 02 approved; Chapter 03 authored/in_review:** request learner review before authoring Chapter 04. Curriculum approval does not automatically approve any lesson.
+2. **Chapters 01–03 approved; Chapter 04 authored/in_review:** request learner review before authoring Chapter 05. Curriculum approval does not automatically approve any lesson.
 3. Reconcile the global coverage matrix whenever a lesson/project mapping changes, record it with both trackers, and keep planned versus authored/approved/evidenced progress separate.
 4. After lesson authoring: catalog review → separate product PRDs → coverage audit → domain content closure.
 5. Study assessments and project implementations remain deferred until explicitly initiated.
 
-**Pending editorial review:** Chapter 03 — The Event Loop and I/O Lifecycle. After approval, author Chapter 04 only. The first three chapters’ examples were run on Node v26.4.0 (environment and limits in each lesson); later examples must record their own exact versions and conditions. This does not mandate a project runtime.
+**Pending editorial review:** Chapter 04 — Scheduling Queues and Timers. After approval, author Chapter 05 only. The first four chapters’ examples were run on Node v26.4.0 (environment and limits in each lesson); later examples must record their own exact versions and conditions. This does not mandate a project runtime.
 
 ## Starting official references
 
