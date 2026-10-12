@@ -5,9 +5,9 @@
   "review": "content_authoring",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 P01 product PRD review",
-  "last_completed_step": "D01 P01 PRD drafted, project differentiation reviewed",
-  "next_action": "Learner reviews P01 Workload & Complexity Observatory PRD and product scope; revise before approval, then proceed to P02 PRD.",
+  "active_deliverable": "D01 P02 product PRD learner review",
+  "last_completed_step": "D01 P01 PRD approved; P02 PRD drafted",
+  "next_action": "Learner reviews P02 Concurrent Resource Allocation Simulator scope and seven product policy questions; revise or approve before P03 PRD.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -40,8 +40,8 @@
       },
       "assessment_status": "deferred_until_learning_phase",
       "project_progress": {
-        "P01": "prd_drafted_pending_learner_review",
-        "P02": "candidate_only",
+        "P01": "prd_approved_by_learner_open_questions_remain",
+        "P02": "prd_drafted_pending_learner_review",
         "P03": "candidate_only",
         "P04": "candidate_only"
       }
@@ -338,6 +338,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/projects/catalog.md",
         "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved P01 PRD; P02 Concurrent Resource Allocation Simulator PRD drafted pending learner review",
+      "evidence": [
+        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md",
+        "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md"
       ]
     }
   ]
