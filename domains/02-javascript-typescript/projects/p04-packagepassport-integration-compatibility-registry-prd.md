@@ -5,6 +5,8 @@
 **Concept:** approved by learner on 2026-10-12  
 **PRD approval:** learner-approved on 2026-10-12; open product decisions remain  
 **Implementation:** not started; no stack, architecture or dependency-resolution technology selected
+**Editorial product boundary:** problem, users, in/out/deferred scope and essential observable behavior are learner-approved; incidental policies and numerical limits may remain open.
+**Matt/Codex kickoff:** choose necessary first-version details through the installed Matt Pocock skill workflow with explicit learner approval; preserve approved non-goals and obtain separate approval for any scope change before dependent technical design.
 
 ## 1. Problem and motivation
 
@@ -160,7 +162,7 @@ A user should be able to interpret compatibility reports without specialized kno
 11. What minimum data permits describing a release as documented rather than merely registered?
 12. How should release authenticity and ownership claims be represented without implying verification not performed by the product?
 
-**Suggested starting defaults, not approved:** internal packages first; a small explicit environment vocabulary; separate claimed support from manually documented observations; uncertainty preserved; versioned immutable public records; compare two releases without automatic compatibility guarantees.
+**Suggested starting defaults, not approved:** internal packages first; a small explicit environment vocabulary; separate claimed support from manually documented observations; uncertainty preserved; versioned immutable public records; compare two releases without automatic compatibility guarantees. Initial audience, evidence policy and environment dimensions will be chosen at Matt-guided project kickoff, with explicit learner approval and no change to the approved product boundary.
 
 ## 12. Explicit non-goals
 
