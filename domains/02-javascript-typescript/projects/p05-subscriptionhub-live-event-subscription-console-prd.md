@@ -5,6 +5,8 @@
 **Concept:** learner-approved on 2026-10-12  
 **PRD approval:** learner-approved on 2026-10-12; open product decisions remain  
 **Implementation:** not started; no runtime, transport, persistence, framework or architecture selected
+**Editorial product boundary:** problem, users, in/out/deferred scope and essential observable behavior are learner-approved; incidental policies and numerical limits may remain open.
+**Matt/Codex kickoff:** choose necessary first-version details through the installed Matt Pocock skill workflow with explicit learner approval; preserve approved non-goals and obtain separate approval for any scope change before dependent technical design.
 
 ## 1. Problem and motivation
 
@@ -187,7 +189,7 @@ Users need product-approved bounds for active subscriptions per account, event p
 13. Are manual source definitions acceptable at launch, and who may attest to claimed source guarantees?
 14. How should timestamps and timezones be presented for consumers in different locations?
 
-**Recommended initial defaults for learner review—not approved:** one bounded business-event domain; one source per subscription; explicit event identity and coverage metadata where source-provided; conservative unknown-coverage reporting; a documented pause/resume policy; limited retained history; and observed-count summaries rather than unsupported completeness guarantees.
+**Recommended initial defaults for later learner review—not approved:** one bounded business-event domain; one source per subscription; explicit event identity and coverage metadata where source-provided; conservative unknown-coverage reporting; a documented pause/resume policy; limited retained history; and observed-count summaries rather than unsupported completeness guarantees. Use installed Matt Pocock skills with Codex at this project's kickoff to resolve first-version policies; none of these unresolved choices authorizes changing the approved subscription-console boundary.
 
 ## 13. Explicit non-goals
 
