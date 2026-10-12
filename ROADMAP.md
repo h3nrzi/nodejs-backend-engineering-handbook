@@ -1,9 +1,9 @@
 # Domain roadmap
 
-This is a curriculum **index**, not completed educational content. Every domain starts as `not_started`. Earlier chat discussions of D01–D10 were high-level outlines only.
+This is a curriculum **index**, not completed educational content. Status is tracked separately for content, PRDs, assessments and implementation. D01 authored content is complete; D02 curriculum is drafted pending review. Earlier chat outlines alone do not count as lessons.
 
-- [ ] **D01** — Computer Science Foundations (`domains/01-computer-science-foundations/README.md`)
-- [ ] **D02** — JavaScript & TypeScript (`domains/02-javascript-typescript/README.md`)
+- [x] **D01** — Computer Science Foundations (14 lessons and 4 product-scope PRDs approved; assessment deferred) (`domains/01-computer-science-foundations/README.md`)
+- [ ] **D02** — JavaScript & TypeScript (`domains/02-javascript-typescript/README.md`; curriculum draft pending review)
 - [ ] **D03** — Node.js Internals (`domains/03-nodejs-internals/README.md`)
 - [ ] **D04** — Network & Protocol Engineering (`domains/04-network-protocol-engineering/README.md`)
 - [ ] **D05** — API Engineering (`domains/05-api-engineering/README.md`)
