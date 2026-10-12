@@ -1,7 +1,7 @@
 # Chapter 06 — Modules and Package Boundaries
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Assessment:** deferred until the learner explicitly starts studying  
 **Examples:** educational, not independently executed
 
