@@ -1,8 +1,8 @@
 # PRD P02 — Concurrent Resource Allocation Simulator
 
 **Domain:** D01 — Computer Science Foundations  
-**Status:** draft_pending_learner_review  
-**Product approval:** pending  
+**Status:** approved_by_learner  
+**Product approval:** approved 2026-10-12  
 **Implementation:** not started  
 **Boundary:** This document specifies user-visible product rules only; no algorithm, locking strategy, storage technology, queue, framework, or topology is prescribed.
 
@@ -204,6 +204,6 @@ Distinct from P01 performance methodology, P03 graph workflow planning and P04 b
 ## 14. Approval record
 
 - Draft authored 2026-10-12.
-- **Learner product approval:** pending.
+- **Learner product approval:** confirmed 2026-10-12; open product questions remain for later resolution.
 - **Architecture and implementation:** not started.
 - **Next:** review policy questions and acceptance scope. After explicit approval, prepare P03 PRD as a separate step.
