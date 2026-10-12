@@ -2,7 +2,7 @@
 
 A curated backend-engineering curriculum and portfolio product-specification catalog.
 
-**Current phase:** Content authoring and project planning. **D01:** 14/14 lessons and 4/4 product-scope PRDs approved. **D02:** 16/16 lessons and 5/5 product-scope PRDs approved. Open product questions remain in both domains. **Learning assessments:** deferred until the learner explicitly starts studying. **Implementations:** none started. **Current authoring domain:** D03 — Node.js Internals (18-chapter curriculum learner-approved; Chapter 01 approved, Chapter 02 authored and awaiting learner editorial review; Chapters 03–18 not started).
+**Current phase:** Content authoring and project planning. **D01:** 14/14 lessons and 4/4 product-scope PRDs approved. **D02:** 16/16 lessons and 5/5 product-scope PRDs approved. Open product questions remain in both domains. **Learning assessments:** deferred until the learner explicitly starts studying. **Implementations:** none started. **Current authoring domain:** D03 — Node.js Internals (18-chapter curriculum learner-approved; Chapters 01–02 learner-approved; Chapter 03 next to author, Chapters 03–18 not started).
 
 ## Start here
 
@@ -12,7 +12,7 @@ A curated backend-engineering curriculum and portfolio product-specification cat
 4. [Authoring and implementation workflow](docs/workflow.md)
 5. [D01 — Computer Science Foundations](domains/01-computer-science-foundations/README.md) and its [four-project catalog](domains/01-computer-science-foundations/projects/catalog.md)
 6. [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/README.md) and its [five approved project PRDs](domains/02-javascript-typescript/projects/catalog.md)
-7. [D03 — Node.js Internals](domains/03-nodejs-internals/README.md) — current lesson-authoring domain; [Chapter 02 pending learner review](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md)
+7. [D03 — Node.js Internals](domains/03-nodejs-internals/README.md) — current lesson-authoring domain; [Chapter 02 approved](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md); Chapter 03 authoring next
 8. [Engineering competency coverage matrix](projects/coverage-matrix.md) — chapter-to-project mapping and evidence gaps
 
 ## Product PRDs in D01
