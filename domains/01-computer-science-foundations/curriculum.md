@@ -1,7 +1,9 @@
 # D01 Curriculum blueprint — Computer Science Foundations
 
-**Status:** drafted for learner review; NOT lesson content.  
+**Status:** approved curriculum plan; NOT itself lesson content. Chapter 01 draft is linked below.  
 **Plan:** write one self-contained chapter at a time from first principles to advanced cases. Every chapter must include explanations, worked examples, JavaScript/TypeScript exercises where relevant, counterexamples, reference readings, checkpoints and explicit links to backend scenarios.
+
+[Chapter 01 — Cost Models and Correctness (draft)](lessons/01-cost-models-and-correctness.md)
 
 ## Learning progression
 

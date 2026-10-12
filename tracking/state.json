@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 curriculum blueprint and project shortlist",
-  "last_completed_step": "D01 blueprint drafted",
-  "next_action": "Learner reviews D01 scope, chapter sequence and candidate project catalog; then author chapter 01 as a separate comprehensive lesson.",
+  "active_deliverable": "D01 chapter 01 lesson review",
+  "last_completed_step": "D01 chapter 01 drafted",
+  "next_action": "Learner reviews Chapter 01 for clarity, completeness, correctness and exercise depth; revise before Chapter 02.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -17,11 +17,15 @@
       "name": "Computer Science Foundations",
       "slug": "computer-science-foundations",
       "status": "in_progress",
-      "lesson_status": "not_started",
+      "lesson_status": "in_progress",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
-      "curriculum_blueprint_status": "drafted_pending_review"
+      "curriculum_blueprint_status": "approved_by_learner",
+      "chapter_progress": {
+        "01": "drafted_pending_review",
+        "02-14": "not_started"
+      }
     },
     {
       "id": "D02",
@@ -192,6 +196,13 @@
         "domains/01-computer-science-foundations/README.md",
         "domains/01-computer-science-foundations/curriculum.md",
         "domains/01-computer-science-foundations/projects/catalog.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved D01 blueprint and authoring began; chapter 01 lesson drafted, not approved",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md"
       ]
     }
   ]

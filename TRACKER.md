@@ -3,44 +3,45 @@
 **Last updated:** 2026-10-12  
 **Phase:** domain_authoring  
 **Active domain:** D01 — Computer Science Foundations  
-**Active work:** curriculum blueprint and project candidate shortlist  
-**Review gate:** pending learner review  
+**Active work:** Chapter 01 — Cost Models and Correctness  
+**Review gate:** chapter draft pending learner review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Verified work
 
-- Infrastructure exists and was reviewed as the base for D01 authorship.
-- D01 scope, learning outcomes, boundaries, 14-chapter **blueprint** and crosswalk drafted.
-- Four project **candidate briefs** drafted; no PRDs authored or approved.
-- No educational chapter written or approved yet; no implementation begun.
+- Infrastructure initialized.
+- D01 curriculum plan (14 chapters) approved by learner in conversation.
+- [Chapter 01 lesson](domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md) authored as a draft including theory, examples, complexity proofs, benchmarks, exercises and rubric. **Not yet reviewed or approved.**
+- Four D01 project candidates are drafts, not approved PRDs.
+- Chapters 02–14 have not started; no implementation repo.
 
-## Current gate and next action
+## Next action
 
-1. Learner reviews [D01 curriculum blueprint](domains/01-computer-science-foundations/curriculum.md) and [candidate catalog](domains/01-computer-science-foundations/projects/catalog.md).
-2. Incorporate feedback; do not claim blueprint approval until explicitly granted.
-3. Then draft **Chapter 01 — Cost Models and Correctness** as a standalone lesson, with worked examples and exercises. Review chapter before drafting Chapter 02.
+1. Learner reviews Chapter 01 for accuracy, pedagogical depth, examples and exercises.
+2. Revise Chapter 01 based on feedback and record learner approval separately.
+3. Only then begin Chapter 02. Do not create project architectures or technical PRDs in this handbook.
 
-## Domain progress
+## Domain status
 
-| Domain | Blueprint | Lesson chapters | Product PRDs | Implementation |
+| Domain | Curriculum | Lessons | PRDs | Implementation |
 |---|---|---|---|---|
-| D01 — Computer Science Foundations | drafted / pending review | not_started | not_started | not_started |
-| D02 — JavaScript & TypeScript | not_started | not_started | not_started | not_started |
-| D03 — Node.js Internals | not_started | not_started | not_started | not_started |
-| D04 — Network & Protocol Engineering | not_started | not_started | not_started | not_started |
-| D05 — API Engineering | not_started | not_started | not_started | not_started |
-| D06 — Software Architecture | not_started | not_started | not_started | not_started |
-| D07 — Database Engineering | not_started | not_started | not_started | not_started |
-| D08 — Data & Storage Systems | not_started | not_started | not_started | not_started |
-| D09 — Security Engineering | not_started | not_started | not_started | not_started |
-| D10 — Distributed Systems | not_started | not_started | not_started | not_started |
-| D11 — Messaging & Async Processing | not_started | not_started | not_started | not_started |
-| D12 — Performance & Scalability | not_started | not_started | not_started | not_started |
-| D13 — Reliability Engineering | not_started | not_started | not_started | not_started |
-| D14 — Testing & Quality Engineering | not_started | not_started | not_started | not_started |
-| D15 — DevOps & Platform Engineering | not_started | not_started | not_started | not_started |
-| D16 — Observability & Operations | not_started | not_started | not_started | not_started |
+| D01 | approved | Ch01 drafted/pending review; Ch02–14 not_started | not_started | not_started |
+| D02 | not_started | not_started | not_started | not_started |
+| D03 | not_started | not_started | not_started | not_started |
+| D04 | not_started | not_started | not_started | not_started |
+| D05 | not_started | not_started | not_started | not_started |
+| D06 | not_started | not_started | not_started | not_started |
+| D07 | not_started | not_started | not_started | not_started |
+| D08 | not_started | not_started | not_started | not_started |
+| D09 | not_started | not_started | not_started | not_started |
+| D10 | not_started | not_started | not_started | not_started |
+| D11 | not_started | not_started | not_started | not_started |
+| D12 | not_started | not_started | not_started | not_started |
+| D13 | not_started | not_started | not_started | not_started |
+| D14 | not_started | not_started | not_started | not_started |
+| D15 | not_started | not_started | not_started | not_started |
+| D16 | not_started | not_started | not_started | not_started |
 
 ## Handoff
 
-Next agent: read AGENTS.md → tracking/state.json → this file → D01 README/curriculum/catalog. Proceed only with learner-reviewed next stage. Keep product PRDs free of implementation decisions; technical choices belong to Codex/Matt skills and the separate project repo.
+Follow AGENTS.md and state.json. The next step is review of the existing chapter, not writing the next one. Evidence: chapter file and its Git commit. All project technical decisions remain with Codex in external project repositories.
