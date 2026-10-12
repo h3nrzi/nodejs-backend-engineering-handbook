@@ -375,6 +375,20 @@
         "domains/02-javascript-typescript/curriculum.md",
         "domains/02-javascript-typescript/README.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved standardized per-domain sequence: curriculum, lessons, project catalog, PRDs, completion; D02 curriculum itself still awaiting review",
+      "evidence": [
+        "docs/workflow.md"
+      ]
     }
+  ],
+  "domain_authoring_sequence": [
+    "curriculum_blueprint_and_approval",
+    "lesson_authoring_and_reviews",
+    "project_catalog",
+    "product_prds",
+    "content_gate_closure"
   ]
 }
