@@ -4,6 +4,8 @@
 **Status:** approved_by_learner  
 **Product approval:** approved 2026-10-12  
 **Implementation:** not started  
+**Editorial approval scope:** the problem, target users, build/not-build boundaries and essential observable behavior are approved; open implementation-dependent product policies do not revoke that approval.
+**Decision timing:** resolve first-version blocking details with Codex through installed Matt Pocock skills at project kickoff; the learner approves consequential product choices and any scope change. No architecture/implementation is authorized by this PRD.
 **Boundary:** This document describes product behavior, not an implementation design.
 
 ## 1. Problem and motivation
@@ -114,7 +116,7 @@ Version 1 targets local/development educational use rather than production-scale
 - Timing precision and resource measurement scope must be labeled.
 - Expected results and measurement methodology should be reviewable without exposing private machine identifiers.
 
-**Open product thresholds:** exact maximum sizes, permissible run duration, trial limits, acceptable measurement noise and report-retention duration require review before PRD approval. These must not be guessed into architectural commitments.
+**Open product thresholds:** exact maximum sizes, permissible run duration, trial limits, acceptable measurement noise and report retention are deferred to the selected project's Matt-guided kickoff. Learner approval is needed before dependent technical commitments; they are **not** prerequisites to this editorial product-scope approval.
 
 ## 9. Edge cases and recovery expectations
 
@@ -165,7 +167,7 @@ Each must result in an explicit status or explanatory message; partial results m
 6. Should incomplete/cancelled runs be exportable with an unmistakable partial status?
 7. How long must experiment histories remain available?
 
-These are approval questions, **not choices of database, algorithm or infrastructure**.
+These are product questions to triage when this project starts with Codex and the installed Matt Pocock skills. Resolve only the first-version choices that are necessary before dependent technical work, with explicit learner approval. They are **not choices of database, algorithm or infrastructure**; any proposal changing the agreed in/out scope requires separate approval.
 
 ## 12. Explicit non-goals
 
@@ -182,4 +184,4 @@ It is deliberately distinct from P02's concurrency correctness, P03's dependency
 - 2026-10-12: first product-level draft authored for review.
 - **Learner approval:** confirmed in conversation 2026-10-12; open product questions remain for future implementation discovery.
 - **Architecture, ADRs, tickets, code and test evidence:** not started.
-- **Next:** product PRD accepted; open product thresholds and questions require resolution before any implementation; no implementation started.
+- **Next for this project:** at implementation kickoff, use installed Matt Pocock skills with Codex to clarify build-blocking first-version product behaviors, obtain learner approval, and only then design dependent technical solutions. No implementation started.
