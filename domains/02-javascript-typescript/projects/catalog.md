@@ -1,8 +1,8 @@
 # D02 — JavaScript & TypeScript Project Catalog
 
-**Status:** proposed_pending_learner_review
+**Status:** five_concepts_approved_by_learner
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** product concept selection. No candidate approved and no PRD authored yet.
+**Phase:** approved concepts; PRD authoring one product at a time. [P01 ContractGuard PRD](p01-contractguard-api-data-contract-studio-prd.md) drafted pending learner review; P02–P05 PRDs not started.
 **Scope rule:** specify product users, problems, essential capabilities and distinct learning coverage; do not select framework, storage, hosting, APIs, implementation architecture or code.
 
 ## Selection principle
@@ -99,7 +99,7 @@ Choose products that solve **different user problems**, not four variants of one
 | P04 PackagePassport | Package interface compatibility | Modules, TS config and interop | Integration contracts, not complexity analysis |
 | P05 SubscriptionHub | Event subscription and gap visibility | Iteration, events, lifetime | Subscriber product, not bulk-data workspace |
 
-**Coverage recommendation:** retain all five distinct candidates if strong portfolio breadth matters, with P01–P03 as the strongest starting shortlist and P04–P05 providing specialized variety. This recommendation is not learner approval.
+**Approved concept selection (2026-10-12):** learner approved all five distinct concepts. This does not approve their PRDs.
 
 ## Review gate
 
