@@ -1,7 +1,7 @@
 # Chapter 11 — TypeScript Type System Fundamentals
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Study assessment:** deferred until explicit learning phase  
 **Code examples:** educational, not independently executed
 
