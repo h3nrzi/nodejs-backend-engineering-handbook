@@ -2,7 +2,7 @@
 
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
-**Lesson chapters:** 01 drafted / awaiting review; 02–14 not_started  
+**Lesson chapters:** 01–02 approved; 03 drafted / awaiting review; 04–14 not_started  
 **Project PRDs:** not_started  
 **Implementation:** not_started
 
@@ -26,7 +26,7 @@ By the end, the learner should be able to:
 
 ## Curriculum and review
 
-See [chapter-by-chapter blueprint](curriculum.md). Chapters will be written and reviewed individually; an outline is not a lesson. **Chapter 01 drafted:** [Cost Models and Correctness](lessons/01-cost-models-and-correctness.md). Awaiting learner review before Chapter 02.
+See [chapter-by-chapter blueprint](curriculum.md). Chapters will be written and reviewed individually; an outline is not a lesson. **Approved:** [Chapter 01 — Cost Models and Correctness](lessons/01-cost-models-and-correctness.md), [Chapter 02 — Linear and Associative Data Structures](lessons/02-linear-and-associative-data-structures.md). **Draft pending review:** [Chapter 03 — Trees, Heaps and Graphs](lessons/03-trees-heaps-and-graphs.md).
 
 ## Projects
 
@@ -40,4 +40,4 @@ See [candidate catalog](projects/catalog.md). Candidate descriptions are *produc
 
 ## Current gate
 
-Curriculum plan approved. Chapter 01 awaits review. Project candidates remain unapproved; no PRDs have been drafted.
+Curriculum plan approved. Chapter 03 awaits review. Project candidates remain unapproved; no PRDs have been drafted.
