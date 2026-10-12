@@ -1,12 +1,12 @@
 # D01 — Project candidate catalog
 
-**Status:** four candidate concepts drafted; P01 product PRD drafted and awaiting learner review. **No PRDs approved and no implementations started.**
+**Status:** four differentiated concepts; P01 PRD approved; P02 PRD drafted pending learner review; P03/P04 remain candidates. **No implementations started.**
 
 These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a PRD is approved.
 
 ## P01 — Workload & Complexity Observatory
 
-**Draft PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-prd.md) — pending learner review.
+**Approved PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-prd.md) — learner-approved; unresolved product thresholds retained.
 
 - **Problem:** learners and engineering teams make data-structure and algorithm choices without understanding how performance changes as workloads grow.
 - **Users:** backend learners and developers analyzing workload trade-offs.
@@ -15,9 +15,11 @@ These are distinct product ideas with observable goals and target learning cover
 - **Engineering challenge:** comparable experiments, transparent metrics, representative inputs, reproducibility and honest reporting of variance.
 - **Learning coverage:** complexity analysis, arrays/maps/trees, search/sort, CPU/cache effects, experimental design.
 - **Why worthwhile:** portfolio evidence of scientific performance reasoning instead of anecdotal optimization.
-- **Next:** review the drafted PRD's scope and product questions; no technical approach selected.
+- **Next:** product scope approved; unresolved product limits need confirmation before any implementation; no technical approach selected.
 
 ## P02 — Concurrent Resource Allocation Simulator
+
+**Draft PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-prd.md) — pending learner review.
 
 - **Problem:** concurrent claims on limited resources can cause invalid allocations or inconsistent outcomes.
 - **Users:** students and developers designing capacity-limited products such as ticket sales or reservations.
@@ -63,4 +65,4 @@ These are distinct product ideas with observable goals and target learning cover
 - P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
 - P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
 
-All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 is the first draft; P02–P04 remain unapproved concepts. Study assessments are deferred until the learner explicitly begins learning.
+All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 approved; P02 PRD pending review; P03–P04 remain candidate concepts. Study assessments are deferred until the learner explicitly begins learning.
