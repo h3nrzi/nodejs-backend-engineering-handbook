@@ -1,18 +1,26 @@
 # Node.js Backend Engineering Handbook
 
-A curriculum and product-specification catalog for a comprehensive Node.js backend engineering portfolio.
+A curated backend-engineering curriculum and portfolio product-specification catalog.
 
-**Current phase:** Repository infrastructure. No domain curriculum or project PRD is approved yet.
+**Current phase:** Content authoring and project planning. **D01 educational content:** 14/14 lessons approved. **D01 product PRDs:** 4/4 approved at product-scope level, with open product questions. **Learning assessments:** deferred until the learner explicitly starts studying. **Implementations:** none started. **Next planned domain:** D02 — JavaScript & TypeScript.
 
 ## Start here
 
-1. Read [AGENTS.md](AGENTS.md) for collaboration rules and scope boundaries.
-2. Read [ROADMAP.md](ROADMAP.md) for the 16-domain curriculum map.
-3. Read [TRACKER.md](TRACKER.md) and [tracking/state.json](tracking/state.json) for the current handoff.
-4. Follow [docs/workflow.md](docs/workflow.md) before starting any local project.
+1. [Agent operating contract](AGENTS.md)
+2. [Sixteen-domain roadmap](ROADMAP.md)
+3. [Current tracker](TRACKER.md) and [canonical machine state](tracking/state.json)
+4. [Authoring and implementation workflow](docs/workflow.md)
+5. [D01 — Computer Science Foundations](domains/01-computer-science-foundations/README.md) and its [four-project catalog](domains/01-computer-science-foundations/projects/catalog.md)
 
-## Contract
+## Product PRDs in D01
 
-The handbook teaches concepts and defines **what** a project must accomplish. Its PRDs describe scope, constraints, invariants and acceptance criteria but **never prescribe how** to implement them. Codex explores technical implementation through the locally installed Matt Pocock skills. The learner relays questions and outputs, and ChatGPT guides the discussion against the PRD without silently making final decisions.
+- [P01 — Workload & Complexity Observatory](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md)
+- [P02 — Concurrent Resource Allocation Simulator](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md)
+- [P03 — Dependency Workflow Simulator](domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md)
+- [P04 — Large Dataset Processing Workspace](domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md)
 
-Domain contents will be developed and reviewed **one at a time, starting from Domain 01**. The ten domains previously discussed were outlines only, not complete lessons.
+The four PRDs have learner approval for product direction and scope. Each retains unresolved product details and measurable limits; **approval does not mean implementation-ready**. Portfolio build selection has not been made.
+
+## Boundaries
+
+Lessons explain and compare concepts, while PRDs describe product outcomes and acceptance criteria **without prescribing technical solutions**. Codex owns technical discovery, architecture, tickets and implementation in separate project repositories. Handbook creation and learning assessments are separate workflows; no quizzes until the learner requests the learning phase.
