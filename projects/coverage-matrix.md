@@ -1,6 +1,6 @@
 # Engineering competency coverage matrix
 
-**Status:** D01/D02 and D03 Chapters 01–02 approved editorial coverage mapped; implementation not started.  
+**Status:** D01/D02 and D03 Chapters 01–02 approved editorial coverage mapped; Chapter 03 authored/in_review; implementation not started.  
 **Reviewed:** 2026-10-12 against all nine approved PRDs, domain indexes/catalogs, lesson contents, workflow and canonical state.  
 **Baseline:** `48f227313e52a85246c0a65e1acbea3f511a1d0b`.  
 **Audit:** [Coverage reconciliation report](../docs/coverage-matrix-audit-2026-10-12.md).
@@ -12,7 +12,7 @@
 - “PRD challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Every project remains an optional portfolio candidate with `approved_by_learner` product-scope status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum and Chapters 01–02 are learner-approved editorially; Chapters 03–18 not_started. No D03 project catalog/PRDs or implementation; assessment deferred. D04–D16 remain not_started. Curriculum approval is separate from approved taught content.
+- D03 curriculum and Chapters 01–02 are learner-approved editorially; Chapter 03 authored/in_review; Chapters 04–18 not_started. No D03 project catalog/PRDs or implementation; assessment deferred. D04–D16 remain not_started. Curriculum approval is separate from approved taught content.
 
 ## Project traceability — all nine approved PRDs
 
@@ -71,9 +71,9 @@ Project IDs link through the registry above. All gaps below also have **no imple
 
 | Domain | Curriculum | Authored lessons / approval | PRD challenge | Implemented evidence | Current gap |
 |---|---|---|---|---|---|
-| D03 | [18-chapter curriculum](../domains/03-nodejs-internals/curriculum.md) — approved_by_learner | [C01](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — approved; [C02 — Startup/configuration](../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) — approved | None — catalog/PRDs not_started | None — not_started | Chapters 03–18 not_started; no learner assessment. Local educational executions are not product evidence. |
+| D03 | [18-chapter curriculum](../domains/03-nodejs-internals/curriculum.md) — approved_by_learner | [C01](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — approved; [C02 — Startup/configuration](../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) — approved; [C03 — Event loop/I/O lifecycle](../domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) — authored/in_review | None — catalog/PRDs not_started | None — not_started | Chapters 04–18 not_started; no learner assessment. Local educational executions are not product evidence. |
 
-**Review — 2026-10-12:** D03-C01 and D03-C02 approvals reconciled with Chapter 02, curriculum, domain index, and canonical state. Existing D01/D02 nine-project and 30-approved-chapter mappings unchanged. Total authored chapter mappings: 32 (32 editorially approved; 0 in_review). Chapter 03 not_started; no new PRD, assessment or implementation evidence inferred.
+**Review — 2026-10-12:** D03-C01/C02 approved mappings preserved; D03-C03 mapped separately as authored/in_review against its lesson, curriculum, domain/root indexes and canonical state. Existing D01/D02 nine-project and 30-approved-chapter mappings unchanged. Total authored chapter mappings: 33 (32 editorially approved; 1 in_review). Seven local educational execution scenarios passed; no new PRD, learner assessment or implementation evidence inferred.
 
 ## Mandatory maintenance
 

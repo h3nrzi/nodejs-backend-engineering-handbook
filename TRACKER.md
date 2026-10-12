@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–02 learner-approved; Chapter 03 next to author (not_started)  
+**Current authoring focus:** D03 — Chapters 01–02 learner-approved; Chapter 03 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 2 lessons learner-approved, Chapters 03–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 2 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) authored/in_review; Chapters 04–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. D03 Chapters 01–02 learner-approved; author Chapter 03 — The Event Loop and I/O Lifecycle — only, then request editorial review. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. D03 Chapters 01–02 learner-approved; review Chapter 03 — The Event Loop and I/O Lifecycle — before authoring Chapter 04 only. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -60,7 +60,7 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–02 are learner-approved; Chapter 03 remains not_started.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–02 are learner-approved; Chapter 03 is authored/in_review.
 
 ## Global coverage reconciliation — 2026-10-12
 
@@ -91,3 +91,9 @@ Learner explicitly approved Chapter 01 in this chat. [Chapter 02 — Startup, Co
 Learner explicitly approved [Chapter 02 — Startup, Configuration and Runtime Identity](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) in the current conversation. Chapters 01–02 of 18 are editorially approved. Chapter 03 — The Event Loop and I/O Lifecycle — remains not_started and is next for authoring and learner review; assessment, projects and implementation remain deferred/not_started.
 
 **Mandatory coverage reconciliation:** checked the [coverage matrix](projects/coverage-matrix.md) against Chapter 02, the curriculum, D03 index and canonical state. D03-C02 moved from authored/in_review to approved; its taught-competency crosswalk row was added. All 32 authored chapters across D01–D03 are approved; 9 product PRDs remain approved for scope, with no product implementation evidence or learner assessments claimed.
+
+## D03 Chapter 03 authoring — 2026-10-12
+
+Learner authorized continuation; the previously recorded Chapter 02 approval is preserved. [Chapter 03 — The Event Loop and I/O Lifecycle](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) authored/in_review. Covers phases/poll waiting, readiness versus native completion and JS observation, timer eligibility, I/O-context scheduling, resource liveness and diagnostic limits. Three educational fixtures passed seven scenarios on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Precise evidence and limits are in the chapter.
+
+**Coverage review:** D03-C01/C02 approved mappings preserved and D03-C03 authored/in_review mapping reconciled across lesson content, curriculum, domain/root indexes, matrix and state. Total authored mappings 33: 32 approved, 1 in_review. D01/D02 nine PRDs and 30 approved lesson mappings unchanged. Chapters 04–18 not_started. Next: learner reviews Chapter 03, then Chapter 04 only. No learner assessment or implementation evidence claimed.
