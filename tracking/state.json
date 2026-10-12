@@ -456,6 +456,16 @@
         "docs/quality-gates.md",
         "templates/project-prd.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Audited and aligned all nine learner-approved D01/D02 product PRDs with the scope-first editorial gate and Matt Pocock skill-guided kickoff discovery. Corrected misleading approval/next-step wording and clarified product boundaries without changing approved scope, closing open questions or starting implementation.",
+      "evidence": [
+        "docs/prd-scope-alignment-audit-2026-10-12.md",
+        "docs/workflow.md",
+        "domains/01-computer-science-foundations/projects/catalog.md",
+        "domains/02-javascript-typescript/projects/catalog.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
