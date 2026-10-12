@@ -2,7 +2,7 @@
 
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
-**Lesson chapters:** 01–11 approved; 12 drafted / awaiting review; 13–14 not_started  
+**Lesson chapters:** 01–12 approved; 13 drafted / awaiting review; 14 not_started  
 **Project PRDs:** not_started  
 **Implementation:** not_started
 
@@ -43,3 +43,5 @@ See [candidate catalog](projects/catalog.md). Candidate descriptions are *produc
 Curriculum plan approved. Chapter 10 awaits review. Project candidates remain unapproved; no PRDs have been drafted.
 
 **New lesson:** [Chapter 12 — State Machines and Formal Reasoning](lessons/12-state-machines-and-formal-reasoning.md) (draft, pending learner review).
+
+**Chapter 13:** [Backend Case-Study Workshop](lessons/13-backend-case-study-workshop.md) — draft, pending learner review.
