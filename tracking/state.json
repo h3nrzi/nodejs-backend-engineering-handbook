@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 03 review",
-  "last_completed_step": "D01 Chapter 03 drafted",
-  "next_action": "Learner reviews Chapter 03 Trees Heaps and Graphs; revise and record approval before authoring Chapter 04.",
+  "active_deliverable": "D01 Chapter 04 review",
+  "last_completed_step": "D01 Chapter 04 drafted",
+  "next_action": "Learner reviews Chapter 04; apply corrections and record approval before authoring Chapter 05.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -25,8 +25,9 @@
       "chapter_progress": {
         "01": "approved_by_learner",
         "02": "approved_by_learner",
-        "03": "drafted_pending_review",
-        "04-14": "not_started"
+        "03": "approved_by_learner",
+        "04": "drafted_pending_review",
+        "05-14": "not_started"
       }
     },
     {
@@ -227,6 +228,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
         "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 03; Chapter 04 drafted pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+        "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md"
       ]
     }
   ]
