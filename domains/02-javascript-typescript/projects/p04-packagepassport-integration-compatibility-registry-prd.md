@@ -1,9 +1,9 @@
 # P04 — PackagePassport: Integration Compatibility Registry — Product Requirements
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** draft_pending_learner_review  
+**Status:** approved_by_learner  
 **Concept:** approved by learner on 2026-10-12  
-**PRD approval:** pending learner editorial review  
+**PRD approval:** learner-approved on 2026-10-12; open product decisions remain  
 **Implementation:** not started; no stack, architecture or dependency-resolution technology selected
 
 ## 1. Problem and motivation
@@ -173,6 +173,6 @@ This product emphasizes JavaScript module boundaries and ES module/CommonJS inte
 ## 14. Approval record
 
 **Project concept:** learner-approved with the other D02 candidates, 2026-10-12.
-**PRD editorial approval:** pending learner review.
+**PRD editorial approval:** approved by learner on 2026-10-12; open product decisions remain.
 **Product questions:** deliberately unresolved; see section 11.
 **Technical implementation, study assessment and repository creation:** not started.
