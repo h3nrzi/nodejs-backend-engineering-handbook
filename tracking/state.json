@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 08 review",
-  "last_completed_step": "D01 Chapter 08 drafted",
-  "next_action": "Learner reviews Chapter 08; revise or approve before drafting Chapter 09.",
+  "active_deliverable": "D01 Chapter 09 review",
+  "last_completed_step": "D01 Chapter 09 drafted",
+  "next_action": "Learner reviews Chapter 09, then requests revisions or approves before Chapter 10.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -30,8 +30,9 @@
         "05": "approved_by_learner",
         "06": "approved_by_learner",
         "07": "approved_by_learner",
-        "08": "drafted_pending_review",
-        "09-14": "not_started"
+        "08": "approved_by_learner",
+        "09": "drafted_pending_review",
+        "10-14": "not_started"
       }
     },
     {
@@ -264,6 +265,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md",
         "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 08; Chapter 09 drafted pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
+        "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md"
       ]
     }
   ]
