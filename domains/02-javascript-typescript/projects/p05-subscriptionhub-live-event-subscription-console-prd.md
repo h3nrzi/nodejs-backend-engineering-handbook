@@ -3,7 +3,7 @@
 **Domain:** D02 — JavaScript & TypeScript  
 **Status:** approved_by_learner  
 **Concept:** learner-approved on 2026-10-12  
-**PRD approval:** pending learner editorial review  
+**PRD approval:** learner-approved on 2026-10-12; open product decisions remain  
 **Implementation:** not started; no runtime, transport, persistence, framework or architecture selected
 
 ## 1. Problem and motivation
@@ -202,6 +202,6 @@ It differs from P01 ContractGuard (data-contract compatibility), P02 DispatchDes
 ## 15. Approval record
 
 **Project concept:** learner-approved with the five D02 candidates on 2026-10-12.  
-**PRD editorial review:** pending learner approval.  
+**PRD editorial review:** approved by learner on 2026-10-12; product questions remain open.  
 **Open product questions:** documented in Section 12.  
 **Study assessment, technical design and implementation:** not started.
