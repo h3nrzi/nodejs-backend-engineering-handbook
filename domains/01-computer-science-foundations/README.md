@@ -2,7 +2,7 @@
 
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
-**Lesson chapters:** 01–03 approved; 04 drafted / awaiting review; 05–14 not_started  
+**Lesson chapters:** 01–04 approved; 05 drafted / awaiting review; 06–14 not_started  
 **Project PRDs:** not_started  
 **Implementation:** not_started
 
@@ -26,7 +26,7 @@ By the end, the learner should be able to:
 
 ## Curriculum and review
 
-See [chapter-by-chapter blueprint](curriculum.md). Chapters will be written and reviewed individually; an outline is not a lesson. **Approved:** [Chapter 01 — Cost Models and Correctness](lessons/01-cost-models-and-correctness.md), [Chapter 02 — Linear and Associative Data Structures](lessons/02-linear-and-associative-data-structures.md). **Approved:** [Chapter 03 — Trees, Heaps and Graphs](lessons/03-trees-heaps-and-graphs.md). **Draft pending review:** [Chapter 04 — Algorithmic Problem-Solving](lessons/04-algorithmic-problem-solving.md).
+See [chapter-by-chapter blueprint](curriculum.md). Chapters will be written and reviewed individually; an outline is not a lesson. **Approved:** [Chapter 01 — Cost Models and Correctness](lessons/01-cost-models-and-correctness.md), [Chapter 02 — Linear and Associative Data Structures](lessons/02-linear-and-associative-data-structures.md). **Approved:** [Chapter 03 — Trees, Heaps and Graphs](lessons/03-trees-heaps-and-graphs.md). **Approved:** [Chapter 04 — Algorithmic Problem-Solving](lessons/04-algorithmic-problem-solving.md). **Draft pending review:** [Chapter 05 — Discrete Foundations](lessons/05-discrete-foundations.md).
 
 ## Projects
 
@@ -40,4 +40,4 @@ See [candidate catalog](projects/catalog.md). Candidate descriptions are *produc
 
 ## Current gate
 
-Curriculum plan approved. Chapter 04 awaits review. Project candidates remain unapproved; no PRDs have been drafted.
+Curriculum plan approved. Chapter 05 awaits review. Project candidates remain unapproved; no PRDs have been drafted.
