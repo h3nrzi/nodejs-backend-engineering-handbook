@@ -1,7 +1,7 @@
 # Chapter 14 — TypeScript Modules, Configuration and Interop
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Assessment:** deferred until explicit learning phase  
 **Examples:** educational; not independently executed
 
