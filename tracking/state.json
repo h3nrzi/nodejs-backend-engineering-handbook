@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 04 review",
-  "last_completed_step": "D01 Chapter 04 drafted",
-  "next_action": "Learner reviews Chapter 04; apply corrections and record approval before authoring Chapter 05.",
+  "active_deliverable": "D01 Chapter 05 review",
+  "last_completed_step": "D01 Chapter 05 drafted",
+  "next_action": "Review Chapter 05, then approve or request revisions.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -26,8 +26,9 @@
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
-        "04": "drafted_pending_review",
-        "05-14": "not_started"
+        "04": "approved_by_learner",
+        "05": "drafted_pending_review",
+        "06-14": "not_started"
       }
     },
     {
