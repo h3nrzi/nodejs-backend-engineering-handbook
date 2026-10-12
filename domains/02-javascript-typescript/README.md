@@ -3,7 +3,7 @@
 **Status:** curriculum blueprint approved by learner.  
 **Lessons:** Chapters 01–16 learner-approved (editorial review only).
 **Project catalog:** [five differentiated candidates](projects/catalog.md) approved by learner.  
-**Product PRDs:** [P01 ContractGuard](projects/p01-contractguard-api-data-contract-studio-prd.md), [P02 DispatchDesk](projects/p02-dispatchdesk-multi-recipient-delivery-operations-prd.md) [P03 PolicyLens](projects/p03-policylens-business-rule-decision-workspace-prd.md), and [P04 PackagePassport](projects/p04-packagepassport-integration-compatibility-registry-prd.md) approved (open product decisions); [P05 SubscriptionHub](projects/p05-subscriptionhub-live-event-subscription-console-prd.md) drafted pending review.  
+**Product PRDs:** [P01 ContractGuard](projects/p01-contractguard-api-data-contract-studio-prd.md), [P02 DispatchDesk](projects/p02-dispatchdesk-multi-recipient-delivery-operations-prd.md), [P03 PolicyLens](projects/p03-policylens-business-rule-decision-workspace-prd.md), and [P04 PackagePassport](projects/p04-packagepassport-integration-compatibility-registry-prd.md) approved (open product decisions); [P05 SubscriptionHub](projects/p05-subscriptionhub-live-event-subscription-console-prd.md) drafted pending review.  
 **Practical learning assessments:** deferred until explicit study phase.  
 **Implementation:** not started.
 
