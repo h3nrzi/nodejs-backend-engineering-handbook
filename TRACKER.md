@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D02 — Chapter 11 editorial review  
+**Current authoring focus:** D02 — Chapter 12 editorial review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -25,11 +25,11 @@
 
 ## Remaining domains
 
-**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) approved; [Chapter 03 — Functions and Invocation](domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) approved; [Chapter 04 — Objects, Prototypes and Classes](domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md) approved; [Chapter 05 — Collections, Iteration and Data Handling](domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md) approved; [Chapter 06 — Modules and Package Boundaries](domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md) approved; [Chapter 07 approved; [Chapter 08](domains/02-javascript-typescript/lessons/08-promises-and-async-await.md) and [Chapter 09](domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md) approved; [Chapter 10 — Iteration, Streams and Event Abstractions](domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md) approved; [Chapter 11 — TypeScript Type System Fundamentals](domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md) drafted pending review. Projects and PRDs not started. **D03–D16:** not started.
+**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) approved; [Chapter 03 — Functions and Invocation](domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) approved; [Chapter 04 — Objects, Prototypes and Classes](domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md) approved; [Chapter 05 — Collections, Iteration and Data Handling](domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md) approved; [Chapter 06 — Modules and Package Boundaries](domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md) approved; [Chapter 07 approved; [Chapter 08](domains/02-javascript-typescript/lessons/08-promises-and-async-await.md) and [Chapter 09](domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md) approved; [Chapter 10 — Iteration, Streams and Event Abstractions](domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md) approved; [Chapter 11 — TypeScript Type System Fundamentals](domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md) approved; [Chapter 12 — Unions, Narrowing and Domain Modeling](domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md) drafted pending review. Projects and PRDs not started. **D03–D16:** not started.
 
 ## Next action
 
-Learner reviews D02 Chapter 11 before Chapter 12 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+Learner reviews D02 Chapter 12 before Chapter 13 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## AI handoff rules
 
