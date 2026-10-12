@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-12",
-  "phase": "domain_assessment",
-  "review": "assessment_not_started",
+  "phase": "content_and_project_planning",
+  "review": "content_authoring",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 practical assessment evidence",
+  "active_deliverable": "D01 project catalog and product PRD planning",
   "last_completed_step": "D01 all 14 lessons approved by learner",
-  "next_action": "Collect and review D01 Chapter 14 assessment evidence; keep project PRDs and implementation not_started.",
+  "next_action": "Review D01 project candidates and produce implementation-neutral product PRDs one by one; defer all learner assessments until the learner explicitly starts the study phase.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -37,7 +37,8 @@
         "07": "approved_by_learner",
         "08": "approved_by_learner",
         "09": "approved_by_learner"
-      }
+      },
+      "assessment_status": "deferred_until_learning_phase"
     },
     {
       "id": "D02",
@@ -314,6 +315,13 @@
     {
       "date": "2026-10-12",
       "event": "Learner approved Chapter 14; all 14 D01 lessons approved; practical assessment and project PRDs remain outstanding",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner clarified current phase is handbook and project planning, not studying. Defer chapter 14 assessment until learner explicitly begins studying; proceed with project catalog and PRDs.",
       "evidence": [
         "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
       ]
