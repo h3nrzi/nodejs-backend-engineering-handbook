@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "content_authoring",
-  "active_domain_id": "D01",
-  "next_domain_id": "D01",
-  "active_deliverable": "D01 P03 product PRD learner review",
-  "last_completed_step": "D01 P02 approved; P03 drafted",
-  "next_action": "Learner reviews P03 Dependency Workflow Simulator product rules and open questions; approve or revise before P04.",
+  "review": "content_ready_next_domain",
+  "active_domain_id": "D02",
+  "next_domain_id": "D02",
+  "active_deliverable": "D02 curriculum blueprint draft",
+  "last_completed_step": "D01 lessons and four product-scope PRDs approved; repository status reconciled",
+  "next_action": "Author D02 JavaScript & TypeScript curriculum blueprint for learner review. Do not start studying, assessments or implementation.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -16,9 +16,9 @@
       "id": "D01",
       "name": "Computer Science Foundations",
       "slug": "computer-science-foundations",
-      "status": "in_progress",
+      "status": "content_complete",
       "lesson_status": "completed",
-      "project_specs_status": "in_progress",
+      "project_specs_status": "approved_with_open_product_questions",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
@@ -42,8 +42,8 @@
       "project_progress": {
         "P01": "prd_approved_by_learner_open_questions_remain",
         "P02": "prd_approved_by_learner_open_questions_remain",
-        "P03": "prd_drafted_pending_learner_review",
-        "P04": "candidate_only"
+        "P03": "prd_approved_by_learner_open_questions_remain",
+        "P04": "prd_approved_by_learner_open_questions_remain"
       }
     },
     {
@@ -354,6 +354,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md",
         "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Reconciled D01 statuses: 14 approved chapters and 4 product-scope approved PRDs; assessments deferred, technical implementations not started",
+      "evidence": [
+        "domains/01-computer-science-foundations/projects/catalog.md",
+        "domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md"
       ]
     }
   ]
