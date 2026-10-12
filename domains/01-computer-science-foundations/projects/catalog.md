@@ -1,10 +1,12 @@
 # D01 — Project candidate catalog
 
-**Status:** initial shortlist drafted, awaiting learner review. **No PRDs approved and no implementations started.**
+**Status:** four candidate concepts drafted; P01 product PRD drafted and awaiting learner review. **No PRDs approved and no implementations started.**
 
 These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a PRD is approved.
 
 ## P01 — Workload & Complexity Observatory
+
+**Draft PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-prd.md) — pending learner review.
 
 - **Problem:** learners and engineering teams make data-structure and algorithm choices without understanding how performance changes as workloads grow.
 - **Users:** backend learners and developers analyzing workload trade-offs.
@@ -13,7 +15,7 @@ These are distinct product ideas with observable goals and target learning cover
 - **Engineering challenge:** comparable experiments, transparent metrics, representative inputs, reproducibility and honest reporting of variance.
 - **Learning coverage:** complexity analysis, arrays/maps/trees, search/sort, CPU/cache effects, experimental design.
 - **Why worthwhile:** portfolio evidence of scientific performance reasoning instead of anecdotal optimization.
-- **Next:** consider product PRD once catalog approved. No technical approach selected.
+- **Next:** review the drafted PRD's scope and product questions; no technical approach selected.
 
 ## P02 — Concurrent Resource Allocation Simulator
 
@@ -53,3 +55,12 @@ These are distinct product ideas with observable goals and target learning cover
 - These four **candidates**, not commitments, cover different strengths: performance evaluation, concurrency correctness, graph/state reasoning and resource-limited I/O.
 - A future PRD should specify measurable acceptance boundaries, actors and edge cases more fully, without converting engineering challenges into a chosen technical solution.
 - Check overlaps with D03 Node.js Internals, D07 Database Engineering and D10 Distributed Systems at selection time. No need to build all four.
+
+## Portfolio differentiation review (2026-10-12)
+
+- P01: measurement methodology and experimental reproducibility; avoid production monitoring.
+- P02: concurrency safety and outcome reconciliation; avoid a real commerce/reservation application.
+- P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
+- P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
+
+All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 is the first draft; P02–P04 remain unapproved concepts. Study assessments are deferred until the learner explicitly begins learning.
