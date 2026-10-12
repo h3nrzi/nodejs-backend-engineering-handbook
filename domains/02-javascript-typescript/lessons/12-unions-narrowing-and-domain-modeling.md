@@ -1,7 +1,7 @@
 # Chapter 12 — Unions, Narrowing and Domain Modeling
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning assessments:** deferred until learner starts studying  
 **Examples:** educational; not independently executed
 
