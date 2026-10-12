@@ -1,3 +1,86 @@
-# P04 — Large Dataset Processing Workspace
+# PRD P04 — Large Dataset Processing Workspace
 
-Product PRD approved by learner, 2026-10-12. Processing large datasets with explicit validation, progress, error handling, integrity reporting, cancellation and restart behavior. No architecture selected.
+**Domain:** D01 — Computer Science Foundations  
+**Status:** approved_by_learner  
+**Product approval:** confirmed 2026-10-12  
+**Implementation:** not started
+
+## Problem and users
+
+Developers and data operators need to validate, process and export large datasets without silent truncation, misleading success signals or unbounded resource promises. An operator submits and processes an input; a reviewer examines the resulting integrity evidence. This is an educational product, not a commercial ETL or object-storage platform.
+
+## Goals
+
+Users can submit datasets within clear supported limits, select a documented operation, observe processing status and record counts, download validated output, understand malformed records and interrupted work, and distinguish a definitive outcome from an uncertain one.
+
+## Scope
+
+**Included:** supported structured text input; format and field validation; a curated set of validation, filtering and aggregate operations; observable processing progress; record-count and integrity summaries; explicit cancellation, failure, restart and result retrieval; separately identifiable runs and exports.
+
+**Excluded:** arbitrary user code execution, production data connectors, multi-tenant administration, limitless data volume, commercial storage and full ETL orchestration.
+
+**Deferred:** exact mid-file resume, multi-file joins, collaboration, recurrence and distributed high-availability guarantees.
+
+## Functional requirements
+
+- **FR01:** Each input has a unique identity, declared format, size and validation status.
+- **FR02:** Unsupported encoding and malformed content cause an explained result.
+- **FR03:** Every run retains its input identity and immutable operation definition.
+- **FR04:** Published size, record, active-run and duration limits are enforced.
+- **FR05:** Invalid rows follow a visible strict-reject or partial-accept policy.
+- **FR06:** The run lifecycle distinguishes accepted, processing, succeeded, failed, cancelled and uncertain as applicable.
+- **FR07:** Progress metrics state their units and whether they are estimates.
+- **FR08:** A succeeded run has complete validated output.
+- **FR09:** Accepted, rejected and produced counts reconcile under the selected operation's documented meaning.
+- **FR10:** Interrupted or failed outputs are never presented as successful final deliverables.
+- **FR11:** Retry/restart creates a distinguishable run without rewriting past outcomes.
+- **FR12:** Output and integrity report are retrievable for successful runs.
+- **FR13:** Export contains input identity, rules, status, counts, caveats and known failures.
+
+## Externally observable invariants
+
+A run marked successful must pass its stated integrity checks. One attempt cannot have contradictory terminal outcomes. A report never attributes one run's output to another input or definition. Invalid records cannot disappear from reconciliation. A caller timeout does not prove processing failed. Oversized work cannot be reported as successfully supported.
+
+## Quality expectations
+
+Clear advertised input and concurrency bounds, observable progress for long runs, readable validation feedback, keyboard-usable reports, and documented retention and output availability. Any memory and duration guarantees must name measurement conditions. Limits are product questions, not implementation choices.
+
+## Important edge cases
+
+Empty files, header-only files, invalid encoding, multibyte text split across chunk boundaries, truncated records, duplicate records, invalid fields, high rejection rates, just-over-limit input, cancellation near completion, process interruption after output preparation, same input processed more than once, invalid final output and lost client responses.
+
+## Acceptance criteria
+
+1. A supported valid dataset produces validated output and a report with input and run identity.
+2. Empty and malformed inputs receive documented outcomes, never fabricated success.
+3. Unsupported encoding or malformed records receive meaningful validation feedback.
+4. Oversized datasets are rejected under the published product limit.
+5. Strict and partial-accept modes report accepted, rejected and produced counts honestly.
+6. Record content remains correct regardless of internal read boundary placement.
+7. A cancellation request near completion resolves to one documented terminal state.
+8. Interrupted processing cannot expose incomplete output as validated final output.
+9. A restarted run has a new identity; historical evidence stays unchanged.
+10. Failed final integrity checks prevent the succeeded outcome.
+11. Progress, units and unavailable metrics are labeled correctly.
+12. A reviewer can interpret an exported report without the original session.
+
+## Product-level questions retained for later clarification
+
+1. Input format: CSV with clearly documented UTF-8/dialect assumptions for v1?
+2. Initial operations: validation, filtering and simple aggregation?
+3. Invalid rows: user-selectable strict rejection versus partial acceptance?
+4. Interrupted work: fresh restart rather than guaranteed resume from a byte position?
+5. Partial output: unavailable for download in v1?
+6. Integrity: output counts and operation-specific validation required before success?
+7. Progress: bytes and rows where known, otherwise explicitly estimated?
+8. Limits: supported sizes, active runs, run duration and retention to be confirmed?
+
+Suggested answers to 1–7 are yes, but no unanswered numerical limit or policy should be invented during implementation. Learner approval of the draft does not resolve these questions.
+
+## Learning coverage and distinction
+
+Covers operating systems, memory, filesystem I/O, buffering, backpressure, state correctness and failure recovery in D01 Chapters 06–13. Unlike P01 it is not a benchmark product; unlike P02 it does not focus on capacity-claim contention; unlike P03 it does not model dependency graphs.
+
+## Approval and handoff
+
+**Learner approved the P04 draft on 2026-10-12.** This approval covers the described product direction and scope. Open product limits and detailed behavior must be resolved before handing a definitive implementation PRD to Codex. Architecture, technical specification, tickets, code and execution evidence are not started.
