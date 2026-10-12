@@ -1,7 +1,7 @@
 # D02 — JavaScript & TypeScript
 
 **Status:** curriculum blueprint approved by learner.  
-**Lessons:** Chapters 01–11 learner-approved; Chapter 12 drafted pending review; Chapters 13–16 not started.
+**Lessons:** Chapters 01–12 learner-approved; Chapter 13 drafted pending review; Chapters 14–16 not started.
 **Project catalog:** not started; concepts only.  
 **Product PRDs:** not started.  
 **Practical learning assessments:** deferred until explicit study phase.  
@@ -15,7 +15,7 @@ Teach JavaScript runtime-language semantics and TypeScript static modeling from 
 
 Read the [approved 16-chapter curriculum blueprint](curriculum.md), covering language semantics, async control flow, TypeScript fundamentals, advanced types, validation and applied reasoning.
 
-**Current gate: learner reviews [Chapter 12 — Unions, Narrowing and Domain Modeling](lessons/12-unions-narrowing-and-domain-modeling.md).
+**Current gate: learner reviews [Chapter 13 — Generics, Constraints and Advanced Types](lessons/13-generics-constraints-and-advanced-types.md).
 
 Future project concepts and product PRDs remain separate from the lesson-writing gate. Never prescribe implementation in a product PRD.
 
