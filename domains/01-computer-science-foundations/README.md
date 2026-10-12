@@ -3,7 +3,7 @@
 **Domain status:** in_progress  
 **Curriculum blueprint:** approved by learner  
 **Lesson chapters:** 01–14 approved; practical assessment not_started  
-**Project PRDs:** P01 drafted / pending learner review; P02–P04 candidate only  
+**Project PRDs:** P01 approved; P02 drafted pending review; P03–P04 candidate only  
 **Implementation:** not_started
 
 ## Purpose
@@ -50,4 +50,4 @@ Curriculum plan approved. Chapter 10 awaits review. Project candidates remain un
 
 ## Current project planning
 
-The [project catalog](projects/catalog.md) contains four distinct D01 candidates. The first behavior-only PRD, [P01 Workload & Complexity Observatory](projects/p01-workload-complexity-observatory-prd.md), is drafted and awaiting learner review. No implementation choices or product PRD approvals have been made. Practical assessments remain deferred until the explicit study phase.
+The [project catalog](projects/catalog.md) contains four distinct D01 candidates. The first behavior-only PRD, [P01 Workload & Complexity Observatory](projects/p01-workload-complexity-observatory-prd.md), is learner-approved. [P02 Concurrent Resource Allocation Simulator](projects/p02-concurrent-resource-allocation-simulator-prd.md) is drafted and awaiting review. No implementation choices have been made. Practical assessments remain deferred until the explicit study phase.
