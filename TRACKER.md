@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D02 — Chapter 03 editorial review  
+**Current authoring focus:** D02 — Chapter 04 editorial review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -25,11 +25,11 @@
 
 ## Remaining domains
 
-**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) approved; [Chapter 03 — Functions and Invocation](domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) drafted pending review. Projects and PRDs not started. **D03–D16:** not started.
+**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) approved; [Chapter 02 — Variables, Scope and Closures](domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md) approved; [Chapter 03 — Functions and Invocation](domains/02-javascript-typescript/lessons/03-functions-and-invocation.md) approved; [Chapter 04 — Objects, Prototypes and Classes](domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md) drafted pending review. Projects and PRDs not started. **D03–D16:** not started.
 
 ## Next action
 
-Learner reviews D02 Chapter 03 and approves or requests revisions before Chapter 04 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+Learner reviews D02 Chapter 04 and approves or requests revisions before Chapter 05 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## AI handoff rules
 
