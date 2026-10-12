@@ -1,7 +1,7 @@
 # Chapter 15 — Runtime Validation and Boundary Safety
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning assessments:** deferred until the learner starts studying  
 **Examples:** educational and not independently executed
 
