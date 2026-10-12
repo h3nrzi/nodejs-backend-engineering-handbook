@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 06 review",
-  "last_completed_step": "D01 Chapter 06 drafted",
-  "next_action": "Learner reviews Chapter 06, requests changes or approves before Chapter 07.",
+  "active_deliverable": "D01 Chapter 07 review",
+  "last_completed_step": "D01 Chapter 07 drafted",
+  "next_action": "Learner reviews Chapter 07; revise and secure approval before Chapter 08.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -28,8 +28,9 @@
         "03": "approved_by_learner",
         "04": "approved_by_learner",
         "05": "approved_by_learner",
-        "06": "drafted_pending_review",
-        "07-14": "not_started"
+        "06": "approved_by_learner",
+        "07": "drafted_pending_review",
+        "08-14": "not_started"
       }
     },
     {
@@ -246,6 +247,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/05-discrete-foundations.md",
         "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 06; Chapter 07 drafted pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md",
+        "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md"
       ]
     }
   ]
