@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "chapter_09_publication_blocked",
+  "review": "chapter_10_pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 Chapter 09 draft pending publication",
-  "last_completed_step": "D02 Chapter 08 learner-approved and published",
-  "next_action": "Publish Chapter 09 draft and present for learner review; no Chapter 10 before approval.",
+  "active_deliverable": "D02 Chapter 10 editorial review",
+  "last_completed_step": "D02 Chapter 09 approved and published; Chapter 10 drafted",
+  "next_action": "Learner reviews D02 Chapter 10 Iteration, Streams and Event Abstractions before drafting Chapter 11.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -57,6 +57,7 @@
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
+        "10": "drafted_pending_learner_review",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -65,7 +66,7 @@
         "06": "approved_by_learner",
         "07": "approved_by_learner",
         "08": "approved_by_learner",
-        "09": "draft_prepared_publication_blocked"
+        "09": "approved_by_learner"
       }
     },
     {
