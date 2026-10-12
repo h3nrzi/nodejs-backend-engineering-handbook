@@ -37,4 +37,4 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. The D02 curriculum and all sixteen lessons are learner-approved; current editorial gate is the P04 PackagePassport PRD.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. The D02 curriculum and all sixteen lessons are learner-approved; current editorial gate is the P05 SubscriptionHub PRD.
