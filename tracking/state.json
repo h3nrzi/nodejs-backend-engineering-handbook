@@ -446,6 +446,16 @@
         "domains/02-javascript-typescript/projects/catalog.md",
         "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner clarified handbook PRDs should prioritize product boundaries and what will be built; defer detailed unresolved product policy decisions to Matt Pocock skill-guided discovery at each project kickoff with learner approval. D01/D02 editorial approvals and D03 next action unchanged.",
+      "evidence": [
+        "docs/workflow.md",
+        "AGENTS.md",
+        "docs/quality-gates.md",
+        "templates/project-prd.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -454,5 +464,12 @@
     "project_catalog",
     "product_prds",
     "content_gate_closure"
-  ]
+  ],
+  "product_scope_policy": {
+    "handbook_prd_approval": "Clear problem, intended users, value, in-scope/out-of-scope/deferred capabilities and essential observable product behavior; nonessential detailed policies may remain open.",
+    "deferred_product_decisions": "At separate project kickoff, use actually installed Matt Pocock skill workflow with Codex to surface first-version build-blocking product questions; user approves consequential decisions before dependent technical work.",
+    "scope_change_control": "User explicitly approves changes to audience, essential behavior, in/out scope or non-goals. Skills and Codex cannot silently expand scope.",
+    "technical_work": "Architecture, technical specifications, ADRs, implementation and testing occur in the separate project repo after necessary product rules are decided.",
+    "status": "learner_agreed_2026-10-12"
+  }
 }
