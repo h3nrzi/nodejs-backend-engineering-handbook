@@ -3,7 +3,7 @@
 **Updated:** 2026-10-12  
 **Phase:** domain_authoring  
 **Active domain:** D01 — Computer Science Foundations  
-**Current gate:** Chapter 09 draft awaiting learner review.  
+**Current gate:** Chapter 10 draft awaiting learner review.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Verified progress
@@ -13,7 +13,7 @@
 - [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
 - [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): approved by learner.
 - [Chapter 04 — Algorithmic Problem-Solving](domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md): drafted, awaiting learner review. Code examples have not been independently executed.
-- Chapters 10–14: not started.
+- Chapters 11–14: not started.
 - Project candidates: initial catalog only; no approved project PRDs or implementation repositories.
 
 ## Next action
