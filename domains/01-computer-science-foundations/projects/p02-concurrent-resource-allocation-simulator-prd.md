@@ -4,6 +4,8 @@
 **Status:** approved_by_learner  
 **Product approval:** approved 2026-10-12  
 **Implementation:** not started  
+**Editorial approval scope:** the problem, target users, build/not-build boundaries and essential observable behavior are approved; open implementation-dependent product policies do not revoke that approval.
+**Decision timing:** resolve first-version blocking details with Codex through installed Matt Pocock skills at project kickoff; the learner approves consequential product choices and any scope change. No architecture/implementation is authorized by this PRD.
 **Boundary:** This document specifies user-visible product rules only; no algorithm, locking strategy, storage technology, queue, framework, or topology is prescribed.
 
 ## 1. Problem and motivation
@@ -132,7 +134,7 @@ These are behavioral commitments. How the simulator enforces or intentionally de
 - Multiple simultaneous runs must retain separate identities and never cross-contaminate results.
 - The product may reject oversized scenarios rather than making an unbounded resource promise.
 
-Exact numeric limits, history retention duration and permitted timeouts are open product decisions and must be approved before implementation.
+Exact numeric limits, history retention duration and permitted timeouts remain open product decisions. They can be decided at this project's Matt-guided kickoff with explicit learner approval before dependent technical work; they do not block PRD editorial approval.
 
 ## 9. Edge cases and failure behavior
 
@@ -183,7 +185,7 @@ Every supported condition requires a clearly labeled outcome; the product must n
 6. Is the report intended only for individual educational use or external read-only sharing?
 7. Which explicit limits on resources, attempts and run duration should v1 promise?
 
-These are product behavior decisions, **not** technical architecture choices.
+These questions are reserved for learner-approved product discovery with Codex and installed Matt Pocock skills at this project's kickoff. Clarify the choices needed for its first version before dependent technical design; proposals that change the approved product boundary need separate approval. These are **product behavior decisions, not technical architecture choices**.
 
 ## 12. Explicit non-goals
 
@@ -206,4 +208,4 @@ Distinct from P01 performance methodology, P03 graph workflow planning and P04 b
 - Draft authored 2026-10-12.
 - **Learner product approval:** confirmed 2026-10-12; open product questions remain for later resolution.
 - **Architecture and implementation:** not started.
-- **Next:** review policy questions and acceptance scope. After explicit approval, prepare P03 PRD as a separate step.
+- **Next for this project:** clarify essential first-version policies when implementation begins through Matt-guided discovery, with learner approval. Its PRD has already received editorial approval; no code or architecture work has started.
