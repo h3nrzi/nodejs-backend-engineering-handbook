@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C02  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-12.  
 **Prerequisite approval:** learner approved Chapter 01 on 2026-10-12.  
 **Educational execution evidence:** Section 14 records the actual environment and checked scenarios.  
 **Assessment / project implementation:** deferred / not_started.
@@ -347,6 +347,6 @@ Additional official references: [ESM](https://github.com/nodejs/node/blob/main/d
 | Failure modes and trade-offs | Missing files, malformed settings, initialization side effects and provenance. |
 | Exercises and answer guidance | Seven future-study questions; no current assessment. |
 | Version/reference honesty | Exact runtime, dated official checks and scoped observations. |
-| Coverage | D03-C02 authored/in_review; D03-C01 approved; no new product/implementation coverage. |
+| Coverage | D03-C01 and D03-C02 learner-approved editorially; no product, assessment or implementation coverage is inferred. |
 
-**Author quality review:** completed against handbook quality gates. **Next:** learner approves or revises Chapter 02 before Chapter 03 authoring. A chapter's editorial approval does not approve a runtime configuration for an external project.
+**Author quality review:** completed against handbook quality gates. **Next:** author Chapter 03 — The Event Loop and I/O Lifecycle — only, then request its learner editorial review. A chapter's editorial approval does not approve a runtime configuration for an external project.
