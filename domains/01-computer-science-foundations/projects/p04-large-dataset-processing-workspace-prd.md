@@ -4,6 +4,8 @@
 **Status:** approved_by_learner  
 **Product approval:** confirmed 2026-10-12  
 **Implementation:** not started
+**Approval meaning:** product problem, intended users, in/out/deferred scope and indispensable observable behavior are approved; remaining detailed product questions are not silently decided.
+**Matt kickoff:** use the actually installed Matt Pocock skills with Codex to clarify build-blocking first-version behavior, request learner approval and preserve scope before dependent architecture work.
 
 ## Problem and users
 
@@ -64,18 +66,20 @@ Empty files, header-only files, invalid encoding, multibyte text split across ch
 11. Progress, units and unavailable metrics are labeled correctly.
 12. A reviewer can interpret an exported report without the original session.
 
-## Product-level questions retained for later clarification
+## Product boundary and open questions for project kickoff
 
-1. Input format: CSV with clearly documented UTF-8/dialect assumptions for v1?
-2. Initial operations: validation, filtering and simple aggregation?
-3. Invalid rows: user-selectable strict rejection versus partial acceptance?
-4. Interrupted work: fresh restart rather than guaranteed resume from a byte position?
-5. Partial output: unavailable for download in v1?
-6. Integrity: output counts and operation-specific validation required before success?
-7. Progress: bytes and rows where known, otherwise explicitly estimated?
-8. Limits: supported sizes, active runs, run duration and retention to be confirmed?
+**Already approved in scope:** a workspace for supported structured-text datasets with validation, filtering and aggregation, trustworthy status/progress, honest integrity counts and validated downloadable outputs for successful runs. Real production data connectors and unrestricted code execution are out; exact mid-file resume is deferred. These commitments are not unanswered scope choices.
 
-Suggested answers to 1–7 are yes, but no unanswered numerical limit or policy should be invented during implementation. Learner approval of the draft does not resolve these questions.
+**Still to decide through Matt-guided product discovery when this project starts:**
+
+1. Which initial input format and documented encoding/dialect subset are supported?
+2. Which specific validation, filtering and aggregation options make up the first curated selection?
+3. How do users choose strict rejection versus partial acceptance for invalid rows?
+4. What are the detailed interruption, restart and partial-output visibility policies consistent with the already approved integrity guarantees and deferred exact resume?
+5. Which progress values can be presented and how should estimates be labeled?
+6. What numeric input, active-run, duration, report-size and retention limits are acceptable?
+
+Proposed defaults (e.g., CSV/UTF-8, simple operations and fresh restart) remain recommendations, not approvals. The learner approves the first-version decisions before dependent technical design; the handbook PRD does not need those details resolved to remain editorially approved.
 
 ## Learning coverage and distinction
 
@@ -83,4 +87,4 @@ Covers operating systems, memory, filesystem I/O, buffering, backpressure, state
 
 ## Approval and handoff
 
-**Learner approved the P04 draft on 2026-10-12.** This approval covers the described product direction and scope. Open product limits and detailed behavior must be resolved before handing a definitive implementation PRD to Codex. Architecture, technical specification, tickets, code and execution evidence are not started.
+**Learner editorially approved the P04 product direction and scope on 2026-10-12.** This PRD is the agreed product-boundary input to Codex at project kickoff; open first-version policies and limits will be resolved *with* Codex using the installed Matt Pocock skills and explicit learner approval, before dependent technical work. No finalized implementation-ready specification is claimed. Architecture, tickets, code and execution evidence are not started.
