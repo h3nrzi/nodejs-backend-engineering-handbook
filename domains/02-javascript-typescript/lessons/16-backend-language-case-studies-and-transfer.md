@@ -1,7 +1,7 @@
 # Chapter 16 — Backend Language Case Studies and Transfer
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Study assessments:** deferred until explicit learning phase  
 **Examples:** illustrative, not independently executed
 
