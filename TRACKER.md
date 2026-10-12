@@ -34,3 +34,7 @@ Learner reviews D02 curriculum blueprint and approves or requests revisions befo
 ## AI handoff rules
 
 Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state before work. The **product PRDs state what/why and observable criteria**, never prescribe implementation. Codex owns future architecture, ADRs, tickets, implementation and tests in separate repositories. Do not infer implementation from PRD approval or competence from lesson approval.
+
+## Standard authoring sequence (learner approved)
+
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. This workflow agreement does not constitute approval of the D02 curriculum draft; the current gate remains D02 curriculum review.
