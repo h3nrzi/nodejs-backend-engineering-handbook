@@ -2,7 +2,7 @@
 
 A curated backend-engineering curriculum and portfolio product-specification catalog.
 
-**Current phase:** Content authoring and project planning. **D01 educational content:** 14/14 lessons approved. **D01 product PRDs:** 4/4 approved at product-scope level, with open product questions. **Learning assessments:** deferred until the learner explicitly starts studying. **Implementations:** none started. **Next planned domain:** D02 — JavaScript & TypeScript.
+**Current phase:** Content authoring and project planning. **D01:** 14/14 lessons and 4/4 product-scope PRDs approved. **D02:** 16/16 lessons and 5/5 product-scope PRDs approved. Open product questions remain in both domains. **Learning assessments:** deferred until the learner explicitly starts studying. **Implementations:** none started. **Next authoring domain:** D03 — Node.js Internals (curriculum not started).
 
 ## Start here
 
@@ -11,6 +11,8 @@ A curated backend-engineering curriculum and portfolio product-specification cat
 3. [Current tracker](TRACKER.md) and [canonical machine state](tracking/state.json)
 4. [Authoring and implementation workflow](docs/workflow.md)
 5. [D01 — Computer Science Foundations](domains/01-computer-science-foundations/README.md) and its [four-project catalog](domains/01-computer-science-foundations/projects/catalog.md)
+6. [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/README.md) and its [five approved project PRDs](domains/02-javascript-typescript/projects/catalog.md)
+7. [D03 — Node.js Internals](domains/03-nodejs-internals/README.md) — next curriculum-planning domain
 
 ## Product PRDs in D01
 
