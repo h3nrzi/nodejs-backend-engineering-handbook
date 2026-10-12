@@ -40,4 +40,4 @@ Accessible authoring, readable errors, safe handling of untrusted descriptions, 
 Initial policy domain, rule vocabulary, precedence and default outcome, approval roles, input/report limits, retention, privacy, activation/rollback and compatibility classification. No architecture, stack or implementation choices.
 
 ## D02 coverage and approval
-Exercises discriminated unions, exhaustive handling, rule composition, object contracts, and runtime validation. Concept approved; this PRD requires learner review. Learning assessment and implementation deferred.
+Exercises discriminated unions, exhaustive handling, rule composition, object contracts, and runtime validation. Concept and PRD approved by learner on 2026-10-12; open product decisions remain. Learning assessment and implementation deferred.
