@@ -25,3 +25,7 @@ Before finishing, persist current task, status, exact file paths, links, open qu
 ## Separate authoring from studying (2026-10-12)
 
 The learner's current phase is **content authoring and portfolio-project planning**, not personal study. During authoring, finish domain lessons, project catalogs, implementation-neutral PRDs and trackers. The exercises and assessment rubric in Chapter 14 remain ready for future use but are **deferred**. Do not initiate, grade or require any learner quiz, practical defense or assessment evidence unless the learner explicitly starts the study phase. Domain chapter editorial approval does not certify competence. Keep project architecture/technical implementation decisions in separate Codex workflows.
+
+## Approved per-domain authoring sequence (2026-10-12)
+
+Apply this order to every domain: **(1) Curriculum planning and learner approval → (2) complete individual lessons with chapter-by-chapter review → (3) develop and review a distinct project candidate catalog → (4) author and review implementation-neutral product PRDs → (5) close the domain content-authoring gate and move to the next domain.** Preliminary project ideas may inform curriculum planning but the actual catalog and PRDs are finalized only after lesson authoring. Do not start learner assessments during authoring. Implementation projects and Codex decisions remain separate. This sequencing is learner-approved; it does not itself approve an individual curriculum blueprint.
