@@ -1,7 +1,7 @@
 # Chapter 02 — Variables, Scope and Closures
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning assessment:** deferred until explicit study phase  
 **Examples:** educational; not independently executed
 
