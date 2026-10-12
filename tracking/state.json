@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-12",
+  "phase": "repository_infrastructure",
+  "review": "pending_learner_review",
+  "active_domain_id": null,
+  "next_domain_id": "D01",
+  "active_deliverable": "infrastructure_review",
+  "last_completed_step": "repository_bootstrap",
+  "next_action": "User reviews infrastructure; apply requested fixes; upon approval begin D01 only.",
+  "blockers": [],
+  "open_decisions": [],
+  "current_implementation_project": null,
+  "domains": [
+    {
+      "id": "D01",
+      "name": "Computer Science Foundations",
+      "slug": "computer-science-foundations",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D02",
+      "name": "JavaScript & TypeScript",
+      "slug": "javascript-typescript",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D03",
+      "name": "Node.js Internals",
+      "slug": "nodejs-internals",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D04",
+      "name": "Network & Protocol Engineering",
+      "slug": "network-protocol-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D05",
+      "name": "API Engineering",
+      "slug": "api-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D06",
+      "name": "Software Architecture",
+      "slug": "software-architecture",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D07",
+      "name": "Database Engineering",
+      "slug": "database-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D08",
+      "name": "Data & Storage Systems",
+      "slug": "data-storage-systems",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D09",
+      "name": "Security Engineering",
+      "slug": "security-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D10",
+      "name": "Distributed Systems",
+      "slug": "distributed-systems",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": "prior_conversation_outline_only"
+    },
+    {
+      "id": "D11",
+      "name": "Messaging & Async Processing",
+      "slug": "messaging-async-processing",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    },
+    {
+      "id": "D12",
+      "name": "Performance & Scalability",
+      "slug": "performance-scalability",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    },
+    {
+      "id": "D13",
+      "name": "Reliability Engineering",
+      "slug": "reliability-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    },
+    {
+      "id": "D14",
+      "name": "Testing & Quality Engineering",
+      "slug": "testing-quality-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    },
+    {
+      "id": "D15",
+      "name": "DevOps & Platform Engineering",
+      "slug": "devops-platform-engineering",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    },
+    {
+      "id": "D16",
+      "name": "Observability & Operations",
+      "slug": "observability-operations",
+      "status": "not_started",
+      "lesson_status": "not_started",
+      "project_specs_status": "not_started",
+      "implementation_status": "not_started",
+      "source_outline": null
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-12",
+      "event": "repository infrastructure initialized; prior D01-D10 chat discussions are outlines, not lessons",
+      "evidence": [
+        "README.md",
+        "AGENTS.md",
+        "ROADMAP.md",
+        "TRACKER.md"
+      ]
+    }
+  ]
+}
