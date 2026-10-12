@@ -5,6 +5,8 @@
 **Concept:** learner-approved, 2026-10-12  
 **PRD approval:** approved by learner; open product decisions remain  
 **Implementation:** not started; technical architecture deliberately unspecified
+**Approval boundary:** editorially approved problem, users, in/out/deferred scope and indispensable product behavior; detailed open policies do not block this approval.
+**Decision timing:** use installed Matt Pocock skills with Codex at this project's kickoff for unresolved first-version decisions; learner approves consequential choices and any scope change before dependent technical design.
 
 ## 1. Problem and motivation
 
@@ -141,7 +143,7 @@ The workspace supports accessible keyboard interactions, readable progress and r
 9. Which privacy and consent/opt-out policies are mandatory for target users?
 10. What constitutes a completed batch when some recipient results remain unknown?
 
-**Starting recommendations, not approved decisions:** one outbound channel, explicit conservative duplicate handling, stable intent identity, truthful unknown state, operator-visible per-recipient history, and no promise of cancellation after initiation.
+**Starting recommendations, not approved decisions:** one outbound channel, explicit conservative duplicate handling, stable intent identity, truthful unknown state, operator-visible per-recipient history, and no promise of cancellation after initiation. The learner will decide the first-version details with Codex using installed Matt Pocock skills before dependent technical decisions; the approved product boundary must be preserved.
 
 ## 12. Explicit non-goals
 
@@ -154,5 +156,5 @@ DispatchDesk forces careful treatment of asynchronous composition, partial succe
 ## 14. Approval record
 
 **Concept approved:** 2026-10-12 as part of five differentiated D02 product ideas.
-**PRD editorial approval:** pending learner review. Product decision questions intentionally open.
+**PRD editorial approval:** learner-approved on 2026-10-12; product direction and boundaries confirmed. Detailed product questions remain open for Matt-guided project kickoff.
 **Implementation and learning assessment:** not started.
