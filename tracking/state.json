@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "project_catalog_pending_learner_review",
+  "review": "D02_P01_prd_pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 project catalog review",
-  "last_completed_step": "D02 all 16 chapters approved; 5 project concepts proposed",
-  "next_action": "Learner reviews five D02 product ideas before PRDs.",
+  "active_deliverable": "D02 P01 ContractGuard PRD editorial review",
+  "last_completed_step": "D02 five project concepts approved; P01 PRD drafted",
+  "next_action": "Learner reviews ContractGuard P01 behavior-only PRD before P02 PRD.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -51,8 +51,8 @@
       "name": "JavaScript & TypeScript",
       "slug": "javascript-typescript",
       "status": "in_progress",
-      "lesson_status": "in_progress",
-      "project_specs_status": "not_started",
+      "lesson_status": "completed",
+      "project_specs_status": "catalog_approved_p01_prd_in_review",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
@@ -73,6 +73,13 @@
         "07": "approved_by_learner",
         "08": "approved_by_learner",
         "09": "approved_by_learner"
+      },
+      "project_progress": {
+        "P01": "prd_drafted_pending_learner_review",
+        "P02": "concept_approved_prd_not_started",
+        "P03": "concept_approved_prd_not_started",
+        "P04": "concept_approved_prd_not_started",
+        "P05": "concept_approved_prd_not_started"
       }
     },
     {
