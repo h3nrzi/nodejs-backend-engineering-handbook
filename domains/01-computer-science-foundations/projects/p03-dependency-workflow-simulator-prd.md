@@ -1,8 +1,8 @@
 # PRD P03 — Dependency Workflow Simulator
 
 **Domain:** D01 — Computer Science Foundations
-**Status:** draft_pending_learner_review
-**Product approval:** pending
+**Status:** approved_by_learner
+**Product approval:** approved 2026-10-12
 **Implementation:** not started
 
 ## 1. Problem
@@ -111,4 +111,4 @@ Illustrates graph validity and order (D01 Chapters 03–05), transition invarian
 
 ## 14. Approval
 
-Drafted 2026-10-12. **Learner approval pending.** No architecture, implementation, ADR, ticket or test execution claimed. Next: review product behavior before P04.
+Drafted 2026-10-12. **Learner approved 2026-10-12; remaining product questions retained.** No architecture, implementation, ADR, ticket or test execution claimed. Next: review product behavior before P04.
