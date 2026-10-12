@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "chapter_07_pending_learner_review",
+  "review": "chapter_09_publication_blocked",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 Chapter 07 editorial review",
-  "last_completed_step": "D02 Chapter 06 approved; Chapter 07 drafted",
-  "next_action": "Learner reviews D02 Chapter 07 before drafting Chapter 08.",
+  "active_deliverable": "D02 Chapter 09 draft pending publication",
+  "last_completed_step": "D02 Chapter 08 learner-approved and published",
+  "next_action": "Publish Chapter 09 draft and present for learner review; no Chapter 10 before approval.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -63,7 +63,9 @@
         "04": "approved_by_learner",
         "05": "approved_by_learner",
         "06": "approved_by_learner",
-        "07": "drafted_pending_learner_review"
+        "07": "approved_by_learner",
+        "08": "approved_by_learner",
+        "09": "draft_prepared_publication_blocked"
       }
     },
     {
