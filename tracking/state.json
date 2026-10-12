@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "chapter_04_pending_learner_review",
+  "review": "chapter_06_pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 Chapter 04 editorial review",
-  "last_completed_step": "D02 Chapter 03 approved; Chapter 04 drafted",
-  "next_action": "Learner reviews D02 Chapter 04 Objects, Prototypes and Classes; revise or approve before Chapter 05.",
+  "active_deliverable": "D02 Chapter 06 editorial review",
+  "last_completed_step": "D02 Chapter 05 approved; Chapter 06 drafted",
+  "next_action": "Learner reviews D02 Chapter 06 Modules and Package Boundaries before Chapter 07.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -60,7 +60,9 @@
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
-        "04": "drafted_pending_learner_review"
+        "04": "approved_by_learner",
+        "05": "approved_by_learner",
+        "06": "drafted_pending_learner_review"
       }
     },
     {
