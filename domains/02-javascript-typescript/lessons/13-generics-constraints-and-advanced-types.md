@@ -1,7 +1,7 @@
 # Chapter 13 — Generics, Constraints and Advanced Types
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Assessments:** deferred until explicit learning phase  
 **Examples:** educational; not independently executed
 
