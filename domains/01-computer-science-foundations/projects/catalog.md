@@ -1,6 +1,6 @@
 # D01 — Project candidate catalog
 
-**Status:** four differentiated concepts; P01 PRD approved; P02 PRD drafted pending learner review; P03/P04 remain candidates. **No implementations started.**
+**Status:** four differentiated concepts; P01 PRD approved; P02 PRD approved; P03 PRD drafted pending learner review; P04 remains a candidate. **No implementations started.**
 
 These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a PRD is approved.
 
@@ -19,7 +19,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P02 — Concurrent Resource Allocation Simulator
 
-**Draft PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-prd.md) — pending learner review.
+**Approved PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-prd.md) — learner-approved; product thresholds remain open.
 
 - **Problem:** concurrent claims on limited resources can cause invalid allocations or inconsistent outcomes.
 - **Users:** students and developers designing capacity-limited products such as ticket sales or reservations.
@@ -31,6 +31,8 @@ These are distinct product ideas with observable goals and target learning cover
 - **Next:** candidate for a product PRD after review.
 
 ## P03 — Dependency Workflow Simulator
+
+**Draft PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-prd.md) — pending learner review.
 
 - **Problem:** complex activities depend on other activities; cycles and invalid transitions can make plans impossible to execute correctly.
 - **Users:** platform developers, engineering trainees, operations teams modeling workflows.
@@ -65,4 +67,4 @@ These are distinct product ideas with observable goals and target learning cover
 - P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
 - P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
 
-All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 approved; P02 PRD pending review; P03–P04 remain candidate concepts. Study assessments are deferred until the learner explicitly begins learning.
+All four remain **candidates**, not required implementations. Draft PRDs are reviewed **one at a time**. P01 approved; P02 approved; P03 PRD pending review; P04 remains a candidate concept. Study assessments are deferred until the learner explicitly begins learning.
