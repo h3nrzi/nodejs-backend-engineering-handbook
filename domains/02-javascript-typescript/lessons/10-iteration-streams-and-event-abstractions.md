@@ -1,7 +1,7 @@
 # Chapter 10 — Iteration, Streams and Event Abstractions
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Learning assessment:** deferred until explicitly started  
 **Examples:** educational; not independently executed
 
