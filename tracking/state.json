@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "D02_P05_prd_pending_learner_review",
-  "active_domain_id": "D02",
-  "next_domain_id": "D02",
-  "active_deliverable": "D02 P05 SubscriptionHub PRD editorial review",
-  "last_completed_step": "D02 P04 PackagePassport PRD approved; P05 SubscriptionHub PRD drafted",
-  "next_action": "Learner reviews P05 SubscriptionHub PRD; then close D02 content gate if approved.",
+  "review": "no_pending_review_D03_curriculum_not_started",
+  "active_domain_id": "D03",
+  "next_domain_id": "D03",
+  "active_deliverable": "D03 Node.js Internals curriculum blueprint authoring (not started)",
+  "last_completed_step": "D02 content gate closed: all 16 lessons and all 5 PRDs learner-approved; product questions remain open",
+  "next_action": "Draft D03 Node.js Internals curriculum blueprint for learner editorial review; do not start D03 lessons until curriculum approval.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -50,9 +50,9 @@
       "id": "D02",
       "name": "JavaScript & TypeScript",
       "slug": "javascript-typescript",
-      "status": "in_progress",
+      "status": "content_complete",
       "lesson_status": "completed",
-      "project_specs_status": "catalog_approved_p01_p02_p03_p04_approved_p05_in_review",
+      "project_specs_status": "approved_with_open_product_questions",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
@@ -79,8 +79,9 @@
         "P02": "prd_approved_by_learner_open_questions_remain",
         "P03": "prd_approved_by_learner_open_questions_remain",
         "P04": "prd_approved_by_learner_open_questions_remain",
-        "P05": "prd_drafted_pending_learner_review"
-      }
+        "P05": "prd_approved_by_learner_open_questions_remain"
+      },
+      "assessment_status": "deferred_until_learning_phase"
     },
     {
       "id": "D03",
@@ -434,6 +435,15 @@
       "event": "Learner approved D02 P04 PackagePassport product PRD; P05 SubscriptionHub PRD drafted for editorial review; technical implementation and assessments deferred",
       "evidence": [
         "domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-prd.md",
+        "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "D02 JavaScript & TypeScript content-authoring gate closed: approved sixteen lessons, five differentiated project concepts and five behavior-only product PRDs; open product questions retained; study assessments and implementations deferred",
+      "evidence": [
+        "domains/02-javascript-typescript/README.md",
+        "domains/02-javascript-typescript/projects/catalog.md",
         "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md"
       ]
     }
