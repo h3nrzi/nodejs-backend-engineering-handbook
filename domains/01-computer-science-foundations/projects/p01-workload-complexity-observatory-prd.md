@@ -1,8 +1,8 @@
 # PRD P01 — Workload & Complexity Observatory
 
 **Domain:** D01 — Computer Science Foundations  
-**Status:** draft_pending_learner_review  
-**Product approval:** pending  
+**Status:** approved_by_learner  
+**Product approval:** approved 2026-10-12  
 **Implementation:** not started  
 **Boundary:** This document describes product behavior, not an implementation design.
 
@@ -180,6 +180,6 @@ It is deliberately distinct from P02's concurrency correctness, P03's dependency
 ## 14. Approval record
 
 - 2026-10-12: first product-level draft authored for review.
-- **Learner approval:** pending.
+- **Learner approval:** confirmed in conversation 2026-10-12; open product questions remain for future implementation discovery.
 - **Architecture, ADRs, tickets, code and test evidence:** not started.
-- **Next:** review scope and open product questions; refine and explicitly approve before a separate Codex implementation project is started.
+- **Next:** product PRD accepted; open product thresholds and questions require resolution before any implementation; no implementation started.
