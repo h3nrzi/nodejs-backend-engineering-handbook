@@ -29,3 +29,11 @@ Read AGENTS.md, tracking/state.json, D01 curriculum and the lesson files. Approv
 The learner is currently building the handbook, completing lesson content and selecting/documenting distinct portfolio projects. They are **not currently studying or taking assessments**. Never initiate or score Chapter 14 exams during content production. Keep assessment exercises available in their lessons and mark them `deferred_until_learning_phase`. Begin quizzes, applied exercises and evidence reviews only when the learner explicitly starts the learning phase.
 
 **Next work:** D01 project catalog review, select project concepts and draft nonprescriptive product PRDs one at a time. Implementation and architecture remain separate Codex responsibilities.
+
+## D01 project catalog — current handoff
+
+- Four distinct project concepts are documented in [catalog](domains/01-computer-science-foundations/projects/catalog.md): P01 performance experiments, P02 capacity races, P03 dependency workflows, P04 memory-bounded dataset processing.
+- [P01 Workload & Complexity Observatory PRD](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) is **drafted pending learner review**, not approved or implemented.
+- P02–P04 remain candidate briefs; their PRDs have not started.
+- **Next:** review P01 product scope and seven open product questions, then revise/approve; draft P02 in a separate step.
+- No learner assessment should be initiated until the learner explicitly starts studying.
