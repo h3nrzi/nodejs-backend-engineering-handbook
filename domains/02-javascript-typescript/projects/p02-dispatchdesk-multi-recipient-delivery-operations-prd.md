@@ -1,9 +1,9 @@
 # P02 — DispatchDesk: Multi-Recipient Delivery Operations — Product Requirements
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** draft_pending_learner_review  
+**Status:** approved_by_learner  
 **Concept:** learner-approved, 2026-10-12  
-**PRD approval:** pending  
+**PRD approval:** approved by learner; open product decisions remain  
 **Implementation:** not started; technical architecture deliberately unspecified
 
 ## 1. Problem and motivation
