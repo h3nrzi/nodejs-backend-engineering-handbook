@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C06  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — learner explicitly approved Chapter 06 on 2026-10-12.  
 **Prerequisite review:** learner explicitly approved Chapter 05 on 2026-10-12.  
 **Educational execution:** Section 13 records executed fixtures and their limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -309,4 +309,4 @@ Five educational fixtures passed twelve execution scenarios, including 256 valid
 | Exercises | Nine future-study questions with rubrics; assessment deferred. |
 | Honest gaps | Shared-memory concurrency, streams, normalization, legacy encoding matrix and heap proof deferred. |
 
-**Review outcome:** author quality-gate review completed; Chapter 06 submitted for learner editorial review. Next: approve or revise Chapter 06 before Chapter 07 — Filesystem I/O and Resource Ownership — is authored.
+**Review outcome:** author quality-gate review completed; learner explicitly approved Chapter 06 on 2026-10-12. Next: Chapter 07 — Filesystem I/O and Resource Ownership — is authored/in_review and requires learner review before Chapter 08.

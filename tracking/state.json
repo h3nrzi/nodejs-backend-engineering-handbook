@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_06",
+  "review": "pending_learner_review_D03_chapter_07",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 06 Buffers, Bytes and Text Encoding (authored; in_review)",
-  "last_completed_step": "Recorded explicit learner approval of D03 Chapter 05; authored Chapter 06 with twelve verified educational execution scenarios including 256 UTF-8 sample partitions, and reconciled matrix, trackers and indexes.",
-  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md; after explicit approval, author Chapter 07 only and request editorial review.",
+  "active_deliverable": "D03 Chapter 07 Filesystem I/O and Resource Ownership (authored; in_review)",
+  "last_completed_step": "Recorded explicit learner approval of D03 Chapter 06; authored Chapter 07 with fifteen verified educational execution scenarios and temporary-file cleanup checks; reconciled matrix, trackers and indexes.",
+  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md; after explicit approval, author Chapter 08 only and request editorial review.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-06-review",
-      "question": "Approve or revise D03 Chapter 06 editorial content.",
+      "id": "D03-chapter-07-review",
+      "question": "Approve or revise D03 Chapter 07 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md"
+      "evidence": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md"
     }
   ],
   "current_implementation_project": null,
@@ -119,8 +119,8 @@
         "03": "approved_by_learner",
         "04": "approved_by_learner",
         "05": "approved_by_learner",
-        "06": "in_review",
-        "07": "not_started",
+        "06": "approved_by_learner",
+        "07": "in_review",
         "08": "not_started",
         "09": "not_started"
       },
@@ -197,6 +197,19 @@
           "module_context": "Standalone ESM (.mjs) child processes",
           "utf8_sample_partitions_checked": 256,
           "limits": "One local environment and one exhaustively partitioned valid sample; alias/copy and decoding/error relationships checked; no uninitialized bytes exposed, heap proof, learner assessment or implemented product."
+        },
+        "07": {
+          "status": "15_educational_execution_scenarios_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+          "checked_on": "2026-10-12",
+          "node": "v26.4.0",
+          "v8": "14.6.202.34-node.21",
+          "uv": "1.52.1",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "Standalone ESM (.mjs) child processes",
+          "temporary_file_cleanup": "Harness confirmed temporary parent empty after each scenario",
+          "limits": "One local environment; controlled short requests/faults, successful handle closure, API outcomes and paths checked. No close-failure injection, real kernel short-write induction, watcher portability, crash durability, learner assessment or implemented product."
         }
       },
       "chapter_approval_dates": {
@@ -204,7 +217,8 @@
         "02": "2026-10-12",
         "03": "2026-10-12",
         "04": "2026-10-12",
-        "05": "2026-10-12"
+        "05": "2026-10-12",
+        "06": "2026-10-12"
       }
     },
     {
@@ -696,6 +710,20 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner explicitly approved Chapter 06. Authored Chapter 07 only; official docs checked through Context7 and filesystem document. Fifteen educational execution scenarios passed with temporary-file cleanup checked after each. Controlled write request/fault paths labeled; no crash-durability or watcher portability claim. Chapter 07 in_review; Chapters 08–18 not_started; assessments and implementations deferred. Matrix and both trackers reconciled with root/domain indexes.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+        "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -714,23 +742,23 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_chapter_05_approved_chapter_06_in_review",
+    "status": "reconciled_D03_chapter_06_approved_chapter_07_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "60165d6558130bfe0a4bc184d7fd8b7742ea3083",
+    "baseline_commit": "4a5c60eae6e6c4dbdeaf1f83e16ba29eadeb16d3",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 36,
+    "chapter_mapping_count": 37,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
       "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
@@ -738,8 +766,8 @@
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C05 approved mapping added; D03-C06 authored/in_review mapping added separately. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 35,
+    "mapping_change": "D03-C06 approved mapping added; D03-C07 authored/in_review mapping added separately. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
+    "approved_chapter_mapping_count": 36,
     "in_review_chapter_mapping_count": 1
   }
 }
