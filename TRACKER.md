@@ -1,23 +1,25 @@
 # Human-readable tracker
 
-**Last updated:** 2026-10-12  
+**Updated:** 2026-10-12  
 **Phase:** domain_authoring  
 **Active domain:** D01 — Computer Science Foundations  
-**Current:** Chapters 01 and 02 approved; Chapter 03 drafted, pending learner review.
+**Current gate:** Chapter 04 draft awaiting learner review.  
+**Canonical state:** [tracking/state.json](tracking/state.json)
 
-## Progress
+## Verified progress
 
-- Curriculum blueprint: approved.
+- D01 curriculum blueprint: approved by learner.
 - [Chapter 01 — Cost Models and Correctness](domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md): approved by learner.
 - [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
-- [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): draft committed, awaiting learner review.
-- Chapters 04–14: not started.
-- Project candidates: drafted only; PRDs and implementations: not started.
+- [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): approved by learner.
+- [Chapter 04 — Algorithmic Problem-Solving](domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md): drafted, awaiting learner review. Code examples have not been independently executed.
+- Chapters 05–14: not started.
+- Project candidates: initial catalog only; no approved project PRDs or implementation repositories.
 
-## Next step
+## Next action
 
-Review Chapter 03, revise if needed, and obtain learner approval before Chapter 04. Adhere to AGENTS.md: project PRDs must not prescribe architecture; technical decisions belong to Codex in separate project repos.
+Learner reviews Chapter 04. Incorporate feedback and obtain explicit approval before authoring Chapter 05 — Discrete Foundations.
 
 ## AI handoff
 
-Read AGENTS.md, tracking/state.json, D01 curriculum and Chapter 01 before authoring Chapter 02. Do not claim an uncommitted lesson is present.
+Read AGENTS.md, tracking/state.json, D01 curriculum and the lesson files. Approved means learner approval of educational content, not independent test execution. Project PRDs must remain implementation-neutral; technical design is reserved for Codex skill-guided local project discovery.
