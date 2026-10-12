@@ -3,19 +3,20 @@
 **Last updated:** 2026-10-12  
 **Phase:** domain_authoring  
 **Active domain:** D01 — Computer Science Foundations  
-**Current:** Chapter 01 approved; Chapter 02 drafted and awaiting learner review.
+**Current:** Chapters 01 and 02 approved; Chapter 03 drafted, pending learner review.
 
 ## Progress
 
 - Curriculum blueprint: approved.
 - [Chapter 01 — Cost Models and Correctness](domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md): approved by learner.
-- [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): draft committed, awaiting learner review.
-- Chapters 03–14: not started.
+- [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
+- [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): draft committed, awaiting learner review.
+- Chapters 04–14: not started.
 - Project candidates: drafted only; PRDs and implementations: not started.
 
 ## Next step
 
-Review Chapter 02, revise if needed, and obtain learner approval before Chapter 03. Adhere to AGENTS.md: project PRDs must not prescribe architecture; technical decisions belong to Codex in separate project repos.
+Review Chapter 03, revise if needed, and obtain learner approval before Chapter 04. Adhere to AGENTS.md: project PRDs must not prescribe architecture; technical decisions belong to Codex in separate project repos.
 
 ## AI handoff
 
