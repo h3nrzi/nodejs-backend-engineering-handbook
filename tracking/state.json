@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "D02_P02_prd_pending_learner_review",
+  "review": "D02_P03_prd_publication_blocked",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 P02 DispatchDesk PRD editorial review",
-  "last_completed_step": "D02 P01 PRD approved; P02 PRD drafted",
-  "next_action": "Learner reviews P02 DispatchDesk behavior-only PRD before authoring P03 PRD.",
+  "active_deliverable": "D02 P03 PolicyLens PRD draft pending publication",
+  "last_completed_step": "D02 P02 PRD approved by learner; P03 PRD authored but publication blocked",
+  "next_action": "Publish PolicyLens P03 draft for learner review before P04.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -76,8 +76,8 @@
       },
       "project_progress": {
         "P01": "prd_approved_by_learner_open_questions_remain",
-        "P02": "prd_drafted_pending_learner_review",
-        "P03": "concept_approved_prd_not_started",
+        "P02": "prd_approved_by_learner_open_questions_remain",
+        "P03": "prd_drafted_publication_blocked",
         "P04": "concept_approved_prd_not_started",
         "P05": "concept_approved_prd_not_started"
       }
