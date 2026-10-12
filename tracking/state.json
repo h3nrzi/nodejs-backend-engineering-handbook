@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 12 learner review",
-  "last_completed_step": "D01 Chapter 12 drafted",
-  "next_action": "Learner reviews Chapter 12; revise or approve before authoring Chapter 13.",
+  "active_deliverable": "D01 Chapter 13 learner review",
+  "last_completed_step": "D01 Chapter 13 drafted",
+  "next_action": "Learner reviews Chapter 13; revise or approve before authoring Chapter 14.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -25,7 +25,9 @@
       "chapter_progress": {
         "10": "approved_by_learner",
         "11": "approved_by_learner",
-        "12": "drafted_pending_review",
+        "12": "approved_by_learner",
+        "13": "drafted_pending_review",
+        "14": "not_started",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -34,8 +36,7 @@
         "06": "approved_by_learner",
         "07": "approved_by_learner",
         "08": "approved_by_learner",
-        "09": "approved_by_learner",
-        "13-14": "not_started"
+        "09": "approved_by_learner"
       }
     },
     {
@@ -292,6 +293,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
         "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 12; Chapter 13 drafted pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+        "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md"
       ]
     }
   ]
