@@ -5,9 +5,9 @@
   "review": "pending_learner_review",
   "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "D01 Chapter 13 learner review",
-  "last_completed_step": "D01 Chapter 13 drafted",
-  "next_action": "Learner reviews Chapter 13; revise or approve before authoring Chapter 14.",
+  "active_deliverable": "D01 Chapter 14 learner review",
+  "last_completed_step": "D01 Chapter 14 drafted",
+  "next_action": "Learner reviews Chapter 14, then review the completed lesson series separately from outstanding assessment evidence and project PRDs.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -26,8 +26,8 @@
         "10": "approved_by_learner",
         "11": "approved_by_learner",
         "12": "approved_by_learner",
-        "13": "drafted_pending_review",
-        "14": "not_started",
+        "13": "approved_by_learner",
+        "14": "drafted_pending_review",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -301,6 +301,14 @@
       "evidence": [
         "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
         "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner approved Chapter 13; Chapter 14 authored, pending review",
+      "evidence": [
+        "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+        "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
       ]
     }
   ]
