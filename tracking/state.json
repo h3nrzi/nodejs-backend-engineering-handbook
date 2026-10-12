@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-12",
-  "phase": "repository_infrastructure",
+  "phase": "domain_authoring",
   "review": "pending_learner_review",
-  "active_domain_id": null,
+  "active_domain_id": "D01",
   "next_domain_id": "D01",
-  "active_deliverable": "infrastructure_review",
-  "last_completed_step": "repository_bootstrap",
-  "next_action": "User reviews infrastructure; apply requested fixes; upon approval begin D01 only.",
+  "active_deliverable": "D01 curriculum blueprint and project shortlist",
+  "last_completed_step": "D01 blueprint drafted",
+  "next_action": "Learner reviews D01 scope, chapter sequence and candidate project catalog; then author chapter 01 as a separate comprehensive lesson.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -16,11 +16,12 @@
       "id": "D01",
       "name": "Computer Science Foundations",
       "slug": "computer-science-foundations",
-      "status": "not_started",
+      "status": "in_progress",
       "lesson_status": "not_started",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
-      "source_outline": "prior_conversation_outline_only"
+      "source_outline": "prior_conversation_outline_only",
+      "curriculum_blueprint_status": "drafted_pending_review"
     },
     {
       "id": "D02",
@@ -182,6 +183,15 @@
         "AGENTS.md",
         "ROADMAP.md",
         "TRACKER.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "D01 curriculum blueprint and project candidate briefs drafted; no chapters or PRDs completed",
+      "evidence": [
+        "domains/01-computer-science-foundations/README.md",
+        "domains/01-computer-science-foundations/curriculum.md",
+        "domains/01-computer-science-foundations/projects/catalog.md"
       ]
     }
   ]
