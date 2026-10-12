@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_04",
+  "review": "pending_learner_review_D03_chapter_05",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 04 Scheduling Queues and Timers (authored; in_review)",
-  "last_completed_step": "Recorded learner approval of D03 Chapter 03; authored Chapter 04 with twelve verified educational execution scenarios and reconciled matrix, trackers and indexes.",
-  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md; after explicit approval, author Chapter 05 only and request editorial review.",
+  "active_deliverable": "D03 Chapter 05 EventEmitter and Callback Contracts (authored; in_review)",
+  "last_completed_step": "Recorded learner approval of D03 Chapter 04; authored Chapter 05 with seventeen verified educational execution scenarios and reconciled matrix, trackers and indexes.",
+  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md; after explicit approval, author Chapter 06 only and request editorial review.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-04-review",
-      "question": "Approve or revise D03 Chapter 04 editorial content.",
+      "id": "D03-chapter-05-review",
+      "question": "Approve or revise D03 Chapter 05 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md"
+      "evidence": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md"
     }
   ],
   "current_implementation_project": null,
@@ -117,8 +117,8 @@
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
-        "04": "in_review",
-        "05": "not_started",
+        "04": "approved_by_learner",
+        "05": "in_review",
         "06": "not_started",
         "07": "not_started",
         "08": "not_started",
@@ -172,12 +172,25 @@
           "arch": "arm64",
           "module_context": "Explicit CJS (.cjs) and ESM (.mjs) standalone entries",
           "limits": "One local environment; context-specific ordering, bounded fixtures and intentional failure outcomes; no learner assessment or implemented product."
+        },
+        "05": {
+          "status": "17_educational_execution_scenarios_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+          "checked_on": "2026-10-12",
+          "node": "v26.4.0",
+          "v8": "14.6.202.34-node.21",
+          "uv": "1.52.1",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "Standalone ESM (.mjs) child processes",
+          "limits": "One local environment; dispatch/order, missed events, cleanup counts and intentional exception/warning outcomes; no learner assessment, heap proof or implemented product."
         }
       },
       "chapter_approval_dates": {
         "01": "2026-10-12",
         "02": "2026-10-12",
-        "03": "2026-10-12"
+        "03": "2026-10-12",
+        "04": "2026-10-12"
       }
     },
     {
@@ -641,6 +654,20 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner authorized continuation after Chapter 04 review request; recorded Chapter 04 editorial approval. Authored Chapter 05 only; official docs checked through Context7 and events API document. Seventeen educational execution scenarios passed, including isolated intentional errors and warning. Chapter 05 in_review; Chapters 06–18 not_started; assessments and implementations deferred. Matrix and both trackers reconciled with root/domain indexes.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+        "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -659,23 +686,23 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_chapter_03_approved_chapter_04_in_review",
+    "status": "reconciled_D03_chapter_04_approved_chapter_05_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "cd130cebd90adeda46b2597b8a955d54c2fc9e8e",
+    "baseline_commit": "408d0f6b2e34643dd3fc55e16ea6fddc42fce61a",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 34,
+    "chapter_mapping_count": 35,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
       "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
@@ -683,8 +710,8 @@
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C03 approved mapping added; D03-C04 authored/in_review mapping added separately. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 33,
+    "mapping_change": "D03-C04 approved mapping added; D03-C05 authored/in_review mapping added separately. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
+    "approved_chapter_mapping_count": 34,
     "in_review_chapter_mapping_count": 1
   }
 }

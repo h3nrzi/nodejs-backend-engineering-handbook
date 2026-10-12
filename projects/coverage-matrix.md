@@ -1,6 +1,6 @@
 # Engineering competency coverage matrix
 
-**Status:** D01/D02 and D03 Chapters 01–03 approved editorial coverage mapped; Chapter 04 authored/in_review; implementation not started.  
+**Status:** D01/D02 and D03 Chapters 01–04 approved editorial coverage mapped; Chapter 05 authored/in_review; implementation not started.  
 **Reviewed:** 2026-10-12 against all nine approved PRDs, domain indexes/catalogs, lesson contents, workflow and canonical state.  
 **Baseline:** `48f227313e52a85246c0a65e1acbea3f511a1d0b`.  
 **Audit:** [Coverage reconciliation report](../docs/coverage-matrix-audit-2026-10-12.md).
@@ -12,7 +12,7 @@
 - “PRD challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Every project remains an optional portfolio candidate with `approved_by_learner` product-scope status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum and Chapters 01–03 are learner-approved editorially; Chapter 04 authored/in_review; Chapters 05–18 not_started. No D03 project catalog/PRDs or implementation; assessment deferred. D04–D16 remain not_started. Curriculum approval is separate from approved taught content.
+- D03 curriculum and Chapters 01–04 are learner-approved editorially; Chapter 05 authored/in_review; Chapters 06–18 not_started. No D03 project catalog/PRDs or implementation; assessment deferred. D04–D16 remain not_started. Curriculum approval is separate from approved taught content.
 
 ## Project traceability — all nine approved PRDs
 
@@ -67,14 +67,15 @@ Project IDs link through the registry above. All gaps below also have **no imple
 | D03-C01 | D03 | [01 — Runtime architecture and execution boundaries](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — approved_by_learner | None — D03 catalog/PRDs not_started | None — not_started | Editorial approval and three educational example runs do not establish learner competency or product implementation. |
 | D03-C02 | D03 | [02 — Startup, configuration and runtime identity](../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) — approved_by_learner | None — D03 catalog/PRDs not_started | None — not_started | Editorial approval and 16 educational execution scenarios do not establish learner competency or product implementation. |
 | D03-C03 | D03 | [03 — Event loop and I/O lifecycle](../domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) — approved_by_learner | None — D03 catalog/PRDs not_started | None — not_started | Editorial approval and seven local educational execution scenarios do not establish learner competency or product implementation. |
+| D03-C04 | D03 | [04 — Scheduling queues and timers](../domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) — approved_by_learner | None — D03 catalog/PRDs not_started | None — not_started | Editorial approval and twelve local educational execution scenarios do not establish learner competency or product implementation. |
 
 ## D03 authoring and planned coverage — separate from approved taught content
 
 | Domain | Curriculum | Authored lessons / approval | PRD challenge | Implemented evidence | Current gap |
 |---|---|---|---|---|---|
-| D03 | [18-chapter curriculum](../domains/03-nodejs-internals/curriculum.md) — approved_by_learner | [C01](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — approved; [C02 — Startup/configuration](../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) — approved; [C03 — Event loop/I/O lifecycle](../domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) — approved; [C04 — Scheduling queues/timers](../domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) — authored/in_review | None — catalog/PRDs not_started | None — not_started | Chapters 05–18 not_started; no learner assessment. Local educational executions are not product evidence. |
+| D03 | [18-chapter curriculum](../domains/03-nodejs-internals/curriculum.md) — approved_by_learner | [C01](../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) — approved; [C02 — Startup/configuration](../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) — approved; [C03 — Event loop/I/O lifecycle](../domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) — approved; [C04 — Scheduling queues/timers](../domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) — approved; [C05 — EventEmitter/callback contracts](../domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) — authored/in_review | None — catalog/PRDs not_started | None — not_started | Chapters 06–18 not_started; no learner assessment. Local educational executions are not product evidence. |
 
-**Review — 2026-10-12:** D03-C03 approval and D03-C04 authored/in_review mapping reconciled against both lessons, curriculum, domain/root indexes, workflow and canonical state. Existing D01/D02 nine-project and 30-approved-chapter mappings unchanged. Total authored chapter mappings: 34 (33 editorially approved; 1 in_review). Twelve Chapter 04 local educational execution scenarios passed; no new PRD, learner assessment or implementation evidence inferred.
+**Review — 2026-10-12:** D03-C04 approval and D03-C05 authored/in_review mapping reconciled against both lessons, curriculum, domain/root indexes, workflow and canonical state. Existing D01/D02 nine-project and 30-approved-chapter mappings unchanged. Total authored chapter mappings: 35 (34 editorially approved; 1 in_review). Seventeen Chapter 05 local educational execution scenarios passed; no new PRD, learner assessment or implementation evidence inferred.
 
 ## Mandatory maintenance
 
