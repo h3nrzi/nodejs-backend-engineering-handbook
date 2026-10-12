@@ -1,9 +1,9 @@
 # P01 — ContractGuard: API Data Contract Studio — Product Requirements
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** draft_pending_learner_review  
+**Status:** approved_by_learner  
 **Concept:** approved by learner, 2026-10-12  
-**PRD approval:** pending  
+**PRD approval:** learner-approved, 2026-10-12; product questions remain open  
 **Implementation:** not started; technical choices deliberately excluded
 
 ## 1. Problem and motivation
@@ -141,5 +141,5 @@ Demands precise treatment of JavaScript values, absent/null distinctions, array/
 ## 14. Approval record
 
 **2026-10-12:** P01 product concept approved as part of five-candidate D02 catalog.  
-**PRD editorial review:** pending learner approval.  
+**PRD editorial review:** learner-approved, 2026-10-12; unresolved product decisions remain documented.  
 **Implementation, architecture, stack and learning assessment:** not started/selected.
