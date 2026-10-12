@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D02 — JavaScript & TypeScript blueprint review  
+**Current authoring focus:** D02 — Chapter 01 editorial review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -25,11 +25,11 @@
 
 ## Remaining domains
 
-**D02:** [16-chapter curriculum blueprint](domains/02-javascript-typescript/curriculum.md) drafted, awaiting learner approval; chapters, projects and PRDs not started. **D03–D16:** not started.
+**D02:** [16-chapter curriculum](domains/02-javascript-typescript/curriculum.md) approved by learner; [Chapter 01 — Values, Types and Coercion](domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md) drafted pending editorial approval. Projects and PRDs not started. **D03–D16:** not started.
 
 ## Next action
 
-Learner reviews D02 curriculum blueprint and approves or requests revisions before Chapter 01 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+Learner reviews D02 Chapter 01 and approves or requests revisions before Chapter 02 is authored. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## AI handoff rules
 
