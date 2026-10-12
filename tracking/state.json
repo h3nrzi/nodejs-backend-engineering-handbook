@@ -2,21 +2,14 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_02",
+  "review": "ready_to_author_D03_chapter_03",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 02 Startup, Configuration and Runtime Identity (authored; in_review)",
-  "last_completed_step": "Learner approved D03 Chapter 01; Chapter 02 authored, author quality review completed and 16 educational execution scenarios passed; coverage and trackers reconciled",
-  "next_action": "Learner reviews and approves or revises domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md; after explicit approval, author Chapter 03 only and request editorial review.",
+  "active_deliverable": "D03 Chapter 03 The Event Loop and I/O Lifecycle (not_started; next to author)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 02 on 2026-10-12; Chapter 02 editorial status and 32 approved chapter mappings reconciled across canonical state, tracker and coverage matrix.",
+  "next_action": "Author D03 Chapter 03 — The Event Loop and I/O Lifecycle — only, check quality/evidence, then request learner editorial review. Do not start Chapter 04 before approval.",
   "blockers": [],
-  "open_decisions": [
-    {
-      "id": "D03-chapter-02-review",
-      "question": "Approve or revise D03 Chapter 02 editorial content.",
-      "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md"
-    }
-  ],
+  "open_decisions": [],
   "current_implementation_project": null,
   "domains": [
     {
@@ -115,7 +108,7 @@
         "17": "not_started",
         "18": "not_started",
         "01": "approved_by_learner",
-        "02": "in_review",
+        "02": "approved_by_learner",
         "03": "not_started",
         "04": "not_started",
         "05": "not_started",
@@ -151,7 +144,8 @@
         }
       },
       "chapter_approval_dates": {
-        "01": "2026-10-12"
+        "01": "2026-10-12",
+        "02": "2026-10-12"
       }
     },
     {
@@ -576,6 +570,19 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Learner explicitly approved D03 Chapter 02. Recorded editorial approval across lesson, curriculum, domain index, roadmap, READMEs, tracker, canonical state and coverage matrix; now 32/32 authored chapters learner-approved (D01 14, D02 16, D03 2). D03 Chapter 03 not_started and next for authoring; 9 product PRDs editorially approved, assessments and implementation deferred. Coverage matrix reconciled with new approved D03-C02 row.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md",
+        "ROADMAP.md",
+        "README.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -594,7 +601,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-12",
-    "status": "reconciled_D03_chapter_01_approved_chapter_02_in_review",
+    "status": "reconciled_D03_chapters_01_02_both_approved",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "63624790caf7346e15041723c1007b3433f0d50b",
@@ -609,14 +616,14 @@
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
       "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
-      "projects/coverage-matrix.md"
+      "projects/coverage-matrix.md",
+      "TRACKER.md"
     ],
-    "mapping_change": "D03-C01 editorial approval recorded and D03-C02 mapped as authored/in_review; D01/D02 30 approved mappings and 9 PRDs unchanged; no implemented-project evidence.",
-    "approved_chapter_mapping_count": 31,
-    "in_review_chapter_mapping_count": 1
+    "mapping_change": "D03-C02 moved to approved editorial mapping; D03-C01 and D01/D02 chapter mappings unchanged; no new project/PRD or implementation evidence.",
+    "approved_chapter_mapping_count": 32,
+    "in_review_chapter_mapping_count": 0
   }
 }
