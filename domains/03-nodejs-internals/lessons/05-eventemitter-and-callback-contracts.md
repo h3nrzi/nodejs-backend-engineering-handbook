@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C05  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — learner explicitly approved Chapter 05 on 2026-10-12.  
 **Prerequisite review:** learner authorized progression after the Chapter 04 review request on 2026-10-12; Chapter 04 is recorded as editorially approved.  
 **Educational execution:** Section 14 records executed fixtures and their limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -360,4 +360,4 @@ Six educational fixtures passed seventeen execution scenarios. Checks cover sequ
 | Exercises | Nine future-study exercises and rubrics; no grading. |
 | Honest gaps | Stream pressure, EventTarget details, async context, heap proof and fatal recovery deferred. |
 
-**Review outcome:** author quality-gate review completed; Chapter 05 submitted for learner editorial review. Next: approve or revise Chapter 05 before Chapter 06 — Buffers, Bytes and Text Encoding — is authored.
+**Review outcome:** author quality-gate review completed; learner explicitly approved Chapter 05 on 2026-10-12. Next: Chapter 06 — Buffers, Bytes and Text Encoding — is authored/in_review and requires learner review before Chapter 07.

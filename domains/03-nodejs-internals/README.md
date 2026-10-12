@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 5 authored: Chapters 01–04 learner-approved; Chapter 05 in_review; Chapters 06–18 not_started.  
+**Lessons:** 6 authored: Chapters 01–05 learner-approved; Chapter 06 in_review; Chapters 07–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -25,12 +25,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 4. [Chapter 04 — Scheduling Queues and Timers](lessons/04-scheduling-queues-and-timers.md) — approved_by_learner on 2026-10-12; twelve educational execution scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, CJS/ESM. Execution evidence is local to these fixtures; no learner assessment or implemented product is claimed.
 
-5. [Chapter 05 — EventEmitter and Callback Contracts](lessons/05-eventemitter-and-callback-contracts.md) — authored/in_review; seventeen educational execution scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Intentional errors/warnings and cleanup outcomes were checked; no learner assessment or implemented product is claimed.
+5. [Chapter 05 — EventEmitter and Callback Contracts](lessons/05-eventemitter-and-callback-contracts.md) — approved_by_learner on 2026-10-12; seventeen educational execution scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Intentional errors/warnings and cleanup outcomes were checked; no learner assessment or implemented product is claimed.
+
+6. [Chapter 06 — Buffers, Bytes and Text Encoding](lessons/06-buffers-bytes-and-text-encoding.md) — authored/in_review; twelve educational execution scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM, including all 256 partitions of a nine-byte UTF-8 sample. No uninitialized bytes exposed; no learner assessment or implemented product claimed.
 
 ## Next action and handoff
 
-Chapters 01–04 are learner-approved. Review Chapter 05 — EventEmitter and Callback Contracts — before authoring Chapter 06. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–05 are learner-approved. Review Chapter 06 — Buffers, Bytes and Text Encoding — before authoring Chapter 07. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-12:** D03-C01 through D03-C04 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C05 is mapped separately as authored/in_review; C06–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-12:** D03-C01 through D03-C05 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C06 is mapped separately as authored/in_review; C07–C18 remain planned; no PRD, learner assessment or implementation evidence exists.

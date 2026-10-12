@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-12  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–04 learner-approved; Chapter 05 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–05 learner-approved; Chapter 06 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 4 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) approved_by_learner; [Chapter 04](domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) approved_by_learner; [Chapter 05](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) authored/in_review; Chapters 06–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 5 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) approved_by_learner; [Chapter 04](domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) approved_by_learner; [Chapter 05](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) approved_by_learner; [Chapter 06](domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md) authored/in_review; Chapters 07–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. D03 Chapters 01–04 learner-approved; review Chapter 05 — EventEmitter and Callback Contracts — before authoring Chapter 06 only. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D02 content-authoring gate is closed. D03 Chapters 01–05 learner-approved; review Chapter 06 — Buffers, Bytes and Text Encoding — before authoring Chapter 07 only. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -60,7 +60,7 @@ Read [AGENTS.md](AGENTS.md), [workflow](docs/workflow.md), and canonical state b
 
 ## Standard authoring sequence (learner approved)
 
-Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–04 are learner-approved; Chapter 05 is authored/in_review.
+Curriculum blueprint approval → chapter-by-chapter lessons → project catalog → behavior-only PRDs → domain content closure. Study assessments and Codex implementation remain separate. D01 and D02 content gates are closed; D03 curriculum and Chapters 01–05 are learner-approved; Chapter 06 is authored/in_review.
 
 ## Global coverage reconciliation — 2026-10-12
 
@@ -109,3 +109,9 @@ Learner authorized continuation after the Chapter 03 review request; Chapter 03 
 Learner authorized continuation after the Chapter 04 review request; Chapter 04 editorial approval recorded. [Chapter 05 — EventEmitter and Callback Contracts](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) authored/in_review. Covers synchronous dispatch and reentrancy, listener mutation/once, async completion and error channels, missed-event waits, subscription ownership, warning thresholds and consistent callback timing. Six standalone educational fixtures passed seventeen scenarios on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM; deliberate uncaught errors and warnings were isolated and verified. No learner assessment or implemented product claimed.
 
 **Mandatory coverage review:** D03-C04 moved to approved with its chapter-level row; D03-C05 mapped separately as authored/in_review. Matrix, both lesson statuses, curriculum, root/domain indexes and canonical state reconciled in this change. Total authored mappings 35: 34 approved, 1 in_review. D01/D02 thirty chapter mappings and nine product PRDs unchanged. Chapters 06–18 not_started; catalog/PRDs and implementation not_started; assessment deferred. Next: learner reviews Chapter 05 before Chapter 06 only.
+
+## D03 Chapter 05 approval and Chapter 06 — 2026-10-12
+
+Learner explicitly approved Chapter 05. [Chapter 06 — Buffers, Bytes and Text Encoding](domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md) authored/in_review. Covers text/code units/bytes, view/copy ownership, byte windows, typed-array conversions, initialization and valid ranges, incremental UTF-8 and record boundaries. Five educational fixtures passed twelve scenarios on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. All 256 partitions of a nine-byte valid sample decoded correctly with StringDecoder; independent chunk decoding differed in 248. Incomplete/invalid input and intentional record rejection checked; no uninitialized bytes exposed. No learner assessment or implemented product claimed.
+
+**Mandatory coverage review:** D03-C05 moved to approved with its chapter-level row; D03-C06 mapped separately as authored/in_review. Matrix, both lesson statuses, curriculum, root/domain indexes and canonical state reconciled in this change. Total authored mappings 36: 35 approved, 1 in_review. D01/D02 thirty chapter mappings and nine product PRDs unchanged. Chapters 07–18 not_started; catalog/PRDs and implementation not_started; assessment deferred. Next: learner reviews Chapter 06 before Chapter 07 only.
