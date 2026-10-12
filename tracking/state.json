@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-12",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review",
+  "review": "chapter_01_pending_learner_review",
   "active_domain_id": "D02",
   "next_domain_id": "D02",
-  "active_deliverable": "D02 curriculum blueprint learner review",
-  "last_completed_step": "D02 16-chapter blueprint drafted",
-  "next_action": "Learner reviews D02 curriculum blueprint; revise or approve before starting Chapter 01.",
+  "active_deliverable": "D02 Chapter 01 editorial review",
+  "last_completed_step": "D02 curriculum approved and Chapter 01 drafted",
+  "next_action": "Learner reviews D02 Chapter 01 Values, Types and Coercion; revise or approve before Chapter 02.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": null,
@@ -51,13 +51,13 @@
       "name": "JavaScript & TypeScript",
       "slug": "javascript-typescript",
       "status": "in_progress",
-      "lesson_status": "not_started",
+      "lesson_status": "in_progress",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
-      "curriculum_blueprint_status": "drafted_pending_learner_review",
+      "curriculum_blueprint_status": "approved_by_learner",
       "chapter_progress": {
-        "01-16": "not_started"
+        "01": "drafted_pending_learner_review"
       }
     },
     {
@@ -381,6 +381,14 @@
       "event": "Learner approved standardized per-domain sequence: curriculum, lessons, project catalog, PRDs, completion; D02 curriculum itself still awaiting review",
       "evidence": [
         "docs/workflow.md"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "event": "D02 16-chapter curriculum approved; Chapter 01 drafted for learner review; no study assessment started",
+      "evidence": [
+        "domains/02-javascript-typescript/curriculum.md",
+        "domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md"
       ]
     }
   ],
