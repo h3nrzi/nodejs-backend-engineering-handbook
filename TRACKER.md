@@ -1,9 +1,9 @@
 # Human-readable tracker
 
 **Updated:** 2026-10-12  
-**Phase:** domain_authoring  
+**Phase:** domain_assessment  
 **Active domain:** D01 — Computer Science Foundations  
-**Current gate:** Chapter 14 draft awaiting learner review.  
+**Current gate:** All 14 D01 chapters approved; practical assessment not started.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Verified progress
@@ -13,7 +13,7 @@
 - [Chapter 02 — Linear and Associative Data Structures](domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md): approved by learner.
 - [Chapter 03 — Trees, Heaps and Graphs](domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md): approved by learner.
 - [Chapter 04 — Algorithmic Problem-Solving](domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md): drafted, awaiting learner review. Code examples have not been independently executed.
-- All 14 chapters authored; Chapter 14 pending approval; practical assessment outstanding.
+- All 14 chapters approved by learner; practical assessment outstanding.
 - Project candidates: initial catalog only; no approved project PRDs or implementation repositories.
 
 ## Next action
