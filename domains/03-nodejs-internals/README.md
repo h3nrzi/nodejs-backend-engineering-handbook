@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 7 authored: Chapters 01–06 learner-approved; Chapter 07 in_review; Chapters 08–18 not_started.  
+**Lessons:** 8 authored: Chapters 01–07 learner-approved; Chapter 08 in_review; Chapters 09–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -29,12 +29,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 6. [Chapter 06 — Buffers, Bytes and Text Encoding](lessons/06-buffers-bytes-and-text-encoding.md) — approved_by_learner on 2026-10-12; twelve educational execution scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM, including all 256 partitions of a nine-byte UTF-8 sample. No uninitialized bytes exposed; no learner assessment or implemented product claimed.
 
-7. [Chapter 07 — Filesystem I/O and Resource Ownership](lessons/07-filesystem-io-and-resource-ownership.md) — authored/in_review; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Temporary-file cleanup verified after every scenario; partial-write fault injection labeled. No learner assessment, cross-platform durability or implemented product claimed.
+7. [Chapter 07 — Filesystem I/O and Resource Ownership](lessons/07-filesystem-io-and-resource-ownership.md) — approved_by_learner on 2026-10-12; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Temporary-file cleanup verified after every scenario; partial-write fault injection labeled. No learner assessment, cross-platform durability or implemented product claimed.
+
+8. [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) — authored/in_review; thirteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Bounded pressure, accounting and lifecycle assertions verified; no actual network/descriptor, memory bound, learner assessment or implemented product claimed.
 
 ## Next action and handoff
 
-Chapters 01–06 are learner-approved. Review Chapter 07 — Filesystem I/O and Resource Ownership — before authoring Chapter 08. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–07 are learner-approved. Review Chapter 08 — Readable and Writable Stream Mechanics — before authoring Chapter 09. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-12:** D03-C01 through D03-C06 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C07 is mapped separately as authored/in_review; C08–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-12:** D03-C01 through D03-C07 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C08 is mapped separately as authored/in_review; C09–C18 remain planned; no PRD, learner assessment or implementation evidence exists.

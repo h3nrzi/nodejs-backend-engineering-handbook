@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C07  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — explicit learner approval recorded on 2026-10-12.  
 **Prerequisite review:** learner explicitly approved Chapter 06 on 2026-10-12.  
 **Educational execution:** Section 13 records executed fixtures and their limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -322,4 +322,4 @@ Four educational fixtures passed fifteen execution scenarios. Explicitly opened 
 | Exercises | Nine future-study questions with rubrics; no assessment. |
 | Honest gaps | Streams, pool saturation, hostile paths, shutdown and crash verification deferred. |
 
-**Review outcome:** author quality-gate review completed; Chapter 07 submitted for learner editorial review. Next: approve or revise Chapter 07 before Chapter 08 — Readable and Writable Stream Mechanics — is authored.
+**Review outcome:** author quality-gate review completed; learner explicitly approved Chapter 07 on 2026-10-12. Chapter 08 — Readable and Writable Stream Mechanics — is now authored/in_review; learner review of Chapter 08 is the next gate.
