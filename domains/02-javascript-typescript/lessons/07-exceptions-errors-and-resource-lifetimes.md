@@ -1,7 +1,7 @@
 # Chapter 07 — Exceptions, Errors and Resource Lifetimes
 
 **Domain:** D02 — JavaScript & TypeScript  
-**Status:** drafted_pending_learner_review  
+**Status:** approved_by_learner  
 **Assessment:** deferred until explicit learner study phase  
 **Code execution:** examples not independently verified
 
