@@ -33,7 +33,7 @@ The learner is currently building the handbook, completing lesson content and se
 ## D01 project catalog — current handoff
 
 - Four distinct project concepts are documented in [catalog](domains/01-computer-science-foundations/projects/catalog.md): P01 performance experiments, P02 capacity races, P03 dependency workflows, P04 memory-bounded dataset processing.
-- [P01 Workload & Complexity Observatory PRD](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) is **drafted pending learner review**, not approved or implemented.
-- P02–P04 remain candidate briefs; their PRDs have not started.
-- **Next:** review P01 product scope and seven open product questions, then revise/approve; draft P02 in a separate step.
+- [P01 Workload & Complexity Observatory PRD](domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md) is **approved by learner**, not implemented; unresolved product thresholds remain.
+- [P02 Concurrent Resource Allocation Simulator PRD](domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md) is drafted pending learner review. P03–P04 remain candidate briefs.
+- **Next:** review P02 product scope and seven policy questions; revise/approve before P03.
 - No learner assessment should be initiated until the learner explicitly starts studying.
