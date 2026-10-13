@@ -35,6 +35,14 @@ The installed `grilling` skill's **round-based full-frontier** interviewing asks
 
 This template reflects the inspected MediaForge skills source on 2026-10-13 and does not by itself establish verified product choices, skill execution, or implementation evidence.
 
+## Round-by-round learning and NotebookLM video workflow
+
+For an external Codex/Matt project, preserve a **separate educational dossier per completed interview round** in the implementation repository (for example `docs/learning/product-discovery-round-01.md`). Include each original numbered question, Codex's recommended policy, ChatGPT's review/rationale if any, learner's explicit approval or the **pending** state, product trade-offs, domain concepts and downstream open decisions. The dossier is educational source material, not an alternative canonical PRD or a technical ADR. Never upgrade a suggestion to learner-approved before actual explicit approval; add a provenance link/commit when approval is evidenced.
+
+To produce Persian, question-by-question educational narration and NotebookLM media, use the reusable [NotebookLM engineering round video template](../templates/notebooklm-engineering-round-video-prompt.md) after adding the dossier and relevant approved PRD as NotebookLM sources. Narration should separate proposed, recommended and approved choices, cover each numbered Q in order, avoid invented implementation details, and split into a video series if a single output cannot cover the round adequately. Generated media is an explanatory artifact, not engineering validation or approval.
+
+**First pilot:** [MediaForge Round 1 educational dossier](https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md), with 13 recommended but **not yet owner-confirmed** product decisions. This educational recording introduces no new PRD scope and no implementation evidence.
+
 ## AI-to-AI handoff
 
 Before finishing, persist current task, status, exact file paths, links, open questions, decisions approved by learner, evidence and next action in `tracking/state.json` and `TRACKER.md`. Unanswered Codex questions belong in external project notes and may be summarized/link-referenced here. No implied approvals. Handoff works from the repo alone, without conversation memory.
