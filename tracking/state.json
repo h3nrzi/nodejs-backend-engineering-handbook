@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_10",
+  "review": "pending_learner_review_D03_chapter_11",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 10 Native Asynchronous Work and Thread-Pool Saturation (authored; in_review)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 09; Chapter 10 authored and reviewed with fourteen Node v22/Linux educational fixture invocations; coverage and trackers reconciled.",
-  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md; do not start Chapter 11 without explicit Chapter 10 approval.",
+  "active_deliverable": "D03 Chapter 11 Worker Threads and Data Ownership (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 10; Chapter 11 authored with 15 successful Node v22.16.0/Linux educational Worker fixture runs and a pre-start termination counterexample; coverage matrix and indexes reconciled.",
+  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md; do not author Chapter 12 until explicit Chapter 11 approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-10-review",
-      "question": "Approve or revise D03 Chapter 10 editorial content.",
+      "id": "D03-chapter-11-review",
+      "question": "Approve or revise D03 Chapter 11 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md"
+      "evidence": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md"
     }
   ],
   "current_implementation_project": null,
@@ -105,8 +105,8 @@
       "assessment_status": "deferred_until_learning_phase",
       "curriculum_approved_on": "2026-10-12",
       "chapter_progress": {
-        "10": "in_review",
-        "11": "not_started",
+        "10": "approved_by_learner",
+        "11": "in_review",
         "12": "not_started",
         "13": "not_started",
         "14": "not_started",
@@ -137,6 +137,18 @@
           "arch": "x64",
           "module_context": "ESM (.mjs), separate process launches",
           "limits": "Scoped educational concurrency/timing observations only; no native queue-time instrumentation, production benchmark, learner assessment, cross-platform guarantees or implemented portfolio project."
+        },
+        "11": {
+          "status": "five_worker_fixtures_three_runs_each_15_successful_executions",
+          "evidence": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "standalone ESM (.mjs), Worker self-spawning educational fixtures",
+          "limits": "15 bounded runs: CPU offload, structured clone/ArrayBuffer detach, SharedArrayBuffer Atomics, intentional Worker exception and acknowledged termination. One extra pre-start termination counterexample. No cross-platform/performance/security guarantee, learner assessment or project implementation."
         },
         "01": {
           "status": "three_educational_examples_executed",
@@ -250,6 +262,7 @@
         }
       },
       "chapter_approval_dates": {
+        "10": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -809,6 +822,21 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved D03 Chapter 10. Authored Chapter 11 only, checked five independent ESM Worker fixtures in three repeated process invocations each (15 passed), documented pre-start termination race and version-specific observed outcomes. Official Worker docs and chapter quality gates reviewed. Chapter 11 in_review; Chapter 12 not_started; assessment, D03 products and implementation deferred. Coverage Matrix and curriculum/indexes reconciled.",
+      "approval_source": "Current user message: تایید, following explicit Chapter 10 review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+        "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -827,30 +855,32 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_09_approved_chapter_10_in_review",
+    "status": "reconciled_D03_chapter_10_approved_chapter_11_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "d9f523b40234e76b56a77cb0e737a3f3062311c8",
+    "baseline_commit": "3baf6f378717765ab08941dddd26ac68be3b01bb",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 40,
+    "chapter_mapping_count": 41,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
       "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
+      "README.md",
+      "ROADMAP.md",
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C09 now learner-approved; D03-C10 mapped as authored/in_review, with 14 educational Node v22/Linux process invocations. D01/D02 chapter mappings and nine PRDs unchanged; no implemented-project evidence.",
-    "approved_chapter_mapping_count": 39,
+    "mapping_change": "D03-C10 now learner-approved and D03-C11 authored/in_review, 15 successful educational Worker executions, with one pre-start termination counterexample. 30 D01/D02 mappings and 9 PRDs unchanged; no implementation evidence.",
+    "approved_chapter_mapping_count": 40,
     "in_review_chapter_mapping_count": 1
   }
 }
