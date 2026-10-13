@@ -7,7 +7,7 @@
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — setup skill complete, verify installed skills and prepare product discovery",
   "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
-  "next_action": "Have learner review/send MediaForge Round 1 Q1-Q13 approvals to Codex; after actual approval record decisions and next frontier; capture educational dossier per round and use NotebookLM template for source-grounded teaching/video.",
+  "next_action": "Continue MediaForge Round 1 product-owner review; archive round-by-round learning under projects/implementation-studies/d03-p02-mediaforge/, link actual future ADRs, and provide bespoke NotebookLM video prompts in chat after each round; no stored NotebookLM prompt template.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1183,6 +1183,16 @@
         "templates/notebooklm-engineering-round-video-prompt.md",
         "docs/workflow.md",
         "https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Per learner correction: deleted both NotebookLM reusable templates and added project-specific MediaForge educational archive in handbook with verbatim approved PRD, Round 1 dossier (pending user approval), and README. Workflow now mandates bespoke video prompts per round, supplied in conversation. No architecture ADR exists yet.",
+      "evidence": [
+        "projects/implementation-studies/d03-p02-mediaforge/README.md",
+        "projects/implementation-studies/d03-p02-mediaforge/prd.md",
+        "projects/implementation-studies/d03-p02-mediaforge/round-01-product-discovery.md",
+        "docs/workflow.md"
       ]
     }
   ],
