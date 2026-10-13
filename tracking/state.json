@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_09",
+  "review": "pending_learner_review_D03_chapter_10",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 09 Pipelines, Transforms and Cancellation (authored; in_review)",
-  "last_completed_step": "Recorded explicit Chapter 08 learner approval; authored Chapter 09 only with fifteen verified educational scenarios, including observed cancellation aggregation and adapter lock states; reconciled coverage, trackers and indexes.",
-  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md; do not start Chapter 10 before explicit approval.",
+  "active_deliverable": "D03 Chapter 10 Native Asynchronous Work and Thread-Pool Saturation (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 09; Chapter 10 authored and reviewed with fourteen Node v22/Linux educational fixture invocations; coverage and trackers reconciled.",
+  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md; do not start Chapter 11 without explicit Chapter 10 approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-09-review",
-      "question": "Approve or revise Chapter 09 editorial content before authoring Chapter 10.",
+      "id": "D03-chapter-10-review",
+      "question": "Approve or revise D03 Chapter 10 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md"
+      "evidence": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md"
     }
   ],
   "current_implementation_project": null,
@@ -105,7 +105,7 @@
       "assessment_status": "deferred_until_learning_phase",
       "curriculum_approved_on": "2026-10-12",
       "chapter_progress": {
-        "10": "not_started",
+        "10": "in_review",
         "11": "not_started",
         "12": "not_started",
         "13": "not_started",
@@ -122,9 +122,22 @@
         "06": "approved_by_learner",
         "07": "approved_by_learner",
         "08": "approved_by_learner",
-        "09": "in_review"
+        "09": "approved_by_learner"
       },
       "chapter_execution_evidence": {
+        "10": {
+          "status": "14_local_educational_process_invocations_recorded",
+          "evidence": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "openssl": "3.0.16",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "ESM (.mjs), separate process launches",
+          "limits": "Scoped educational concurrency/timing observations only; no native queue-time instrumentation, production benchmark, learner assessment, cross-platform guarantees or implemented portfolio project."
+        },
         "01": {
           "status": "three_educational_examples_executed",
           "evidence": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
@@ -244,7 +257,8 @@
         "05": "2026-10-12",
         "06": "2026-10-12",
         "07": "2026-10-12",
-        "08": "2026-10-13"
+        "08": "2026-10-13",
+        "09": "2026-10-13"
       }
     },
     {
@@ -780,6 +794,21 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved D03 Chapter 09. Authored Chapter 10 only; 14 Node v22.16.0/Linux educational executions illustrated shared libuv work-pool interference, sync/async behavior and non-cancellation of native work via Promise.race. Official Node/libuv sources and quality gates checked. Chapter 10 in_review, Chapter 11 not_started, assessment and implementation deferred. Coverage matrix and domain/root indexes reconciled.",
+      "approval_source": "Current user message: تایید, following the explicit Chapter 09 review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+        "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -798,32 +827,30 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_08_approved_chapter_09_in_review",
+    "status": "reconciled_D03_chapter_09_approved_chapter_10_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "b6f1b6e097774b0da1d857ba3162aea00fd8058e",
+    "baseline_commit": "d9f523b40234e76b56a77cb0e737a3f3062311c8",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 39,
+    "chapter_mapping_count": 40,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
       "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
-      "README.md",
-      "ROADMAP.md",
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C08 approved crosswalk added; D03-C09 separately mapped as authored/in_review. D01/D02 thirty approved mappings and nine PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 38,
+    "mapping_change": "D03-C09 now learner-approved; D03-C10 mapped as authored/in_review, with 14 educational Node v22/Linux process invocations. D01/D02 chapter mappings and nine PRDs unchanged; no implemented-project evidence.",
+    "approved_chapter_mapping_count": 39,
     "in_review_chapter_mapping_count": 1
   }
 }
