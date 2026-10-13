@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_15",
+  "review": "pending_learner_review_D03_chapter_16",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 15 Async Context and Diagnostic Causality (authored; in_review)",
-  "last_completed_step": "Learner explicitly approved Chapter 14; Chapter 15 authored and 5 Node v22/Linux ESM fixtures run three times each (15/15 expected results), reference checked and coverage/indexes reconciled.",
-  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md. Do not author Chapter 16 before learner approval.",
+  "active_deliverable": "D03 Chapter 16 Runtime Failures and Graceful Shutdown (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 15; Chapter 16 authored, author-reviewed and documented with seven local Node v22.16.0/Linux educational fixtures each run three times (21/21 expected outcomes). Canonical state caught up to previously updated human tracker, curriculum, indexes and Coverage Matrix.",
+  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md; do not author Chapter 17 until explicit Chapter 16 approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-15-review",
-      "question": "Approve or request revisions to Chapter 15 — Async Context and Diagnostic Causality.",
+      "id": "D03-chapter-16-review",
+      "question": "Approve or request revisions to D03 Chapter 16 — Runtime Failures and Graceful Shutdown.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md"
+      "evidence": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md"
     }
   ],
   "current_implementation_project": null,
@@ -110,8 +110,8 @@
         "12": "approved_by_learner",
         "13": "approved_by_learner",
         "14": "approved_by_learner",
-        "15": "in_review",
-        "16": "not_started",
+        "15": "approved_by_learner",
+        "16": "in_review",
         "17": "not_started",
         "18": "not_started",
         "01": "approved_by_learner",
@@ -197,6 +197,18 @@
           "arch": "x64",
           "module_context": "five standalone ESM fixture scripts; Worker self-entry for explicit context",
           "limits": "15 local process runs verify ALS Promise/timer association, EventEmitter callback binding/snapshot, AsyncResource runInAsyncScope, explicit Worker correlation and mutable stores. No child-process/network causal tracing, security authorization, learner assessment or product implementation."
+        },
+        "16": {
+          "status": "seven_esm_educational_fixtures_three_runs_each_21_of_21_expected_outcomes_documented",
+          "evidence": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "seven standalone ESM fixtures with subprocesses, HTTP loopback and supported Linux signals",
+          "limits": "Educational checks documented in Chapter 16; no production supervisor/SLO, cross-platform guarantee, learner assessment, external transaction reconciliation or implemented project evidence."
         },
         "01": {
           "status": "three_educational_examples_executed",
@@ -315,6 +327,7 @@
         "12": "2026-10-13",
         "13": "2026-10-13",
         "14": "2026-10-13",
+        "15": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -949,6 +962,18 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Catch-up reconciliation: learner explicitly approved Chapter 15; Chapter 16 Runtime Failures and Graceful Shutdown authored/in_review, with seven bounded Node v22.16.0/Linux educational fixtures documented as three runs each (21 expected outcomes). Previous human tracker, indexes and coverage matrix were already updated; this commit repairs the stale canonical tracking/state.json review gate. Chapter 17 not_started; learner assessment and project implementation remain deferred.",
+      "approval_source": "Prior user message: تایید بریم بعدی (Chapter 15 approval). Current user message: ادامه بده (continue reconciliation, not Chapter 16 approval).",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+        "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/03-nodejs-internals/curriculum.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -967,7 +992,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_14_approved_chapter_15_in_review",
+    "status": "reconciled_D03_chapter_15_approved_chapter_16_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -977,22 +1002,22 @@
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 45,
+    "chapter_mapping_count": 46,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
       "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "projects/coverage-matrix.md",
+      "TRACKER.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
-      "ROADMAP.md",
-      "projects/coverage-matrix.md",
-      "TRACKER.md"
+      "ROADMAP.md"
     ],
-    "mapping_change": "D03-C14 learner-approved; D03-C15 authored/in_review with 15 Node v22/Linux educational ALS, AsyncResource and Worker-context outcomes. D01/D02 thirty approved chapter mappings and nine PRDs unchanged; no project implementation evidence.",
-    "approved_chapter_mapping_count": 44,
+    "mapping_change": "D03-C15 now learner-approved; D03-C16 authored/in_review supported by 21/21 documented local educational Node v22/Linux fixture outcomes. D01/D02 30 approved chapter mappings and 9 PRDs unchanged; no implementation evidence.",
+    "approved_chapter_mapping_count": 45,
     "in_review_chapter_mapping_count": 1
   }
 }
