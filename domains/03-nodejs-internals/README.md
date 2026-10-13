@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 16 authored: Chapters 01–15 learner-approved; Chapter 16 in_review; Chapters 17–18 not_started.  
+**Lessons:** 17 authored: Chapters 01–16 learner-approved; Chapter 17 in_review; Chapter 18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -47,12 +47,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 15. [Chapter 15 — Async Context and Diagnostic Causality](lessons/15-async-context-and-diagnostic-causality.md) — approved_by_learner on 2026-10-13; five Node v22.16.0/Linux ESM fixtures executed three times each (15/15 expected outcomes). ALS isolation, EventEmitter context loss and bind/snapshot, AsyncResource scoping, explicit Worker propagation and mutable-store hazards checked. No distributed causality proof, authorization guarantee, learner assessment or implemented product.
 
-16. [Chapter 16 — Runtime Failures and Graceful Shutdown](lessons/16-runtime-failures-and-graceful-shutdown.md) — authored/in_review; seven independent Node v22.16.0/Linux ESM fixtures executed three times each (21/21 expected outcomes). Explored process exit/beforeExit, unhandled failures, signal-based HTTP drain, forced closure, bounded cancellation and unknown effects. No production shutdown SLO, platform portability, learner assessment or product implementation claimed.
+16. [Chapter 16 — Runtime Failures and Graceful Shutdown](lessons/16-runtime-failures-and-graceful-shutdown.md) — approved_by_learner on 2026-10-13; seven independent Node v22.16.0/Linux ESM fixtures executed three times each (21/21 expected outcomes). Explored process exit/beforeExit, unhandled failures, signal-based HTTP drain, forced closure, bounded cancellation and unknown effects. No production shutdown SLO, platform portability, learner assessment or product implementation claimed.
+
+17. [Chapter 17 — Runtime Diagnostics and Measurement](lessons/17-runtime-diagnostics-and-measurement.md) — authored/in_review; seven Node v22.16.0/Linux ESM fixtures executed three times each (21/21 expected outcomes). Event-loop delay/ELU, User Timing, Diagnostics Channel, Inspector CPU sampling, safe report summary, CPU time and blocking-child ELU counterexample documented. No remote tracing, production SLO, learner assessment or product implementation.
 
 ## Next action and handoff
 
-Chapters 01–15 are learner-approved. Review Chapter 16 — Runtime Failures and Graceful Shutdown — before authoring Chapter 17; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–16 are learner-approved. Review Chapter 17 — Runtime Diagnostics and Measurement — before authoring Chapter 18; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C15 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C16 is mapped separately as authored/in_review; C17–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C16 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C17 is mapped separately as authored/in_review; C18 remains planned; no PRD, learner assessment or implementation evidence exists.
