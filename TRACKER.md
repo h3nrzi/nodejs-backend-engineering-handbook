@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–11 learner-approved; Chapter 12 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–12 learner-approved; Chapter 13 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–11 learner-approved; [Chapter 12 — Child Processes, IPC and Cluster Boundaries](domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md) authored/in_review. Chapters 13–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–12 learner-approved; [Chapter 13 — Module Resolution and Runtime Loading](domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md) authored/in_review. Chapters 14–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–11 are learner-approved; **Chapter 12 — Child Processes, IPC and Cluster Boundaries — awaits explicit learner editorial review**. Do not author Chapter 13 before Chapter 12 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–12 are learner-approved; **Chapter 13 — Module Resolution and Runtime Loading — awaits explicit learner editorial review**. Do not author Chapter 14 before Chapter 13 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -171,3 +171,13 @@ Learner explicitly approved [Chapter 11 — Worker Threads and Data Ownership](d
 **Mandatory coverage reconciliation:** [Coverage Matrix](projects/coverage-matrix.md) reconciled with the two lessons, curriculum, domain/root indexes, roadmap and canonical state. D03-C11 approved; D03-C12 mapped as authored/in_review. **42 authored lesson mappings: 41 approved editorially, 1 in_review**. Nine D01/D02 approved PRDs and thirty D01/D02 lesson mappings unchanged. D03 project catalog/PRDs and implementation remain not_started.
 
 **Handoff:** active domain D03, Chapter 12 in_review. Pending learner decision: approve/revise Chapter 12. Do not begin Chapter 13 until explicit approval. This chapter teaches mechanisms but does not select any product implementation topology.
+
+## D03 Chapter 12 learner approval and Chapter 13 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 12 — Child Processes, IPC and Cluster Boundaries](domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md) in this chat: `in_review → approved_by_learner`. Authored only [Chapter 13 — Module Resolution and Runtime Loading](domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md): `not_started → drafted → in_review`. **Chapter 13 has not been approved**; Chapter 14 remains not_started.
+
+**Educational evidence:** read the pinned official Node v22.16.0 packages, ESM, CJS and node:module documentation; ran nine standalone fixture entry points three times each (**27/27 expected outcome checks**) on Node `v22.16.0`, V8 `12.4.254.21-node.26`, libuv `1.49.2`, Linux/x64. Covered ESM explicit extensions versus CJS extension probing, conditional package exports/imports, public/private subpaths, CJS/ESM caches and query-distinct URL identity, partial CJS cycles versus expected ESM `ReferenceError` (three intentionally nonzero exits), synchronous `require(esm)` versus top-level-await rejection, JSON import attributes and CJS bridges. Exact fixture setup, observed outputs, run manifest, version limits and untested TS/bundler behavior recorded in Chapter 13 Sections 5–11 and 17. No compiler tests, learner study assessment, implementation or production compatibility guarantee claimed.
+
+**Mandatory Coverage Matrix reconciliation:** [matrix](projects/coverage-matrix.md) mapped D03-C12 as learner-approved and D03-C13 as authored/in_review. **43 authored lesson mappings: 42 learner-approved editorially, 1 in_review.** Thirty D01/D02 approved mappings and all nine D01/D02 product PRDs unchanged. Root/domain READMEs, roadmap, curriculum and canonical state reconciled. D03 project catalog/PRDs and implementation remain not_started.
+
+**Handoff:** active deliverable D03 Chapter 13 awaiting learner editorial review. Chapters 14–18 not_started. Do not begin Chapter 14 until explicit approval; no technical architecture/product scope is implied by module experiments.
