@@ -27,6 +27,14 @@
 - **Sequence:** agree on the necessary product behaviors before committing to dependent technical solutions, then let Codex handle architecture and implementation in its separate repository. The handbook may link to evidence but does not copy technical ADRs.
 - **No hidden readiness gate:** open questions alone do not prevent marking a handbook PRD editorially approved; however, an unresolved question that fundamentally changes **what product is being built** must be resolved before approving the product boundary.
 
+## Reusable Matt Pocock product-discovery prompt
+
+After an implementation repository has been created, the relevant Matt Pocock skills installed/configured, and a traceable approved PRD baseline imported as `docs/product/prd.md`, use [Codex grill-with-docs V1 Product Discovery template](../templates/codex-grill-with-docs-product-discovery.md). Replace all project-specific placeholders and verify actual installed skill invocations.
+
+The installed `grilling` skill's **round-based full-frontier** interviewing asks all currently independent ready product decisions in a round, each numbered with a recommended default; dependent questions wait for later rounds. `domain-modeling` captures clarified terminology and qualifying decisions. The learner reviews and approves each round's consequential choices; ChatGPT may examine full rounds against the canonical approved PRD. Keep the imported PRD unchanged and preserve new V1 decisions separately in the project repo. No architecture, tickets, or implementation before the explicit product-discovery approval gate.
+
+This template reflects the inspected MediaForge skills source on 2026-10-13 and does not by itself establish verified product choices, skill execution, or implementation evidence.
+
 ## AI-to-AI handoff
 
 Before finishing, persist current task, status, exact file paths, links, open questions, decisions approved by learner, evidence and next action in `tracking/state.json` and `TRACKER.md`. Unanswered Codex questions belong in external project notes and may be summarized/link-referenced here. No implied approvals. Handoff works from the repo alone, without conversation memory.
