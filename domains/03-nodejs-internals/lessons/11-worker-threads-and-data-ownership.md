@@ -256,7 +256,7 @@ Run `node c-shared-atomics.mjs`. Three checked runs reported:
 
 Two Workers each issue 10,000 atomic increments on the **same** four-byte region. The parent checks after both Workers have reported completion and exited. The count is correct in the observed runs because increments are atomic; it is not evidence that arbitrary non-atomic shared-object updates would be safe.
 
-**Important limitations:** `SharedArrayBuffer` itself is **shared**, never a transferable `ArrayBuffer`. It cannot be detached to move sole ownership. Race safety, signaling, memory ordering, access control and lifetime must be designed explicitly. `Atomics.wait()` can block its calling thread; it is not permitted on the Node main thread in typical contexts and blocking it would defeat responsiveness. More complex protocols need coordination; a shared counter alone is not a complete concurrent queue.
+**Important limitations:** `SharedArrayBuffer` itself is **shared**, never a transferable `ArrayBuffer`. It cannot be detached to move sole ownership. Race safety, signaling, memory ordering, access control and lifetime must be designed explicitly. `Atomics.wait()` can block its calling thread. Node permits it on the main thread, but doing so blocks that thread's event loop and defeats responsiveness; avoid it there. More complex protocols need coordination; a shared counter alone is not a complete concurrent queue.
 
 A completion message is useful evidence, but `message`, `error`, `exit` and shared-memory state are distinct signals. This fixture verifies finite successful Workers; it does not implement a robust shared-memory task processor.
 
