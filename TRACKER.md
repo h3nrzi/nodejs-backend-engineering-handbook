@@ -288,3 +288,7 @@ Added reusable [NotebookLM educational round prompt](templates/notebooklm-engine
 Per learner request, removed both generic NotebookLM prompt templates. Created [dedicated D03-P02 MediaForge educational archive](projects/implementation-studies/d03-p02-mediaforge/README.md) with [verbatim approved PRD copy](projects/implementation-studies/d03-p02-mediaforge/prd.md) and [Round 1 question-by-question learning dossier](projects/implementation-studies/d03-p02-mediaforge/round-01-product-discovery.md). Future teaching content and verified ADR links belong in this per-project archive, while implementation ADRs remain in external repo. NotebookLM prompts are produced ad hoc in chat after each round, not saved as templates. Q1–Q13 are **proposed/ChatGPT-recommended, not owner-approved on evidence currently provided**; no technical ADR or implementation claimed.
 
 **Coverage review (2026-10-13):** archive is a copy/explanatory note, not a new project/PRD or revised scope. Existing approved D03-P02 mapping remains unchanged, implementation and assessment evidence absent.
+
+## MediaForge Round 2 learner approval — 2026-10-13
+
+Learner explicitly approved all 15 Codex Q14–Q28 defaults. Handbook educational dossier records this product-owner approval; external Codex decision-log update and Round 3 questions remain pending. No technology, architectural ADR, coding or assessed competency approved.
