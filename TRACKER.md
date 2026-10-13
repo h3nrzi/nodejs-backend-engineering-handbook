@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–16 learner-approved; Chapter 17 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–17 learner-approved; Chapter 18 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–16 learner-approved; [Chapter 17 — Runtime Diagnostics and Measurement](domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md) authored/in_review; Chapter 18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–17 learner-approved; [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md) authored/in_review. All lesson files exist; **D03 lesson approval gate remains open**. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–16 are learner-approved; **Chapter 17 — Runtime Diagnostics and Measurement — awaits learner editorial review**. Do not author Chapter 18 before Chapter 17 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–17 are learner-approved; **Chapter 18 — Integrated Runtime Failure and Performance Case Studies — awaits explicit learner editorial review**. Do not begin the D03 project candidate catalog or PRDs before Chapter 18 approval and final coverage reconciliation. D03 implementations not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -217,3 +217,13 @@ Learner explicitly approved [Chapter 16 — Runtime Failures and Graceful Shutdo
 **Mandatory coverage review:** [Coverage Matrix](projects/coverage-matrix.md) reconciled with Chapter 16 approved and Chapter 17 authored/in_review. **47 authored chapter mappings: 46 editorially approved and 1 in_review** (30 D01/D02 lessons and 16 D03 lessons approved). Nine approved D01/D02 product PRDs unchanged. Curriculum, root/domain indexes, ROADMAP and machine state aligned. D03 catalog/PRDs and implementations not_started, assessments deferred.
 
 **Handoff:** Active domain D03. Chapter 17 awaits explicit learner editorial review; do not author Chapter 18 until approval. Product PRDs remain implementation-neutral and separate from this educational runtime diagnostic content.
+
+## D03 Chapter 17 learner approval and Chapter 18 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 17 — Runtime Diagnostics and Measurement](domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md) in this chat: `in_review → approved_by_learner`. Authored only [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md): `not_started → authored → in_review`. **Chapter 18 is not learner-approved.** Every chapter from D03-C01 to D03-C18 has a lesson file, but that alone does not close the D03 editorial lesson gate. The candidate catalog, PRDs and project implementations remain not_started; study assessment deferred.
+
+**Educational evidence:** seven standalone Node v22.16.0, V8 12.4.254.21-node.26, libuv 1.49.2, Linux x64 diagnostic case fixtures each repeated three times (**21/21 primary expected outcomes**), plus six separately launched `UV_THREADPOOL_SIZE=1/4` comparison invocations (**27 final checked runs total**). Covered loop-delay sampling under bounded JS blocking, pipeline AbortError/destroy without assuming late callback cancellation, fs.stat/PBKDF2 pool competition, transferred ArrayBuffer alias detachment and DataView throwing TypeError, retained/released managed heap, CommonJS/ESM missing extension, and client disconnect despite a prior **local** server-side increment. The chapter explicitly distinguishes local simulated state from any durable external business commit. Two initial fixture errors (detached DataView getter; incorrect ClientRequest.readableEnded expectation) were corrected before final verification and are recorded, not counted as passing. All samples and limitations are documented in Chapter 18 Section 19. Official Node v22 references reviewed. No production benchmark, release portability guarantee, learner proficiency certification or implemented product claim.
+
+**Mandatory Coverage Matrix reconciliation:** [matrix](projects/coverage-matrix.md) updated D03-C17 to approved and D03-C18 to authored/in_review. **48 authored chapter mappings: 47 learner-approved editorially, 1 in_review.** D01/D02 30 lesson approvals and nine approved product PRDs unchanged. Root/domain indexes, curriculum, ROADMAP and canonical machine state reconciled. Assessment deferred; no D03 catalog, PRD or implementation.
+
+**Handoff:** active domain D03; Chapter 18 pending explicit learner editorial approval. Next action: request approval or revisions to Chapter 18. Once approved, reconcile all D03-C01–C18 lesson mappings and then begin the **distinct D03 project candidate catalog** as the next workflow step. Do not author catalog/PRDs early or infer project architecture from integrated teaching cases.
