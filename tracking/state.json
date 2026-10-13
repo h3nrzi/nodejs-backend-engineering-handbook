@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_16",
+  "review": "pending_learner_review_D03_chapter_17",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 16 Runtime Failures and Graceful Shutdown (authored; in_review)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 15; Chapter 16 authored, author-reviewed and documented with seven local Node v22.16.0/Linux educational fixtures each run three times (21/21 expected outcomes). Canonical state caught up to previously updated human tracker, curriculum, indexes and Coverage Matrix.",
-  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md; do not author Chapter 17 until explicit Chapter 16 approval.",
+  "active_deliverable": "D03 Chapter 17 Runtime Diagnostics and Measurement (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 16; authored and quality-reviewed Chapter 17 with 21/21 directly checked Node v22.16.0/Linux educational diagnostic fixture invocations; Coverage Matrix, curriculum, READMEs, ROADMAP and human tracker reconciled.",
+  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md; do not author Chapter 18 until explicit Chapter 17 learner approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-16-review",
-      "question": "Approve or request revisions to D03 Chapter 16 — Runtime Failures and Graceful Shutdown.",
+      "id": "D03-chapter-17-review",
+      "question": "Approve or request revisions to Chapter 17 — Runtime Diagnostics and Measurement.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md"
+      "evidence": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md"
     }
   ],
   "current_implementation_project": null,
@@ -111,8 +111,8 @@
         "13": "approved_by_learner",
         "14": "approved_by_learner",
         "15": "approved_by_learner",
-        "16": "in_review",
-        "17": "not_started",
+        "16": "approved_by_learner",
+        "17": "in_review",
         "18": "not_started",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
@@ -209,6 +209,18 @@
           "arch": "x64",
           "module_context": "seven standalone ESM fixtures with subprocesses, HTTP loopback and supported Linux signals",
           "limits": "Educational checks documented in Chapter 16; no production supervisor/SLO, cross-platform guarantee, learner assessment, external transaction reconciliation or implemented project evidence."
+        },
+        "17": {
+          "status": "seven_standalone_diagnostic_esm_fixtures_three_runs_each_21_of_21_expected_outcomes_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "seven standalone ESM files, separate bounded Node process launches in /tmp/d03c17; one local spawned child",
+          "limits": "21 directly executed local diagnostic checks; metric observations are short-window and scope-dependent. No production SLO, trace-event capture, sensitive report dumps, remote Inspector, cross-platform validation, learning assessment or implementation evidence."
         },
         "01": {
           "status": "three_educational_examples_executed",
@@ -328,6 +340,7 @@
         "13": "2026-10-13",
         "14": "2026-10-13",
         "15": "2026-10-13",
+        "16": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -974,6 +987,21 @@
         "projects/coverage-matrix.md",
         "domains/03-nodejs-internals/curriculum.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved D03 Chapter 16. Authored Chapter 17 only with seven directly run Node v22.16.0/Linux x64 diagnostic ESM fixtures three times each (21/21 checks): loop-delay/ELU, User Timing observer, Diagnostics Channel, Inspector CPU profile, redacted summary of diagnostic report, process CPU/resource info, and high-ELU low-parent-CPU blocking child counterexample. Checked official versioned docs, limitations, author quality gate. Chapter 17 in_review; Chapter 18 not_started. Coverage matrix, tracker and indexes reconciled. Assessments and projects deferred.",
+      "approval_source": "Current user message: تایید, following explicit Chapter 16 editorial review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+        "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -992,7 +1020,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_15_approved_chapter_16_in_review",
+    "status": "reconciled_D03_chapter_16_approved_chapter_17_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -1002,13 +1030,13 @@
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 46,
+    "chapter_mapping_count": 47,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
       "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
       "projects/coverage-matrix.md",
       "TRACKER.md",
       "domains/03-nodejs-internals/curriculum.md",
@@ -1016,8 +1044,8 @@
       "README.md",
       "ROADMAP.md"
     ],
-    "mapping_change": "D03-C15 now learner-approved; D03-C16 authored/in_review supported by 21/21 documented local educational Node v22/Linux fixture outcomes. D01/D02 30 approved chapter mappings and 9 PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 45,
+    "mapping_change": "D03-C16 learner-approved editorially; D03-C17 authored/in_review, with 21/21 directly executed Node v22/Linux diagnostic educational fixtures. D01/D02 thirty approved chapters and nine product PRDs unchanged; no D03 PRD or product implementation.",
+    "approved_chapter_mapping_count": 46,
     "in_review_chapter_mapping_count": 1
   }
 }
