@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — 18/18 lessons and five catalog concepts learner-approved; all five PRDs authored/in_review for one batch approval  
+**Current authoring focus:** D03 content authoring COMPLETE — 18/18 chapters, five catalog concepts, five PRDs learner-approved. Next: D04 curriculum blueprint, not started.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved; **all 18 lessons now learner-approved editorially** including [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md). Lesson-authoring gate complete after full [coverage reconciliation](projects/coverage-matrix.md). [Five-project candidate catalog](domains/03-nodejs-internals/projects/catalog.md) approved_by_learner on 2026-10-13. **All five D03 product PRDs drafted/in_review together**; none learner-approved. Implementation not_started; learner assessment deferred. Overall D03 content-authoring gate remains open.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved; **all 18 lessons now learner-approved editorially** including [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md). Lesson-authoring gate complete after full [coverage reconciliation](projects/coverage-matrix.md). [Five-project candidate catalog](domains/03-nodejs-internals/projects/catalog.md) approved_by_learner on 2026-10-13. **All five D03 product PRDs learner-approved together on 2026-10-13**, with remaining detailed kickoff policies open. D03 content-authoring gate **CLOSED** after audit: 48 approved lessons and 14 approved PRDs across D01–D03. Implementations not_started; learning assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. D03's **18/18 lessons and five catalog concepts are learner-approved**; the five separate linked PRDs are **authored/in_review as one batch**, with no D03 PRD approval yet. **Next:** learner reviews/approves all five PRD product boundaries together, or requests revisions. P04 specifically proposes approved trusted scenario execution only; public arbitrary code is out of V1. Following explicit batch approval, re-audit the [Coverage Matrix](projects/coverage-matrix.md) and close the D03 content-authoring gate only if all required conditions hold; D04 authoring and implementations remain not_started. Assessments are deferred.
+**D01, D02 and D03 content-authoring gates are CLOSED.** D03 has 18/18 chapters, five catalog concepts and five PRDs explicitly learner-approved, including P04's trusted-only execution boundary (public arbitrary code excluded). [Coverage Matrix](projects/coverage-matrix.md) documents 48 approved lesson mappings and 14 approved product PRDs. **Next proposed authoring step:** begin D04 — Network & Protocol Engineering **curriculum planning**, then request separate learner approval of that curriculum before writing lessons. D04 is still not_started. No project implementation or learner assessment is underway.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -254,3 +254,13 @@ Each PRD documents problem, intended actors, goals, **V1 in/out/deferred boundar
 **Coverage reconciliation:** [Global Coverage Matrix](projects/coverage-matrix.md) reviewed and linked all five actual draft PRDs in a **separate proposal table**, without converting them to approved PRD challenges. All **48 lesson mappings are learner-approved editorially**, zero in-review lessons. D01/D02 nine PRDs remain approved and unchanged; **D03 five PRDs authored/in_review and zero approved**. Product implementations not_started, study assessments deferred. D03 overall content gate **open** pending batch PRD approval and final audit; D04 authoring not_started.
 
 **Handoff:** learner reviews the five PRDs as a single batch. If all are explicitly approved, update five document status records, catalog, coverage matrix, machine/human tracker and README/ROADMAP, close D03 content-authoring gate only after required coverage review, then propose starting D04 curriculum planning. If revisions are requested, keep impacted PRDs in_review. No automatic approval, technical architecture or implementation.
+
+## D03 five PRDs learner-approved; content closure and repository consistency scan — 2026-10-13
+
+Learner explicitly approved **all five D03 PRDs together** (P01 IntakeLedger, P02 MediaForge, P03 NodeScope, P04 PackageClinic, P05 LiveRoom), following earlier approval of all five catalog concepts. The five PRD files each record `approved_by_learner` and retain their user-facing V1 in/out/deferred scope and open detailed policies for later project kickoff. P04 specifically confirms the trusted **owner/operator-approved execution only** scope, excluding public arbitrary executable input. The learner's approval is **product direction**, not technical architecture, final numeric policy, student mastery or implementation evidence.
+
+**Coverage and status audit:** [Coverage Matrix](projects/coverage-matrix.md) reconciles **14/14 approved product PRDs** (D01=4, D02=5, D03=5) and **48/48 approved chapter lessons** (D01=14, D02=16, D03=18). The D03-C01–C18 rows now link to approved relevant **observable** product challenges without mandating EventEmitter, Stream, Worker, libuv thread-pool sizing or process topology. D01/D02 original approvals and PRD boundaries are unchanged. D03 catalog, README, curriculum, root README, ROADMAP and canonical state reconciled. D03's **content-authoring gate is closed**; external project implementations remain not_started and assessments deferred.
+
+**Consistency repairs:** reconciled stale 9-approved/5-in_review PRD counts and draft navigation; made P01–P05 approval records independent and explicit; fixed the root D03 chapter navigation that omitted Chapter 01 by replacing the partial inline list with a link to the complete 18-lesson index; replaced the renamed D03 README PRD anchor with the stable `#approved-d03-product-prds` link; changed ROADMAP D03 checkbox to completed. Dated historical logs are retained as historical progress rather than rewritten to current state.
+
+**Handoff:** D04 Network & Protocol Engineering curriculum is `not_started`. Ask whether learner wants to start D04 curriculum planning and approval. Do not start D04 lessons/projects, select technical implementations, or run learner assessment without further direction.
