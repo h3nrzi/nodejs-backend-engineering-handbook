@@ -6,8 +6,8 @@
   "active_domain_id": "D03",
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — setup skill complete, verify installed skills and prepare product discovery",
-  "last_completed_step": "All five D03 product PRDs explicitly learner-approved in one batch, including P04 trusted-only execution scope. Reconciled final 48/48 approved lesson mappings and 14/14 approved PRD product challenges. Scanned root/domain index and cross-document statuses; D03 content-authoring gate closed. No study assessment or implementation started.",
-  "next_action": "Verify relevant installed skills in local Codex and their exact invocations; start MediaForge PRD-based product discovery with build-blocking questions only. No technical design or code yet.",
+  "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
+  "next_action": "Use shared Codex grill-with-docs template with local imported approved MediaForge PRD; learner runs round-based Product Discovery and relays full rounds for review; no technical design yet.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1166,6 +1166,14 @@
       "evidence": [
         "https://github.com/h3nrzi/mediaforge/commit/91bcfca",
         "https://github.com/h3nrzi/mediaforge/blob/main/AGENTS.md"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Published general reusable Codex Product Discovery prompt based on inspected installed grill-with-docs/grilling/domain-modeling skill source. Reconciled workflow; no product/coverage/implementation status change.",
+      "evidence": [
+        "templates/codex-grill-with-docs-product-discovery.md",
+        "docs/workflow.md"
       ]
     }
   ],
