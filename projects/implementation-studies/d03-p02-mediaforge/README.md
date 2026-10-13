@@ -8,6 +8,7 @@
 ## Files
 
 - [PRD baseline (verbatim copy)](prd.md): unchanged content from canonical approved PRD for educational context. Canonical source remains authoritative.
+- [Round 03 educational dossier](round-03-product-discovery.md): full Q29–Q46 Codex questions and recommendations with separate teaching notes; pending owner approval.
 - [Round 02 educational dossier](round-02-product-discovery.md): Q14–Q28 original questions and full Codex recommendations, ChatGPT review and educational analysis; approved by product owner; Codex decision-log update pending.
 - [Round 01 educational dossier](round-01-product-discovery.md): product questions, proposed answers, trade-offs, learning notes, unanswered policies; approvals marked honestly.
 
