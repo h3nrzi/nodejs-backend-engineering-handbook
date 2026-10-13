@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C13  
-**Editorial status:** in_review — authored and quality-reviewed; **awaiting learner approval**.  
+**Editorial status:** approved_by_learner — explicitly confirmed 2026-10-13.  
 **Prerequisite approval:** D03 Chapters 01–12 learner-approved; Chapter 12 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 17 records 27 checked invocations (nine fixture entry points, three runs each) on Node v22.16.0 / Linux x64. One intentionally failing ESM cycle is a **passed negative-path check**, not a successful application run.  
 **Study assessment / project implementation:** deferred / not_started.
@@ -588,4 +588,4 @@ Passing future questions does not automatically establish working project implem
 | Exercises, answers, references | Sections 16–17 | No learner assessment administered |
 | Coverage matrix | D03-C12 learner-approved; D03-C13 authored/in_review; D03 project catalog/PRDs and implementation not_started | No implementation or mastery evidence |
 
-**Author editorial/quality review:** completed against `docs/quality-gates.md`, the D03-C13 curriculum and the official release-line module documentation. Versioned fixture outcomes are recorded without universalizing Node v22 behavior. **Chapter 13 remains `in_review` awaiting explicit learner approval.** Do not author Chapter 14 — V8 Execution, Memory and Garbage Collection — before that approval.
+**Author editorial/quality review:** completed against `docs/quality-gates.md`, the D03-C13 curriculum and official release-line module documentation. Versioned fixture outcomes are recorded without universalizing Node v22 behavior. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 14 — V8 Execution, Memory and Garbage Collection — is the next authoring unit, followed by explicit learner review before Chapter 15. Assessments and project implementation remain deferred.
