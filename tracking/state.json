@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_11",
+  "review": "pending_learner_review_D03_chapter_12",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 11 Worker Threads and Data Ownership (authored; in_review)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 10; Chapter 11 authored with 15 successful Node v22.16.0/Linux educational Worker fixture runs and a pre-start termination counterexample; coverage matrix and indexes reconciled.",
-  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md; do not author Chapter 12 until explicit Chapter 11 approval.",
+  "active_deliverable": "D03 Chapter 12 Child Processes, IPC and Cluster Boundaries (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 11; Chapter 12 authored with 21 successful Node v22.16.0/Linux educational subprocess/IPC/cluster runs, references and limitations. Coverage and all indexes reconciled.",
+  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md; do not author Chapter 13 until Chapter 12 approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-11-review",
-      "question": "Approve or revise D03 Chapter 11 editorial content.",
+      "id": "D03-chapter-12-review",
+      "question": "Approve or request revisions to D03 Chapter 12 editorial content.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md"
+      "evidence": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md"
     }
   ],
   "current_implementation_project": null,
@@ -106,8 +106,8 @@
       "curriculum_approved_on": "2026-10-12",
       "chapter_progress": {
         "10": "approved_by_learner",
-        "11": "in_review",
-        "12": "not_started",
+        "11": "approved_by_learner",
+        "12": "in_review",
         "13": "not_started",
         "14": "not_started",
         "15": "not_started",
@@ -149,6 +149,18 @@
           "arch": "x64",
           "module_context": "standalone ESM (.mjs), Worker self-spawning educational fixtures",
           "limits": "15 bounded runs: CPU offload, structured clone/ArrayBuffer detach, SharedArrayBuffer Atomics, intentional Worker exception and acknowledged termination. One extra pre-start termination counterexample. No cross-platform/performance/security guarantee, learner assessment or project implementation."
+        },
+        "12": {
+          "status": "seven_standalone_subprocess_fixtures_three_runs_each_21_successful_educational_executions",
+          "evidence": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "standalone ESM .mjs; separate Node processes; cluster loopback ephemeral port",
+          "limits": "Three local runs each of 7 controlled fixtures. OS/platform output/event timing varies; no production process supervision, security sandbox, durable IPC, fairness, learner assessment or implemented project."
         },
         "01": {
           "status": "three_educational_examples_executed",
@@ -263,6 +275,7 @@
       },
       "chapter_approval_dates": {
         "10": "2026-10-13",
+        "11": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -837,6 +850,21 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved D03 Chapter 11. Authored Chapter 12 only; 7 ESM fixtures executed three times each (21 passed) covering spawn stdio events, execFile argument/maxBuffer, fork IPC advanced Map serialization, pipe pressure, signal termination, two-process cluster and missing executable. Node v22.16.0 Linux x64, exact official docs reviewed, author quality gate checked. Chapter 12 in_review; Chapter 13 not_started. Coverage Matrix, trackers and domain/root indexes reconciled. No learner assessments, product implementation or architecture selection.",
+      "approval_source": "Current user message: تایید, following Chapter 11 editorial review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+        "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -855,23 +883,23 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_10_approved_chapter_11_in_review",
+    "status": "reconciled_D03_chapter_11_approved_chapter_12_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "3baf6f378717765ab08941dddd26ac68be3b01bb",
+    "baseline_commit": "3dd48d2ee129eb4d807fffeac44b77cb451ef593",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 41,
+    "chapter_mapping_count": 42,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
       "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
@@ -879,8 +907,8 @@
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C10 now learner-approved and D03-C11 authored/in_review, 15 successful educational Worker executions, with one pre-start termination counterexample. 30 D01/D02 mappings and 9 PRDs unchanged; no implementation evidence.",
-    "approved_chapter_mapping_count": 40,
+    "mapping_change": "D03-C11 learner-approved; D03-C12 authored/in_review with 21 checked educational Node v22/Linux subprocess, IPC and cluster executions. D01/D02 30 lesson mappings and 9 PRDs unchanged; no product implementation.",
+    "approved_chapter_mapping_count": 41,
     "in_review_chapter_mapping_count": 1
   }
 }
