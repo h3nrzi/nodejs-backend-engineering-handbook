@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C10  
-**Editorial status:** in_review — authored for learner editorial review; **not approved**.  
+**Editorial status:** approved_by_learner — explicitly confirmed 2026-10-13.  
 **Prerequisite review:** Chapters 01–09 learner-approved; Chapter 09 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 15 contains dated, exact local commands and observations for Node v22.16.0 / Linux x64; do not confuse that runtime with the macOS/Node v26.4.0 examples in earlier chapters.  
 **Assessment / project implementation:** deferred / not_started.
@@ -409,4 +409,4 @@ A learner should be able to identify the execution resource, predict only **qual
 
 **Honest gaps:** exact native queue timing is not measured; no OS-level thread tracing, cross-platform stress, fine-grained fairness or exhaustive DNS/crypto/zlib version matrix was run. Worker JS execution belongs to Chapter 11, process-level boundaries to Chapter 12 and full diagnostics to Chapter 17. **No implementation decisions or product commitments** follow from this educational comparison.
 
-**Author quality review:** completed against `docs/quality-gates.md` with checked local fixtures and explicit limitations. **Next gate:** learner reviews and approves or requests revisions to Chapter 10. **Do not begin Chapter 11 before explicit Chapter 10 approval.**
+**Author quality review:** completed against `docs/quality-gates.md` with checked local fixtures and explicit limitations. **Learner editorial approval:** explicitly confirmed on 2026-10-13; technical project implementation and learner assessments remain deferred. **Next gate:** Chapter 11 — Worker Threads and Data Ownership — is authored/in_review and awaits explicit learner approval before Chapter 12.
