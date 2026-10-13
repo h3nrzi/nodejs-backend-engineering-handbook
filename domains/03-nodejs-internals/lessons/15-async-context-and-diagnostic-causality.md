@@ -485,6 +485,6 @@ No learner answers, scores, graded evidence or product implementation have been 
 | Security, errors and resource lifetimes | Sections 11, 13–15: mutable stores, diagnostic IDs not credentials, privacy and retention |
 | Backend case study and transfer | Section 15; educational case not a project requirement |
 | Exercises, official docs and environment | Sections 16–17; 15/15 checked fixture invocations, assessments deferred |
-| Global coverage | D03-C14 learner-approved editorially; D03-C15 authored/in_review; D03 project catalog/PRDs and implementation not_started |
+| Global coverage | D03-C14 and D03-C15 learner-approved editorially (Chapter 15 explicitly approved 2026-10-13); D03 project catalog/PRDs and implementation not_started |
 
 **Author editorial quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C15 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 16 — Runtime Failures and Graceful Shutdown — is authored/in_review and awaits a separate learner approval before Chapter 17. Learning assessments and product implementation remain deferred.
