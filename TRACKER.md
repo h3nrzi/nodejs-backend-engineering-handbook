@@ -300,3 +300,7 @@ Archived exact Codex Q29–Q46 questions and full proposed answers in [Round 3 e
 ## MediaForge Round 3 product-owner approval — 2026-10-13
 
 Learner explicitly approved all Codex Q29–Q46 recommendations with the noted Q39/Q46 safety/liveness caveat. [Round 3 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-03-product-discovery.md) updated. Codex recording and Round 4 still pending; no architecture, ADR, implementation, or assessment evidence.
+
+## MediaForge Round 4 review — 2026-10-13
+
+[Full Round 4 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-04-product-discovery.md) documents verbatim Codex questions and recommendations Q47–Q59, with distinct teaching notes. All approvals pending; no architecture ADR or implementation evidence. Q53 explicitly qualifies Q46 cutoff timing; Q58 clarifies Q19 transfer revocation.
