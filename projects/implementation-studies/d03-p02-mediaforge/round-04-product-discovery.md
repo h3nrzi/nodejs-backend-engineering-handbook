@@ -1,7 +1,7 @@
 # MediaForge — Product Discovery Round 4: Educational dossier
 
 **Date:** 2026-10-13  
-**Status:** Q47–Q59 are Codex recommendations, **PENDING PRODUCT-OWNER APPROVAL**. Codex reports Round 3 Q29–Q46 recorded approved locally; this is not an independent verification of its local document.  
+**Status:** Q47–Q59 are Codex recommendations, **APPROVED BY PRODUCT OWNER on 2026-10-13** (all 13 recommended Yes; external Codex decision-log update not yet verified). Codex reports Round 3 Q29–Q46 recorded approved locally; this is not an independent verification of its local document.  
 **Approved PRD baseline:** [prd.md](prd.md)  
 **Nature:** exact Codex question and recommendation text supplied in Round 4, followed by clearly labeled separate learning commentary. No architecture, implementation, or ADR inferred.
 
@@ -23,11 +23,11 @@ Should an output become ready only when all these conditions hold?
 
 ➡️ **Recommended: Yes.** These give each preset a concrete readiness contract. Failure of a required check prevents readiness and produces a verification explanation. Verification methods belong to technical discovery.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** قرارداد پذیرش خروجی فقط ساخت فایل نیست؛ تطابق محتوا، فرمت، ابعاد، Provenance، و مجاز بودن انتشار باید همگی برقرار باشند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q48 — Visual quality acceptance
 
@@ -43,11 +43,11 @@ For supported cases, outputs must show no unintended crop, rotation, missing reg
 
 Visual review of these sample cases is a release acceptance activity. Individual requests do not require human approval before becoming ready. Specific encoder settings and sample-file preparation remain for technical discovery.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** Visual acceptance نمونه‌ای در زمان انتشار با بررسی خودکار Ready برای تک‌درخواست متفاوت است؛ JPEG الزاماً Pixel-identical نیست.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q49 — Retry-count ceiling
 
@@ -61,11 +61,11 @@ Should V1 have **no additional lifetime retry-count ceiling**, while retaining e
 
 Repeated failures remain visible; no retry promises a different result.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** نبود سقف مادام‌العمر به معنی Retry خودکار یا بی‌محدودیت واقعی نیست؛ سایر شروط همچنان برقرارند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q50 — Shared-source processing and attribution
 
@@ -81,11 +81,11 @@ Its per-user capacity allowance belongs to that initiator. Original source attri
 
 Accepted work from removed members continues to consume workspace capacity under its existing limits.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** Source submitter و Request initiator می‌توانند متفاوت باشند؛ مجوز و سهم ظرفیت به آغازکننده درخواست وابسته است.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q51 — Cancellation-action responses
 
@@ -107,11 +107,11 @@ Repeated confirmation of the same cancellation action would recover its result w
 
 ➡️ **Recommended: Yes.** “Stop requested” cannot be mistaken for confirmed cancellation. Actual variant outcomes continue to determine the request summary.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** پاسخ API/اکشن درباره پذیرش فرمان توقف است، نه ادعای نتیجه قطعی پردازش.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q52 — Retained history and provenance
 
@@ -132,11 +132,11 @@ After ordinary full-history expiry, an unresolved record would retain only the i
 
 ➡️ **Recommended: Yes.** Content removal does not erase understandable provenance. The minimal unresolved record contains no retained media or privileged diagnostics.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** Retention تاریخچه و Retention بایت‌های رسانه متفاوت است؛ استثنای سابقه حداقلی برای عملیات حل‌نشده نباید رسانه را نگه دارد.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q53 — Bound unfinished work after a stop request
 
@@ -156,11 +156,11 @@ At the cutoff, unfinished artifacts lose promotion eligibility and content held 
 
 This explicitly qualifies Q46’s original indeterminacy-only trigger. It does not treat the cutoff as proof of stopping.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** این پیشنهاد Q46 را از نظر مبدأ بازه دقیق‌تر می‌کند. خروجی پس از Cutoff قابل Ready شدن نیست، اما وضعیت Running/Indeterminate بدون شاهد عوض نمی‌شود.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q54 — Duration and clock-reset rules
 
@@ -174,11 +174,11 @@ An explicit new request receives new request budgets and history timing. It does
 
 ➡️ **Recommended: Yes.** Availability and deadlines remain predictable. Repeated actions cannot extend retention or recovery windows.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** زمان سپری‌شده و Anchorهای تغییرناپذیر جلوی تمدید ضمنی انقضا را می‌گیرند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q55 — Temporary output unavailability
 
@@ -192,11 +192,11 @@ The editor’s recorded selection would remain visible with an unusable warning 
 
 ➡️ **Recommended: Yes.** A retrieval problem does not automatically invalidate earlier processing or erase editorial intent. Restoration cannot silently substitute newly processed content, reset retention, or trigger automatic reprocessing.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** حفظ موفقیت تاریخی با اعلام صادقانه نبود دسترسی فعلی سازگار است. Restoration باید همان محتوا را بازگرداند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q56 — Evidence that an earlier success was false
 
@@ -210,11 +210,11 @@ The invalid output loses readiness and active selection. Valid siblings remain u
 
 ➡️ **Recommended: Yes.** Historical records must acknowledge an incorrect success claim rather than preserve it as unquestioned truth. This differs from genuine success followed by later availability loss in Q55.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** Correction با Availability outage متفاوت است: ادعای موفقیت قدیمی غلط بوده و باید تاریخچه اصلاح شفاف بماند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q57 — Concurrent selection changes
 
@@ -228,11 +228,11 @@ Repeating the same action would recover its result without toggling or reapplyin
 
 ➡️ **Recommended: Yes.** This keeps selection reversible and understandable without introducing a collaborative approval workflow.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** آخرین اقدام پذیرفته‌شده ملاک است؛ Replay اقدام قبلی نباید تصمیم جدیدتر Editor دیگر را برگرداند.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q58 — Retrieval crossing expiry or revocation
 
@@ -248,11 +248,11 @@ Expiry, deletion, or membership removal immediately blocks new retrieval request
 
 This explicitly clarifies Q19: immediate revocation governs subsequent access requests; it does not retroactively cancel an accepted transfer.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** قطع مجوز مانع درخواست بعدی است، نه الزاماً انتقالی که قبل از قطع مجوز پذیرفته شده است.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Q59 — Last-manager protection
 
@@ -264,11 +264,11 @@ Should the product reject removal or demotion that would leave the workspace wit
 
 ➡️ **Recommended: Yes.** Someone remains authorized to manage membership, deletion, and recovery. Initial identity provisioning remains a technical-discovery matter.
 
-**ChatGPT review (not owner approval):** Recommend Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis (not a Codex quote):** این قاعده از بن‌بست مدیریت Workspace جلوگیری می‌کند، بدون تعیین شیوه ایجاد حساب اولیه.
 
-**Approval status:** Pending.
+**Approval status:** Approved by product owner on 2026-10-13; Codex recording not yet verified.
 
 ## Learning synthesis
 
