@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C16  
-**Editorial status:** in_review — authored and quality-reviewed; **learner approval pending**.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisites:** Chapters 01–15 of D03 learner-approved; Chapter 15 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 18 records seven independent ESM fixtures run three times each: **21/21 expected-outcome checks**, Node v22.16.0 / Linux x64.  
 **Learning assessments / project implementation:** deferred / not_started.
@@ -573,4 +573,4 @@ No learner answers or grade were collected. A passed educational fixture does no
 | Backend case and exercises | Sections 15–17; learning assessment not administered |
 | Competency/PRD traceability | D03-C15 learner-approved; D03-C16 authored/in_review; D03 project catalog/PRDs and implementation not_started |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C16 curriculum. **Chapter 16 is authored/in_review and not learner-approved.** Next: explicit learner review and approval/revision of this chapter. **Do not start Chapter 17 — Runtime Diagnostics and Measurement until that approval.**
+**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C16 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 17 — Runtime Diagnostics and Measurement — has been authored/in_review and awaits separate learner approval before Chapter 18. Learning assessments and project implementation remain deferred.
