@@ -274,3 +274,7 @@ Learner explicitly approved **all five D03 PRDs together** (P01 IntakeLedger, P0
 ## D03-P02 MediaForge setup verified — 2026-10-13
 
 External repository [h3nrzi/mediaforge](https://github.com/h3nrzi/mediaforge) exists. Learner ran `setup-matt-pocock-skills`, chose Local Markdown `.scratch/` tracker, default five triage statuses, single-context domain docs, and `AGENTS.md`. Approved configuration files were committed/pushed as [`91bcfca`](https://github.com/h3nrzi/mediaforge/commit/91bcfca). Local `skills-lock.json` exists; relevant individual skill availability and invocation need verification before product discovery. **No application code, architecture, learner assessment or implementation evidence.** Next: verify skills, use approved D03-P02 PRD to ask essential V1 product questions. **Coverage matrix reviewed; no mapping change.**
+
+## Reusable Matt Pocock Product Discovery template — 2026-10-13
+
+Created [general Codex grill-with-docs V1 prompt](templates/codex-grill-with-docs-product-discovery.md), linked from [workflow](docs/workflow.md). Parameterized canonical/local PRD provenance and project identity, kept learner authority and skill's complete independent-question frontier per round, separate V1 decision records, and technical-design stop gate. This is process documentation only: no MediaForge discovery approval, implementation evidence, assessed learning, PRD scope change, or competency-matrix mapping change.
