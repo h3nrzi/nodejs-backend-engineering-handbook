@@ -3,7 +3,7 @@
 **Status:** approved_by_learner — 18-chapter breadth, sequence and boundaries confirmed on 2026-10-12.  
 **Authored:** 2026-10-12.  
 **Lessons:** All 18 chapters authored and approved_by_learner editorially; **D03 lesson-authoring gate complete**. This blueprint is not learner competency assessment.  
-**Project catalog:** [five candidate concepts](projects/catalog.md) drafted/in_review; **not learner-approved**. **PRDs / implementation:** not_started.  
+**Project catalog:** [five candidates](projects/catalog.md) approved_by_learner on 2026-10-13. **Product PRDs:** five authored/in_review for one batch review, none approved. **Implementation:** not_started.  
 **Assessment:** deferred_until_learning_phase.
 
 ## Purpose and prerequisites
@@ -90,7 +90,7 @@ A runtime learning objective does not force a particular worker, stream, queue o
 4. After lesson authoring: catalog review → separate product PRDs → coverage audit → domain content closure.
 5. Study assessments and project implementations remain deferred until explicitly initiated.
 
-**Pending learner review:** [D03 project candidate catalog](projects/catalog.md), five concepts proposed without approved PRDs. Chapter 18 was explicitly approved and all 18 lessons editorially approved on 2026-10-13; the chapter-authoring gate is closed. Product PRDs follow catalog approval only; overall domain content gate is not yet closed. Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapters 10–18 separately report Node v22.16.0/Linux observations and limits. These examples are not learner assessments or a mandated future project runtime.
+**Pending learner review:** all five separate [D03 product PRDs](README.md#five-product-prds--authoredin_review-as-one-batch) were authored/in_review after the five-concept catalog was explicitly approved on 2026-10-13. None is approved at PRD scope. All 18 lessons are editorially approved and the chapter-authoring gate is closed; the overall domain content gate remains open pending batch PRD approval and coverage reconciliation. Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapters 10–18 separately report Node v22.16.0/Linux observations and limits. These examples are not learner assessments or a mandated future project runtime.
 
 ## Starting official references
 
