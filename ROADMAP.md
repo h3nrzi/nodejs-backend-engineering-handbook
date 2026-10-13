@@ -1,10 +1,10 @@
 # Domain roadmap
 
-This is a curriculum **index**, not completed educational content. Status is tracked separately for content, PRDs, assessments and implementation. D01 and D02 authored content is complete at learner-approved editorial scope; study assessments and implementations are deferred. D03 curriculum and all 18 lessons are learner-approved editorially; the five-candidate project catalog is authored/in_review, with no approved D03 PRDs. Earlier chat outlines alone do not count as lessons.
+This is a curriculum **index**, not completed educational content. Status is tracked separately for content, PRDs, assessments and implementation. D01 and D02 authored content is complete at learner-approved editorial scope; study assessments and implementations are deferred. D03 curriculum and all 18 lessons are learner-approved editorially; the five-concept project catalog is learner-approved and five PRDs are authored/in_review, with no D03 PRD yet learner-approved. Earlier chat outlines alone do not count as lessons.
 
 - [x] **D01** — Computer Science Foundations (14 lessons and 4 product-scope PRDs approved; assessment deferred) (`domains/01-computer-science-foundations/README.md`)
 - [x] **D02** — JavaScript & TypeScript (16 lessons, 5 project concepts and 5 product-scope PRDs approved; open product decisions; assessment and implementation deferred) (`domains/02-javascript-typescript/README.md`)
-- [ ] **D03** — Node.js Internals (18/18 lessons learner-approved editorially; [five-candidate catalog](domains/03-nodejs-internals/projects/catalog.md) in_review; PRDs and implementation not started; domain content gate remains open) (`domains/03-nodejs-internals/README.md`)
+- [ ] **D03** — Node.js Internals (18/18 lessons learner-approved editorially; [five-candidate catalog](domains/03-nodejs-internals/projects/catalog.md) approved; five PRDs authored/in_review for batch learner review; implementation not started; domain content gate remains open) (`domains/03-nodejs-internals/README.md`)
 - [ ] **D04** — Network & Protocol Engineering (`domains/04-network-protocol-engineering/README.md`)
 - [ ] **D05** — API Engineering (`domains/05-api-engineering/README.md`)
 - [ ] **D06** — Software Architecture (`domains/06-software-architecture/README.md`)
