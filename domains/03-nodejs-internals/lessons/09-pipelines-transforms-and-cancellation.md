@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C09  
-**Editorial status:** in_review — authored, awaiting learner approval.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite review:** learner explicitly approved Chapter 08 on 2026-10-13.  
 **Educational execution:** Section 13 records executed commands, outcomes and limits.  
 **Assessment / project implementation:** deferred / not_started.
@@ -376,10 +376,10 @@ Future self-assessment: trace success/failure/cancellation through each particip
 - [x] Node/Web interoperability, chunks, locks, queue units and local cancellation evidence.
 - [x] Backend symptom, misconceptions, exercises, official references and versioned execution evidence.
 - [x] Canonical state, tracker, indexes and coverage matrix reconciliation.
-- [ ] Learner editorial approval of Chapter 09 — pending.
+- [x] Learner editorial approval of Chapter 09 — confirmed 2026-10-13.
 
 Honest gaps: no comprehensive compose API tour, BYOB byte-reader tuning, native stream internals, real transport crash/recovery testing or production fault policies. Thread-pool contention belongs to Chapter 10; comprehensive runtime shutdown to Chapter 16. D03 project catalog/PRDs and implementation remain not_started.
 
-**Author quality-gate review — 2026-10-13:** progressive teaching, mechanisms, bounded runnable examples, intentional failures, lifecycle ownership, references, exercises and evidence limits checked against `docs/quality-gates.md` and D03-C09 curriculum scope. Editorial review is still pending.
+**Author quality-gate review — 2026-10-13:** progressive teaching, mechanisms, bounded runnable examples, intentional failures, lifecycle ownership, references, exercises and evidence limits checked against `docs/quality-gates.md` and D03-C09 curriculum scope. Learner editorial approval was received on 2026-10-13; technical/project implementation and learning assessment remain deferred.
 
-**Next action:** learner reviews Chapter 09. Do not author Chapter 10 before explicit learner approval.
+**Next action:** Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation — is the next lesson to author, then submit for learner editorial review. No approval of Chapter 10 is implied.
