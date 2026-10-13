@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–15 learner-approved; Chapter 16 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–16 learner-approved; Chapter 17 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–15 learner-approved; [Chapter 16 — Runtime Failures and Graceful Shutdown](domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md) authored/in_review; Chapters 17–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–16 learner-approved; [Chapter 17 — Runtime Diagnostics and Measurement](domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md) authored/in_review; Chapter 18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–15 are learner-approved; **Chapter 16 — Runtime Failures and Graceful Shutdown — awaits learner editorial review**. Do not author Chapter 17 before Chapter 16 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–16 are learner-approved; **Chapter 17 — Runtime Diagnostics and Measurement — awaits learner editorial review**. Do not author Chapter 18 before Chapter 17 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -207,3 +207,13 @@ Learner explicitly approved [Chapter 15 — Async Context and Diagnostic Causali
 **Mandatory coverage reconciliation:** [matrix](projects/coverage-matrix.md) now marks D03-C15 approved and D03-C16 authored/in_review. **46 authored chapter mappings: 45 editorially approved, 1 in_review**, including 30 approved D01/D02 chapters and 15 approved D03 chapters. The nine approved D01/D02 product PRDs and all implementation statuses remain unchanged. Cross-checked curriculum, D03 index, root README, ROADMAP and canonical state. Assessments deferred; D03 project catalog/PRDs not_started.
 
 **Handoff:** active domain D03; Chapter 16 awaits learner editorial review. Chapters 17–18 not_started; no assessment or product implementation. Next step after explicit Chapter 16 approval: author Chapter 17 — Runtime Diagnostics and Measurement — only.
+
+## D03 Chapter 16 approved and Chapter 17 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 16 — Runtime Failures and Graceful Shutdown](domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md) in the latest conversation message (`تایید`): `in_review → approved_by_learner`. Authored only [Chapter 17 — Runtime Diagnostics and Measurement](domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md), currently **authored/in_review**. Chapter 18 **not_started**. The 18-chapter curriculum remains learner-approved as scope; study assessment and implementations remain deferred.
+
+**Educational evidence:** 7 standalone Node v22.16.0, V8 12.4.254.21-node.26, libuv 1.49.2, Linux x64 ESM diagnostic fixtures each invoked three times in separate Node processes (**21/21 expected-outcome checks**). Exercises: monitorEventLoopDelay and ELU under controlled JS blocking; performance marks/measures/observer; synchronous Diagnostics Channel subscription and context; local Inspector CPU profile; restricted process.report summary without raw data; CPU time and resource-type API; and a counterexample where parent ELU reached 1.0 during spawnSync while parent CPU stayed ~1.5–1.9ms over ~111.5–114.9ms wall time. Exact code, output ranges, privacy/measurement limitations and official v22 references in Chapter 17 Section 19. Trace-event capture and remote production diagnostics **not tested**. No claimed production monitoring, distributed causality proof, security acceptance, learner assessment, or product implementation.
+
+**Mandatory coverage review:** [Coverage Matrix](projects/coverage-matrix.md) reconciled with Chapter 16 approved and Chapter 17 authored/in_review. **47 authored chapter mappings: 46 editorially approved and 1 in_review** (30 D01/D02 lessons and 16 D03 lessons approved). Nine approved D01/D02 product PRDs unchanged. Curriculum, root/domain indexes, ROADMAP and machine state aligned. D03 catalog/PRDs and implementations not_started, assessments deferred.
+
+**Handoff:** Active domain D03. Chapter 17 awaits explicit learner editorial review; do not author Chapter 18 until approval. Product PRDs remain implementation-neutral and separate from this educational runtime diagnostic content.
