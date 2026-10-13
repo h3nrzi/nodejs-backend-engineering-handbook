@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–17 learner-approved; Chapter 18 authored/in_review  
+**Current authoring focus:** D03 — all 18 chapters learner-approved; five project candidates authored/in_review, no D03 PRDs  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–17 learner-approved; [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md) authored/in_review. All lesson files exist; **D03 lesson approval gate remains open**. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved; **all 18 lessons now learner-approved editorially** including [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md). Lesson-authoring gate complete after full [coverage reconciliation](projects/coverage-matrix.md). [Five-project candidate catalog](domains/03-nodejs-internals/projects/catalog.md) drafted/in_review, not learner-approved. D03 PRDs, implementation not_started; learner assessment deferred. Overall D03 content-authoring gate remains open.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–17 are learner-approved; **Chapter 18 — Integrated Runtime Failure and Performance Case Studies — awaits explicit learner editorial review**. Do not begin the D03 project candidate catalog or PRDs before Chapter 18 approval and final coverage reconciliation. D03 implementations not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, **all 18 chapters are learner-approved editorially** and the chapter-authoring gate is complete. **Five D03 project candidate concepts await explicit learner review** in [catalog](domains/03-nodejs-internals/projects/catalog.md). Do not author any D03 PRD until the learner approves the candidate direction; each PRD will require separate product-scope review. No implementations or learning assessments have started. The [Coverage Matrix](projects/coverage-matrix.md) records 48/48 approved editorial lessons and no D03 approved project challenge.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -227,3 +227,13 @@ Learner explicitly approved [Chapter 17 — Runtime Diagnostics and Measurement]
 **Mandatory Coverage Matrix reconciliation:** [matrix](projects/coverage-matrix.md) updated D03-C17 to approved and D03-C18 to authored/in_review. **48 authored chapter mappings: 47 learner-approved editorially, 1 in_review.** D01/D02 30 lesson approvals and nine approved product PRDs unchanged. Root/domain indexes, curriculum, ROADMAP and canonical machine state reconciled. Assessment deferred; no D03 catalog, PRD or implementation.
 
 **Handoff:** active domain D03; Chapter 18 pending explicit learner editorial approval. Next action: request approval or revisions to Chapter 18. Once approved, reconcile all D03-C01–C18 lesson mappings and then begin the **distinct D03 project candidate catalog** as the next workflow step. Do not author catalog/PRDs early or infer project architecture from integrated teaching cases.
+
+## D03 Chapter 18 approved; 18-lesson gate complete; five candidates in review — 2026-10-13
+
+**Explicit editorial approval:** Learner approved [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md) in the current conversation: `in_review → approved_by_learner`. All **D03-C01 through D03-C18** are now learner-approved editorially, and D03's **lesson-authoring gate is complete**. This does **not** certify learner mastery, product implementation, or overall domain content completion. Chapter 18's educational evidence remains scoped to the 27 Node v22.16.0/Linux checks documented in the lesson; no new runtime tests are claimed here.
+
+**New catalog for learner review:** [D03 Project Candidate Catalog](domains/03-nodejs-internals/projects/catalog.md) contains **five proposed, distinct product concepts**, all `in_review` and none approved or selected: P01 IntakeLedger (verified file handoff), P02 MediaForge (content asset processing), P03 NodeScope (incident evidence), P04 PackageClinic (trusted runtime preflight), and P05 LiveRoom (interactive audience sessions). Each identifies primary users, real product problem, first-version observable user journey, **in/out/deferred boundaries**, key runtime learning pressure and overlap safeguards against D01/D02 existing approved products. Any actual execution of third-party package code (P04) remains a substantial later security/product decision; this catalog neither assumes safety nor prescribes isolation. Project names are working titles only. **No D03 PRDs were authored or approved, no project implementation started**, no architecture/tech stack selected.
+
+**Mandatory coverage reconciliation:** [Coverage Matrix](projects/coverage-matrix.md) audited all eighteen D03 lesson IDs, their live links and approval statuses: **48 authored chapter mappings, 48 learner-approved editorially, 0 in_review** across D01–D03 (30 D01/D02 + 18 D03). Nine previously approved D01/D02 PRDs remain unchanged. The candidate catalog has a separate *proposal-only* mapping table and is linked in D03 overview; candidate concepts are **not** approved PRD challenges or verified project implementations. Assessment remains deferred, all D03 PRDs not_started. Domain index, curriculum, README, ROADMAP and canonical machine state reconciled.
+
+**Handoff / next decision:** learner approves, narrows or revises the five-candidate catalog. After explicit catalog review, author one separate implementation-neutral PRD at a time following the user-approved workflow, with clear scope and essential behaviors but no forced engineering implementation. **D03 overall content gate remains open**; D04 lesson authoring does not start yet.
