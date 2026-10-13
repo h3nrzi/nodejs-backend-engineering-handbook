@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 13 authored: Chapters 01–12 learner-approved; Chapter 13 in_review; Chapters 14–18 not_started.  
+**Lessons:** 14 authored: Chapters 01–13 learner-approved; Chapter 14 in_review; Chapters 15–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -41,12 +41,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 12. [Chapter 12 — Child Processes, IPC and Cluster Boundaries](lessons/12-child-processes-ipc-and-cluster-boundaries.md) — approved_by_learner on 2026-10-13; seven standalone ESM fixtures executed three times each (21 educational checks) on Node v22.16.0, libuv 1.49.2, Linux/x64. Spawn/exit/close, execFile overflow, fork IPC, stdio backpressure, signal, two-process cluster and missing-executable negative path checked. No production subprocess orchestration, cross-platform guarantee, learner assessment or implemented project.
 
-13. [Chapter 13 — Module Resolution and Runtime Loading](lessons/13-module-resolution-and-runtime-loading.md) — authored/in_review; nine Node v22.16.0/Linux module fixtures checked three times each (27/27 expected outcomes). Relative extensions, package exports/imports, dual entry, cache identity, CJS/ESM cycles, top-level-await require and JSON import attributes examined. No TS compiler or bundler tests, project implementation or learner mastery claimed.
+13. [Chapter 13 — Module Resolution and Runtime Loading](lessons/13-module-resolution-and-runtime-loading.md) — approved_by_learner on 2026-10-13; nine Node v22.16.0/Linux module fixtures checked three times each (27/27 expected outcomes). Relative extensions, package exports/imports, dual entry, cache identity, CJS/ESM cycles, top-level-await require and JSON import attributes examined. No TS compiler or bundler tests, project implementation or learner mastery claimed.
+
+14. [Chapter 14 — V8 Execution, Memory and Garbage Collection](lessons/14-v8-execution-memory-and-garbage-collection.md) — authored/in_review; six local Node v22.16.0/Linux ESM fixtures executed three times each (18/18 expected outcomes). Demonstrated V8 TurboFan optimization/deoptimization, JS heap retention vs release, external/Buffer accounting, allocation churn, GC event observation and V8 heap-space diagnostics. No production memory budget, compiler-tier guarantee, learner assessment or implemented product.
 
 ## Next action and handoff
 
-Chapters 01–12 are learner-approved. Review Chapter 13 — Module Resolution and Runtime Loading — before authoring Chapter 14; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–13 are learner-approved. Review Chapter 14 — V8 Execution, Memory and Garbage Collection — before authoring Chapter 15; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C12 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C13 is mapped separately as authored/in_review; C14–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C13 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C14 is mapped separately as authored/in_review; C15–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
