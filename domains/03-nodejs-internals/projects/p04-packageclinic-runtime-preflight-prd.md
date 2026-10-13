@@ -1,9 +1,9 @@
 # P04 — PackageClinic: Runtime Integration Preflight Desk — Product Requirements
 
 **Domain:** D03 — Node.js Internals  
-**Status:** in_review — proposed product direction awaiting **one batch learner approval**  
+**Status:** approved_by_learner — product scope approved explicitly with five-PRD batch on 2026-10-13  
 **Concept:** learner-approved in five-item D03 catalog, 2026-10-13  
-**PRD approval:** pending; neither approval nor technical implementation implied  
+**PRD approval:** explicit learner approval on 2026-10-13; technical implementation not started  
 **Learning assessments / implementation:** deferred / not_started
 
 ## 1. Problem and motivation
@@ -149,7 +149,7 @@ These are testable **requirements**, not evidence that tests have been executed 
 
 ## 11. Assumptions, unknowns and product-level open questions
 
-**Proposed V1 fixed boundary:** V1 includes **actual approved preflight execution of curated trusted tests** plus evidence review; it is **not a passive declared-compatibility registry** and does **not** accept arbitrary public code. Product's ability to execute trusted code is subject to safe deployment discovery and explicit learner acceptance of this V1 boundary.
+**Learner-approved V1 fixed boundary:** V1 includes **actual approved preflight execution of curated trusted tests** plus evidence review; it is **not a passive declared-compatibility registry** and does **not** accept arbitrary public code. This restricted product trust boundary was approved in the five-PRD batch on 2026-10-13. Detailed safe execution permissions, conditions and operational safeguards remain open for learner-approved kickoff discovery, not a claim of implemented isolation or a universally safe sandbox.
 
 **Questions retained for learner-approved Matt/Codex product discovery before dependent technical choices:**
 1. Which trusted parties may supply executable fixture material and who can approve it?
@@ -159,7 +159,7 @@ These are testable **requirements**, not evidence that tests have been executed 
 5. What limits on execution duration, output, concurrency and retention are acceptable?
 6. What should be shown when a trusted run cannot be safely started or an outcome remains unknown?
 
-**Explicit scope/security decision for this PRD's approval:** Please confirm in the five-PRD batch that P04 V1 is **trusted/owner-approved scenario execution** (not import-only and not untrusted user code execution). This is the key differentiator from D02 PackagePassport and a consequential product/trust boundary; reject or revise it before approval if undesired.
+**Approved scope/security decision (2026-10-13):** P04 V1 executes only curated, owner/operator-approved **trusted** integration test material (not import-only and not untrusted public code). This product/trust boundary is approved; security controls, platform restrictions and exact trusted-input policy are unresolved implementation-time discovery topics and must not be silently assumed.
 
 Defer detail when it does not change the basic product. If an open decision could change who uses the product or what the first version actually does, it must be resolved/approved before the PRD can become `approved_by_learner`.
 
@@ -181,8 +181,8 @@ Learning coverage is a **planned educational challenge**, not a guarantee that i
 
 - **2026-10-13 — concept approval:** user approved all five ideas in the D03 candidate catalog.
 - **2026-10-13 — PRD author review:** authored as part of a five-PRD batch using the approved concept, `templates/project-prd.md` and `docs/quality-gates.md`; status **in_review**.
-- **Pending:** learner accepts or requests changes to **all five PRDs together**. Concept approval does not imply PRD approval.
+- **2026-10-13 — PRD approval:** learner explicitly approved all five PRDs as one batch; this product's scope and externally observable requirements are approved. Later detailed policies remain open for learner-led discovery.
 - **Not started:** any learner study assessment, code, integration test, implementation repository work or technical ADR.
 - **Later selected-project kickoff:** resolve necessary first-version product details using installed Matt Pocock skills and learner confirmation before technical design; require explicit approval for any changes to problem, audience, capabilities or in/out scope.
 
-**Next gate:** when learner explicitly approves the batch of five PRDs, reconcile global Coverage Matrix and both trackers before closing the **D03 content-authoring gate**. No D04 authoring or product implementation is started by this draft.
+**Next gate:** reconcile global Coverage Matrix, domain indexes and both trackers, then close the D03 content-authoring gate following the five-PRD batch approval. No D04 authoring or product implementation is started by this draft.
