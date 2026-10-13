@@ -14,163 +14,213 @@ MediaForge is a limited content-asset transformation desk for editorial teams. U
 
 The `grilling` skill asks all currently independent and ready decisions together as a frontier round. Questions dependent on Round 1 answers are reserved for subsequent rounds. `domain-modeling` sharpens domain vocabulary and records approved terms without silently selecting technical architecture.
 
-## Thirteen questions and educational analysis
+## Thirteen original Codex questions, verbatim recommendations, and educational analysis
+
+The English question texts and recommended-answer paragraphs below are transcribed from the Round 1 Codex message provided by the learner. Do not confuse the separate Persian educational commentary with a Codex quotation. No hypothetical downstream-question list is added.
 
 ### Q1 — Initial media category
 
-**Codex proposal (unapproved):** V1 فقط تصاویر raster ثابت را پردازش کند.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q1 — Initial media category:** Should V1 process **static raster images** as its single initial media category?
 
-**Reasoning / teachable trade-off:** دامنه تست و بازبینی خروجی قابل‌کنترل؛ صوت/ویدئو سیاست‌های زمان و پخش اضافه می‌کنند.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** فرمت‌ها، presetها، ورودی پذیرفته‌شده.
+**Recommended: Yes.** This supports a focused editorial workflow with publication variants that reviewers can inspect readily. Video or audio would introduce duration, track, and playback policies. After this decision, we can choose exact supported formats and useful presets.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** دامنه تست و بازبینی خروجی قابل‌کنترل؛ صوت/ویدئو سیاست‌های زمان و پخش اضافه می‌کنند.
 
 ### Q2 — Multiple variants per request
 
-**Codex proposal (unapproved):** هر درخواست چند preset با نتیجه مستقل برای هر variant داشته باشد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q2 — Multiple variants per request:** Should one processing request support **multiple selected presets**, with separately reported variant outcomes and a bounded maximum decided later?
 
-**Reasoning / teachable trade-off:** با AC-03 (موفقیت یک خروجی و شکست دیگری) سازگار است؛ گزارش ترکیبی باید صادق باشد.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** حداکثر variants، نتیجه کلی mixed، لغو جزئی.
+**Recommended: Yes.** Contributors can request related publication variants together, and successful outputs remain usable when another variant fails. This requires clear mixed-result presentation.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+Section 11 explicitly leaves cardinality open, while AC-03 requires demonstrating two variants with one failure. Multiple variants satisfy both directly; a single-variant choice would require resolving that acceptance-criteria tension explicitly.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** با AC-03 (موفقیت یک خروجی و شکست دیگری) سازگار است؛ گزارش ترکیبی باید صادق باشد.
 
 ### Q3 — Source intake
 
-**Codex proposal (unapproved):** فقط آپلود مستقیم فایل.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q3 — Source intake:** Should V1 accept source assets through **direct file upload only**?
 
-**Reasoning / teachable trade-off:** ورود از URL از دامنه اولیه خارج می‌شود و موضوع تغییر منبع دوردست را حذف می‌کند.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** فرمت آپلود و حدود ورودی.
+**Recommended: Yes.** This gives contributors one clear submission path. Remote-URL import would require additional product rules for inaccessible links, changing remote content, and source ownership. Exact upload formats and limits follow Q1.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** ورود از URL از دامنه اولیه خارج می‌شود و موضوع تغییر منبع دوردست را حذف می‌کند.
 
 ### Q4 — Source identity and replacement
 
-**Codex proposal (unapproved):** محتوای source تغییرناپذیر باشد؛ آپلود مجدد هویت تازه بگیرد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q4 — Source identity and replacement:** Should submitted source content be **immutable**, with an explicit new upload receiving a new source identity even when the filename or content matches an earlier upload?
 
-**Reasoning / teachable trade-off:** Provenance تاریخی با نام فایل مشترک یا محتوای تکراری مخدوش نمی‌شود.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** رفتار تشخیص تکراری‌ها و نمایش تاریخچه.
+**Recommended: Yes.** A reviewer can rely on a request’s source reference continuing to identify the same content. Replacing an image means submitting a new source; earlier outputs retain their original provenance.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+This concerns product identity. It makes no decision about how duplicate bytes are stored.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** Provenance تاریخی با نام فایل مشترک یا محتوای تکراری مخدوش نمی‌شود.
 
 ### Q5 — Workspace count
 
-**Codex proposal (unapproved):** V1 یک workspace مدیریت‌شده داشته باشد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q5 — Workspace count:** Should V1 support **one managed workspace**, with permitted members operating inside that boundary?
 
-**Reasoning / teachable trade-off:** حدود دامنه عضویت و قابلیت‌های تیمی ساده می‌ماند.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** مدل عضویت و نقش‌ها.
+**Recommended: Yes.** This supports the approved team responsibilities while keeping V1 access policy focused. Multiple workspaces would require additional product decisions about switching, membership overlap, and cross-workspace asset handling.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+Identity and access implementation remain for technical discovery.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** حدود دامنه عضویت و قابلیت‌های تیمی ساده می‌ماند.
 
 ### Q6 — Content visibility
 
-**Codex proposal (unapproved):** اعضای مجاز workspace بتوانند محتوای منبع/تاریخچه/خروجی را ببینند.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q6 — Content visibility:** Should source assets, request history, and ready outputs be **shared with current permitted members of their workspace**, rather than private to their submitting contributor?
 
-**Reasoning / teachable trade-off:** بازبینی تیمی ممکن می‌شود، اما سطح مشاهده نباید با اجازه حذف یا لغو یکسان فرض شود.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** مجوزهای مجزا برای خواندن، دانلود، retry، cancel، select و delete.
+**Recommended: Yes.** Editors and operations users can inspect and assist with the team’s work. The trade-off is that contributors should understand that submission makes content visible to permitted colleagues.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+Visibility does not automatically grant permission to retry, cancel, delete, or select results. Those action permissions follow in a later round.
 
-### Q7 — Review selection
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
 
-**Codex proposal (unapproved):** برچسب برگشت‌پذیر selected for use فقط روی خروجی ready.
+**Educational analysis (not a Codex quote):** بازبینی تیمی ممکن می‌شود، اما سطح مشاهده نباید با اجازه حذف یا لغو یکسان فرض شود.
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+### Q7 — Meaning of review selection
 
-**Reasoning / teachable trade-off:** درستی فنی خروجی با پسند یا انتخاب انسانی اشتباه نمی‌شود؛ approval حرفه‌ای اضافه نمی‌شود.
+**Codex — exact question:**
 
-**Questions for later rounds (not decided):** چه کسی انتخاب می‌کند، دامنه انتخاب، سرنوشت آن هنگام انقضا.
+> ❓ **Q7 — Meaning of review selection:** Should identifying a final usable variant mean recording a **reversible “selected for use” designation on a ready output**, separate from its processing readiness?
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+**Codex — exact recommended answer (verbatim):**
+
+**Recommended: Yes.** This makes the reviewer’s choice visible without treating review as a professional approval workflow. A verified output can be ready before anyone selects it; changing a selection does not invalidate its media.
+
+Selection granularity, eligible actors, and expiry behavior depend on other answers and will follow later.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** درستی فنی خروجی با پسند یا انتخاب انسانی اشتباه نمی‌شود؛ approval حرفه‌ای اضافه نمی‌شود.
 
 ### Q8 — Retention model
 
-**Codex proposal (unapproved):** دوره‌های محدود و اعلام‌شده با انقضای خودکار.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q8 — Retention model:** Should V1 use **published, finite retention periods with automatic expiry** for source content, outputs, history, and failed intermediate artifacts?
 
-**Reasoning / teachable trade-off:** وعده نگهداری دائمی داده نمی‌شود؛ پاکسازی بخشی از انتظار محصول است.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** زمان دقیق، مبدأ شمارش، سیاست history و وضعیت نامعلوم.
+**Recommended: Yes.** This fits a processing desk with bounded availability. Retention until manual deletion would make availability less predictable and place more cleanup responsibility on workspace users.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+We will decide the actual periods, clock starting points, and treatment of active or indeterminate work after lifecycle decisions. This recommendation contains no numerical retention promise.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** وعده نگهداری دائمی داده نمی‌شود؛ پاکسازی بخشی از انتظار محصول است.
 
 ### Q9 — Cancellation eligibility
 
-**Codex proposal (unapproved):** برای queued و running امکان درخواست لغو وجود داشته باشد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q9 — Cancellation eligibility:** Should cancellation requests be available for **both queued and running work**?
 
-**Reasoning / teachable trade-off:** درخواست لغو لزوماً به معنای لغو قطعی یا بازگرداندن اثر نیست.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** لغو کل درخواست یا variant، برچسب نتیجه رقابت لغو/تکمیل.
+**Recommended: Yes.** Contributors should be able to request stopping work they no longer need in either state. Running work may finish before cancellation takes effect.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+The PRD already requires honest observed outcomes and preservation of earlier valid outputs. Request-wide versus individual-variant cancellation and exact race-result labels depend on Q2 and will follow later.
 
-### Q10 — Later uncertainty resolution
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
 
-**Codex proposal (unapproved):** وضعیت indeterminate با شواهد قطعی آینده قابل اصلاح باشد.
+**Educational analysis (not a Codex quote):** درخواست لغو لزوماً به معنای لغو قطعی یا بازگرداندن اثر نیست.
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+### Q10 — Later resolution of uncertainty
 
-**Reasoning / teachable trade-off:** timeout دلیل کافی برای نسبت‌دادن شکست نیست؛ خروجی معتبر بعدی ممکن است ثابت شود.
+**Codex — exact question:**
 
-**Questions for later rounds (not decided):** مسئول پیگیری، deadline و وضعیت رفع ابهام.
+> ❓ **Q10 — Later resolution of uncertainty:** Should a timed-out or otherwise indeterminate request remain **resolvable when definitive evidence later becomes available**?
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+**Codex — exact recommended answer (verbatim):**
+
+**Recommended: Yes.** For example, a request whose outcome was unknown could later show a verified retrievable output, confirmed failure, or confirmed cancellation. A missed deadline alone should not permanently prevent reporting the true result.
+
+The processing time budget, action taken at expiry, and reconciliation responsibility remain downstream decisions.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** timeout دلیل کافی برای نسبت‌دادن شکست نیست؛ خروجی معتبر بعدی ممکن است ثابت شود.
 
 ### Q11 — Who initiates recovery attempts
 
-**Codex proposal (unapproved):** Retry تجاری نیاز به اقدام صریح کاربر مجاز داشته باشد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q11 — Who initiates recovery attempts:** Should creation of a **new business retry attempt require explicit action by an eligible user**, rather than happen automatically after failure or uncertainty?
 
-**Reasoning / teachable trade-off:** تلاش پنهانی تازه ایجاد نمی‌شود؛ با بازیابی داخلی در لایه فنی تفاوت دارد.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** شرایط مجاز retry، حدود تلاش.
+**Recommended: Yes.** Users retain control over whether to request another attempt, and the request history remains understandable. Automatic new attempts could improve convenience but would require additional rules about repetition, limits, and unexpected outputs.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+This concerns visible business attempts. Implementation-level recovery mechanisms belong to technical discovery. Retry eligibility and targets will follow the lifecycle decisions.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** تلاش پنهانی تازه ایجاد نمی‌شود؛ با بازیابی داخلی در لایه فنی تفاوت دارد.
 
 ### Q12 — Deliberate repeat processing
 
-**Codex proposal (unapproved):** درخواست تازه و صریح برای همان source/preset خروجی مستقل بسازد و قبلی را حفظ کند.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q12 — Deliberate repeat processing:** When a ready output already exists for a source and preset, should an **explicitly confirmed fresh request produce separately identified outputs while preserving the earlier output**?
 
-**Reasoning / teachable trade-off:** Fresh Request با Retry یا تکرار تأیید همان درخواست یکسان نیست.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** شناسایی درخواست تکراری، هزینه و دسترسی به سابقه.
+**Recommended: Yes.** The contributor can inspect the existing result and deliberately request fresh processing. The new request keeps its own provenance instead of silently adopting or replacing the earlier deliverable.
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+Fresh processing consumes additional workload. Repeated confirmation of the **same request** must still avoid silent duplication, as the PRD already requires.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** Fresh Request با Retry یا تکرار تأیید همان درخواست یکسان نیست.
 
 ### Q13 — Rejected request history
 
-**Codex proposal (unapproved):** درخواست تأییدشده ولی ردشده reference و دلیل خوانا داشته باشد.
+**Codex — exact question:**
 
-**ChatGPT recommendation (not product-owner approval):** Yes.
+> ❓ **Q13 — Rejected request history:** If a user confirms a processing request and validation rejects it, should that rejection retain an **inspectable request reference and a customer-readable explanation**?
 
-**Reasoning / teachable trade-off:** رد اعتبارسنجی پیش از پردازش با شکست پس از پذیرش تفکیک می‌شود.
+**Codex — exact recommended answer (verbatim):**
 
-**Questions for later rounds (not decided):** دسته‌بندی رد، طول نگهداری تاریخچه.
+**Recommended: Yes.** The contributor can return later and distinguish “rejected before processing” from “accepted and then failed.”
 
-**Teaching exercise:** برای یک سناریوی واقعی توضیح بده این قاعده چه چیزی را برای کاربر تضمین می‌کند، و چه تضمینی از آن نمی‌توان نتیجه گرفت.
+Feedback shown before a request is confirmed can remain submission feedback. Exact rejection categories and history retention follow validation and retention decisions.
+
+**ChatGPT review (separate from Codex source):** Recommended **Yes**, pending explicit product-owner confirmation.
+
+**Educational analysis (not a Codex quote):** رد اعتبارسنجی پیش از پردازش با شکست پس از پذیرش تفکیک می‌شود.
 
 ## Cross-cutting concepts to teach
 
