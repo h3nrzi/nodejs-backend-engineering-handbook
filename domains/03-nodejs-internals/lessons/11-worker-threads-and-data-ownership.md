@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C11  
-**Editorial status:** in_review — drafted and checked; **awaiting learner approval**.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite approval:** D03 Chapters 01–10 learner-approved; Chapter 10 explicitly approved on 2026-10-13.  
 **Educational execution evidence:** Section 16; five standalone ESM fixtures executed three times each on Node v22.16.0 / Linux x64.  
 **Assessment / project implementation:** deferred / not_started.
@@ -466,4 +466,4 @@ The fixtures do not include exhaustive `MessageChannel` port transfer, nested Wo
 | Versioned references | Official Node release-line docs, exact runtime/OS observations, no cross-platform guarantee. |
 | Coverage mapping | D03-C10 approved editorially; D03-C11 authored/in_review; no D03 catalog/PRD/implemented project evidence. |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C11 curriculum scope. **Editorial approval is pending.** Next: learner approves or requests revisions to Chapter 11. **Do not author Chapter 12 before that approval.**
+**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C11 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Next: author Chapter 12 — Child Processes, IPC and Cluster Boundaries — only; submit it for learner review before Chapter 13. Learner assessment and implementation remain deferred.
