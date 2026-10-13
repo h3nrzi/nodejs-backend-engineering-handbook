@@ -278,3 +278,7 @@ External repository [h3nrzi/mediaforge](https://github.com/h3nrzi/mediaforge) ex
 ## Reusable Matt Pocock Product Discovery template — 2026-10-13
 
 Created [general Codex grill-with-docs V1 prompt](templates/codex-grill-with-docs-product-discovery.md), linked from [workflow](docs/workflow.md). Parameterized canonical/local PRD provenance and project identity, kept learner authority and skill's complete independent-question frontier per round, separate V1 decision records, and technical-design stop gate. This is process documentation only: no MediaForge discovery approval, implementation evidence, assessed learning, PRD scope change, or competency-matrix mapping change.
+
+## MediaForge round-by-round educational documentation pilot — 2026-10-13
+
+Added reusable [NotebookLM educational round prompt](templates/notebooklm-engineering-round-video-prompt.md), linked from [workflow](docs/workflow.md). [MediaForge Round 1 educational dossier](https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md) records all 13 Codex questions and ChatGPT's provisional Yes recommendations, conceptual distinctions and pending downstream decisions. **Learner's explicit Round 1 answer has not been confirmed in this evidence; all proposals remain marked pending.** No PRD scope, chapter coverage, implementation or assessment state change. No coverage mapping update needed.
