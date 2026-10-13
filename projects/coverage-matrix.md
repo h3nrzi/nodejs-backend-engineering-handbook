@@ -131,6 +131,8 @@ Project IDs link through the registry above. All gaps below also have **no imple
 
 **Review — 2026-10-13, MediaForge repository setup:** Verified external [h3nrzi/mediaforge](https://github.com/h3nrzi/mediaforge) and initial Matt setup configuration at commit [`91bcfca`](https://github.com/h3nrzi/mediaforge/commit/91bcfca). **Reviewed; no mapping change.** Agent configuration and issue-tracker choices are process setup, not implementation evidence, tested competency, or any new approved PRD scope. Existing D03-P02 mappings unchanged.
 
+**Review — 2026-10-13, dedicated MediaForge educational archive:** Added handbook-local verbatim approved PRD copy and Round 01 educational notes under `projects/implementation-studies/d03-p02-mediaforge/`. **Reviewed; no mapping change.** This is not a new PRD, product approval, assessed competency or implemented feature; canonical D03-P02 links and mappings remain authoritative. No verified technical ADR or implementation evidence.
+
 ## Mandatory maintenance
 
 After creating, editing, approving, renaming, moving or removing a project/catalog/PRD, changing project scope or status, or registering external implementation evidence, review this matrix before completion. Also review when mapped lessons or domain closure change. Update affected rows and links in the same change as `tracking/state.json` and `TRACKER.md`, or record a dated, evidence-backed “reviewed; no mapping change” result there. A project/domain change is incomplete without that recorded review. See [workflow](../docs/workflow.md) and [quality gates](../docs/quality-gates.md). Gaps must be recorded honestly; closing them by expanding scope needs separate learner approval.
