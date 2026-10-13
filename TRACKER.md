@@ -282,3 +282,9 @@ Created [general Codex grill-with-docs V1 prompt](templates/codex-grill-with-doc
 ## MediaForge round-by-round educational documentation pilot — 2026-10-13
 
 Added reusable [NotebookLM educational round prompt](templates/notebooklm-engineering-round-video-prompt.md), linked from [workflow](docs/workflow.md). [MediaForge Round 1 educational dossier](https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md) records all 13 Codex questions and ChatGPT's provisional Yes recommendations, conceptual distinctions and pending downstream decisions. **Learner's explicit Round 1 answer has not been confirmed in this evidence; all proposals remain marked pending.** No PRD scope, chapter coverage, implementation or assessment state change. No coverage mapping update needed.
+
+## MediaForge handbook educational archive — 2026-10-13
+
+Per learner request, removed both generic NotebookLM prompt templates. Created [dedicated D03-P02 MediaForge educational archive](projects/implementation-studies/d03-p02-mediaforge/README.md) with [verbatim approved PRD copy](projects/implementation-studies/d03-p02-mediaforge/prd.md) and [Round 1 question-by-question learning dossier](projects/implementation-studies/d03-p02-mediaforge/round-01-product-discovery.md). Future teaching content and verified ADR links belong in this per-project archive, while implementation ADRs remain in external repo. NotebookLM prompts are produced ad hoc in chat after each round, not saved as templates. Q1–Q13 are **proposed/ChatGPT-recommended, not owner-approved on evidence currently provided**; no technical ADR or implementation claimed.
+
+**Coverage review (2026-10-13):** archive is a copy/explanatory note, not a new project/PRD or revised scope. Existing approved D03-P02 mapping remains unchanged, implementation and assessment evidence absent.
