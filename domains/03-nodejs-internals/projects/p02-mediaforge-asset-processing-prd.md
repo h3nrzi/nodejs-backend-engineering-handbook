@@ -1,9 +1,9 @@
 # P02 — MediaForge: Content Asset Processing Desk — Product Requirements
 
 **Domain:** D03 — Node.js Internals  
-**Status:** in_review — proposed product boundaries awaiting **one batch learner approval**  
+**Status:** approved_by_learner — product scope approved explicitly with five-PRD batch on 2026-10-13  
 **Concept:** learner-approved in D03 catalog on 2026-10-13  
-**PRD product-owner approval:** pending  
+**PRD product-owner approval:** explicitly confirmed 2026-10-13; implementation details deferred  
 **Implementation / learner assessment:** not_started / deferred  
 **Approval meaning:** review the problem, users, first-version in/out/deferred scope and indispensable observable outcomes, **not technical architecture or every numerical policy**. The five PRDs are authored together but each retains its own approval status.
 
@@ -176,7 +176,7 @@ These are *potential* learning challenges, not a mandate to implement a specific
 
 - **2026-10-13:** learner explicitly approved the **five D03 candidate concepts** as a catalog, not their detailed PRDs.
 - **2026-10-13:** this document authored and author-reviewed against `templates/project-prd.md`, `docs/quality-gates.md` and the approved catalog; status **in_review**.
-- **Current learner decision:** approve or request revisions to **all five PRDs together**, preserving the separate authoritative status of each.
+- **2026-10-13:** learner explicitly approved all five PRDs together, including this product's problem, audience, V1 in/out/deferred boundaries and externally observable invariants.
 - **No implementation readiness claim:** detailed first-version policies can be resolved at the separate selected-project kickoff, with learner approval before dependent technical design. Implementation, external tests and learner assessment have **not** begun.
 
-**Next gate:** only after explicit PRD approval can the D03 content-authoring closure be audited and recorded. Actual project kickoff/technical decisions take place in a **separate local repository** with Codex and verified installed Matt Pocock skills; no scope expansion without learner approval.
+**Next gate:** all five PRDs have explicit learner product approval. Perform final D03 coverage/content closure audit; no implementation follows automatically. Actual project kickoff/technical decisions take place in a **separate local repository** with Codex and verified installed Matt Pocock skills; no scope expansion without learner approval.
