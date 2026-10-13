@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_12",
+  "review": "pending_learner_review_D03_chapter_13",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 12 Child Processes, IPC and Cluster Boundaries (authored; in_review)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 11; Chapter 12 authored with 21 successful Node v22.16.0/Linux educational subprocess/IPC/cluster runs, references and limitations. Coverage and all indexes reconciled.",
-  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md; do not author Chapter 13 until Chapter 12 approval.",
+  "active_deliverable": "D03 Chapter 13 Module Resolution and Runtime Loading (authored; in_review)",
+  "last_completed_step": "Learner explicitly approved Chapter 12 on 2026-10-13; authored Chapter 13 only, checked nine Node v22.16.0/Linux ESM/CJS fixture entry points three times each (27 expected outcomes), including intentionally failing cycle; coverage and indexes reconciled.",
+  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md; do not author Chapter 14 before learner approval.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-12-review",
-      "question": "Approve or request revisions to D03 Chapter 12 editorial content.",
+      "id": "D03-chapter-13-review",
+      "question": "Approve or revise Chapter 13 Module Resolution and Runtime Loading.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md"
+      "evidence": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md"
     }
   ],
   "current_implementation_project": null,
@@ -107,8 +107,8 @@
       "chapter_progress": {
         "10": "approved_by_learner",
         "11": "approved_by_learner",
-        "12": "in_review",
-        "13": "not_started",
+        "12": "approved_by_learner",
+        "13": "in_review",
         "14": "not_started",
         "15": "not_started",
         "16": "not_started",
@@ -161,6 +161,18 @@
           "arch": "x64",
           "module_context": "standalone ESM .mjs; separate Node processes; cluster loopback ephemeral port",
           "limits": "Three local runs each of 7 controlled fixtures. OS/platform output/event timing varies; no production process supervision, security sandbox, durable IPC, fairness, learner assessment or implemented project."
+        },
+        "13": {
+          "status": "nine_esm_cjs_module_fixtures_three_runs_each_27_of_27_expected_outcomes_passed",
+          "evidence": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+          "checked_on": "2026-10-13",
+          "node": "v22.16.0",
+          "v8": "12.4.254.21-node.26",
+          "uv": "1.49.2",
+          "platform": "linux",
+          "arch": "x64",
+          "module_context": "CJS, ESM, conditional exports/imports, cache URL variants, TLA require, JSON attributes and cycle negative paths",
+          "limits": "Nine fixture entry points each checked in three independent Node process runs; 27/27 expected outcomes. One ESM cycle intentionally exits 1 (expected negative check). No TypeScript/bundler, Windows, loader hooks, learner assessment or production implementation evidence."
         },
         "01": {
           "status": "three_educational_examples_executed",
@@ -276,6 +288,7 @@
       "chapter_approval_dates": {
         "10": "2026-10-13",
         "11": "2026-10-13",
+        "12": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -865,6 +878,21 @@
         "projects/coverage-matrix.md",
         "TRACKER.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved D03 Chapter 12. Authored Chapter 13 only, with 27/27 expected-outcome checks from nine ESM/CJS Node v22.16.0/Linux fixture entry points executed three times each. Checked official pinned Node packages, ESM, CJS and node:module docs; documented extension resolution, conditional exports, private imports, distinct caches, CJS/ESM cycles, require(esm) with TLA and JSON import attributes. Chapter 13 authored/in_review; Chapter 14 not_started. Coverage Matrix, tracker and indexes reconciled; no product architecture, study assessment or implementation chosen.",
+      "approval_source": "Current user message: تایید, following the Chapter 12 review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+        "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -883,23 +911,23 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_11_approved_chapter_12_in_review",
+    "status": "reconciled_D03_chapter_12_approved_chapter_13_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
-    "baseline_commit": "3dd48d2ee129eb4d807fffeac44b77cb451ef593",
+    "baseline_commit": "1c930eed619f96e0fb0c3458b7ea7e17e6b8323e",
     "domains": [
       "D01",
       "D02",
       "D03"
     ],
     "prd_count": 9,
-    "chapter_mapping_count": 42,
+    "chapter_mapping_count": 43,
     "implementation_evidence": "none_not_started",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
       "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
       "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
@@ -907,8 +935,8 @@
       "projects/coverage-matrix.md",
       "TRACKER.md"
     ],
-    "mapping_change": "D03-C11 learner-approved; D03-C12 authored/in_review with 21 checked educational Node v22/Linux subprocess, IPC and cluster executions. D01/D02 30 lesson mappings and 9 PRDs unchanged; no product implementation.",
-    "approved_chapter_mapping_count": 41,
+    "mapping_change": "D03-C12 learner-approved; D03-C13 authored/in_review with 27/27 Node v22/Linux educational ESM/CJS outcomes. D01/D02 30 approved mappings and 9 PRDs unchanged; no project implementation or learner assessment.",
+    "approved_chapter_mapping_count": 42,
     "in_review_chapter_mapping_count": 1
   }
 }
