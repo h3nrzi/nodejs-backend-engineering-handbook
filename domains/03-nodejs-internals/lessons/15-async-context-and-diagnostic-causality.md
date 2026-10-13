@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C15  
-**Editorial status:** in_review — authored and quality-reviewed; **awaiting learner editorial approval**.  
+**Editorial status:** approved_by_learner — explicitly confirmed by learner on 2026-10-13.  
 **Prerequisite approval:** Chapters 01–14 of D03 learner-approved; Chapter 14 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 17 records five independent ESM fixtures run three times each (15/15 expected outcomes) on Node v22.16.0 / Linux x64.  
 **Learning assessment / product implementation:** deferred / not_started.
@@ -487,4 +487,4 @@ No learner answers, scores, graded evidence or product implementation have been 
 | Exercises, official docs and environment | Sections 16–17; 15/15 checked fixture invocations, assessments deferred |
 | Global coverage | D03-C14 learner-approved editorially; D03-C15 authored/in_review; D03 project catalog/PRDs and implementation not_started |
 
-**Author editorial quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C15 curriculum. **Chapter 15 is in_review.** Request explicit learner approval or revisions before starting **Chapter 16 — Runtime Failures and Graceful Shutdown**.
+**Author editorial quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C15 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 16 — Runtime Failures and Graceful Shutdown — is authored/in_review and awaits a separate learner approval before Chapter 17. Learning assessments and product implementation remain deferred.
