@@ -2,32 +2,29 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "implementation_kickoff_planning",
-  "review": "D03_P02_mediaforge_selected_kickoff_pending_external_repository",
+  "review": "MediaForge_technical_skill_setup_validation_before_product_discovery",
   "active_domain_id": "D03",
   "next_domain_id": "D04",
-  "active_deliverable": "D03-P02 MediaForge — selected for external project kickoff; repository creation pending",
+  "active_deliverable": "D03-P02 MediaForge — setup skill complete, verify installed skills and prepare product discovery",
   "last_completed_step": "All five D03 product PRDs explicitly learner-approved in one batch, including P04 trusted-only execution scope. Reconciled final 48/48 approved lesson mappings and 14/14 approved PRD product challenges. Scanned root/domain index and cross-document statuses; D03 content-authoring gate closed. No study assessment or implementation started.",
-  "next_action": "Learner creates independent h3nrzi/mediaforge repository; verify exact URL and installed Matt Pocock skill names in local Codex; review approved PRD and ask only blocking V1 product questions before architecture.",
+  "next_action": "Verify relevant installed skills in local Codex and their exact invocations; start MediaForge PRD-based product discovery with build-blocking questions only. No technical design or code yet.",
   "blockers": [],
-  "open_decisions": [
-    {
-      "id": "mediaforge-external-repo",
-      "question": "Create and verify independent GitHub repository for selected MediaForge implementation.",
-      "status": "awaiting_learner_action",
-      "evidence": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md"
-    }
-  ],
+  "open_decisions": [],
   "current_implementation_project": {
     "domain_id": "D03",
     "project_id": "P02",
     "name": "MediaForge",
-    "status": "selected_kickoff_pending_repository",
+    "status": "repository_created_skills_configuration_committed",
     "canonical_prd": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
-    "external_repository": null,
+    "external_repository": "https://github.com/h3nrzi/mediaforge",
     "architecture_selected": false,
     "implementation_started": false,
     "selection_date": "2026-10-13",
-    "goal": "Pilot Matt Pocock/Codex workflow, capture verified process lessons for handbook revision."
+    "goal": "Pilot Matt Pocock/Codex workflow, capture verified process lessons for handbook revision.",
+    "setup_commit": "91bcfca",
+    "issue_tracker": "local_markdown",
+    "agent_config": "AGENTS.md",
+    "skill_setup_status": "setup_skill_completed_other_skills_not_yet_individually_verified"
   },
   "domains": [
     {
@@ -1162,6 +1159,14 @@
         "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
         "projects/coverage-matrix.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Verified external MediaForge repository created. User ran setup-matt-pocock-skills, approved local markdown tracker/default triage labels/single-context AGENTS.md; pushed setup commit 91bcfca. Await skill verification and product discovery.",
+      "evidence": [
+        "https://github.com/h3nrzi/mediaforge/commit/91bcfca",
+        "https://github.com/h3nrzi/mediaforge/blob/main/AGENTS.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -1180,7 +1185,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reviewed_no_mapping_change_mediaforge_selected_no_external_implementation_evidence",
+    "status": "reviewed_no_mapping_change_mediaforge_repository_setup_only",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -1191,7 +1196,7 @@
     ],
     "prd_count": 14,
     "chapter_mapping_count": 48,
-    "implementation_evidence": "none; D03 P02 selected for kickoff but external repository and implementation not yet created",
+    "implementation_evidence": "Only repository and agent-skills setup committed at h3nrzi/mediaforge@91bcfca; no application code or product verification.",
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
@@ -1208,7 +1213,7 @@
       "README.md",
       "ROADMAP.md"
     ],
-    "mapping_change": "No mapping change: approved P02 PRD and D03 lesson coverage unaffected by selection; no evidence of implementation or assessment.",
+    "mapping_change": "No mapping change: configuration setup is not implementation or assessed competency.",
     "approved_chapter_mapping_count": 48,
     "in_review_chapter_mapping_count": 0,
     "approved_prd_count": 14,
