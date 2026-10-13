@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–08 learner-approved; Chapter 09 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–09 learner-approved; Chapter 10 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. [Chapter 01](domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) learner-approved; [Chapter 02](domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md) learner-approved; 8 lessons learner-approved; [Chapter 03](domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md) approved_by_learner; [Chapter 04](domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md) approved_by_learner; [Chapter 05](domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md) approved_by_learner; [Chapter 06](domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md) approved_by_learner; [Chapter 07](domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md) approved_by_learner; [Chapter 08](domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md) approved_by_learner; [Chapter 09](domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md) authored/in_review; Chapters 10–18 not_started. Project catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–09 learner-approved; [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) authored/in_review. Chapters 11–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D02 content-authoring gate is closed. D03 Chapters 01–08 learner-approved; review Chapter 09 — Pipelines, Transforms and Cancellation — before authoring Chapter 10 only; explicit Chapter 09 approval is required. Resolve D01's remaining product questions only when preparing an implementation handoff. Do not initiate educational assessments unless the learner explicitly begins studying.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–09 are learner-approved; **Chapter 10 awaits explicit learner editorial review**. Do not author Chapter 11 until Chapter 10 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -141,3 +141,13 @@ Learner explicitly confirmed “تایید بریم بعدی” in this chat aft
 **Coverage reconciliation:** D03-C08 approved crosswalk added; D03-C09 separately mapped as authored/in_review. Both lessons, curriculum, domain/root indexes, matrix and canonical state reconciled in this change. Total authored mappings 39: 38 approved, 1 in_review. D01/D02 thirty approved mappings and nine product PRDs preserved; no assessed competency or external implementation evidence.
 
 **Handoff:** baseline `b6f1b6e097774b0da1d857ba3162aea00fd8058e`; resulting change identified by its containing commit. D03 active, Chapter 09/in_review; no technical blockers. Pending decision: approve/revise Chapter 09. Chapters 10–18 remain not_started; do not author Chapter 10 until explicit learner approval. Catalog/PRDs and implementation not_started; assessment deferred. No project architecture or implementation decisions made.
+
+## D03 Chapter 09 learner approval and Chapter 10 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 09 — Pipelines, Transforms and Cancellation](domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md) in the current chat. It transitioned `in_review → approved_by_learner`. Authored only [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md), which remains **authored/in_review**, not yet learner-approved. Chapter 11 remains not_started.
+
+**Author evidence:** consulted official Node CLI, libuv thread-pool, Node DNS, crypto and filesystem documentation; verified 14 independent Node `v22.16.0`, libuv `1.49.2`, V8 `12.4.254.21-node.26`, OpenSSL `3.0.16`, Linux/x64 educational fixture invocations. Controlled examples contrast `UV_THREADPOOL_SIZE=1,2,4` for shared native pool and unrelated filesystem callback, sync/async PBKDF2 with a JS timer, and a `Promise.race` deadline that does not cancel ongoing native work. Outputs, commands, scope and repeatability limits are recorded in the lesson Section 15. Earlier chapters' Node `v26.4.0` macOS evidence remains separate. No performance guarantee, native queue-time instrumentation, assessed learner competence or project implementation claimed.
+
+**Mandatory coverage reconciliation:** the [Coverage Matrix](projects/coverage-matrix.md) now includes D03-C09 as learner-approved and D03-C10 as authored/in_review. Total authored chapter mappings: **40 (39 editorially approved; 1 in_review)**. D01/D02 thirty approved chapter mappings and all nine product PRDs unchanged. Root/domain READMEs, roadmap, curriculum and canonical state reconciled.
+
+**Handoff:** active domain D03; Chapter 10 pending learner review; Chapter 11–18 not_started. D03 project catalog, PRDs and implementation not_started; assessments deferred. Do not interpret an educational benchmark comparison as a chosen product runtime, thread-count requirement or capacity policy.
