@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 9 authored: Chapters 01–08 learner-approved; Chapter 09 in_review; Chapters 10–18 not_started.  
+**Lessons:** 10 authored: Chapters 01–09 learner-approved; Chapter 10 in_review; Chapters 11–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -33,12 +33,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 8. [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) — approved_by_learner on 2026-10-13; thirteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Bounded pressure, accounting and lifecycle assertions verified; no actual network/descriptor, memory bound, learner assessment or implemented product claimed.
 
-9. [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) — authored/in_review; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Stage/flush failure, cooperative cancellation, finished observation, early iterator exit and Node/Web adapter outcomes checked; no real transport/descriptor, rollback, learner assessment or product implementation claim.
+9. [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) — approved_by_learner on 2026-10-13; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Stage/flush failure, cooperative cancellation, finished observation, early iterator exit and Node/Web adapter outcomes checked; no real transport/descriptor, rollback, learner assessment or product implementation claim.
+
+10. [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) — authored/in_review; 14 educational process invocations checked on Node v22.16.0, libuv 1.49.2, Linux/x64, ESM. Shared-pool contention, timer responsiveness, sync/async differences and non-cancellation by Promise race illustrated; no production benchmark, platform guarantee, learner assessment or implementation claim.
 
 ## Next action and handoff
 
-Chapters 01–08 are learner-approved. Review Chapter 09 — Pipelines, Transforms and Cancellation — before authoring Chapter 10; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–09 are learner-approved. Review Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation — before authoring Chapter 11; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C08 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C09 is mapped separately as authored/in_review; C10–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C09 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C10 is mapped separately as authored/in_review; C11–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
