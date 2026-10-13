@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–10 learner-approved; Chapter 11 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–11 learner-approved; Chapter 12 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–10 learner-approved; [Chapter 11 — Worker Threads and Data Ownership](domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md) authored/in_review. Chapters 12–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–11 learner-approved; [Chapter 12 — Child Processes, IPC and Cluster Boundaries](domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md) authored/in_review. Chapters 13–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–10 are learner-approved; **Chapter 11 — Worker Threads and Data Ownership — awaits explicit learner editorial review**. Do not author Chapter 12 before Chapter 11 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–11 are learner-approved; **Chapter 12 — Child Processes, IPC and Cluster Boundaries — awaits explicit learner editorial review**. Do not author Chapter 13 before Chapter 12 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -161,3 +161,13 @@ Learner explicitly approved [Chapter 10 — Native Asynchronous Work and Thread-
 **Coverage Matrix review:** [matrix](projects/coverage-matrix.md) reconciled with both lesson files, curriculum, domain/root indexes, roadmap and canonical state. D03-C10 now learner-approved; D03-C11 mapped as authored/in_review. **41 authored chapter mappings: 40 learner-approved editorially and 1 in_review.** All nine D01/D02 PRDs and thirty D01/D02 approved lesson mappings unchanged. No D03 catalog/PRD, learner assessment or implemented project evidence claimed.
 
 **Handoff:** active deliverable D03 Chapter 11, awaiting learner editorial review; Chapters 12–18 not_started. Next decision: learner approves Chapter 11 or requests revisions. Do not interpret the educational Worker examples as a chosen technical architecture or scope change for any project.
+
+## D03 Chapter 11 learner approval and Chapter 12 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 11 — Worker Threads and Data Ownership](domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md) in this chat: `in_review → approved_by_learner`. Authored only [Chapter 12 — Child Processes, IPC and Cluster Boundaries](domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md): `not_started → drafted → in_review`. Chapter 12 **has not been approved**; Chapter 13 remains not_started.
+
+**Evidence:** seven standalone ESM fixtures executed three times each (**21 independent local educational checks**) on Node `v22.16.0`, V8 `12.4.254.21-node.26`, libuv `1.49.2`, Linux/x64. Verified spawn stdout/stderr and exit/close; execFile literal argv and output overflow; fork IPC with advanced Map serialization and distinct PID; stdout pressure/drain; SIGTERM after child readiness; two-cluster-worker shared port and separate PIDs; missing-executable ENOENT negative path. Exact runnable examples, observed outputs, source URLs and platform limitations appear in Chapter 12 Section 17. No production subprocess management, security sandbox, OS-portability guarantee, learner assessment or implementation evidence.
+
+**Mandatory coverage reconciliation:** [Coverage Matrix](projects/coverage-matrix.md) reconciled with the two lessons, curriculum, domain/root indexes, roadmap and canonical state. D03-C11 approved; D03-C12 mapped as authored/in_review. **42 authored lesson mappings: 41 approved editorially, 1 in_review**. Nine D01/D02 approved PRDs and thirty D01/D02 lesson mappings unchanged. D03 project catalog/PRDs and implementation remain not_started.
+
+**Handoff:** active domain D03, Chapter 12 in_review. Pending learner decision: approve/revise Chapter 12. Do not begin Chapter 13 until explicit approval. This chapter teaches mechanisms but does not select any product implementation topology.
