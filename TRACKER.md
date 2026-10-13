@@ -304,3 +304,7 @@ Learner explicitly approved all Codex Q29–Q46 recommendations with the noted Q
 ## MediaForge Round 4 review — 2026-10-13
 
 [Full Round 4 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-04-product-discovery.md) documents verbatim Codex questions and recommendations Q47–Q59, with distinct teaching notes. All approvals pending; no architecture ADR or implementation evidence. Q53 explicitly qualifies Q46 cutoff timing; Q58 clarifies Q19 transfer revocation.
+
+## MediaForge Round 4 owner approval — 2026-10-13
+
+Learner explicitly approved all recommended Codex Q47–Q59 decisions (Yes on all 13); [Round 4 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-04-product-discovery.md) marks owner approval and preserves verbatim original questions and recommendations. Codex local decision-log recording remains unverified. No architecture, ADR, or code evidence.
