@@ -2,19 +2,19 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_chapter_18",
+  "review": "pending_learner_review_D03_project_catalog",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 Chapter 18 Integrated Runtime Failure and Performance Case Studies (authored; in_review; final lesson editorial gate open)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 17; Chapter 18 authored and checked with 21 primary + 6 additional native pool comparative Node v22.16.0/Linux ESM fixture executions (27 final expected outcomes). Curriculum, coverage matrix, root/domain indexes and human tracker reconciled. D03 catalog/PRDs not started.",
-  "next_action": "Learner explicitly approves or requests revisions to domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md. Do not start D03 project candidate catalog or PRDs until Chapter 18 approval and a full D03 lesson coverage reconciliation.",
+  "active_deliverable": "D03 five-product candidate catalog (authored; in_review; no approved concepts or PRDs)",
+  "last_completed_step": "Learner explicitly approved D03 Chapter 18, completing all 18 editorially approved D03 lessons; audited all 48 D01–D03 lesson mappings (48 approved, zero in review), and authored a distinct 5-project D03 candidate catalog for review without PRDs or implementations. Indexes and trackers reconciled.",
+  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/projects/catalog.md (five distinct proposed concepts). Do not author D03 PRDs until candidate direction is learner-approved; afterward create and review separate implementation-neutral PRDs one at a time. Do not begin D04 or implementation.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-chapter-18-review",
-      "question": "Approve or request revisions to D03 Chapter 18 — Integrated Runtime Failure and Performance Case Studies.",
+      "id": "D03-project-catalog-review",
+      "question": "Approve, revise, narrow, remove, or select among proposed D03 P01–P05 product candidates; no individual PRD has yet been approved.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md"
+      "evidence": "domains/03-nodejs-internals/projects/catalog.md"
     }
   ],
   "current_implementation_project": null,
@@ -95,7 +95,7 @@
       "name": "Node.js Internals",
       "slug": "nodejs-internals",
       "status": "in_progress",
-      "lesson_status": "in_progress",
+      "lesson_status": "completed",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
@@ -113,7 +113,7 @@
         "15": "approved_by_learner",
         "16": "approved_by_learner",
         "17": "approved_by_learner",
-        "18": "in_review",
+        "18": "approved_by_learner",
         "01": "approved_by_learner",
         "02": "approved_by_learner",
         "03": "approved_by_learner",
@@ -354,6 +354,7 @@
         "15": "2026-10-13",
         "16": "2026-10-13",
         "17": "2026-10-13",
+        "18": "2026-10-13",
         "01": "2026-10-12",
         "02": "2026-10-12",
         "03": "2026-10-12",
@@ -363,7 +364,11 @@
         "07": "2026-10-12",
         "08": "2026-10-13",
         "09": "2026-10-13"
-      }
+      },
+      "project_catalog_status": "in_review",
+      "project_catalog_path": "domains/03-nodejs-internals/projects/catalog.md",
+      "project_catalog_candidate_count": 5,
+      "project_catalog_approved_candidate_count": 0
     },
     {
       "id": "D04",
@@ -1030,6 +1035,21 @@
         "README.md",
         "ROADMAP.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "User explicitly approved final D03 Chapter 18. Full lesson editorial gate D03-C01–C18 now completed with 18/18 approved. Audited coverage matrix: 48 total chapter mappings, 48 approved, no in-review lessons; D01/D02 nine approved PRDs untouched. Proposed five differentiated service/product candidates in D03 catalog for learner review; no D03 concept selected or approved, no PRD or implementation. Curriculum, index, roadmap and trackers reconciled. Study assessments deferred and overall D03 content gate remains open until candidate/PRD reviews.",
+      "approval_source": "Current user message: تایید, following Chapter 18 review request.",
+      "evidence": [
+        "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+        "domains/03-nodejs-internals/projects/catalog.md",
+        "projects/coverage-matrix.md",
+        "TRACKER.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -1048,7 +1068,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_chapter_17_approved_chapter_18_in_review",
+    "status": "reconciled_D03_18_chapters_approved_5_project_candidates_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -1063,17 +1083,17 @@
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
       "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+      "domains/03-nodejs-internals/curriculum.md",
+      "domains/03-nodejs-internals/projects/catalog.md",
       "projects/coverage-matrix.md",
       "TRACKER.md",
-      "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/README.md",
       "README.md",
       "ROADMAP.md"
     ],
-    "mapping_change": "D03-C17 approved; D03-C18 authored/in_review. 27 final controlled Node v22/Linux educational case invocations; all 18 D03 lesson files exist but final editorial gate remains open. 30 approved D01/D02 mappings and nine product PRDs unchanged; no D03 product catalog/PRD or implementation evidence.",
-    "approved_chapter_mapping_count": 47,
-    "in_review_chapter_mapping_count": 1
+    "mapping_change": "All 18 D03 chapters learner-approved (48/48 total D01–D03 lesson mappings approved; zero in review). Five D03 candidate concepts proposed/in_review in separate proposal-only table; zero D03 approved catalog concepts, PRDs or implementation evidence. Nine D01/D02 approved PRDs unchanged; assessment deferred.",
+    "approved_chapter_mapping_count": 48,
+    "in_review_chapter_mapping_count": 0
   }
 }
