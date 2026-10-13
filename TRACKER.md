@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–12 learner-approved; Chapter 13 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–13 learner-approved; Chapter 14 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–12 learner-approved; [Chapter 13 — Module Resolution and Runtime Loading](domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md) authored/in_review. Chapters 14–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–13 learner-approved; [Chapter 14 — V8 Execution, Memory and Garbage Collection](domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md) authored/in_review. Chapters 15–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–12 are learner-approved; **Chapter 13 — Module Resolution and Runtime Loading — awaits explicit learner editorial review**. Do not author Chapter 14 before Chapter 13 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–13 are learner-approved; **Chapter 14 — V8 Execution, Memory and Garbage Collection — awaits explicit learner editorial review**. Do not author Chapter 15 before Chapter 14 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -181,3 +181,13 @@ Learner explicitly approved [Chapter 12 — Child Processes, IPC and Cluster Bou
 **Mandatory Coverage Matrix reconciliation:** [matrix](projects/coverage-matrix.md) mapped D03-C12 as learner-approved and D03-C13 as authored/in_review. **43 authored lesson mappings: 42 learner-approved editorially, 1 in_review.** Thirty D01/D02 approved mappings and all nine D01/D02 product PRDs unchanged. Root/domain READMEs, roadmap, curriculum and canonical state reconciled. D03 project catalog/PRDs and implementation remain not_started.
 
 **Handoff:** active deliverable D03 Chapter 13 awaiting learner editorial review. Chapters 14–18 not_started. Do not begin Chapter 14 until explicit approval; no technical architecture/product scope is implied by module experiments.
+
+## D03 Chapter 13 learner approval and Chapter 14 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 13 — Module Resolution and Runtime Loading](domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md) in this chat: `in_review → approved_by_learner`. Authored only [Chapter 14 — V8 Execution, Memory and Garbage Collection](domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md): `not_started → authored → in_review`. **Chapter 14 has not been approved; Chapter 15 remains not_started.**
+
+**Execution evidence:** six ESM educational fixtures run three times each (**18 independent local process invocations**) on Node `v22.16.0`, V8 `12.4.254.21-node.26`, libuv `1.49.2`, Linux/x64. Covered hot property access optimization followed by the `wrong map` deopt trace, JS-heap retention/release after controlled GC, 32 MiB Buffer accounted in external/ArrayBuffers rather than equivalent heapUsed, temporary-object churn with small post-GC retained delta, GC PerformanceObserver entries, and heap-space statistics. All commands, outputs and caveats are in Chapter 14 Section 18; `--expose-gc` and `--trace-opt --trace-deopt` were limited to isolated fixtures. The author checked official Node v22 release-line docs and V8 references. Results are not a production benchmark, GC pause/CPU SLA, heap budget, OS-portability result, learner assessment or implemented product evidence.
+
+**Mandatory coverage reconciliation:** [Coverage Matrix](projects/coverage-matrix.md) updated D03-C13 to learner-approved and mapped D03-C14 separately as authored/in_review. **44 authored lesson mappings: 43 learner-approved editorially and 1 in_review.** Thirty D01/D02 approved lesson mappings and nine D01/D02 approved product PRDs unchanged. Domain and root README, curriculum, ROADMAP and canonical state reconciled. D03 catalog, PRDs and implementation still not_started; learner assessment deferred.
+
+**Handoff:** active domain D03; Chapter 14 awaits explicit learner editorial approval or revision request. Do not author Chapter 15 until learner approval. Memory experiments are educational and authorize no product scope expansion or implementation architecture.
