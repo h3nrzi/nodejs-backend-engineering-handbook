@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C17  
-**Editorial status:** in_review — author-reviewed and awaiting **explicit learner approval**.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite editorial approvals:** D03 Chapters 01–16; Chapter 16 explicitly approved by the learner on 2026-10-13.  
 **Execution evidence:** Seven educational Node ESM fixtures each independently executed three times (**21/21 expected-outcome runs**) on Node v22.16.0 / Linux x64, detailed in Section 19.  
 **Study assessment / project implementation:** deferred / not_started.
@@ -549,4 +549,4 @@ Before drawing a conclusion, verify that:
 | Official docs and platform caveats | Node v22.16.0 pinned docs; local Linux evidence only |
 | Coverage and implementation boundary | D03-C16 learner-approved editorially; D03-C17 authored/in_review; D03 catalog/PRDs, assessment and implementation not_started/deferred |
 
-**Author quality review:** checked against `docs/quality-gates.md`, D03-C17 curriculum and executable evidence. **Chapter 17 remains `in_review` and awaits explicit learner editorial approval.** Chapter 18 — Integrated Runtime Failure and Performance Case Studies — must **not** be authored before that approval.
+**Author quality review:** checked against `docs/quality-gates.md`, D03-C17 curriculum and executable evidence. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 18 — Integrated Runtime Failure and Performance Case Studies — is the next and last D03 lesson to author, with a separate learner editorial gate before beginning the D03 project candidate catalog. No learner assessment or implementation is implied.
