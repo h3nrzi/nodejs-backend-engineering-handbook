@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C12  
-**Editorial status:** in_review — written and author-reviewed; **learner approval pending**.  
+**Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite review:** D03 Chapters 01–11 editorially approved; Chapter 11 explicitly approved on 2026-10-13.  
 **Educational execution evidence:** Section 17 records exact Node v22.16.0/Linux test fixtures and scoped observations.  
 **Learner assessment / project implementation:** deferred / not_started.
@@ -564,4 +564,4 @@ The fixture logs are scoped evidence of **observable behavior**, not proof of na
 
 **Remaining gaps:** exhaustive OS process-group semantics, actual process supervisor implementation, high-availability deployment, real-file descriptor transfer, native IPC internals, benchmarked production clustering, and policy for remote side effects. Those are not silently required by this lesson. Deeper error/shutdown lifecycles → Chapter 16; comprehensive diagnostics → Chapter 17; architecture/platform systems → later domains.
 
-**Author quality review:** complete against `docs/quality-gates.md` and approved D03 curriculum scope. **Chapter 12 is in_review, not learner-approved.** The next gate is explicit learner review of Chapter 12. **Do not author Chapter 13 until learner approval.**
+**Author quality review:** complete against `docs/quality-gates.md` and approved D03 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 13 — Module Resolution and Runtime Loading — is now authored/in_review and awaits learner approval before Chapter 14. Learning assessment and implementation remain deferred.
