@@ -35,13 +35,15 @@ The installed `grilling` skill's **round-based full-frontier** interviewing asks
 
 This template reflects the inspected MediaForge skills source on 2026-10-13 and does not by itself establish verified product choices, skill execution, or implementation evidence.
 
-## Round-by-round learning and NotebookLM video workflow
+## Per-project educational archive and bespoke NotebookLM prompts
 
-For an external Codex/Matt project, preserve a **separate educational dossier per completed interview round** in the implementation repository (for example `docs/learning/product-discovery-round-01.md`). Include each original numbered question, Codex's recommended policy, ChatGPT's review/rationale if any, learner's explicit approval or the **pending** state, product trade-offs, domain concepts and downstream open decisions. The dossier is educational source material, not an alternative canonical PRD or a technical ADR. Never upgrade a suggestion to learner-approved before actual explicit approval; add a provenance link/commit when approval is evidenced.
+Each selected external implementation project has a dedicated learning archive in this handbook under `projects/implementation-studies/<domain-project-slug>/`. Copy the **unchanged approved PRD** there as an educational source, with a pointer to the canonical domain PRD, and write one thorough source-grounded learning document per completed Codex interview round. The project's independent implementation repo remains authoritative for live V1 decisions, technical design, ADRs and code; the handbook archive collects explanations, rationales and links to verified decision/ADR evidence without duplicating implementation artifacts.
 
-For the compact, ready-to-paste video request use [NotebookLM round video prompt](../templates/notebooklm-round-video-prompt.md). For expanded teaching guidance, use the reusable [NotebookLM engineering round video template](../templates/notebooklm-engineering-round-video-prompt.md) after adding the dossier and relevant approved PRD as NotebookLM sources. Narration should separate proposed, recommended and approved choices, cover each numbered Q in order, avoid invented implementation details, and split into a video series if a single output cannot cover the round adequately. Generated media is an explanatory artifact, not engineering validation or approval.
+For every round, capture numbered original questions, Codex proposals, ChatGPT review (if any), product-owner decisions **only when explicitly confirmed**, alternatives, product/engineering trade-offs, concrete examples, learning exercises, and unresolved dependent decisions. Label pending proposals as pending. For architectural phases, teach actual trade-offs and link to genuine ADRs, never manufacture or pre-approve them. Update the dossier after user approval and evidence as needed.
 
-**First pilot:** [MediaForge Round 1 educational dossier](https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md), with 13 recommended but **not yet owner-confirmed** product decisions. This educational recording introduces no new PRD scope and no implementation evidence.
+**NotebookLM process:** After creating or updating each round's educational document, ChatGPT provides a **fresh tailored Persian video prompt in the conversation**, naming that project's sources and actual Q range and approval status. **Do not save reusable NotebookLM prompt templates.** NotebookLM-generated explanations are not product approvals or implementation evidence.
+
+**Current pilot:** [D03-P02 MediaForge educational archive](../projects/implementation-studies/d03-p02-mediaforge/README.md), with [approved PRD copy](../projects/implementation-studies/d03-p02-mediaforge/prd.md) and [Round 01 educational content](../projects/implementation-studies/d03-p02-mediaforge/round-01-product-discovery.md) (Q1–Q13 recommendations pending learner confirmation).
 
 ## AI-to-AI handoff
 
