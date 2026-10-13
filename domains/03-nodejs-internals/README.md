@@ -2,7 +2,7 @@
 
 **Status:** in_progress — lesson authoring.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 10 authored: Chapters 01–09 learner-approved; Chapter 10 in_review; Chapters 11–18 not_started.  
+**Lessons:** 11 authored: Chapters 01–10 learner-approved; Chapter 11 in_review; Chapters 12–18 not_started.  
 **Project catalog / PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
@@ -35,12 +35,14 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 9. [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) — approved_by_learner on 2026-10-13; fifteen educational scenarios passed on Node v26.4.0, libuv 1.52.1, darwin/arm64, ESM. Stage/flush failure, cooperative cancellation, finished observation, early iterator exit and Node/Web adapter outcomes checked; no real transport/descriptor, rollback, learner assessment or product implementation claim.
 
-10. [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) — authored/in_review; 14 educational process invocations checked on Node v22.16.0, libuv 1.49.2, Linux/x64, ESM. Shared-pool contention, timer responsiveness, sync/async differences and non-cancellation by Promise race illustrated; no production benchmark, platform guarantee, learner assessment or implementation claim.
+10. [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) — approved_by_learner on 2026-10-13; 14 educational process invocations checked on Node v22.16.0, libuv 1.49.2, Linux/x64, ESM. Shared-pool contention, timer responsiveness, sync/async differences and non-cancellation by Promise race illustrated; no production benchmark, platform guarantee, learner assessment or implementation claim.
+
+11. [Chapter 11 — Worker Threads and Data Ownership](lessons/11-worker-threads-and-data-ownership.md) — authored/in_review; five independent ESM fixtures executed three times each (15 successful invocations) on Node v22.16.0, libuv v1.49.2, Linux/x64; additional early-termination counterexample. CPU offload, clone/transfer detachment, SharedArrayBuffer/Atomics, explicit Worker errors and termination observed. No cross-platform guarantee, learner assessment or product implementation.
 
 ## Next action and handoff
 
-Chapters 01–09 are learner-approved. Review Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation — before authoring Chapter 11; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–10 are learner-approved. Review Chapter 11 — Worker Threads and Data Ownership — before authoring Chapter 12; explicit learner approval is required. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C09 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C10 is mapped separately as authored/in_review; C11–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C10 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C11 is mapped separately as authored/in_review; C12–C18 remain planned; no PRD, learner assessment or implementation evidence exists.
