@@ -2,7 +2,7 @@
 
 **Domain:** D03 — Node.js Internals  
 **Competency:** D03-C18  
-**Editorial status:** in_review — authored and author-quality-reviewed, **not learner-approved**.  
+**Editorial status:** approved_by_learner — explicit learner approval on 2026-10-13. Educational examples and author quality review are separate from learner study assessment.  
 **Prerequisites:** D03 Chapters 01–17 learner-approved editorially; Chapter 17 explicitly approved on 2026-10-13.  
 **Educational evidence:** Seven self-contained integration case fixtures each tested three times, plus six additional thread-pool contrast runs: **27 local Node process invocations with expected results** on Node v22.16.0, Linux x64; reproducible commands and numerical limitations in Section 19.  
 **Learner assessment / portfolio implementation:** deferred / not_started.
@@ -568,7 +568,7 @@ No learner answers or assessed competency have been recorded. These are **study 
 | 15 Async context | Identity correlation versus external outcome authority | No distributed tracing/clock synchronization |
 | 16 Runtime failure/shutdown | Transport disconnect versus local work milestone | No authoritative external commit/retry policy |
 | 17 Diagnostics/measurement | Falsifiable hypotheses, scoped clocks, observer limits | No production APM/security or SLO guarantee |
-| 18 Integrated cases | Seven independent reproducible negative/positive examples and comparison | Editorial approval pending; assessed learner mastery deferred |
+| 18 Integrated cases | Seven independent reproducible negative/positive examples and comparison | Editorially approved by learner on 2026-10-13; assessed learner mastery deferred |
 
 This is a **chapter-content audit**, not a claim that all real-world Node/runtime failure modes are exhausted. The D03 learning domain's project-candidate/PRD phase has **not started**, and its content gate must remain open until Chapter 18 receives explicit learner approval plus the required Coverage Matrix reconciliation.
 
@@ -610,6 +610,6 @@ This is a **chapter-content audit**, not a claim that all real-world Node/runtim
 | Scientific diagnostic reasoning | Sections 2, 12–14; falsifiable hypotheses, controls, uncertainty and evidence template |
 | Case studies, exercises and answer rubrics | Sections 4–17; 12 future exercises, no learner study assessment |
 | Versioned official references | Section 19, exact Node/V8/OS and release-line docs |
-| Coverage and authority | D03-C17 learner-approved editorially; D03-C18 **authored/in_review**; D03 project catalog/PRDs, assessments and implementation **not_started/deferred** |
+| Coverage and authority | D03-C17 and D03-C18 **learner-approved editorially**; D03 project catalog subject to separate review; D03 product PRDs, assessments and implementation **not_started/deferred** |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the D03-C18 learner-approved curriculum. **Chapter 18 awaits explicit learner editorial approval.** Do **not** start the D03 project candidate catalog or PRDs before approval, and do **not** close the D03 content-authoring gate yet. Once the learner approves Chapter 18, reconcile all 18 D03 chapter mappings and only then begin the **distinct D03 project catalog** according to the existing workflow.
+**Author quality review:** completed against `docs/quality-gates.md` and the D03-C18 learner-approved curriculum. **Learner editorial approval was explicitly granted on 2026-10-13.** All 18 D03 lessons are learner-approved editorially, subject to global coverage reconciliation recorded in the tracker. The D03 project candidate catalog is the next separate review gate; do not author PRDs until catalog direction is approved. No study assessment, verified learner competence, production result or implemented project is implied.
