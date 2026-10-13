@@ -1,9 +1,9 @@
 # D03 — Node.js Internals
 
-**Status:** in_progress — 18 lessons and five catalog concepts learner-approved editorially; five product PRDs authored/in_review. Overall D03 content-authoring gate remains open until PRD review.  
+**Status:** completed — **D03 content-authoring gate closed after explicit approval of all 18 lessons, five catalog concepts and five product PRDs and final Coverage Matrix audit**. This does not assess student proficiency or imply a built project.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
 **Lessons:** 18/18 authored and approved_by_learner editorially; lesson-authoring gate closed after coverage reconciliation.  
-**Project catalog:** [five concepts](projects/catalog.md) learner-approved on 2026-10-13. **Product PRDs:** 5/5 authored/in_review; none yet learner-approved.  
+**Project catalog:** [five concepts](projects/catalog.md) approved on 2026-10-13. **Product PRDs:** **5/5 learner-approved at product scope** on 2026-10-13; technical discovery and implementation not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
 
@@ -53,20 +53,20 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 18. [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](lessons/18-integrated-runtime-failure-and-performance-case-studies.md) — approved_by_learner on 2026-10-13; seven reproducible Node v22.16.0/Linux fixtures executed three times each (21 expected outcomes), plus six separate native-pool comparison runs: 27 final checks. Cases cover delayed callbacks, aborted pipeline, pool contention, Worker transfer detachment, retained heap objects, CommonJS/ESM resolution mismatch and server-work/client-disconnect uncertainty. No learner assessment, product architecture or implementation claimed.
 
-## Five product PRDs — authored/in_review as one batch
+## Approved D03 product PRDs
 
-- [P01 — IntakeLedger](projects/p01-intakeledger-verified-file-intake-prd.md) — in_review; product-scope learner approval pending.
-- [P02 — MediaForge](projects/p02-mediaforge-asset-processing-prd.md) — in_review; product-scope learner approval pending.
-- [P03 — NodeScope](projects/p03-nodescope-runtime-incident-evidence-prd.md) — in_review; product-scope learner approval pending.
-- [P04 — PackageClinic](projects/p04-packageclinic-runtime-preflight-prd.md) — in_review; product-scope learner approval pending.
-- [P05 — LiveRoom](projects/p05-liveroom-interactive-session-prd.md) — in_review; product-scope learner approval pending.
+- [P01 — IntakeLedger](projects/p01-intakeledger-verified-file-intake-prd.md) — learner-approved product boundaries; detailed policies open.
+- [P02 — MediaForge](projects/p02-mediaforge-asset-processing-prd.md) — learner-approved product boundaries; detailed policies open.
+- [P03 — NodeScope](projects/p03-nodescope-runtime-incident-evidence-prd.md) — learner-approved product boundaries; detailed policies open.
+- [P04 — PackageClinic](projects/p04-packageclinic-runtime-preflight-prd.md) — learner-approved **trusted, authorized test execution only**, no public arbitrary-code execution.
+- [P05 — LiveRoom](projects/p05-liveroom-interactive-session-prd.md) — learner-approved product boundaries; detailed policies open.
 
-**Batch review:** explicit user approval must cover all five separately identifiable product boundaries; in particular, P04 proposes trusted, owner/operator-approved integration scenario execution and deliberately excludes public arbitrary code execution. Detailed policies/limits can remain open for later learner-approved Matt/Codex discovery.
+All five PRDs were approved together on **2026-10-13**; each remains a separately traceable product. None is implementation-ready solely because its product scope is approved. Technical architecture belongs to Codex's skill-guided discovery in an independent project repository **only if the learner later selects a product to implement**.
 
 ## Next action and handoff
 
-Chapters 01–18 and the [five D03 catalog concepts](projects/catalog.md) are learner-approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) preserves 48 approved chapter mappings and now identifies the five **draft PRD product challenges separately from approved challenges**. **Review the five linked PRDs as one batch**: none is approved yet, all are in_review. No project implementations or learning assessments have started. Overall D03 content gate remains open until PRD approval and final coverage audit.
+D03 content-authoring is **complete**: 18/18 lesson chapters, 5/5 catalog concepts and 5/5 product-scope PRDs approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) audits all 48 D01–D03 lesson mappings and **14 approved PRDs**; all actual product implementations remain not_started, and learner assessments deferred. The next handbook content phase is **D04 — Network & Protocol Engineering**, beginning with curriculum/outline creation and learner review—not project implementation or assumed study assessment.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C18 mapped as learner-approved editorially (18/18). Thirty approved D01/D02 mappings and nine product PRDs unchanged. The [five-candidate catalog](projects/catalog.md) is learner-approved; all five PRDs are authored/in_review (no learner PRD approval, assessment or implementation evidence).
+**Coverage review — 2026-10-13:** All 18 D03 chapter mappings learner-approved editorially, with 30 approved D01/D02 mappings unchanged; **14 product PRDs approved** (nine D01/D02 unchanged plus five D03 batch approvals). D03 competency challenges mapped to actual approved PRD scope without mandating technical methods; no learner assessment, product implementation or architecture evidence.
