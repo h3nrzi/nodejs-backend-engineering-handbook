@@ -2,19 +2,31 @@
   "schema_version": 1,
   "updated_on": "2026-10-13",
   "phase": "content_and_project_planning",
-  "review": "pending_learner_review_D03_project_catalog",
+  "review": "pending_learner_review_D03_five_prds_batch",
   "active_domain_id": "D03",
   "next_domain_id": "D03",
-  "active_deliverable": "D03 five-product candidate catalog (authored; in_review; no approved concepts or PRDs)",
-  "last_completed_step": "Learner explicitly approved D03 Chapter 18, completing all 18 editorially approved D03 lessons; audited all 48 D01–D03 lesson mappings (48 approved, zero in review), and authored a distinct 5-project D03 candidate catalog for review without PRDs or implementations. Indexes and trackers reconciled.",
-  "next_action": "Learner reviews and explicitly approves or requests revisions to domains/03-nodejs-internals/projects/catalog.md (five distinct proposed concepts). Do not author D03 PRDs until candidate direction is learner-approved; afterward create and review separate implementation-neutral PRDs one at a time. Do not begin D04 or implementation.",
+  "active_deliverable": "D03 P01–P05 product PRDs (all five authored/in_review for one batch learner decision; catalog approved)",
+  "last_completed_step": "Learner explicitly approved all five D03 catalog concepts; authored five distinct, implementation-neutral 14-section product PRDs together for one review (each 10 acceptance scenarios), reconciled prospective PRD competency challenges separately from nine existing approved D01/D02 PRDs. No D03 PRD yet approved or implemented.",
+  "next_action": "Learner reads/reviews and explicitly approves or requests revisions to all five D03 product PRDs together: P01 IntakeLedger, P02 MediaForge, P03 NodeScope, P04 PackageClinic, P05 LiveRoom. In P04 confirm or revise trusted owner/operator-approved scenario execution as V1 (untrusted public arbitrary code excluded). If approved, reconcile 14 authored PRDs, Coverage Matrix, trackers/indexes and domain content gate before D04 curriculum. Do not start implementation, technical design or learner assessment.",
   "blockers": [],
   "open_decisions": [
     {
-      "id": "D03-project-catalog-review",
-      "question": "Approve, revise, narrow, remove, or select among proposed D03 P01–P05 product candidates; no individual PRD has yet been approved.",
+      "id": "D03-batch-five-prd-review",
+      "question": "Approve or request revisions to the five independent P01–P05 D03 product PRDs together; concept approval has already occurred but product PRD scope remains pending.",
       "status": "awaiting_learner_review",
-      "evidence": "domains/03-nodejs-internals/projects/catalog.md"
+      "evidence": [
+        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
+        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
+        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
+        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
+        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md"
+      ]
+    },
+    {
+      "id": "D03-P04-trusted-execution-boundary",
+      "question": "Approve the P04 V1 trust boundary: run only operator/owner-approved trusted integration test cases, not untrusted public code; or request a different scope before PRD approval.",
+      "status": "pending_with_prd_batch_review",
+      "evidence": "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md"
     }
   ],
   "current_implementation_project": null,
@@ -96,7 +108,7 @@
       "slug": "nodejs-internals",
       "status": "in_progress",
       "lesson_status": "completed",
-      "project_specs_status": "not_started",
+      "project_specs_status": "in_review",
       "implementation_status": "not_started",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
@@ -365,10 +377,51 @@
         "08": "2026-10-13",
         "09": "2026-10-13"
       },
-      "project_catalog_status": "in_review",
+      "project_catalog_status": "approved_by_learner",
       "project_catalog_path": "domains/03-nodejs-internals/projects/catalog.md",
       "project_catalog_candidate_count": 5,
-      "project_catalog_approved_candidate_count": 0
+      "project_catalog_approved_candidate_count": 5,
+      "project_catalog_approved_on": "2026-10-13",
+      "project_prds": [
+        {
+          "id": "P01",
+          "status": "in_review",
+          "path": "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P02",
+          "status": "in_review",
+          "path": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P03",
+          "status": "in_review",
+          "path": "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P04",
+          "status": "in_review",
+          "path": "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P05",
+          "status": "in_review",
+          "path": "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started"
+        }
+      ],
+      "project_prds_authored_count": 5,
+      "project_prds_in_review_count": 5,
+      "project_prds_approved_count": 0
     },
     {
       "id": "D04",
@@ -1050,6 +1103,26 @@
         "README.md",
         "ROADMAP.md"
       ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Learner explicitly approved the five D03 project catalog concepts and requested all five PRDs drafted together for one review. Authored P01 IntakeLedger, P02 MediaForge, P03 NodeScope, P04 PackageClinic and P05 LiveRoom as separate 14-section implementation-neutral product PRDs with observable acceptance criteria. All five status in_review, none approved yet. P04 trusted-only execution boundary proposed for explicit batch confirmation. Reconciled catalog, matrix proposal-only competency mappings, trackers, root/domain READMEs, ROADMAP and curriculum. 48/48 chapter mappings editorially approved, nine D01/D02 PRDs approved, five D03 PRDs in_review. D03 overall content gate open; no learner study assessments, architecture, code or implementation.",
+      "approval_source": "Current user message: تایید. حالا prd هر ۵ تا پروژه رو باهم بنویس ک یجا باهم تایید کنم",
+      "evidence": [
+        "domains/03-nodejs-internals/projects/catalog.md",
+        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
+        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
+        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
+        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
+        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
+        "tracking/state.json",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/03-nodejs-internals/README.md",
+        "README.md",
+        "ROADMAP.md",
+        "domains/03-nodejs-internals/curriculum.md"
+      ]
     }
   ],
   "domain_authoring_sequence": [
@@ -1068,7 +1141,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reconciled_D03_18_chapters_approved_5_project_candidates_in_review",
+    "status": "reconciled_D03_five_catalog_concepts_approved_five_prds_in_review",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -1083,17 +1156,24 @@
     "assessment": "deferred",
     "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
     "latest_review_evidence": [
-      "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
-      "domains/03-nodejs-internals/curriculum.md",
       "domains/03-nodejs-internals/projects/catalog.md",
+      "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
+      "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
+      "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
+      "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
+      "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
       "projects/coverage-matrix.md",
       "TRACKER.md",
       "domains/03-nodejs-internals/README.md",
+      "domains/03-nodejs-internals/curriculum.md",
       "README.md",
       "ROADMAP.md"
     ],
-    "mapping_change": "All 18 D03 chapters learner-approved (48/48 total D01–D03 lesson mappings approved; zero in review). Five D03 candidate concepts proposed/in_review in separate proposal-only table; zero D03 approved catalog concepts, PRDs or implementation evidence. Nine D01/D02 approved PRDs unchanged; assessment deferred.",
+    "mapping_change": "D03 concepts P01–P05 approved; five separate implementation-neutral PRDs authored/in_review and linked under proposed challenges only, NOT approved PRD challenge mappings. D01/D02 nine approved PRDs and D01–D03 forty-eight approved lesson mappings remain unchanged. D03 zero approved PRDs, zero project implementation evidence; lesson assessments deferred.",
     "approved_chapter_mapping_count": 48,
-    "in_review_chapter_mapping_count": 0
+    "in_review_chapter_mapping_count": 0,
+    "approved_prd_count": 9,
+    "authored_prd_count": 14,
+    "in_review_prd_count": 5
   }
 }
