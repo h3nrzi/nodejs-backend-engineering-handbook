@@ -2,7 +2,7 @@
 
 **Status:** approved_by_learner — 18-chapter breadth, sequence and boundaries confirmed on 2026-10-12.  
 **Authored:** 2026-10-12.  
-**Lessons:** Chapters 01–09 learner-approved; Chapter 10 authored/in_review; Chapters 11–18 not_started. This blueprint is not lesson content.  
+**Lessons:** Chapters 01–10 learner-approved; Chapter 11 authored/in_review; Chapters 12–18 not_started. This blueprint is not lesson content.  
 **Project catalog / PRDs / implementation:** not_started.  
 **Assessment:** deferred_until_learning_phase.
 
@@ -41,7 +41,7 @@ Separate documented public guarantees, source-level implementation observations 
 | 17 / D03-C17 | Runtime diagnostics and measurement | Inspector, CPU profiles, heap snapshots, diagnostic reports, perf_hooks loop delay/utilization, resource usage and controlled experiments; privacy/overhead caveats | Choose evidence for loop blocking, pool contention, memory retention or handle leaks; state limits of each measurement. | 03,10,14–16 |
 | 18 / D03-C18 | Integrated runtime case studies and transfer | Delayed callbacks, stalled pipeline, saturated native work, worker transfer bug, memory retention, module mismatch and incomplete shutdown; correlate competing explanations | Write a falsifiable diagnosis, evidence plan and limitations; review cross-domain boundaries and remaining gaps. | 01–17 |
 
-The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is learner-approved editorially; [Chapter 02 — Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) is learner-approved editorially; [Chapter 03 — The Event Loop and I/O Lifecycle](lessons/03-event-loop-and-io-lifecycle.md) is learner-approved editorially; [Chapter 04 — Scheduling Queues and Timers](lessons/04-scheduling-queues-and-timers.md) is learner-approved editorially; [Chapter 05 — EventEmitter and Callback Contracts](lessons/05-eventemitter-and-callback-contracts.md) is learner-approved editorially; [Chapter 06 — Buffers, Bytes and Text Encoding](lessons/06-buffers-bytes-and-text-encoding.md) is learner-approved editorially; [Chapter 07 — Filesystem I/O and Resource Ownership](lessons/07-filesystem-io-and-resource-ownership.md) is learner-approved editorially; [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) is learner-approved editorially; [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) is learner-approved editorially; [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) is authored/in_review; Chapters 11–18 remain planned. No learner assessment or project implementation evidence is inferred.
+The curriculum objectives are learner-approved as a plan, not as acquired competency. [Chapter 01 — Runtime Architecture and Execution Boundaries](lessons/01-runtime-architecture-and-execution-boundaries.md) is learner-approved editorially; [Chapter 02 — Startup, Configuration and Runtime Identity](lessons/02-startup-configuration-and-runtime-identity.md) is learner-approved editorially; [Chapter 03 — The Event Loop and I/O Lifecycle](lessons/03-event-loop-and-io-lifecycle.md) is learner-approved editorially; [Chapter 04 — Scheduling Queues and Timers](lessons/04-scheduling-queues-and-timers.md) is learner-approved editorially; [Chapter 05 — EventEmitter and Callback Contracts](lessons/05-eventemitter-and-callback-contracts.md) is learner-approved editorially; [Chapter 06 — Buffers, Bytes and Text Encoding](lessons/06-buffers-bytes-and-text-encoding.md) is learner-approved editorially; [Chapter 07 — Filesystem I/O and Resource Ownership](lessons/07-filesystem-io-and-resource-ownership.md) is learner-approved editorially; [Chapter 08 — Readable and Writable Stream Mechanics](lessons/08-readable-and-writable-stream-mechanics.md) is learner-approved editorially; [Chapter 09 — Pipelines, Transforms and Cancellation](lessons/09-pipelines-transforms-and-cancellation.md) is learner-approved editorially; [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) is learner-approved editorially; [Chapter 11 — Worker Threads and Data Ownership](lessons/11-worker-threads-and-data-ownership.md) is authored/in_review; Chapters 12–18 remain planned. No learner assessment or project implementation evidence is inferred.
 
 ## Why this order
 
@@ -85,12 +85,12 @@ A runtime learning objective does not force a particular worker, stream, queue o
 ## Approval, tracking and next action
 
 1. **Completed 2026-10-12:** learner explicitly approved the 18-chapter breadth, sequence and domain boundaries.
-2. **Chapters 01–09 approved; Chapter 10 authored/in_review:** request explicit learner review before authoring Chapter 11. Curriculum approval does not automatically approve any lesson.
+2. **Chapters 01–10 approved; Chapter 11 authored/in_review:** request explicit learner review before authoring Chapter 12. Curriculum approval does not automatically approve any lesson.
 3. Reconcile the global coverage matrix whenever a lesson/project mapping changes, record it with both trackers, and keep planned versus authored/approved/evidenced progress separate.
 4. After lesson authoring: catalog review → separate product PRDs → coverage audit → domain content closure.
 5. Study assessments and project implementations remain deferred until explicitly initiated.
 
-**Pending editorial review:** Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation. After explicit approval, author Chapter 11 only. Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapter 10 separately records Node v22.16.0/Linux executions and their limits. No runtime is mandated for a future project.
+**Pending editorial review:** Chapter 11 — Worker Threads and Data Ownership. After explicit approval, author Chapter 12 only. Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapters 10–11 separately record Node v22.16.0/Linux educational executions and their limits. No runtime is mandated for a future project.
 
 ## Starting official references
 
