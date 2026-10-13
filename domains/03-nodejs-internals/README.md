@@ -1,9 +1,9 @@
 # D03 — Node.js Internals
 
-**Status:** in_progress — lessons editorially complete; project-candidate catalog in_review. Overall D03 content-authoring gate remains open.  
+**Status:** in_progress — 18 lessons and five catalog concepts learner-approved editorially; five product PRDs authored/in_review. Overall D03 content-authoring gate remains open until PRD review.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
 **Lessons:** 18/18 authored and approved_by_learner editorially; lesson-authoring gate closed after coverage reconciliation.  
-**Project catalog:** [five concept candidates](projects/catalog.md) authored/in_review, not learner-approved. **PRDs:** not_started.  
+**Project catalog:** [five concepts](projects/catalog.md) learner-approved on 2026-10-13. **Product PRDs:** 5/5 authored/in_review; none yet learner-approved.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
 
@@ -53,10 +53,20 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 18. [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](lessons/18-integrated-runtime-failure-and-performance-case-studies.md) — approved_by_learner on 2026-10-13; seven reproducible Node v22.16.0/Linux fixtures executed three times each (21 expected outcomes), plus six separate native-pool comparison runs: 27 final checks. Cases cover delayed callbacks, aborted pipeline, pool contention, Worker transfer detachment, retained heap objects, CommonJS/ESM resolution mismatch and server-work/client-disconnect uncertainty. No learner assessment, product architecture or implementation claimed.
 
+## Five product PRDs — authored/in_review as one batch
+
+- [P01 — IntakeLedger](projects/p01-intakeledger-verified-file-intake-prd.md) — in_review; product-scope learner approval pending.
+- [P02 — MediaForge](projects/p02-mediaforge-asset-processing-prd.md) — in_review; product-scope learner approval pending.
+- [P03 — NodeScope](projects/p03-nodescope-runtime-incident-evidence-prd.md) — in_review; product-scope learner approval pending.
+- [P04 — PackageClinic](projects/p04-packageclinic-runtime-preflight-prd.md) — in_review; product-scope learner approval pending.
+- [P05 — LiveRoom](projects/p05-liveroom-interactive-session-prd.md) — in_review; product-scope learner approval pending.
+
+**Batch review:** explicit user approval must cover all five separately identifiable product boundaries; in particular, P04 proposes trusted, owner/operator-approved integration scenario execution and deliberately excludes public arbitrary code execution. Detailed policies/limits can remain open for later learner-approved Matt/Codex discovery.
+
 ## Next action and handoff
 
-Chapters 01–18 are learner-approved editorially. The required [Coverage Matrix](../../projects/coverage-matrix.md) audit found all 18 D03 lesson mappings approved. **Review the [five proposed D03 candidate products](projects/catalog.md)** before authoring any PRD; the catalog is in_review, not approved. All D03 PRDs and project implementations remain not_started; learner study assessments are deferred. Overall D03 content gate remains open until approved catalog and PRD work.
+Chapters 01–18 and the [five D03 catalog concepts](projects/catalog.md) are learner-approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) preserves 48 approved chapter mappings and now identifies the five **draft PRD product challenges separately from approved challenges**. **Review the five linked PRDs as one batch**: none is approved yet, all are in_review. No project implementations or learning assessments have started. Overall D03 content gate remains open until PRD approval and final coverage audit.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C18 mapped as learner-approved editorially (18/18). Thirty approved D01/D02 mappings and nine product PRDs unchanged. The [five-candidate catalog](projects/catalog.md) has proposed—not learner-approved—products and no D03 PRD, learner assessment or implementation evidence.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C18 mapped as learner-approved editorially (18/18). Thirty approved D01/D02 mappings and nine product PRDs unchanged. The [five-candidate catalog](projects/catalog.md) is learner-approved; all five PRDs are authored/in_review (no learner PRD approval, assessment or implementation evidence).
