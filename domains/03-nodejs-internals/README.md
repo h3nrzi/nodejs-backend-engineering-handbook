@@ -1,9 +1,9 @@
 # D03 — Node.js Internals
 
-**Status:** in_progress — lesson authoring.  
+**Status:** in_progress — lessons editorially complete; project-candidate catalog in_review. Overall D03 content-authoring gate remains open.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
-**Lessons:** 18 authored: Chapters 01–17 learner-approved; Chapter 18 in_review. Lesson-authoring approval gate remains open.  
-**Project catalog / PRDs:** not_started.  
+**Lessons:** 18/18 authored and approved_by_learner editorially; lesson-authoring gate closed after coverage reconciliation.  
+**Project catalog:** [five concept candidates](projects/catalog.md) authored/in_review, not learner-approved. **PRDs:** not_started.  
 **Assessment:** deferred_until_learning_phase.  
 **Implementation:** not_started.
 
@@ -51,12 +51,12 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 
 17. [Chapter 17 — Runtime Diagnostics and Measurement](lessons/17-runtime-diagnostics-and-measurement.md) — approved_by_learner on 2026-10-13; seven Node v22.16.0/Linux ESM fixtures executed three times each (21/21 expected outcomes). Event-loop delay/ELU, User Timing, Diagnostics Channel, Inspector CPU sampling, safe report summary, CPU time and blocking-child ELU counterexample documented. No remote tracing, production SLO, learner assessment or product implementation.
 
-18. [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](lessons/18-integrated-runtime-failure-and-performance-case-studies.md) — authored/in_review; seven reproducible Node v22.16.0/Linux fixtures executed three times each (21 expected outcomes), plus six separate native-pool comparison runs: 27 final checks. Cases cover delayed callbacks, aborted pipeline, pool contention, Worker transfer detachment, retained heap objects, CommonJS/ESM resolution mismatch and server-work/client-disconnect uncertainty. No learner assessment, product architecture or implementation claimed.
+18. [Chapter 18 — Integrated Runtime Failure and Performance Case Studies](lessons/18-integrated-runtime-failure-and-performance-case-studies.md) — approved_by_learner on 2026-10-13; seven reproducible Node v22.16.0/Linux fixtures executed three times each (21 expected outcomes), plus six separate native-pool comparison runs: 27 final checks. Cases cover delayed callbacks, aborted pipeline, pool contention, Worker transfer detachment, retained heap objects, CommonJS/ESM resolution mismatch and server-work/client-disconnect uncertainty. No learner assessment, product architecture or implementation claimed.
 
 ## Next action and handoff
 
-Chapters 01–17 are learner-approved. Review Chapter 18 — Integrated Runtime Failure and Performance Case Studies — before beginning the D03 project candidate catalog; explicit learner approval is required. Do not treat all lessons being authored as the same as full domain content closure. The [project catalog](projects/catalog.md) remains a scaffold and will be developed after lesson authoring.
+Chapters 01–18 are learner-approved editorially. The required [Coverage Matrix](../../projects/coverage-matrix.md) audit found all 18 D03 lesson mappings approved. **Review the [five proposed D03 candidate products](projects/catalog.md)** before authoring any PRD; the catalog is in_review, not approved. All D03 PRDs and project implementations remain not_started; learner study assessments are deferred. Overall D03 content gate remains open until approved catalog and PRD work.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** D03-C01 through D03-C17 mapped as learner-approved editorially; the 30 approved D01/D02 mappings remain unchanged. C18 is mapped separately as authored/in_review; no D03 catalog/PRD, learner assessment or implementation evidence exists.
+**Coverage review — 2026-10-13:** D03-C01 through D03-C18 mapped as learner-approved editorially (18/18). Thirty approved D01/D02 mappings and nine product PRDs unchanged. The [five-candidate catalog](projects/catalog.md) has proposed—not learner-approved—products and no D03 PRD, learner assessment or implementation evidence.
