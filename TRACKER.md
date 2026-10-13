@@ -1,9 +1,15 @@
 # Handbook progress tracker
 
 **Updated:** 2026-10-13  
-**Phase:** content_and_project_planning  
-**Current authoring focus:** D03 content authoring COMPLETE — 18/18 chapters, five catalog concepts, five PRDs learner-approved. Next: D04 curriculum blueprint, not started.  
+**Phase:** MediaForge external implementation kickoff planning; D04 authoring paused  
+**Current focus:** D03-P02 MediaForge explicitly selected for external Codex/Matt workflow pilot (repository pending). D03 authoring complete; D04 curriculum paused.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
+
+## Current project kickoff — D03-P02 MediaForge (2026-10-13)
+
+Learner explicitly selected [MediaForge approved product PRD](domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md) for the first external implementation and Matt Pocock skill workflow pilot. **Status:** selected; independent repository creation and verification pending; no code, architecture, or technical ADR; no implementation or assessment evidence. The user will create/confirm the external repository. Codex must inspect actual installed skills and start with unresolved, build-blocking V1 product decisions within approved scope. ChatGPT acts as product/learning guide; learner approves consequential choices. Capture verified workflow friction, outcomes, gates and handoff quality to improve `docs/workflow.md` after firsthand evidence. D04 content planning temporarily paused, not cancelled.
+
+**Coverage review (2026-10-13):** reviewed [matrix](projects/coverage-matrix.md) for D03-P02 selection; **no mapping change**. P02 PRD remains approved, D03's 18 lessons and five PRDs remain approved, zero implementation or competency assessment evidence. External implementation status is `selected_kickoff_pending_repository`, not `in_progress` coding.
 
 ## D01 — Computer Science Foundations
 
