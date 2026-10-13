@@ -1,15 +1,15 @@
 # D03 — Node.js Internals Project Candidate Catalog
 
-**Status:** `in_review` — five differentiated product concepts proposed on 2026-10-13; **none selected or learner-approved**.
+**Status:** `approved_by_learner` — all five distinct product concepts explicitly approved on 2026-10-13; no implementation project selected.
 **Prerequisite:** all 18 D03 lesson chapters are `approved_by_learner` editorially; education is not assessed mastery.
-**Phase:** project-catalog review only. Individual product PRDs, implementation and learner assessments are **not_started / deferred**.
+**Phase:** catalog reviewed/approved; **five individual PRDs authored/in_review as a single batch**, none learner-approved. Implementation and learner study assessments remain not_started/deferred.
 **Authority:** [D03 curriculum](../curriculum.md) · [Coverage Matrix](../../../projects/coverage-matrix.md) · [Workflow](../../../docs/workflow.md).
 
 ## Purpose and selection rule
 
 Propose **real products solving different problems** that could make Node.js runtime mechanisms consequential to a backend engineer. A product is worth its own candidate only if it has a clear target user, observable user journey, independent value, meaningful first-version boundaries and a distinct challenge. **Do not force a Worker, stream, cluster, runtime loader, database, process topology, job queue or host platform into any product requirement merely because the mechanism is taught in D03.** The implementation choices belong to separate technical discovery after learner-approved product direction.
 
-The candidate names below are working titles, not reserved names or confirmed available brands. Candidate IDs are local identifiers only, **not selection priority**. The five options are deliberately more focused than a general service marketplace or a clone of a monitoring/automation platform. The user may approve all, select a subset, ask for changes, or reject them; **no PRD has been authored or authorized** by this catalog.
+The candidate names below are working titles, not reserved names or confirmed available brands. Candidate IDs are local identifiers only, **not selection priority**. The five options are deliberately more focused than a general service marketplace or a clone of a monitoring/automation platform. The learner approved all five concepts. Separate linked PRDs now propose full first-version product boundaries for **one batch editorial review**. Concept approval does **not** imply PRD approval or project implementation.
 
 ## P01 — IntakeLedger: Verified File Submission & Handoff
 
@@ -33,7 +33,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** **intake and custody/handoff** are the product, not arbitrary dataset transformation. D01's Large Dataset Processing Workspace centers on resource-limited processing, not sender-recipient acceptance and handoff. P02 below transforms accepted assets rather than managing external submission and transfer responsibility.
 
-**Potential PRD path after concept approval:** `p01-intakeledger-verified-file-intake-prd.md`.
+**Product PRD:** [P01 — IntakeLedger — authored/in_review](p01-intakeledger-verified-file-intake-prd.md); awaits learner batch approval.
 
 ## P02 — MediaForge: Content Asset Processing Desk
 
@@ -57,7 +57,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** creates **new processed assets and previews**, not P01's validated intake/handoff or D01's generic large-data transforms. It is a limited creative operations workflow rather than a general compute platform.
 
-**Potential PRD path after concept approval:** `p02-mediaforge-asset-processing-prd.md`.
+**Product PRD:** [P02 — MediaForge — authored/in_review](p02-mediaforge-asset-processing-prd.md); awaits learner batch approval.
 
 ## P03 — NodeScope: Runtime Incident Evidence Workspace
 
@@ -81,7 +81,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** D01 Workload & Complexity Observatory compares algorithmic behaviors; NodeScope is an **incident investigation and evidence-management product** for real runtime observations. P04 tests package execution compatibility, not operational performance evidence.
 
-**Potential PRD path after concept approval:** `p03-nodescope-runtime-incident-evidence-prd.md`.
+**Product PRD:** [P03 — NodeScope — authored/in_review](p03-nodescope-runtime-incident-evidence-prd.md); awaits learner batch approval.
 
 ## P04 — PackageClinic: Runtime Integration Preflight Desk
 
@@ -105,7 +105,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** D02 **PackagePassport** catalogs *declared* compatibility and integration claims. PackageClinic focuses on **observed execution evidence and reproducibility of trusted runtime preflight cases**, not a second compatibility registry. The trust/execute-versus-import boundary must be approved in its future PRD.
 
-**Potential PRD path after concept approval:** `p04-packageclinic-runtime-preflight-prd.md`.
+**Product PRD:** [P04 — PackageClinic — authored/in_review](p04-packageclinic-runtime-preflight-prd.md); awaits learner batch approval.
 
 ## P05 — LiveRoom: Interactive Event Session Operations
 
@@ -129,7 +129,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** D02 **SubscriptionHub** centers on users subscribing to event categories and noticing gaps. LiveRoom is a **moderated participant interaction and timed poll product** with accepted response semantics; subscription management is not its principal value. P01–P04 target files, media, incidents and integration releases rather than live audience interaction.
 
-**Potential PRD path after concept approval:** `p05-liveroom-interactive-session-prd.md`.
+**Product PRD:** [P05 — LiveRoom — authored/in_review](p05-liveroom-interactive-session-prd.md); awaits learner batch approval.
 
 ## Portfolio differentiation check
 
@@ -143,10 +143,10 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Coverage honesty:** these five products **offer opportunities** to challenge D03 learning, not proof they will implement every chapter. Coverage paths C01–C18 in the [Coverage Matrix](../../../projects/coverage-matrix.md) remain **teaching evidence only** until separate approved PRDs identify *actual* product challenges. No candidate is silently mapped as an approved PRD or as implemented mastery. A later selection may deliberately cover only a subset.
 
-**Review questions (not mandatory decisions now):** Are the five user problems distinct enough? Does each V1 boundary describe a coherent product without mandating its technical implementation? Is P04 appropriately limited to **trusted** integration cases? Are any candidates too broad for a focused portfolio build?
+**Review outcome:** learner approved all five differentiated product concepts together. The five PRDs now await one shared product-scope review; P04's proposed trusted/approved execution boundary is an explicit consequential V1 choice to confirm or revise in that batch.
 
 ## Next gate
 
-**Await explicit learner review:** approve, revise, narrow or remove the **candidate catalog**. Learner approval of concepts does **not** approve PRDs or authorize implementation. Only after candidate review may the handbook author separate product-scope PRDs (one project at a time) using [PRD template](../../../templates/project-prd.md) with in/out/deferred scope, observable journeys and open product policies. Study assessment, technical architecture and implementation remain separate.
+**Await one explicit learner review of all five linked product PRDs:** each is authored/in_review and independent, but the learner requested a **single batch approval**. PRD approval concerns first-version product problems, actors, in/out/deferred capabilities and essential observable correctness; detailed thresholds/policies may remain open for later Matt/Codex kickoff. No implementation, study assessment or technical architecture is approved.
 
-**Mandatory coverage reconciliation:** review and link this catalog from the global [Coverage Matrix](../../../projects/coverage-matrix.md) on catalog creation. Candidate existence does **not** replace a PRD row or grant a competency assessment. The canonical state and human tracker must record the catalog as `in_review`, all D03 chapters as learner-approved, and product PRDs/implementations as not_started.
+**Mandatory coverage reconciliation:** review and link this catalog from the global [Coverage Matrix](../../../projects/coverage-matrix.md) on catalog creation. Candidate existence does **not** replace a PRD row or grant a competency assessment. The canonical state and human tracker must record the catalog as learner-approved, all 18 D03 chapters learner-approved, five PRDs in_review and all implementations not_started.
