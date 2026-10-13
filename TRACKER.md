@@ -292,3 +292,7 @@ Per learner request, removed both generic NotebookLM prompt templates. Created [
 ## MediaForge Round 2 learner approval — 2026-10-13
 
 Learner explicitly approved all 15 Codex Q14–Q28 defaults. Handbook educational dossier records this product-owner approval; external Codex decision-log update and Round 3 questions remain pending. No technology, architectural ADR, coding or assessed competency approved.
+
+## MediaForge Round 3 review — 2026-10-13
+
+Archived exact Codex Q29–Q46 questions and full proposed answers in [Round 3 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-03-product-discovery.md). Learner approval pending; note Q39 and Q46 indeterminate work may retain scarce capacity indefinitely until inactivity verified. No architecture ADR or code claimed.
