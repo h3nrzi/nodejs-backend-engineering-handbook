@@ -7,7 +7,7 @@
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — setup skill complete, verify installed skills and prepare product discovery",
   "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
-  "next_action": "Use shared Codex grill-with-docs template with local imported approved MediaForge PRD; learner runs round-based Product Discovery and relays full rounds for review; no technical design yet.",
+  "next_action": "Have learner review/send MediaForge Round 1 Q1-Q13 approvals to Codex; after actual approval record decisions and next frontier; capture educational dossier per round and use NotebookLM template for source-grounded teaching/video.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1174,6 +1174,15 @@
       "evidence": [
         "templates/codex-grill-with-docs-product-discovery.md",
         "docs/workflow.md"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Added reusable NotebookLM round-by-round teaching/video prompt in handbook and MediaForge Round 1 educational dossier (13 proposals, ChatGPT Yes recommendations, no claimed learner confirmation); linked workflow.",
+      "evidence": [
+        "templates/notebooklm-engineering-round-video-prompt.md",
+        "docs/workflow.md",
+        "https://github.com/h3nrzi/mediaforge/blob/main/docs/learning/product-discovery-round-01.md"
       ]
     }
   ],
