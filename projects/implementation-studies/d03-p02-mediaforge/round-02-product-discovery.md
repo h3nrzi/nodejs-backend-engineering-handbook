@@ -1,6 +1,6 @@
 # MediaForge — Product Discovery Round 2 (educational record)
 
-**Status:** Q14–Q28 proposed by Codex; ChatGPT recommends Yes on all; **awaiting learner's explicit approval**. Codex reports Round 1 recorded approved in local discovery document, but this record does not independently verify that file. 
+**Status:** Q14–Q28 explicitly approved by the product owner on 2026-10-13, accepting Codex's recommendations (Yes on all 15). Pending transcription/verification in the external Codex decision log. Codex reports Round 1 recorded approved in local discovery document, but this record does not independently verify that file. 
 
 **Sources:** [approved PRD](prd.md), Round 2 questions supplied by learner. Original question and full proposed answer appear below; educational notes are separate and are not Codex quotations. No ADR or application implementation is claimed.
 
@@ -15,7 +15,7 @@ Should V1 accept **static JPEG and PNG files only**, rejecting animated or multi
 Recommended: Yes. This provides a small, clear supported catalog. Additional raster formats would broaden compatibility but add validation and acceptance cases.
 Input formats and preset output formats are independent choices.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** محدودسازی فرمت، وعده محصول را قابل تست می‌کند.
 
@@ -36,7 +36,7 @@ Should V1 publish these three presets, all preserving aspect ratio, applying no 
 Recommended: Yes. This offers two publication sizes and a PNG alternative while keeping the catalog small. Preserving the whole image avoids an automatic crop discarding important content.
 Transparency, orientation, color, metadata, and JPEG quality rules follow once the catalog is approved.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** Presets رفتار تبدیل را برای مخاطب معین می‌کنند؛ جزئیات شفافیت و رنگ همچنان باز است.
 
@@ -56,7 +56,7 @@ Should each uploaded source satisfy **all three** of these limits?
 Recommended: Yes. Separate byte, pixel-area, and dimension limits provide understandable boundaries for both ordinary photographs and unusually shaped images.
 These are proposed admission limits, not processing-speed promises. Static images require no duration limit.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** حجم فایل، تعداد پیکسل و طول اضلاع سه حد مستقل‌اند.
 
@@ -73,7 +73,7 @@ Should a request contain **at most three distinct presets**, with each preset se
 Recommended: Yes. This supports the approved multiple-variant workflow while bounding each request. Repeating the same preset within one request adds little value because deliberate fresh processing already has its own request identity.
 The cap remains three even if the published catalog later contains more presets; a smaller catalog naturally offers fewer choices.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** خروجی‌های یک درخواست مستقل‌اند و یک Preset در همان درخواست تکرار نمی‌شود.
 
@@ -96,7 +96,7 @@ All current permitted members can inspect shared sources, history, and available
 Recommended: Yes. Contributors control their submissions, editors identify useful results, operations users handle recovery, and managers control access and removal.
 This grants action authority. Later policies determine when an action is eligible and what it does. Reconciliation establishes outcomes from evidence; it does not permit manually declaring an unverified result successful.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** مجوز خواندن با مجوز تغییر و با شرایط واجد شرایط بودن عمل متفاوت است.
 
@@ -113,7 +113,7 @@ Should removing a member **revoke subsequent access to workspace content and his
 Recommended: Yes. The team can finish and review existing work after someone leaves. Membership removal would not itself cancel processing or delete content.
 Separate cancellation and deletion actions remain available under their policies.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** سابقه و محتوا متعلق به Workspace باقی می‌ماند اما دسترسی شخص حذف‌شده قطع می‌شود.
 
@@ -130,7 +130,7 @@ Should “selected for use” be an **independent, shared designation on each re
 Recommended: Yes. Different variants can serve different publication needs. Selecting one does not silently clear another or establish a single authoritative winner.
 An exclusive winner would require additional rules about which outputs compete and how replacement works.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** Selected بودن داوری ویرایشی است و انحصاری بودن را تحمیل نمی‌کند.
 
@@ -154,7 +154,7 @@ A confirmed request rejected before work has a request-level **Rejected** outcom
 Recommended: Yes. This separates what happened during processing from whether the resulting content remains available now. For example, history could show “Succeeded — output expired,” while the output is no longer presented as ready or downloadable.
 Aggregate request labels for mixed variants follow this decision.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** نتیجه تاریخی Succeeded از دسترس‌پذیری فعلی فایل جداست.
 
@@ -171,7 +171,7 @@ Should V1 offer **request-wide cancellation of all unfinished variants**, preser
 Recommended: Yes. Users get one clear cancellation action. Individual-variant cancellation would give finer control but require more eligibility and race rules.
 Each affected variant still reports its own observed outcome. Request-wide cancellation cannot imply that successful siblings were undone.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** درخواست لغو به معنی لغو قطعی همه Variantها یا حذف خروجی موفق نیست.
 
@@ -189,7 +189,7 @@ Recommended: Yes. The budget provides a meaningful boundary rather than merely a
 Confirmed ongoing work can show that stopping was requested; an outcome that cannot be established remains indeterminate. Later verified success may still resolve it, as approved in Q10.
 The numerical budget follows the supported workload decisions.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** Timeout حکم قطعی شکست نیست و شواهد دیررس معتبر می‌مانند.
 
@@ -211,7 +211,7 @@ Should these be V1’s ordinary expiry targets?
 Recommended: Yes. This gives contributors a week to request transformations, reviewers a month to retrieve results, and the team a longer period to inspect outcomes.
 Accepting these periods does **not** decide expiry during active or indeterminate work. Those exceptions and deletion consequences follow later. Essential provenance must remain associated with any retained output, even if full request history expires.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** چهار ساعت متفاوت برای Source، Output، History و Intermediate تعریف شده؛ استثنای کار فعال هنوز باز است.
 
@@ -228,7 +228,7 @@ Should selecting an output for use **leave its expiry unchanged**, with its expi
 Recommended: Yes. Selection records intended use; it does not become an implicit archive promise. Reviewers retrieve selected content within the published availability period.
 Automatic retention extensions would require additional duration and capacity policies.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** انتخاب محتوا موعد انقضا را تمدید نمی‌کند.
 
@@ -245,7 +245,7 @@ Should deleting or expiring a source **preserve its existing ready outputs until
 Recommended: Yes. Source and derived-content availability remain independent. Reviewers can retrieve an existing result after its original source is unavailable, and history clearly identifies that source as deleted or expired.
 New processing requires available source content. Removal while work is active or indeterminate remains a dependent question.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** عمر Source از خروجی مشتق‌شده جداست؛ Provenance باقی می‌ماند.
 
@@ -262,7 +262,7 @@ Should V1 accept a **bounded number of waiting requests**, then reject additiona
 Recommended: Yes. Accepted requests have an honest queued state; rejected requests do not appear accepted or promise eventual processing.
 Users can deliberately submit again when capacity becomes available. Exact active and waiting limits follow the workload and cardinality decisions. This selects observable admission behavior, not an execution mechanism.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** پذیرش و رد تحت فشار، تعهد قابل مشاهده برای کاربر است؛ سازوکار صف هنوز انتخاب نشده.
 
@@ -279,7 +279,7 @@ Should a fresh request be blocked when any selected preset already has **queued,
 Recommended: Yes. This gives two workspace members a clear recovery path and limits unnecessary overlapping work. The user can remove the overlapping preset and request other variants.
 After the earlier work has a definitive outcome, fresh processing or eligible retry can proceed. Reconfirmation of the same request continues to refer to that request. A separately uploaded source has its own identity, even when its bytes match.
 
-**ChatGPT recommendation (pending product-owner approval):** Yes.
+**Codex recommendation:** Yes. **ChatGPT review:** Yes. **Product owner decision:** Approved Yes (2026-10-13).
 
 **Educational analysis:** منع هم‌پوشانی با Reconciliation قابل انجام تکمیل می‌شود؛ وضعیت نامعلوم نباید بن‌بست شود.
 
