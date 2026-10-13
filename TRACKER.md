@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–13 learner-approved; Chapter 14 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–15 learner-approved; Chapter 16 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–13 learner-approved; [Chapter 14 — V8 Execution, Memory and Garbage Collection](domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md) authored/in_review. Chapters 15–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–15 learner-approved; [Chapter 16 — Runtime Failures and Graceful Shutdown](domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md) authored/in_review; Chapters 17–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–13 are learner-approved; **Chapter 14 — V8 Execution, Memory and Garbage Collection — awaits explicit learner editorial review**. Do not author Chapter 15 before Chapter 14 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–15 are learner-approved; **Chapter 16 — Runtime Failures and Graceful Shutdown — awaits learner editorial review**. Do not author Chapter 17 before Chapter 16 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -191,3 +191,19 @@ Learner explicitly approved [Chapter 13 — Module Resolution and Runtime Loadin
 **Mandatory coverage reconciliation:** [Coverage Matrix](projects/coverage-matrix.md) updated D03-C13 to learner-approved and mapped D03-C14 separately as authored/in_review. **44 authored lesson mappings: 43 learner-approved editorially and 1 in_review.** Thirty D01/D02 approved lesson mappings and nine D01/D02 approved product PRDs unchanged. Domain and root README, curriculum, ROADMAP and canonical state reconciled. D03 catalog, PRDs and implementation still not_started; learner assessment deferred.
 
 **Handoff:** active domain D03; Chapter 14 awaits explicit learner editorial approval or revision request. Do not author Chapter 15 until learner approval. Memory experiments are educational and authorize no product scope expansion or implementation architecture.
+
+## D03 Chapter 14 approval and Chapter 15 draft — catch-up, 2026-10-13
+
+Learner explicitly approved [Chapter 14 — V8 Execution, Memory and Garbage Collection](domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md) on 2026-10-13; the chapter was updated to `approved_by_learner`. The next lesson, [Chapter 15 — Async Context and Diagnostic Causality](domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md), was authored with five educational Node v22.16.0/Linux ESM fixture scripts, each executed three times (**15/15 expected checks**), covering AsyncLocalStorage, EventEmitter bind/snapshot, AsyncResource, explicit Worker correlation and mutable store. Chapter 15 remained `in_review` after authoring. Canonical state, curriculum, domain/root indexes, roadmap and Coverage Matrix were updated then, but **this human TRACKER was still stale**; this dated catch-up explicitly reconciles that previously missed tracker change. No study assessment or project implementation occurred.
+
+**Coverage review catch-up:** [Coverage Matrix](projects/coverage-matrix.md) recorded D03-C14 approved, D03-C15 authored/in_review (45 authored/44 approved at that milestone). Historical mapping and approval preserved.
+
+## D03 Chapter 15 learner approval and Chapter 16 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 15 — Async Context and Diagnostic Causality](domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md) in the current chat: `in_review → approved_by_learner`. Authored only [Chapter 16 — Runtime Failures and Graceful Shutdown](domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md), status **authored/in_review**, not learner-approved. Chapter 17 remains not_started.
+
+**Educational evidence:** seven Node `v22.16.0`, V8 `12.4.254.21-node.26`, libuv `1.49.2`, Linux x64 ESM fixtures each independently run three times (**21/21 expected outcomes**). Included beforeExit/exit, process.exit vs exitCode in spawned children, thrown/rejected/emitter failures (explicit `--unhandled-rejections=throw`), HTTP active request draining under server.close(), Linux SIGTERM child handler and graceful HTTP response, deliberately stalled connection with forced socket closure, and AbortSignal-scoped timer cancellation. Full commands/source/results and limitations in Chapter 16 Section 18. These are scoped educational tests, not a production shutdown guarantee, automatic rollback, OS portability claim, student mastery or implemented product.
+
+**Mandatory coverage reconciliation:** [matrix](projects/coverage-matrix.md) now marks D03-C15 approved and D03-C16 authored/in_review. **46 authored chapter mappings: 45 editorially approved, 1 in_review**, including 30 approved D01/D02 chapters and 15 approved D03 chapters. The nine approved D01/D02 product PRDs and all implementation statuses remain unchanged. Cross-checked curriculum, D03 index, root README, ROADMAP and canonical state. Assessments deferred; D03 project catalog/PRDs not_started.
+
+**Handoff:** active domain D03; Chapter 16 awaits learner editorial review. Chapters 17–18 not_started; no assessment or product implementation. Next step after explicit Chapter 16 approval: author Chapter 17 — Runtime Diagnostics and Measurement — only.
