@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-13  
 **Phase:** content_and_project_planning  
-**Current authoring focus:** D03 — Chapters 01–09 learner-approved; Chapter 10 authored/in_review  
+**Current authoring focus:** D03 — Chapters 01–10 learner-approved; Chapter 11 authored/in_review  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## D01 — Computer Science Foundations
@@ -35,13 +35,13 @@
 - **Assessments and implementation:** deferred/not started; no runnable-product evidence claimed.
 - **Module index:** [D02 overview and lesson catalog](domains/02-javascript-typescript/README.md).
 
-**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–09 learner-approved; [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) authored/in_review. Chapters 11–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
+**D03 — Node.js Internals:** [18-chapter curriculum](domains/03-nodejs-internals/curriculum.md) learner-approved. Chapters 01–10 learner-approved; [Chapter 11 — Worker Threads and Data Ownership](domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md) authored/in_review. Chapters 12–18 not_started. D03 catalog/PRDs and implementation not_started; assessment deferred.
 
 **D04–D16:** not started.
 
 ## Next action
 
-D01/D02 content-authoring gates remain closed. In D03, Chapters 01–09 are learner-approved; **Chapter 10 awaits explicit learner editorial review**. Do not author Chapter 11 until Chapter 10 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
+D01/D02 content-authoring gates remain closed. In D03, Chapters 01–10 are learner-approved; **Chapter 11 — Worker Threads and Data Ownership — awaits explicit learner editorial review**. Do not author Chapter 12 before Chapter 11 approval. D03 catalog/PRDs and implementation not_started; learning assessments deferred. Reconcile the Coverage Matrix after each mapped change.
 
 ## Product decision policy — approved 2026-10-12
 
@@ -151,3 +151,13 @@ Learner explicitly approved [Chapter 09 — Pipelines, Transforms and Cancellati
 **Mandatory coverage reconciliation:** the [Coverage Matrix](projects/coverage-matrix.md) now includes D03-C09 as learner-approved and D03-C10 as authored/in_review. Total authored chapter mappings: **40 (39 editorially approved; 1 in_review)**. D01/D02 thirty approved chapter mappings and all nine product PRDs unchanged. Root/domain READMEs, roadmap, curriculum and canonical state reconciled.
 
 **Handoff:** active domain D03; Chapter 10 pending learner review; Chapter 11–18 not_started. D03 project catalog, PRDs and implementation not_started; assessments deferred. Do not interpret an educational benchmark comparison as a chosen product runtime, thread-count requirement or capacity policy.
+
+## D03 Chapter 10 learner approval and Chapter 11 authored — 2026-10-13
+
+Learner explicitly approved [Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation](domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md) in the current conversation: `in_review → approved_by_learner`. Authored only [Chapter 11 — Worker Threads and Data Ownership](domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md), with status `authored/in_review` and **no learner approval inferred**. Chapter 12 remains not_started.
+
+**Educational execution:** five standalone Node ESM Worker fixtures each repeated three times (15 successful independent process invocations) on Node `v22.16.0`, V8 `12.4.254.21-node.26`, libuv `1.49.2`, Linux/x64. The fixtures show main timer versus Worker CPU execution, structured clone versus transferable ArrayBuffer ownership/detachment, SharedArrayBuffer+Atomics increments, intentional Worker error/exit, and start-acknowledged Worker termination. One additional pre-start terminate counterexample (exit code 0 with no result) is separately noted in Section 16. The lesson is educational and cannot establish cross-platform, security sandbox, performance, user competency or project-implementation evidence. Reference Node v22 Worker documentation and the Node worker-pool guide checked; author quality gates reviewed.
+
+**Coverage Matrix review:** [matrix](projects/coverage-matrix.md) reconciled with both lesson files, curriculum, domain/root indexes, roadmap and canonical state. D03-C10 now learner-approved; D03-C11 mapped as authored/in_review. **41 authored chapter mappings: 40 learner-approved editorially and 1 in_review.** All nine D01/D02 PRDs and thirty D01/D02 approved lesson mappings unchanged. No D03 catalog/PRD, learner assessment or implemented project evidence claimed.
+
+**Handoff:** active deliverable D03 Chapter 11, awaiting learner editorial review; Chapters 12–18 not_started. Next decision: learner approves Chapter 11 or requests revisions. Do not interpret the educational Worker examples as a chosen technical architecture or scope change for any project.
