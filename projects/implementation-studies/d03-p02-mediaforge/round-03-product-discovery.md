@@ -1,7 +1,7 @@
 # MediaForge — Product Discovery Round 3: Educational dossier
 
 **Date:** 2026-10-13  
-**Approval:** Q29–Q46 **PENDING product-owner approval**. All 18 questions and full recommendation texts below are transcribed from the learner-provided Codex Round 3 message, not independently verified against local Codex documents.  
+**Approval:** Q29–Q46 **APPROVED by product owner on 2026-10-13** (all recommended Yes, with the documented safety/liveness caveat for Q39/Q46). External Codex decision-log update not yet verified. All 18 questions and full recommendation texts below are transcribed from the learner-provided Codex Round 3 message, not independently verified against local Codex documents.  
 **Round 2:** Codex reports Q14–Q28 recorded as approved.  
 **Source of product scope:** [approved PRD](prd.md).  
 **Architectural ADRs:** none verified; no implementation result claimed.
@@ -18,7 +18,7 @@ A filename or supplied file-type mismatch would produce a warning and display th
 
 ➡️ **Recommended: Yes.** This prevents partially accepted requests and unexpected repairs. A supported PNG named `.jpg` can still be accepted with a clear warning; damaged image content cannot.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** اعتبار محتوا بر پسوند غلبه دارد؛ ورودی خراب تعمیر خودکار نمی‌شود.
 
@@ -36,7 +36,7 @@ Valid, interpretable embedded color profiles would be honored. Untagged inputs w
 
 These restrictions would be published alongside “JPEG and PNG supported.”
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** فرمت فایل به‌تنهایی تمام حالت‌های رنگ و عمق بیت را تضمین نمی‌کند.
 
@@ -52,7 +52,7 @@ Should JPEG presets **composite transparent areas onto white**, while PNG 1600 *
 
 The JPEG behavior must be visible before confirmation.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** سفیدشدن شفافیت در JPEG و حفظ آن در PNG باید به کاربر اعلام شود.
 
@@ -68,7 +68,7 @@ Required output color information would remain. Source/preset/request provenance
 
 ➡️ **Recommended: Yes.** Outputs appear upright without carrying incidental source metadata into publication. Reviewers retain provenance through the desk.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** Orientation درست و حذف اطلاعات موقعیت مکانی به انتشار امن کمک می‌کند.
 
@@ -89,7 +89,7 @@ Failed or incomplete artifacts would expose safe status information rather than 
 
 ➡️ **Recommended: Yes.** An editor can assess the image and its origin before retrieval. A preview does not independently establish readiness or selection.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** Preview و Metadata جایگزین بررسی Ready و مجوز دسترسی نیستند.
 
@@ -117,7 +117,7 @@ An in-progress request containing indeterminate variants would explicitly flag t
 
 ➡️ **Recommended: Yes.** Mixed outcomes stay visible without multiplying ambiguous summary states. Historical success is accompanied by current availability, so expired outputs cannot appear ready.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** وضعیت تجمیعی باید شکست جزئی و وضعیت نامعلوم را روشن نگه دارد.
 
@@ -135,7 +135,7 @@ A cancellation submitted after every variant is already definitive reports no el
 
 ➡️ **Recommended: Yes.** This establishes a clear publication boundary: requesting cancellation does not erase success, while confirmed cancellation prevents later publication of unfinished artifacts.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** درخواست لغو با لغو قطعی برابر نیست؛ نتیجه به ترتیب شواهد بستگی دارد.
 
@@ -158,7 +158,7 @@ Prior outcomes and ready outputs remain unchanged. Rejected confirmations are co
 
 Retry-count limits follow this eligibility decision.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** Retry فقط برای پیامد شکست یا لغو قطعی با درخواست لینک‌شده جدید است.
 
@@ -174,7 +174,7 @@ If the reference has expired, the product reports that limitation and requires a
 
 ➡️ **Recommended: Yes.** A disconnected contributor can investigate what happened before deciding to request more work. This preserves the distinction between reconfirmation, retry, and fresh processing.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** تأیید تکراری و Retry و Fresh Request سه مفهوم متمایزند.
 
@@ -195,7 +195,7 @@ Exceeding either budget requests stopping unfinished work under Q23.
 
 The request-wide budget applies regardless of execution topology.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** بازه‌های ۱۵ و ۵ دقیقه حد سیاستی‌اند نه SLA نتیجه قطعی.
 
@@ -218,7 +218,7 @@ Each request counts once, regardless of its variant count. Indeterminate work re
 
 Uncertainty can temporarily reduce usable capacity. Age alone would not release a reservation and permit potentially overlapping work.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** ابهام طولانی می‌تواند ظرفیت کمیاب را مسدود کند؛ نیازمند فرایند بازیابی روشن است.
 
@@ -234,7 +234,7 @@ A request temporarily ineligible under its submitter’s active limit can be ski
 
 ➡️ **Recommended: Yes.** Contributors receive an understandable fairness rule while eligible work can continue. Operations and manager responsibilities grant recovery authority rather than preferential processing.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** قدیمی‌ترین درخواست واجد شرایط جلو می‌رود؛ نقش‌ها اولویت نمی‌سازند.
 
@@ -252,7 +252,7 @@ Once that work is definitively inactive, retained source content would be remove
 
 This is an explicit, limited exception to normal source removal for already accepted work; it does not restore user-facing source availability.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** انقضای معمول Source کار معتبرِ در جریان را ناگهانی تخریب نمی‌کند.
 
@@ -268,7 +268,7 @@ The manager can request cancellation and reconciliation first. Individual ready 
 
 ➡️ **Recommended: Yes.** Explicit source deletion cannot silently disrupt unresolved work. Output deletion immediately removes its retrieval eligibility and is shown as **Deleted**, without rewriting its historical processing outcome.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** حذف منبع در حالی که عملیات ناتمام است ایمن نیست؛ حذف Output مستقل است.
 
@@ -284,7 +284,7 @@ Selection would never transfer automatically to another output, including a retr
 
 ➡️ **Recommended: Yes.** Current selections refer to retrievable results. An editor deliberately selects a replacement rather than inheriting a choice made about different content.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** انتخاب ویرایشی با حذف/انقضا پایان می‌پذیرد ولی تاریخچه حفظ می‌شود.
 
@@ -306,7 +306,7 @@ V1 would make **no percentage-complete or estimated-finish-time promise**.
 
 ➡️ **Recommended: Yes.** Counts describe actual variant outcomes without implying how much processing remains. For example, “one ready, one running, one queued” is useful even when total work cannot be measured.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** نمایش درصد ساختگی ممنوع؛ وضعیت و شمارش واقعی مفیدتر است.
 
@@ -322,7 +322,7 @@ Explanations would identify the affected request or variant, explain the known l
 
 ➡️ **Recommended: Yes.** Users can distinguish correction, waiting, retry, and operations attention. Privileged diagnostics and hidden inputs remain outside customer-visible explanations.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** پیغام قابل‌اقدام به معنی افشای اطلاعات حساس نیست.
 
@@ -346,10 +346,10 @@ During that window, definitive evidence can resolve it, and a verified retrievab
 
 The minimal unresolved record is an **explicit exception to ordinary history expiry**. It does not extend source/output availability or permit indefinite retention of unfinished media. Evidence arriving later can still correct the known outcome, but cannot revive purged content as a ready deliverable.
 
-**ChatGPT assessment, not an approved learner decision:** Recommended Yes, with the Q39/Q46 long-lived-capacity caveat.
+**Codex proposal:** Yes. **ChatGPT review:** Yes. **Product-owner decision:** Approved Yes (2026-10-13), preserving Q39/Q46 safety/liveness caveat.
 
 **Educational interpretation, not a Codex quote:** پنجره ۲۴ساعته پذیرش خروجی را محدود می‌کند ولی وضعیت نامعلوم ممکن است ادامه یابد.
 
 ## Concepts for educational review
 
-Product admission and image correctness; color/metadata safety; separation of historical result and availability; cancellation/retry races; honest progress; capacity under indeterminate outcomes. All decisions in Q29–Q46 are **proposed**, not yet learner-approved. Do not assume architectural choices or tests. A video prompt is supplied in the conversation, not saved as a template.
+Product admission and image correctness; color/metadata safety; separation of historical result and availability; cancellation/retry races; honest progress; capacity under indeterminate outcomes. All decisions in Q29–Q46 are **learner-approved**; evidence of Codex recording remains pending. Do not assume architectural choices or tests. A video prompt is supplied in the conversation, not saved as a template.
