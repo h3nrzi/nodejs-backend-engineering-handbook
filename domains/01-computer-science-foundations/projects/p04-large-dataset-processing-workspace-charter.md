@@ -11,23 +11,13 @@
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-
-
 ## Problem and users
 
 Developers and data operators need to validate, process and export large datasets without silent truncation, misleading success signals or unbounded resource promises. An operator submits and processes an input; a reviewer examines the resulting integrity evidence. This is an educational product, not a commercial ETL or object-storage platform.
 
-
-
-
-
 ## Goals
 
 Users can submit datasets within clear supported limits, select a documented operation, observe processing status and record counts, download validated output, understand malformed records and interrupted work, and distinguish a definitive outcome from an uncertain one.
-
-
-
-
 
 ## Scope
 
@@ -36,10 +26,6 @@ Users can submit datasets within clear supported limits, select a documented ope
 **Excluded:** arbitrary user code execution, production data connectors, multi-tenant administration, limitless data volume, commercial storage and full ETL orchestration.
 
 **Deferred:** exact mid-file resume, multi-file joins, collaboration, recurrence and distributed high-availability guarantees.
-
-
-
-
 
 ## Product boundary and open questions for project kickoff
 
@@ -56,17 +42,9 @@ Users can submit datasets within clear supported limits, select a documented ope
 
 Proposed defaults (e.g., CSV/UTF-8, simple operations and fresh restart) remain recommendations, not approvals. The learner approves the first-version decisions before dependent technical design; the handbook initial project brief does not need those details resolved to remain editorially approved.
 
-
-
-
-
 ## Learning coverage and distinction
 
 Covers operating systems, memory, filesystem I/O, buffering, backpressure, state correctness and failure recovery in D01 Chapters 06–13. Unlike P01 it is not a benchmark product; unlike P02 it does not focus on capacity-claim contention; unlike P03 it does not model dependency graphs.
-
-
-
-
 
 ## Educational engineering challenge
 
