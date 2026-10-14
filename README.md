@@ -11,6 +11,10 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - **MediaForge reset to implementation 0** by learner request. Historical discovery archives are not current engineering authority.
 - D04–D16 remain to be authored.
 
+## Migration audit
+
+[Workflow V2 — D01–D03 migration and MediaForge reset audit](docs/workflow-v2-migration-audit-2026-10-14.md).
+
 ## Navigation
 
 [AGENTS](AGENTS.md) · [Roadmap](ROADMAP.md) · [Tracker](TRACKER.md) · [Machine state](tracking/state.json) · [Workflow](docs/workflow.md) · [Module-driven ownership](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
