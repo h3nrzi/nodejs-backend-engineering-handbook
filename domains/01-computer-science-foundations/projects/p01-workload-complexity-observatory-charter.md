@@ -1,26 +1,19 @@
 # Project Charter — p01 workload complexity observatory
 
-**Status:** learner-approved project concept/educational direction from D01–D03 authoring; **no final V1 PRD has been produced**.  
-**Authority:** handbook educational intent and initial product boundary; the separate project Codex process owns Product Discovery, Final PRD and Module Plan.  
-**Migration:** adapted from the original learner-approved product-scope draft (preserved in repository history); the following sections are framing input, not an executable specification or frozen technical architecture.
+**Domain:** D01  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
+
+> This Charter frames a useful product and authentic computer-science foundations learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
 ## Learning mission and project constraints
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-## Historical project concept and source framing
-
-**Domain:** D01 — Computer Science Foundations  
-**Status:** approved_by_learner  
-**Product approval:** approved 2026-10-12  
-**Implementation:** not started  
-**Editorial approval scope:** the problem, target users, build/not-build boundaries and essential observable behavior are approved; open implementation-dependent product policies do not revoke that approval.
-**Decision timing:** resolve first-version blocking details with Codex through installed Matt Pocock skills at project kickoff; the learner approves consequential product choices and any scope change. No architecture/implementation is authorized by this initial project brief.
-**Boundary:** This document describes product behavior, not an implementation design.
 
 
-
-## 1. Problem and motivation
+## Problem and motivation
 
 Backend engineers often compare algorithms or data structures with anecdotal microbenchmarks. They confuse input size, workload distribution, preprocessing, memory allocation and warm-up effects. As a result, benchmark claims are hard to reproduce and can mislead decisions.
 
@@ -28,7 +21,9 @@ A learning-oriented observatory should help an engineer **describe a comparison,
 
 
 
-## 2. Audience and actors
+
+
+## Audience and actors
 
 - **Experiment author:** a student/developer configuring a comparison and running trials.
 - **Reviewer:** a colleague examining methodology, results and limitations.
@@ -38,7 +33,9 @@ No production traffic instrumentation or organizational identity platform is nee
 
 
 
-## 3. Goals and measurable outcomes
+
+
+## Goals and measurable outcomes
 
 - Every completed comparison records enough visible input and environment information for a second reviewer to understand **what was actually compared**.
 - Results report time and resource measurements with units and repeated-trial variation, not a single unsupported “fastest” badge.
@@ -50,7 +47,9 @@ No production traffic instrumentation or organizational identity platform is nee
 
 
 
-## 4. Scope
+
+
+## Scope
 
 ### Included in version 1
 
@@ -80,27 +79,17 @@ No production traffic instrumentation or organizational identity platform is nee
 
 
 
-## 7. Engineering challenges and externally observable invariants
-
-- A report must never compare results as equivalent if they were produced from incompatible definitions without explicit disclosure.
-- Results from one run must not be silently merged with a different run.
-- A run marked completed must have satisfied the defined correctness checks for its reported valid trials.
-- Reported trial counts must reconcile with included, failed and excluded trials.
-- A cancellation request must not be falsely reported as proof of cancellation if processing may already have completed.
-- Concurrent experiment activity must not mix each other's identity, input definitions or results.
-- An invalid or partial experiment must not be presented as a fully successful measurement.
-
-These invariants describe outcomes; **no locking, storage, scheduling, algorithm or framework is selected**.
 
 
-
-## 12. Explicit non-goals
+## Explicit non-goals
 
 This isn't an APM product, profiling SaaS, online judge, programming interview site, automated optimization agent, or guarantee of cross-device objective rankings.
 
 
 
-## 13. Learning coverage and portfolio value
+
+
+## Learning coverage and portfolio value
 
 Directly exercises D01 Chapter 01 cost models, 02/03 data-structure reasoning, 04 algorithm comparisons, 05 probability/variance reasoning, 06 CPU/cache performance and 08 memory measurement.
 
@@ -108,14 +97,12 @@ It is deliberately distinct from P02's concurrency correctness, P03's dependency
 
 
 
-## 14. Approval record
-
-- 2026-10-12: first product-level draft authored for review.
-- **Learner approval:** confirmed in conversation 2026-10-12; open product questions remain for future implementation discovery.
-- **Architecture, ADRs, tickets, code and test evidence:** not started.
-- **Next for this project:** at implementation kickoff, use installed Matt Pocock skills with Codex to clarify build-blocking first-version product behaviors, obtain learner approval, and only then design dependent technical solutions. No implementation started.
 
 
-## Implementation kickoff gate
+## Educational engineering challenge
 
-When selected, hand this Charter to Codex. Codex must produce `product-discovery.md`, then an owner-approved `final-charter.md`, then an owner-approved `module-plan.md`. Technical discovery is **scoped to the current module** and feeds `to-spec` → `to-tickets` → implementation → verified module acceptance. No code or product implementation is claimed by this Charter.
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
+
+## Kickoff and owner approval
+
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
