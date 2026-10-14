@@ -7,7 +7,7 @@
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — Round 4 Q47–Q59 learner-approved; Codex recording and next frontier pending",
   "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
-  "next_action": "Send approved MediaForge Technical Round 2 T10–T25 to Codex; verify its engineering decision and qualified ADR updates, obtain the full independent Round 3 technical frontier. Educational Round 2 and personalized NotebookLM prompt are prepared.",
+  "next_action": "Continue MediaForge Technical Discovery via Codex full engineering frontiers. After each learner-approved round, update handbook round-specific educational dossier and trackers; for videos reuse templates/notebooklm-round-video-prompt.md instead of preparing one-off NotebookLM prompts.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1259,6 +1259,13 @@
       "event": "Explicit learner approval for all MediaForge Tech Lead T10–T25 choices; full round source and teaching archived, pending verified local Codex ADR/decision recording.",
       "evidence": [
         "projects/implementation-studies/d03-p02-mediaforge/round-02-technical-discovery.md"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "event": "Learner requested one reusable Gemini NotebookLM video prompt template instead of bespoke prompts each round. Added template and updated docs/workflow.md, two-role discovery workflow and MediaForge archive.",
+      "evidence": [
+        "templates/notebooklm-round-video-prompt.md"
       ]
     }
   ],
