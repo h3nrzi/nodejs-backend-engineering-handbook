@@ -7,7 +7,7 @@
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — Round 4 Q47–Q59 learner-approved; Codex recording and next frontier pending",
   "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
-  "next_action": "Obtain final MediaForge PM product-discovery shared-understanding sign-off, then launch a distinct Tech Lead grill-with-docs interview in external mediaforge repo against approved product policies; technical ADRs followed by to-spec when warranted.",
+  "next_action": "Learner to record explicit final MediaForge PM shared-understanding approval in external repo; then run filled Tech Lead grill-with-docs technical discovery prompt, relay full technical frontiers for review. Reusable template: templates/codex-grill-with-docs-technical-discovery.md.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1237,6 +1237,14 @@
         "docs/two-role-discovery-workflow.md",
         "docs/workflow.md",
         "projects/implementation-studies/d03-p02-mediaforge/README.md"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "event": "Published reusable Tech Lead Technical Discovery grill-with-docs Codex prompt; integrated into handbook workflow and MediaForge archive. Awaiting local PM final sign-off and first Tech Lead round.",
+      "evidence": [
+        "templates/codex-grill-with-docs-technical-discovery.md",
+        "docs/workflow.md"
       ]
     }
   ],
