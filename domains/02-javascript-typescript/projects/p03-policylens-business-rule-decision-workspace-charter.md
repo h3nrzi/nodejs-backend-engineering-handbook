@@ -1,6 +1,6 @@
 # Project Charter — p03 policylens business rule decision workspace
 
-**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-prd.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
+**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-charter.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
 
 # P03 — PolicyLens project briefs
 
