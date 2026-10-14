@@ -21,6 +21,6 @@
 | D15 — DevOps & Platform Engineering | Not started | Not started | 0 |
 | D16 — Observability & Operations | Not started | Not started | 0 |
 
-**Learning assessments:** deferred until the learner begins that phase. Approved lessons are not proof of competency. **MediaForge:** implementation reset to **0 / not_started** on 2026-10-14; previous whole-product discovery rounds remain historical learning artifacts, not current project authority.
+**Learning assessments:** deferred until the learner begins that phase. Approved lessons are not proof of competency. **MediaForge:** implementation not started.
 
 See [domain indexes](domains/03-nodejs-internals/README.md), [coverage matrix](projects/coverage-matrix.md), [machine state](tracking/state.json), and [module-driven workflow](docs/workflow.md).
