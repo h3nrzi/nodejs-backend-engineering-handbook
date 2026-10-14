@@ -567,7 +567,6 @@
     "reviewed_on": "2026-10-13",
     "status": "workflow_v2_charter_reclassification_reviewed_no_implementation_evidence",
     "path": "projects/coverage-matrix.md",
-    "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
     "domains": [
       "D01",
