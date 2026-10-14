@@ -11,10 +11,6 @@
 
 Teams receiving files from customers, contractors and vendors often cannot distinguish a file that was merely selected, partly transferred, formally accepted, later rejected or received by an authorized colleague. Messages and folder links rarely preserve an understandable submission-to-handoff record. **IntakeLedger** is a bounded submission and handoff product: the main value is a trustworthy acceptance and recipient acknowledgment trail, not transformation or general storage.
 
-
-
-
-
 ## Audience and actors
 
 - **Sender:** creates a named package, submits supported files and sees intake outcome.
@@ -24,19 +20,11 @@ Teams receiving files from customers, contractors and vendors often cannot disti
 
 These are product responsibilities, not a requirement for a particular identity, permission or deployment implementation.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 A sender can complete a supported submission and understand the precise outcome for each file and the package; a permitted recipient can identify, retrieve and acknowledge accepted files. Measurable checks: no package is labeled fully accepted when required files are incomplete; a rejection gives a meaningful category; recipient acknowledgment is distinguishable from successful byte acceptance; past state changes are visible without fabricating legal proof.
 
 **Evidence for acceptance:** demonstration on explicitly supported sample cases and negative/failure cases; no invented latency, capacity, retention or success-rate SLA. The first-version numeric boundaries are agreed during separate product discovery before dependent engineering decisions.
-
-
-
-
 
 ## Product boundary: in / out / deferred
 
@@ -61,19 +49,11 @@ A sender can complete a supported submission and understand the precise outcome 
 
 The above determines **what product is being built**. Any future Product Discovery choices must remain compatible with this initial boundary unless the owner explicitly changes it.
 
-
-
-
-
 ## Explicit non-goals
 
 No automatic malware-safety certification, legal receipt certification, universal resumable transfers, arbitrary file execution or content transformation in V1.
 
-No implementation code, technical ADR, architecture or library selections are authorized by this project briefs.
-
-
-
-
+No implementation code, technical ADR, architecture or library selections are authorized by this Charter.
 
 ## Domain learning outcomes and why this project is valuable
 
@@ -81,11 +61,7 @@ No implementation code, technical ADR, architecture or library selections are au
 
 **Distinctness / portfolio rationale:** Unlike D01's Large Dataset Processing Workspace, the value is **verified submission, recipient access and handoff accountability**, not data transformation; unlike P02, it does not produce derived media.
 
-These are *potential* learning challenges, not a mandate to implement a specific Node mechanism or proof of learner proficiency. D01/D02 existing project briefs and their scope remain unchanged.
-
-
-
-
+These are *potential* learning challenges, not a mandate to implement a specific Node mechanism or proof of learner proficiency. D01/D02 related project Charters and their scope remain unchanged.
 
 ## Educational engineering challenge
 
