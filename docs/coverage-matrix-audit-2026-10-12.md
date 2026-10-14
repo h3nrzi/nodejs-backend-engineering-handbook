@@ -1,3 +1,5 @@
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+
 # Coverage matrix reconciliation audit — 2026-10-12
 
 ## Baseline and evidence
@@ -23,11 +25,11 @@ Commit history proves lack of changes, not whether a prior assistant privately r
 
 | ID | Baseline evidence | Correction |
 |---|---|---|
-| CM-01 | Global matrix is empty although state/indexes record 14 D01 and 16 D02 approved lessons plus four/five approved PRDs. | Replace scaffold with nine-project registry and 30 chapter-level competency rows; distinguish authored content, planned challenges, supporting theory and absent evidence. |
+| CM-01 | Global matrix is empty although state/indexes record 14 D01 and 16 D02 approved lessons plus four/five approved Charters. | Replace scaffold with nine-project registry and 30 chapter-level competency rows; distinguish authored content, planned challenges, supporting theory and absent evidence. |
 | CM-02 | No compulsory global matrix check in agent startup, workflow completion or quality gates. | Name matrix in startup; make reconciliation a completion gate after relevant changes, with same-change matrix/state/tracker updates or dated evidence-backed no-change review. |
 | CM-03 | D01 catalog P04 “Next: candidate PRD after review” conflicts with its approved PRD and state. | Record existing approval and project-kickoff discovery; preserve optional-candidate status. |
 | CM-04 | D01 catalog says outstanding questions/limits must be resolved before a Codex implementation handoff, whereas workflow and all PRDs defer necessary decisions to discovery with Codex at kickoff. | Use kickoff timing for necessary first-version decisions before dependent technical work; safely deferred details may remain open. |
-| CM-05 | D02 catalog final gate says P05 is pending, followed by domain closure; state, index and P05 say approved/content complete. | Record all five PRD approvals, closed D02 content gate and next D03 curriculum review. Keep historical concept approval separate from later PRD approvals. |
+| CM-05 | D02 catalog final gate says P05 is pending, followed by domain closure; state, index and P05 say approved/content complete. | Record all five Charter approvals, closed D02 content gate and next D03 curriculum review. Keep historical concept approval separate from later Charter approvals. |
 | CM-06 | D01 index/handoff still recommends D02 curriculum/content, but canonical next action is D03. | Align current next-step prose with D03, without changing historical domain approvals. |
 | CM-07 | D01 catalog P04 broadly promises “resume or restart”; authoritative P04 PRD defers exact mid-file resume and commits to restart. | State restart and explicitly defer exact mid-file resume; do not add recovery functionality. |
 | CM-08 | D02 catalog DispatchDesk concept mentions pause, but its approved PRD commits to cancelling eligible unstarted work; partial-batch resumption remains an open question. | Align catalog summary with cancellation; leave the PRD’s resumption policy question open. No pause capability is newly approved. |
