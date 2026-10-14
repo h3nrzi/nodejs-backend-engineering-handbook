@@ -9,6 +9,8 @@
 5. For approved concepts, write separate **product PRDs**, using `templates/project-prd.md`. Prioritize the problem, intended users, product goals, **in-scope / out-of-scope / deferred boundaries**, core journeys and observable outcomes. Record unresolved policies as explicit questions instead of forcing detailed decisions prematurely. Never prescribe technical solutions.
 6. Reconcile `projects/coverage-matrix.md` with affected lessons, project catalogs/PRDs and canonical statuses; update the matrix and both trackers together, or record a dated evidence-backed no-change review. Obtain learner review before marking approved; do not close the domain content gate without this coverage review.
 
+**Approved MediaForge-derived refinement:** [Two-role Product Manager → Tech Lead discovery workflow](two-role-discovery-workflow.md). Product behavior is settled with a PM-style `grill-with-docs` interview and explicit final owner sign-off; architectural choices are settled with a separate Tech Lead-style interview and qualifying ADRs before `to-spec` when warranted. This is the reusable distinction between a product contract and engineering design.
+
 ## Local implementation journey (outside handbook)
 
 1. Learner studies domain and chooses project PRD.
