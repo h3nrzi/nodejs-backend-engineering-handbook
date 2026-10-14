@@ -332,3 +332,7 @@ At learner's explicit request, changed the handbook workflow from per-round besp
 ## 2026-10-14 — MediaForge Technical Round 3 (T26–T49)
 
 Learner explicitly approved all 24 technical decisions T26–T49, retaining Codex's caveats and especially T26's no-exception cutoff gate. [Full educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-03-technical-discovery.md) contains verbatim Codex questions/recommendations and separate learning analysis. Codex decision-log/ADR recording is not yet verified. NotebookLM uses the existing reusable template.
+
+## 2026-10-14 — MediaForge Technical Round 5
+
+Learner approved T73–T86, with all evidence gaps and provider/purchase restrictions retained. [Round 5 teaching dossier](projects/implementation-studies/d03-p02-mediaforge/round-05-technical-discovery.md) records complete source questions/recommendations. MediaForge Codex decision/ADR recording awaits verification. No implementation or experiments claimed.
