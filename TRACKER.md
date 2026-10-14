@@ -22,3 +22,7 @@
 ## Historical tracker
 
 Previous tracker material is retained in Git history; its outdated kickoff claims were replaced rather than presented as current state.
+
+## Migration evidence
+
+[2026-10-14 Workflow V2 structural migration audit](docs/workflow-v2-migration-audit-2026-10-14.md) — 48 lessons, 14 educational Charters, zero active MediaForge implementation. Prior interviews remain historical only.
