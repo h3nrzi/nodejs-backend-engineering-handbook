@@ -1,21 +1,15 @@
 # Project Charter — p04 large dataset processing workspace
 
-**Status:** learner-approved project concept/educational direction from D01–D03 authoring; **no final V1 PRD has been produced**.  
-**Authority:** handbook educational intent and initial product boundary; the separate project Codex process owns Product Discovery, Final PRD and Module Plan.  
-**Migration:** adapted from the original learner-approved product-scope draft (preserved in repository history); the following sections are framing input, not an executable specification or frozen technical architecture.
+**Domain:** D01  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
+
+> This Charter frames a useful product and authentic computer-science foundations learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
 ## Learning mission and project constraints
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
-
-## Historical project concept and source framing
-
-**Domain:** D01 — Computer Science Foundations  
-**Status:** approved_by_learner  
-**Product approval:** confirmed 2026-10-12  
-**Implementation:** not started
-**Approval meaning:** product problem, intended users, in/out/deferred scope and indispensable observable behavior are approved; remaining detailed product questions are not silently decided.
-**Matt kickoff:** use the actually installed Matt Pocock skills with Codex to clarify build-blocking first-version behavior, request learner approval and preserve scope before dependent architecture work.
 
 
 
@@ -25,9 +19,13 @@ Developers and data operators need to validate, process and export large dataset
 
 
 
+
+
 ## Goals
 
 Users can submit datasets within clear supported limits, select a documented operation, observe processing status and record counts, download validated output, understand malformed records and interrupted work, and distinguish a definitive outcome from an uncertain one.
+
+
 
 
 
@@ -38,6 +36,8 @@ Users can submit datasets within clear supported limits, select a documented ope
 **Excluded:** arbitrary user code execution, production data connectors, multi-tenant administration, limitless data volume, commercial storage and full ETL orchestration.
 
 **Deferred:** exact mid-file resume, multi-file joins, collaboration, recurrence and distributed high-availability guarantees.
+
+
 
 
 
@@ -58,17 +58,20 @@ Proposed defaults (e.g., CSV/UTF-8, simple operations and fresh restart) remain 
 
 
 
+
+
 ## Learning coverage and distinction
 
 Covers operating systems, memory, filesystem I/O, buffering, backpressure, state correctness and failure recovery in D01 Chapters 06–13. Unlike P01 it is not a benchmark product; unlike P02 it does not focus on capacity-claim contention; unlike P03 it does not model dependency graphs.
 
 
 
-## Approval and handoff
-
-**Learner editorially approved the P04 product direction and scope on 2026-10-12.** This initial project brief is the agreed product-boundary input to Codex at project kickoff; open first-version policies and limits will be resolved *with* Codex using the installed Matt Pocock skills and explicit learner approval, before dependent technical work. No finalized implementation-ready specification is claimed. Architecture, tickets, code and execution evidence are not started.
 
 
-## Implementation kickoff gate
+## Educational engineering challenge
 
-When selected, hand this Charter to Codex. Codex must produce `product-discovery.md`, then an owner-approved `final-charter.md`, then an owner-approved `module-plan.md`. Technical discovery is **scoped to the current module** and feeds `to-spec` → `to-tickets` → implementation → verified module acceptance. No code or product implementation is claimed by this Charter.
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
+
+## Kickoff and owner approval
+
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
