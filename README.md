@@ -29,3 +29,5 @@ The four PRDs have learner approval for product direction and scope. Each retain
 ## Boundaries
 
 Lessons explain and compare concepts, while PRDs describe product outcomes and acceptance criteria **without prescribing technical solutions**. Codex owns technical discovery, architecture, tickets and implementation in separate project repositories. Handbook creation and learning assessments are separate workflows; no quizzes until the learner requests the learning phase.
+
+**MediaForge workflow lesson:** [PM → Tech Lead two-role discovery](docs/two-role-discovery-workflow.md) — separates approved product policies from engineering decisions and ADRs in the external implementation project.
