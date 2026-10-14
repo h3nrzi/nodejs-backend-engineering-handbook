@@ -328,3 +328,7 @@ Learner accepted all 16 Codex technical proposals T10–T25. [Educational source
 ## 2026-10-14 — Reusable NotebookLM template
 
 At learner's explicit request, changed the handbook workflow from per-round bespoke NotebookLM prompts to a single [reusable video prompt template](templates/notebooklm-round-video-prompt.md). Continue round-specific teaching dossiers and approval tracking; do not create another prompt after every round.
+
+## 2026-10-14 — MediaForge Technical Round 3 (T26–T49)
+
+Learner explicitly approved all 24 technical decisions T26–T49, retaining Codex's caveats and especially T26's no-exception cutoff gate. [Full educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-03-technical-discovery.md) contains verbatim Codex questions/recommendations and separate learning analysis. Codex decision-log/ADR recording is not yet verified. NotebookLM uses the existing reusable template.
