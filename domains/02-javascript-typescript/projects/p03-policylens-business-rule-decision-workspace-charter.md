@@ -10,10 +10,6 @@
 ## Product overview
 Policy authors define versioned, restricted (non-executable) business rules; analysts evaluate cases and see an allowed/denied/needs_review decision with matched-rule explanation. Reviewers publish immutable versions; auditors inspect historical decisions and compare version changes.
 
-
-
-
-
 ## Scope — confirmed product boundary
 
 **In scope:** a workspace for *explainable business-policy evaluation*. Users create draft/published rule policies from a finite non-executable vocabulary; define explicit conflict/precedence and no-match behavior; validate and evaluate cases; inspect why a decision was reached; save sample cases; compare versions; inspect immutable publication history; enforce editorial visibility/permission boundaries; and export reports.
@@ -26,15 +22,8 @@ Policy authors define versioned, restricted (non-executable) business rules; ana
 
 **Approval meaning and decision timing:** these in/out boundaries and core behaviors are learner-approved. Specific initial business domain, supported condition vocabulary, rule-conflict policy, default outcome, roles and resource limits are documented below as **open product questions**, not preselected decisions. At the separate project kickoff, Codex uses actually installed Matt Pocock skills to ask the questions needed for the chosen first version, recommends options, and records choices only with explicit learner approval. No technical architecture, database or framework is chosen here.
 
-
-
-
-
 ## D02 coverage and approval
 Exercises discriminated unions, exhaustive handling, rule composition, object contracts, and runtime validation. Concept and project briefs editorially approved by learner on 2026-10-12 for the problem, audience, approved scope and essential behavior. Open product policies remain for learner-approved Matt-guided discovery at project kickoff. Learning assessment and implementation deferred.
-
-
-
 
 ## Educational engineering challenge
 
