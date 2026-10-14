@@ -11,10 +11,6 @@
 
 Creative and editorial teams repeatedly need multiple publication-ready variants of source media. A conversion request can produce a mix of complete and failed outputs, take longer than expected or end in an uncertain state. **MediaForge** offers a deliberately limited asset-processing desk with visible per-request outcomes and retrievable derived deliverables—not a general-purpose compute farm or arbitrary media editor.
 
-
-
-
-
 ## Audience and actors
 
 - **Contributor:** submits an owned source asset and requests an allowed transformation preset.
@@ -24,19 +20,11 @@ Creative and editorial teams repeatedly need multiple publication-ready variants
 
 These are product responsibilities, not a requirement for a particular identity, permission or deployment implementation.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 A contributor can request a supported transformation, distinguish running/failed/complete/uncertain outcomes and retrieve a verified complete output. A reviewer knows which source and preset produced which variant. Success is observable through a completed expected output and readable job result; a cancellation or timeout never creates a false 'all outputs delivered' claim.
 
 **Evidence for acceptance:** demonstration on explicitly supported sample cases and negative/failure cases; no invented latency, capacity, retention or success-rate SLA. The first-version numeric boundaries are agreed during separate product discovery before dependent engineering decisions.
-
-
-
-
 
 ## Product boundary: in / out / deferred
 
@@ -61,19 +49,11 @@ A contributor can request a supported transformation, distinguish running/failed
 
 The above determines **what product is being built**. Any future Product Discovery choices must remain compatible with this initial boundary unless the owner explicitly changes it.
 
-
-
-
-
 ## Explicit non-goals
 
 No enterprise media editing suite, arbitrary script host, guaranteed instant cancellation, unlimited processing, automated rights enforcement or third-party publishing in V1.
 
-No implementation code, technical ADR, architecture or library selections are authorized by this project briefs.
-
-
-
-
+No implementation code, technical ADR, architecture or library selections are authorized by this Charter.
 
 ## Domain learning outcomes and why this project is valuable
 
@@ -81,11 +61,7 @@ No implementation code, technical ADR, architecture or library selections are au
 
 **Distinctness / portfolio rationale:** Unlike P01's intake/handoff, MediaForge creates **new derived assets**; unlike D01's generic large-data workspace it solves a focused creative content publishing workflow rather than arbitrary records/aggregations.
 
-These are *potential* learning challenges, not a mandate to implement a specific Node mechanism or proof of learner proficiency. D01/D02 existing project briefs and their scope remain unchanged.
-
-
-
-
+These are *potential* learning challenges, not a mandate to implement a specific Node mechanism or proof of learner proficiency. D01/D02 related project Charters and their scope remain unchanged.
 
 ## Educational engineering challenge
 
