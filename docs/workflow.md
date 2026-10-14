@@ -41,13 +41,13 @@ This template reflects the inspected MediaForge skills source on 2026-10-13 and 
 
 After the learner explicitly confirms final Product Discovery shared understanding, use [Codex grill-with-docs Technical Discovery template](../templates/codex-grill-with-docs-technical-discovery.md) to launch a **new technical interview** against the unchanged PRD and approved product policies. Engineering rounds cover architectural alternatives and qualified ADRs, not revised PM rules. Wait for explicit technical shared-understanding approval before `to-spec` and implementation. MediaForge-specific filled prompt is supplied separately in conversation, not committed as a duplicate static template.
 
-## Per-project educational archive and bespoke NotebookLM prompts
+## Per-project educational archive and reusable NotebookLM prompt
 
 Each selected external implementation project has a dedicated learning archive in this handbook under `projects/implementation-studies/<domain-project-slug>/`. Copy the **unchanged approved PRD** there as an educational source, with a pointer to the canonical domain PRD, and write one thorough source-grounded learning document per completed Codex interview round. The project's independent implementation repo remains authoritative for live V1 decisions, technical design, ADRs and code; the handbook archive collects explanations, rationales and links to verified decision/ADR evidence without duplicating implementation artifacts.
 
 For every round, capture numbered original questions, Codex proposals, ChatGPT review (if any), product-owner decisions **only when explicitly confirmed**, alternatives, product/engineering trade-offs, concrete examples, learning exercises, and unresolved dependent decisions. Label pending proposals as pending. For architectural phases, teach actual trade-offs and link to genuine ADRs, never manufacture or pre-approve them. Update the dossier after user approval and evidence as needed.
 
-**NotebookLM process:** After creating or updating each round's educational document, ChatGPT provides a **fresh tailored Persian video prompt in the conversation**, naming that project's sources and actual Q range and approval status. **Do not save reusable NotebookLM prompt templates.** NotebookLM-generated explanations are not product approvals or implementation evidence.
+**NotebookLM process:** Use the reusable [NotebookLM round video prompt template](../templates/notebooklm-round-video-prompt.md) with the specific round dossier and approved PRD (optional verified policy/ADR sources). Replace its project/round placeholders. **Do not generate a new bespoke NotebookLM prompt after each round.** NotebookLM-generated explanations are not approvals or implementation evidence.
 
 **Current pilot:** [D03-P02 MediaForge educational archive](../projects/implementation-studies/d03-p02-mediaforge/README.md), with [approved PRD copy](../projects/implementation-studies/d03-p02-mediaforge/prd.md) and [Round 01 educational content](../projects/implementation-studies/d03-p02-mediaforge/round-01-product-discovery.md) (Q1–Q13 recommendations pending learner confirmation).
 
