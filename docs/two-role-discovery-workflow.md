@@ -42,6 +42,8 @@ Ordinary product policies are **not** automatically architectural ADRs. `domain-
 
 **Exit gate:** questions needed for V1 observable behavior are resolved; explicit deferrals and potential scope changes are identified; the **Product Owner explicitly confirms final shared understanding**. Individual round approvals do not themselves satisfy this final gate.
 
+**Reusable Codex prompt:** [Tech Lead `grill-with-docs` template](../templates/codex-grill-with-docs-technical-discovery.md) (fill for each external project after final PM gate).
+
 ## The Tech Lead interview: how should it be engineered?
 
 **Inputs:** the frozen PRD, approved product-policy contract, glossary, current project code/constraints and any existing ADRs. This is a **new** `grill-with-docs` interview with its own engineering design tree; do not continue the product question numbering as if engineering choices were product rules.
