@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPERSEDED** — Former Handbook pre-discovery product-scope draft. The MediaForge restart uses [Project Charter](../../../domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md). This file is not the current Final PRD and does not authorize engineering architecture.
+
 # P02 — MediaForge: Content Asset Processing Desk — Product Requirements
 
 **Domain:** D03 — Node.js Internals  
