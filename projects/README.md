@@ -1,5 +1,5 @@
 # Project catalog index
 
-Projects are listed under each domain at `domains/DXX-*/projects/catalog.md`. Approved project specifications live beside those catalogs. This top-level index tracks cross-domain duplication and links to separate local implementation repositories after they exist. **There are no approved PRDs yet.**
+Project Charters live alongside each domain's project catalog. D01–D03 contain 14 approved educational Charters. No Final PRD or Module Plan is authored within this handbook. Codex creates those in a separately selected implementation repository after Product Discovery and owner sign-off.
 
-See `coverage-matrix.md` for coverage tracking.
+See [coverage matrix](coverage-matrix.md) and [workflow](../docs/workflow.md).
