@@ -1,20 +1,13 @@
-# Project Charter — p05 subscriptionhub live event subscription console
+# Project Charter — P05 — SubscriptionHub: Live Event Subscription Console
 
-**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-charter.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
+**Domain:** D02  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
 
-# P05 — SubscriptionHub: Live Event Subscription Console — Project Direction
+> This Charter frames a useful product and authentic JavaScript/TypeScript learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
-**Domain:** D02 — JavaScript & TypeScript  
-**Status:** approved_by_learner  
-**Concept:** learner-approved on 2026-10-12  
-**project briefs approval:** learner-approved on 2026-10-12; open product decisions remain  
-**Implementation:** not started; no runtime, transport, persistence, framework or architecture selected
-**Editorial product boundary:** problem, users, in/out/deferred scope and essential observable behavior are learner-approved; incidental policies and numerical limits may remain open.
-**Matt/Codex kickoff:** choose necessary first-version details through the installed Matt Pocock skill workflow with explicit learner approval; preserve approved non-goals and obtain separate approval for any scope change before dependent technical design.
-
-
-
-## 1. Problem and motivation
+## Problem and motivation
 
 Operators responsible for event-driven business workflows need to know what their subscriptions are following, what happened while they were watching, and whether a disruption means an event was missed. When updates arrive in bursts or an observation is interrupted, a list of recent events alone can falsely suggest uninterrupted coverage. Repeated events may be mistaken for new work; missing events can go unnoticed; and pause or unsubscribe actions may be interpreted as stronger guarantees than the product can provide.
 
@@ -22,7 +15,9 @@ SubscriptionHub is a focused operational console for **defining subscriptions to
 
 
 
-## 2. Audience and actors
+
+
+## Audience and actors
 
 - **Subscriber/operator:** creates a subscription, defines category filters, observes incoming events, pauses/resumes or ends eligible subscriptions and investigates interruptions.
 - **Workspace manager:** configures permissions and reviews organization-level subscriptions and usage.
@@ -33,7 +28,9 @@ A human subscriber is a product user; the concept does not require direct intera
 
 
 
-## 3. Goals and measurable outcomes
+
+
+## Goals and measurable outcomes
 
 A user can reliably answer: **What am I subscribed to? Which events are visible? Is observation currently active? Was coverage interrupted? What evidence supports event order, gaps or duplicates? What can be recovered?**
 
@@ -43,28 +40,20 @@ Numeric targets for maximum concurrent subscriptions, event retention, event vis
 
 
 
-## 13. Explicit non-goals
+
+
+## Explicit non-goals
 
 Not a general event infrastructure platform, broker, provider integration framework, real-time collaboration engine, log analytics replacement, universal stream processor, message queue, monitoring system or notification marketing suite. No specific transport, framework, streaming API, runtime or hosting topology is selected or implied by this project briefs.
 
 
 
-## 14. D02 learning outcomes and project differentiation
-
-This product translates D02's **iterables, event abstractions, asynchronous composition, lifecycle cleanup, runtime data validation, discriminated unions, cancellation semantics and explicit failure states** into an operationally useful product. It forces precise distinctions between observed events, duplicate observations, ordering assumptions and unknowable gaps.
-
-It differs from P01 ContractGuard (data-contract compatibility), P02 DispatchDesk (outbound delivery attempts), P03 PolicyLens (business-rule decisions), P04 PackagePassport (release integration compatibility) and D01's data-processing and concurrency simulation products. Node-specific streams, event-loop implementation and host transport choices remain for later domains or independent implementation discovery.
 
 
+## Educational engineering challenge
 
-## 15. Approval record
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
 
-**Project concept:** learner-approved with the five D02 candidates on 2026-10-12.  
-**project briefs editorial review:** approved by learner on 2026-10-12; product questions remain open.  
-**Open product questions:** documented in Section 12.  
-**Study assessment, technical design and implementation:** not started.
+## Kickoff and owner approval
 
-
-## Workflow gate
-
-Codex conducts product discovery, consolidates the final PRD, prepares a reviewed module plan and works module-by-module: scoped technical grilling → to-spec → to-tickets → implement → verify. No library, infrastructure, architecture or technical approach is mandated by this Charter.
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
