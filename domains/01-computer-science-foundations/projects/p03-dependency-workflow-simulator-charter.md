@@ -11,31 +11,17 @@
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-
-
 ## Problem
 
 Users need to understand how tasks depend on one another, why some cannot start, and why cyclic dependencies make a plan invalid. This educational simulator models and explains workflows; it does not execute production jobs.
-
-
-
-
 
 ## Audience
 
 Workflow author defines tasks and prerequisites; operator advances simulations; reviewer studies validation, history and outcomes; observer reads exported reports.
 
-
-
-
-
 ## Goals
 
 Authors can create and validate a workflow. The product identifies missing references, self-dependencies and cycles. Users can see eligible, blocked, running and terminal tasks, understand blockers, explore more than one permitted order and export results that accurately preserve the run definition.
-
-
-
-
 
 ## Scope
 
@@ -45,25 +31,13 @@ Authors can create and validate a workflow. The product identifies missing refer
 
 **Deferred:** conditional branches, recurring schedules, nested workflows, task deadlines, collaborative editing and external event triggers.
 
-
-
-
-
 ## Explicit non-goals
 
 This is not a CI service, executable workflow engine, commercial task manager, distributed scheduler or production infrastructure monitor.
 
-
-
-
-
 ## Domain value
 
 Illustrates graph validity and order (D01 Chapters 03–05), transition invariants (12), liveness and cancellation (10–11) and the case-study workshop (13). Distinct from P01 performance comparisons, P02 capacity allocation and P04 large-dataset I/O.
-
-
-
-
 
 ## Educational engineering challenge
 
