@@ -40,3 +40,11 @@ All 48 lessons were inspected for legacy `-prd.md`, `project-prd.md`, or `two-ro
 - Examined all 48 lesson source files for references to removed files; no stale legacy target found.
 - Checked machine tracking for legacy active fields and replaced D03 `project_prds` with `project_charters`. Historical events remain historical even where wording reflects their old dates.
 - **Not claimed:** full revalidation of 48 lessons for factual correctness, running old educational samples again, full automated link/lint CI, or migration/deletion of the independent MediaForge repository.
+
+## Follow-up consistency review — 2026-10-14
+
+- Confirmed all 14 Charter links resolve from the three domain project catalogs (D01 four; D02 five; D03 five) and examined each Charter for learning intent and implementation handoff.
+- Found and corrected a concrete state inconsistency: `project_specs_status` had erroneously said **14** for *each* domain, even though fourteen is the **combined** count. It now states 4, 5 and 5 respectively.
+- Updated the tracking protocol to use the new Charter → Codex Product Discovery → approved Final PRD → Module Plan → current module sequence rather than the old PRD-path shortcut.
+- Annotated the historical MediaForge archive so old Tech Discovery instructions cannot be mistaken for the current workflow.
+- This review checks structural scope, documented responsibilities, selected links and metadata; it **does not independently verify every factual claim or execute every lesson**. An external `h3nrzi/mediaforge` repo reset remains a separate operation.
