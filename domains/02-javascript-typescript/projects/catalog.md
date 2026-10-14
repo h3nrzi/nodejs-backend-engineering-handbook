@@ -1,16 +1,18 @@
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+
 # D02 — JavaScript & TypeScript Project Catalog
 
 **Status:** content_complete_five_concepts_and_prds_approved
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** content-authoring complete. All five PRDs approved at product scope; unresolved product choices remain explicitly documented in each PRD.
+**Phase:** content-authoring complete. All five Charters approved at product scope; unresolved product choices remain explicitly documented in each PRD.
 
-### Approved product PRDs
+### Approved Project Charters
 
-1. [P01 — ContractGuard](p01-contractguard-api-data-contract-studio-prd.md)
-2. [P02 — DispatchDesk](p02-dispatchdesk-multi-recipient-delivery-operations-prd.md)
-3. [P03 — PolicyLens](p03-policylens-business-rule-decision-workspace-prd.md)
-4. [P04 — PackagePassport](p04-packagepassport-integration-compatibility-registry-prd.md)
-5. [P05 — SubscriptionHub](p05-subscriptionhub-live-event-subscription-console-prd.md)
+1. [P01 — ContractGuard](p01-contractguard-api-data-contract-studio-charter.md)
+2. [P02 — DispatchDesk](p02-dispatchdesk-multi-recipient-delivery-operations-charter.md)
+3. [P03 — PolicyLens](p03-policylens-business-rule-decision-workspace-charter.md)
+4. [P04 — PackagePassport](p04-packagepassport-integration-compatibility-registry-charter.md)
+5. [P05 — SubscriptionHub](p05-subscriptionhub-live-event-subscription-console-charter.md)
 **Scope rule:** specify product users, problems, essential capabilities and distinct learning coverage; do not select framework, storage, hosting, APIs, implementation architecture or code.
 
 ## Selection principle
@@ -111,6 +113,6 @@ Choose products that solve **different user problems**, not four variants of one
 
 ## Review gate
 
-All five concepts and all five individual PRDs are learner-approved at product scope; the D02 content-authoring gate is closed. The next handbook task is D03 curriculum planning and learner review. The approved PRDs cover actors, workflows, scope, non-goals, product invariants and acceptance criteria; necessary first-version product questions remain for learner-approved Matt/Codex discovery at the separate project kickoff. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
+All five concepts and all five individual PRDs are learner-approved at product scope; the D02 content-authoring gate is closed. The next handbook task is D03 curriculum planning and learner review. The approved Charters cover actors, workflows, scope, non-goals, product invariants and acceptance criteria; necessary first-version product questions remain for learner-approved Matt/Codex discovery at the separate project kickoff. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
 
-**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all five approved PRDs on 2026-10-12; no implementation evidence recorded.
+**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all five approved Charters on 2026-10-12; no implementation evidence recorded.
