@@ -316,3 +316,7 @@ Recorded the reusable [PM → Tech Lead `grill-with-docs` workflow](docs/two-rol
 ## 2026-10-14 — reusable Tech Lead discovery template
 
 Created [Technical Discovery Codex prompt template](templates/codex-grill-with-docs-technical-discovery.md) and linked it from [workflow](docs/workflow.md) and [MediaForge archive](projects/implementation-studies/d03-p02-mediaforge/README.md). Technical Discovery has not been run. MediaForge PM final shared-understanding sign-off must be documented before treating that gate as closed.
+
+## 2026-10-14 — MediaForge Technical Round 1
+
+Learner explicitly approved all nine Codex Technical Discovery recommendations T1–T9. [Educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-01-technical-discovery.md) retains full original questions/recommendations and distinct teaching notes. Codex local technical decision/ADR changes have not yet been verified. Product Discovery final gate reported closed by Codex.
