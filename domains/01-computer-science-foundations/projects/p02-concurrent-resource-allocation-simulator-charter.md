@@ -1,26 +1,19 @@
 # Project Charter — p02 concurrent resource allocation simulator
 
-**Status:** learner-approved project concept/educational direction from D01–D03 authoring; **no final V1 PRD has been produced**.  
-**Authority:** handbook educational intent and initial product boundary; the separate project Codex process owns Product Discovery, Final PRD and Module Plan.  
-**Migration:** adapted from the original learner-approved product-scope draft (preserved in repository history); the following sections are framing input, not an executable specification or frozen technical architecture.
+**Domain:** D01  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
+
+> This Charter frames a useful product and authentic computer-science foundations learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
 ## Learning mission and project constraints
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-## Historical project concept and source framing
-
-**Domain:** D01 — Computer Science Foundations  
-**Status:** approved_by_learner  
-**Product approval:** approved 2026-10-12  
-**Implementation:** not started  
-**Editorial approval scope:** the problem, target users, build/not-build boundaries and essential observable behavior are approved; open implementation-dependent product policies do not revoke that approval.
-**Decision timing:** resolve first-version blocking details with Codex through installed Matt Pocock skills at project kickoff; the learner approves consequential product choices and any scope change. No architecture/implementation is authorized by this initial project brief.
-**Boundary:** This document specifies user-visible product rules only; no algorithm, locking strategy, storage technology, queue, framework, or topology is prescribed.
 
 
-
-## 1. Problem and motivation
+## Problem and motivation
 
 Teams building reservations, ticket claims, limited inventory and other capacity-constrained workflows struggle to reason about simultaneous attempts, duplicate requests, cancellation, and uncertain outcomes. Demonstrations often highlight successful scenarios but hide the schedules that violate capacity guarantees.
 
@@ -30,7 +23,9 @@ The product is a **simulator**, not a real ticketing service or customer-facing 
 
 
 
-## 2. Target users and actors
+
+
+## Target users and actors
 
 - **Scenario author:** creates a capacity model and sets up allocation/cancellation scenarios.
 - **Operator:** starts, interrupts or repeats simulations.
@@ -41,7 +36,9 @@ Version 1 does not require separate organizational permissions or public account
 
 
 
-## 3. Goals and measurable product outcomes
+
+
+## Goals and measurable product outcomes
 
 1. A reviewer can determine exactly what capacity and contention conditions were simulated.
 2. Each attempt produces an attributable result or an explicitly unresolved status; no attempt silently disappears from the report.
@@ -52,7 +49,9 @@ Version 1 does not require separate organizational permissions or public account
 
 
 
-## 4. Scope
+
+
+## Scope
 
 ### In scope — initial version
 
@@ -84,13 +83,17 @@ Version 1 does not require separate organizational permissions or public account
 
 
 
-## 12. Explicit non-goals
+
+
+## Explicit non-goals
 
 The app is not a commerce platform, inventory ERP, payment gateway, production concurrency-testing service, external distributed lock manager or full reservation marketplace.
 
 
 
-## 13. Domain learning relevance
+
+
+## Domain learning relevance
 
 - Chapter 01: correctness and measurement.
 - Chapters 02–05: modeling attempts, counters and logical properties.
@@ -104,14 +107,12 @@ Distinct from P01 performance methodology, P03 graph workflow planning and P04 b
 
 
 
-## 14. Approval record
-
-- Draft authored 2026-10-12.
-- **Learner product approval:** confirmed 2026-10-12; open product questions remain for later resolution.
-- **Architecture and implementation:** not started.
-- **Next for this project:** clarify essential first-version policies when implementation begins through Matt-guided discovery, with learner approval. Its initial project brief has already received editorial approval; no code or architecture work has started.
 
 
-## Implementation kickoff gate
+## Educational engineering challenge
 
-When selected, hand this Charter to Codex. Codex must produce `product-discovery.md`, then an owner-approved `final-charter.md`, then an owner-approved `module-plan.md`. Technical discovery is **scoped to the current module** and feeds `to-spec` → `to-tickets` → implementation → verified module acceptance. No code or product implementation is claimed by this Charter.
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
+
+## Kickoff and owner approval
+
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
