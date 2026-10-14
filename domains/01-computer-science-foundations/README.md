@@ -1,7 +1,9 @@
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+
 # D01 — Computer Science Foundations
 
 **Lesson-authoring status:** complete, all 14 chapters learner-approved (editorial approval only).  
-**Project PRDs:** P01–P04 approved at product-scope level; product questions and limits remain open.  
+**Project Charters:** P01–P04 approved at product-scope level; product questions and limits remain open.  
 **Learning assessments:** deferred until the learner explicitly starts the learning phase.  
 **Implementation:** not started.  
 **Next authoring focus:** D03 — Node.js Internals curriculum planning; D01 and D02 content authoring is complete.
@@ -33,10 +35,10 @@ Chapter 14's practical assessment has **not** been attempted or graded; its edit
 
 See [catalog and differentiation](projects/catalog.md).
 
-- [P01 — Workload & Complexity Observatory](projects/p01-workload-complexity-observatory-prd.md) — approved
-- [P02 — Concurrent Resource Allocation Simulator](projects/p02-concurrent-resource-allocation-simulator-prd.md) — approved
-- [P03 — Dependency Workflow Simulator](projects/p03-dependency-workflow-simulator-prd.md) — approved
-- [P04 — Large Dataset Processing Workspace](projects/p04-large-dataset-processing-workspace-prd.md) — approved
+- [P01 — Workload & Complexity Observatory](projects/p01-workload-complexity-observatory-charter.md) — approved
+- [P02 — Concurrent Resource Allocation Simulator](projects/p02-concurrent-resource-allocation-simulator-charter.md) — approved
+- [P03 — Dependency Workflow Simulator](projects/p03-dependency-workflow-simulator-charter.md) — approved
+- [P04 — Large Dataset Processing Workspace](projects/p04-large-dataset-processing-workspace-charter.md) — approved
 
 Approvals cover the product direction and documented requirements, not resolution of every open product question. No implementation project or technology has been selected.
 
