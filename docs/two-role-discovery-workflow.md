@@ -60,7 +60,7 @@ Ordinary product policies are **not** automatically architectural ADRs. `domain-
 
 For each project, use `projects/implementation-studies/<id>/` to retain a linked approved PRD copy and **round-specific educational explanations** (original Codex question verbatim; its complete proposed answer; learner-approved answer when evidenced; alternatives and trade-offs; examples). For engineering rounds, link actual ADRs in the external implementation repository instead of copying/pretending they were approved.
 
-The handbook must not become a second authoritative engineering repository. The external project owns policy decisions, technical design, ADRs, specs, tickets and code. After each documented learning round, the guide gives a **bespoke NotebookLM video prompt in the conversation**, after learner approval, without storing generic NotebookLM templates.
+The handbook must not become a second authoritative engineering repository. The external project owns policy decisions, technical design, ADRs, specs, tickets and code. For NotebookLM use the **single reusable** [round video prompt template](../templates/notebooklm-round-video-prompt.md) with the approved PRD and that round's dossier; no fresh per-round prompt is required.
 
 ## MediaForge — worked example and current boundary
 
