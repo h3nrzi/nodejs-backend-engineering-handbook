@@ -2,10 +2,6 @@
 
 **Status:** 48/48 D01–D03 lesson mappings approved editorially; **14/14 educational Project Charters approved by learner** (nine D01/D02 + five D03); no learner competency assessment or product implementation.  
 
-**Workflow V2 migration (2026-10-14):** Linked former Charter draft filenames now point to 14 Charter files. Prior Charter coverage assessments are historical product-challenge mappings, **not evidence of completed Final PRDs**. MediaForge implementation reset to zero; prior interview decisions are educational archive only.
-**Reviewed:** 2026-10-13 against all 14 approved Charters, D01–D03 indexes/catalogs, 48 chapter-level mappings, workflow and canonical state. Historic 2026-10-12 audit remains a baseline, not a current 14-Charter audit.  
-**Baseline:** `48f227313e52a85246c0a65e1acbea3f511a1d0b`.  
-**Audit:** [Coverage reconciliation report](../docs/coverage-matrix-audit-2026-10-12.md).
 
 ## Interpretation and authority
 
