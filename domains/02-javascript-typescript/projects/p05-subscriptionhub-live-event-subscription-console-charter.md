@@ -1,8 +1,8 @@
 # Project Charter — p05 subscriptionhub live event subscription console
 
-**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-prd.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
+**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-charter.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
 
-# P05 — SubscriptionHub: Live Event Subscription Console — Product Requirements
+# P05 — SubscriptionHub: Live Event Subscription Console — Project Direction
 
 **Domain:** D02 — JavaScript & TypeScript  
 **Status:** approved_by_learner  
