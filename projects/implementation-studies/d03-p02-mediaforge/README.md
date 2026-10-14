@@ -3,7 +3,7 @@
 **Domain/project:** D03/P02 — MediaForge: Content Asset Processing Desk  
 **Implementation repository:** https://github.com/h3nrzi/mediaforge  
 **Handbook's approved source PRD:** [Canonical D03-P02 PRD](../../../domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md)  
-**Status:** project chosen and skills configured; Round 1 approvals reported by Codex as recorded in the local discovery document; Round 2 Q14–Q28 approved by product owner; external Codex documentation update pending. No architecture ADR or implementation claimed.
+**Status:** All 59 V1 product decisions approved and committed to the external MediaForge repository; final shared-understanding confirmation **pending**. No architecture, ADR, implementation tickets, or application code.
 
 ## Files
 
@@ -18,3 +18,12 @@
 After each Codex round and explicit learner review, add a numbered educational document here with traceable question texts, approvals, rationale, alternatives, downstream dependencies, and links to **actual** ADRs in the implementation repo when they exist. Do not fabricate ADRs. The assistant supplies a bespoke NotebookLM video prompt in the conversation **after** preparing each round's educational dossier; prompts are not stored as templates.
 
 **Boundary:** This archive teaches product/engineering reasoning. The implementation repository retains live V1 decisions, technical design, code and ADRs. The handbook PRD is not rewritten to match local technology decisions.
+
+## Verified consolidated discovery source
+
+- [V1 product policies](https://github.com/h3nrzi/mediaforge/blob/main/docs/product/v1-product-policies.md): approved Q1–Q59 policy contract, awaiting final shared-understanding confirmation.
+- [V1 discovery decision record](https://github.com/h3nrzi/mediaforge/blob/main/docs/product/v1-product-discovery.md): four approved rounds and empty product frontier.
+- [Domain glossary](https://github.com/h3nrzi/mediaforge/blob/main/GLOSSARY.md): product vocabulary.
+- [Pushed commit](https://github.com/h3nrzi/mediaforge/commit/4f4e36c).
+
+No technical discovery should begin automatically merely from the push. The product owner must explicitly confirm the final shared understanding.
