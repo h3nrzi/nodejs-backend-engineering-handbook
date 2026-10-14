@@ -1,28 +1,20 @@
 # Handbook Progress — Workflow V2
 
-**Updated:** 2026-10-14
-**Phase:** Workflow V2 migration complete for D01–D03 educational authoring; implementation restart pending.
-**Canonical tracking:** [tracking/state.json](tracking/state.json)
+**Updated:** 2026-10-14  
+**Phase:** D01–D03 educational content approved; D04 next.  
+**Canonical state:** [tracking/state.json](tracking/state.json)
 
-## Domain authoring state
+## Domain status
 
-- **D01:** 14 learner-approved chapters; four learner-approved educational Project Charters; implementations and assessments not started.
-- **D02:** 16 learner-approved chapters; five learner-approved educational Project Charters; implementations and assessments not started.
-- **D03:** 18 learner-approved chapters; five learner-approved educational Project Charters; implementations and assessments not started.
-- **D04 onward:** not started; curriculum work resumes separately.
+- **D01:** 14 approved lessons and 4 approved educational Project Charters.
+- **D02:** 16 approved lessons and 5 approved educational Project Charters.
+- **D03:** 18 approved lessons and 5 approved educational Project Charters.
+- **D04–D16:** not started.
 
-## MediaForge reset — D03/P02
+**Implementations:** All project implementations, including D03/P02 MediaForge, are `not_started` (0%). No implementation or learner competency verification is claimed.
 
-**Implementation progress: 0 / not_started.** MediaForge is an eligible Charter, not an ongoing implementation. Fresh Codex kickoff must produce new owner-approved Product Discovery → Final PRD → Module Plan; then module-scoped technical discovery, spec, tickets, code, acceptance. Past 59 product questions and 102 technical questions are **historical educational reference only**, not active approvals or mandated architecture for the restarted project. Old ADRs and notes remain in the external repo until independently reviewed. No Round 7.
+## Active workflow
 
-## Workflow
+[Workflow V2](docs/workflow.md) · [Module ownership and gates](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
 
-[Module-driven Workflow V2](docs/workflow.md) · [Ownership and gates](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
-
-## Historical tracker
-
-Previous tracker material is retained in Git history; its outdated kickoff claims were replaced rather than presented as current state.
-
-## Migration evidence
-
-[2026-10-14 Workflow V2 structural migration audit](docs/workflow-v2-migration-audit-2026-10-14.md) — 48 lessons, 14 educational Charters, zero active MediaForge implementation. Prior interviews remain historical only.
+When starting any project, import its approved Charter into a separate Codex repository. Codex authors Product Discovery → approved Final PRD → approved Module Plan; then develops modules individually using technical discovery → spec → tickets → implementation → verification.
