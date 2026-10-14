@@ -13,10 +13,6 @@ Teams adopting shared software packages often rely on version labels, type decla
 
 PackagePassport is a product-facing registry for documenting releases, their public integration contracts, supported environments and evidence-backed compatibility scenarios. It makes discrepancies visible without pretending to compile, execute or resolve packages itself.
 
-
-
-
-
 ## Target users and actors
 
 - **Package maintainer:** registers an owned package, proposes release records, documents public exports and compatibility claims.
@@ -27,10 +23,6 @@ PackagePassport is a product-facing registry for documenting releases, their pub
 
 Roles are requirements for permissions and accountability, not a prescribed identity or technical access-control implementation.
 
-
-
-
-
 ## Goals and product-level success measures
 
 An integrator should be able to answer four questions: **What does this release claim to expose? Which environments are claimed to be supported? What has actually been observed in relevant scenarios? What changed compared with the previous release?**
@@ -38,10 +30,6 @@ An integrator should be able to answer four questions: **What does this release 
 For every displayed compatibility status, the product identifies its basis: declared support, observed scenario evidence or insufficient information. The registry must not equate missing evidence with proof of incompatibility or label type-level compatibility as guaranteed execution success.
 
 Measures for product acceptance: versioned release records retain stable meanings; the same criteria yield consistent compatibility labels; conflicting claims and observations are visibly distinguishable; changes to public contract fields are traceable between selected releases. Numeric targets for catalog size, response times and retention remain unresolved.
-
-
-
-
 
 ## Scope: in, deferred and out
 
@@ -51,17 +39,9 @@ Measures for product acceptance: versioned release records retain stable meaning
 
 **Out of scope:** hosting packages, installing dependencies, resolving dependency trees, executing arbitrary submitted code, building or compiling packages, running a test farm, replacing continuous integration, implementing a Node.js loader, guaranteeing runtime safety or making deployment decisions on behalf of a consumer.
 
-
-
-
-
 ## Explicit non-goals
 
 Not a package manager, lockfile analyzer, dependency resolver, build/compile service, CI platform, code runner, live runtime diagnostics tool, security scanner or software supply-chain attestation authority. Registration does not certify a release as authentic, safe, compatible or production-ready.
-
-
-
-
 
 ## Educational engineering challenge
 
