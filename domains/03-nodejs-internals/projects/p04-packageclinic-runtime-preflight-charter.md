@@ -1,26 +1,21 @@
-# Project Charter — p04-packageclinic-runtime-preflight
+# Project Charter — P04 — PackageClinic: Runtime Integration Preflight Desk
 
-**Status:** Learner-approved project direction for Domain 03; Final PRD NOT CREATED. No current implementation started. Historical detailed scope draft remains recoverable from git history.
+**Domain:** D03  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
 
-**Primary purpose:** build a useful product that challenges Node.js runtime fundamentals: event-loop responsiveness, asynchronous I/O, streams/backpressure, filesystem/resource ownership, process isolation, controlled cancellation and diagnostic evidence. These are learning challenges, NOT predetermined implementations.
+> This Charter frames a useful product and authentic Node.js runtime learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
-# P04 — PackageClinic: Runtime Integration Preflight Desk — Project Direction
-
-**Domain:** D03 — Node.js Internals  
-**Status:** approved_by_learner — product scope approved explicitly with five-project briefs batch on 2026-10-13  
-**Concept:** learner-approved in five-item D03 catalog, 2026-10-13  
-**project briefs approval:** explicit learner approval on 2026-10-13; technical implementation not started  
-**Learning assessments / implementation:** deferred / not_started
-
-
-
-## 1. Problem and motivation
+## Problem and motivation
 
 A release can advertise compatible types or documented exports while actual Node entry points fail for the consumer's runtime due to package-scope interpretation, missing ESM extensions, export conditions or startup-time errors. **PackageClinic** helps an authorized package team **exercise a small catalog of trusted, explicitly approved integration scenarios** and record their reproducible outcomes. This is execution-backed preflight evidence, not a registry of asserted compatibility or a public code-execution platform.
 
 
 
-## 2. Audience and actors
+
+
+## Audience and actors
 
 - **Package maintainer:** registers the release and a trusted compatibility case that they are authorized to test.
 - **Consumer integrator:** selects supported consumer expectations, reviews test result and release comparison.
@@ -31,7 +26,9 @@ Actors describe product responsibility and visibility, not a mandated identity i
 
 
 
-## 3. Goals and measurable outcomes
+
+
+## Goals and measurable outcomes
 
 For an explicitly supported scenario and target Node runtime, a team can see whether **a real approved execution** passed or failed, with its environment, entry, observed error/outcome and bounded evidence. Results are reproducible enough for an engineer to investigate, and unsupported runtime combinations are never labeled compatible. No security isolation or cross-platform guarantee is assumed.
 
@@ -39,7 +36,9 @@ Evidence for these goals is the externally observable workflow and acceptance te
 
 
 
-## 4. Product boundary: in / out / deferred
+
+
+## Product boundary: in / out / deferred
 
 **In scope for V1:**
 - Register a package/release reference and consumer entry/scenario with stable identifiers and declared provenance.
@@ -65,7 +64,9 @@ The product boundary is the approval target. Supporting technical mechanisms rem
 
 
 
-## 12. Explicit non-goals
+
+
+## Explicit non-goals
 
 Not a general-purpose sandbox, remote code execution service, registry clone, full CI platform or security certification. **Untrusted code execution is explicitly out of V1**.
 
@@ -73,7 +74,9 @@ The handbook must not become an implementation repository, nor select its backen
 
 
 
-## 13. Domain learning outcomes and why this project is valuable
+
+
+## Domain learning outcomes and why this project is valuable
 
 **Possible D03 learning coverage:** D03-C02, C05, C11–C13, C14, C16–C18 (runtime identity, module resolution, process isolation challenges, failures, diagnostics).
 
@@ -83,17 +86,12 @@ Learning coverage is a **planned educational challenge**, not a guarantee that i
 
 
 
-## 14. Approval record
-
-- **2026-10-13 — concept approval:** user approved all five ideas in the D03 candidate catalog.
-- **2026-10-13 — project briefs author review:** authored as part of a five-project briefs batch using the approved concept, `templates/project-charter.md` and `docs/quality-gates.md`; status **in_review**.
-- **2026-10-13 — project briefs approval:** learner explicitly approved all five project briefs as one batch; this product's scope and externally observable requirements are approved. Later detailed policies remain open for learner-led discovery.
-- **Not started:** any learner study assessment, code, integration test, implementation repository work or technical ADR.
-- **Later selected-project kickoff:** resolve necessary first-version product details using installed Matt Pocock skills and learner confirmation before technical design; require explicit approval for any changes to problem, audience, capabilities or in/out scope.
-
-**Next gate:** reconcile global Coverage Matrix, domain indexes and both trackers, then close the D03 content-authoring gate following the five-project briefs batch approval. No D04 authoring or product implementation is started by this draft.
 
 
-## Implementation kickoff gate
+## Educational engineering challenge
 
-The independent-project Codex process must create and obtain explicit owner approval for `product-discovery.md`, then `final-charter.md`, then `module-plan.md`. Each approved module uses module-scoped technical discovery → to-spec → to-tickets → implementation → verification. Product scope cannot be expanded to force any Node.js mechanism.
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
+
+## Kickoff and owner approval
+
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
