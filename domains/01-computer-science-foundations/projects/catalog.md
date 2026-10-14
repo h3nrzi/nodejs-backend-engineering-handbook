@@ -1,3 +1,5 @@
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+
 # D01 — Project candidate catalog
 
 **Status:** Four differentiated product concepts; P01–P04 PRDs learner-approved at product-scope level. Open product decisions remain; no implementations started.
@@ -6,7 +8,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P01 — Workload & Complexity Observatory
 
-**Approved PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-prd.md) — learner-approved; unresolved product thresholds retained.
+**Approved PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-charter.md) — learner-approved; unresolved product thresholds retained.
 
 - **Problem:** learners and engineering teams make data-structure and algorithm choices without understanding how performance changes as workloads grow.
 - **Users:** backend learners and developers analyzing workload trade-offs.
@@ -19,7 +21,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P02 — Concurrent Resource Allocation Simulator
 
-**Approved PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-prd.md) — learner-approved; product thresholds remain open.
+**Approved PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-charter.md) — learner-approved; product thresholds remain open.
 
 - **Problem:** concurrent claims on limited resources can cause invalid allocations or inconsistent outcomes.
 - **Users:** students and developers designing capacity-limited products such as ticket sales or reservations.
@@ -32,7 +34,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P03 — Dependency Workflow Simulator
 
-**Approved PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-prd.md) — learner-approved; open product questions remain.
+**Approved PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-charter.md) — learner-approved; open product questions remain.
 
 - **Problem:** complex activities depend on other activities; cycles and invalid transitions can make plans impossible to execute correctly.
 - **Users:** platform developers, engineering trainees, operations teams modeling workflows.
@@ -45,7 +47,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P04 — Large Dataset Processing Workspace
 
-**Approved PRD:** [Large Dataset Processing Workspace](p04-large-dataset-processing-workspace-prd.md) — learner-approved; open product questions remain.
+**Approved PRD:** [Large Dataset Processing Workspace](p04-large-dataset-processing-workspace-charter.md) — learner-approved; open product questions remain.
 
 - **Problem:** teams need to process datasets bigger than available memory while retaining verifiable and recoverable results.
 - **Users:** data operations and backend developers processing large exports/imports.
@@ -59,7 +61,7 @@ These are distinct product ideas with observable goals and target learning cover
 ## Selection and overlap check
 
 - These four **candidates**, not commitments, cover different strengths: performance evaluation, concurrency correctness, graph/state reasoning and resource-limited I/O.
-- All four PRDs specify observable behavior, requirements and acceptance criteria without selecting technical solutions. Some product thresholds and details are still open.
+- All four Charters specify observable behavior, requirements and acceptance criteria without selecting technical solutions. Some product thresholds and details are still open.
 - Check overlaps with D03 Node.js Internals, D07 Database Engineering and D10 Distributed Systems at selection time. No need to build all four.
 
 ## Portfolio differentiation review (2026-10-12)
@@ -69,6 +71,6 @@ These are distinct product ideas with observable goals and target learning cover
 - P03: graph validity and explainable workflow states; avoid distributed orchestration scope.
 - P04: bounded resource use, I/O integrity and interrupted work; avoid a general ETL platform.
 
-All four PRDs are learner-approved for product scope, but the projects remain optional portfolio candidates. No implementation was selected or started. Necessary first-version product questions and limits are resolved with installed Matt Pocock skills and Codex at the selected project’s kickoff, with learner approval before dependent technical work. Safely deferred questions may remain open. Study assessments are deferred until the learner explicitly begins studying.
+All four Charters are learner-approved for product scope, but the projects remain optional portfolio candidates. No implementation was selected or started. Necessary first-version product questions and limits are resolved with installed Matt Pocock skills and Codex at the selected project’s kickoff, with learner approval before dependent technical work. Safely deferred questions may remain open. Study assessments are deferred until the learner explicitly begins studying.
 
-**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all four approved PRDs on 2026-10-12; no implementation evidence recorded.
+**Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all four approved Charters on 2026-10-12; no implementation evidence recorded.
