@@ -11,10 +11,6 @@
 
 A release can advertise compatible types or documented exports while actual Node entry points fail for the consumer's runtime due to package-scope interpretation, missing ESM extensions, export conditions or startup-time errors. **PackageClinic** helps an authorized package team **exercise a small catalog of trusted, explicitly approved integration scenarios** and record their reproducible outcomes. This is execution-backed preflight evidence, not a registry of asserted compatibility or a public code-execution platform.
 
-
-
-
-
 ## Audience and actors
 
 - **Package maintainer:** registers the release and a trusted compatibility case that they are authorized to test.
@@ -24,19 +20,11 @@ A release can advertise compatible types or documented exports while actual Node
 
 Actors describe product responsibility and visibility, not a mandated identity implementation.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 For an explicitly supported scenario and target Node runtime, a team can see whether **a real approved execution** passed or failed, with its environment, entry, observed error/outcome and bounded evidence. Results are reproducible enough for an engineer to investigate, and unsupported runtime combinations are never labeled compatible. No security isolation or cross-platform guarantee is assumed.
 
 Evidence for these goals is the externally observable workflow and acceptance tests, **not** invented throughput, operational SLOs or deployed service results.
-
-
-
-
 
 ## Product boundary: in / out / deferred
 
@@ -62,19 +50,11 @@ Evidence for these goals is the externally observable workflow and acceptance te
 
 The product boundary is the approval target. Supporting technical mechanisms remain open and no project briefs sentence mandates a runtime topology or library.
 
-
-
-
-
 ## Explicit non-goals
 
 Not a general-purpose sandbox, remote code execution service, registry clone, full CI platform or security certification. **Untrusted code execution is explicitly out of V1**.
 
 The handbook must not become an implementation repository, nor select its backend stack, database, deployment, communication protocol, workers, brokers, algorithms or vendor products.
-
-
-
-
 
 ## Domain learning outcomes and why this project is valuable
 
@@ -83,10 +63,6 @@ The handbook must not become an implementation repository, nor select its backen
 **Distinctness and portfolio rationale:** Unlike D02 PackagePassport (cataloging declared compatibility), PackageClinic provides **bounded actual results of trusted execution cases**; unlike P03 NodeScope it validates package entry behavior, not historical incident metrics.
 
 Learning coverage is a **planned educational challenge**, not a guarantee that implementation must use a specific technique, nor proof of an assessed skill.
-
-
-
-
 
 ## Educational engineering challenge
 
