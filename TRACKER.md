@@ -312,3 +312,7 @@ Learner explicitly approved all recommended Codex Q47–Q59 decisions (Yes on al
 ## 2026-10-14 — MediaForge two-role discovery handoff
 
 Recorded the reusable [PM → Tech Lead `grill-with-docs` workflow](docs/two-role-discovery-workflow.md) in this handbook and linked it from [the main workflow](docs/workflow.md) and [MediaForge learning archive](projects/implementation-studies/d03-p02-mediaforge/README.md). PM discovery produced 59 approved product rules and product documentation; Tech Lead discovery will separately determine architecture and qualifying ADRs after explicit final PM sign-off. No implementation or architecture decision is claimed.
+
+## 2026-10-14 — reusable Tech Lead discovery template
+
+Created [Technical Discovery Codex prompt template](templates/codex-grill-with-docs-technical-discovery.md) and linked it from [workflow](docs/workflow.md) and [MediaForge archive](projects/implementation-studies/d03-p02-mediaforge/README.md). Technical Discovery has not been run. MediaForge PM final shared-understanding sign-off must be documented before treating that gate as closed.
