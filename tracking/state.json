@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "updated_on": "2026-10-14",
-  "phase": "repository_infrastructure",
-  "review": "workflow_v2_migration_in_progress",
-  "active_domain_id": "D03",
+  "phase": "domain_authoring",
+  "review": "workflow_v2_active",
+  "active_domain_id": null,
   "next_domain_id": "D04",
   "active_deliverable": "Handbook Workflow V2 migration; D01–D03 lessons and 14 project Charters preserved",
   "last_completed_step": "Migrated D01–D03 project directions to 14 educational Charters and introduced Codex-owned Final PRD/Module Plan workflow.",
@@ -363,48 +363,6 @@
       "project_catalog_candidate_count": 5,
       "project_catalog_approved_candidate_count": 5,
       "project_catalog_approved_on": "2026-10-13",
-      "project_prds": [
-        {
-          "id": "P01",
-          "status": "approved_by_learner",
-          "path": "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
-          "concept_status": "approved_by_learner",
-          "implementation_status": "not_started",
-          "approved_on": "2026-10-13"
-        },
-        {
-          "id": "P02",
-          "status": "approved_by_learner",
-          "path": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
-          "concept_status": "approved_by_learner",
-          "implementation_status": "not_started",
-          "approved_on": "2026-10-13"
-        },
-        {
-          "id": "P03",
-          "status": "approved_by_learner",
-          "path": "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
-          "concept_status": "approved_by_learner",
-          "implementation_status": "not_started",
-          "approved_on": "2026-10-13"
-        },
-        {
-          "id": "P04",
-          "status": "approved_by_learner",
-          "path": "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
-          "concept_status": "approved_by_learner",
-          "implementation_status": "not_started",
-          "approved_on": "2026-10-13"
-        },
-        {
-          "id": "P05",
-          "status": "approved_by_learner",
-          "path": "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
-          "concept_status": "approved_by_learner",
-          "implementation_status": "not_started",
-          "approved_on": "2026-10-13"
-        }
-      ],
       "project_prds_authored_count": 5,
       "project_prds_in_review_count": 0,
       "project_prds_approved_count": 5,
@@ -415,7 +373,49 @@
         "P04": "charter_approved_implementation_not_started",
         "P05": "charter_approved_implementation_not_started"
       },
-      "content_authoring_completed_on": "2026-10-13"
+      "content_authoring_completed_on": "2026-10-13",
+      "project_charters": [
+        {
+          "id": "P01",
+          "status": "approved_educational_charter_not_final_prd",
+          "path": "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-13"
+        },
+        {
+          "id": "P02",
+          "status": "approved_educational_charter_not_final_prd",
+          "path": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-13"
+        },
+        {
+          "id": "P03",
+          "status": "approved_educational_charter_not_final_prd",
+          "path": "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-13"
+        },
+        {
+          "id": "P04",
+          "status": "approved_educational_charter_not_final_prd",
+          "path": "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-13"
+        },
+        {
+          "id": "P05",
+          "status": "approved_educational_charter_not_final_prd",
+          "path": "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-13"
+        }
+      ]
     },
     {
       "id": "D04",
@@ -688,23 +688,23 @@
       "event": "Reviewed four D01 candidate projects; drafted P01 behavior-only PRD pending learner approval; study assessments deferred",
       "evidence": [
         "domains/01-computer-science-foundations/projects/catalog.md",
-        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md"
+        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-charter.md"
       ]
     },
     {
       "date": "2026-10-12",
       "event": "Learner approved P01 PRD; P02 Concurrent Resource Allocation Simulator PRD drafted pending learner review",
       "evidence": [
-        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-prd.md",
-        "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md"
+        "domains/01-computer-science-foundations/projects/p01-workload-complexity-observatory-charter.md",
+        "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-charter.md"
       ]
     },
     {
       "date": "2026-10-12",
       "event": "Learner approved P02; P03 PRD drafted pending review",
       "evidence": [
-        "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-prd.md",
-        "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md"
+        "domains/01-computer-science-foundations/projects/p02-concurrent-resource-allocation-simulator-charter.md",
+        "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-charter.md"
       ]
     },
     {
@@ -712,7 +712,7 @@
       "event": "Reconciled D01 statuses: 14 approved chapters and 4 product-scope approved PRDs; assessments deferred, technical implementations not started",
       "evidence": [
         "domains/01-computer-science-foundations/projects/catalog.md",
-        "domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-prd.md"
+        "domains/01-computer-science-foundations/projects/p04-large-dataset-processing-workspace-charter.md"
       ]
     },
     {
@@ -758,8 +758,8 @@
       "date": "2026-10-12",
       "event": "Learner approved D02 P04 PackagePassport product PRD; P05 SubscriptionHub PRD drafted for editorial review; technical implementation and assessments deferred",
       "evidence": [
-        "domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-prd.md",
-        "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md"
+        "domains/02-javascript-typescript/projects/p04-packagepassport-integration-compatibility-registry-charter.md",
+        "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-charter.md"
       ]
     },
     {
@@ -768,7 +768,7 @@
       "evidence": [
         "domains/02-javascript-typescript/README.md",
         "domains/02-javascript-typescript/projects/catalog.md",
-        "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-prd.md"
+        "domains/02-javascript-typescript/projects/p05-subscriptionhub-live-event-subscription-console-charter.md"
       ]
     },
     {
@@ -778,7 +778,7 @@
         "docs/workflow.md",
         "AGENTS.md",
         "docs/quality-gates.md",
-        "templates/project-prd.md"
+        "templates/project-charter.md"
       ]
     },
     {
@@ -803,7 +803,7 @@
         "domains/02-javascript-typescript/projects/catalog.md",
         "domains/01-computer-science-foundations/README.md",
         "docs/prd-scope-alignment-audit-2026-10-12.md",
-        "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-prd.md",
+        "domains/01-computer-science-foundations/projects/p03-dependency-workflow-simulator-charter.md",
         "docs/coverage-matrix-audit-2026-10-12.md"
       ]
     },
@@ -1104,11 +1104,11 @@
       "approval_source": "Current user message: تایید. حالا prd هر ۵ تا پروژه رو باهم بنویس ک یجا باهم تایید کنم",
       "evidence": [
         "domains/03-nodejs-internals/projects/catalog.md",
-        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
-        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
-        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
-        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
-        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
+        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
+        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
+        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
+        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
         "tracking/state.json",
         "TRACKER.md",
         "projects/coverage-matrix.md",
@@ -1126,11 +1126,11 @@
         "projects/coverage-matrix.md",
         "TRACKER.md",
         "domains/03-nodejs-internals/projects/catalog.md",
-        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
-        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
-        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
-        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
-        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
+        "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
+        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+        "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
+        "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
+        "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
         "domains/03-nodejs-internals/README.md",
         "domains/03-nodejs-internals/curriculum.md",
         "README.md",
@@ -1141,7 +1141,7 @@
       "date": "2026-10-13",
       "event": "User selected D03-P02 MediaForge for external implementation pilot to improve handbook Matt Pocock/Codex workflow; kickoff pending external repo; no architecture/code selected.",
       "evidence": [
-        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
+        "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
         "projects/coverage-matrix.md"
       ]
     },
@@ -1219,7 +1219,7 @@
       "date": "2026-10-14",
       "event": "Corrected central repository: documented reusable PM-vs-Tech-Lead two-role grill-with-docs workflow in nodejs-backend-engineering-handbook, not just ai-product-engineering-playbook. Linked main workflow, MediaForge learning archive and README; no product sign-off or technical discovery falsely claimed.",
       "evidence": [
-        "docs/two-role-discovery-workflow.md",
+        "docs/module-driven-engineering.md",
         "docs/workflow.md",
         "projects/implementation-studies/d03-p02-mediaforge/README.md"
       ]
@@ -1300,7 +1300,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-13",
-    "status": "reviewed_no_mapping_change_mediaforge_repository_setup_only",
+    "status": "workflow_v2_charter_reclassification_reviewed_no_implementation_evidence",
     "path": "projects/coverage-matrix.md",
     "report": "docs/coverage-matrix-audit-2026-10-12.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
@@ -1311,16 +1311,16 @@
     ],
     "prd_count": 14,
     "chapter_mapping_count": 48,
-    "implementation_evidence": "Only repository and agent-skills setup committed at h3nrzi/mediaforge@91bcfca; no application code or product verification.",
+    "implementation_evidence": "MediaForge pilot repo previously existed but its implementation progress was explicitly reset to zero for fresh Codex kickoff; historical setup/decisions are archived only.",
     "assessment": "deferred",
-    "required_after": "Any project/catalog/PRD mutation, mapped lesson change, domain closure or implementation evidence update; update matrix and both trackers in same change or record dated evidence-backed no-change review.",
+    "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
     "latest_review_evidence": [
       "domains/03-nodejs-internals/projects/catalog.md",
-      "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-prd.md",
-      "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md",
-      "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-prd.md",
-      "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-prd.md",
-      "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-prd.md",
+      "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
+      "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+      "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
+      "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
+      "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
       "projects/coverage-matrix.md",
       "TRACKER.md",
       "domains/03-nodejs-internals/README.md",
