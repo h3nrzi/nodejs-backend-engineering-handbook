@@ -1,17 +1,17 @@
-> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation Charters were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
 
 # D03 — Node.js Internals Project Candidate Catalog
 
-**Status:** `approved_by_learner` — all five distinct product concepts explicitly approved on 2026-10-13; no implementation project selected.
+**Status:** `approved_by_learner` — all five distinct product concepts explicitly approved on 2026-10-13; no active implementation project.
 **Prerequisite:** all 18 D03 lesson chapters are `approved_by_learner` editorially; education is not assessed mastery.
-**Phase:** catalog and **all five individual Project Charters approved_by_learner** (batch approval 2026-10-13). No portfolio project selected; implementation and learner study assessments not_started/deferred.
+**Phase:** catalog and **all five individual Project Charters approved_by_learner** (batch approval 2026-10-13). No active implementation after learner-requested MediaForge reset; implementation and learner study assessments not_started/deferred.
 **Authority:** [D03 curriculum](../curriculum.md) · [Coverage Matrix](../../../projects/coverage-matrix.md) · [Workflow](../../../docs/workflow.md).
 
 ## Purpose and selection rule
 
 Propose **real products solving different problems** that could make Node.js runtime mechanisms consequential to a backend engineer. A product is worth its own candidate only if it has a clear target user, observable user journey, independent value, meaningful first-version boundaries and a distinct challenge. **Do not force a Worker, stream, cluster, runtime loader, database, process topology, job queue or host platform into any product requirement merely because the mechanism is taught in D03.** The implementation choices belong to separate technical discovery after learner-approved product direction.
 
-The candidate names below are working titles, not reserved names or confirmed available brands. Candidate IDs are local identifiers only, **not selection priority**. The five options are deliberately more focused than a general service marketplace or a clone of a monitoring/automation platform. The learner approved all five concepts. Separate linked PRDs now document all five learner-approved first-version product boundaries. **Editorial approval does not select an implementation project, fix every detailed policy or authorize technical architecture.**
+The candidate names below are working titles, not reserved names or confirmed available brands. Candidate IDs are local identifiers only, **not selection priority**. The five options are deliberately more focused than a general service marketplace or a clone of a monitoring/automation platform. The learner approved all five concepts. Separate linked Charters now document all five learner-approved first-version product boundaries. **Editorial approval does not select an implementation project, fix every detailed policy or authorize technical architecture.**
 
 ## P01 — IntakeLedger: Verified File Submission & Handoff
 
@@ -35,7 +35,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** **intake and custody/handoff** are the product, not arbitrary dataset transformation. D01's Large Dataset Processing Workspace centers on resource-limited processing, not sender-recipient acceptance and handoff. P02 below transforms accepted assets rather than managing external submission and transfer responsibility.
 
-**Product PRD:** [P01 — IntakeLedger — approved_by_learner](p01-intakeledger-verified-file-intake-charter.md); awaits learner batch approval.
+**Product Charter:** [P01 — IntakeLedger — approved_by_learner](p01-intakeledger-verified-file-intake-charter.md); awaits learner batch approval.
 
 ## P02 — MediaForge: Content Asset Processing Desk
 
@@ -59,7 +59,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** creates **new processed assets and previews**, not P01's validated intake/handoff or D01's generic large-data transforms. It is a limited creative operations workflow rather than a general compute platform.
 
-**Product PRD:** [P02 — MediaForge — approved_by_learner](p02-mediaforge-asset-processing-charter.md); awaits learner batch approval.
+**Product Charter:** [P02 — MediaForge — approved_by_learner](p02-mediaforge-asset-processing-charter.md); awaits learner batch approval.
 
 ## P03 — NodeScope: Runtime Incident Evidence Workspace
 
@@ -83,7 +83,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** D01 Workload & Complexity Observatory compares algorithmic behaviors; NodeScope is an **incident investigation and evidence-management product** for real runtime observations. P04 tests package execution compatibility, not operational performance evidence.
 
-**Product PRD:** [P03 — NodeScope — approved_by_learner](p03-nodescope-runtime-incident-evidence-charter.md); awaits learner batch approval.
+**Product Charter:** [P03 — NodeScope — approved_by_learner](p03-nodescope-runtime-incident-evidence-charter.md); awaits learner batch approval.
 
 ## P04 — PackageClinic: Runtime Integration Preflight Desk
 
@@ -105,9 +105,9 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **D03 concepts:** C02 startup identity, C05 error contracts, C11–C13 Workers/processes/module loading, C14 memory safeguards, C16 errors/shutdown, C17–C18 reproducible diagnostics.
 
-**Why its own product / overlap review:** D02 **PackagePassport** catalogs *declared* compatibility and integration claims. PackageClinic focuses on **observed execution evidence and reproducibility of trusted runtime preflight cases**, not a second compatibility registry. The trust/execute-versus-import boundary must be approved in its future PRD.
+**Why its own product / overlap review:** D02 **PackagePassport** catalogs *declared* compatibility and integration claims. PackageClinic focuses on **observed execution evidence and reproducibility of trusted runtime preflight cases**, not a second compatibility registry. The trust/execute-versus-import boundary must be approved in its future Charter.
 
-**Product PRD:** [P04 — PackageClinic — approved_by_learner](p04-packageclinic-runtime-preflight-charter.md); awaits learner batch approval.
+**Product Charter:** [P04 — PackageClinic — approved_by_learner](p04-packageclinic-runtime-preflight-charter.md); awaits learner batch approval.
 
 ## P05 — LiveRoom: Interactive Event Session Operations
 
@@ -131,7 +131,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **Why its own product / overlap review:** D02 **SubscriptionHub** centers on users subscribing to event categories and noticing gaps. LiveRoom is a **moderated participant interaction and timed poll product** with accepted response semantics; subscription management is not its principal value. P01–P04 target files, media, incidents and integration releases rather than live audience interaction.
 
-**Product PRD:** [P05 — LiveRoom — approved_by_learner](p05-liveroom-interactive-session-charter.md); awaits learner batch approval.
+**Product Charter:** [P05 — LiveRoom — approved_by_learner](p05-liveroom-interactive-session-charter.md); awaits learner batch approval.
 
 ## Portfolio differentiation check
 
@@ -143,7 +143,7 @@ The candidate names below are working titles, not reserved names or confirmed av
 | P04 PackageClinic | Reproducible runtime compatibility evidence | Node module loading, processes, startup/failure | Not D02 PackagePassport's declared-claims registry |
 | P05 LiveRoom | Correct live participant/session outcomes | Event scheduling, connection lifetime, attribution | Not D02 SubscriptionHub event subscriptions |
 
-**Coverage honesty:** these five products **offer opportunities** to challenge D03 learning, not proof they will implement every chapter. Coverage paths C01–C18 in the [Coverage Matrix](../../../projects/coverage-matrix.md) remain **teaching evidence only** until separate approved Charters identify *actual* product challenges. No candidate is silently mapped as an approved PRD or as implemented mastery. A later selection may deliberately cover only a subset.
+**Coverage honesty:** these five products **offer opportunities** to challenge D03 learning, not proof they will implement every chapter. Coverage paths C01–C18 in the [Coverage Matrix](../../../projects/coverage-matrix.md) remain **teaching evidence only** until separate approved Charters identify *actual* product challenges. No candidate is silently mapped as an approved Charter or as implemented mastery. A later selection may deliberately cover only a subset.
 
 **Review outcome (2026-10-13):** learner approved all five distinct product concepts and later explicitly approved all five Charters together. P04's trusted, owner/operator-approved executable-scenario V1 boundary is therefore **approved**, with arbitrary public code execution **excluded**; the safe execution design and detailed trust-validation policies remain open for later authorized discovery.
 
@@ -151,4 +151,4 @@ The candidate names below are working titles, not reserved names or confirmed av
 
 **All five Project Charters learner-approved editorially.** D03 coverage and state reconciled, and the D03 **content-authoring gate is complete**. The next authoring domain is **D04 — Network & Protocol Engineering**, beginning with curriculum design and separate learner approval. When the learner later chooses to build a project, use the actual installed Matt Pocock skills with Codex in a **separate project repository**, resolve necessary detailed product policies before technical design, and preserve approved in/out scope. No implementation, study assessment or technical architecture is approved.
 
-**Mandatory coverage reconciliation:** review and link this catalog from the global [Coverage Matrix](../../../projects/coverage-matrix.md) on catalog creation. Candidate existence does **not** replace a PRD row or grant a competency assessment. The canonical state and human tracker record the catalog, all 18 D03 chapters and all five Charters as learner-approved editorially, with all implementations not_started and assessments deferred. Future changes require a new coverage review.
+**Mandatory coverage reconciliation:** review and link this catalog from the global [Coverage Matrix](../../../projects/coverage-matrix.md) on catalog creation. Candidate existence does **not** replace a Charter row or grant a competency assessment. The canonical state and human tracker record the catalog, all 18 D03 chapters and all five Charters as learner-approved editorially, with all implementations not_started and assessments deferred. Future changes require a new coverage review.
