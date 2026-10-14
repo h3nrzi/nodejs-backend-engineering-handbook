@@ -13,10 +13,6 @@ Operators responsible for event-driven business workflows need to know what thei
 
 SubscriptionHub is a focused operational console for **defining subscriptions to business-event categories**, exploring relevant event history, and clearly communicating each subscription's active, paused, interrupted, or uncertain coverage state. Its key value is transparency about *what the product knows and does not know* about delivery and continuity.
 
-
-
-
-
 ## Audience and actors
 
 - **Subscriber/operator:** creates a subscription, defines category filters, observes incoming events, pauses/resumes or ends eligible subscriptions and investigates interruptions.
@@ -26,10 +22,6 @@ SubscriptionHub is a focused operational console for **defining subscriptions to
 
 A human subscriber is a product user; the concept does not require direct interaction with the event's original business actor. These roles do not imply a chosen identity-provider design.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 A user can reliably answer: **What am I subscribed to? Which events are visible? Is observation currently active? Was coverage interrupted? What evidence supports event order, gaps or duplicates? What can be recovered?**
@@ -38,17 +30,9 @@ Product-level success checks include: every displayed event identifies its subsc
 
 Numeric targets for maximum concurrent subscriptions, event retention, event visibility delay, gap detection time and history-query volume require later product approval. No arbitrary performance promise is made at the concept-project briefs stage.
 
-
-
-
-
 ## Explicit non-goals
 
-Not a general event infrastructure platform, broker, provider integration framework, real-time collaboration engine, log analytics replacement, universal stream processor, message queue, monitoring system or notification marketing suite. No specific transport, framework, streaming API, runtime or hosting topology is selected or implied by this project briefs.
-
-
-
-
+Not a general event infrastructure platform, broker, provider integration framework, real-time collaboration engine, log analytics replacement, universal stream processor, message queue, monitoring system or notification marketing suite. No specific transport, framework, streaming API, runtime or hosting topology is selected or implied by this Charter.
 
 ## Educational engineering challenge
 
