@@ -27,7 +27,7 @@ See the [Handbook two-role discovery workflow](../../../docs/two-role-discovery-
 
 ## Future rounds
 
-After each Codex round and explicit learner review, add a numbered educational document here with traceable question texts, approvals, rationale, alternatives, downstream dependencies, and links to **actual** ADRs in the implementation repo when they exist. Do not fabricate ADRs. The assistant supplies a bespoke NotebookLM video prompt in the conversation **after** preparing each round's educational dossier; prompts are not stored as templates.
+After each Codex round and explicit learner review, add a numbered educational document here with traceable question texts, approvals, rationale, alternatives, downstream dependencies, and links to **actual** ADRs in the implementation repo when they exist. Do not fabricate ADRs. Use the [reusable NotebookLM round video prompt](../../../templates/notebooklm-round-video-prompt.md) with the approved PRD and selected dossier. No new prompt is needed after each round.
 
 **Boundary:** This archive teaches product/engineering reasoning. The implementation repository retains live V1 decisions, technical design, code and ADRs. The handbook PRD is not rewritten to match local technology decisions.
 
