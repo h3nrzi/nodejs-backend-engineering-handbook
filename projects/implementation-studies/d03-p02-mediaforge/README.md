@@ -3,7 +3,11 @@
 **Domain/project:** D03/P02 — MediaForge: Content Asset Processing Desk  
 **Implementation repository:** https://github.com/h3nrzi/mediaforge  
 **Handbook's approved source PRD:** [Canonical D03-P02 PRD](../../../domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-prd.md)  
-**Status:** All 59 V1 product decisions approved and committed to the external MediaForge repository; final shared-understanding confirmation **pending**. No architecture, ADR, implementation tickets, or application code.
+**Status:** All 59 V1 product decisions approved and committed to the external MediaForge repository; product-discovery final gate closed per latest Codex report; Technical Round 01 learner-approved. No architecture, ADR, implementation tickets, or application code.
+
+## Technical Discovery
+
+- [Technical Round 01 — T1–T9](round-01-technical-discovery.md): full Codex questions and recommendations, separate educational commentary, all nine learner-approved; local Codex ADR/decision recording not yet verified.
 
 ## Files
 
