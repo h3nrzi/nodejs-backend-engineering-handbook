@@ -33,3 +33,5 @@ Lessons explain and compare concepts, while PRDs describe product outcomes and a
 **MediaForge workflow lesson:** [PM → Tech Lead two-role discovery](docs/two-role-discovery-workflow.md) — separates approved product policies from engineering decisions and ADRs in the external implementation project.
 
 - [Tech Lead `grill-with-docs` prompt template](templates/codex-grill-with-docs-technical-discovery.md) — repeatable architecture/engineering interview after approved product discovery.
+
+- [Reusable NotebookLM round video prompt](templates/notebooklm-round-video-prompt.md) — one template for product and technical discovery educational videos.
