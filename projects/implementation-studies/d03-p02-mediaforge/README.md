@@ -13,6 +13,10 @@
 - [Round 02 educational dossier](round-02-product-discovery.md): Q14–Q28 original questions and full Codex recommendations, ChatGPT review and educational analysis; approved by product owner; Codex decision-log update pending.
 - [Round 01 educational dossier](round-01-product-discovery.md): product questions, proposed answers, trade-offs, learning notes, unanswered policies; approvals marked honestly.
 
+## Next phase: distinct engineering discovery
+
+See the [Handbook two-role discovery workflow](../../../docs/two-role-discovery-workflow.md). The Q1–Q59 interviews established the **PM product contract**, not the Technical Discovery ADRs. Once final product shared-understanding approval is confirmed, start a **new Tech Lead `grill-with-docs`** with the approved PRD and product-policy contract; qualifying architecture choices become ADRs in the external MediaForge repository. Then use `to-spec` where warranted.
+
 ## Future rounds
 
 After each Codex round and explicit learner review, add a numbered educational document here with traceable question texts, approvals, rationale, alternatives, downstream dependencies, and links to **actual** ADRs in the implementation repo when they exist. Do not fabricate ADRs. The assistant supplies a bespoke NotebookLM video prompt in the conversation **after** preparing each round's educational dossier; prompts are not stored as templates.
