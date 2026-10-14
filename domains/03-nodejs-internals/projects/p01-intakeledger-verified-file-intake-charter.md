@@ -4,7 +4,7 @@
 
 **Primary purpose:** build a useful product that challenges Node.js runtime fundamentals: event-loop responsiveness, asynchronous I/O, streams/backpressure, filesystem/resource ownership, process isolation, controlled cancellation and diagnostic evidence. These are learning challenges, NOT predetermined implementations.
 
-# P01 — IntakeLedger: Verified File Submission & Handoff — Product Requirements
+# P01 — IntakeLedger: Verified File Submission & Handoff — Project Direction
 
 **Domain:** D03 — Node.js Internals  
 **Status:** approved_by_learner — product scope approved explicitly with five-project briefs batch on 2026-10-13  
@@ -86,7 +86,7 @@ These are *potential* learning challenges, not a mandate to implement a specific
 ## 14. Approval record
 
 - **2026-10-13:** learner explicitly approved the **five D03 candidate concepts** as a catalog, not their detailed project briefs.
-- **2026-10-13:** this document authored and author-reviewed against `templates/project-prd.md`, `docs/quality-gates.md` and the approved catalog; status **in_review**.
+- **2026-10-13:** this document authored and author-reviewed against `templates/project-charter.md`, `docs/quality-gates.md` and the approved catalog; status **in_review**.
 - **2026-10-13:** learner explicitly approved all five project briefs together, including this product's problem, audience, V1 in/out/deferred boundaries and externally observable invariants.
 - **No implementation readiness claim:** detailed first-version policies can be resolved at the separate selected-project kickoff, with learner approval before dependent technical design. Implementation, external tests and learner assessment have **not** begun.
 
@@ -95,4 +95,4 @@ These are *potential* learning challenges, not a mandate to implement a specific
 
 ## Implementation kickoff gate
 
-The independent-project Codex process must create and obtain explicit owner approval for `product-discovery.md`, then `final-prd.md`, then `module-plan.md`. Each approved module uses module-scoped technical discovery → to-spec → to-tickets → implementation → verification. Product scope cannot be expanded to force any Node.js mechanism.
+The independent-project Codex process must create and obtain explicit owner approval for `product-discovery.md`, then `final-charter.md`, then `module-plan.md`. Each approved module uses module-scoped technical discovery → to-spec → to-tickets → implementation → verification. Product scope cannot be expanded to force any Node.js mechanism.
