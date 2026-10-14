@@ -4,7 +4,7 @@
 
 **Primary purpose:** build a useful product that challenges Node.js runtime fundamentals: event-loop responsiveness, asynchronous I/O, streams/backpressure, filesystem/resource ownership, process isolation, controlled cancellation and diagnostic evidence. These are learning challenges, NOT predetermined implementations.
 
-# P03 — NodeScope: Runtime Incident Evidence Workspace — Product Requirements
+# P03 — NodeScope: Runtime Incident Evidence Workspace — Project Direction
 
 **Domain:** D03 — Node.js Internals  
 **Status:** approved_by_learner — product scope approved explicitly with five-project briefs batch on 2026-10-13  
@@ -86,7 +86,7 @@ Learning coverage is a **planned educational challenge**, not a guarantee that i
 ## 14. Approval record
 
 - **2026-10-13 — concept approval:** user approved all five ideas in the D03 candidate catalog.
-- **2026-10-13 — project briefs author review:** authored as part of a five-project briefs batch using the approved concept, `templates/project-prd.md` and `docs/quality-gates.md`; status **in_review**.
+- **2026-10-13 — project briefs author review:** authored as part of a five-project briefs batch using the approved concept, `templates/project-charter.md` and `docs/quality-gates.md`; status **in_review**.
 - **2026-10-13 — project briefs approval:** learner explicitly approved all five project briefs as one batch; this product's scope and externally observable requirements are approved. Later detailed policies remain open for learner-led discovery.
 - **Not started:** any learner study assessment, code, integration test, implementation repository work or technical ADR.
 - **Later selected-project kickoff:** resolve necessary first-version product details using installed Matt Pocock skills and learner confirmation before technical design; require explicit approval for any changes to problem, audience, capabilities or in/out scope.
@@ -96,4 +96,4 @@ Learning coverage is a **planned educational challenge**, not a guarantee that i
 
 ## Implementation kickoff gate
 
-The independent-project Codex process must create and obtain explicit owner approval for `product-discovery.md`, then `final-prd.md`, then `module-plan.md`. Each approved module uses module-scoped technical discovery → to-spec → to-tickets → implementation → verification. Product scope cannot be expanded to force any Node.js mechanism.
+The independent-project Codex process must create and obtain explicit owner approval for `product-discovery.md`, then `final-charter.md`, then `module-plan.md`. Each approved module uses module-scoped technical discovery → to-spec → to-tickets → implementation → verification. Product scope cannot be expanded to force any Node.js mechanism.
