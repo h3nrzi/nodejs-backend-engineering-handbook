@@ -11,10 +11,6 @@
 
 Operational teams need to contact many recipients, but bulk dispatch creates uncertain results: some attempts succeed, some are rejected, some remain pending and others lose confirmation. Operators cannot safely distinguish retries from duplicates or tell which recipients need attention. DispatchDesk provides a focused workspace for preparing, initiating, tracking and reconciling a batch of outgoing messages.
 
-
-
-
-
 ## Audience and actors
 
 - **Operator:** prepares batches, reviews recipient validation and starts eligible sends.
@@ -22,19 +18,11 @@ Operational teams need to contact many recipients, but bulk dispatch creates unc
 - **Auditor:** views historical intent, actions and recipient-level outcomes without modifying them.
 - **Recipient:** receives a message externally but is not necessarily an authenticated workspace user.
 
-Specific role/approval rules are open product decisions; this project briefs does not prescribe identity infrastructure.
-
-
-
-
+Specific role/approval rules are open product decisions; this Charter does not prescribe identity infrastructure.
 
 ## Goals and measurable outcomes
 
 Every batch gives a clearly understandable answer to: which intended recipients were eligible, which attempts were started, which deliveries are confirmed, which were rejected, which remain pending and which outcomes are uncertain. Users can distinguish a retry of an existing intent from a new delivery. Every recipient result exposes its authoritative evidence level. Quantitative capacity, latency, rate, retention and confirmation targets require product approval rather than guessed values.
-
-
-
-
 
 ## In scope, deferred and out of scope
 
@@ -44,17 +32,9 @@ Every batch gives a clearly understandable answer to: which intended recipients 
 
 **Out:** marketing automation suite, contact CRM, universal message broker, building actual telecom infrastructure, promising message reads/open rates, unrestricted provider-specific configuration, guaranteed rollback of deliveries.
 
-
-
-
-
 ## Explicit non-goals
 
 Not a broadcast broker, provider implementation, scheduling platform, CRM, marketing suite, guaranteed delivery/reading system or bulk spam utility. No claim of sending through any named commercial service is made.
-
-
-
-
 
 ## Educational engineering challenge
 
