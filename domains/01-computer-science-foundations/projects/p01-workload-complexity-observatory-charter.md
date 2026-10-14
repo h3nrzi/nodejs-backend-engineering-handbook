@@ -11,17 +11,11 @@
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-
-
 ## Problem and motivation
 
 Backend engineers often compare algorithms or data structures with anecdotal microbenchmarks. They confuse input size, workload distribution, preprocessing, memory allocation and warm-up effects. As a result, benchmark claims are hard to reproduce and can mislead decisions.
 
 A learning-oriented observatory should help an engineer **describe a comparison, execute repeatable trials, inspect the measured outcomes, and communicate limitations without claiming universal superiority**.
-
-
-
-
 
 ## Audience and actors
 
@@ -30,10 +24,6 @@ A learning-oriented observatory should help an engineer **describe a comparison,
 - **Observer:** a person viewing a finished report without modifying its setup.
 
 No production traffic instrumentation or organizational identity platform is needed in this first scope.
-
-
-
-
 
 ## Goals and measurable outcomes
 
@@ -44,10 +34,6 @@ No production traffic instrumentation or organizational identity platform is nee
 - A completed report can be revisited or exported in a human-readable, self-contained form.
 
 **Success measurement for a user study:** a reviewer can correctly identify workload setup, units, key limitations and the observed—not universal—winner from an exported report without relying on the author’s explanation.
-
-
-
-
 
 ## Scope
 
@@ -77,27 +63,15 @@ No production traffic instrumentation or organizational identity platform is nee
 - Automatic optimization advice.
 - Collaboration and historical trend reporting across teams.
 
-
-
-
-
 ## Explicit non-goals
 
 This isn't an APM product, profiling SaaS, online judge, programming interview site, automated optimization agent, or guarantee of cross-device objective rankings.
-
-
-
-
 
 ## Learning coverage and portfolio value
 
 Directly exercises D01 Chapter 01 cost models, 02/03 data-structure reasoning, 04 algorithm comparisons, 05 probability/variance reasoning, 06 CPU/cache performance and 08 memory measurement.
 
 It is deliberately distinct from P02's concurrency correctness, P03's dependency graph reasoning and P04's failure-aware large-file processing. Implementation may later reveal knowledge gaps that belong in other domains; the initial project brief does not force a specific technical solution.
-
-
-
-
 
 ## Educational engineering challenge
 
