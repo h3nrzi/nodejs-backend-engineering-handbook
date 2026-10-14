@@ -15,6 +15,8 @@
 
 ## Next phase: distinct engineering discovery
 
+Reusable starter: [Tech Lead technical discovery prompt template](../../../templates/codex-grill-with-docs-technical-discovery.md). Obtain explicit final PM sign-off in the external repo before running it.
+
 See the [Handbook two-role discovery workflow](../../../docs/two-role-discovery-workflow.md). The Q1–Q59 interviews established the **PM product contract**, not the Technical Discovery ADRs. Once final product shared-understanding approval is confirmed, start a **new Tech Lead `grill-with-docs`** with the approved PRD and product-policy contract; qualifying architecture choices become ADRs in the external MediaForge repository. Then use `to-spec` where warranted.
 
 ## Future rounds
