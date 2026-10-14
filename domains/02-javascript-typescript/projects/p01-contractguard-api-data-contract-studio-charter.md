@@ -11,15 +11,9 @@
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-
-
 ## Problem and motivation
 
 Teams integrating external business APIs frequently discover changed or ambiguous payload requirements only after a request fails or data is silently misinterpreted. The product gives API publishers and consumers a shared place to describe expected data, evaluate examples and explain contract changes without needing to operate a production API.
-
-
-
-
 
 ## Audience and actors
 
@@ -30,17 +24,9 @@ Teams integrating external business APIs frequently discover changed or ambiguou
 
 These are product roles, not a prescribed authentication or authorization architecture.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 Users can (a) express a contract unambiguously, (b) see whether a sample matches it, (c) identify which fields failed and why, and (d) compare two versions before adoption. Proposed measurable product checks: identical contracts and payloads yield the same decision; every rejection includes actionable paths/reason categories; a published version remains reviewable after newer versions appear. Quantitative response-time targets and retention limits remain open rather than invented.
-
-
-
-
 
 ## Scope
 
@@ -50,17 +36,9 @@ Users can (a) express a contract unambiguously, (b) see whether a sample matches
 
 **Out of scope:** proxying live API traffic, enforcing contracts on production systems, API request delivery, full API design suite, arbitrary executable user rules, database migration, generating production validators or code.
 
-
-
-
-
 ## Explicit non-goals
 
 Not a live traffic gateway, wire-protocol test runner, business authorization validator, database migration service, universal JSON Schema interpreter, code-execution sandbox or compiler. The product may clarify data contracts but cannot prove operational compatibility with an unspecified production API.
-
-
-
-
 
 ## Educational engineering challenge
 
