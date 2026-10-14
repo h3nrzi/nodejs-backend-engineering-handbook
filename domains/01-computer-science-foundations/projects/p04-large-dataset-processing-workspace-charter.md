@@ -6,7 +6,7 @@
 
 ## Learning mission and project constraints
 
-Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive product requirements from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
+Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
 ## Historical project concept and source framing
 
@@ -71,4 +71,4 @@ Covers operating systems, memory, filesystem I/O, buffering, backpressure, state
 
 ## Implementation kickoff gate
 
-When selected, hand this Charter to Codex. Codex must produce `product-discovery.md`, then an owner-approved `final-prd.md`, then an owner-approved `module-plan.md`. Technical discovery is **scoped to the current module** and feeds `to-spec` → `to-tickets` → implementation → verified module acceptance. No code or product implementation is claimed by this Charter.
+When selected, hand this Charter to Codex. Codex must produce `product-discovery.md`, then an owner-approved `final-charter.md`, then an owner-approved `module-plan.md`. Technical discovery is **scoped to the current module** and feeds `to-spec` → `to-tickets` → implementation → verified module acceptance. No code or product implementation is claimed by this Charter.
