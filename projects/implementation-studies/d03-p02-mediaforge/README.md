@@ -7,6 +7,8 @@
 
 ## Technical Discovery
 
+- [Technical Round 05 — T73–T86](round-05-technical-discovery.md): all fourteen recommendations approved; original Codex text and separate teaching commentary; external recording pending.
+
 - [Technical Round 03 — T26–T49](round-03-technical-discovery.md): full original Codex recommendations and separate analysis; all 24 learner-approved, Codex recording/ADRs pending verification.
 
 - [Technical Round 02 — T10–T25](round-02-technical-discovery.md): full Codex Q&A, separate teaching notes; all 16 recommendations explicitly learner-approved, external Codex recording/ADRs pending verification.
