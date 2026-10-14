@@ -7,7 +7,7 @@
   "next_domain_id": "D04",
   "active_deliverable": "D03-P02 MediaForge — Round 4 Q47–Q59 learner-approved; Codex recording and next frontier pending",
   "last_completed_step": "Published reusable Codex grill-with-docs Product Discovery prompt template for all projects, with PRD provenance, full-frontier interview rounds and learner approval gates; MediaForge repo/skills setup exists but Product Discovery has not started.",
-  "next_action": "Send learner-approved MediaForge T73–T86 to Codex; verify decision log and qualifying ADR changes, then obtain next full technical frontier. NotebookLM uses reusable template.",
+  "next_action": "Send MediaForge Technical Round 6 T87-T102 explicit approval to Codex, verify approved decisions and qualifying ADRs, and obtain complete Round 7 frontier. Reuse NotebookLM video template.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -1280,6 +1280,13 @@
       "event": "Learner approved Technical Round 5 T73–T86; educational source archived and tracked. External Codex approval recording pending.",
       "evidence": [
         "projects/implementation-studies/d03-p02-mediaforge/round-05-technical-discovery.md"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "event": "Learner approved Technical Round 6 T87-T102, including off-host evidence dependency. Full round and analysis archived; awaiting Codex recording.",
+      "evidence": [
+        "projects/implementation-studies/d03-p02-mediaforge/round-06-technical-discovery.md"
       ]
     }
   ],
