@@ -4,13 +4,13 @@ Read [Workflow](docs/workflow.md), [Tracking](tracking/state.json), [Tracker](TR
 
 ## Nonnegotiable boundaries
 
-1. **Handbook only authors:** Domain lessons, educational project Charters, catalogs, coverage, templates, tracking and historical learning archives. No Final PRD or Module Plan for unselected projects.
+1. **Handbook only authors:** Domain lessons, educational project Charters, catalogs, coverage, templates and tracking. No Final PRD or Module Plan for unselected projects.
 2. **Charter is not Final PRD.** It establishes educational purpose, target users, problem, initial scope and engineering challenges, without mandating an implementation solution.
 3. In a separate project repo, **Codex authors** `product-discovery.md`, then an explicitly learner-approved `final-prd.md`, then an explicitly learner-approved `module-plan.md`.
 4. Each module goes through **module-scoped** Codex Technical Discovery (`grill-with-docs`) → `to-spec` → `to-tickets` → `implement` → acceptance. Do not conduct unbounded whole-product Technical Discovery.
-5. The learner approves all consequential product and technical decisions. ChatGPT guides, explains trade-offs, reviews consistency and archives educational analysis; Codex proposes and implements.
+5. The learner approves all consequential product and technical decisions. ChatGPT guides, explains trade-offs, reviews consistency and learning evidence; Codex proposes and implements.
 6. Preserve versioned evidence and avoid claiming unrun tests, implementation, verified learning or provider qualification.
-7. Editorial approval of D01–D03 curricula and 14 Charters is preserved. MediaForge implementation is reset to 0. Historical discovery/ADRs are reference material only until a new approved plan explicitly adopts them.
+7. D01–D03 curricula and all 14 Charters are editorially approved. All implementations remain not started.
 8. For every authoring milestone reconcile `tracking/state.json`, `TRACKER.md`, domain indexes, and `projects/coverage-matrix.md`.
 9. Do not create technical architecture or force use of a Node.js mechanism just for educational coverage; domain challenges belong in the Charter, solution selection belongs to Codex per module.
 
