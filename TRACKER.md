@@ -320,3 +320,7 @@ Created [Technical Discovery Codex prompt template](templates/codex-grill-with-d
 ## 2026-10-14 — MediaForge Technical Round 1
 
 Learner explicitly approved all nine Codex Technical Discovery recommendations T1–T9. [Educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-01-technical-discovery.md) retains full original questions/recommendations and distinct teaching notes. Codex local technical decision/ADR changes have not yet been verified. Product Discovery final gate reported closed by Codex.
+
+## 2026-10-14 — MediaForge Technical Round 2 approved
+
+Learner accepted all 16 Codex technical proposals T10–T25. [Educational source](projects/implementation-studies/d03-p02-mediaforge/round-02-technical-discovery.md) records full prompts/recommendations, separate teaching, and pending external recording verification. Codex previously reported ADRs 0001–0003 for Round 1; later ADR generation has not yet been observed. No implementation or passing tests claimed.
