@@ -8,12 +8,8 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - D02: 16/16 lessons, 5/5 Project Charters editorially approved.
 - D03: 18/18 lessons, 5/5 Project Charters editorially approved.
 - **48 authored lessons, 14 educational Charters; zero implemented projects or verified learner assessments.**
-- **MediaForge reset to implementation 0** by learner request. Historical discovery archives are not current engineering authority.
+- All project implementations, including MediaForge, are `not_started`.
 - D04–D16 remain to be authored.
-
-## Migration audit
-
-[Workflow V2 — D01–D03 migration and MediaForge reset audit](docs/workflow-v2-migration-audit-2026-10-14.md).
 
 ## Navigation
 
@@ -25,6 +21,3 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/projects/catalog.md)
 - [D03 — Node.js Internals](domains/03-nodejs-internals/projects/catalog.md)
 
-### Historical learning material
-
-[MediaForge educational archive](projects/implementation-studies/d03-p02-mediaforge/README.md) preserves past discussions without carrying those decisions into the fresh implementation.
