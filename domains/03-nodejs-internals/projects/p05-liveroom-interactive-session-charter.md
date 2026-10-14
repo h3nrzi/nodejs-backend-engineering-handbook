@@ -11,10 +11,6 @@
 
 During a workshop or live classroom, audience answers can arrive late, disconnect or be repeated, while the host cannot tell which responses were accepted. Basic chat channels do not provide reliable prompt windows and clear participant feedback. **LiveRoom** is a lightweight guided session product: the user value is **transparent response acceptance and a usable live host summary**, not a generalized event broker or video platform.
 
-
-
-
-
 ## Audience and actors
 
 - **Host:** creates a bounded session, opens/closes prompts and reviews summary.
@@ -24,19 +20,11 @@ During a workshop or live classroom, audience answers can arrive late, disconnec
 
 Actors describe product responsibility and visibility, not a mandated identity implementation.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 A host can conduct a time-bounded interactive poll with a clear session lifecycle; a participant knows whether their response was accepted, rejected, late or uncertain; host totals reflect the accepted set and remain interpretable after closing. The product works under the approved session/participant limits without claiming universal zero loss or instant delivery.
 
 Evidence for these goals is the externally observable workflow and acceptance tests, **not** invented throughput, operational SLOs or deployed service results.
-
-
-
-
 
 ## Product boundary: in / out / deferred
 
@@ -63,19 +51,11 @@ Evidence for these goals is the externally observable workflow and acceptance te
 
 The product boundary is the approval target. Supporting technical mechanisms remain open and no project briefs sentence mandates a runtime topology or library.
 
-
-
-
-
 ## Explicit non-goals
 
 No video/audio meetings, text chat, universal broker, unbounded public survey service, advanced quiz authoring or guaranteed never-lost network delivery in V1.
 
 The handbook must not become an implementation repository, nor select its backend stack, database, deployment, communication protocol, workers, brokers, algorithms or vendor products.
-
-
-
-
 
 ## Domain learning outcomes and why this project is valuable
 
@@ -84,10 +64,6 @@ The handbook must not become an implementation repository, nor select its backen
 **Distinctness and portfolio rationale:** Unlike D02 SubscriptionHub (long-lived subscription to event categories and gap notices), LiveRoom centers on **host-governed prompt windows and participant response acceptance**; it is not an event transport infrastructure product.
 
 Learning coverage is a **planned educational challenge**, not a guarantee that implementation must use a specific technique, nor proof of an assessed skill.
-
-
-
-
 
 ## Educational engineering challenge
 
