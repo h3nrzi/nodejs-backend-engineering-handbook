@@ -2,7 +2,7 @@
 
 ## Authority and repository boundary
 
-**This repository owns:** domain curricula, lessons, approved educational project Charters, competency coverage, reusable process templates, learning archives and tracking links.
+**This repository owns:** domain curricula, lessons, approved educational project Charters, competency coverage, reusable process templates and tracking links.
 
 **The separate implementation repository owns:** Codex-authored `product-discovery.md`, `final-prd.md`, `module-plan.md`, module technical decisions, ADRs, specifications, tickets, code, tests and acceptance evidence.
 
