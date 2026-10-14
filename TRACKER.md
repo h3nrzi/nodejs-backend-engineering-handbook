@@ -308,3 +308,7 @@ Learner explicitly approved all Codex Q29–Q46 recommendations with the noted Q
 ## MediaForge Round 4 owner approval — 2026-10-13
 
 Learner explicitly approved all recommended Codex Q47–Q59 decisions (Yes on all 13); [Round 4 educational dossier](projects/implementation-studies/d03-p02-mediaforge/round-04-product-discovery.md) marks owner approval and preserves verbatim original questions and recommendations. Codex local decision-log recording remains unverified. No architecture, ADR, or code evidence.
+
+## 2026-10-14 — MediaForge two-role discovery handoff
+
+Recorded the reusable [PM → Tech Lead `grill-with-docs` workflow](docs/two-role-discovery-workflow.md) in this handbook and linked it from [the main workflow](docs/workflow.md) and [MediaForge learning archive](projects/implementation-studies/d03-p02-mediaforge/README.md). PM discovery produced 59 approved product rules and product documentation; Tech Lead discovery will separately determine architecture and qualifying ADRs after explicit final PM sign-off. No implementation or architecture decision is claimed.
