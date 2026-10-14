@@ -1,10 +1,10 @@
-> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation Charters were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
 
 # D02 — JavaScript & TypeScript Project Catalog
 
 **Status:** content_complete_five_concepts_and_prds_approved
 **Curriculum:** all 16 chapters learner-approved (editorial review; examples not independently executed).
-**Phase:** content-authoring complete. All five Charters approved at product scope; unresolved product choices remain explicitly documented in each PRD.
+**Phase:** content-authoring complete. All five Charters approved at product scope; unresolved product choices remain explicitly documented in each Charter.
 
 ### Approved Project Charters
 
@@ -109,10 +109,10 @@ Choose products that solve **different user problems**, not four variants of one
 | P04 PackagePassport | Package interface compatibility | Modules, TS config and interop | Integration contracts, not complexity analysis |
 | P05 SubscriptionHub | Event subscription and gap visibility | Iteration, events, lifetime | Subscriber product, not bulk-data workspace |
 
-**Approved concept selection (2026-10-12):** learner approved all five distinct concepts. This does not approve their PRDs.
+**Approved concept selection (2026-10-12):** learner approved all five distinct concepts. This does not approve their Charters.
 
 ## Review gate
 
-All five concepts and all five individual PRDs are learner-approved at product scope; the D02 content-authoring gate is closed. The next handbook task is D03 curriculum planning and learner review. The approved Charters cover actors, workflows, scope, non-goals, product invariants and acceptance criteria; necessary first-version product questions remain for learner-approved Matt/Codex discovery at the separate project kickoff. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
+All five concepts and all five individual Charters are learner-approved at product scope; the D02 content-authoring gate is closed. The next handbook task is D03 curriculum planning and learner review. The approved Charters cover actors, workflows, scope, non-goals, product invariants and acceptance criteria; necessary first-version product questions remain for learner-approved Matt/Codex discovery at the separate project kickoff. They must not prescribe technical architecture, language libraries or service deployment choices. Implementation is later performed in separate repositories with Codex. Learning assessments remain deferred.
 
 **Coverage reconciliation:** [Global matrix](../../../projects/coverage-matrix.md) reviewed against all five approved Charters on 2026-10-12; no implementation evidence recorded.
