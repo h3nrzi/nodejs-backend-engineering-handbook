@@ -11,8 +11,6 @@
 
 Use this product to exercise the associated domain's curriculum in realistic engineering conditions. Codex should derive proposed product direction from user-approved Product Discovery, not mechanically convert the original draft into final requirements. Challenge-driven outcomes are educational goals, **not mandated architecture**.
 
-
-
 ## Problem and motivation
 
 Teams building reservations, ticket claims, limited inventory and other capacity-constrained workflows struggle to reason about simultaneous attempts, duplicate requests, cancellation, and uncertain outcomes. Demonstrations often highlight successful scenarios but hide the schedules that violate capacity guarantees.
@@ -20,10 +18,6 @@ Teams building reservations, ticket claims, limited inventory and other capacity
 Build an educational simulator where an engineer can define a finite resource pool, submit competing allocation attempts, inspect results and timelines, and see whether user-selected rules preserve the stated constraints.
 
 The product is a **simulator**, not a real ticketing service or customer-facing booking business.
-
-
-
-
 
 ## Target users and actors
 
@@ -34,10 +28,6 @@ The product is a **simulator**, not a real ticketing service or customer-facing 
 
 Version 1 does not require separate organizational permissions or public accounts.
 
-
-
-
-
 ## Goals and measurable product outcomes
 
 1. A reviewer can determine exactly what capacity and contention conditions were simulated.
@@ -46,10 +36,6 @@ Version 1 does not require separate organizational permissions or public account
 4. Users can compare a normal sequential scenario with competing claims and retries under the same product rules.
 5. Results are reproducible as a **scenario definition and trace**, while elapsed execution timing can legitimately vary.
 6. A completed report visibly distinguishes business rejection, operational failure, cancellation request, confirmed cancellation, and outcome uncertainty.
-
-
-
-
 
 ## Scope
 
@@ -81,17 +67,9 @@ Version 1 does not require separate organizational permissions or public account
 - Automated model exploration beyond the explicitly supported scenarios.
 - Comparative leaderboards or security testing of real services.
 
-
-
-
-
 ## Explicit non-goals
 
 The app is not a commerce platform, inventory ERP, payment gateway, production concurrency-testing service, external distributed lock manager or full reservation marketplace.
-
-
-
-
 
 ## Domain learning relevance
 
@@ -104,10 +82,6 @@ The app is not a commerce platform, inventory ERP, payment gateway, production c
 - Chapter 13: backend case-study reasoning.
 
 Distinct from P01 performance methodology, P03 graph workflow planning and P04 bounded large-file processing.
-
-
-
-
 
 ## Educational engineering challenge
 
