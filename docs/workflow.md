@@ -37,6 +37,10 @@ The installed `grilling` skill's **round-based full-frontier** interviewing asks
 
 This template reflects the inspected MediaForge skills source on 2026-10-13 and does not by itself establish verified product choices, skill execution, or implementation evidence.
 
+## Reusable Technical Discovery prompt (Tech Lead)
+
+After the learner explicitly confirms final Product Discovery shared understanding, use [Codex grill-with-docs Technical Discovery template](../templates/codex-grill-with-docs-technical-discovery.md) to launch a **new technical interview** against the unchanged PRD and approved product policies. Engineering rounds cover architectural alternatives and qualified ADRs, not revised PM rules. Wait for explicit technical shared-understanding approval before `to-spec` and implementation. MediaForge-specific filled prompt is supplied separately in conversation, not committed as a duplicate static template.
+
 ## Per-project educational archive and bespoke NotebookLM prompts
 
 Each selected external implementation project has a dedicated learning archive in this handbook under `projects/implementation-studies/<domain-project-slug>/`. Copy the **unchanged approved PRD** there as an educational source, with a pointer to the canonical domain PRD, and write one thorough source-grounded learning document per completed Codex interview round. The project's independent implementation repo remains authoritative for live V1 decisions, technical design, ADRs and code; the handbook archive collects explanations, rationales and links to verified decision/ADR evidence without duplicating implementation artifacts.
