@@ -1,20 +1,13 @@
-# Project Charter — p04 packagepassport integration compatibility registry
+# Project Charter — P04 — PackagePassport: Integration Compatibility Registry
 
-**Status:** Learner-approved educational/project direction; Final PRD NOT CREATED. **Authority:** Handbook scope and learning intent only. Codex generates product-discovery.md, final-charter.md and module-plan.md after implementation kickoff and owner approval. Historical full draft is available in git history.
+**Domain:** D02  
+**Charter status:** Learner-approved educational project direction (D01–D03 authoring phase)  
+**Product Discovery / Final PRD / Module Plan:** Not started in the fresh implementation workflow  
+**Implementation / demonstrated learner mastery:** Not started / not assessed
 
-# P04 — PackagePassport: Integration Compatibility Registry — Project Direction
+> This Charter frames a useful product and authentic JavaScript/TypeScript learning challenges. It is **not** a finalized V1 PRD or a predetermined architecture. Scope details are starting constraints for learner-supervised Codex Product Discovery, not immutable technical design.
 
-**Domain:** D02 — JavaScript & TypeScript  
-**Status:** approved_by_learner  
-**Concept:** approved by learner on 2026-10-12  
-**project briefs approval:** learner-approved on 2026-10-12; open product decisions remain  
-**Implementation:** not started; no stack, architecture or dependency-resolution technology selected
-**Editorial product boundary:** problem, users, in/out/deferred scope and essential observable behavior are learner-approved; incidental policies and numerical limits may remain open.
-**Matt/Codex kickoff:** choose necessary first-version details through the installed Matt Pocock skill workflow with explicit learner approval; preserve approved non-goals and obtain separate approval for any scope change before dependent technical design.
-
-
-
-## 1. Problem and motivation
+## Problem and motivation
 
 Teams adopting shared software packages often rely on version labels, type declarations or informal integration notes that do not describe the same thing as observable runtime behavior. A new release may rename an export, alter a consumer-facing contract or narrow supported execution environments. Different consumers can report apparently contradictory compatibility outcomes, while maintainers lack a dependable history of what was claimed, observed and still unverified.
 
@@ -22,7 +15,9 @@ PackagePassport is a product-facing registry for documenting releases, their pub
 
 
 
-## 2. Target users and actors
+
+
+## Target users and actors
 
 - **Package maintainer:** registers an owned package, proposes release records, documents public exports and compatibility claims.
 - **Integrator:** identifies the release and consumer environment they intend to use, searches documented scenarios and reviews upgrade risks.
@@ -34,7 +29,9 @@ Roles are requirements for permissions and accountability, not a prescribed iden
 
 
 
-## 3. Goals and product-level success measures
+
+
+## Goals and product-level success measures
 
 An integrator should be able to answer four questions: **What does this release claim to expose? Which environments are claimed to be supported? What has actually been observed in relevant scenarios? What changed compared with the previous release?**
 
@@ -44,7 +41,9 @@ Measures for product acceptance: versioned release records retain stable meaning
 
 
 
-## 4. Scope: in, deferred and out
+
+
+## Scope: in, deferred and out
 
 **In scope:** package catalog; release registration and lifecycle; release-specific public export inventory; documented callable or data-shape expectations; stated module-format and supported-environment claims; consumer scenario profiles; manually registered or externally evidenced scenario outcomes; compatibility matrices; comparison of two releases; explicit uncertainty and contradictory evidence; change notes; searchable release history; report export; visible ownership and editorial permissions.
 
@@ -54,26 +53,20 @@ Measures for product acceptance: versioned release records retain stable meaning
 
 
 
-## 12. Explicit non-goals
+
+
+## Explicit non-goals
 
 Not a package manager, lockfile analyzer, dependency resolver, build/compile service, CI platform, code runner, live runtime diagnostics tool, security scanner or software supply-chain attestation authority. Registration does not certify a release as authentic, safe, compatible or production-ready.
 
 
 
-## 13. D02 educational outcomes
-
-This product emphasizes JavaScript module boundaries and ES module/CommonJS interoperability concepts, TypeScript declarations versus runtime behavior, structural contracts, conditional compatibility states, precise data modeling and error handling. It is differentiated from ContractGuard's payload validation, DispatchDesk's dispatch outcomes and PolicyLens's business-rule decision explanation. Node loader internals and package execution mechanics remain separate D03 learning/implementation subjects.
 
 
+## Educational engineering challenge
 
-## 14. Approval record
+Practice the related domain lessons by exploring honest asynchronous outcomes, correctness invariants, resource costs, error and failure behavior, and testable evidence in this product. **Do not force a particular library, storage architecture, process model or platform just to demonstrate the technology.**
 
-**Project concept:** learner-approved with the other D02 candidates, 2026-10-12.
-**project briefs editorial approval:** approved by learner on 2026-10-12; open product decisions remain.
-**Product questions:** deliberately unresolved; see section 11.
-**Technical implementation, study assessment and repository creation:** not started.
+## Kickoff and owner approval
 
-
-## Workflow gate
-
-Codex conducts product discovery, consolidates the final PRD, prepares a reviewed module plan and works module-by-module: scoped technical grilling → to-spec → to-tickets → implement → verify. No library, infrastructure, architecture or technical approach is mandated by this Charter.
+When the learner selects this project, Codex authors `product-discovery.md` after a focused PM `grill-with-docs`; after learner approval, Codex consolidates **`final-prd.md`**; then Codex creates a learner-approved **`module-plan.md`**. Implement one approved module at a time using module-scoped technical discovery → `to-spec` → `to-tickets` → `implement` → verification. Original detailed pre-V2 material is available in Git history only; no implementation or technical decisions are inherited automatically.
