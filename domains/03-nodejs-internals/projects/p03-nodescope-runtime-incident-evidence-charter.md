@@ -11,10 +11,6 @@
 
 Teams investigating a Node.js crash, memory growth or slow endpoint have screenshots, assorted logs and counters collected at different times. A high event-loop utilization number is mistaken for CPU usage, and anecdotes become 'root cause' without comparable windows or evidence gaps. **NodeScope** organizes **reviewable, privacy-minimized incident evidence** and competing explanations. Its value is an auditable diagnostic handoff, **not** an always-on APM agent or automatic production root-cause engine.
 
-
-
-
-
 ## Audience and actors
 
 - **Incident investigator:** opens a case, states a falsifiable symptom, organizes available observations and competing hypotheses.
@@ -24,19 +20,11 @@ Teams investigating a Node.js crash, memory growth or slow endpoint have screens
 
 Actors describe product responsibility and visibility, not a mandated identity implementation.
 
-
-
-
-
 ## Goals and measurable outcomes
 
 Given a realistic incident, a reviewer can determine **which Node process/runtime and observation window** each measurement describes, distinguish observation from inference, compare hypotheses, see missing evidence and export a self-contained handoff. Success is that case conclusions cannot be silently presented as verified when they lack supporting entries; unsupported metrics do not receive invented values.
 
 Evidence for these goals is the externally observable workflow and acceptance tests, **not** invented throughput, operational SLOs or deployed service results.
-
-
-
-
 
 ## Product boundary: in / out / deferred
 
@@ -62,19 +50,11 @@ Evidence for these goals is the externally observable workflow and acceptance te
 
 The product boundary is the approval target. Supporting technical mechanisms remain open and no project briefs sentence mandates a runtime topology or library.
 
-
-
-
-
 ## Explicit non-goals
 
 Not a commercial APM suite, automatic production operator, remote execution/debugger, privileged heap-report store, alerting/on-call tool or guaranteed root-cause service.
 
 The handbook must not become an implementation repository, nor select its backend stack, database, deployment, communication protocol, workers, brokers, algorithms or vendor products.
-
-
-
-
 
 ## Domain learning outcomes and why this project is valuable
 
@@ -83,10 +63,6 @@ The handbook must not become an implementation repository, nor select its backen
 **Distinctness and portfolio rationale:** Unlike D01 Workload & Complexity Observatory (algorithmic benchmark experiments), NodeScope supports **runtime incident evidence review and handoff**, not synthetic algorithm comparisons; unlike P04 it does not run integration preflight cases.
 
 Learning coverage is a **planned educational challenge**, not a guarantee that implementation must use a specific technique, nor proof of an assessed skill.
-
-
-
-
 
 ## Educational engineering challenge
 
