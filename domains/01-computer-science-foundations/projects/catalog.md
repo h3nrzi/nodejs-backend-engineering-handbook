@@ -1,14 +1,14 @@
-> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation Charters were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
 
 # D01 — Project candidate catalog
 
-**Status:** Four differentiated product concepts; P01–P04 PRDs learner-approved at product-scope level. Open product decisions remain; no implementations started.
+**Status:** Four differentiated product concepts; P01–P04 Charters learner-approved at educational-direction level. Open product decisions remain; no implementations started.
 
-These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a PRD is approved.
+These are distinct product ideas with observable goals and target learning coverage. **No database, framework, queue, lock, architecture, language-level concurrency strategy or infrastructure is prescribed.** Codex will explore technical solutions using Matt Pocock skills in the separate project repository after a Charter is approved.
 
 ## P01 — Workload & Complexity Observatory
 
-**Approved PRD:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-charter.md) — learner-approved; unresolved product thresholds retained.
+**Approved Charter:** [Workload & Complexity Observatory](p01-workload-complexity-observatory-charter.md) — learner-approved; unresolved product thresholds retained.
 
 - **Problem:** learners and engineering teams make data-structure and algorithm choices without understanding how performance changes as workloads grow.
 - **Users:** backend learners and developers analyzing workload trade-offs.
@@ -21,7 +21,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P02 — Concurrent Resource Allocation Simulator
 
-**Approved PRD:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-charter.md) — learner-approved; product thresholds remain open.
+**Approved Charter:** [Concurrent Resource Allocation Simulator](p02-concurrent-resource-allocation-simulator-charter.md) — learner-approved; product thresholds remain open.
 
 - **Problem:** concurrent claims on limited resources can cause invalid allocations or inconsistent outcomes.
 - **Users:** students and developers designing capacity-limited products such as ticket sales or reservations.
@@ -34,7 +34,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P03 — Dependency Workflow Simulator
 
-**Approved PRD:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-charter.md) — learner-approved; open product questions remain.
+**Approved Charter:** [Dependency Workflow Simulator](p03-dependency-workflow-simulator-charter.md) — learner-approved; open product questions remain.
 
 - **Problem:** complex activities depend on other activities; cycles and invalid transitions can make plans impossible to execute correctly.
 - **Users:** platform developers, engineering trainees, operations teams modeling workflows.
@@ -47,7 +47,7 @@ These are distinct product ideas with observable goals and target learning cover
 
 ## P04 — Large Dataset Processing Workspace
 
-**Approved PRD:** [Large Dataset Processing Workspace](p04-large-dataset-processing-workspace-charter.md) — learner-approved; open product questions remain.
+**Approved Charter:** [Large Dataset Processing Workspace](p04-large-dataset-processing-workspace-charter.md) — learner-approved; open product questions remain.
 
 - **Problem:** teams need to process datasets bigger than available memory while retaining verifiable and recoverable results.
 - **Users:** data operations and backend developers processing large exports/imports.
@@ -55,8 +55,8 @@ These are distinct product ideas with observable goals and target learning cover
 - **Not in scope:** commercial object storage or full ETL orchestration platform.
 - **Engineering challenge:** bounded resource use, partial failures, correctness and data integrity.
 - **Learning coverage:** file I/O, buffering, memory, throughput/latency, OS resources.
-- **Why worthwhile:** demonstrates systems fundamentals; implementation-specific Streams details are taught in lessons/D03, not forced by PRD.
-- **Next:** P04 PRD already learner-approved; resolve necessary first-version choices at its separate Matt/Codex kickoff with learner approval.
+- **Why worthwhile:** demonstrates systems fundamentals; implementation-specific Streams details are taught in lessons/D03, not forced by Charter.
+- **Next:** P04 Charter already learner-approved; resolve necessary first-version choices at its separate Matt/Codex kickoff with learner approval.
 
 ## Selection and overlap check
 
