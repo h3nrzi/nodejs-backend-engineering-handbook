@@ -80,6 +80,14 @@ function lowerBound(sorted: readonly number[], target: number): number {
 
 Trace `[1,2,2,5,9]` with target 2: result 1. With target 6: result 4. With target 10: result 5. In an unsorted array, binary search is not correct.
 
+**Visual question:** How does lowerBound retain the first duplicate while shrinking a half-open interval?
+
+![For sorted values one, two, two, five, nine and target two, the half-open interval starts at zero and ends at five. Midpoint two has value two, so hi becomes two. Midpoint one has value two, so hi becomes one. Midpoint zero has value one, so lo becomes one. Equal bounds return index one.](../assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg)
+
+**Figure 1 — A shrinking interval finds the first match.** A trace of the existing function on `[1,2,2,5,9]`, target 2. The half-open interval contains positions still to inspect; hi also remains a possible answer boundary. Equality moves hi leftward rather than returning an arbitrary duplicate. At termination, every earlier value is below 2 and index 1 is the first qualifying position. Sorted finite numbers and a finite target are assumed; box sizes are not interval lengths. This trace illustrates the invariant and does not replace its proof. [Reference](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r03/).
+
+[Full-size SVG](../assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg) · [Editable Mermaid source](../assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd)
+
 **Crucial distinction:** if data must first be sorted, preprocessing might cost O(n log n). Binary search is not automatically the fastest choice for one-off queries.
 
 ## 5. Divide-and-conquer and recurrences

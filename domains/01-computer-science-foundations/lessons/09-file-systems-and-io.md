@@ -100,6 +100,14 @@ A producer can emit chunks faster than downstream work can accept them. Without 
 
 At steady rates of 12 MiB/s produced and 8 MiB/s consumed, backlog grows around 4 MiB/s until resources run out or rates change. After a minute, roughly 240 MiB has accumulated if no limit or other behavior intervenes.
 
+**Visual question:** Which feedback stops backlog from growing when consumption is slower?
+
+![The producer offers work to a bounded buffer. The consumer removes work from the buffer. When capacity is exhausted, feedback pauses or rejects further offers according to policy. When capacity returns, feedback can allow production to resume. This describes flow control, not durability or guaranteed completion.](../assets/09-file-systems-and-io/bounded-buffer-feedback.svg)
+
+**Figure 1 — Capacity feedback constrains production.** Solid arrows move work; dashed arrows describe capacity feedback. At the stated 12 MiB/s offered and 8 MiB/s consumed, an unchecked backlog gains 4 MiB/s. A bounded buffer needs the documented pause, rejection or loss policy once full; capacity feedback can constrain accepted production. Removal frees a slot, but does not by itself prove durable storage, successful processing or fairness. K counts items here; byte size and other buffers need separate bounds. This is a conceptual mechanism, not a Node API event trace. [Reference](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf).
+
+[Full-size SVG](../assets/09-file-systems-and-io/bounded-buffer-feedback.svg) · [Editable Mermaid source](../assets/09-file-systems-and-io/bounded-buffer-feedback.mmd)
+
 A Node.js writable stream's `write()` boolean indicates whether producers should stop writing until a later `drain` event; it does **not** report that bytes have reached stable storage. Use `pipeline` and other higher-level facilities when justified by the implementation design.
 
 ```ts

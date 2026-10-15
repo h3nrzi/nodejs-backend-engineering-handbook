@@ -165,6 +165,14 @@ class MinHeap {
 
 **Trace:** insert 5,2,9,1; repeated pop returns 1,2,5,9. An educational test should assert after each operation that every existing parent's key is <= both existing child keys. This implementation doesn't include arbitrary deletion, indexed priority updates or stable tie handling; those are separate requirements.
 
+**Visual question:** Which ordering does a heap guarantee, and how do its tree edges map to array indexes?
+
+![Array [1,2,9,5] represents a min-heap: index zero has value one and children at indexes one and two with values two and nine. Index one has a left child at index three with value five. Parent values never exceed their children, but left children need not be smaller than parents.](../assets/03-trees-heaps-and-graphs/heap-index-relationships.svg)
+
+**Figure 1 — A min-heap is not a binary search tree.** After inserting 5,2,9,1 in the existing min-heap, the array is `[1,2,9,5]`. Edges show child relationships, not execution order: `2i+1` and `2i+2` locate children. The complete-tree shape and inequalities 1≤2, 1≤9, 2≤5 hold. This is not a BST: the root’s left subtree contains values larger than 1. The drawing does not promise sorted iteration or FIFO ties. [Reference](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_lec8/).
+
+[Full-size SVG](../assets/03-trees-heaps-and-graphs/heap-index-relationships.svg) · [Editable Mermaid source](../assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd)
+
 **Why build-heap is O(n) rather than O(n log n):** most nodes lie close to leaves and require little sift-down work; a weighted sum over node heights is linear. Repeatedly inserting n items is O(n log n), which is a different construction process.
 
 ## 5. Graph representation: adjacency list versus matrix
@@ -224,6 +232,14 @@ Walkthrough on graph A→B,C; B→D; C→D: BFS from A visits A, B, C, D (assumi
 A workflow dependency A→B can mean “A must finish before B starts”; define edge direction explicitly. If there is a directed cycle A→B→C→A, no task in that cycle can become ready under the ordinary prerequisite rule.
 
 A **topological ordering** exists for a directed graph **if and only if** it is acyclic. It can be found by repeatedly removing vertices of in-degree zero (Kahn's algorithm), or by DFS finishing times with cycle detection.
+
+**Visual question:** Why is one completed prerequisite insufficient to release a shared dependent?
+
+![A and B are prerequisites of C, and C is a prerequisite of D. In the shown snapshot A is complete and B is pending, so C and D remain blocked. Completing B can make C eligible, but D still requires C to complete.](../assets/03-trees-heaps-and-graphs/dependency-readiness.svg)
+
+**Figure 2 — Both prerequisites must complete.** Every arrow means “must finish before the target starts.” This snapshot uses A→C, B→C, C→D: C waits for both parents. With only successful prerequisite completion as the readiness rule, completing B makes C eligible, not already running; D still waits. A,B,C,D and B,A,C,D are valid static orders. Eligibility alone establishes neither dispatch timing nor fairness. [Reference](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_lec10/).
+
+[Full-size SVG](../assets/03-trees-heaps-and-graphs/dependency-readiness.svg) · [Editable Mermaid source](../assets/03-trees-heaps-and-graphs/dependency-readiness.mmd)
 
 ### Kahn's algorithm (educational)
 

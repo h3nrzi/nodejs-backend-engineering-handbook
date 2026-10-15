@@ -1,0 +1,21 @@
+---
+config:
+  fontSize: 18
+  sequence:
+    diagramMarginX: 15
+    useMaxWidth: false
+---
+sequenceDiagram
+  accTitle: An await splits the check from the update
+  accDescr: Both reserve calls check remaining equal to one and suspend at the shared gate. The gate is released once. A resumes and decrements remaining to zero, returning true. B then resumes and decrements it to minus one, returning true. This is one possible continuation order and violates capacity safety.
+  participant A as Call A
+  participant B as Call B
+  Note over A,B: Shared remaining=1
+  A->>A: Check passes, await gate
+  B->>B: Check passes, await gate
+  Note over A,B: Gate released once<br/>Both may resume
+  A->>A: remaining-- gives 0<br/>Return true
+  B->>B: remaining-- gives -1<br/>Return true
+  Note over A,B: Two successes for one unit<br/>Safety violated
+
+

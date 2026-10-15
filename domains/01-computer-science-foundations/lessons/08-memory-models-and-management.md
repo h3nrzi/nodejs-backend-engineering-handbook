@@ -64,6 +64,14 @@ A tracing garbage collector typically starts from roots, marks reachable objects
 
 Reference counting, tracing GC and manual allocation are different memory-management strategies. Cycles are a classic problem for naïve reference counting; tracing collectors can reclaim unreachable cycles.
 
+**Visual question:** Why can a cache retain unused bytes while a separate cycle is collectible?
+
+![A runtime root reaches a cache, which strongly references a small view, which retains a large backing buffer. Separately, objects X and Y reference each other but have no root path. The rooted chain stays reachable; the isolated cycle is eligible for tracing collection.](../assets/08-memory-models-and-management/reachability-and-cycles.svg)
+
+**Figure 1 — Reachability determines collection eligibility.** Arrows are strong references, not copies or a physical memory layout. A rooted cache entry can keep a small view and its larger backing allocation alive. X↔Y has no root path and is eligible for tracing collection despite its cycle. Removing the cache entry releases this path only; any other reference can still retain the allocation. Collection timing, allocator reuse and return of resident memory to the OS are separate matters. Weak references and collector internals are omitted. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management).
+
+[Full-size SVG](../assets/08-memory-models-and-management/reachability-and-cycles.svg) · [Editable Mermaid source](../assets/08-memory-models-and-management/reachability-and-cycles.mmd)
+
 ## 5. Fragmentation and allocation pressure
 
 **Internal fragmentation:** allocated blocks contain unused space. **External fragmentation:** free space is split into chunks that may not satisfy a larger contiguous request. Compaction, allocation classes and paging can change the consequences.

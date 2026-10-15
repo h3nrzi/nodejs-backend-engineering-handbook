@@ -141,6 +141,14 @@ class RingQueue<T> {
 
 Invariants: `0 <= count <= capacity`, and `0 <= head < capacity`. Try capacity 2: enqueue A/B, dequeue A, enqueue C, dequeue B/C. A valid bounded queue must specify an observable overflow policy: reject, block/wait, drop, or an agreed alternative. The code rejects; a future PRD must describe the behavior but let Codex choose a solution.
 
+**Visual question:** How can FIFO order continue when the insertion index wraps?
+
+![For a capacity-two queue, slots zero and one contain A and B with head zero and count two. Dequeue clears slot zero and moves head to one. Enqueue C writes slot zero, leaving physical slots C and B but logical order B then C.](../assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg)
+
+**Figure 1 — Logical order survives physical wraparound.** Each box shows the same two physical slots after a completed operation in the existing `RingQueue` example. The next insertion index is `(head+count)%capacity`: `(1+1)%2=0`. B remains oldest even though C occupies slot 0. No elements shift. The queue is full again, so the next enqueue rejects under this example’s policy; no concurrency guarantee is implied. [Reference](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r02/).
+
+[Full-size SVG](../assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg) · [Editable Mermaid source](../assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd)
+
 ## 5. Maps, sets and hash tables
 
 A **map** associates a unique key with a value. A **set** holds unique members. A hash table is one possible implementation of these ADTs. A hash function maps a key into a table position; **collisions** occur when distinct keys compete for a position.

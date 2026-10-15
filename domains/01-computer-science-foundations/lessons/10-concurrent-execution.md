@@ -174,6 +174,14 @@ async function demonstrateRace(): Promise<void> {
 }
 ```
 
+**Visual question:** How can two one-at-a-time JavaScript continuations both pass a stock check?
+
+![Both reserve calls check remaining equal to one and suspend at the shared gate. The gate is released once. A resumes and decrements remaining to zero, returning true. B then resumes and decrements it to minus one, returning true. This is one possible continuation order and violates capacity safety.](../assets/10-concurrent-execution/await-race-interleaving.svg)
+
+**Figure 1 — An await splits the check from the update.** One controlled schedule for `demonstrateRace()` immediately above, with A resumed first. Both checks pass before either decrement. The two decrements run in separate continuations on the same JS thread; simultaneous execution is unnecessary. The result is `[true,true]` and remaining −1. Reversing continuation order changes which call decrements first, not this violation. This is a deliberately defective local model, not a shared-memory or distributed-lock design; vertical spacing is not elapsed time. [Reference](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf).
+
+[Full-size SVG](../assets/10-concurrent-execution/await-race-interleaving.svg) · [Editable Mermaid source](../assets/10-concurrent-execution/await-race-interleaving.mmd)
+
 This deterministic demonstration creates a shared pause so both calls pass the stale check. It is intentionally buggy and for education only. Note that ordinary timing-based stress tests can miss races; controlled schedules make one particular violation reproducible but do not exhaust all possible schedules.
 
 ## 10. Backend case studies and contract boundaries

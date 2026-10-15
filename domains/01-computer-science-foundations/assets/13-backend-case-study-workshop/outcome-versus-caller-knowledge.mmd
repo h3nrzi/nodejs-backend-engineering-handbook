@@ -1,0 +1,22 @@
+---
+config:
+  fontSize: 18
+  sequence:
+    diagramMarginX: 15
+    useMaxWidth: false
+---
+sequenceDiagram
+  accTitle: Caller knowledge can lag the actual outcome
+  accDescr: A caller submits attempt R. The service confirms R but its response is lost. The caller times out and knows only that R is unresolved to it, while the service remains confirmed. Later the caller asks for the outcome of R and learns it was confirmed. No second reservation is created by this conceptual reconciliation.
+  participant C as Caller
+  participant S as Service
+  C->>S: Submit attempt R
+  S->>S: Confirm R
+  S--xC: Confirmation lost
+  Note over C,S: Caller: unknown<br/>Service: confirmed
+  C->>C: Timeout, stop waiting
+  C->>S: Ask outcome of R
+  S-->>C: R is confirmed
+  Note over C,S: Caller now knows confirmed
+
+

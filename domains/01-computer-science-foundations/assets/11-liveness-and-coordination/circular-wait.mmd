@@ -1,0 +1,21 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: A circular wait has no enabled release
+  accDescr: Worker A holds the only instance of X and waits for Y held by B. Worker B holds the only instance of Y and waits for X held by A. Wait-for edges point from each blocked worker to the holder it needs. Neither releases while waiting, so neither can progress without recovery.
+  A["Worker A<br/>Holds X, waits for Y"] -->|Waits for holder B| B["Worker B<br/>Holds Y, waits for X"]
+  B -->|Waits for holder A| A
+  class A,B pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

@@ -1,0 +1,25 @@
+---
+config:
+  state:
+    useMaxWidth: false
+  themeVariables:
+    fontSize: 20px
+---
+stateDiagram-v2
+  accTitle: Terminal attempts have no outgoing transitions
+  accDescr: Queued can start to Running or cancel to Cancelled. Running can complete to Succeeded, fail to Failed, or cancel to Cancelled. Succeeded, Failed and Cancelled have no outgoing permitted transitions. Guards and rejected outcomes are defined in the adjacent transition table.
+  direction TB
+  [*] --> Queued
+  Queued --> Running : start
+  Queued --> Cancelled : cancel
+  Running --> Succeeded : complete
+  Running --> Failed : fail
+  Running --> Cancelled : cancel
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  class Succeeded success
+  class Failed failure
+  class Cancelled neutral
+
+

@@ -28,6 +28,14 @@ created → ready → running → terminated
 
 A waiting operation becomes runnable upon completion, then the scheduler may run it. Operating systems implement additional states and schedule threads differently; this diagram isn't a specification for all kernels.
 
+**Visual question:** Does I/O completion mean waiting work immediately runs?
+
+![Created work becomes ready and is dispatched to running. Running work can be preempted back to ready, block while waiting for I/O or synchronization, or terminate. A waiting operation becomes ready when its wait condition is satisfied; only a scheduler dispatch makes it run.](../assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg)
+
+**Figure 1 — Ready is different from running.** This expanded educational model labels the return path in the text sketch above. Completion of the awaited I/O or synchronization condition makes work runnable; it does not bypass Ready or guarantee immediate CPU service. The exit edge is an ordinary running-to-exit path; forced termination and kernel-specific states are omitted. It models schedulable work, not promises, JavaScript callbacks or one universal kernel implementation. [Reference](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf).
+
+[Full-size SVG](../assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg) · [Editable Mermaid source](../assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd)
+
 **Context switching** saves/restores execution state. It can cost CPU work and disrupt caches. A syscall or asynchronous operation does not always require a full process switch.
 
 ## 3. CPU scheduling

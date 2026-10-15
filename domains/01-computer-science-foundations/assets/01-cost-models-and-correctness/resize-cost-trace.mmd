@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    minNodeWidth: 280
+    wrappingWidth: 280
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Copies occur at resize boundaries
+  accDescr: Starting at capacity one, appending the first item copies none. Appends two, three and five copy one, two and four old items. Append four copies none. Five appends perform five new-item assignments plus seven growth copies.
+  A["Append 1: length 1, capacity 1<br/>0 old items copied"]
+  B["Append 2: length 2, capacity 2<br/>1 old item copied"]
+  C["Append 3: length 3, capacity 4<br/>2 old items copied"]
+  D["Append 4: length 4, capacity 4<br/>0 old items copied"]
+  E["Append 5: length 5, capacity 8<br/>4 old items copied"]
+  A -->|Grow| B -->|Grow| C -->|Spare capacity| D -->|Grow| E
+  class B,C,E pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

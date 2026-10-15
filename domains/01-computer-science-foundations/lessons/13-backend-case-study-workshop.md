@@ -50,6 +50,14 @@ Model terminal status separately from the customer's knowledge of the status: th
 
 **Safety invariant:** for every resource r and instant t, the number of confirmed reservations covering t on r is at most one.
 
+**Visual question:** How can a reservation be confirmed while the caller still sees an unknown outcome?
+
+![A caller submits attempt R. The service confirms R but its response is lost. The caller times out and knows only that R is unresolved to it, while the service remains confirmed. Later the caller asks for the outcome of R and learns it was confirmed. No second reservation is created by this conceptual reconciliation.](../assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg)
+
+**Figure 1 — Caller knowledge can lag the actual outcome.** A permitted Case A failure-and-reconciliation story, not an observed network trace. The timeout changes the caller’s knowledge, not the confirmed reservation. Reconciliation refers to the same logical attempt R; it does not create a fresh claim. Assume the service can retrieve the authoritative outcome as required by this case. The drawing chooses no endpoint, data store, transport timing or retry mechanism and does not prove crash recovery. [Reference](https://lamport.azurewebsites.net/tla/book.html).
+
+[Full-size SVG](../assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg) · [Editable Mermaid source](../assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd)
+
 ### 3. Counterexample schedule
 
 ```text

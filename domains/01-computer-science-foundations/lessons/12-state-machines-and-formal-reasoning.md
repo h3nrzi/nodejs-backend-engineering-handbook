@@ -31,6 +31,14 @@ queued ──start──→ running ──complete──→ succeeded
 
 In this simplified product, terminal states are `succeeded`, `failed` and `cancelled`. No transition leaves a terminal state. A different product may allow retry by creating a **new attempt**, rather than reopening a terminal attempt.
 
+**Visual question:** Which transitions enter a terminal attempt, and can any leave it?
+
+![Queued can start to Running or cancel to Cancelled. Running can complete to Succeeded, fail to Failed, or cancel to Cancelled. Succeeded, Failed and Cancelled have no outgoing permitted transitions. Guards and rejected outcomes are defined in the adjacent transition table.](../assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg)
+
+**Figure 1 — Terminal attempts have no outgoing transitions.** Follow the permitted edges for one job attempt. The transition table below supplies guards: completion needs validated output, and running cancellation needs policy to let cancellation win. Terminal nodes have no outgoing permitted edges; a rejected command leaves state unchanged and is not drawn as a successful self-transition. This visual expands the text sketch above using the table as authority. Competing commands still need atomic enforcement; retries as new attempts and authorization/persistence are outside this model. [Reference](https://lamport.azurewebsites.net/tla/book.html).
+
+[Full-size SVG](../assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg) · [Editable Mermaid source](../assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd)
+
 ### Transition table
 
 | Current | Event | Guard | Next | Observable result |

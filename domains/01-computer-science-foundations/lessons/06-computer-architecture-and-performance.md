@@ -52,6 +52,14 @@ Consider an illustrative sequential request:
 
 Total: 53 ms. Cutting computation time in half saves 4 ms, making total 49 ms. This only holds when these times add sequentially; overlapping work and queues change the critical path.
 
+**Visual question:** Why does halving computation save only four milliseconds in this request?
+
+![The illustrative sequential request parses for two milliseconds, fetches for forty, computes for eight and serializes for three, totaling fifty-three. Halving only computation to four milliseconds reduces the total to forty-nine. All stages are sequential with no queueing or overlap.](../assets/06-computer-architecture-and-performance/sequential-critical-path.svg)
+
+**Figure 1 — Optimize a stage, then recompute the whole path.** Follow the critical path of the lesson’s invented sequential request. Only the computation stage changes: 2+40+8+3=53 ms becomes 2+40+4+3=49 ms. Equal-size boxes do not represent equal durations. These are illustrative values, not benchmark results; there is no queueing, overlap, contention or changed overhead in this model. [Reference](https://www3.cs.stonybrook.edu/~rezaul/Spring-2019/CSE613/reading/Amdahl-1967.pdf).
+
+[Full-size SVG](../assets/06-computer-architecture-and-performance/sequential-critical-path.svg) · [Editable Mermaid source](../assets/06-computer-architecture-and-performance/sequential-critical-path.mmd)
+
 Concurrency means progress across overlapping tasks; parallelism means execution at the same time on separate resources. Asynchronous network waits can improve utilization but do not alone accelerate CPU-intensive computation.
 
 ## 5. Processes, threads, scheduling and context switches

@@ -33,6 +33,14 @@ Wait-for graph: A → B → A
 
 With single-instance resources, this cycle indicates deadlock. With multiple resource instances a cycle alone may be insufficient. Resource ordering, avoiding hold-and-wait and explicit recovery are possible concepts, but no strategy belongs in a project PRD by default.
 
+**Visual question:** When does a wait-for cycle establish deadlock?
+
+![Worker A holds the only instance of X and waits for Y held by B. Worker B holds the only instance of Y and waits for X held by A. Wait-for edges point from each blocked worker to the holder it needs. Neither releases while waiting, so neither can progress without recovery.](../assets/11-liveness-and-coordination/circular-wait.svg)
+
+**Figure 1 — A circular wait has no enabled release.** Edges mean “waits for the holder,” not resource transfer or execution order. Assume X and Y each have one instance, exclusive ownership, no forced reclamation, and neither worker releases its held resource while waiting. Both are blocked, so this is deadlock under the stated reusable-resource model. Multiple-instance resources require further analysis; an arbitrary graph cycle alone is not a universal deadlock test. Timeouts or recovery can change the model. [Reference](https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf).
+
+[Full-size SVG](../assets/11-liveness-and-coordination/circular-wait.svg) · [Editable Mermaid source](../assets/11-liveness-and-coordination/circular-wait.mmd)
+
 ## 3. Starvation and livelock
 
 **Starvation** occurs when eligible work is repeatedly denied service while other work proceeds. A flood of high-priority requests can starve lower-priority work.

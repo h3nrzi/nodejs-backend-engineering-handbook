@@ -1,0 +1,26 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    minNodeWidth: 280
+    wrappingWidth: 280
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Logical order survives physical wraparound
+  accDescr: For a capacity-two queue, slots zero and one contain A and B with head zero and count two. Dequeue clears slot zero and moves head to one. Enqueue C writes slot zero, leaving physical slots C and B but logical order B then C.
+  A["Slots: 0=A, 1=B<br/>head=0, count=2<br/>FIFO: A then B"]
+  B["Slots: 0=empty, 1=B<br/>head=1, count=1<br/>FIFO: B"]
+  C["Slots: 0=C, 1=B<br/>head=1, count=2<br/>FIFO: B then C"]
+  A -->|Dequeue A, clear slot 0| B
+  B -->|Enqueue C at index 0| C
+  class B control;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

@@ -1,0 +1,24 @@
+---
+config:
+  state:
+    useMaxWidth: false
+  themeVariables:
+    fontSize: 20px
+---
+stateDiagram-v2
+  accTitle: Ready is different from running
+  accDescr: Created work becomes ready and is dispatched to running. Running work can be preempted back to ready, block while waiting for I/O or synchronization, or terminate. A waiting operation becomes ready when its wait condition is satisfied; only a scheduler dispatch makes it run.
+  direction TB
+  [*] --> Created
+  Created --> Ready : admitted
+  Ready --> Running : dispatch
+  Running --> Ready : preempt / yield
+  Running --> Waiting : block
+  Waiting --> Ready : wait satisfied
+  Running --> Terminated : exit
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  class Ready,Waiting pending
+  class Running success
+
+

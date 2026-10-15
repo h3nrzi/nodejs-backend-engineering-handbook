@@ -1,0 +1,1489 @@
+{
+  "baseline": "59aeeb59a0f277f4073fa73df445012f8a7f02a6",
+  "date": "2026-10-15T16:40:23.569Z",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "browser": "Chrome/155.0.8059.79"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/05-discrete-foundations.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/10-concurrent-execution.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6:domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6",
+        "--",
+        "tracking/state.json",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/01-computer-science-foundations/README.md",
+        "domains/01-computer-science-foundations/curriculum.md",
+        "domains/01-computer-science-foundations/projects",
+        "domains/02-javascript-typescript",
+        "domains/03-nodejs-internals",
+        "domains/04-network-protocol-engineering",
+        "tools",
+        "scripts",
+        "package.json",
+        "package-lock.json"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "59aeeb59a0f277f4073fa73df445012f8a7f02a6"
+      ],
+      "exit": 0,
+      "stdout": "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md\ndomains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md\ndomains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md\ndomains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md\ndomains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md\ndomains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md\ndomains/01-computer-science-foundations/lessons/08-memory-models-and-management.md\ndomains/01-computer-science-foundations/lessons/09-file-systems-and-io.md\ndomains/01-computer-science-foundations/lessons/10-concurrent-execution.md\ndomains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md\ndomains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md\ndomains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit": 0,
+      "stdout": "docs/visual-d01/changed-files.txt\ndocs/visual-d01/guide.md\ndocs/visual-d01/lab-replay.json\ndocs/visual-d01/plan.json\ndocs/visual-d01/replay.mjs\ndocs/visual-d01/review.md\ndocs/visual-d01/validation.txt\ndocs/visual-d01/verification.json\ndocs/visual-d01/verify.mjs\ndomains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd\ndomains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.svg\ndomains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd\ndomains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg\ndomains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd\ndomains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.svg\ndomains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd\ndomains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.svg\ndomains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd\ndomains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg\ndomains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd\ndomains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.svg\ndomains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd\ndomains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg\ndomains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd\ndomains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.svg\ndomains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd\ndomains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.svg\ndomains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd\ndomains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.svg\ndomains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd\ndomains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.svg\ndomains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd\ndomains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg\ndomains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd\ndomains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:smoke"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:smoke\n> node scripts/check-visuals.mjs\n\nDisposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-U3vmPP\ntcp-handshake: PNG 507 x 357, 16388 bytes\nevent-loop-scheduling: PNG 236 x 725, 30572 bytes\nrequest-lifecycle: PNG 451 x 536, 25604 bytes\nMarkdown: 3 fences validated; 3 relative SVG image references resolve.\nMath: KaTeX typeset output verified with an explicit HTML-label config.\nRefusal checks: invalid fence reports block/line; missing browser exits 2.\nPASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-U3vmPP; remove only this directory after review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "--self-test-styles"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check --self-test-styles\n\nOK  <style-self-test> (5 colored Mermaid blocks)\n\nValidation passed: checked 5 Mermaid blocks across 1 target.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md",
+        "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
+        "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+        "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md",
+        "domains/01-computer-science-foundations/lessons/05-discrete-foundations.md",
+        "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md",
+        "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md",
+        "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
+        "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md",
+        "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+        "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
+        "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+        "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+        "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md",
+        "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd",
+        "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd",
+        "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd",
+        "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd",
+        "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd",
+        "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd",
+        "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd",
+        "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd",
+        "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd",
+        "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd",
+        "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md domains/01-computer-science-foundations/lessons/05-discrete-foundations.md domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md domains/01-computer-science-foundations/lessons/10-concurrent-execution.md domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd\n\nOK  domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd (1 Mermaid block)\nOK  domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd (1 Mermaid block)\n\nValidation passed: checked 13 Mermaid blocks across 27 targets.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd -o domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd -o domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd -o domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd -o domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd -o domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd -o domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd -o domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd -o domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd -o domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd -o domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd -o domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd -o domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd",
+        "-o",
+        "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd -o domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-handbook-links.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"checked_internal_links\": 1024,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "lessons": [
+    {
+      "path": "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md",
+      "sha256": "2425aa1a282074f63f6fbfa23e775cbf1c47a5b5597ab948b477747575785292",
+      "baselineSha256": "7fdd916b64f6991b6fe2571d5071e0605ffe8f54b1e71efb8ea6bc451dd1c6ce",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/01-cost-models-and-correctness/resize-cost-trace.svg",
+              "alt": "Starting at capacity one, appending the first item copies none. Appends two, three and five copy one, two and four old items. Append four copies none. Five appends perform five new-item assignments plus seven growth copies.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/01-cost-models-and-correctness/resize-cost-trace.svg",
+              "alt": "Starting at capacity one, appending the first item copies none. Appends two, three and five copy one, two and four old items. Append four copies none. Five appends perform five new-item assignments plus seven growth copies.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
+      "sha256": "8cdba4285034562581e30b68ede49d971729fe563948a3bb8a5cc5b064a035b6",
+      "baselineSha256": "25b731191dd4c73438c87dadab5321fa93df0a3d9e4170507b68502ea39be117",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg",
+              "alt": "For a capacity-two queue, slots zero and one contain A and B with head zero and count two. Dequeue clears slot zero and moves head to one. Enqueue C writes slot zero, leaving physical slots C and B but logical order B then C.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg",
+              "alt": "For a capacity-two queue, slots zero and one contain A and B with head zero and count two. Dequeue clears slot zero and moves head to one. Enqueue C writes slot zero, leaving physical slots C and B but logical order B then C.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "sha256": "eb5f911803d1c8683eb030e3b843cefe9c1a056833789ec47ea6d8cafc095354",
+      "baselineSha256": "6023792aa1e9103325d86883cae3fefc9396c60111c2d94f40f6e0b4990b74fb",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/03-trees-heaps-and-graphs/heap-index-relationships.svg",
+              "alt": "Array [1,2,9,5] represents a min-heap: index zero has value one and children at indexes one and two with values two and nine. Index one has a left child at index three with value five. Parent values never exceed their children, but left children need not be smaller than parents.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 360
+            },
+            {
+              "src": "../assets/03-trees-heaps-and-graphs/dependency-readiness.svg",
+              "alt": "A and B are prerequisites of C, and C is a prerequisite of D. In the shown snapshot A is complete and B is pending, so C and D remain blocked. Completing B can make C eligible, but D still requires C to complete.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 360
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/03-trees-heaps-and-graphs/heap-index-relationships.svg",
+              "alt": "Array [1,2,9,5] represents a min-heap: index zero has value one and children at indexes one and two with values two and nine. Index one has a left child at index three with value five. Parent values never exceed their children, but left children need not be smaller than parents.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 360
+            },
+            {
+              "src": "../assets/03-trees-heaps-and-graphs/dependency-readiness.svg",
+              "alt": "A and B are prerequisites of C, and C is a prerequisite of D. In the shown snapshot A is complete and B is pending, so C and D remain blocked. Completing B can make C eligible, but D still requires C to complete.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 360
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md",
+      "sha256": "e4cf991b76fe247265f42ee8e1de089d25c5463f3d9508239780dc80264215cb",
+      "baselineSha256": "a23ec5a9ae7ce6ecb20cba763e36cac753a86bdd77e0ab18400598a626ac7745",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg",
+              "alt": "For sorted values one, two, two, five, nine and target two, the half-open interval starts at zero and ends at five. Midpoint two has value two, so hi becomes two. Midpoint one has value two, so hi becomes one. Midpoint zero has value one, so lo becomes one. Equal bounds return index one.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg",
+              "alt": "For sorted values one, two, two, five, nine and target two, the half-open interval starts at zero and ends at five. Midpoint two has value two, so hi becomes two. Midpoint one has value two, so hi becomes one. Midpoint zero has value one, so lo becomes one. Equal bounds return index one.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/05-discrete-foundations.md",
+      "sha256": "786441f839971c9645f90c4c18657e02ce88935f105518f7831a3502d58bc634",
+      "baselineSha256": "786441f839971c9645f90c4c18657e02ce88935f105518f7831a3502d58bc634",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": []
+        },
+        {
+          "columnWidth": 360,
+          "images": []
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md",
+      "sha256": "d39a250bb49e7e9f15e127b96e6ec7fcf16d3125fda8f37e122f81acb8099662",
+      "baselineSha256": "91a35b1373dcfd1ccaea4594110e4b9cc85b4388e548939ac99cfb70e50d3a6e",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/06-computer-architecture-and-performance/sequential-critical-path.svg",
+              "alt": "The illustrative sequential request parses for two milliseconds, fetches for forty, computes for eight and serializes for three, totaling fifty-three. Halving only computation to four milliseconds reduces the total to forty-nine. All stages are sequential with no queueing or overlap.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/06-computer-architecture-and-performance/sequential-critical-path.svg",
+              "alt": "The illustrative sequential request parses for two milliseconds, fetches for forty, computes for eight and serializes for three, totaling fifty-three. Halving only computation to four milliseconds reduces the total to forty-nine. All stages are sequential with no queueing or overlap.",
+              "loaded": true,
+              "width": 328,
+              "naturalWidth": 328
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md",
+      "sha256": "5c754276b4e9c9a84e03943f90ff2b65e10858c13533b9da6ca1dfb20f583c3a",
+      "baselineSha256": "cf17102c7853244ac66478110f1b960fed5f2e1a441727ddf4634a87a8d3350e",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg",
+              "alt": "Created work becomes ready and is dispatched to running. Running work can be preempted back to ready, block while waiting for I/O or synchronization, or terminate. A waiting operation becomes ready when its wait condition is satisfied; only a scheduler dispatch makes it run.",
+              "loaded": true,
+              "width": 350,
+              "naturalWidth": 350
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg",
+              "alt": "Created work becomes ready and is dispatched to running. Running work can be preempted back to ready, block while waiting for I/O or synchronization, or terminate. A waiting operation becomes ready when its wait condition is satisfied; only a scheduler dispatch makes it run.",
+              "loaded": true,
+              "width": 350,
+              "naturalWidth": 350
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
+      "sha256": "01d066d689c7b18a1c54e58fa13e7f65ecc504e601bc1266d3dbc34b6eb4daef",
+      "baselineSha256": "686aac7373724c9cf639bbac6e1e11ed57563fb21ed640a431be5ec0b2be9da3",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/08-memory-models-and-management/reachability-and-cycles.svg",
+              "alt": "A runtime root reaches a cache, which strongly references a small view, which retains a large backing buffer. Separately, objects X and Y reference each other but have no root path. The rooted chain stays reachable; the isolated cycle is eligible for tracing collection.",
+              "loaded": true,
+              "width": 361,
+              "naturalWidth": 361
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/08-memory-models-and-management/reachability-and-cycles.svg",
+              "alt": "A runtime root reaches a cache, which strongly references a small view, which retains a large backing buffer. Separately, objects X and Y reference each other but have no root path. The rooted chain stays reachable; the isolated cycle is eligible for tracing collection.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 361
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md",
+      "sha256": "dddd138b4f9bd29986f11d8f299262390d0d2a8b4079a4d75a35de6e2cfb445b",
+      "baselineSha256": "1302c8a01262148a78704f04eae355d5030cc82c4415aa3c99d0ffe332ec34df",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/09-file-systems-and-io/bounded-buffer-feedback.svg",
+              "alt": "The producer offers work to a bounded buffer. The consumer removes work from the buffer. When capacity is exhausted, feedback pauses or rejects further offers according to policy. When capacity returns, feedback can allow production to resume. This describes flow control, not durability or guaranteed completion.",
+              "loaded": true,
+              "width": 312,
+              "naturalWidth": 312
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/09-file-systems-and-io/bounded-buffer-feedback.svg",
+              "alt": "The producer offers work to a bounded buffer. The consumer removes work from the buffer. When capacity is exhausted, feedback pauses or rejects further offers according to policy. When capacity returns, feedback can allow production to resume. This describes flow control, not durability or guaranteed completion.",
+              "loaded": true,
+              "width": 312,
+              "naturalWidth": 312
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+      "sha256": "53da63d20f0700e594d65983257fd1f67c08d7b54fefe122612749fea74663e1",
+      "baselineSha256": "3e6abdcd88a0db599ff3ca2e22a3cbc6cedb846b169c8b671c12621a9b015865",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/10-concurrent-execution/await-race-interleaving.svg",
+              "alt": "Both reserve calls check remaining equal to one and suspend at the shared gate. The gate is released once. A resumes and decrements remaining to zero, returning true. B then resumes and decrements it to minus one, returning true. This is one possible continuation order and violates capacity safety.",
+              "loaded": true,
+              "width": 409,
+              "naturalWidth": 409
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/10-concurrent-execution/await-race-interleaving.svg",
+              "alt": "Both reserve calls check remaining equal to one and suspend at the shared gate. The gate is released once. A resumes and decrements remaining to zero, returning true. B then resumes and decrements it to minus one, returning true. This is one possible continuation order and violates capacity safety.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 409
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
+      "sha256": "8adbbb3153fe2bc3475831634ecb719c1db0d2aa2880a3485686f2f55fae9851",
+      "baselineSha256": "8dc786399183444059336b5f5ade63eec6223a5aed4c51ac6cbd8dbf8fba2d22",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/11-liveness-and-coordination/circular-wait.svg",
+              "alt": "Worker A holds the only instance of X and waits for Y held by B. Worker B holds the only instance of Y and waits for X held by A. Wait-for edges point from each blocked worker to the holder it needs. Neither releases while waiting, so neither can progress without recovery.",
+              "loaded": true,
+              "width": 359,
+              "naturalWidth": 359
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/11-liveness-and-coordination/circular-wait.svg",
+              "alt": "Worker A holds the only instance of X and waits for Y held by B. Worker B holds the only instance of Y and waits for X held by A. Wait-for edges point from each blocked worker to the holder it needs. Neither releases while waiting, so neither can progress without recovery.",
+              "loaded": true,
+              "width": 359,
+              "naturalWidth": 359
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+      "sha256": "e063754705f4235055375ef42460f517fbf7ca7d42e6122469a72e2a53d1161c",
+      "baselineSha256": "23f347f9793d3692926885151dbce993c7fcb5cad889ee90603a2f3f3560bc34",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg",
+              "alt": "Queued can start to Running or cancel to Cancelled. Running can complete to Succeeded, fail to Failed, or cancel to Cancelled. Succeeded, Failed and Cancelled have no outgoing permitted transitions. Guards and rejected outcomes are defined in the adjacent transition table.",
+              "loaded": true,
+              "width": 504,
+              "naturalWidth": 504
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg",
+              "alt": "Queued can start to Running or cancel to Cancelled. Running can complete to Succeeded, fail to Failed, or cancel to Cancelled. Succeeded, Failed and Cancelled have no outgoing permitted transitions. Guards and rejected outcomes are defined in the adjacent transition table.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 504
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+      "sha256": "c621ec78b173b8a495ee95ae4fc724628a1f9333fd284ae1c6cb3ca94ef29cc0",
+      "baselineSha256": "5746a40e4756a8e693dd24920d51f80ce3ee4aedd3e40c31d065b3d4b9c52545",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg",
+              "alt": "A caller submits attempt R. The service confirms R but its response is lost. The caller times out and knows only that R is unresolved to it, while the service remains confirmed. Later the caller asks for the outcome of R and learns it was confirmed. No second reservation is created by this conceptual reconciliation.",
+              "loaded": true,
+              "width": 385,
+              "naturalWidth": 385
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg",
+              "alt": "A caller submits attempt R. The service confirms R but its response is lost. The caller times out and knows only that R is unresolved to it, while the service remains confirmed. Later the caller asks for the outcome of R and learns it was confirmed. No second reservation is created by this conceptual reconciliation.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 385
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md",
+      "sha256": "eaea7d9594ca0f60997f8ed027ec6883fd3a59a39824931216a8229437da8398",
+      "baselineSha256": "eaea7d9594ca0f60997f8ed027ec6883fd3a59a39824931216a8229437da8398",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": []
+        },
+        {
+          "columnWidth": 360,
+          "images": []
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "source": "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd",
+      "sourceSha256": "ac765c0724180fccb499b0c67e362f2916dab62e305319f05b30114112f51b8c",
+      "svg": "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.svg",
+      "svgSha256": "1d5fc25a20c11cd0615a507af63f8b41d79896842b0f68d44978bb9ec5340f0d",
+      "xmlValid": true,
+      "title": "Copies occur at resize boundaries",
+      "description": "Starting at capacity one, appending the first item copies none. Appends two, three and five copy one, two and four old items. Append four copies none. Five appends perform five new-item assignments plus seven growth copies.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 328 780.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd",
+      "sourceSha256": "89ddbf08abcc4e82388c34ee68e1cd783a2ab9564e273401777e83f13d2cc691",
+      "svg": "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg",
+      "svgSha256": "c688427a99058fad2d5edeeee276725bf704fd4b589a25beb8ae9d2f5f6fd86a",
+      "xmlValid": true,
+      "title": "Logical order survives physical wraparound",
+      "description": "For a capacity-two queue, slots zero and one contain A and B with head zero and count two. Dequeue clears slot zero and moves head to one. Enqueue C writes slot zero, leaving physical slots C and B but logical order B then C.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 328 520",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd",
+      "sourceSha256": "374e7474034d02dcd3e87498d6aa00cb77e1d62542eb791d4e85dc06ab66a129",
+      "svg": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.svg",
+      "svgSha256": "6b33ad59dbe64a0b642694d474eb4ec80696abcec3f96ef015b4e84c0dbe14dd",
+      "xmlValid": true,
+      "title": "A min-heap is not a binary search tree",
+      "description": "Array [1,2,9,5] represents a min-heap: index zero has value one and children at indexes one and two with values two and nine. Index one has a left child at index three with value five. Parent values never exceed their children, but left children need not be smaller than parents.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 360 432.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 360,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd",
+      "sourceSha256": "8e6dcbad9d566ad895d8fbac12cddc33a235f4e34a22741d8f61496021cadeb1",
+      "svg": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.svg",
+      "svgSha256": "2df371f3e03b46d0665726ed10fa724f0184876c5d565e9569a6fbcce26cf8f3",
+      "xmlValid": true,
+      "title": "Both prerequisites must complete",
+      "description": "A and B are prerequisites of C, and C is a prerequisite of D. In the shown snapshot A is complete and B is pending, so C and D remain blocked. Completing B can make C eligible, but D still requires C to complete.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 360 234.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 360,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(243, 244, 246)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(243, 244, 246)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd",
+      "sourceSha256": "54d6822ee958e8559c352e23e7015857c9891e37ca37c6a92f57f5a689a846f6",
+      "svg": "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg",
+      "svgSha256": "0067729f8cf4bd03c576a49de4128a639178657e29594606027778e3e8b1adb0",
+      "xmlValid": true,
+      "title": "A shrinking interval finds the first match",
+      "description": "For sorted values [1,2,2,5,9] and target two, the interval starts at [0,5). Midpoint two has value two, so hi becomes two. Midpoint one has value two, so hi becomes one. Midpoint zero has value one, so lo becomes one. Equal bounds return index one.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 328 606",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd",
+      "sourceSha256": "bae1d2df3236f643b16d42a381353653342d74077f8c53930ad99cbadee8dda9",
+      "svg": "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.svg",
+      "svgSha256": "bfbf0774d8adf07b210eec8a0d9ae0ffffc8e0d20c33f6fa35bfb4165fe0f570",
+      "xmlValid": true,
+      "title": "Optimize a stage, then recompute the whole path",
+      "description": "The illustrative sequential request parses for two milliseconds, fetches for forty, computes for eight and serializes for three, totaling fifty-three. Halving only computation to four milliseconds reduces the total to forty-nine. All stages are sequential with no queueing or overlap.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 328 450",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 328,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd",
+      "sourceSha256": "a4c40cf130511c1a52cdbf997f5bdd8ad26bc01edcf4f4f5ee402fc700f7671f",
+      "svg": "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg",
+      "svgSha256": "dfd23ed6ffcd9a75576ae779e228d4cafe947c02eb03daa29b49cf0087b8915b",
+      "xmlValid": true,
+      "title": "Ready is different from running",
+      "description": "Created work becomes ready and is dispatched to running. Running work can be preempted back to ready, block while waiting for I/O or synchronization, or terminate. A waiting operation becomes ready when its wait condition is satisfied; only a scheduler dispatch makes it run.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 350.0078125 540.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 350,
+          "minimumFontPx": 19.999553581393272,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 350,
+          "minimumFontPx": 19.999553581393272,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd",
+      "sourceSha256": "1ce7cc53875c817541c6da4ba5b389dfeaa3f9278a4f8561d200e1bc5b64f2ea",
+      "svg": "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.svg",
+      "svgSha256": "1360734456217ff9079588f1388df8e86be6f1caa73a9fdbb4eae897d9f9e185",
+      "xmlValid": true,
+      "title": "Reachability determines collection eligibility",
+      "description": "A runtime root reaches a cache, which strongly references a small view, which retains a large backing buffer. Separately, objects X and Y reference each other but have no root path. The rooted chain stays reachable; the isolated cycle is eligible for tracing collection.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 361 626.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 361,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 19.94459833795014,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd",
+      "sourceSha256": "199a97d5db5d400a11d9669e9d5b7784a74b9fc29ca253a71b7b6799acb359f6",
+      "svg": "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.svg",
+      "svgSha256": "68ea26ac705f139e5d274ad26f26ce21e3c78bd70746e45f28e6adce4073ddb7",
+      "xmlValid": true,
+      "title": "Capacity feedback constrains production",
+      "description": "The producer offers work to a bounded buffer. The consumer removes work from the buffer. When capacity is exhausted, feedback pauses or rejects further offers according to policy. When capacity returns, feedback can allow production to resume. This describes flow control, not durability or guaranteed completion.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 311.5625 454.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 311.5625,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 311.5625,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd",
+      "sourceSha256": "bdb95fc62f3f7530fe88221cfa6dd7f4c66ebea6e458b7bcb91d045e330de7f0",
+      "svg": "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.svg",
+      "svgSha256": "8d4a581c38289b800b4cc7b4b8a27b2b7ef838075bc653280b71edaee4f07012",
+      "xmlValid": true,
+      "title": "An await splits the check from the update",
+      "description": "Both reserve calls check remaining equal to one and suspend at the shared gate. The gate is released once. A resumes and decrements remaining to zero, returning true. B then resumes and decrements it to minus one, returning true. This is one possible continuation order and violates capacity safety.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-28.5 -10 409 797",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 409,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 15.843520782396087,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd",
+      "sourceSha256": "d0e23e2a3c9f13700f0443c22eba7fd834aaa971039c67f87a49c8cbe236145b",
+      "svg": "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.svg",
+      "svgSha256": "c90c8945980b120c8f721550c53911ae2b025b91e912158f25c3034e2f9f336f",
+      "xmlValid": true,
+      "title": "A circular wait has no enabled release",
+      "description": "Worker A holds the only instance of X and waits for Y held by B. Worker B holds the only instance of Y and waits for X held by A. Wait-for edges point from each blocked worker to the holder it needs. Neither releases while waiting, so neither can progress without recovery.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 359.384765625 302",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 359.375,
+          "minimumFontPx": 19.99945653650716,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 17.106581259953987
+        },
+        {
+          "columnWidth": 360,
+          "width": 359.375,
+          "minimumFontPx": 19.99945653650716,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 17.106581259953987
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd",
+      "sourceSha256": "dfca66131966e15f0d13eb5d661fda970abcedd211c0d50078aa2c5ec7754e9f",
+      "svg": "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg",
+      "svgSha256": "4785579dcd6c773ab9a1ec7748853bacf1c979f7cc795f8f8d734b93849d2db1",
+      "xmlValid": true,
+      "title": "Terminal attempts have no outgoing transitions",
+      "description": "Queued can start to Running or cancel to Cancelled. Running can complete to Succeeded, fail to Failed, or cancel to Cancelled. Succeeded, Failed and Cancelled have no outgoing permitted transitions. Guards and rejected outcomes are defined in the adjacent transition table.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 504 396.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 504,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.285714285714286,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd",
+      "sourceSha256": "012c86c7fb43e61282a25fb4dd208f0cd12fdbe3ee12da47c8952ae39e9ead02",
+      "svg": "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg",
+      "svgSha256": "fa4cb219aca62af1ee79580d893d1d121c5c3d919194e7565e90a9fcd774b382",
+      "xmlValid": true,
+      "title": "Caller knowledge can lag the actual outcome",
+      "description": "A caller submits attempt R. The service confirms R but its response is lost. The caller times out and knows only that R is unresolved to it, while the service remains confirmed. Later the caller asks for the outcome of R and learns it was confirmed. No second reservation is created by this conceptual reconciliation.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-18 -10 385 731",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 385,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.83116883116883,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    }
+  ],
+  "trackingAndCoverage": "Reviewed; no mapping/status/Charter change. Protected files unchanged from baseline."
+}

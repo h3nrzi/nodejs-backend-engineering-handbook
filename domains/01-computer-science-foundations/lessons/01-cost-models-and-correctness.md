@@ -179,6 +179,14 @@ An individual append at a resize boundary can still be **Θ(n)**. Amortized desc
 
 This analysis explains *a hypothetical growth policy*; don't assume a particular JavaScript engine exposes or guarantees the same array capacity policy.
 
+**Visual question:** How can occasional linear-cost appends coexist with constant amortized cost?
+
+![Starting at capacity one, appending the first item copies none. Appends two, three and five copy one, two and four old items. Append four copies none. Five appends perform five new-item assignments plus seven growth copies.](../assets/01-cost-models-and-correctness/resize-cost-trace.svg)
+
+**Figure 1 — Copies occur at resize boundaries.** Read downward through a hypothetical doubling array, initially empty with capacity 1. Each append also assigns its new item: five appends do 5 assignments and 1+2+4=7 growth copies. Resize work is concentrated at boundaries; the geometric-series argument above bounds total work across a growing sequence. Boxes are not proportional to cost or allocated bytes. This is a mathematical model, not a JavaScript engine capacity guarantee. [Reference](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r02/).
+
+[Full-size SVG](../assets/01-cost-models-and-correctness/resize-cost-trace.svg) · [Editable Mermaid source](../assets/01-cost-models-and-correctness/resize-cost-trace.mmd)
+
 ## 6. Space complexity and input ownership
 
 Be explicit about what is counted.

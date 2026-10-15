@@ -1,0 +1,24 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Both prerequisites must complete
+  accDescr: A and B are prerequisites of C, and C is a prerequisite of D. In the shown snapshot A is complete and B is pending, so C and D remain blocked. Completing B can make C eligible, but D still requires C to complete.
+  A["A: complete"] --> C["C: blocked"]
+  B["B: pending"] --> C
+  C --> D["D: blocked"]
+  class A success;
+  class B pending;
+  class C,D neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-15T16:33:57.816Z",
+  "baseline": "59aeeb59a0f277f4073fa73df445012f8a7f02a6",
+  "environment": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "v8": "13.6.233.17-node.57"
+  },
+  "scope": "Six bounded replays of unchanged TypeScript teaching examples using native TypeScript transformation (experimental flag; no type checking). Assertions cover pictured operations and relevant rejection paths, not all chapter exercises, models, performance, OS/GC guarantees or learner competence.",
+  "results": [
+    {
+      "name": "ring-wrap",
+      "chapter": "02",
+      "lesson": "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
+      "marker": "class RingQueue",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/ring-wrap.ts"
+      ],
+      "exit": 0,
+      "stdout": "ring-wrap: PASS\n",
+      "stderr": "(node:64939) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "const q=new RingQueue<string>(2); q.enqueue('A'); q.enqueue('B'); assert.equal(q.dequeue(),'A'); q.enqueue('C'); assert.equal(q.size,2); assert.throws(()=>q.enqueue('D'),/queue full/); assert.equal(q.dequeue(),'B'); assert.equal(q.dequeue(),'C'); assert.equal(q.size,0);"
+    },
+    {
+      "name": "heap-order",
+      "chapter": "03",
+      "lesson": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "marker": "class MinHeap",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/heap-order.ts"
+      ],
+      "exit": 0,
+      "stdout": "heap-order: PASS\n",
+      "stderr": "(node:64940) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "const h=new MinHeap(); for(const v of [5,2,9,1]) h.push(v); assert.equal(h.peek(),1); assert.deepEqual([h.pop(),h.pop(),h.pop(),h.pop()],[1,2,5,9]);"
+    },
+    {
+      "name": "dag-order",
+      "chapter": "03",
+      "lesson": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "marker": "function topoOrder",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/dag-order.ts"
+      ],
+      "exit": 0,
+      "stdout": "dag-order: PASS\n",
+      "stderr": "(node:64941) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "const g:Graph=new Map([['A',['C']],['B',['C']],['C',['D']],['D',[]]]); assert.deepEqual(topoOrder(g),['A','B','C','D']); g.set('D',['A']); assert.throws(()=>topoOrder(g),/Dependency cycle/);"
+    },
+    {
+      "name": "lower-bound",
+      "chapter": "04",
+      "lesson": "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md",
+      "marker": "function lowerBound",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/lower-bound.ts"
+      ],
+      "exit": 0,
+      "stdout": "lower-bound: PASS\n",
+      "stderr": "(node:64956) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "for(const [target,expected] of [[2,1],[6,4],[10,5]]) assert.equal(lowerBound([1,2,2,5,9],target),expected); assert.equal(lowerBound([],2),0);"
+    },
+    {
+      "name": "controlled-race",
+      "chapter": "10",
+      "lesson": "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+      "marker": "function gate()",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/controlled-race.ts"
+      ],
+      "exit": 0,
+      "stdout": "controlled-race: PASS\n",
+      "stderr": "(node:64957) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "const logs:unknown[]=[]; const prior=console.log; console.log=(value)=>{logs.push(value)}; await demonstrateRace(); console.log=prior; assert.deepEqual(logs,[{results:[true,true],remaining:-1}]);"
+    },
+    {
+      "name": "terminal-attempts",
+      "chapter": "12",
+      "lesson": "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+      "marker": "type Status =",
+      "command": [
+        "node",
+        "--experimental-transform-types",
+        "<temporary>/terminal-attempts.ts"
+      ],
+      "exit": 0,
+      "stdout": "terminal-attempts: PASS\n",
+      "stderr": "(node:64958) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+      "assertions": "const cases:[Status,Event,Status][]=[['queued','start','running'],['queued','cancel','cancelled'],['running','complete','succeeded'],['running','fail','failed'],['running','cancel','cancelled']]; for(const [s,e,next] of cases) assert.deepEqual(transition(s,e),{ok:true,status:next}); for(const s of ['succeeded','failed','cancelled'] as Status[]) for(const e of ['start','complete','fail','cancel'] as Event[]) assert.deepEqual(transition(s,e),{ok:false,reason:'invalid_transition',status:s});"
+    }
+  ]
+}

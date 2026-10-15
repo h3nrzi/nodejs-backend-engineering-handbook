@@ -1,0 +1,28 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    minNodeWidth: 280
+    wrappingWidth: 280
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: A shrinking interval finds the first match
+  accDescr: For sorted values [1,2,2,5,9] and target two, the interval starts at [0,5). Midpoint two has value two, so hi becomes two. Midpoint one has value two, so hi becomes one. Midpoint zero has value one, so lo becomes one. Equal bounds return index one.
+  A["[lo,hi) = [0,5)<br/>mid=2, value=2"]
+  B["[lo,hi) = [0,2)<br/>mid=1, value=2"]
+  C["[lo,hi) = [0,1)<br/>mid=0, value=1"]
+  D["lo=hi=1<br/>Return index 1"]
+  A -->|value ≥ 2: hi=mid| B
+  B -->|value ≥ 2: hi=mid| C
+  C -->|value < 2: lo=mid+1| D
+  class D success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

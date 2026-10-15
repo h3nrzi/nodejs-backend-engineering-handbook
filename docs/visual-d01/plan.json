@@ -1,0 +1,286 @@
+{
+  "baseline": "59aeeb59a0f277f4073fa73df445012f8a7f02a6",
+  "reviewedChapters": [
+    {
+      "chapter": "01",
+      "lesson": "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V01"
+      ]
+    },
+    {
+      "chapter": "02",
+      "lesson": "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V02"
+      ]
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V03",
+        "D01-V04"
+      ]
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V05"
+      ]
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/01-computer-science-foundations/lessons/05-discrete-foundations.md",
+      "decision": "unchanged",
+      "rationale": "Truth tables, explicit set members, quantified statements and the worked dependency example already expose the relevant distinctions. A new graph would repeat Chapter 03 or imply an authorization policy; no additional diagram is needed.",
+      "figures": []
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V06"
+      ]
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V07"
+      ]
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V08"
+      ]
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V09"
+      ]
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V10"
+      ]
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V11"
+      ]
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V12"
+      ]
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+      "decision": "add",
+      "rationale": "Add focused visual explanation(s) at the existing mechanism/example; preserve all approved text.",
+      "figures": [
+        "D01-V13"
+      ]
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/01-computer-science-foundations/lessons/14-assessment-and-transfer.md",
+      "decision": "unchanged",
+      "rationale": "The competency/scoring tables and independent assessment prompts are the teaching interface. Worked solution diagrams would pre-answer learner tasks; keep this chapter unchanged.",
+      "figures": []
+    }
+  ],
+  "figures": [
+    {
+      "id": "D01-V01",
+      "chapter": "01",
+      "lesson": "domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md",
+      "question": "How can occasional linear-cost appends coexist with constant amortized cost?",
+      "title": "Copies occur at resize boundaries",
+      "source": "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.svg",
+      "kind": "flowchart",
+      "reference": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r02/",
+      "location": "## 6. Space complexity and input ownership"
+    },
+    {
+      "id": "D01-V02",
+      "chapter": "02",
+      "lesson": "domains/01-computer-science-foundations/lessons/02-linear-and-associative-data-structures.md",
+      "question": "How can FIFO order continue when the insertion index wraps?",
+      "title": "Logical order survives physical wraparound",
+      "source": "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.svg",
+      "kind": "flowchart",
+      "reference": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r02/",
+      "location": "## 5. Maps, sets and hash tables"
+    },
+    {
+      "id": "D01-V03",
+      "chapter": "03",
+      "lesson": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "question": "Which ordering does a heap guarantee, and how do its tree edges map to array indexes?",
+      "title": "A min-heap is not a binary search tree",
+      "source": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.svg",
+      "kind": "flowchart",
+      "reference": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_lec8/",
+      "location": "**Why build-heap is O(n) rather than O(n log n):**"
+    },
+    {
+      "id": "D01-V04",
+      "chapter": "03",
+      "lesson": "domains/01-computer-science-foundations/lessons/03-trees-heaps-and-graphs.md",
+      "question": "Why is one completed prerequisite insufficient to release a shared dependent?",
+      "title": "Both prerequisites must complete",
+      "source": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.svg",
+      "kind": "flowchart",
+      "reference": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_lec10/",
+      "location": "### Kahn's algorithm (educational)"
+    },
+    {
+      "id": "D01-V05",
+      "chapter": "04",
+      "lesson": "domains/01-computer-science-foundations/lessons/04-algorithmic-problem-solving.md",
+      "question": "How does lowerBound retain the first duplicate while shrinking a half-open interval?",
+      "title": "A shrinking interval finds the first match",
+      "source": "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.svg",
+      "kind": "flowchart",
+      "reference": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_r03/",
+      "location": "**Crucial distinction:**"
+    },
+    {
+      "id": "D01-V06",
+      "chapter": "06",
+      "lesson": "domains/01-computer-science-foundations/lessons/06-computer-architecture-and-performance.md",
+      "question": "Why does halving computation save only four milliseconds in this request?",
+      "title": "Optimize a stage, then recompute the whole path",
+      "source": "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.svg",
+      "kind": "flowchart",
+      "reference": "https://www3.cs.stonybrook.edu/~rezaul/Spring-2019/CSE613/reading/Amdahl-1967.pdf",
+      "location": "Concurrency means progress across overlapping tasks;"
+    },
+    {
+      "id": "D01-V07",
+      "chapter": "07",
+      "lesson": "domains/01-computer-science-foundations/lessons/07-operating-systems-and-scheduling.md",
+      "question": "Does I/O completion mean waiting work immediately runs?",
+      "title": "Ready is different from running",
+      "source": "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.svg",
+      "kind": "stateDiagram-v2",
+      "reference": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf",
+      "location": "**Context switching** saves/restores execution state."
+    },
+    {
+      "id": "D01-V08",
+      "chapter": "08",
+      "lesson": "domains/01-computer-science-foundations/lessons/08-memory-models-and-management.md",
+      "question": "Why can a cache retain unused bytes while a separate cycle is collectible?",
+      "title": "Reachability determines collection eligibility",
+      "source": "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Memory_management",
+      "location": "## 5. Fragmentation and allocation pressure"
+    },
+    {
+      "id": "D01-V09",
+      "chapter": "09",
+      "lesson": "domains/01-computer-science-foundations/lessons/09-file-systems-and-io.md",
+      "question": "Which feedback stops backlog from growing when consumption is slower?",
+      "title": "Capacity feedback constrains production",
+      "source": "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.svg",
+      "kind": "flowchart",
+      "reference": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf",
+      "location": "A Node.js writable stream's `write()` boolean"
+    },
+    {
+      "id": "D01-V10",
+      "chapter": "10",
+      "lesson": "domains/01-computer-science-foundations/lessons/10-concurrent-execution.md",
+      "question": "How can two one-at-a-time JavaScript continuations both pass a stock check?",
+      "title": "An await splits the check from the update",
+      "source": "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.svg",
+      "kind": "sequenceDiagram",
+      "reference": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf",
+      "location": "This deterministic demonstration creates a shared pause"
+    },
+    {
+      "id": "D01-V11",
+      "chapter": "11",
+      "lesson": "domains/01-computer-science-foundations/lessons/11-liveness-and-coordination.md",
+      "question": "When does a wait-for cycle establish deadlock?",
+      "title": "A circular wait has no enabled release",
+      "source": "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.svg",
+      "kind": "flowchart",
+      "reference": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf",
+      "location": "## 3. Starvation and livelock"
+    },
+    {
+      "id": "D01-V12",
+      "chapter": "12",
+      "lesson": "domains/01-computer-science-foundations/lessons/12-state-machines-and-formal-reasoning.md",
+      "question": "Which transitions enter a terminal attempt, and can any leave it?",
+      "title": "Terminal attempts have no outgoing transitions",
+      "source": "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.svg",
+      "kind": "stateDiagram-v2",
+      "reference": "https://lamport.azurewebsites.net/tla/book.html",
+      "location": "### Transition table"
+    },
+    {
+      "id": "D01-V13",
+      "chapter": "13",
+      "lesson": "domains/01-computer-science-foundations/lessons/13-backend-case-study-workshop.md",
+      "question": "How can a reservation be confirmed while the caller still sees an unknown outcome?",
+      "title": "Caller knowledge can lag the actual outcome",
+      "source": "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd",
+      "svg": "domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.svg",
+      "kind": "sequenceDiagram",
+      "reference": "https://lamport.azurewebsites.net/tla/book.html",
+      "location": "### 3. Counterexample schedule"
+    }
+  ]
+}

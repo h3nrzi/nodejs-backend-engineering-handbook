@@ -1,0 +1,21 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: A min-heap is not a binary search tree
+  accDescr: Array [1,2,9,5] represents a min-heap: index zero has value one and children at indexes one and two with values two and nine. Index one has a left child at index three with value five. Parent values never exceed their children, but left children need not be smaller than parents.
+  A["index 0: value 1"] -->|Left child| B["index 1: value 2"]
+  A -->|Right child| C["index 2: value 9"]
+  B -->|Left child| D["index 3: value 5"]
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

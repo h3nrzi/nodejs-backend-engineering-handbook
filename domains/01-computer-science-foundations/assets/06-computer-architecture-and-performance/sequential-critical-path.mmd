@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    minNodeWidth: 280
+    wrappingWidth: 280
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Optimize a stage, then recompute the whole path
+  accDescr: The illustrative sequential request parses for two milliseconds, fetches for forty, computes for eight and serializes for three, totaling fifty-three. Halving only computation to four milliseconds reduces the total to forty-nine. All stages are sequential with no queueing or overlap.
+  A["Parse: 2 ms"] --> B["Remote fetch: 40 ms"]
+  B --> C["Compute: 8 ms<br/>Optimized: 4 ms"]
+  C --> D["Serialize: 3 ms"]
+  D --> E["Original total: 53 ms<br/>Optimized total: 49 ms"]
+  class B neutral;
+  class C control;
+  class E success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+

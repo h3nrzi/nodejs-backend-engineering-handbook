@@ -1,0 +1,26 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 25
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Reachability determines collection eligibility
+  accDescr: A runtime root reaches a cache, which strongly references a small view, which retains a large backing buffer. Separately, objects X and Y reference each other but have no root path. The rooted chain stays reachable; the isolated cycle is eligible for tracing collection.
+  R["Runtime root"] -->|Strong reference| M["Cache"]
+  M -->|Entry| V["Small view"]
+  V -->|Retains storage| B["Large backing buffer"]
+  X["Unreachable object X"] --> Y["Unreachable object Y"]
+  Y --> X
+  class R control;
+  class B pending;
+  class X,Y neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+
