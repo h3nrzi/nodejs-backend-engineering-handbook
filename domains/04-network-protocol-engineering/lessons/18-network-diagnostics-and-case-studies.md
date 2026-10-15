@@ -52,13 +52,13 @@ Check requested offset, selected representation validator, content coding, respo
 
 A useful report separates observations, hypotheses, experiments, results, remaining alternatives and next action. Include environment and exact commands, sanitized outputs, a before/after condition and cleanup. Do not say “confirmed” when the evidence merely fails to contradict a theory. An educational model can expose a wrong inference without reproducing a production network.
 
-The lab classifies finite evidence objects into known boundaries. It deliberately returns insufficient-evidence for a 200 response lacking body completion. This conservative report model ties the curriculum together without becoming a monitoring product or assigning a learner grade.
+The lab classifies finite evidence objects into known boundaries. Only Boolean `complete: true` confirms a complete HTTP response; `complete: false` confirms an incomplete one. Missing or non-Boolean completion evidence produces an explicit unknown outcome, even with status 200 or an observed action. HTTP completion does not establish business success. This conservative report model ties the curriculum together without becoming a monitoring product or assigning a learner grade.
 
 ## Worked diagnostic record: do not turn missing evidence into a fact
 
 At local monotonic t=0 a request is admitted; t=180 ms gets a reused socket; t=210 receives 200 with Content-Length 4096; t=240 has read 2048 bytes; then response error/close occurs with `complete:false`. This establishes a 180 ms local assignment delay, a response header and a short body. It does not establish remote CPU time, the exact network segment that failed, or whether a business action committed. Keep the absent fields absent: no connect/TLS event on a reused socket is not a failed handshake.
 
-The original classification function used `!e.connected`, incorrectly treating an empty object as evidence that connection establishment failed. The revised comparison requires `connected === false` and asserts that `{}` remains insufficient evidence. Even that explicit false needs a trustworthy source and attempt scope. Contradictory evidence, multiple attempts and later reconciliation require a richer report than this tiny classifier; do not silently prioritize inconsistent booleans in a production incident.
+The original classification function used `!e.connected`, incorrectly treating an empty object as evidence that connection establishment failed. The earlier correction required `connected === false` but retained `!e.complete` beside an observed action, turning missing completion evidence into an incomplete-reply claim. Both boundaries now use explicit Boolean evidence. For example, `{ actionObserved: true }` means the action was observed but response completion is unknown; adding `complete: false` confirms an incomplete reply, while `complete: true` confirms HTTP completion. Even an explicit Boolean needs a trustworthy source and attempt scope. Contradictory evidence, multiple attempts and later reconciliation require a richer report than this tiny classifier; do not silently prioritize inconsistent booleans in a production incident.
 
 | Hypothesis for the short body | Prediction / discriminating evidence |
 |---|---|
@@ -84,19 +84,34 @@ import assert from 'node:assert/strict';
 function classify(e) {
   if (e.lookupFailed) return 'resolution failed';
   if (e.connected === false) return 'connection not established';
-  if (e.actionObserved && !e.complete) return 'action observed; reply incomplete';
-  if (e.complete && Number.isInteger(e.status)) return 'complete HTTP response';
-  return 'insufficient evidence';
+  if (e.complete === false) return e.actionObserved === true
+    ? 'action observed; reply incomplete' : 'incomplete HTTP response';
+  if (e.complete === true) return 'complete HTTP response';
+  return e.actionObserved === true ? 'action observed; response completion unknown'
+    : 'response completion unknown; insufficient evidence';
 }
-assert.equal(classify({}), 'insufficient evidence');
-assert.equal(classify({ lookupFailed: true }), 'resolution failed');
-assert.equal(classify({ connected: false }), 'connection not established');
-assert.equal(classify({ connected: true, actionObserved: true, complete: false }),
-  'action observed; reply incomplete');
-assert.equal(classify({ connected: true, complete: true, status: 404 }),
-  'complete HTTP response');
-assert.equal(classify({ connected: true, status: 200 }), 'insufficient evidence');
-console.log('six evidence classifications preserve phase and uncertainty: ok');
+const cases = [
+  [{ lookupFailed: true }, 'resolution failed'],
+  [{ connected: false }, 'connection not established'],
+  [{ connected: true, complete: true, status: 200 }, 'complete HTTP response'],
+  [{ connected: true, complete: true, status: 404 }, 'complete HTTP response'],
+  [{ complete: true }, 'complete HTTP response'],
+  [{ complete: false, status: 200 }, 'incomplete HTTP response'],
+  [{ complete: false, status: 404 }, 'incomplete HTTP response'],
+  [{ actionObserved: true, complete: false }, 'action observed; reply incomplete'],
+  [{ actionObserved: true, complete: true }, 'complete HTTP response'],
+  [{}, 'response completion unknown; insufficient evidence'],
+  [{ actionObserved: true }, 'action observed; response completion unknown']
+];
+// Missing/invalid completion is neither true nor false; status/action cannot fill the gap.
+for (const complete of [undefined, null, 0, 1, 'false', 'true']) {
+  cases.push([{ connected: true, status: 200, complete },
+    'response completion unknown; insufficient evidence']);
+  cases.push([{ actionObserved: true, status: 200, complete },
+    'action observed; response completion unknown']);
+}
+for (const [evidence, expected] of cases) assert.equal(classify(evidence), expected);
+console.log(`${cases.length} evidence cases: explicit complete/incomplete; missing or invalid completion remains unknown: ok`);
 ```
 
 This is a report-classification model, not an automated root-cause detector. Its output depends on supplied facts; it does not collect or authenticate them. No packet capture, production incident or benchmark is executed.
@@ -105,13 +120,14 @@ This is a report-classification model, not an automated root-cause detector. Its
 
 1. Choose one case above and write two competing causes plus a discriminating observation. Expected: falsifiable predictions and explicit observer/phase.
 2. Run one earlier lab, record its actual output and explain one limitation in your own words. Expected: executed observation plus independent reasoning, with no automatic mastery label.
-3. Prepare a sanitized incident note for a 200 response with truncated content. Expected: distinguish status receipt, incomplete body and unknown business outcome; propose the next evidence rather than claiming a cause.
+3. Prepare sanitized incident notes for a 200 response with confirmed truncation and for status 200 without completion evidence. Expected: explicit false supports incompleteness; missing evidence supports only unknown completion. Keep business outcome separate and propose the next evidence rather than claiming a cause.
 
 ## Self-assessment and answer rubric
 
 - **Can a client trace prove backend CPU time?** Full credit: no; phase boundaries contain multiple costs unless separately instrumented.
 - **Does no observed retransmission prove no loss?** Full credit: only within capture scope and completeness; missing observation is not universal evidence.
 - **When can a hypothesis be rejected?** Full credit: state a prediction and an observation incompatible with it under explicit assumptions.
+- **Does an observed action or status 200 prove an incomplete or complete reply?** Full credit: neither supplies completion evidence; require explicit true/false, preserve unknown otherwise, and distinguish HTTP completion from business success.
 - **Does passing these labs prove learner competence?** Full credit: no; learner explanation and independent work require their own evidence.
 
 ## Reliable references and version notes

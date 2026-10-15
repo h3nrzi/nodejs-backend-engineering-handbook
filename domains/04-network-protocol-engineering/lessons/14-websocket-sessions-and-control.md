@@ -44,7 +44,7 @@ When a session drops at a fixed interval, compare ingress idle limits, heartbeat
 
 ## Opening, interleaved control and close on actual sockets
 
-The new fixture uses Node's global WebSocket client with an owned HTTP/1.1 upgrade peer. A normal HTTP request gets 426 and does not become a WebSocket connection. For the positive opening, the peer checks version/key shape and sends 101 with the correct accept value. It then sends a non-final text frame containing `hel`, a ping carrying `p`, and a final continuation containing `lo`. The client emits one `hello` message and returns a masked pong; control progress does not wait for application-message fragmentation to end.
+The new fixture uses Node's global WebSocket client with an owned HTTP/1.1 upgrade peer. A normal HTTP request gets 426 with `Upgrade: websocket` and `Connection: Upgrade, close`, then ends as an HTTP response without becoming a WebSocket connection. The Upgrade field names the required protocol; its Connection option marks that field as hop-specific, while close declares this fixture's connection cleanup. These requirements come from [RFC 9110 §§7.8 and 15.5.22](https://www.rfc-editor.org/rfc/rfc9110.html#section-7.8). This is not an unsupported-WebSocket-version test, which has a separate `Sec-WebSocket-Version` requirement under RFC 6455 §4.2.2. For the positive opening, the peer checks version/key shape and sends 101 with the correct accept value. It then sends a non-final text frame containing `hel`, a ping carrying `p`, and a final continuation containing `lo`. The client emits one `hello` message and returns a masked pong; control progress does not wait for application-message fragmentation to end.
 
 After both observations, the client starts close with code 1000 and reason `done`. The fixture validates and echoes the close payload, then ends TCP; the client reports a clean close. A close code/reason is still no acknowledgment of a business action. The fixture parser deliberately accepts only short masked client control frames, caps total client bytes and owns all upgraded sockets. It is a constrained peer for testing a real implementation, not a reusable or conformant WebSocket server. A production library must also handle extended lengths, invalid UTF-8, RSV/extension negotiation, fragmented messages and adversarial lifetimes.
 
@@ -70,7 +70,10 @@ const accept = key => createHash('sha1').update(key + guid).digest('base64');
 assert.equal(accept('dGhlIHNhbXBsZSBub25jZQ=='), 's3pPLMBiTxaQ9kYGzzhZRbK+xOo=');
 let sawPong; const pong = new Promise(resolve => { sawPong = resolve; });
 const sockets = new Set();
-const server = http.createServer((req, res) => { res.writeHead(426); res.end(); });
+const server = http.createServer((req, res) => {
+  res.writeHead(426, { Upgrade: 'websocket', Connection: 'Upgrade, close', 'Content-Length': 0 });
+  res.end();
+});
 server.on('upgrade', (req, socket, head) => {
   sockets.add(socket); socket.on('close', () => sockets.delete(socket));
   socket.on('error', () => {});
@@ -104,11 +107,20 @@ server.on('upgrade', (req, socket, head) => {
 server.listen(0, '127.0.0.1'); await once(server, 'listening');
 let ws;
 try {
-  const status = await new Promise((resolve, reject) => {
+  const refusal = await new Promise((resolve, reject) => {
     http.get({ host: '127.0.0.1', port: server.address().port, agent: false }, res => {
-      res.resume(); res.on('end', () => resolve(res.statusCode));
+      let bytes = 0;
+      res.on('data', chunk => { bytes += chunk.length; }); res.on('error', reject);
+      res.on('end', () => resolve({ status: res.statusCode, headers: res.headers,
+        complete: res.complete, bytes }));
     }).on('error', reject);
-  }); assert.equal(status, 426);
+  });
+  assert.equal(refusal.status, 426); assert.equal(refusal.headers.upgrade, 'websocket');
+  assert.deepEqual(refusal.headers.connection.toLowerCase().split(',').map(x => x.trim()),
+    ['upgrade', 'close']);
+  assert.equal(refusal.headers['content-length'], '0');
+  assert.equal(refusal.complete, true); assert.equal(refusal.bytes, 0);
+  assert.equal(sockets.size, 0); // The 426 did not transfer ownership to the upgrade peer.
   ws = new WebSocket(`ws://127.0.0.1:${server.address().port}`);
   const opened = once(ws, 'open'), message = once(ws, 'message'), closed = once(ws, 'close');
   await opened; assert.equal((await message)[0].data, 'hello'); await pong;
@@ -118,7 +130,7 @@ try {
   ws?.close(); for (const socket of sockets) socket.destroy();
   await new Promise(resolve => server.close(resolve));
 }
-console.log('actual 101; fragmented text + ping/masked pong; clean 1000 close; ordinary HTTP 426: ok');
+console.log('426 + required Upgrade/Connection headers, complete empty HTTP refusal; actual 101, fragmented text + ping/masked pong, clean 1000 close: ok');
 ```
 
 A real Node WebSocket client opens against a restricted loopback upgrade peer, reassembles fragmented text, automatically responds to ping with masked pong and completes a clean close exchange. The peer implements only the required short-control subset and is not a general WebSocket server. No browser, reconnect, TLS or compression behavior is tested.

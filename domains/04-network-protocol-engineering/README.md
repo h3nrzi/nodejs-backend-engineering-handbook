@@ -55,3 +55,5 @@ Each lesson includes a complete executable Node lab, independent exercises with 
 ## Review evidence and next action
 
 Use [the review guide](evidence/review-guide.md), beginning with the curriculum breadth and boundaries. [Tracking](../../tracking/state.json) records 18 lessons, catalog and six Charters as in_review. Explicit learner approval is required before any new artifact becomes approved. Stop at this educational review gate; no D05 authoring or portfolio implementation is authorized here.
+
+**Blocking-fix verification — 2026-10-15:** C14 HTTP 426 headers and C18 complete/incomplete/unknown classification corrected; focused checks and the 18-lab regression passed. [Scoped evidence](evidence/blocking-fixes.md). All artifacts remain in_review; ready for Product Owner editorial approval, with no approval recorded.

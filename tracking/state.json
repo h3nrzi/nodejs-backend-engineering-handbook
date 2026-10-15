@@ -5,8 +5,8 @@
   "review": "pending_learner_review",
   "active_domain_id": "D04",
   "next_domain_id": "D05",
-  "active_deliverable": "D04 technically reviewed and expanded: 18 lessons, catalog and six proposed Charters remain in_review",
-  "last_completed_step": "D04 deep technical audit/expansion and bounded local lab verification; learner editorial approval pending.",
+  "active_deliverable": "D04 two blocking editorial fixes verified: 18 lessons, catalog and six proposed Charters remain in_review",
+  "last_completed_step": "D04 C14/C18 blocking fixes and focused/full educational lab verification; Product Owner editorial approval pending.",
   "next_action": "Learner reviews D04 curriculum, lessons, catalog and six Charters; stop at the educational review gate. Do not begin D05.",
   "blockers": [],
   "open_decisions": [],
@@ -651,7 +651,7 @@
           "platform": "darwin",
           "arch": "arm64",
           "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
-          "limits": "Actual Node WebSocket opening/fragmentation/ping/pong/clean close against restricted peer; no browser, TLS, compression or reconnect."
+          "limits": "Actual Node WebSocket lifecycle plus complete ordinary HTTP 426 with required Upgrade/Connection headers; no browser, TLS, compression or reconnect."
         },
         "15": {
           "status": "bounded_educational_lab_passed",
@@ -687,7 +687,7 @@
           "platform": "darwin",
           "arch": "arm64",
           "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
-          "limits": "Missing connection evidence remains unknown in finite classifier; no production root cause or packet capture."
+          "limits": "23 finite evidence cases distinguish explicit complete/incomplete from missing or invalid completion; no production root cause or packet capture."
         }
       },
       "review_guide": "domains/04-network-protocol-engineering/evidence/review-guide.md",
@@ -699,6 +699,20 @@
         "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
         "competency_mapping_change": false,
         "charter_scope_change": false
+      },
+      "blocking_fixes": {
+        "status": "verified_pending_learner_editorial_review",
+        "checked_on": "2026-10-15",
+        "baseline_commit": "86d2ef1176998a4e73e32cf5f502cd163fbf48b6",
+        "chapters": [
+          "14",
+          "18"
+        ],
+        "focused_labs_passed": 2,
+        "classifier_cases_passed": 23,
+        "regression_labs_passed": 18,
+        "evidence": "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
+        "human_evaluation": "not_run"
       }
     },
     {
@@ -837,6 +851,11 @@
       "date": "2026-10-15",
       "event": "D04 deep review: all 18 lessons expanded; EOF terminal-state and missing-evidence classification corrected; deeper real protocol labs and five Charter evidence clarifications. All D04 artifacts remain in_review; no project implementation or learner mastery.",
       "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md"
+    },
+    {
+      "date": "2026-10-15",
+      "event": "D04 two blocking editorial fixes verified: C14 required HTTP 426 headers; C18 explicit complete/incomplete/unknown classification. 2/2 focused labs and 18/18 suite processes passed; all editorial approvals pending, no scope/mapping/Charter or external project changes.",
+      "evidence": "domains/04-network-protocol-engineering/evidence/blocking-fixes.md"
     }
   ],
   "domain_authoring_sequence": [
@@ -855,7 +874,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-15",
-    "status": "D04_deep_review_no_mapping_change_pending_learner_approval",
+    "status": "D04_blocking_fixes_no_mapping_change_pending_learner_approval",
     "path": "projects/coverage-matrix.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
     "domains": [
@@ -871,9 +890,10 @@
     "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
     "latest_review_evidence": [
       "projects/coverage-matrix.md",
-      "domains/04-network-protocol-engineering/evidence/educational-execution.md"
+      "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+      "domains/04-network-protocol-engineering/evidence/blocking-fixes.md"
     ],
-    "mapping_change": "Deep technical review: no competency IDs or direct/supporting mappings changed; practical evidence/gaps refreshed. All D01\u2013D03 approved records and MediaForge state preserved.",
+    "mapping_change": "Two C14/C18 blocking fixes verified; no competency IDs or direct/supporting mappings changed. D04 remains in_review; D01\u2013D03 approvals and MediaForge state preserved.",
     "approved_chapter_mapping_count": 48,
     "in_review_chapter_mapping_count": 18,
     "approved_prd_count": 14,

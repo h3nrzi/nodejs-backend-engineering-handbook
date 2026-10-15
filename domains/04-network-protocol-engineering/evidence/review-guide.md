@@ -1,7 +1,7 @@
 # D04 — Educational authoring review guide
 
 **Source:** [domain-completion scope](../curriculum.md) and [Workflow V2](../../../docs/workflow.md).
-**Prepared:** 2026-10-15. **Revision:** baseline `713e05b199750d775ad6e71fd595bd6c6df91196` plus this D04 deep-review patch; exact lab hashes in [manifest](lab-manifest.json). Git history identifies the containing review commit after commit creation.
+**Prepared:** 2026-10-15. **Current revision:** baseline `86d2ef1176998a4e73e32cf5f502cd163fbf48b6` plus the two C14/C18 blocking fixes; exact source hashes in [manifest](lab-manifest.json). The containing Git commit identifies the delivered fixes. Earlier guide/evidence remains versioned at baseline.
 **Human editorial evaluation:** not_run. **Learner competency:** not_assessed.
 
 This guide applies the installed `ticket-walkthrough` workflow to authored educational artifacts. There is no implemented portfolio ticket or product to accept. Its purpose is reproducible editorial review of the curriculum, each lesson, six proposed concepts/Charters and coverage/evidence integrity. Your editorial approval does not establish learner mastery or authorize project implementation.
@@ -58,11 +58,11 @@ For every row: open the linked chapter; inspect its outcomes, mechanism explanat
 | [L11 — Proxies, routing and trust boundaries](../lessons/11-proxies-routing-and-trust-boundaries.md) | Forwarding claims require established trust; model is not a proxy. | Lab pass; scope in evidence | not_run |
 | [L12 — HTTP/2 streams and flow control](../lessons/12-http2-streams-and-flow-control.md) | Zero stream credit gates DATA while headers progress; connection credit and GOAWAY remain untested. | Lab pass; scope in evidence | not_run |
 | [L13 — QUIC and HTTP/3 trade-offs](../lessons/13-quic-and-http3-trade-offs.md) | QUIC/h3 content does not claim genuine transport execution. | Lab pass; scope in evidence | not_run |
-| [L14 — WebSocket sessions and control](../lessons/14-websocket-sessions-and-control.md) | Actual Node client handles fragmented text, masked pong and clean close; restricted peer is not a full server. | Lab pass; scope in evidence | not_run |
+| [L14 — WebSocket sessions and control](../lessons/14-websocket-sessions-and-control.md) | Ordinary HTTP 426 has required Upgrade/Connection fields; actual Node client retains fragmented text, masked pong and clean close; restricted peer is not a full server. | Lab pass; scope in evidence | not_run |
 | [L15 — Server-sent events and resumption](../lessons/15-server-sent-events-and-resumption.md) | Bytewise BOM/CRLF/IDs and actual HTTP cursor/abort cases are distinct from EventSource/replay guarantees. | Lab pass; scope in evidence | not_run |
 | [L16 — RPC envelopes and protocol evolution](../lessons/16-rpc-envelopes-and-protocol-evolution.md) | Envelope/status model does not claim actual gRPC integration. | Lab pass; scope in evidence | not_run |
 | [L17 — Deadlines, retries and uncertain outcomes](../lessons/17-deadlines-retries-and-uncertain-outcomes.md) | AbortSignal after full request receipt preserves observed action; cleanup is not rollback. | Lab pass; scope in evidence | not_run |
-| [L18 — Network diagnostics and case studies](../lessons/18-network-diagnostics-and-case-studies.md) | Missing connection evidence is unknown; short-body diagnosis keeps competing hypotheses. | Lab pass; scope in evidence | not_run |
+| [L18 — Network diagnostics and case studies](../lessons/18-network-diagnostics-and-case-studies.md) | Explicit complete/incomplete differs from missing or invalid completion; observed action/status cannot fill that gap. Short-body diagnosis keeps competing hypotheses. | Lab pass; scope in evidence | not_run |
 
 ## Charter scenarios — proposed concepts and full artifacts
 
@@ -91,7 +91,7 @@ After the relevant scenarios, report approval or requested changes using named a
 
 ## Results and checkpoint
 
-All R01–R04, L01–L18 and P01–P06 user results are **not_run**. No human observations have been received. Agent preflight supports guide readiness, with [practical limits](educational-execution.md#explicit-practical-limitations) preserved. Current scenario: **R01**, deep-review revision. Previously prepared scenarios still have no user observations. The chapter audit covers all 18 expanded chapters and notes retained practical gaps. No server remains running and no IDs/credentials are needed. Next safe action: open the curriculum and review its eighteen-row chapter inventory and boundaries, then report a scoped editorial decision or requested change.
+All R01–R04, L01–L18 and P01–P06 user results are **not_run**. No human observations have been received. Agent preflight supports guide readiness, with [practical limits](educational-execution.md#explicit-practical-limitations) preserved. Full-domain checkpoint: **R01**, still not_run. Current scoped fix checkpoint: **F18** below. Previously prepared scenarios still have no user observations. The chapter audit covers all 18 expanded chapters and notes retained practical gaps. No server remains running and no IDs/credentials are needed. Next safe action: open the curriculum and review its eighteen-row chapter inventory and boundaries, then report a scoped editorial decision or requested change.
 
 ## Stop, cleanup and resume
 
@@ -100,3 +100,20 @@ The supported runner exits after its fixtures and removes its temporary extracti
 ## Outstanding review and integrations
 
 Editorial review is pending for every new artifact. Real multi-host, browser/proxy, mTLS/expiration/resumption, h3, gRPC and impaired-network exercises are unverified and are not prerequisites invented for approval of the authored lessons. Learner practice/assessment is separate and remains deferred/not_assessed. Work stops at this educational review gate.
+
+## Scoped blocking-fix evaluation — F18 and F14
+
+This applies the ticket-walkthrough workflow only to the two authorized fixes. The prior R/L/P user results remain not_run; this update records no human acceptance or new general review. Baseline, exact commands, actual preflight and limitations are in [the fix report](blocking-fixes.md).
+
+| Criterion | Scenario | Agent preflight | User result |
+|---|---|---|---|
+| Complete, incomplete and unknown response evidence remain distinct; explanation/rubric agree | F18 | 23 cases passed in focused replay and complete suite | not_run |
+| HTTP 426 names required protocol and Connection option; no premature switch | F14 | Actual HTTP fields/body/completion/no-upgrade assertions passed; existing WebSocket lifecycle passed | not_run |
+
+**Starting point:** in your Markdown viewer, open [Chapter 18](../lessons/18-network-diagnostics-and-case-studies.md) at “Worked diagnostic record.” For F18, predict the three results for `{ actionObserved: true }`, the same evidence plus `complete: false`, and plus `complete: true`. Expected: action observed/completion unknown, action observed/reply incomplete, and complete HTTP response. Check the function and answer rubric against those predictions. Status 200 alone must still leave completion unknown. Optional replay: save the chapter's sole JavaScript block as `lab-18.mjs` in your own disposable directory and run `node lab-18.mjs`; expected output begins `23 evidence cases` and ends `ok`. Retain your predictions, observations and runtime if replayed.
+
+For F14, open [Chapter 14](../lessons/14-websocket-sessions-and-control.md) and identify the ordinary HTTP response before the 101 path. Expected: 426, Upgrade websocket, Connection options upgrade and close, empty complete body; 426 itself does not switch protocols. Compare the explanation with its RFC links. Optional replay: save its sole block as `lab-14.mjs` in your disposable directory and run `node lab-14.mjs`; expected output confirms the 426 headers and existing 101/text/pong/close cases. This is an actual local fixture, not a browser or full-conformance test. Retain any disagreement with the expected fields or output.
+
+Prerequisites: the recorded Node v24 API line and permitted loopback binding; no accounts, credentials or shared IDs. F18 is a model; F14 owns disposable sockets and exits after cleanup. These two standalone scenarios do not need OpenSSL; the optional complete suite does, as documented above. Stop a foreground replay with Ctrl-C and delete only your saved lab files after exit. Resume at your first unreviewed F scenario; do not replace observations with automated passes.
+
+**Checkpoint:** current scenario F18; agent preflight ready, both user results not_run. First action: predict the three completion classifications above. Product Owner editorial approval remains pending; no approval, portfolio work or D05 activity follows automatically.

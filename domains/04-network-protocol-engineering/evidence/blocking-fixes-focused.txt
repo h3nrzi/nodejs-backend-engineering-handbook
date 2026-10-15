@@ -1,0 +1,5 @@
+426 + required Upgrade/Connection headers, complete empty HTTP refusal; actual 101, fragmented text + ping/masked pong, clean 1000 close: ok
+PASS focused chapter 14
+23 evidence cases: explicit complete/incomplete; missing or invalid completion remains unknown: ok
+PASS focused chapter 18
+2/2 focused lesson labs passed

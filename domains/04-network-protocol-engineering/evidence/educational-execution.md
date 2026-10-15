@@ -2,9 +2,13 @@
 
 **Date:** 2026-10-15. **Editorial:** in_review for curriculum, all 18 lessons, catalog and six Charters. **Learner editorial evaluation / competency:** not_run / not_assessed. **Portfolio implementation:** not_started.
 
+## Current blocking-fix verification
+
+The two independent-review blocking findings in C14/C18 are now corrected and locally verified; see [the scoped fix report](blocking-fixes.md) for exact commands, current results, source identity and limits. D04 remains in_review, with Product Owner editorial approval pending. The [manifest](lab-manifest.json), [stdout](educational-labs.txt) and [link report](internal-links.json) now describe this replay. The deep-review narrative below records the earlier expansion at `86d2ef1`; its original evidence remains in that commit and is not a new general review.
+
 ## Revision and review scope
 
-Deep-review baseline: `713e05b199750d775ad6e71fd595bd6c6df91196` (first D04 authoring commit). Tested revision: that baseline plus this review patch. The Git commit containing this updated record identifies the delivered patch; [the manifest](lab-manifest.json) identifies each executed JavaScript block by SHA-256. The earlier execution record, original lab hashes and results remain versioned at the baseline commit; its first-session pre-authoring baseline was `088d956494b23545c80fdac72c1adab14fd14cad`.
+Deep-review baseline: `713e05b199750d775ad6e71fd595bd6c6df91196` (first D04 authoring commit). Historical tested/delivered revision: `86d2ef1176998a4e73e32cf5f502cd163fbf48b6`. Its original manifest, execution output and review record remain versioned at that commit; the current manifest/output describe the later scoped blocking fixes linked above. The first-session pre-authoring baseline was `088d956494b23545c80fdac72c1adab14fd14cad`.
 
 Review covered Workflow V2, lesson quality/evidence/quality-gate rules, the curriculum, all 18 lessons/labs, catalog and six Charters, tracking and coverage. Relevant D01 state-machine, D02 cancellation and D03 byte/stream/shutdown material informed prerequisite and ownership checks; none of those approved artifacts was edited. Existing chapter order and D04-C01–C18 identifiers remain appropriate and unchanged.
 

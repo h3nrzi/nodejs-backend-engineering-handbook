@@ -39,5 +39,33 @@
     "git_diff_check": "pass",
     "source_and_diff_review": "completed; EOF/missing-evidence fixes, ownership/bounds, expected negatives, prose/code consistency, Charter neutrality"
   },
-  "limits": "Agent author review and bounded execution only; human editorial evaluation remains not_run, competence not_assessed, D04 in_review. Historical first-session evidence is retained at baseline commit."
+  "limits": "Agent author review and bounded execution only; human editorial evaluation remains not_run, competence not_assessed, D04 in_review. Historical first-session evidence is retained at baseline commit.",
+  "historical_record_note": "The original deep-review fields/results above describe 86d2ef1. Current scoped verification is recorded in blocking_fixes below; prior manifests/output remain versioned at that commit.",
+  "blocking_fixes": {
+    "checked_on": "2026-10-15",
+    "baseline_commit": "86d2ef1176998a4e73e32cf5f502cd163fbf48b6",
+    "scope": "Only C14 HTTP 426 headers and C18 complete/incomplete/unknown classification, plus required evidence/tracking reconciliation",
+    "commands": "Exact replay commands in domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
+    "results": {
+      "focused_labs_passed": 2,
+      "classifier_cases_passed": 23,
+      "regression_labs_passed": 18,
+      "current_internal_link_issues": 0,
+      "checked_internal_links": 794,
+      "json_parse": "pass",
+      "git_diff_check": "pass",
+      "changed_lesson_files": [
+        "14",
+        "18"
+      ],
+      "unchanged_other_lesson_files": 16,
+      "suite_runner_unchanged": true,
+      "non_D04_domain_records_unchanged": 15,
+      "six_Charters_unchanged": true,
+      "MediaForge_state_unchanged": true,
+      "D04_editorial_statuses_unchanged": true,
+      "source_and_diff_review": "Completed for both fixes: strict Boolean completion, unknown regressions, required 426 fields, HTTP completion/no-upgrade assertions, existing lifecycle checks retained"
+    },
+    "limits": "Bounded agent execution; human evaluation not_run, learner competence not_assessed. D04 remains in_review; no general review or optional enhancement implemented."
+  }
 }
