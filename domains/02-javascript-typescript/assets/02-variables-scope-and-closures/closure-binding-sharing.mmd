@@ -1,0 +1,25 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Closures share bindings within one invocation
+  accDescr: Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.
+  I["Counter A:<br/>increment"] -->|Updates| A["Call A environment
+count = 2"]
+  R["Counter A:<br/>read"] -->|Reads| A
+  B["Counter B:<br/>read"] -->|Reads| E["Call B environment
+count = 0"]
+  class A,E control;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

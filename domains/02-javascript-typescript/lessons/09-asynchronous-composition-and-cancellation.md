@@ -66,6 +66,14 @@ async function step(signal, operation) {
 
 Signals may be composed via AbortSignal.any and timeout signals where supported. Runtime compatibility and listener cleanup matter.
 
+**Visual question: What if cancellation happens after remote success but before confirmation arrives?**
+
+![An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.](../assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg)
+
+**Aborting observation cannot undo a confirmed effect.** This is one possible order, not an AbortSignal network protocol. Participating local work can observe the signal and stop or reject; previously completed remote effects remain. The caller needs the same logical attempt’s authoritative outcome before applying its retry policy. Neither abort nor timeout establishes rollback or remote failure. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal).
+
+[Full-size SVG](../assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg) · [Editable Mermaid source](../assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd)
+
 ## 5. Deadline and timeout
 An overall deadline differs from repeatedly granting every nested operation a fresh timeout. Timer expiration reflects the caller's willingness to wait, not proof that a remote operation failed. Cancellation, confirmation and reconciliation are separate concepts.
 

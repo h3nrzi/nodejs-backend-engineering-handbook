@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Lookup delegates until an own property is found
+  accDescr: account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.
+  A["account
+own id = a1"] -->|role absent, follow prototype| S["shared
+own role = viewer"]
+  S -->|role found: stop| R["account.role yields viewer"]
+  S -.->|Prototype link, not followed for role| O["Object.prototype"]
+  O -.->|Prototype link| N["null: chain ends"]
+  class S success;
+  class O,N neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

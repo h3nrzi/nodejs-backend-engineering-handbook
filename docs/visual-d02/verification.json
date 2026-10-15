@@ -1,0 +1,1931 @@
+{
+  "baseline": "d3828398597238741e14147685bc172a7c50f7b1",
+  "date": "2026-10-15T17:00:14.817Z",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "browser": "Chrome/155.0.8059.79",
+    "npm": "11.19.1",
+    "python": "3.14.7",
+    "osRelease": "macOS 26.1 (25B78)",
+    "mermaidCli": "12.0.0",
+    "mermaid": "12.2.0",
+    "puppeteer": "25.14.0",
+    "marked": "4.3.0"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/03-functions-and-invocation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/08-promises-and-async-await.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "d3828398597238741e14147685bc172a7c50f7b1:domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "d3828398597238741e14147685bc172a7c50f7b1",
+        "--",
+        "tracking/state.json",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/01-computer-science-foundations",
+        "domains/02-javascript-typescript/README.md",
+        "domains/02-javascript-typescript/curriculum.md",
+        "domains/02-javascript-typescript/projects",
+        "domains/03-nodejs-internals",
+        "domains/04-network-protocol-engineering",
+        "tools",
+        "scripts",
+        "package.json",
+        "package-lock.json"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "d3828398597238741e14147685bc172a7c50f7b1"
+      ],
+      "exit": 0,
+      "stdout": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md\ndomains/02-javascript-typescript/lessons/03-functions-and-invocation.md\ndomains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md\ndomains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md\ndomains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md\ndomains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md\ndomains/02-javascript-typescript/lessons/08-promises-and-async-await.md\ndomains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md\ndomains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md\ndomains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md\ndomains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md\ndomains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md\ndomains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md\ndomains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md\ndomains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit": 0,
+      "stdout": "docs/visual-d02/changed-files.txt\ndocs/visual-d02/guide.md\ndocs/visual-d02/lab-replay.json\ndocs/visual-d02/plan.json\ndocs/visual-d02/replay.mjs\ndocs/visual-d02/review.md\ndocs/visual-d02/validation.txt\ndocs/visual-d02/verification.json\ndocs/visual-d02/verify.mjs\ndomains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd\ndomains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg\ndomains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd\ndomains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg\ndomains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd\ndomains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg\ndomains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd\ndomains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg\ndomains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd\ndomains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg\ndomains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd\ndomains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg\ndomains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd\ndomains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg\ndomains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd\ndomains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg\ndomains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd\ndomains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg\ndomains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd\ndomains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg\ndomains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd\ndomains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg\ndomains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd\ndomains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg\ndomains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd\ndomains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg\ndomains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd\ndomains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg\ndomains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd\ndomains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg\ndomains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd\ndomains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg\ndomains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd\ndomains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:smoke"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:smoke\n> node scripts/check-visuals.mjs\n\nDisposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-qdOiG6\ntcp-handshake: PNG 507 x 357, 16388 bytes\nevent-loop-scheduling: PNG 236 x 725, 30572 bytes\nrequest-lifecycle: PNG 451 x 536, 25604 bytes\nMarkdown: 3 fences validated; 3 relative SVG image references resolve.\nMath: KaTeX typeset output verified with an explicit HTML-label config.\nRefusal checks: invalid fence reports block/line; missing browser exits 2.\nPASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-qdOiG6; remove only this directory after review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "--self-test-styles"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check --self-test-styles\n\nOK  <style-self-test> (5 colored Mermaid blocks)\n\nValidation passed: checked 5 Mermaid blocks across 1 target.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md",
+        "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+        "domains/02-javascript-typescript/lessons/03-functions-and-invocation.md",
+        "domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md",
+        "domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md",
+        "domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md",
+        "domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md",
+        "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+        "domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md",
+        "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+        "domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md",
+        "domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md",
+        "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+        "domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md",
+        "domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md",
+        "domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md",
+        "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd",
+        "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd",
+        "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd",
+        "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd",
+        "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd",
+        "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd",
+        "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd",
+        "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd",
+        "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd",
+        "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd",
+        "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md domains/02-javascript-typescript/lessons/03-functions-and-invocation.md domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md domains/02-javascript-typescript/lessons/08-promises-and-async-await.md domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd\n\nOK  domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd (1 Mermaid block)\nOK  domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd (1 Mermaid block)\n\nValidation passed: checked 17 Mermaid blocks across 33 targets.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd -o domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd -o domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd -o domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd -o domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd -o domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd -o domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd -o domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd -o domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd -o domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd -o domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd -o domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-handbook-links.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"checked_internal_links\": 1184,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd\n\nOK  domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd (1 Mermaid block)\n\nValidation passed: checked 1 Mermaid block across 1 target.\n",
+      "stderr": "",
+      "phase": "Final whitespace-only source cleanup"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg\n\nGenerating single mermaid chart\n",
+      "stderr": "",
+      "phase": "Final whitespace-only source cleanup"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd\n\nOK  domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd (1 Mermaid block)\n\nValidation passed: checked 1 Mermaid block across 1 target.\n",
+      "stderr": "",
+      "phase": "Final whitespace-only source cleanup"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd",
+        "-o",
+        "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg\n\nGenerating single mermaid chart\n",
+      "stderr": "",
+      "phase": "Final whitespace-only source cleanup"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "phase": "Final staged whitespace gate"
+    }
+  ],
+  "lessons": [
+    {
+      "path": "domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md",
+      "sha256": "76bb9e7b36a3572a32528e819404c101edb2c9068a7b1f08809bdc08dbbfe35b",
+      "baselineSha256": "76bb9e7b36a3572a32528e819404c101edb2c9068a7b1f08809bdc08dbbfe35b",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": []
+        },
+        {
+          "columnWidth": 360,
+          "images": []
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+      "sha256": "c897f6470273e84a4833c58ce89a9f916bb30870d69f6e9f5fd8a056233bb9d2",
+      "baselineSha256": "73221d24e782fcf89ddf86cf5a38b80b036aa5a1389228177a133bad92db7fee",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/02-variables-scope-and-closures/closure-binding-sharing.svg",
+              "alt": "Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.",
+              "loaded": true,
+              "width": 585,
+              "naturalWidth": 586
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/02-variables-scope-and-closures/closure-binding-sharing.svg",
+              "alt": "Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 586
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/03-functions-and-invocation.md",
+      "sha256": "889915feec513aff45052dee21d03a319d8c04be42602f8c4efe8ea8e2c482e7",
+      "baselineSha256": "09e4430d58a1541d4ebb512f714c3f88f5b25b3361fbfc91b9a04cb1e064f1f2",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/03-functions-and-invocation/receiver-at-call-site.svg",
+              "alt": "The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.",
+              "loaded": true,
+              "width": 197,
+              "naturalWidth": 197
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/03-functions-and-invocation/receiver-at-call-site.svg",
+              "alt": "The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.",
+              "loaded": true,
+              "width": 197,
+              "naturalWidth": 197
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md",
+      "sha256": "729967b3a9791a871227d6d25e17af046dd397ff244a3931b657519d890e8983",
+      "baselineSha256": "496324d6b59d7e7d414502742755a5d34df0959b0e05dfe10d58e408737fb2e7",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg",
+              "alt": "account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.",
+              "loaded": true,
+              "width": 432,
+              "naturalWidth": 432
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg",
+              "alt": "account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 432
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md",
+      "sha256": "ee027472b3ffcd89803e2d262c99b72cef237ba1d4c3ceee8c885f0a866f8294",
+      "baselineSha256": "c693f3998e8bdaf4d0d3cb4c1e9dfda07e4024a8650c508ccb873bc30312a433",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg",
+              "alt": "Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.",
+              "loaded": true,
+              "width": 481,
+              "naturalWidth": 481
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg",
+              "alt": "Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 481
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md",
+      "sha256": "f111cc3cec024bc75d5e3d1cc45e4cdc7840e3fc9c30f8a9465a04e76c47ff38",
+      "baselineSha256": "e0b590f5a68884dadcbd7c5b670dce659857d0460d57ccfe29ff1d8929675770",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg",
+              "alt": "The imported count reads the exporter binding, which increment changes from 0 to 1. A local primitive snapshot copied before increment remains 0.",
+              "loaded": true,
+              "width": 375,
+              "naturalWidth": 375
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg",
+              "alt": "The imported count reads the exporter binding, which increment changes from 0 to 1. A local primitive snapshot copied before increment remains 0.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md",
+      "sha256": "56fc427218a3fcadd27b6cbee2d5b020c798455435ae46075ab6c760646ab25a",
+      "baselineSha256": "7ceb8a47493ee705cc40d7beb75d3cdeb4f2f9a07367cf1e973c715497d1e406",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg",
+              "alt": "A pending return or throw enters finally. Normal finally completion preserves it; a return or throw from finally replaces it.",
+              "loaded": true,
+              "width": 451,
+              "naturalWidth": 451
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg",
+              "alt": "A pending return or throw enters finally. Normal finally completion preserves it; a return or throw from finally replaces it.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 451
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "sha256": "631e50cebf8b7034b87ee4ca78e18e31e429e5c02fa06241a71728c46e4cfa54",
+      "baselineSha256": "17bba506c8f1af0e53f662e19e14a9c69668dd53cb074d025dc235474dccb2f6",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/08-promises-and-async-await/promise-adoption.svg",
+              "alt": "Resolving outer with a pending inner Promise leaves outer pending but locked to inner. Inner fulfillment leads to outer fulfillment; inner rejection leads to outer rejection.",
+              "loaded": true,
+              "width": 447,
+              "naturalWidth": 447
+            },
+            {
+              "src": "../assets/08-promises-and-async-await/promise-reaction-order.svg",
+              "alt": "A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.",
+              "loaded": true,
+              "width": 214,
+              "naturalWidth": 214
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/08-promises-and-async-await/promise-adoption.svg",
+              "alt": "Resolving outer with a pending inner Promise leaves outer pending but locked to inner. Inner fulfillment leads to outer fulfillment; inner rejection leads to outer rejection.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 447
+            },
+            {
+              "src": "../assets/08-promises-and-async-await/promise-reaction-order.svg",
+              "alt": "A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.",
+              "loaded": true,
+              "width": 214,
+              "naturalWidth": 214
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md",
+      "sha256": "e7348ba1c561d6ee11d0fcbdc3729d21a9c829946467cade9870b4aeb85dd269",
+      "baselineSha256": "5d2cbcd95b049cc5d41cbb4140caf619cb32f1db2e6865c6e0ac5df2a129bedb",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg",
+              "alt": "An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.",
+              "loaded": true,
+              "width": 261,
+              "naturalWidth": 261
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg",
+              "alt": "An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.",
+              "loaded": true,
+              "width": 261,
+              "naturalWidth": 261
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+      "sha256": "c09be342badacab523c18b3cd856b288937fadfd59abe302b4c41b59c63a8d6d",
+      "baselineSha256": "d6cb3fdbdf4107bb6b24a0590150764d242743654c0352854faaa3d87f90dbb6",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg",
+              "alt": "The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.",
+              "loaded": true,
+              "width": 261,
+              "naturalWidth": 261
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg",
+              "alt": "The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.",
+              "loaded": true,
+              "width": 261,
+              "naturalWidth": 261
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md",
+      "sha256": "969ccd4584e47a4027c2f96a1177397ef1b864186addf5f05935d06b1acabc1d",
+      "baselineSha256": "75a64ab944026b708b499f34bae2979156b67690b3a934f73e0fdfe696d380df",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/11-typescript-type-system-fundamentals/structural-assignment.svg",
+              "alt": "The checker accepts record with string id and category for Identified, which requires string id. At runtime input and record remain the same object and category still exists.",
+              "loaded": true,
+              "width": 220,
+              "naturalWidth": 220
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/11-typescript-type-system-fundamentals/structural-assignment.svg",
+              "alt": "The checker accepts record with string id and category for Identified, which requires string id. At runtime input and record remain the same object and category still exists.",
+              "loaded": true,
+              "width": 220,
+              "naturalWidth": 220
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md",
+      "sha256": "85e0e1a00f9b903ff18ec0dac0f04970550d73a610d9908ab7b4dc0a9b59dee4",
+      "baselineSha256": "a4ae74bc49e8c1a8ed8d53f8ecf00fab91b69529747b08a0d707bbc9d2ec8aaa",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg",
+              "alt": "A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.",
+              "loaded": true,
+              "width": 548,
+              "naturalWidth": 548
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg",
+              "alt": "A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 548
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+      "sha256": "8cfef1e83f934c85f158eb79a111f172e125503debaf2729181e0ca28be3f16c",
+      "baselineSha256": "d46e988c85c9eab5fe01f059a109146762350eeb749405ce6783e52529b2d9f3",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg",
+              "alt": "For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].",
+              "loaded": true,
+              "width": 218,
+              "naturalWidth": 218
+            },
+            {
+              "src": "../assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg",
+              "alt": "Wrap distributes over string and number and yields a union of two object types. WrapTogether tests the tuple-wrapped union together and yields one object type with a union-valued property.",
+              "loaded": true,
+              "width": 228,
+              "naturalWidth": 228
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg",
+              "alt": "For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].",
+              "loaded": true,
+              "width": 218,
+              "naturalWidth": 218
+            },
+            {
+              "src": "../assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg",
+              "alt": "Wrap distributes over string and number and yields a union of two object types. WrapTogether tests the tuple-wrapped union together and yields one object type with a union-valued property.",
+              "loaded": true,
+              "width": 228,
+              "naturalWidth": 228
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md",
+      "sha256": "d1f3c255bb247769ad2bb8919b51b13caec034601b6047b1802da774c36b47bb",
+      "baselineSha256": "f9b121a58afcb724ecd8e3a3cbf233c86347ccfb95aa4339afbe228983b7539d",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg",
+              "alt": "The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.",
+              "loaded": true,
+              "width": 428,
+              "naturalWidth": 428
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg",
+              "alt": "The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 428
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md",
+      "sha256": "937a73b3a34074a627248c2f22ecfe02af4f0891df0f593e012d12938ad5c69c",
+      "baselineSha256": "589a4632511a49c354d2b80b428dbca54d8ac77795e5aba3431849009cc8194a",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg",
+              "alt": "The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.",
+              "loaded": true,
+              "width": 550,
+              "naturalWidth": 550
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg",
+              "alt": "The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 550
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md",
+      "sha256": "b068596a4603f7a77db6bb212968766a7f36bcfce596a57a1c964c1851b4bb14",
+      "baselineSha256": "7f0cf23e0c23339f3f86a374cd89c1bff8a5d88dc00659167dcc481115fef6e4",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg",
+              "alt": "A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.",
+              "loaded": true,
+              "width": 429,
+              "naturalWidth": 429
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg",
+              "alt": "A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 429
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "source": "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd",
+      "sourceSha256": "8aa685d3393313ce43b3a768dc5d08579b0f147471ecb17eb91797373a29a10b",
+      "svg": "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg",
+      "svgSha256": "6031250577059663e8522e572ed5b3be07f6a9415c89ee073918fc5a8923bc14",
+      "xmlValid": true,
+      "title": "Closures share bindings within one invocation",
+      "description": "Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 585.53515625 258",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 585.53125,
+          "minimumFontPx": 19.9998665750482,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 12.296443557909765,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd",
+      "sourceSha256": "9e7bcbf7b7c6c12da9550350757b5aaa9cf68847b68a44b2a24f74682bb9897c",
+      "svg": "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg",
+      "svgSha256": "5ea56b0858f0b255169947216f27b1d9fef9731946359a9ccbe356fbfcf2eec5",
+      "xmlValid": true,
+      "title": "Call syntax supplies the ordinary-function receiver",
+      "description": "The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 196.96875 646.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 196.96875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 196.96875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd",
+      "sourceSha256": "e9d41cb74019567cdd08d72849b9ad1fe61acdecfb60c7ca42894bcf2a708fd0",
+      "svg": "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg",
+      "svgSha256": "2d6454840d2b62ec1033d4682b707b328623e37e45d0ad3b8a1acf32488932be",
+      "xmlValid": true,
+      "title": "Lookup delegates until an own property is found",
+      "description": "account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 432.421875 628.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 432.421875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.650406504065042,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd",
+      "sourceSha256": "4adc3872d04467648efd60cb86ed402ba29ee72f5e86772cc960a6f9c5695f40",
+      "svg": "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg",
+      "svgSha256": "a9bb6b7af816dc22970b192914fc25204ec50dd190077f855fa19c355afa5fc4",
+      "xmlValid": true,
+      "title": "A new array can retain the same element objects",
+      "description": "Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 480.71875 256.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 480.71875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.977572645127738,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd",
+      "sourceSha256": "86c34709a0ff3701dec0c558c49afdcf5f8155070615b7e74d0107f879e4554d",
+      "svg": "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg",
+      "svgSha256": "996507ba5ba2c7aa5017ac50896680c390fe27f8ad75b0f52143d87c197df01d",
+      "xmlValid": true,
+      "title": "A live import follows the exporter\u2019s binding",
+      "description": "The imported count reads the exporter binding, which increment changes from 0 to 1. A local primitive snapshot copied before increment remains 0.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 374.99609375 476",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 374.984375,
+          "minimumFontPx": 19.999374993489514,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 19.200200002083356,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd",
+      "sourceSha256": "d65868405a4ec2ae5702d1561690b6bd38fa6dcff9da6941e3ea7413ff4c8a9e",
+      "svg": "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg",
+      "svgSha256": "3c7a732bdb510c7f0ba13e2c8319348467398510887907fd3d29441aa50bd12b",
+      "xmlValid": true,
+      "title": "Cleanup can preserve or replace a pending outcome",
+      "description": "A pending return or throw enters finally. Normal finally completion preserves it; a return or throw from finally replaces it.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 451.328125 564.486328125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 451.328125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 15.95291673879176,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd",
+      "sourceSha256": "e3e1c22f57d7cfef0eec47551bfe4fa3ba3138b1f0e8ca788a99f7d1b702e72d",
+      "svg": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg",
+      "svgSha256": "c68cbf60a0c831e6355f7ec872dad824a70ea19729296c9cb14d9e851dd58ff6",
+      "xmlValid": true,
+      "title": "Resolution can lock an outcome while settlement waits",
+      "description": "Resolving outer with a pending inner Promise leaves outer pending but locked to inner. Inner fulfillment leads to outer fulfillment; inner rejection leads to outer rejection.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 446.890625 432.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 446.890625,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.111324778853888,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd",
+      "sourceSha256": "49dc94b1a7aaba8438ca778032f5fb05e2b077faf3df967413a5c21e9c49dbb3",
+      "svg": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg",
+      "svgSha256": "5433d5caaadd8800e60d62c4cecdfb942b4faba40e3b2e7fdac503b7b88a481c",
+      "xmlValid": true,
+      "title": "The executor runs now and the reaction runs later",
+      "description": "A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 213.671875 626.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 213.671875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 213.671875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd",
+      "sourceSha256": "f8e8ace61cc66e5faad97223a7b940b4282e030caf1c7afba8a7d0b961a210f0",
+      "svg": "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg",
+      "svgSha256": "04d8276f2776f7cfba89aa86e7496ce17715fbf041e1ff6944929acd4823940e",
+      "xmlValid": true,
+      "title": "Aborting observation cannot undo a confirmed effect",
+      "description": "An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-8 -10 261 568",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 261,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 261,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd",
+      "sourceSha256": "b91461661780514a1551800bd2220f61cc9b763fa1eed598b4e8352434100a6c",
+      "svg": "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg",
+      "svgSha256": "2c46b30047116ed6af29c1b0ff9d0ff1eb6a6142e44b9e9fe0dffa1e836845f1",
+      "xmlValid": true,
+      "title": "Awaiting each save delays the next pull",
+      "description": "The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-8 -10 261 626",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 261,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 261,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd",
+      "sourceSha256": "aa19e142f328476d6de462046cef93e853843cdac3ab52ea5118e6b0da82a587",
+      "svg": "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg",
+      "svgSha256": "6d53c21e5953864fcf730ea3e842e2323e01c54f83b3d0b08b6fae4c70d4d3d3",
+      "xmlValid": true,
+      "title": "Structural compatibility preserves the runtime object",
+      "description": "The checker accepts record with string id and category for Identified, which requires string id. At runtime input and record remain the same object and category still exists.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 220.328125 672.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 220.328125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 220.328125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd",
+      "sourceSha256": "a96ebb739718baaab1ed1c3ca789347d9961eca54660b35784f02153ee3cad44",
+      "svg": "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg",
+      "svgSha256": "36c8923c306cd2874fc913f9410228619affc2fa4f647a0dbaad2abfd63d5185",
+      "xmlValid": true,
+      "title": "Branches narrow the checker\u2019s view of Booking",
+      "description": "A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 547.9296875 864.01171875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 547.921875,
+          "minimumFontPx": 19.99971483567406,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 16.152599053671153
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.140372139445356,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 16.152599053671153
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd",
+      "sourceSha256": "a1e1dd27fca3ea0371d0348fe328d723a83edcf4f5bdfa66870a5bc8745f5722",
+      "svg": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg",
+      "svgSha256": "63d3a88445e00f7725fd13ebcab1bcda1172a952ca6b1784f30f07b546bb2467",
+      "xmlValid": true,
+      "title": "The chosen key determines the returned type",
+      "description": "For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 218.09375 736.626953125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 218.09375,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 218.09375,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd",
+      "sourceSha256": "932521e312834aec67e924f0d0eb8e4feee5a4838b2957e825e609332229b2ef",
+      "svg": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg",
+      "svgSha256": "fb431b98500dd1e41f792bc3ffe889dc7fb15034926a0b987d3a01903899227b",
+      "xmlValid": true,
+      "title": "Distribution changes where the union appears",
+      "description": "Wrap distributes over string and number and yields a union of two object types. WrapTogether tests the tuple-wrapped union together and yields one object type with a union-valued property.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 227.75 604.626953125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 227.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 16.174172024804825
+        },
+        {
+          "columnWidth": 360,
+          "width": 227.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 16.174172024804825
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd",
+      "sourceSha256": "6c20b67cd17369fa26172f121421edeefaccea0c0fe6cf2431fe0748cf4aba4a",
+      "svg": "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg",
+      "svgSha256": "10f5b6f52a596339e1506ef3bfcf3c2bc93f9c380dab01c7878381f628fb35d7",
+      "xmlValid": true,
+      "title": "Checking, emission and loading answer separate questions",
+      "description": "The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 428.1728515625 756",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 428.171875,
+          "minimumFontPx": 19.999954384660473,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.81563876300322,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd",
+      "sourceSha256": "3d7eaa11cd8130e6d78437d3767a3346d9821c52a35a9b52d510e76870f0224c",
+      "svg": "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg",
+      "svgSha256": "62c7304e39dbc540d373f0ef4b485266cc982c2b0017d26099d91320dfc4e5fa",
+      "xmlValid": true,
+      "title": "Only executed checks establish this parser\u2019s input contract",
+      "description": "The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 549.54541015625 1070.626953125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 549.53125,
+          "minimumFontPx": 19.999484659284263,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(255, 251, 235)",
+            "rgb(224, 242, 254)",
+            "rgb(254, 226, 226)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.101738030989747,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(255, 251, 235)",
+            "rgb(224, 242, 254)",
+            "rgb(254, 226, 226)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd",
+      "sourceSha256": "d5c160aa76b6ce66c2418b685ae02f9ed1e73fc8158deb641ecc67893ae6e6fd",
+      "svg": "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg",
+      "svgSha256": "4a05d0fc792b7f1ec8db78d30e2e288e2f76809248de23a858053595e1259be2",
+      "xmlValid": true,
+      "title": "Promise settlement and domain outcome are separate layers",
+      "description": "A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 428.8828125 761.814453125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 428.875,
+          "minimumFontPx": 19.999635681366925,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.7878026121646,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    }
+  ],
+  "trackingAndCoverage": "Reviewed; no mapping/status/Charter change. Protected files unchanged from baseline.",
+  "finalSourceCleanup": "Removed trailing blank lines from two sequence sources; both revalidated/regenerated and SVG bytes exactly unchanged, preserving all measured/inspected output."
+}

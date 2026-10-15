@@ -127,6 +127,14 @@ Each invocation of `makeCounter` creates a separate lexical environment. Functio
 
 This supports encapsulation but is not automatically an authorization or confidentiality guarantee: public methods can expose or change data by design.
 
+**Visual question: Which returned methods share count, and which counter is independent?**
+
+![Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.](../assets/02-variables-scope-and-closures/closure-binding-sharing.svg)
+
+**Closures share bindings within one invocation.** After the two increments above, A’s methods share the updated binding. A second makeCounter() call starts a separate count at 0. Arrows mean binding access, not physical memory placement or an exact retention graph. Closure capture keeps access to state; it does not snapshot the initial number or guarantee authorization. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures).
+
+[Full-size SVG](../assets/02-variables-scope-and-closures/closure-binding-sharing.svg) · [Editable Mermaid source](../assets/02-variables-scope-and-closures/closure-binding-sharing.mmd)
+
 ## 6. Capture in loops and asynchronous callbacks
 
 `var` loop bindings commonly cause unexpected capture, because callbacks may all refer to the same function-scoped variable. `let` in a `for` loop creates per-iteration bindings under the language's loop semantics.

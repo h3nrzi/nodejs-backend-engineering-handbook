@@ -1,0 +1,318 @@
+$ git diff --name-only d3828398597238741e14147685bc172a7c50f7b1 -- tracking/state.json TRACKER.md projects/coverage-matrix.md domains/01-computer-science-foundations domains/02-javascript-typescript/README.md domains/02-javascript-typescript/curriculum.md domains/02-javascript-typescript/projects domains/03-nodejs-internals domains/04-network-protocol-engineering tools scripts package.json package-lock.json
+exit 0
+
+$ git diff --name-only d3828398597238741e14147685bc172a7c50f7b1
+exit 0
+domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md
+domains/02-javascript-typescript/lessons/03-functions-and-invocation.md
+domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md
+domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md
+domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md
+domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md
+domains/02-javascript-typescript/lessons/08-promises-and-async-await.md
+domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md
+domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md
+domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md
+domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md
+domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md
+domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md
+domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md
+domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md
+
+$ git ls-files --others --exclude-standard
+exit 0
+docs/visual-d02/changed-files.txt
+docs/visual-d02/guide.md
+docs/visual-d02/lab-replay.json
+docs/visual-d02/plan.json
+docs/visual-d02/replay.mjs
+docs/visual-d02/review.md
+docs/visual-d02/validation.txt
+docs/visual-d02/verification.json
+docs/visual-d02/verify.mjs
+domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd
+domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg
+domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd
+domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg
+domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd
+domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg
+domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd
+domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg
+domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd
+domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg
+domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd
+domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg
+domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd
+domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg
+domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd
+domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg
+domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd
+domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg
+domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd
+domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg
+domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd
+domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg
+domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd
+domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg
+domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd
+domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg
+domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd
+domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg
+domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd
+domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg
+domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd
+domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg
+domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd
+domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg
+
+$ npm run visuals:smoke
+exit 0
+
+> visuals:smoke
+> node scripts/check-visuals.mjs
+
+Disposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-qdOiG6
+tcp-handshake: PNG 507 x 357, 16388 bytes
+event-loop-scheduling: PNG 236 x 725, 30572 bytes
+request-lifecycle: PNG 451 x 536, 25604 bytes
+Markdown: 3 fences validated; 3 relative SVG image references resolve.
+Math: KaTeX typeset output verified with an explicit HTML-label config.
+Refusal checks: invalid fence reports block/line; missing browser exits 2.
+PASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-qdOiG6; remove only this directory after review.
+
+$ npm run visuals:check -- --self-test-styles
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check --self-test-styles
+
+OK  <style-self-test> (5 colored Mermaid blocks)
+
+Validation passed: checked 5 Mermaid blocks across 1 target.
+
+$ npm run visuals:check -- domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md domains/02-javascript-typescript/lessons/03-functions-and-invocation.md domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md domains/02-javascript-typescript/lessons/08-promises-and-async-await.md domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md domains/02-javascript-typescript/lessons/03-functions-and-invocation.md domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md domains/02-javascript-typescript/lessons/08-promises-and-async-await.md domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd
+
+OK  domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd (1 Mermaid block)
+OK  domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd (1 Mermaid block)
+
+Validation passed: checked 17 Mermaid blocks across 33 targets.
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd -o domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd -o domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd -o domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd -o domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd -o domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd -o domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd -o domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd -o domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd -o domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd -o domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd -o domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd -o domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd -o domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd -o domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd -o domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd -o domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd -o domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd -o domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd -o domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd -o domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd -o domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd -o domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd -o domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd -o domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg
+
+Generating single mermaid chart
+
+$ python3 scripts/check-handbook-links.py
+exit 0
+{
+  "checked_internal_links": 1184,
+  "current_issues": [],
+  "pre_existing_issues": [],
+  "new_issues": []
+}
+
+$ git diff --check
+exit 0
+
+$ python3 --version
+exit 0
+Python 3.14.7
+
+$ npm --version
+exit 0
+11.19.1
+
+$ sw_vers
+exit 0
+ProductName: macOS
+ProductVersion: 26.1
+BuildVersion: 25B78
+
+$ npm run visuals:check -- domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd
+
+OK  domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd (1 Mermaid block)
+
+Validation passed: checked 1 Mermaid block across 1 target.
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd -o domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:check -- domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd
+
+OK  domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd (1 Mermaid block)
+
+Validation passed: checked 1 Mermaid block across 1 target.
+
+$ npm run visuals:render -- -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd -o domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg
+
+Generating single mermaid chart
+
+$ git diff --cached --check
+exit 0

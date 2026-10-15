@@ -52,6 +52,14 @@ function dangerous() {
 
 Avoid returning or throwing from cleanup without consciously handling the original failure. `finally` does not imply any awaited asynchronous operation has settled when used around a bare returned Promise.
 
+**Visual question: How does finally decide which return or throw leaves the function?**
+
+![A pending return or throw enters finally. Normal finally completion preserves it; a return or throw from finally replaces it.](../assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg)
+
+**Cleanup can preserve or replace a pending outcome.** A pending outcome is a control-flow description, not a Promise state. result() logs cleanup then preserves "first"; dangerous() replaces the original throw with "overridden". This assumes execution reaches and exits finally: process termination is outside this language-level model. Other abrupt exits, such as a valid break or continue, can also replace the pending outcome. A synchronous finally does not wait for a bare returned Promise. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch).
+
+[Full-size SVG](../assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg) · [Editable Mermaid source](../assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd)
+
 ## 3. catch bindings and unknown failure shapes
 
 Anything can be thrown: `throw "oops"` is valid JS, so code cannot assume an arbitrary caught value is an `Error`. TypeScript with `useUnknownInCatchVariables` under strict settings encourages narrowing.

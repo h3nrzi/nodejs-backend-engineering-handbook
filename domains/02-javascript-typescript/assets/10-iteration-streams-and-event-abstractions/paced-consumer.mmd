@@ -1,0 +1,24 @@
+---
+config:
+  themeVariables:
+    fontSize: 18px
+  sequence:
+    useMaxWidth: false
+    diagramMarginX: 8
+    actorMargin: 25
+    width: 110
+    wrap: true
+---
+sequenceDiagram
+  accTitle: Awaiting each save delays the next pull
+  accDescr: The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.
+  participant C as Consumer
+  participant S as Source
+  C->>S: next()
+  S-->>C: item 1, done false
+  Note over C: Check signal
+  Note over C: await save(item 1)
+  Note over S: May buffer internally
+  Note over C: Save fulfills
+  C->>S: next()
+  S-->>C: item 2, done false

@@ -1,0 +1,32 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Checking, emission and loading answer separate questions
+  accDescr: The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.
+  S["TypeScript source imports"] --> C["Checker resolves types
+may use paths / .d.ts"]
+  C -.->|Success does not prove emit/load| E["If emission is enabled
+inspect actual JavaScript"]
+  E --> R["Runtime or bundler
+resolves value imports"]
+  R --> X["Module evaluation
+can still fail"]
+  C --> N["noEmit: no output
+from this compiler run"]
+  class C,E control;
+  class N neutral;
+  class X pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

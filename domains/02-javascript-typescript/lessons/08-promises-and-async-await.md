@@ -23,6 +23,14 @@ finish("ready");
 
 Thenables have a callable then property. Their behavior may be user-defined, so treating a thenable as a harmless record is unsafe.
 
+**Visual question: Can outer already follow inner while still being pending?**
+
+![Resolving outer with a pending inner Promise leaves outer pending but locked to inner. Inner fulfillment leads to outer fulfillment; inner rejection leads to outer rejection.](../assets/08-promises-and-async-await/promise-adoption.svg)
+
+**Resolution can lock an outcome while settlement waits.** The example takes the fulfillment branch when finish("ready") runs; rejection is the alternative if inner were rejected. Resolving here fixes what outer follows, so later attempts to resolve or reject outer cannot change that choice. These boxes describe this adoption case, not a fourth Promise state or a complete thenable-resolution algorithm. Settlement is eventual via Promise jobs, not necessarily immediate at finish(). [Mechanism reference](https://tc39.es/ecma262/#sec-promise-objects).
+
+[Full-size SVG](../assets/08-promises-and-async-await/promise-adoption.svg) · [Editable Mermaid source](../assets/08-promises-and-async-await/promise-adoption.mmd)
+
 ## 2. Synchronous executors, asynchronous reactions
 
 ~~~js
@@ -37,6 +45,14 @@ console.log("C");
 ~~~
 
 Promise constructors call executors synchronously; settlement handlers run asynchronously. A synchronous exception thrown by the executor rejects its Promise, but failures from unrelated future callbacks are not automatically captured.
+
+**Visual question: Why does C appear before D even though p is already fulfilled?**
+
+![A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.](../assets/08-promises-and-async-await/promise-reaction-order.svg)
+
+**The executor runs now and the reaction runs later.** This is the exact A/B/C/D example above: the executor is synchronous, whereas a then handler runs in a later job even for an already fulfilled Promise. The diagram gives causal order, not elapsed time, CPU parallelism, or ordering against timers, I/O or process.nextTick. Handler registration does not call the handler inline. [Mechanism reference](https://tc39.es/ecma262/#sec-performpromisethen).
+
+[Full-size SVG](../assets/08-promises-and-async-await/promise-reaction-order.svg) · [Editable Mermaid source](../assets/08-promises-and-async-await/promise-reaction-order.mmd)
 
 ## 3. Chaining and recovery
 

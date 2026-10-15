@@ -83,6 +83,14 @@ const input: Identified = record;
 
 Fresh object literals undergo excess-property checking in certain assignment contexts, but structural compatibility is not runtime validation. Interfaces and type aliases have different expressiveness and extension affordances; neither universally supersedes the other.
 
+**Visual question: Does assigning record to Identified strip category or create a new identity?**
+
+![The checker accepts record with string id and category for Identified, which requires string id. At runtime input and record remain the same object and category still exists.](../assets/11-typescript-type-system-fundamentals/structural-assignment.svg)
+
+**Structural compatibility preserves the runtime object.** Purple boxes concern static checking; the final box states JavaScript identity. This is assignment through the existing variable, so the fresh-object-literal excess-property check is not the rule illustrated. Compatibility does not strip fields, deep-copy the object, compare identity, or validate external data. Other type features can impose additional compatibility constraints. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/type-compatibility.html).
+
+[Full-size SVG](../assets/11-typescript-type-system-fundamentals/structural-assignment.svg) · [Editable Mermaid source](../assets/11-typescript-type-system-fundamentals/structural-assignment.mmd)
+
 ## 7. Function signatures
 
 ~~~ts

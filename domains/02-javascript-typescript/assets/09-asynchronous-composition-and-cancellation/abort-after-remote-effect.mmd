@@ -1,0 +1,22 @@
+---
+config:
+  themeVariables:
+    fontSize: 18px
+  sequence:
+    useMaxWidth: false
+    diagramMarginX: 8
+    actorMargin: 25
+    width: 110
+    wrap: true
+---
+sequenceDiagram
+  accTitle: Aborting observation cannot undo a confirmed effect
+  accDescr: An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.
+  participant C as Caller
+  participant O as Operation
+  C->>O: Start logical attempt R
+  Note over O: Effect succeeds
+  O--xC: Confirmation lost
+  Note over C: abort() requests stop
+  Note over O: Prior effect remains
+  Note over C: Outcome uncertain

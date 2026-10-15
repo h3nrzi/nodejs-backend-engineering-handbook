@@ -61,6 +61,14 @@ The `in` operator includes inherited members; `Object.hasOwn` excludes them. A p
 
 Prototypes enable delegation, not class-based copying. Avoid modifying built-in prototypes in shared services because changes may affect unrelated code.
 
+**Visual question: Why is account.role readable even though account does not own role?**
+
+![account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.](../assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg)
+
+**Lookup delegates until an own property is found.** Solid arrows trace this read; dashed arrows show the remaining prototype chain. No property is copied into account: Object.hasOwn(account, "role") stays false, while "role" in account is true. This ordinary data-property example omits accessors and proxies, whose reads can execute code. An own role would shadow the inherited property. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain).
+
+[Full-size SVG](../assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg) · [Editable Mermaid source](../assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd)
+
 ## 4. Constructor functions and new
 
 With an ordinary constructible function, `new` creates an object whose prototype is usually taken from the constructor's `.prototype`, invokes the constructor with that receiver, and returns an appropriate result under the constructor rules.

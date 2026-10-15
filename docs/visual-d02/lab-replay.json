@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-15T16:53:26.015Z",
+  "baseline": "d3828398597238741e14147685bc172a7c50f7b1",
+  "environment": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "scope": "Sixteen bounded replays of unchanged JS/TS teaching blocks. Native Node type stripping is not TypeScript type checking. No compiler is installed in the repository; static claims are documentation-reviewed, not compiler-verified. No all-lesson execution, timer scheduling, remote cancellation, production implementation or learner assessment claim.",
+  "results": [
+    {
+      "name": "closure-sharing",
+      "chapter": "02",
+      "lesson": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+      "marker": "function makeCounter()",
+      "command": [
+        "node",
+        "<temporary>/closure-sharing.mjs"
+      ],
+      "exit": 0,
+      "stdout": "closure-sharing: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(counter.read(),2); const other=makeCounter(); assert.equal(other.read(),0); counter.increment(); assert.equal(counter.read(),3); assert.equal(other.read(),0);"
+    },
+    {
+      "name": "loop-bindings",
+      "chapter": "02",
+      "lesson": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+      "marker": "const callbacksVar",
+      "command": [
+        "node",
+        "<temporary>/loop-bindings.mjs"
+      ],
+      "exit": 0,
+      "stdout": "loop-bindings: PASS\n",
+      "stderr": "",
+      "assertions": "assert.deepEqual(callbacksVar.map(fn=>fn()),[3,3,3]); assert.deepEqual(callbacksLet.map(fn=>fn()),[0,1,2]);"
+    },
+    {
+      "name": "detached-receiver",
+      "chapter": "03",
+      "lesson": "domains/02-javascript-typescript/lessons/03-functions-and-invocation.md",
+      "marker": "const meter =",
+      "command": [
+        "node",
+        "<temporary>/detached-receiver.mjs"
+      ],
+      "exit": 0,
+      "stdout": "detached-receiver: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(meter.read(),2); assert.throws(()=>detached(),TypeError); assert.equal(detached.bind(meter)(),2);"
+    },
+    {
+      "name": "prototype-lookup",
+      "chapter": "04",
+      "lesson": "domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md",
+      "marker": "const shared =",
+      "command": [
+        "node",
+        "<temporary>/prototype-lookup.mjs"
+      ],
+      "exit": 0,
+      "stdout": "prototype-lookup: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(account.role,'viewer'); assert.equal(Object.hasOwn(account,'role'),false); assert.equal('role' in account,true); assert.equal(Object.getPrototypeOf(account),shared); account.role='admin'; assert.equal(account.role,'admin'); assert.equal(shared.role,'viewer'); delete account.role; assert.equal(account.role,'viewer'); assert.equal(account.missing,undefined);"
+    },
+    {
+      "name": "shallow-sort",
+      "chapter": "05",
+      "lesson": "domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md",
+      "marker": "const sorted =",
+      "command": [
+        "node",
+        "<temporary>/shallow-sort.mjs"
+      ],
+      "exit": 0,
+      "stdout": "shallow-sort: PASS\n",
+      "stderr": "",
+      "assertions": "assert.notEqual(original,sorted); assert.equal(sorted[0],original[1]); assert.equal(sorted[1],original[0]); assert.deepEqual(original.map(x=>x.score),[3,9]); assert.deepEqual(sorted.map(x=>x.score),[9,3]);"
+    },
+    {
+      "name": "finally-outcomes",
+      "chapter": "07",
+      "lesson": "domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md",
+      "marker": "function dangerous()",
+      "command": [
+        "node",
+        "<temporary>/finally-outcomes.mjs"
+      ],
+      "exit": 0,
+      "stdout": "cleanup\nfinally-outcomes: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(result(),'first'); assert.equal(dangerous(),'overridden');"
+    },
+    {
+      "name": "promise-adoption",
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "marker": "const outer =",
+      "command": [
+        "node",
+        "<temporary>/promise-adoption.mjs"
+      ],
+      "exit": 0,
+      "stdout": "promise-adoption: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(await outer,'ready'); let complete; const i=new Promise(r=>complete=r); let rejectOuter; const o=new Promise((resolve,reject)=>{rejectOuter=reject;resolve(i)}); let seen=false; o.then(()=>{seen=true}); await Promise.resolve(); assert.equal(seen,false); rejectOuter(new Error('ignored')); complete('locked'); assert.equal(await o,'locked');"
+    },
+    {
+      "name": "executor-reaction-order",
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "marker": "console.log(\"A\")",
+      "command": [
+        "node",
+        "<temporary>/executor-reaction-order.mjs"
+      ],
+      "exit": 0,
+      "stdout": "executor-reaction-order: PASS\n",
+      "stderr": "",
+      "assertions": "await p; console.log=priorLog; assert.deepEqual(logs,['A','B','C','D']);"
+    },
+    {
+      "name": "await-before-cleanup",
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "marker": "async function withResource",
+      "command": [
+        "node",
+        "<temporary>/await-before-cleanup.mjs"
+      ],
+      "exit": 0,
+      "stdout": "await-before-cleanup: PASS\n",
+      "stderr": "",
+      "assertions": "const events=[]; assert.equal(await withResource(async()=>({perform:async()=>{await Promise.resolve();events.push('perform');return 7},close:async()=>{events.push('close')}})),7); assert.deepEqual(events,['perform','close']); await assert.rejects(()=>withResource(async()=>({perform:async()=>{throw Error('primary')},close:async()=>{throw Error('cleanup')}})),/cleanup/);"
+    },
+    {
+      "name": "cooperative-abort",
+      "chapter": "09",
+      "lesson": "domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md",
+      "marker": "async function step(",
+      "command": [
+        "node",
+        "<temporary>/cooperative-abort.mjs"
+      ],
+      "exit": 0,
+      "stdout": "cooperative-abort: PASS\n",
+      "stderr": "",
+      "assertions": "const c=new AbortController(); let effect=0; const pending=step(c.signal,async()=>{effect++;c.abort(new Error('stopped'));return 'done'}); await assert.rejects(()=>pending,/stopped/); assert.equal(effect,1); let called=false; await assert.rejects(()=>step(c.signal,async()=>{called=true}),/stopped/); assert.equal(called,false);"
+    },
+    {
+      "name": "consumer-pacing",
+      "chapter": "10",
+      "lesson": "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+      "marker": "async function processAll",
+      "command": [
+        "node",
+        "<temporary>/consumer-pacing.mjs"
+      ],
+      "exit": 0,
+      "stdout": "consumer-pacing: PASS\n",
+      "stderr": "",
+      "assertions": "const events=[]; let active=0; async function* source(){events.push('pull1');yield 1;events.push('pull2');yield 2;} await processAll(source(),async n=>{active++;assert.equal(active,1);events.push('save'+n);await Promise.resolve();active--;events.push('done'+n)},new AbortController().signal); assert.deepEqual(events,['pull1','save1','done1','pull2','save2','done2']);"
+    },
+    {
+      "name": "iterator-close",
+      "chapter": "10",
+      "lesson": "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+      "marker": "async function takeFirst",
+      "command": [
+        "node",
+        "<temporary>/iterator-close.mjs"
+      ],
+      "exit": 0,
+      "stdout": "iterator-close: PASS\n",
+      "stderr": "",
+      "assertions": "let closed=false; async function* values(){try{yield 1;yield 2}finally{await Promise.resolve();closed=true}} assert.equal(await takeFirst(values()),1); assert.equal(closed,true);"
+    },
+    {
+      "name": "structural-runtime-identity",
+      "chapter": "11",
+      "lesson": "domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md",
+      "marker": "type Identified =",
+      "command": [
+        "node",
+        "<temporary>/structural-runtime-identity.mts"
+      ],
+      "exit": 0,
+      "stdout": "structural-runtime-identity: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(input,record); assert.equal(input.category,'service');"
+    },
+    {
+      "name": "generic-runtime-access",
+      "chapter": "13",
+      "lesson": "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+      "marker": "function getProperty<",
+      "command": [
+        "node",
+        "<temporary>/generic-runtime-access.mts"
+      ],
+      "exit": 0,
+      "stdout": "generic-runtime-access: PASS\n",
+      "stderr": "",
+      "assertions": "assert.equal(isActive,true); assert.equal(getProperty(entry,'id'),'a');"
+    },
+    {
+      "name": "parser-paths",
+      "chapter": "15",
+      "lesson": "domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md",
+      "marker": "function parseCustomerInput",
+      "command": [
+        "node",
+        "<temporary>/parser-paths.mts"
+      ],
+      "exit": 0,
+      "stdout": "parser-paths: PASS\n",
+      "stderr": "",
+      "assertions": "const raw={name:' Ada ',age:30,extra:true}; const parsed=parseCustomerInput(raw); assert.deepEqual(parsed,{name:'Ada',age:30}); assert.notEqual(raw,parsed); assert.equal(raw.name,' Ada '); for(const bad of [null,[],1,{name:'',age:20},{name:3,age:20}]) assert.throws(()=>parseCustomerInput(bad),TypeError); for(const age of [-1,131,1.5,NaN,'30']) assert.throws(()=>parseCustomerInput({name:'Ada',age}),RangeError); assert.equal(parseCustomerInput({name:'A',age:0}).age,0); assert.equal(parseCustomerInput({name:'A',age:130}).age,130);"
+    },
+    {
+      "name": "two-rejection-layers",
+      "chapter": "16",
+      "lesson": "domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md",
+      "marker": "async function collect(",
+      "command": [
+        "node",
+        "<temporary>/two-rejection-layers.mts"
+      ],
+      "exit": 0,
+      "stdout": "two-rejection-layers: PASS\n",
+      "stderr": "",
+      "assertions": "const entries=await collect([async()=>({kind:'rejected',recipientId:'r1',reason:'policy'}),async()=>{throw new Error('transport')}]); assert.equal(entries[0].status,'fulfilled'); assert.equal(entries[0].value.kind,'rejected'); assert.equal(entries[1].status,'rejected'); assert.equal(entries[1].reason.message,'transport'); await assert.rejects(()=>collect([()=>{throw Error('sync')}]),/sync/);"
+    }
+  ]
+}

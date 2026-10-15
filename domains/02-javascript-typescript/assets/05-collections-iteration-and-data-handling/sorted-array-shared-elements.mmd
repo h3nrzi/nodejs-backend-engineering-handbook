@@ -1,0 +1,26 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: A new array can retain the same element objects
+  accDescr: Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.
+  O["original array"] -->|Index 0| A["Object A
+score = 3"]
+  O -->|Index 1| B["Object B
+score: 1 becomes 9"]
+  S["sorted array"] -->|Index 0| B
+  S -->|Index 1| A
+  class B pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

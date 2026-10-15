@@ -55,6 +55,14 @@ const isActive = getProperty(entry, "active"); // boolean
 
 `keyof` describes available property keys statically, and `T[K]` links the selected key to its value. It does not stop prototype getters or object mutation from affecting runtime behavior.
 
+**Visual question: How does K connect a permitted property name to T[K]?**
+
+![For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].](../assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg)
+
+**The chosen key determines the returned type.** The solid arrows are type relationships for getProperty(entry, "active"), not runtime stages. K extends keyof T rejects an unknown key in checked calls and links the result to the selected property type. It does not inject runtime guards, prevent getters, or ensure an external object still matches T. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/2/generics.html).
+
+[Full-size SVG](../assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg) · [Editable Mermaid source](../assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd)
+
 ## 4. Generic interfaces and reusable result contracts
 
 ~~~ts
@@ -94,6 +102,14 @@ type NotDistributed = WrapTogether<string | number>;
 ~~~
 
 Tuple wrapping controls distributivity. This distinction is particularly important when designing utilities over discriminated unions.
+
+**Visual question: Why do Wrap and WrapTogether produce different object alternatives?**
+
+![Wrap distributes over string and number and yields a union of two object types. WrapTogether tests the tuple-wrapped union together and yields one object type with a union-valued property.](../assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg)
+
+**Distribution changes where the union appears.** These are two alternative type calculations from the same input union, arranged vertically. A naked type parameter in this conditional distributes; wrapping the checked parameter in a tuple suppresses that distribution. The output types retain different relationships even where accepted simple values overlap. This computes types only: it creates no objects and performs no runtime branching. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html).
+
+[Full-size SVG](../assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg) · [Editable Mermaid source](../assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd)
 
 ## 7. Mapped types and modifiers
 

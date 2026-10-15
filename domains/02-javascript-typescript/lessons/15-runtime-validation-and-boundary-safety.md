@@ -53,6 +53,14 @@ function parseCustomerInput(value: unknown): CustomerInput {
 
 The age interval is an illustrative product rule, not universal truth. This implementation does not inspect extra fields or hostile getters/proxies, which may require additional defensive handling at specific boundaries.
 
+**Visual question: What must pass before parseCustomerInput constructs its result?**
+
+![The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.](../assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg)
+
+**Only executed checks establish this parser’s input contract.** This is the parser above, for ordinary data records. The name check requires a nonblank string; the age check requires a safe integer from 0 to 130. Invalid name throws first, then invalid age. The result copies the checked primitive fields and leaves extra input fields out. The illustrative age policy is not universal; the parser does not check authorization, current state, hostile accessors or proxies. A type assertion alone follows none of these branches. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions).
+
+[Full-size SVG](../assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg) · [Editable Mermaid source](../assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd)
+
 ## 3. Separate syntax, representation and business rules
 
 For every field, define acceptable input syntax, canonical representation and domain limits. A numeric string, a number and a blank string are different values. Number("") becoming zero does not justify accepting a blank quantity. Define whether trimming and digit normalization are permitted.

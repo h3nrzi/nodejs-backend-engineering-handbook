@@ -69,6 +69,14 @@ console.log(count); // 1
 
 Live bindings are not the same as making exported objects immutable: consumers can still mutate a shared exported object when its properties are writable. Be careful exposing mutable module-scoped objects in backend services.
 
+**Visual question: Why does a live count read change while a primitive snapshot stays 0?**
+
+![The imported count reads the exporter binding, which increment changes from 0 to 1. A local primitive snapshot copied before increment remains 0.](../assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg)
+
+**A live import follows the exporter’s binding.** The solid read arrow denotes a live imported binding, not a copied variable. Adding const snapshot = count before increment() would copy 0 into a separate local binding. The importer cannot reassign count. Read-only imports still allow mutation of writable properties on an exported object; ESM binding semantics do not freeze objects or specify CommonJS interoperability. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+
+[Full-size SVG](../assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg) · [Editable Mermaid source](../assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd)
+
 ## 4. Linking, instantiation and evaluation
 
 Conceptually, ESM dependencies are linked, bindings instantiated, and modules evaluated with dependencies considered. Static imports express dependencies before ordinary module body execution. This helps explain why ESM cycles can be usable for some function exports but fail for access to uninitialized lexical exports.

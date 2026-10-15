@@ -1,0 +1,30 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: The chosen key determines the returned type
+  accDescr: For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].
+  T["T inferred from entry
+id: string, active: boolean"] --> K["keyof T
+id or active"]
+  K -->|Choose active| A["K = active
+valid key constraint"]
+  A --> V["T[K] = boolean
+static result type"]
+  V -.->|Erased types, ordinary access| R["Runtime: obj[key]
+no generated validator"]
+  class T,K,A,V control;
+  class R neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

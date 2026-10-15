@@ -70,6 +70,14 @@ function summarize(booking: Booking): string {
 
 This avoids allowing a pending record to carry a confirmed-only field through the typed API. It does **not** ensure that persisted data, JSON or unsafe casts actually obey the declared union.
 
+**Visual question: What type remains after each returning status branch?**
+
+![A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.](../assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg)
+
+**Branches narrow the checker’s view of Booking.** This equivalent decision view of summarize shows control-flow analysis over an already typed Booking; it is not a lifecycle transition graph. The JavaScript status comparisons still run, while TypeScript uses them to narrow fields statically. Each return removes that path from later control flow. A new variant requires revisiting handling; never-based exhaustive checking is shown below. Unknown JSON still needs parsing. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/2/narrowing.html).
+
+[Full-size SVG](../assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg) · [Editable Mermaid source](../assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd)
+
 ## 5. Exhaustiveness and never
 
 ~~~ts

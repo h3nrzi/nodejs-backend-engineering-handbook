@@ -1,0 +1,30 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Branches narrow the checker’s view of Booking
+  accDescr: A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.
+  U["Booking union
+static starting type"] --> P{"status = pending?"}
+  P -->|Yes| A["Pending variant
+return waiting message"]
+  P -->|No: two variants remain| C{"status = confirmed?"}
+  C -->|Yes| B["Confirmed variant
+return specialistId"]
+  C -->|No| D["Cancelled variant
+return reason"]
+  class U,P,C control;
+  class A,B,D success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

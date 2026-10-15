@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Promise settlement and domain outcome are separate layers
+  accDescr: A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.
+  P["One operation Promise"] --> S{"Promise settlement"}
+  S -->|Fulfilled with Delivery| F["allSettled entry<br/>status = fulfilled<br/>value = Delivery"]
+  S -->|Rejected with reason| E["allSettled entry<br/>status = rejected"]
+  F -->|Caller interprets payload| D["Read value.kind<br/>delivered / rejected / unknown"]
+  class S control;
+  class E failure;
+  class D pending;
+  class F success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

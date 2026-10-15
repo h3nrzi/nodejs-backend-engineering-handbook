@@ -38,6 +38,14 @@ sorted[0].score = 9; // also changes the shared object in original
 
 The newer copying methods require a compatible ECMAScript implementation; supported environments must be checked during execution. Immutable-style transformations prevent top-level array mutation, not mutations of shared element objects.
 
+**Visual question: What changes when sorted has a different order but shares original’s objects?**
+
+![Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.](../assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg)
+
+**A new array can retain the same element objects.** The arrows are element references after toSorted and the assignment above. original and sorted are distinct arrays; their element objects are shared. Writing sorted[0].score changes original[1].score too. Changing an element’s score does not automatically re-sort either array; shallow copying preserves aliases. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted).
+
+[Full-size SVG](../assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg) · [Editable Mermaid source](../assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd)
+
 ## 3. map, filter, reduce, find and some/every
 
 These operations express data-processing intent through callbacks:

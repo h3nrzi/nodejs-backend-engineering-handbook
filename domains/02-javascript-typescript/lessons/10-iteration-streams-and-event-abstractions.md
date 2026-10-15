@@ -109,6 +109,14 @@ async function processAll(source, save, signal) {
 
 This bounds the **number of saves started by this loop** to one at a time, but does not prove the source buffers nothing internally or that each item is small. If save succeeds remotely and the response is lost, an exception does not prove the remote effect failed.
 
+**Visual question: What does this loop bound, and what can the source still buffer?**
+
+![The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.](../assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg)
+
+**Awaiting each save delays the next pull.** This traces the successful path of processAll. Only one save started by this loop is active at a time; the source can have its own buffers and items can be large. On an in-loop throw or early return, the applicable iterator-close protocol looks for return() and awaits async closing. Neither pacing nor closing proves remote rollback or a total memory bound. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of).
+
+[Full-size SVG](../assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg) · [Editable Mermaid source](../assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd)
+
 ## 8. Event subscriptions and lifetimes
 
 An event-style API registers a callback and may deliver multiple observations. Consumers need an unsubscribe strategy, especially for long-lived services.

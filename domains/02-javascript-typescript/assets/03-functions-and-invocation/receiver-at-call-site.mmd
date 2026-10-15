@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Call syntax supplies the ordinary-function receiver
+  accDescr: The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.
+  M["meter.read()"] -->|Property call| T["this = meter"]
+  T --> V["this.value is 2"]
+  V ~~~ D["detached()"]
+  D -->|Plain strict call| U["this = undefined"]
+  U --> X["this.value throws
+TypeError"]
+  class U pending;
+  class X failure;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

@@ -77,6 +77,14 @@ const detached = meter.read;
 
 `this` is not equivalent to lexical variables such as `meter`, and it is not necessarily the object whose source text contains the method. Sloppy-mode and host-specific defaults differ; use strict/module expectations explicitly.
 
+**Visual question: Why does the same read function work as a method and fail when detached?**
+
+![The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.](../assets/03-functions-and-invocation/receiver-at-call-site.svg)
+
+**Call syntax supplies the ordinary-function receiver.** These are two alternative calls to the same ordinary method, shown vertically for reading. Detaching copies the function value without permanently binding meter. Strict mode is essential to the undefined receiver shown here. Arrows and bound functions have different receiver rules, explained below. [Mechanism reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this).
+
+[Full-size SVG](../assets/03-functions-and-invocation/receiver-at-call-site.svg) · [Editable Mermaid source](../assets/03-functions-and-invocation/receiver-at-call-site.mmd)
+
 ## 5. Arrow functions and lexical `this`
 
 Arrow functions capture `this` from the surrounding lexical context; `call`, `apply` and `bind` cannot replace an arrow's lexical receiver. Arrow functions lack their own `arguments` and cannot be invoked with `new`.

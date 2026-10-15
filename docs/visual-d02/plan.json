@@ -1,0 +1,359 @@
+{
+  "baseline": "d3828398597238741e14147685bc172a7c50f7b1",
+  "startingWorkingTree": "clean (git status --short produced no paths)",
+  "reviewedChapters": [
+    {
+      "chapter": "01",
+      "lesson": "domains/02-javascript-typescript/lessons/01-values-types-and-coercion.md",
+      "decision": "unchanged",
+      "reason": "Short coercion/equality examples make each outcome directly inspectable; an additional conversion flow would duplicate them. Object aliasing receives an ownership graph in C05. Preserve this chapter in full."
+    },
+    {
+      "chapter": "02",
+      "lesson": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/02-javascript-typescript/lessons/03-functions-and-invocation.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md",
+      "decision": "add",
+      "reason": "Selected diagrams answer mechanism questions anchored to existing examples; no original content replaced."
+    }
+  ],
+  "figures": [
+    {
+      "id": "D02-V01",
+      "chapter": "02",
+      "lesson": "domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md",
+      "title": "Closures share bindings within one invocation",
+      "question": "Which returned methods share count, and which counter is independent?",
+      "source": "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd",
+      "svg": "domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures",
+      "location": "Before ## 6. Capture in loops and asynchronous callbacks",
+      "misconception": "A closure freezes its creation-time value or all factory calls share local state.",
+      "description": "Counter A increment and read both access call A count, now 2. Counter B read accesses a separate call B count, still 0.",
+      "caption": "After the two increments above, A’s methods share the updated binding. A second makeCounter() call starts a separate count at 0. Arrows mean binding access, not physical memory placement or an exact retention graph. Closure capture keeps access to state; it does not snapshot the initial number or guarantee authorization."
+    },
+    {
+      "id": "D02-V02",
+      "chapter": "03",
+      "lesson": "domains/02-javascript-typescript/lessons/03-functions-and-invocation.md",
+      "title": "Call syntax supplies the ordinary-function receiver",
+      "question": "Why does the same read function work as a method and fail when detached?",
+      "source": "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd",
+      "svg": "domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
+      "location": "Before ## 5. Arrow functions and lexical `this`",
+      "misconception": "Methods retain their original receiver when extracted.",
+      "description": "The property call meter.read supplies meter as this and returns 2. A detached plain strict call supplies undefined and reading this.value throws TypeError.",
+      "caption": "These are two alternative calls to the same ordinary method, shown vertically for reading. Detaching copies the function value without permanently binding meter. Strict mode is essential to the undefined receiver shown here. Arrows and bound functions have different receiver rules, explained below."
+    },
+    {
+      "id": "D02-V03",
+      "chapter": "04",
+      "lesson": "domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md",
+      "title": "Lookup delegates until an own property is found",
+      "question": "Why is account.role readable even though account does not own role?",
+      "source": "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd",
+      "svg": "domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain",
+      "location": "Before ## 4. Constructor functions and new",
+      "misconception": "Inheritance copies properties or a readable property must be owned.",
+      "description": "account has no own role. Lookup follows its prototype to shared and finds role viewer there, without continuing to Object.prototype or null.",
+      "caption": "Solid arrows trace this read; dashed arrows show the remaining prototype chain. No property is copied into account: Object.hasOwn(account, \"role\") stays false, while \"role\" in account is true. This ordinary data-property example omits accessors and proxies, whose reads can execute code. An own role would shadow the inherited property."
+    },
+    {
+      "id": "D02-V04",
+      "chapter": "05",
+      "lesson": "domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md",
+      "title": "A new array can retain the same element objects",
+      "question": "What changes when sorted has a different order but shares original’s objects?",
+      "source": "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd",
+      "svg": "domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted",
+      "location": "Before ## 3. map, filter, reduce, find and some/every",
+      "misconception": "A non-mutating array operation deep-copies its objects.",
+      "description": "Original index 0 and sorted index 1 reference object A. Original index 1 and sorted index 0 reference object B, whose score changes from 1 to 9.",
+      "caption": "The arrows are element references after toSorted and the assignment above. original and sorted are distinct arrays; their element objects are shared. Writing sorted[0].score changes original[1].score too. Changing an element’s score does not automatically re-sort either array; shallow copying preserves aliases."
+    },
+    {
+      "id": "D02-V05",
+      "chapter": "06",
+      "lesson": "domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md",
+      "title": "A live import follows the exporter’s binding",
+      "question": "Why does a live count read change while a primitive snapshot stays 0?",
+      "source": "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd",
+      "svg": "domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+      "location": "Before ## 4. Linking, instantiation and evaluation",
+      "misconception": "An import is a snapshot or a read-only import freezes object properties.",
+      "description": "The imported count reads the exporter binding, which increment changes from 0 to 1. A local primitive snapshot copied before increment remains 0.",
+      "caption": "The solid read arrow denotes a live imported binding, not a copied variable. Adding const snapshot = count before increment() would copy 0 into a separate local binding. The importer cannot reassign count. Read-only imports still allow mutation of writable properties on an exported object; ESM binding semantics do not freeze objects or specify CommonJS interoperability."
+    },
+    {
+      "id": "D02-V06",
+      "chapter": "07",
+      "lesson": "domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md",
+      "title": "Cleanup can preserve or replace a pending outcome",
+      "question": "How does finally decide which return or throw leaves the function?",
+      "source": "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd",
+      "svg": "domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg",
+      "kind": "flowchart",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
+      "location": "Before ## 3. catch bindings and unknown failure shapes",
+      "misconception": "finally guarantees preserving the original error or awaits arbitrary returned work.",
+      "description": "A pending return or throw enters finally. Normal finally completion preserves it; a return or throw from finally replaces it.",
+      "caption": "A pending outcome is a control-flow description, not a Promise state. result() logs cleanup then preserves \"first\"; dangerous() replaces the original throw with \"overridden\". This assumes execution reaches and exits finally: process termination is outside this language-level model. Other abrupt exits, such as a valid break or continue, can also replace the pending outcome. A synchronous finally does not wait for a bare returned Promise."
+    },
+    {
+      "id": "D02-V07",
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "title": "Resolution can lock an outcome while settlement waits",
+      "question": "Can outer already follow inner while still being pending?",
+      "source": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd",
+      "svg": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg",
+      "kind": "flowchart",
+      "reference": "https://tc39.es/ecma262/#sec-promise-objects",
+      "location": "Before ## 2. Synchronous executors, asynchronous reactions",
+      "misconception": "Resolved always means fulfilled; a pending adopted Promise can be redirected.",
+      "description": "Resolving outer with a pending inner Promise leaves outer pending but locked to inner. Inner fulfillment leads to outer fulfillment; inner rejection leads to outer rejection.",
+      "caption": "The example takes the fulfillment branch when finish(\"ready\") runs; rejection is the alternative if inner were rejected. Resolving here fixes what outer follows, so later attempts to resolve or reject outer cannot change that choice. These boxes describe this adoption case, not a fourth Promise state or a complete thenable-resolution algorithm. Settlement is eventual via Promise jobs, not necessarily immediate at finish()."
+    },
+    {
+      "id": "D02-V08",
+      "chapter": "08",
+      "lesson": "domains/02-javascript-typescript/lessons/08-promises-and-async-await.md",
+      "title": "The executor runs now and the reaction runs later",
+      "question": "Why does C appear before D even though p is already fulfilled?",
+      "source": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd",
+      "svg": "domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg",
+      "kind": "flowchart",
+      "reference": "https://tc39.es/ecma262/#sec-performpromisethen",
+      "location": "Before ## 3. Chaining and recovery",
+      "misconception": "Fulfilled Promises call then handlers inline or executors run asynchronously.",
+      "description": "A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.",
+      "caption": "This is the exact A/B/C/D example above: the executor is synchronous, whereas a then handler runs in a later job even for an already fulfilled Promise. The diagram gives causal order, not elapsed time, CPU parallelism, or ordering against timers, I/O or process.nextTick. Handler registration does not call the handler inline."
+    },
+    {
+      "id": "D02-V09",
+      "chapter": "09",
+      "lesson": "domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md",
+      "title": "Aborting observation cannot undo a confirmed effect",
+      "question": "What if cancellation happens after remote success but before confirmation arrives?",
+      "source": "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd",
+      "svg": "domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg",
+      "kind": "sequenceDiagram",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal",
+      "location": "Before ## 5. Deadline and timeout",
+      "misconception": "abort guarantees rollback or a rejected wait proves remote failure.",
+      "description": "An operation succeeds for attempt R, its confirmation is lost, and the caller aborts afterward. The prior effect remains while the caller lacks confirmation.",
+      "caption": "This is one possible order, not an AbortSignal network protocol. Participating local work can observe the signal and stop or reject; previously completed remote effects remain. The caller needs the same logical attempt’s authoritative outcome before applying its retry policy. Neither abort nor timeout establishes rollback or remote failure."
+    },
+    {
+      "id": "D02-V10",
+      "chapter": "10",
+      "lesson": "domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md",
+      "title": "Awaiting each save delays the next pull",
+      "question": "What does this loop bound, and what can the source still buffer?",
+      "source": "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd",
+      "svg": "domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg",
+      "kind": "sequenceDiagram",
+      "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of",
+      "location": "Before ## 8. Event subscriptions and lifetimes",
+      "misconception": "Async iteration automatically bounds all memory or cancels upstream effects.",
+      "description": "The consumer pulls item 1, checks cancellation, and waits for its save to fulfill before pulling item 2. The source may buffer internally during the wait.",
+      "caption": "This traces the successful path of processAll. Only one save started by this loop is active at a time; the source can have its own buffers and items can be large. On an in-loop throw or early return, the applicable iterator-close protocol looks for return() and awaits async closing. Neither pacing nor closing proves remote rollback or a total memory bound."
+    },
+    {
+      "id": "D02-V11",
+      "chapter": "11",
+      "lesson": "domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md",
+      "title": "Structural compatibility preserves the runtime object",
+      "question": "Does assigning record to Identified strip category or create a new identity?",
+      "source": "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd",
+      "svg": "domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/type-compatibility.html",
+      "location": "Before ## 7. Function signatures",
+      "misconception": "Structural assignment removes extra fields, checks identity or validates runtime data.",
+      "description": "The checker accepts record with string id and category for Identified, which requires string id. At runtime input and record remain the same object and category still exists.",
+      "caption": "Purple boxes concern static checking; the final box states JavaScript identity. This is assignment through the existing variable, so the fresh-object-literal excess-property check is not the rule illustrated. Compatibility does not strip fields, deep-copy the object, compare identity, or validate external data. Other type features can impose additional compatibility constraints."
+    },
+    {
+      "id": "D02-V12",
+      "chapter": "12",
+      "lesson": "domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md",
+      "title": "Branches narrow the checker’s view of Booking",
+      "question": "What type remains after each returning status branch?",
+      "source": "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd",
+      "svg": "domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+      "location": "Before ## 5. Exhaustiveness and never",
+      "misconception": "A union is a runtime validator or discriminant branches are business-state transitions.",
+      "description": "A Booking starts as a union. A pending branch returns a waiting message. Otherwise a confirmed branch can read specialistId, leaving cancelled with reason on the final path.",
+      "caption": "This equivalent decision view of summarize shows control-flow analysis over an already typed Booking; it is not a lifecycle transition graph. The JavaScript status comparisons still run, while TypeScript uses them to narrow fields statically. Each return removes that path from later control flow. A new variant requires revisiting handling; never-based exhaustive checking is shown below. Unknown JSON still needs parsing."
+    },
+    {
+      "id": "D02-V13",
+      "chapter": "13",
+      "lesson": "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+      "title": "The chosen key determines the returned type",
+      "question": "How does K connect a permitted property name to T[K]?",
+      "source": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd",
+      "svg": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/2/generics.html",
+      "location": "Before ## 4. Generic interfaces and reusable result contracts",
+      "misconception": "Generic constraints execute as runtime shape checks or output is unrelated to selected key.",
+      "description": "For entry with string id and boolean active, keyof T is id or active. Choosing active makes K active and T[K] boolean; runtime execution is ordinary obj[key].",
+      "caption": "The solid arrows are type relationships for getProperty(entry, \"active\"), not runtime stages. K extends keyof T rejects an unknown key in checked calls and links the result to the selected property type. It does not inject runtime guards, prevent getters, or ensure an external object still matches T."
+    },
+    {
+      "id": "D02-V14",
+      "chapter": "13",
+      "lesson": "domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md",
+      "title": "Distribution changes where the union appears",
+      "question": "Why do Wrap and WrapTogether produce different object alternatives?",
+      "source": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd",
+      "svg": "domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/2/conditional-types.html",
+      "location": "Before ## 7. Mapped types and modifiers",
+      "misconception": "Conditional types branch at runtime or union of objects and object of union are identical type relationships.",
+      "description": "Wrap distributes over string and number and yields a union of two object types. WrapTogether tests the tuple-wrapped union together and yields one object type with a union-valued property.",
+      "caption": "These are two alternative type calculations from the same input union, arranged vertically. A naked type parameter in this conditional distributes; wrapping the checked parameter in a tuple suppresses that distribution. The output types retain different relationships even where accepted simple values overlap. This computes types only: it creates no objects and performs no runtime branching."
+    },
+    {
+      "id": "D02-V15",
+      "chapter": "14",
+      "lesson": "domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md",
+      "title": "Checking, emission and loading answer separate questions",
+      "question": "Where can a checked module still fail before or during execution?",
+      "source": "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd",
+      "svg": "domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/modules/reference.html#paths-does-not-affect-emit",
+      "location": "Before ## 2. tsconfig.json and project boundaries",
+      "misconception": "Checking implies runtime compatibility, declarations supply implementations or paths rewrites imports.",
+      "description": "The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.",
+      "caption": "These are separate responsibilities, not a guarantee that errors prevent emit or that every pipeline uses tsc for output. import type is erased; .d.ts files describe APIs without implementing them. paths affects checker lookup and does not itself rewrite emitted import specifiers. A separate build or runtime must support any remaining alias and ESM/CommonJS contract."
+    },
+    {
+      "id": "D02-V16",
+      "chapter": "15",
+      "lesson": "domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md",
+      "title": "Only executed checks establish this parser’s input contract",
+      "question": "What must pass before parseCustomerInput constructs its result?",
+      "source": "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd",
+      "svg": "domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg",
+      "kind": "flowchart",
+      "reference": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions",
+      "location": "Before ## 3. Separate syntax, representation and business rules",
+      "misconception": "Type assertions validate input or shape validation provides authorization.",
+      "description": "The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.",
+      "caption": "This is the parser above, for ordinary data records. The name check requires a nonblank string; the age check requires a safe integer from 0 to 130. Invalid name throws first, then invalid age. The result copies the checked primitive fields and leaves extra input fields out. The illustrative age policy is not universal; the parser does not check authorization, current state, hostile accessors or proxies. A type assertion alone follows none of these branches."
+    },
+    {
+      "id": "D02-V17",
+      "chapter": "16",
+      "lesson": "domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md",
+      "title": "Promise settlement and domain outcome are separate layers",
+      "question": "How can allSettled report fulfilled when a delivery was rejected?",
+      "source": "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd",
+      "svg": "domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg",
+      "kind": "flowchart",
+      "reference": "https://tc39.es/ecma262/#sec-promise.allsettled",
+      "location": "Before ## 6. Case study: asynchronous cleanup",
+      "misconception": "A rejected domain value and a rejected Promise always mean the same thing.",
+      "description": "A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.",
+      "caption": "The outer status reports Promise settlement; value.kind reports the domain result. Thus a fulfilled entry can contain kind \"rejected\" without a Promise rejection. The diagram assumes each operation returns a Promise as declared. If run() throws synchronously during operations.map, collect rejects before allSettled receives the array; this function does not bound concurrency or cancel siblings."
+    }
+  ]
+}

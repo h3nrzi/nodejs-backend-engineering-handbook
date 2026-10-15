@@ -1,0 +1,29 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: The executor runs now and the reaction runs later
+  accDescr: A logs first, the synchronous Promise executor logs B and resolves 5, then registers a reaction. C logs before the reaction job logs D.
+  A["1. Log A"] --> B["2. Run executor
+log B, resolve 5"]
+  B --> T["3. Register then handler
+queue reaction for fulfilled p"]
+  T --> C["4. Log C
+finish synchronous code"]
+  C -->|Later reaction job| D["5. Run handler
+log D"]
+  class T pending;
+  class D success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

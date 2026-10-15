@@ -1,0 +1,29 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Only executed checks establish this parser’s input contract
+  accDescr: The parser rejects null, arrays and non-objects, then checks a nonblank string name and safe integer age from 0 to 130. Failures throw; success constructs a new object with trimmed name and original age.
+  U["External value<br/>treat as unknown"] --> S{"Object, not<br/>null or array?"}
+  S -->|No| E["Throw TypeError"]
+  S -->|Yes| N{"Valid name?"}
+  N -->|No| E
+  N -->|Yes| A{"Valid age?"}
+  A -->|No| R["Throw RangeError"]
+  A -->|Yes| O["New result object<br/>trim name, preserve age"]
+  class U pending;
+  class E,R failure;
+  class O success;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

@@ -24,6 +24,14 @@ export function describe(customer: Customer) {
 
 Type-only imports are removed from output. The relative specifier may include a JS extension even though the source file is .ts, depending on compiler module-resolution mode. This syntax is an illustrative Node-style ESM choice, not a universal requirement for every environment.
 
+**Visual question: Where can a checked module still fail before or during execution?**
+
+![The checker resolves source types. With emission enabled, JavaScript must still be inspected and its value imports resolved and evaluated by the runtime or bundler. noEmit produces no compiler output.](../assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg)
+
+**Checking, emission and loading answer separate questions.** These are separate responsibilities, not a guarantee that errors prevent emit or that every pipeline uses tsc for output. import type is erased; .d.ts files describe APIs without implementing them. paths affects checker lookup and does not itself rewrite emitted import specifiers. A separate build or runtime must support any remaining alias and ESM/CommonJS contract. [Mechanism reference](https://www.typescriptlang.org/docs/handbook/modules/reference.html#paths-does-not-affect-emit).
+
+[Full-size SVG](../assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg) · [Editable Mermaid source](../assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd)
+
 ## 2. tsconfig.json and project boundaries
 
 A tsconfig establishes the compiler input scope and options. Important choices include target, module, moduleResolution, strict, noEmit, declaration, outDir, rootDir, lib and types. No single option set is correct for every runtime/build system.

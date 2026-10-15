@@ -118,6 +118,14 @@ async function collect(
 
 All tasks launch immediately; this example does **not** bound concurrency. A rejected Promise differs from a resolved `Delivery` with kind rejected. Neither event automatically cancels other work. A production batch contract must choose limits, partial-success behavior, cancellation, retry identity and post-disconnect recovery.
 
+**Visual question: How can allSettled report fulfilled when a delivery was rejected?**
+
+![A fulfilled operation carries a Delivery value whose kind may be delivered, rejected or unknown; its allSettled status is fulfilled. A rejected operation instead yields status rejected with a reason.](../assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg)
+
+**Promise settlement and domain outcome are separate layers.** The outer status reports Promise settlement; value.kind reports the domain result. Thus a fulfilled entry can contain kind "rejected" without a Promise rejection. The diagram assumes each operation returns a Promise as declared. If run() throws synchronously during operations.map, collect rejects before allSettled receives the array; this function does not bound concurrency or cancel siblings. [Mechanism reference](https://tc39.es/ecma262/#sec-promise.allsettled).
+
+[Full-size SVG](../assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg) · [Editable Mermaid source](../assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd)
+
 ## 6. Case study: asynchronous cleanup
 
 ~~~js
