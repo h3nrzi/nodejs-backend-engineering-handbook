@@ -1,6 +1,6 @@
 # Handbook Progress — Workflow V2
 
-**Updated:** 2026-10-14  
+**Updated:** 2026-10-15  
 **Phase:** D01–D03 educational content approved; D04 next.  
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
@@ -11,7 +11,9 @@
 - **D03:** 18 approved lessons and 5 approved educational Project Charters.
 - **D04–D16:** not started.
 
-**Implementations:** All project implementations, including D03/P02 MediaForge, are `not_started` (0%). No implementation or learner competency verification is claimed.
+**Implementations:** D03-P02 MediaForge has an approved external Module 01 specification and eight-ticket plan, but **no implementation or application-test completion is verified**. Other projects have no recorded implementation progress. No learner competency assessment is claimed.
+
+**Active external project:** [MediaForge implementation registry](projects/implementations/mediaforge.md) — learner-reported approval gates through Module 01 ticket planning; implementation pending evidence.
 
 ## Active workflow
 
