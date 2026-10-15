@@ -1,0 +1,20 @@
+flowchart TB
+  accTitle: Transport, TLS verification and application authorization boundaries
+  accDescr: A TCP connection alone establishes only transport state. Client checks include configured chain trust, validity and usage, expected hostname, CertificateVerify and Finished. Failure rejects TLS. Passing checks and completion by both peers establish verified TLS in this model. The application must still authorize each requested action and may refuse it.
+
+  TCP["TCP connected<br/>Transport state only"] --> CHECKS["Client verification checks<br/>Trust chain, validity, usage<br/>Expected hostname<br/>Handshake proofs"]
+  CHECKS --> VALID{"All required<br/>checks pass?"}
+  VALID -->|No| FAIL["Reject TLS<br/>No verified session"]
+  VALID -->|Yes| TLS["Both peers finish handshake<br/>Verified TLS session"]
+  TLS --> AUTH{"Application permits<br/>requested action?"}
+  AUTH -->|Yes| ALLOW["Perform allowed action"]
+  AUTH -->|No| DENY["Refuse action<br/>TLS can still be valid"]
+
+  classDef transport fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef refusal fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+  class TCP transport;
+  class CHECKS,VALID,AUTH control;
+  class TLS,ALLOW success;
+  class FAIL,DENY refusal;

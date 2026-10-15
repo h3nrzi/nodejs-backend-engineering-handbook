@@ -16,6 +16,14 @@ TCP presents an ordered byte stream between endpoints. Sequence numbers identify
 
 Connection establishment normally exchanges SYN, SYN-ACK and ACK. It establishes transport state, not application identity. TLS and application negotiation follow when used. The peer may accept TCP but never send valid protocol bytes. The application therefore needs a state model beyond “connected.”
 
+What does each acknowledgment establish, and which direction's sequence does it count?
+
+![Client and server complete SYN, SYN-ACK and ACK, then exchange independently sequenced bytes; cumulative TCP acknowledgments do not establish application consumption or business completion.](../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg)
+
+*Figure 1 — An ordinary active/passive open followed by bytes in both directions. SYN consumes one sequence number: client data starts at 101 and server data at 301 in this illustrative trace. Three client bytes lead to ACK 104; two server bytes lead to ACK 303. ACK identifies the next expected transport byte, independently for each direction; it does not certify parsing, a reply or a committed action. Separate arrows aid teaching: real segments can combine data and acknowledgments, and writes need not map to segments. Loss, options, wraparound and timing are omitted. See [RFC 9293 §§3.4–3.5](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4).*
+
+[Full-size SVG](../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg) · [Editable Mermaid source](../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd).
+
 ## Flow, congestion and latency mechanisms
 
 Receiver flow control limits outstanding data according to the advertised receive window. Congestion control adjusts sending to network conditions; it protects the path rather than a particular application's memory. The sender is constrained by both, plus application and host capacity. A slow consumer can fill receiving buffers, shrink the available window and eventually stall a sender even on a loss-free network.
@@ -43,6 +51,14 @@ When diagnosing resets, correlate phase, reused/new socket, peer shutdown and me
 ## A directional TCP state trace
 
 Each direction has its own byte sequence and EOF. In the half-close fixture, the client submits `abc`, then `end()` requests FIN after pending bytes. The server receives the bytes before readable EOF, parses its EOF-delimited request and remains able to send `received:abc` because `allowHalfOpen:true` preserves its writable side. Its later `end()` completes the reverse direction. Neither FIN acknowledges business success.
+
+How can a reply still arrive after the client finishes sending, and how does reset differ?
+
+![Alternative TCP endings: client FIN leaves server sending open until server FIN; orderly client-first close retains TIME_WAIT, while an accepted reset aborts transport with prior business effects unknown.](../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg)
+
+*Figure 2 — Read exactly one alternative from the established state. Orderly client-first closure ends the two sending directions independently, allowing reply bytes after client FIN; the active closer retains TIME_WAIT before CLOSED. A valid RST accepted by the peer aborts transport instead of completing the FIN exchange. The diagram omits ACKs for reply data, retransmissions, combined segments and simultaneous close; time is not to scale. Neither alternative proves application success or rollback. This models TCP, not an exact ordering of Node events or a claim that every `destroy()` sends RST. See [RFC 9293 §3.6](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.6).*
+
+[Full-size SVG](../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg) · [Editable Mermaid source](../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd).
 
 | Event | Local meaning | Invalid inference |
 |---|---|---|

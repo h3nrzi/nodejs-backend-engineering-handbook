@@ -1,0 +1,23 @@
+---
+config:
+  fontSize: 18
+  sequence:
+    diagramMarginX: 20
+---
+sequenceDiagram
+  accTitle: Full TLS 1.3 server-authenticated handshake over TCP
+  accDescr: After TCP connection, ClientHello offers SNI, ALPN and key share. ServerHello selects parameters. Protected EncryptedExtensions selects ALPN, Certificate presents the chain, CertificateVerify and Finished prove and authenticate the handshake. The client verifies identity and handshake before sending Finished. This example delays application exchange until both sides complete, authorization remains separate. It omits retries, resumption, early data and client certificates.
+  participant C as Client
+  participant S as Server
+  Note over C,S: TCP already connected<br/>Full TLS 1.3 / server auth
+  C->>S: ClientHello<br/>SNI, ALPN offers, key share
+  S->>C: ServerHello<br/>Version and key share
+  Note over C,S: Handshake keys available<br/>Protected handshake follows
+  S->>C: EncryptedExtensions<br/>Selected ALPN
+  S->>C: Certificate chain
+  S->>C: CertificateVerify + Finished
+  Note over C,S: Client verifies identity<br/>and handshake proofs
+  C->>S: Client Finished
+  Note over C,S: Both peers finished<br/>Application traffic keys
+  C->>S: Encrypted app request
+  S->>C: Encrypted app response

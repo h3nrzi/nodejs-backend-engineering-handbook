@@ -1,0 +1,499 @@
+{
+  "baseline": "8a4fc26",
+  "date": "2026-10-15T16:12:39.529Z",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "browser": "Chrome/155.0.8059.79"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show",
+        "8a4fc26:domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "8a4fc26:domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "8a4fc26:domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "8a4fc26",
+        "--",
+        "tracking/state.json",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/03-nodejs-internals/README.md",
+        "domains/04-network-protocol-engineering/README.md",
+        "domains/03-nodejs-internals/projects",
+        "domains/04-network-protocol-engineering/projects"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+        "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+        "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+        "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd\n\nOK  domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd (1 Mermaid block)\n\nValidation passed: checked 6 Mermaid blocks across 8 targets.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd",
+        "-o",
+        "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd -o domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd",
+        "-o",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd",
+        "-o",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd",
+        "-o",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd",
+        "-o",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-handbook-links.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"checked_internal_links\": 918,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "lessons": [
+    {
+      "path": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "sha256": "ab348de295d9948208295e44570cd43d0ff954c3a271fe3e02e05e7898d2d1bf",
+      "baselineSha256": "90425169ac782224740869507edfe3385f15127bad2f1d8f594ae62025b3ddbc",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "mobileMarkdownImages": [
+        {
+          "src": "../assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg",
+          "alt": "JavaScript submits async I/O and continues; operation-specific native paths notify the runtime, and callback dispatch requires both an available outcome and the JavaScript thread.",
+          "loaded": true,
+          "width": 360
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+      "sha256": "36b0a8235b711f46bb4c6dfff9ca79ae0934e2303275ffd8d1d1bed9491b2941",
+      "baselineSha256": "ae95d92b729ba99ebf04829f2114abfdf6212a4e064c893e92318497231ff765",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "mobileMarkdownImages": [
+        {
+          "src": "../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+          "alt": "Client and server complete SYN, SYN-ACK and ACK, then exchange independently sequenced bytes; cumulative TCP acknowledgments do not establish application consumption or business completion.",
+          "loaded": true,
+          "width": 360
+        },
+        {
+          "src": "../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+          "alt": "Alternative TCP endings: client FIN leaves server sending open until server FIN; orderly client-first close retains TIME_WAIT, while an accepted reset aborts transport with prior business effects unknown.",
+          "loaded": true,
+          "width": 360
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+      "sha256": "f89818bfb0db4f442301f73c292a2a889718f9df617f19edd035361bfaa2ae40",
+      "baselineSha256": "fd5826c27e7356d50a5b490ede2f9bf41165610cefb1cb0cb9a0cf545ffc3072",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "mobileMarkdownImages": [
+        {
+          "src": "../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg",
+          "alt": "A full TLS 1.3 exchange over connected TCP: ClientHello offers SNI and ALPN; protected server messages select ALPN and present certificate and handshake proofs; verification and Finished precede this example's encrypted application exchange.",
+          "loaded": true,
+          "width": 360
+        },
+        {
+          "src": "../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+          "alt": "TCP connection establishes transport only; chain, hostname and cryptographic checks must pass and the handshake complete for verified TLS; application policy separately allows or refuses an action.",
+          "loaded": true,
+          "width": 360
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "source": "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd",
+      "sourceSha256": "e10055f320bff0b7f7c314ea8b63e66d40761836abb31a213685f3b7ecaecd1d",
+      "svg": "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg",
+      "svgSha256": "598fab8f8aad1c80884c074e77248356a4b273812bb32b7405e8c207a3f2edf2",
+      "xmlValid": true,
+      "title": "Asynchronous I/O handoff and JavaScript observation",
+      "description": "JavaScript submits asynchronous I/O through Node. JavaScript continues and must yield before callback dispatch. Native progress takes operation-specific paths: platform socket facilities or filesystem work in the native pool. Readiness or completion is handled by the runtime and loop, which later dispatches the result callback on the same JavaScript thread. These are dependencies, not a global callback order.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 552 1020.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 552,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.043478260869565,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd",
+      "sourceSha256": "15931a9697d0ae60cdb69b8e023087e918340ea78eb9b3e59c6ab941e12c47f3",
+      "svg": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+      "svgSha256": "9391949134d936095adae9ed145ce0662fbf92d1c6572fe9c82a02878c94b479",
+      "xmlValid": true,
+      "title": "TCP handshake and two independent byte streams",
+      "description": "Client sends SYN with sequence 100. Server sends SYN ACK with sequence 300 and acknowledgment 101. Client acknowledges 301. After establishment, three client bytes advance the server acknowledgment to 104, two server bytes advance the client acknowledgment to 303. Transport acknowledgments do not establish application consumption or business completion.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-20 -10 435 817",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 435,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.89655172413793,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd",
+      "sourceSha256": "6b8173c8b00d9dbc475d47dd469988d2d2e69a3fd97df80d25df5ba6edfbd2c5",
+      "svg": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+      "svgSha256": "16177a83a8f2f4e93da618b7ec3a675f795f2a1dd30b7f96c76cf9fcdad28d0e",
+      "xmlValid": true,
+      "title": "TCP orderly half-close compared with reset",
+      "description": "Two alternative outcomes start from an established connection. In an orderly client-first close, client FIN ends only client sending. Server acknowledges and can still send a reply, then sends FIN. Client acknowledges and retains TIME WAIT before closing. In the alternative reset path a server RST accepted by the client abruptly terminates transport. Neither outcome determines earlier business effects.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-20 -10 431 915",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 431,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 15.034802784222737,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd",
+      "sourceSha256": "5f0fcd14e4352afe760e7af8c6974ed937b445a20832f980979ddc8955fadbed",
+      "svg": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg",
+      "svgSha256": "a0fbb71e71508c87a3018be3205c666dd11aa3cfdeec5210b6ea327ad4159f36",
+      "xmlValid": true,
+      "title": "Full TLS 1.3 server-authenticated handshake over TCP",
+      "description": "After TCP connection, ClientHello offers SNI, ALPN and key share. ServerHello selects parameters. Protected EncryptedExtensions selects ALPN, Certificate presents the chain, CertificateVerify and Finished prove and authenticate the handshake. The client verifies identity and handshake before sending Finished. This example delays application exchange until both sides complete, authorization remains separate. It omits retries, resumption, early data and client certificates.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-20 -10 468 1005",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 468,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.846153846153847,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd",
+      "sourceSha256": "f015dd05f4c51afbb2bd94906cb765548fe864c88d230e99bf0a52c33b1ccade",
+      "svg": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+      "svgSha256": "c1ae30aef8bd516ba85fb877cd08870a7d9abdeea8eda801a8f126471317d702",
+      "xmlValid": true,
+      "title": "Transport, TLS verification and application authorization boundaries",
+      "description": "A TCP connection alone establishes only transport state. Client checks include configured chain trust, validity and usage, expected hostname, CertificateVerify and Finished. Failure rejects TLS. Passing checks and completion by both peers establish verified TLS in this model. The application must still authorize each requested action and may refuse it.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 456 1275.7999267578125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 456,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(254, 226, 226)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.210526315789474,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(254, 226, 226)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    }
+  ],
+  "supportingLabReplay": {
+    "path": "docs/visual-pilot/lab-replay.json",
+    "checkedAt": "2026-10-15T16:06:13.369Z",
+    "results": {
+      "d04": "18/18 isolated lesson processes passed",
+      "d03": "7/7 scenarios passed; causal/event assertions, not latency thresholds"
+    },
+    "scope": "Previous run of unchanged executable blocks, not re-executed by this invocation."
+  },
+  "trackingAndCoverage": "Reviewed; no mapping/status/Charter change. Protected files unchanged from baseline.",
+  "finalMarkdownCheck": {
+    "checkedAt": "2026-10-15T16:15:15.087731+00:00",
+    "command": [
+      "python3",
+      "scripts/check-handbook-links.py"
+    ],
+    "exit": 0,
+    "checked_internal_links": 917,
+    "current_issues": [],
+    "pre_existing_issues": [],
+    "new_issues": []
+  },
+  "manualVisualInspection": {
+    "by": "agent",
+    "status": "completed",
+    "scope": "All five final SVGs and their source/caption relationships",
+    "columnWidths": [
+      720,
+      360
+    ],
+    "additionalViews": [
+      "dark page surroundings",
+      "grayscale",
+      "D03 owning Markdown mobile image/caption/source-link preview"
+    ],
+    "findings": "Directions, byte counts, protocol scope, relationships and label spacing reviewed; no clipping or overlap found. Text is readable at inspected widths.",
+    "humanEvaluation": "not_run",
+    "productOwnerVisualAcceptance": "pending"
+  }
+}

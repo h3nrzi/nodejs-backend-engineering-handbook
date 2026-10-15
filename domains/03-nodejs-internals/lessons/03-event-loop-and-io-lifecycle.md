@@ -95,6 +95,14 @@ This is why an educational diagram should not say “every async API is an OS so
 
 Neither path moves the application's ordinary JavaScript result processing into the native pool. The result handler can still parse, copy or validate data synchronously and delay unrelated callbacks.
 
+The following handoff map answers: **what can progress outside JavaScript, and what must wait for JavaScript to yield?**
+
+![JavaScript submits async I/O and continues; operation-specific native paths notify the runtime, and callback dispatch requires both an available outcome and the JavaScript thread.](../assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg)
+
+*Figure 1 — Submission, native progress and JavaScript observation are separate boundaries. Follow either illustrative native path, then the two prerequisites for dispatch: an available outcome and return of JavaScript control to the host. Socket facilities vary by platform (readiness or completion); the filesystem path represents documented asynchronous file APIs using native pool work. Native progress may overlap JavaScript execution; loop handling and the result callback require JavaScript to yield. Arrows express dependencies, not elapsed time, a universal native mechanism, or global callback ordering; timers and detailed host queues are omitted. See [libuv design](https://docs.libuv.org/en/v1.x/design.html) and the [Node filesystem implementation considerations](https://nodejs.org/docs/latest-v24.x/api/fs.html#threadpool-usage).*
+
+[Full-size SVG](../assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg) · [Editable Mermaid source](../assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd).
+
 ## 6. Timers express eligibility, not a precise deadline
 
 A timeout requests a future callback opportunity. The Node timers API explicitly does not promise exact callback timing or a universal callback order. Invalid/extreme delays are also normalized according to that API; do not treat a raw delay number as an unvalidated deadline policy. [Node timers documentation](https://github.com/nodejs/node/blob/main/doc/api/timers.md).

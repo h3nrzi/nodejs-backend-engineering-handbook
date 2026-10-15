@@ -1,0 +1,24 @@
+---
+config:
+  fontSize: 18
+  sequence:
+    diagramMarginX: 20
+---
+sequenceDiagram
+  accTitle: TCP orderly half-close compared with reset
+  accDescr: Two alternative outcomes start from an established connection. In an orderly client-first close, client FIN ends only client sending. Server acknowledges and can still send a reply, then sends FIN. Client acknowledges and retains TIME WAIT before closing. In the alternative reset path a server RST accepted by the client abruptly terminates transport. Neither outcome determines earlier business effects.
+  participant C as Client TCP
+  participant S as Server TCP
+  Note over C,S: Start: ESTABLISHED
+  alt Orderly close: client first
+    C->>S: FIN after pending bytes
+    S->>C: ACK of FIN
+    Note over C,S: Half-closed: client send ended<br/>Server can still send
+    S->>C: Remaining reply bytes
+    S->>C: FIN after reply
+    C->>S: ACK of FIN
+    Note over C,S: Server CLOSED, client TIME_WAIT<br/>Client CLOSED after waiting
+  else Abort: separate outcome
+    S--xC: RST accepted by client
+    Note over C,S: Transport aborted<br/>Prior business outcome unknown
+  end

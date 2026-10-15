@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 30
+---
+flowchart TB
+  accTitle: Asynchronous I/O handoff and JavaScript observation
+  accDescr: JavaScript submits asynchronous I/O through Node. JavaScript continues and must yield before callback dispatch. Native progress takes operation-specific paths: platform socket facilities or filesystem work in the native pool. Readiness or completion is handled by the runtime and loop, which later dispatches the result callback on the same JavaScript thread. These are dependencies, not a global callback order.
+
+  JS["JavaScript executes"] --> API["Initiate async I/O<br/>through a Node API"]
+  API --> CONT["Continue JavaScript;<br/>then return to host"]
+  API --> NET["Socket I/O<br/>OS readiness / completion"]
+  API --> FILE["Filesystem I/O<br/>Native pool + OS"]
+  NET -->|Native event| LOOP["Runtime + loop<br/>handle native events"]
+  FILE -->|Completion| LOOP
+  CONT -->|JS yields| LOOP
+  LOOP -->|Dispatch opportunity| DISPATCH["Loop dispatches<br/>result callback in JS"]
+  DISPATCH --> RESULT["Application processes<br/>result on same JS thread"]
+
+  classDef runtime fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef native fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  class JS,CONT,RESULT runtime;
+  class API,LOOP,DISPATCH control;
+  class NET,FILE native;
