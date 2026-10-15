@@ -1,19 +1,19 @@
 PASS 01 address families, loopback exchange, serialization bound: ok
 PASS 02 numeric lookup and explicit cache/family models: ok
-PASS 03 half-close permits a response after request EOF: ok
-PASS 04 32 chunk partitions, empty frame, oversize and truncation: ok
+PASS 03 half-close reply; explicit RST -> ECONNRESET; idle timeout needs destroy: ok
+PASS 04 1056 partitions; UTF-8, empty frames, bounds, EOF and terminal states: ok
 PASS 05 one loopback datagram; duplicate/gap accounting model: ok
-PASS 06 synthetic certificate hostname matches and mismatches: ok
+PASS 06 TLS1.3 + ALPN; trusted CA success; wrong name and untrusted CA refused: ok
 PASS 07 URL components, repeated keys, origins and octet length: ok
-PASS 08 complete UTF-8 response; ambiguous request rejected before handler: ok
-PASS 09 two consumed responses, one reused connection, complete 404: ok
-PASS 10 unconditional content then exact-tag 304 without content: ok
+PASS 08 HTTP refusal; short length and missing zero chunk incomplete; close-delimited complete: ok
+PASS 09 occupied pool queues; queued abort not sent; consumption permits reuse; complete 404: ok
+PASS 10 exact-tag 304; fixed range 206; stale If-Range full 200; unsatisfied 416: ok
 PASS 11 untrusted assertion ignored; explicit trust and hop-field model: ok
-PASS 12 two independent responses on one cleartext h2 session: ok
+PASS 12 h2 zero stream window blocks DATA; HEADERS progress; window update releases; reset isolated: ok
 PASS 13 model only: independent stream ordering; shared budget can still stall: ok
-PASS 14 handshake accept vector and reversible masking: ok
-PASS 15 LF-only SSE model: bytewise UTF-8, multiline event, incomplete tail: ok
+PASS 14 actual 101; fragmented text + ping/masked pong; clean 1000 close; ordinary HTTP 426: ok
+PASS 15 SSE bytewise BOM/CRLF/UTF-8 grammar; actual HTTP cursor replay, partial tail, abort cleanup: ok
 PASS 16 one bounded opaque envelope; truncation and final-status model: ok
-PASS 17 caller failure coexists with server action; shared budget arithmetic: ok
-PASS 18 five evidence classifications preserve phase and uncertainty: ok
+PASS 17 AbortSignal after full receipt preserves action; response close cleanup; shared budget: ok
+PASS 18 six evidence classifications preserve phase and uncertainty: ok
 18/18 educational labs passed

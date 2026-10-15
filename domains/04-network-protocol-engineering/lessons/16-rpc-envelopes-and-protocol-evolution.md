@@ -44,6 +44,26 @@ Counterexample: monitoring only HTTP status reports every failing RPC as success
 
 When mixed deployments fail, compare raw schema versions, field presence and compatibility direction before changing timeouts. If only messages above a threshold fail, inspect envelope lengths, compression expansion and intermediary limits. If generated clients disagree, verify generator/runtime compatibility from the specific library's current documentation during implementation.
 
+## A concrete gRPC completion trace
+
+For an uncompressed three-byte payload `abc`, the envelope is `00 00 00 00 03 61 62 63`: one compression flag, four big-endian length bytes, then payload. Any HTTP/2 DATA division may split those eight bytes or combine them with another envelope. A flag of one means per-message compression using the negotiated message encoding; it is different from HTTP Content-Encoding. Encoded and expanded lengths need separate bounds.
+
+A normal response has initial HTTP metadata, zero or more length-prefixed messages, and final `grpc-status`. A trailers-only response can carry final status without a separate body/trailer sequence. Missing final status cannot be silently read as zero. Non-200 or non-gRPC intermediary responses need the client's defined mapping; the lesson's small Boolean is an illustrative success check, not that full mapping algorithm. Two observed stream messages followed by nonzero status are partial results plus a failed call, not “all messages invalid” or a fully successful RPC. Consult the [gRPC wire protocol](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md) for ordering and status placement.
+
+### Compatibility must include semantic readers
+
+Consider a protobuf producer that adds enum value `PAUSED`. An older runtime may preserve its numeric value at the wire layer, yet an application's exhaustive switch may refuse it or map it incorrectly. Wire decodability is weaker than semantic compatibility. Unknown-field preservation can also be lost by translating a binary message into JSON or reconstructing only known fields. A read-rewrite-read path needs testing independently of direct producer/consumer exchange.
+
+| Change | Risk to test explicitly |
+|---|---|
+| Reuse removed field number | Old bytes decode with new meaning; reserve deleted identifiers |
+| Implicit default → explicit presence usage | Absent and explicit zero can acquire different meaning |
+| Large 64-bit integer through JS number | Loss of exact identity beyond safe-integer range |
+| Add required application meaning to optional field | Old producers remain syntactically valid but semantically unusable |
+| Add enum/string value | Runtime accepts bytes while older application logic fails |
+
+**Advanced exercise:** build an old/new writer-reader matrix including a JSON intermediary and an unknown enum value. Full credit separates byte decoding, field retention, application validation and operation result; predicts both deployment directions; and does not count generated TypeScript compilation as wire evidence. For a server stream interrupted after two messages, state what the user may retain and what remains unknown without final status. The lab still exercises an opaque envelope/status model only; no real gRPC, protobuf generator, HTTP trailers or SDK cancellation is verified.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-16.mjs`, then run `node lab-16.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

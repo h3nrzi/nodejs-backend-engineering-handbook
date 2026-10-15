@@ -44,6 +44,22 @@ Counterexample: “h3 will fix our database query latency.” Changing transport
 
 For diagnosis, compare negotiated protocol, warm/cold setup, time to response, loss conditions, client CPU and fallback outcomes. If only one environment benefits, report the conditions. D12 owns sustained performance evaluation and D15 owns deployment design; D04 teaches the dependency model needed to ask useful questions.
 
+## Trace packet loss without claiming complete stream independence
+
+QUIC packet numbers identify packet transmissions within packet-number spaces; stream offsets identify positions in reliable stream data. A packet can carry frames from several streams. If one is lost, affected stream data can be transmitted again in newly numbered packets; QUIC does not simply retransmit the same TCP-like packet number. Available bytes on another stream can be delivered independently of the missing stream offset, while congestion loss response still affects sending on the shared path. [RFC 9002](https://www.rfc-editor.org/rfc/rfc9002.html) specifies loss detection/congestion behavior separately from RFC 9000's transport model.
+
+Connection receive allowance and per-stream receive allowance also differ. MAX_DATA accounts for connection-wide stream data, MAX_STREAM_DATA for a particular stream, and MAX_STREAMS limits stream creation. Extra streams cannot bypass an exhausted connection allowance. Resetting a stream does not mean all final-size/connection accounting disappears; a receiver must still enforce the protocol's accounting rules.
+
+### Handshake and migration impose their own boundaries
+
+Before validating a client's address, a server's anti-amplification limit restricts sending to three times the bytes received under the specified conditions. A server can therefore be blocked during handshake for reasons unrelated to an application body window. QUIC Initial datagram sizing and path validation have explicit requirements; a successful tiny UDP echo cannot qualify them.
+
+A connection ID permits identifying connection state after a path change. PATH_CHALLENGE/PATH_RESPONSE validate reachability of a new path; migration may require revised path congestion/MTU knowledge and can be disabled or constrained. A NAT rebinding observation is not proof that arbitrary migration succeeded. QUIC version negotiation, TLS handshake success and HTTP/3 SETTINGS/control-stream validity establish different stages.
+
+QPACK can block a header section whose required dynamic-table insertions have not arrived. Limits on blocked streams constrain that dependency; zero dynamic-table usage can trade compression efficiency for fewer such dependencies. Reliable request streams, critical control streams and optional DATAGRAM extensions must not be conflated.
+
+**Advanced paper lab:** annotate two lost packets, stream-offset gaps, one QPACK-blocked header and a migration attempt. Predict which delivery can proceed and which is blocked, naming the layer each time. Full credit distinguishes per-stream ordering, shared congestion, flow credit, header decoding and path validation. The retained JavaScript model establishes none of these on a real QUIC transport. On this session's Node build no native h3 endpoint/client is exercised; adding a flag or installing a package would require a separately qualified experiment. No practical h3 capability is certified here.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-13.mjs`, then run `node lab-13.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

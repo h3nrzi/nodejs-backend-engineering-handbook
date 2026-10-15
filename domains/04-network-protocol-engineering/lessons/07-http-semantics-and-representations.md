@@ -40,6 +40,27 @@ A proxy's 502, an application's 404 and a client's body-decoding error describe 
 
 Counterexample: `value as RequestBody` after `JSON.parse` proves no schema property. First validate media type and bounds, parse, then validate the resulting unknown value. This preserves the D02 distinction between compiler models and runtime inputs while adding HTTP's representation boundary.
 
+## Work through method and representation edge cases
+
+A complete exchange can be unsuccessful for the user without being a transport failure. For example: `POST /imports` returns 202 with a reference; polling that reference later returns a complete 200 whose domain state is rejected. The first response promised acceptance, not completion; the second response's HTTP success does not erase the application's refusal. Preserve both observations and their meanings.
+
+Redirects also carry semantics. A 303 directs retrieval of a different resource using GET or HEAD as applicable; 307 and 308 preserve the method. For historical reasons, 301/302 permit POST-to-GET behavior in relevant clients. A replay-preserving redirect still needs a replayable body, destination checks and credential scope. These rules come from [RFC 9110 §15.4](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.4), while a particular client's redirect policy must be verified separately.
+
+| Metadata | Example | Boundary |
+|---|---|---|
+| Media type | `application/json` | Format of representation data |
+| Content coding | `gzip` | Coding of those representation bytes |
+| Transfer framing | HTTP/1.1 chunked | Message delimitation on this hop |
+| Text encoding | UTF-8 | Character-to-byte interpretation |
+
+If a compressed 20 KiB response expands to 200 MiB, an encoded-byte cap alone permits excessive memory/CPU. A decoded-byte cap needs to stop decompression and clean up upstream I/O, not merely refuse after constructing a huge string. Some client APIs transparently decode content; account for which byte layer each API exposes before comparing counts to Content-Length. The URL/octet lab verifies no decompression behavior.
+
+### Conditional updates are protocol preconditions
+
+Two clients read the same strong ETag. Client A sends an update with `If-Match` and changes the version. Client B sends its stale `If-Match`; 412 reports a failed precondition rather than a network fault. This avoids a blind overwrite only if the origin actually evaluates and applies the precondition coherently; a header alone supplies no database atomicity. Chapter 10 develops validator comparison.
+
+**Advanced exercise:** annotate a 307 redirect of a streaming POST to another origin, followed by 202 and a failed background result. Full credit identifies body replayability, credential/destination checks, accepted-versus-completed status and the absence of a browser CORS authorization guarantee. Also explain why HEAD may carry a Content-Length describing a hypothetical GET while sending no response body. Product error wording and retry policy remain later decisions.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-07.mjs`, then run `node lab-07.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

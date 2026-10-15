@@ -34,13 +34,29 @@ TypeScript wrappers should preserve ownership: a function returning an open resp
 
 ## Worked pool example and counterexample
 
-The lab sends two sequential requests to one loopback origin through an owned single-socket agent, fully consuming each body. It observes one accepted connection. It also issues a complete 404 response to show that application status is not a transport failure. The experiment does not force race conditions or prove reuse across real load balancers.
+The lab holds one response on an owned single-socket Agent, aborts a second queued request, consumes/releases the first, then observes reuse for a complete 404. It checks both connection and application-handler counts. The experiment does not force race conditions or prove reuse across real load balancers.
 
 Counterexample: resolve a wrapper as soon as the response callback fires and omit body consumption. Under repeated calls, available connections can disappear while the dashboard reports low header latency. Fixing only maxSockets raises resource consumption and masks the ownership defect. First establish response lifetime and bounded queueing, then evaluate capacity.
 
 ## Debugging checklist in context
 
 When a dependency appears slow, measure admission/queue, setup, first response and body phases separately. Compare in-flight requests, pending queue, active/free connections and response bytes. A small active-socket count alongside a large pending queue suggests a different problem from thousands of connections stuck in connect. A fast header followed by a stalled body suggests yet another boundary. Avoid asserting that every delay is the remote application's CPU time.
+
+## The pool queue is part of the operation
+
+Model `admitted → queued → assigned socket → request sent → headers → body complete → reusable/closed`. A total deadline starts at admission. An idle socket timer starts at a different boundary and cannot bound time before assignment. Reuse also skips DNS and TLS, so a wrapper must allow phases to be absent rather than inventing zero-duration events that supposedly happened.
+
+The revised fixture holds one four-byte response open after two bytes. With `maxSockets:1`, the second request enters the Agent queue and has no assigned socket. Its AbortSignal is triggered before the first response completes; the fixture verifies it is destroyed, releases and consumes the first response, then observes terminal error/close and confirms the queued request never reached the handler. A third request gets a complete 404 over the same reused connection.
+
+An initial experiment awaited the queued request's error before releasing the first response and reached the runner's ten-second ceiling. On this Node build, queued destruction and terminal event delivery are distinct: error/close can wait until Agent services the queued entry. The corrected fixture does not depend on prompt event emission to release a separately owned response. This is an observed runtime behavior, not a universal guarantee for every client or Node version. Observe `agent.requests` for diagnosis; never mutate its arrays to implement cancellation.
+
+### Reuse and request cleanup are trade-offs
+
+Draining a small known body may preserve HTTP/1.1 reuse; destroying an incomplete body can require connection disposal because the next message boundary cannot be trusted. For an unknown or over-limit body, bounded cancellation can be preferable to draining forever. On shutdown, finish or cancel owned requests and destroy the owned Agent; destroying free sockets alone is not a complete application queue policy.
+
+`maxSockets` applies per origin/key, `maxTotalSockets` across origins, and `maxFreeSockets` limits retained idle sockets for the relevant pool. They do not establish application admission capacity or fairness. Built-in fetch has a separate dispatcher/pool model; its body ownership still matters but these Agent settings do not configure it. A stale reused socket reset remains an uncertain-outcome case unless stronger evidence establishes the request was unprocessed.
+
+**Advanced exercise:** diagnose low header latency with rising queued requests and abandoned response streams. Full credit measures admission-to-body-completion time, explains why raising maxSockets can hide the defect, and defines a byte/time-bounded cleanup policy for unexpected bodies. Include a caller who cancels while queued and explain why user-facing cancellation should not wait indefinitely for an implementation-specific terminal event before recording that interest ended.
 
 ## Practical Node.js example — bounded educational lab
 
@@ -50,34 +66,53 @@ Save the following complete program as `lab-09.mjs`, then run `node lab-09.mjs`.
 import assert from 'node:assert/strict';
 import http from 'node:http';
 import { once } from 'node:events';
-let connections = 0;
+let connections = 0, calls = 0, release;
 const server = http.createServer((req, res) => {
-  res.writeHead(req.url === '/missing' ? 404 : 200); res.end('body');
+  calls++; res.on('error', () => {});
+  if (req.url === '/held') {
+    res.writeHead(200, { 'Content-Length': 4 }); res.write('bo');
+    release = () => res.end('dy');
+  } else { res.writeHead(404); res.end('body'); }
 });
 server.on('connection', () => { connections++; });
 server.listen(0, '127.0.0.1'); await once(server, 'listening');
 const agent = new http.Agent({ keepAlive: true, maxSockets: 1 });
-function request(path) {
-  return new Promise((resolve, reject) => {
-    const req = http.get({ host: '127.0.0.1', port: server.address().port,
-      agent, path }, res => {
-      let body = '';
-      res.on('data', chunk => { body += chunk; }); res.on('error', reject);
-      res.on('end', () => resolve({ status: res.statusCode, body, complete: res.complete }));
+const options = { host: '127.0.0.1', port: server.address().port, agent };
+let held;
+try {
+  held = await new Promise((resolve, reject) => {
+    http.get({ ...options, path: '/held' }, resolve).on('error', reject);
+  });
+  held.on('error', () => {});
+  const controller = new AbortController(); let assigned = false;
+  const queued = http.get({ ...options, path: '/queued', signal: controller.signal });
+  queued.on('socket', () => { assigned = true; });
+  const failed = new Promise(resolve => queued.once('error', resolve));
+  const closed = new Promise(resolve => queued.once('close', resolve));
+  assert.equal(Object.values(agent.requests).flat().length, 1);
+  controller.abort();
+  assert.equal(queued.destroyed, true);
+  // Free the occupied socket: Agent can then discard the destroyed queued request.
+  const consumed = once(held, 'end'); held.resume(); release(); await consumed;
+  assert.equal((await failed).code, 'ABORT_ERR');
+  await closed; assert.equal(assigned, false); assert.equal(calls, 1);
+  const result = await new Promise((resolve, reject) => {
+    const req = http.get({ ...options, path: '/missing' }, res => {
+      let body = ''; res.on('data', c => { body += c; }); res.on('error', reject);
+      res.on('end', () => resolve({ status: res.statusCode, body,
+        complete: res.complete, reused: req.reusedSocket }));
     }); req.on('error', reject);
   });
-}
-try {
-  assert.deepEqual(await request('/'), { status: 200, body: 'body', complete: true });
-  assert.deepEqual(await request('/missing'), { status: 404, body: 'body', complete: true });
-  assert.equal(connections, 1);
+  assert.deepEqual(result, { status: 404, body: 'body', complete: true, reused: true });
+  assert.equal(connections, 1); assert.equal(calls, 2);
 } finally {
-  agent.destroy(); await new Promise(resolve => server.close(resolve));
+  held?.destroy(); agent.destroy(); server.closeAllConnections();
+  await new Promise(resolve => server.close(resolve));
 }
-console.log('two consumed responses, one reused connection, complete 404: ok');
+console.log('occupied pool queues; queued abort not sent; consumption permits reuse; complete 404: ok');
 ```
 
-One local run can show reuse for these sequential calls; it cannot guarantee connection survival or pool fairness elsewhere. The tiny known response bounds the fixture. Production callers must enforce their own input and queue limits.
+One local run can show queue cancellation and reuse for these controlled calls; it cannot guarantee connection survival or pool fairness elsewhere. The tiny known response bounds the fixture. Production callers must enforce their own input and queue limits.
 
 ## Hands-on exercises with expected results
 

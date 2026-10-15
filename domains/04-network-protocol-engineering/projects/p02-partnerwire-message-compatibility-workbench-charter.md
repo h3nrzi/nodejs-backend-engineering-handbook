@@ -13,7 +13,7 @@ Small logistics and equipment vendors exchange structured messages under partner
 
 ## Initial product boundary
 
-Initial direction: register a named partner contract revision and approved sample inputs, evaluate complete and intentionally incomplete exchanges, report framing/decoding/schema stages separately, and compare supported producer/consumer revision directions. The product should preserve sample provenance and byte identity while presenting understandable failure categories.
+Initial direction: register a named partner contract revision and approved sample inputs, evaluate complete and intentionally incomplete exchanges, report framing/decoding/schema stages separately, and compare supported producer/consumer revision directions. The product should preserve sample provenance and byte identity while presenting understandable failure categories. A sanitized or re-encoded sample is a derived artifact: reports should name that transformation and must not claim it reproduces the untouched exchange. How originals may be retained remains a discovery decision.
 
 Out of scope: public arbitrary code execution, general-purpose protocol reverse engineering, a production message broker, autonomous partner-contract rewriting and unrestricted live access to partner infrastructure. Deferred: production traffic ingestion, large-scale replay and automatically generated SDKs. Supported formats, upload limits, revision policy and redaction remain for explicit product discovery.
 

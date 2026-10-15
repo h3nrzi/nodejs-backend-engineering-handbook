@@ -34,7 +34,7 @@ Challenges include slow consumers, duplicate notifications after reconnect, miss
 
 ## Differentiation and non-goals
 
-This is a two-person assistance continuity product, not a generic subscription console, chat system or LiveRoom voting product. Its value is explicit instruction/acknowledgment uncertainty through interruption. Existing D02/D03 approved scopes remain untouched, and the proposed challenges do not force WebSocket, SSE or both into an implementation.
+This is a two-person assistance continuity product, not a generic subscription console, chat system or LiveRoom voting product. Its value is explicit instruction/acknowledgment uncertainty through interruption. Acknowledging receipt of an instruction does not by itself establish that the participant performed it; the meaning of each acknowledgment and its visible wording remain explicit discovery questions. Existing D02/D03 approved scopes remain untouched, and the proposed challenges do not force WebSocket, SSE or both into an implementation.
 
 No framework, database, queue, deployment, operating-system control, architecture or implementation technology is selected. Educational Node examples do not bind this project. Numeric limits and build-blocking policies are resolved with the learner before dependent engineering.
 

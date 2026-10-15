@@ -40,9 +40,33 @@ In TypeScript, a result union can separate confirmed success, confirmed refusal,
 
 ## Worked uncertain-outcome experiment
 
-The local server records an action immediately but withholds the response until the client closes. The client destroys its request after receiving an explicit local signal that the action occurred. Assertions then show client failure and server action can coexist. This avoids a fragile timing guess; the fixture has controlled knowledge unavailable to a real remote caller.
+The local server records an in-memory action after full request-body receipt but withholds the response until the client closes. The client aborts its request through AbortSignal after receiving an explicit local signal that the complete request was received and the action occurred. Assertions then show client failure and server action can coexist. This avoids a fragile timing guess; the fixture has controlled knowledge unavailable to a real remote caller.
 
 Counterexample: implementing a five-second wrapper with Promise.race and then retrying automatically while the first request still runs. It can create duplicate actions and hidden resource use. The correction begins with ownership and product semantics, not merely a shorter timer.
+
+## Worked total budget and causal cancellation
+
+Start with 1000 ms at admission. After 250 ms of pool queue and 150 ms of setup, 600 ms remains. If cleanup reserves 100 ms, only 500 ms is available for new response work. A retry after another 300 ms has at most 200 ms before that reserve; giving it a new 1000 ms violates the original boundary. Backoff also consumes the remaining budget. A task that cannot meaningfully start within the budget should be refused under the chosen policy, rather than launched and immediately abandoned.
+
+An idle timer resets with relevant progress. A peer sending one byte per interval can evade it while never completing a length-prefixed body. Request/header receipt bounds, total elapsed bounds, byte limits and downstream admission therefore compose; none substitutes for the others. An event-loop stall can delay timer callbacks, so a timeout setting is not a hard upper bound on observed wall time.
+
+### Abort changes local ownership, not established history
+
+The strengthened fixture waits for full server request-body receipt before incrementing its in-memory action and signalling the client. Only then does the client abort through the actual HTTP AbortSignal option. It observes ABORT_ERR and its cause, waits for request close and server response close, and verifies that the earlier action count remains one. This proves a causal ordering rather than using a guessed timer to infer whether the action happened. It records no durability, transaction, remote rollback or automatic retry result.
+
+| Last established evidence | Conservative statement after failure |
+|---|---|
+| Never sent under the controlled client contract | This attempt was not transmitted by that client |
+| Request may have reached peer | Remote outcome unknown without stronger evidence |
+| Server action observed in fixture | Local client abort did not erase that observation |
+| Full protocol refusal received | Refusal observed; its business guarantees depend on the contract |
+| Complete successful receipt with operation reference | Success at that named acknowledgment boundary |
+
+### Retry safety has a memory and ownership boundary
+
+An idempotency key needs scope, identity, payload equivalence, concurrency and retention rules. Reusing a key for a different payload can be an error; expiring its record can make a late repeat a new action. A deadline that prevents observation of the first result does not resolve any of those questions. Streaming request bodies also require a replay source; an already-consumed stream is not reconstructible by changing a retry counter. These remain product/module decisions, not a mandated deduplication design.
+
+**Advanced exercise:** a 1000 ms budget has 700 ms elapsed, Retry-After requests 1 second, and the body is a consumed stream. Give three independent reasons the next attempt is ineligible. Full credit checks remaining time, replayability and operation semantics, then identifies cleanup owners for timer, listener, queue slot and response body. Explain how three nested layers each making three total attempts can produce 27 leaf attempts, and why jitter changes load timing rather than remote correctness.
 
 ## Practical Node.js example — bounded educational lab
 
@@ -54,21 +78,25 @@ import http from 'node:http';
 import { once } from 'node:events';
 let signalAction;
 const actionObserved = new Promise(resolve => { signalAction = resolve; });
-let actions = 0;
+let actions = 0, markCleaned;
+const cleaned = new Promise(resolve => { markCleaned = resolve; });
 const server = http.createServer((req, res) => {
-  actions++; req.resume(); signalAction();
+  res.once('close', markCleaned);
+  req.resume(); req.once('end', () => { actions++; signalAction(); });
   // Deliberately withhold the response; no remote-rollback claim.
 });
 server.listen(0, '127.0.0.1'); await once(server, 'listening');
 try {
+  const controller = new AbortController();
   const req = http.request({ host: '127.0.0.1', port: server.address().port,
-    method: 'POST', agent: false });
+    method: 'POST', agent: false, signal: controller.signal });
   const errorSeen = new Promise(resolve => req.once('error', resolve));
   const closed = new Promise(resolve => req.once('close', resolve));
   req.end('command'); await actionObserved;
-  req.destroy(new Error('caller deadline'));
-  assert.equal((await errorSeen).message, 'caller deadline');
-  await closed; assert.equal(actions, 1);
+  controller.abort(new Error('caller deadline'));
+  const failure = await errorSeen;
+  assert.equal(failure.code, 'ABORT_ERR'); assert.equal(failure.cause.message, 'caller deadline');
+  await closed; await cleaned; assert.equal(actions, 1);
 } finally {
   server.closeAllConnections();
   await new Promise(resolve => server.close(resolve));
@@ -76,10 +104,10 @@ try {
 function remaining(start, total, now) { return Math.max(0, total - (now - start)); }
 assert.equal(remaining(100, 500, 450), 150);
 assert.equal(remaining(100, 500, 900), 0);
-console.log('caller failure coexists with server action; shared budget arithmetic: ok');
+console.log('AbortSignal after full receipt preserves action; response close cleanup; shared budget: ok');
 ```
 
-The action is an in-memory counter in an owned process. It proves coexistence for the controlled timeline, not external durability, a real timeout race, rollback behavior or a retry system. Request destruction is explicit rather than dependent on a tiny timer.
+The action is an in-memory counter in an owned process. It proves coexistence for the controlled timeline, not external durability, a real timeout race, rollback behavior or a retry system. AbortSignal cancellation and response-close cleanup are explicit rather than dependent on a tiny timer.
 
 ## Hands-on exercises with expected results
 

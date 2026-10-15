@@ -44,6 +44,20 @@ Node's request headers are parsed metadata, not verified identity objects. The s
 
 No lesson authorizes a proxy architecture for a Charter. Products can face network intermediaries without requiring the learner to build or deploy a particular proxy.
 
+## Follow a claim through two independently failing hops
+
+Suppose client → ingress uses h2/TLS and ingress → backend uses HTTP/1.1. The client sees a 504 after the ingress's upstream budget expires. The backend may still finish its action, the ingress may have buffered part of its response, and the original client may already have cancelled. No one status settles all three observers' outcomes. A trace should name immediate peer, hop protocol, phase and which component generated the final status.
+
+For an illustrative forwarding chain `[untrusted caller, trusted edge, trusted internal proxy]`, establish the direct peer first, then interpret assertions only through the known trusted segment under the deployment's sanitization rule. Stop when trust stops; do not select the first syntactically valid public address from an arbitrary list. A change in ingress topology can invalidate a previously correct hop-count rule. `Forwarded` has quoted/obfuscated values and IPv6 syntax; splitting on commas/colons is not a complete parser or trust policy.
+
+### Translation must preserve semantics, not forbidden wire fields
+
+A Connection field can nominate additional connection-specific fields for removal. A complete intermediary also handles known connection metadata and protocol requirements, including the narrow HTTP/2 exception permitting `TE: trailers`. Removing only names listed by one simple Connection string is insufficient. HTTP/1.1 chunked transfer framing is decoded/reframed for an h2 hop; forwarding literal chunk-size lines into the new body corrupts representation data.
+
+CONNECT creates a tunnel under defined success semantics, while Upgrade changes the protocol on an HTTP/1.1 connection. WebSocket upgrade requires deliberately transferring socket ownership, including any `head` bytes read beyond the HTTP fields; discarding them can lose the first frame. Normal HTTP server shutdown helpers do not automatically account for every upgraded socket. These are lifecycle obligations to evaluate if such support is later selected, not a requirement to build a proxy.
+
+**Advanced incident exercise:** the direct origin emits SSE every few seconds, but the ingress client receives a batch once per minute. Propose measurements at generation, origin write, upstream receipt and downstream receipt; include compression, buffering and client scheduling as competing causes. Full credit avoids equating `write()` with flush-to-user, qualifies clock differences, and checks which hop's timeout expired. The lab remains a trust/removal model, not evidence of ingress authentication or proxy interoperability.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-11.mjs`, then run `node lab-11.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

@@ -40,6 +40,20 @@ Inspect receiver counts, accepted/rejected/duplicate counts, sequence gaps, sock
 
 Counterexample: an application collects three messages `[1,3,3]` and reports “three samples, no loss.” Counting arrivals hides a duplicate and a missing sequence. An honest report separates arrivals, unique accepted messages and not-yet-observed sequences.
 
+## Datagram sizing: derive the payload budget
+
+Assume a path MTU of 1280 bytes, an ordinary IPv6 header of 40 bytes, UDP header of eight bytes and no extension headers. The arithmetic payload ceiling before fragmentation is `1280 − 40 − 8 = 1232 bytes`. This is a conditional calculation, not a universal application limit: extension headers, encapsulation, route changes and the actual path alter the budget. The IPv6 minimum link MTU is not a promise that every arbitrary tunnel/application combination carries any chosen payload. [RFC 8200 §§4–5](https://www.rfc-editor.org/rfc/rfc8200.html#section-5) defines the relevant IPv6 rules.
+
+Suppose one datagram needs three fragments and the probability each arrives were independently 0.99. All-three arrival would be `0.99³ ≈ 0.9703`. Independence is only a model; correlated drops and reassembly limits can make reality different. The useful lesson is that a delivered UDP message requires successful reassembly, not that the model measures a network's loss rate.
+
+### Reorder, restart and gap finality
+
+For source A/session X, arrivals `10,12,11,12` mean four arrivals, three unique sequence references and one duplicate. At the instant after 12 but before 11, the apparent gap is provisional. If the source restarts into session Y and sends 10, deduplication scoped only to source+sequence incorrectly discards a new reading. Wrapping finite sequence numbers adds ambiguity: comparison must have a bounded window and defined restart rules, rather than an unrestricted numeric greater-than test.
+
+A connected UDP socket sets a default peer and affects which incoming peer traffic it accepts under the API/OS behavior. It does not perform TCP's handshake, create reliable delivery or authenticate that peer. A send callback can succeed even if no receiver ever accepts the datagram. Application sequence references do not detect every missing reading unless the sender's production contract and observation window are known.
+
+**Advanced exercise:** produce a report after arrivals X:10, X:12, Y:0, X:11, Y:0. State cutoff, arrivals, unique accepted values by session, duplicate count and remaining uncertainty. Full credit refuses to call a delayed reading permanently lost, separates sender event time from local receive time, and bounds per-source/session retention. The actual lab remains one loopback datagram; no packet impairment or MTU discovery is claimed.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-05.mjs`, then run `node lab-05.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

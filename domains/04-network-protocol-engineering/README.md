@@ -1,8 +1,8 @@
 # D04 — Network & Protocol Engineering
 
-**Status:** in_review — full educational draft awaiting learner approval.
+**Status:** in_review — technically reviewed and expanded educational draft awaiting learner approval.
 **Authored:** 18 lessons; six proposed concepts and six educational Project Charters.
-**Educational labs:** 18/18 passed on the recorded environment; **implementation / learner assessment:** not_started / not_assessed.
+**Educational labs:** 18/18 passed on the recorded environment, including real TLS, HTTP truncation, h2 window, WebSocket and SSE lifecycle cases; **implementation / learner assessment:** not_started / not_assessed.
 
 ## Purpose and boundaries
 
@@ -50,7 +50,7 @@ Each lesson includes a complete executable Node lab, independent exercises with 
 
 ## Coverage gaps and references
 
-[Coverage matrix](../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) distinguishes direct and supporting proposed challenges from the 14 previously approved Charters. Actual DNS wire queries, real TLS handshakes, multi-hop proxy paths, browser CORS/EventSource/WebSocket, genuine QUIC/h3, generated gRPC clients and real impaired-network experiments are not verified. Lessons teach these mechanisms with explicit practice/evidence qualifications.
+[Coverage matrix](../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) distinguishes direct and supporting proposed challenges from the 14 previously approved Charters. Actual DNS wire queries, multi-hop proxy paths, browser CORS/EventSource/WebSocket, genuine QUIC/h3, generated gRPC clients and real impaired-network experiments remain unverified. Local CA/name/ALPN TLS handshakes, h2 stream credit, a Node WebSocket client against a restricted peer, manual SSE cursor exchange/abort, and fixed HTTP range cases now have bounded execution evidence. Full conformance and multi-platform behavior remain unverified. Lessons teach these mechanisms with explicit practice/evidence qualifications.
 
 ## Review evidence and next action
 

@@ -32,13 +32,36 @@ Persistent connections reduce repeated setup but retain resources. HTTP/1.1 resp
 
 ## Worked normal and failure paths
 
-For a three-byte UTF-8 euro sign, Content-Length must be 3 even though JavaScript `.length` is 1. Declaring 1 creates inconsistent framing. The normal lab sends an explicitly sized Buffer and checks a complete response. Its failure path sends conflicting transfer framing to the same local parser and observes rejection before the application handler.
+For a three-byte UTF-8 euro sign, Content-Length must be 3 even though JavaScript `.length` is 1. Declaring 1 creates inconsistent framing. The lab sends an explicitly sized Buffer and checks a complete response, sends conflicting request framing to the local parser, and compares short-length, unfinished-chunked and close-delimited raw responses.
 
 A superficial “fix” for malformed requests is to ignore parse errors and keep using the socket. That can preserve a poisoned byte boundary. The lab's clientError handler terminates its disposable connection. This is an educational refusal path, not a complete production error policy or security qualification.
 
 ## Backend troubleshooting
 
 If uploads hang only through a proxy, compare body limits, request-receipt timeouts, buffering and forwarding behavior on both hops. If responses truncate, preserve declared versus received length, message completeness, connection reuse and which hop closed. A server-side success log alone cannot establish client receipt. If memory grows during slow uploads, inspect application retention as well as stream pressure: buffering the entire body bypasses incremental processing benefits.
+
+## Apply message-length precedence before counting body bytes
+
+[RFC 9112 §6.3](https://www.rfc-editor.org/rfc/rfc9112.html#section-6.3) defines ordered rules; Content-Length is not always decisive:
+
+| Earlier applicable rule | Receiver boundary |
+|---|---|
+| Response to HEAD, or status 1xx/204/304 | Ends at fields; no message body, regardless of apparent length metadata |
+| Successful 2xx CONNECT response | After fields, the connection becomes a tunnel; disregard ordinary response length framing |
+| Transfer-Encoding present | Apply its framing rules; chunked must be final where required |
+| Valid Content-Length without Transfer-Encoding | Exactly that many octets |
+| Request with neither length mechanism | Zero body length |
+| Other response with neither | Body delimited by connection close |
+
+A sender must not send Content-Length together with Transfer-Encoding. A server receiving both can reject or process according to the specified transfer-coding rule, but must close after its response; an intermediary choosing to forward must first remove Content-Length and process Transfer-Encoding. This is a protocol rule, not a claim that every parser accepts that combination. Node's default parser in this fixture rejects it before the handler. Conflicting length values are invalid; the narrowly permitted normalization of identical repeated values is not permission to accept arbitrary duplicates.
+
+### Compare two incomplete and one apparently complete response
+
+A declared length of three with bytes `ab` then FIN is incomplete. Chunked content `2\r\nab\r\n` then FIN is also incomplete because the terminating zero-sized chunk and trailer-section termination never arrived. A zero chunk alone is not the end of every possible trailer block. Conversely, a close-delimited response containing `ab` can be HTTP-complete at EOF even if the application expected `abc`. Without a stronger application representation check, HTTP framing cannot distinguish that semantic truncation. The revised lab uses a raw owned TCP peer and observes all three through the real Node HTTP client.
+
+Node's `IncomingMessage.complete` concerns parser completion. `end` concerns consumption of readable content; `close` does not by itself distinguish the successful and interrupted cases. Check errors and completeness together. Server `headersTimeout` bounds header receipt; `requestTimeout` bounds receipt of the entire request, not execution of business work. Socket inactivity and post-response keepalive controls have different owners. Installing a timeout handler can transfer cleanup responsibility; never assume all methods abort automatically.
+
+**Advanced exercise:** trace a HEAD response with Content-Length 100, a POST with neither framing field, and a close-delimited 200 missing expected application bytes. Full credit applies precedence before metadata, rejects request-until-close reasoning, separates syntactic completion from content integrity, and explains why one backend parser refusal cannot qualify a multi-hop proxy path against smuggling.
 
 ## Practical Node.js example — bounded educational lab
 
@@ -78,10 +101,42 @@ try {
   assert.match(reply, /^HTTP\/1.1 400/);
   assert.equal(calls, 1);
 } finally { await new Promise(resolve => server.close(resolve)); }
-console.log('complete UTF-8 response; ambiguous request rejected before handler: ok');
+
+const raw = net.createServer(socket => {
+  socket.on('error', () => {});
+  socket.once('data', request => {
+    const target = request.toString().split(' ')[1];
+    const response = target === '/chunked'
+      ? 'Transfer-Encoding: chunked\r\n\r\n2\r\nab\r\n'
+      : target === '/close' ? '\r\nab' : 'Content-Length: 3\r\n\r\nab';
+    socket.end('HTTP/1.1 200 OK\r\nConnection: close\r\n' + response);
+  });
+});
+raw.listen(0, '127.0.0.1'); await once(raw, 'listening');
+async function observe(path) {
+  return new Promise((resolve, reject) => {
+    http.get({ host: '127.0.0.1', port: raw.address().port, path, agent: false }, res => {
+      let bytes = 0, ended = false, error;
+      res.on('data', c => { bytes += c.length; });
+      res.on('end', () => { ended = true; });
+      res.on('error', e => { error = e.code; });
+      res.on('close', () => resolve({ complete: res.complete, bytes, ended, error }));
+    }).on('error', reject);
+  });
+}
+try {
+  for (const path of ['/length', '/chunked']) {
+    const result = await observe(path);
+    assert.equal(result.bytes, 2); assert.equal(result.complete, false);
+    assert.equal(result.ended, false); assert.equal(result.error, 'ECONNRESET');
+  }
+  assert.deepEqual(await observe('/close'),
+    { complete: true, bytes: 2, ended: true, error: undefined });
+} finally { await new Promise(resolve => raw.close(resolve)); }
+console.log('HTTP refusal; short length and missing zero chunk incomplete; close-delimited complete: ok');
 ```
 
-The malformed request is sent only to the owned loopback fixture. It verifies this Node parser refusal and the handler count; it does not test a proxy chain, request-smuggling resistance in general, body timeouts or multipart parsing.
+The malformed request is sent only to the owned loopback fixture. It verifies this Node parser refusal and handler count, and observes response completeness/error events from the three raw peers. It does not test a proxy chain, request-smuggling resistance in general, body timeouts or multipart parsing.
 
 ## Hands-on exercises with expected results
 

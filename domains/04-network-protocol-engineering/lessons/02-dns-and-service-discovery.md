@@ -40,6 +40,27 @@ DNS failure can occur before any remote application execution; a timeout after r
 
 Custom caches require bounded entries, expiry bookkeeping, coalescing rules and a decision about failures. Coalescing can reduce a lookup stampede but may make many callers depend on one slow attempt. Cache key design must include the dimensions actually affecting answers. These are engineering trade-offs for lessons, not prescribed portfolio architecture.
 
+## Resolution timeline and cache ownership
+
+Trace a new HTTPS request through application cache → OS lookup policy → recursive cache → authoritative answer → address selection → connection. Some steps may be absent; an existing pooled connection can bypass the whole resolution path. Record which layer supplied the result rather than labelling all elapsed time “DNS.” An authoritative TTL governs record cache reuse, not the lifetime of a socket or an application-maintained service object.
+
+Consider two failures after a deployment:
+
+| Observation | Compatible explanations | Discriminating next evidence |
+|---|---|---|
+| Old address still receives traffic | Cached answer; old pooled socket; rollout overlap | Connection creation time and selected peer, then resolution source |
+| `lookup` is slow, `resolve4` fast | OS policy or native-pool contention; different lookup context | Same-process timing, native-pool workload and actual returned candidates |
+| AAAA connects slowly, A succeeds | Broken family path; family attempt policy | Actual attempted addresses and connection-attempt events |
+| Resolver reports SERVFAIL | Upstream failure; validation failure; temporary resolver fault | Response/source details; never classify as authoritative absence |
+
+A CNAME chain does not give all its records one universal lifetime. Negative caching depends on the negative response and its SOA-derived rules; inventing a permanent “not found” cache from one error can turn a transient incident into a lasting application outage. DNSSEC validation, where performed, authenticates DNS data under its trust chain; it does not prove endpoint reachability or replace TLS service identity. See [RFC 4033](https://www.rfc-editor.org/rfc/rfc4033.html) for that distinct boundary.
+
+### Address attempts are a resource lifecycle
+
+A resolver can return several candidates. A connection strategy must track attempts, their deadlines and the selected winner; close losing attempts and observe their errors. Node v24 exposes `autoSelectFamily` and family-attempt settings on the net connection path. A numeric loopback lookup in this lab exercises none of that racing. Report actual settings and attempt evidence before diagnosing “IPv6 first” behavior; ordering alone does not show which candidate was contacted.
+
+**Advanced exercise:** design a cache diagnostic for a request still reaching an old endpoint 90 seconds after a 30-second TTL update. Full credit identifies at least three independent lifetimes, records the connection's creation/peer context, and distinguishes DNS cache evidence from socket reuse. Include why resolving twice around a security check can select different destinations. No public resolver experiment or SSRF policy implementation is implied.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-02.mjs`, then run `node lab-02.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

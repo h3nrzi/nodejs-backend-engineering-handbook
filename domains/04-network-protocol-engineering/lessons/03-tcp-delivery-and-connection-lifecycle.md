@@ -40,6 +40,29 @@ Counterexample: “The server emitted finish, so the customer received the recei
 
 When diagnosing resets, correlate phase, reused/new socket, peer shutdown and message completion. ECONNRESET alone cannot tell which business operation ran. Distinguish a clean end with an incomplete application frame from a cleanly completed protocol exchange. D03's resource-lifetime reasoning applies; D04 adds transport and message boundaries.
 
+## A directional TCP state trace
+
+Each direction has its own byte sequence and EOF. In the half-close fixture, the client submits `abc`, then `end()` requests FIN after pending bytes. The server receives the bytes before readable EOF, parses its EOF-delimited request and remains able to send `received:abc` because `allowHalfOpen:true` preserves its writable side. Its later `end()` completes the reverse direction. Neither FIN acknowledges business success.
+
+| Event | Local meaning | Invalid inference |
+|---|---|---|
+| `write` returns false | Bytes admitted; local pressure threshold reached | Resubmit the same bytes |
+| Write callback | Local write handling completed or failed | Peer application consumed or committed |
+| `end` event | Peer finished sending its direction | Every application frame was complete |
+| `finish` event | Local writable stream finished output handling | Remote receipt is durable |
+| `close` event | Local socket resource closed | Remote work was rolled back |
+| Explicit RST | Abrupt TCP termination | The peer never saw earlier bytes |
+
+TCP retransmits stream data rather than exposing duplicate application bytes for ordinary segment retransmission. Application retries above TCP can still duplicate an operation. ACK numbers are cumulative next-byte expectations; selective acknowledgments can describe additional received regions, but neither acknowledges an HTTP request or database transaction. A FIN also consumes sequence space; connection shutdown is part of the transport state machine, not an empty application record.
+
+### Close states and pressure incidents
+
+CLOSE_WAIT means the local endpoint received peer FIN while its sending direction remains open. Accumulation can indicate application ownership failing to finish/close sockets, although deliberate half-open work can be legitimate. TIME_WAIT commonly belongs to the active closer and protects against delayed segments/tuple reuse; simultaneous closure is an additional case. Counts alone do not identify a leak without traffic rate, ages and expected lifetime.
+
+`destroy()` ends local I/O; it is not a portable promise of a particular packet-level reset sequence. The lab uses `resetAndDestroy()` specifically to request RST and checks the observed `ECONNRESET` on this host. It does not infer packet timing or business state from that error. The idle case waits for a timeout notification and verifies the socket is still open before its owner destroys it; 20 ms is a trigger setting, never a latency assertion.
+
+**Advanced exercise:** a producer pauses after write(false), then the peer closes without drain. Give transitions for `producing → pressured → terminal`, including listener removal and no duplicate write. Full credit includes a total budget, cleanup on error/close, and a distinction between accepted local bytes and complete peer frames. Explain why a persistent CLOSE_WAIT population and a high TIME_WAIT turnover suggest different investigations. [RFC 9293 §3.6](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.6) supplies the transport close model.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-03.mjs`, then run `node lab-03.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.
@@ -72,10 +95,39 @@ try {
 } finally {
   await new Promise(resolve => server.close(resolve));
 }
-console.log('half-close permits a response after request EOF: ok');
+
+const resetServer = net.createServer(socket => {
+  socket.on('error', () => {});
+  socket.once('data', () => socket.resetAndDestroy());
+});
+resetServer.listen(0, '127.0.0.1'); await once(resetServer, 'listening');
+let resetClient;
+try {
+  resetClient = net.connect(resetServer.address().port, '127.0.0.1');
+  const failure = new Promise(resolve => resetClient.once('error', resolve));
+  const closed = new Promise(resolve => resetClient.once('close', resolve));
+  await once(resetClient, 'connect'); resetClient.write('trigger');
+  assert.equal((await failure).code, 'ECONNRESET'); await closed;
+} finally {
+  resetClient?.destroy();
+  await new Promise(resolve => resetServer.close(resolve));
+}
+const idleServer = net.createServer(socket => { socket.on('error', () => {}); });
+idleServer.listen(0, '127.0.0.1'); await once(idleServer, 'listening');
+const idleClient = net.connect(idleServer.address().port, '127.0.0.1');
+try {
+  await once(idleClient, 'connect');
+  const timedOut = once(idleClient, 'timeout'); idleClient.setTimeout(20);
+  await timedOut;
+  assert.equal(idleClient.destroyed, false); // Notification did not terminate I/O.
+} finally {
+  const closed = once(idleClient, 'close'); idleClient.destroy(); await closed;
+  await new Promise(resolve => idleServer.close(resolve));
+}
+console.log('half-close reply; explicit RST -> ECONNRESET; idle timeout needs destroy: ok');
 ```
 
-The server waits for client EOF and still sends a reply, demonstrating one deliberate half-close contract. It does not test real packet loss, retransmission, Nagle effects, drain pressure or TIME_WAIT exhaustion. Resource cleanup is local and bounded by the runner process timeout.
+The first fixture waits for client EOF and still sends a reply. Separate local fixtures request RST and observe ECONNRESET, then show that raw-socket inactivity timeout requires explicit destruction. It does not test real packet loss, retransmission, Nagle effects, drain pressure or TIME_WAIT exhaustion. Resource cleanup is local and bounded by the runner process timeout.
 
 ## Hands-on exercises with expected results
 

@@ -1,16 +1,21 @@
 {
   "checked_on": "2026-10-15",
-  "baseline_commit": "088d956494b23545c80fdac72c1adab14fd14cad",
-  "revision": "baseline plus uncommitted D04 educational authoring changes",
+  "baseline_commit": "713e05b199750d775ad6e71fd595bd6c6df91196",
+  "revision": "baseline plus deep-review patch; containing Git commit identifies delivered review",
   "environment": {
-    "node": "v24.22.0",
     "v8": "13.6.233.17-node.57",
     "uv": "1.52.1",
     "openssl": "3.5.8",
+    "nghttp2": "1.70.0",
+    "undici": "7.29.1",
+    "node": "v24.22.0",
     "platform": "darwin",
-    "arch": "arm64"
+    "arch": "arm64",
+    "openssl_cli": "OpenSSL 3.6.3 9 Jun 2026 (Library: OpenSSL 3.6.3 9 Jun 2026)"
   },
-  "command": "node scripts/check-d04.mjs",
+  "command": "node scripts/check-d04.mjs > domains/04-network-protocol-engineering/evidence/educational-labs.txt 2>&1",
+  "runner_sha256": "1090daa5c7b4ca718278fa386febfb7adcfdeeb6813701ac2648b696af84249e",
+  "stdout_sha256": "ac3f8bc087e60ee1eba2004b31d34de711496356172e3e5ed035dd10319d69dc",
   "labs": [
     {
       "chapter": "01",
@@ -27,13 +32,13 @@
     {
       "chapter": "03",
       "lesson": "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
-      "lab_sha256": "3de1ec0db42662b27677c7031562503934b67ed525e31e23d7abdf1ce3e254c8",
+      "lab_sha256": "c9afae12d17555c348af805131b0edbe5d8c10798b890bccea5d9449ad9dbca3",
       "result": "pass"
     },
     {
       "chapter": "04",
       "lesson": "domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md",
-      "lab_sha256": "4866aff4eda8dedd23f635d40d2c96587c0a356df7ee8601b0fc071bcea6132d",
+      "lab_sha256": "77b8ba9b058519c84986e6dafffc06d73141f0023731caa64d633b5ea168dc86",
       "result": "pass"
     },
     {
@@ -45,7 +50,7 @@
     {
       "chapter": "06",
       "lesson": "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
-      "lab_sha256": "73fa1b2cab1b2176034a08cb309042ff97f4208793b4959757119356f4822e07",
+      "lab_sha256": "f56a174101bcf966c36470fc795851415476c7a58b5dd5a299e976b20916771f",
       "result": "pass"
     },
     {
@@ -57,19 +62,19 @@
     {
       "chapter": "08",
       "lesson": "domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md",
-      "lab_sha256": "d5d0681931e84717bcb43eeb66580b6501f4ea8c8c6a77f94844616207529128",
+      "lab_sha256": "d8c74f13b5c9aef0cacba73f7c241ddfeead9c9148dc5fef1a43a4a036e33a3f",
       "result": "pass"
     },
     {
       "chapter": "09",
       "lesson": "domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md",
-      "lab_sha256": "b237ebf1530f5082522c4c69fae12a06e666c65b863311b2a02de846c166a83b",
+      "lab_sha256": "852e6d39a05c9408df21057ba1a3af7efee084ad360db544fa5676e4d90d1b74",
       "result": "pass"
     },
     {
       "chapter": "10",
       "lesson": "domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md",
-      "lab_sha256": "44943858fa250e308bc16e67ef6731e004f8047adce45c355bd940d19a4841f3",
+      "lab_sha256": "d88b5e005ee4a641c5102f28bc43fe347510ce4882599a0906e4d837e14d64b3",
       "result": "pass"
     },
     {
@@ -81,7 +86,7 @@
     {
       "chapter": "12",
       "lesson": "domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md",
-      "lab_sha256": "899b7f79e740625e8cd2165b9f7a5667058a06ef4c83801774581adca3c269d2",
+      "lab_sha256": "1aa8401d1e4df1302904f2069d9466530f3c6ebefeac7f40346f2dbaa55e3e89",
       "result": "pass"
     },
     {
@@ -93,13 +98,13 @@
     {
       "chapter": "14",
       "lesson": "domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md",
-      "lab_sha256": "e45cb84ee6e785327e6dedba496e57ff6b3e939a9ca10a232b70ebe7cb42d100",
+      "lab_sha256": "70a5f0ae313d10df3f33a421e7576828d8050af919c1f33d4502da04563fe775",
       "result": "pass"
     },
     {
       "chapter": "15",
       "lesson": "domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md",
-      "lab_sha256": "641d150a5b3b858a1519e6274384c801f50cc7fcd7d8c07d22982163794e437d",
+      "lab_sha256": "02b8f164d90cc208539dfa39db579d334f5dc24c0f12fc8a9691f5549d7b789c",
       "result": "pass"
     },
     {
@@ -111,14 +116,16 @@
     {
       "chapter": "17",
       "lesson": "domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md",
-      "lab_sha256": "21f1d16006e0dd7e5547d1879ae5915dc227ecfffa0267d2672b7f200f7492e1",
+      "lab_sha256": "f2010e4105362f6f65bf3f8c835750ea72ac28ec8cb2ca2bed6557f48186f3dd",
       "result": "pass"
     },
     {
       "chapter": "18",
       "lesson": "domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md",
-      "lab_sha256": "f829563bbc8a9fdd87a76aed403095b63b6999b5a6edd8f5ccfcf0186dc498eb",
+      "lab_sha256": "6c27903bdb45299c74dddce8e94075d1e955622fe511abec5a568b7bdd33f001",
       "result": "pass"
     }
-  ]
+  ],
+  "result": "18/18 educational lab processes passed",
+  "limits": "Local bounded agent execution only. Models and restricted peers remain scoped in educational-execution.md; no portfolio implementation, conformance certification or learner assessment."
 }

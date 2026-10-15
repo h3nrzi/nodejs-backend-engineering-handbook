@@ -38,6 +38,28 @@ An unavailable service can mean wrong namespace, wrong address family, missing r
 
 Counterexample: “Ping works, so the upload must work.” ICMP reachability, where permitted, neither tests the application's TCP port nor its body-size and authentication policy. Conversely, blocked ICMP does not prove a service unavailable. Diagnostic probes must target the contract under investigation.
 
+## Worked path: separate the four endpoint questions
+
+Suppose a client requests `https://api.example.test/report` through a terminating ingress. Follow these steps without collapsing their evidence:
+
+| Step | Value or event | What remains unproved |
+|---|---|---|
+| Name resolution | A/AAAA candidates for the ingress | Reachability, listening process and identity |
+| Connect | Client local tuple → ingress tuple | TLS identity and application readiness |
+| TLS | Expected DNS identity, SNI and negotiated ALPN | Upstream protection and request authorization |
+| HTTP routing | Authority and target select a service | Complete representation or business action |
+| Upstream exchange | Ingress opens its own backend connection | End-to-end receipt at the original client |
+
+A NAT can rewrite a tuple within one transport path; a terminating proxy creates a separate transport connection. This distinction matters when correlating logs: backend `remotePort` cannot identify the original client connection across termination. A listener backlog, established connection table and application work queue are also different resources. A connection can be established before the application accepts/handles it, so connect latency and handler-start latency need separate instrumentation.
+
+For IPv6, a link-local address needs an interface/scope context; an address string copied from another host can be insufficient to select the intended link. Brackets in a URL authority delimit an IPv6 literal, not part of its numeric address. Avoid applying IPv4 assumptions about broadcast or textual prefix matching to IPv6.
+
+### Calculate a bottleneck, then challenge the assumptions
+
+At 100 Mbit/s and 80 ms RTT, the bandwidth-delay product is `100,000,000 / 8 × 0.080 = 1,000,000 bytes`. If only 64 KiB can be in flight, a simplified steady-state ceiling is `65,536 / 0.080 = 819,200 bytes/s`, before other costs. This does not diagnose which window is limiting or justify changing host buffers: application pauses, congestion and receiver limits can produce different ceilings. A 1 MiB read buffer cannot remove an 80 ms propagation delay.
+
+**Advanced incident exercise:** a service connects quickly on the host and times out inside a container. Draw namespace, bind address, outbound and return paths; propose three competing causes and one observation per cause. Full credit requires distinguishing refusal from silence, listener scope from authorization, and a controlled connectivity check from proof of application health. A change to public binding without evidence does not satisfy the exercise.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-01.mjs`, then run `node lab-01.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.

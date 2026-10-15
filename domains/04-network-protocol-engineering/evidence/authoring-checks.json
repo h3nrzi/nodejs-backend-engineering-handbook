@@ -1,18 +1,43 @@
 {
   "checked_on": "2026-10-15",
-  "scope": "structural/status/code-hash verification against HEAD plus authored changes",
+  "baseline_commit": "713e05b199750d775ad6e71fd595bd6c6df91196",
+  "scope": "D04 deep technical review; baseline plus review patch",
+  "commands": [
+    "node scripts/check-d04.mjs > domains/04-network-protocol-engineering/evidence/educational-labs.txt 2>&1",
+    "python3 scripts/check-handbook-links.py > domains/04-network-protocol-engineering/evidence/internal-links.json",
+    "python3 -m json.tool tracking/state.json > /dev/null",
+    "git diff --check"
+  ],
   "results": {
     "json_parse": "pass",
     "lesson_count": 18,
+    "substantively_expanded_chapters": 18,
     "chapter_numbering_and_competency_ids": "pass",
-    "required_lesson_sections": "pass",
+    "required_lesson_sections_and_advanced_rubrics": "pass",
     "charter_count": 6,
     "project_identifiers_and_in_review_status": "pass",
-    "lab_sha256_matches_executed_manifest": "pass",
+    "changed_lab_blocks": [
+      "03",
+      "04",
+      "06",
+      "08",
+      "09",
+      "10",
+      "12",
+      "14",
+      "15",
+      "17",
+      "18"
+    ],
+    "lab_sha256_matches_retained_executed_source": "pass",
     "non_D04_domain_records_unchanged": 15,
     "external_MediaForge_state_unchanged": true,
     "approved_D01_D03_lesson_and_Charter_files_unchanged": true,
-    "git_diff_check": "pass"
+    "only_allowed_paths_changed": true,
+    "current_internal_link_issues": 0,
+    "new_reference_bases_reached": 5,
+    "git_diff_check": "pass",
+    "source_and_diff_review": "completed; EOF/missing-evidence fixes, ownership/bounds, expected negatives, prose/code consistency, Charter neutrality"
   },
-  "limits": "Section presence is not independent educational certification; human review remains not_run."
+  "limits": "Agent author review and bounded execution only; human editorial evaluation remains not_run, competence not_assessed, D04 in_review. Historical first-session evidence is retained at baseline commit."
 }

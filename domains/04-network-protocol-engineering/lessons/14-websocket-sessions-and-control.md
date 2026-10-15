@@ -14,7 +14,7 @@ Prerequisites: Chapters [04](04-framing-and-incremental-parsers.md), [06](06-tls
 
 WebSocket supplies a bidirectional message channel after a successful protocol opening. Its common HTTP/1.1 handshake uses an upgrade exchange. Successful TCP or an HTTP 200 is not equivalent to a WebSocket opening. The server validates the opening fields and returns the protocol's expected response. Secure WebSocket uses TLS for the relevant hop; intermediary termination still creates separate trust boundaries.
 
-The accept calculation in the lab transforms a client key and fixed protocol identifier using SHA-1 then base64. Its role is handshake confirmation, not password hashing or proof of user authorization. The input key is not a secret credential. Other WebSocket bootstrapping mechanisms over newer HTTP versions need explicit endpoint support; do not assume HTTP/1.1 Upgrade fields can be copied onto h2.
+The accept calculation in the actual upgrade fixture transforms a client key and fixed protocol identifier using SHA-1 then base64. Its role is handshake confirmation, not password hashing or proof of user authorization. The input key is not a secret credential. Other WebSocket bootstrapping mechanisms over newer HTTP versions need explicit endpoint support; do not assume HTTP/1.1 Upgrade fields can be copied onto h2.
 
 ## Frames versus messages
 
@@ -42,27 +42,86 @@ Counterexample: “The connection is open, so every subscriber is current.” A 
 
 When a session drops at a fixed interval, compare ingress idle limits, heartbeat traffic, server processing and event-loop delay. When memory rises, inspect outgoing backlog and application retention rather than assuming persistent connections are cheap. A successful handshake does not test message limits, compression expansion or reconnect correctness.
 
+## Opening, interleaved control and close on actual sockets
+
+The new fixture uses Node's global WebSocket client with an owned HTTP/1.1 upgrade peer. A normal HTTP request gets 426 and does not become a WebSocket connection. For the positive opening, the peer checks version/key shape and sends 101 with the correct accept value. It then sends a non-final text frame containing `hel`, a ping carrying `p`, and a final continuation containing `lo`. The client emits one `hello` message and returns a masked pong; control progress does not wait for application-message fragmentation to end.
+
+After both observations, the client starts close with code 1000 and reason `done`. The fixture validates and echoes the close payload, then ends TCP; the client reports a clean close. A close code/reason is still no acknowledgment of a business action. The fixture parser deliberately accepts only short masked client control frames, caps total client bytes and owns all upgraded sockets. It is a constrained peer for testing a real implementation, not a reusable or conformant WebSocket server. A production library must also handle extended lengths, invalid UTF-8, RSV/extension negotiation, fragmented messages and adversarial lifetimes.
+
+### Control and compression failure boundaries
+
+A close payload of length one is invalid: the optional status needs two bytes. Codes 1005, 1006 and 1015 are reserved for reporting and must not be transmitted as status codes. A dropped TCP connection may produce an abnormal-close observation without any close frame on the wire. Never send 1006 as a proposed “network failure response.”
+
+Mask keys must be freshly and unpredictably chosen for client frames; reversible masking is not secrecy. Text validity is evaluated across the reassembled message, so a split multibyte character cannot be validated independently per fragment. A negotiated compression extension changes RSV interpretation and carries memory/expansion risks; it is absent from this fixture and must not be assumed merely because the connection opened. [RFC 6455 §§5–7](https://www.rfc-editor.org/rfc/rfc6455.html#section-5) governs these frame/closure distinctions.
+
+**Advanced exercise:** trace `text(fragment 1) → ping → continuation → close` with a disconnect after a client command but before its application acknowledgment. Full credit separates frame control responsiveness, message reassembly, clean-close reporting and unknown command outcome; defines bounded slow-consumer output; and explains why reconnect alone restores neither authentication context nor missed state. Browser Origin/cookie policy, TLS, permessage-deflate, malformed-frame refusal and h2 extended CONNECT remain untested.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-14.mjs`, then run `node lab-14.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.
 
 ```javascript
 import assert from 'node:assert/strict';
+import http from 'node:http';
 import { createHash } from 'node:crypto';
-const key = 'dGhlIHNhbXBsZSBub25jZQ==';
-const accept = createHash('sha1')
-  .update(key + '258EAFA5-E914-47DA-95CA-C5AB0DC85B11').digest('base64');
-assert.equal(accept, 's3pPLMBiTxaQ9kYGzzhZRbK+xOo=');
-function mask(bytes, keyBytes) {
-  return Buffer.from(bytes.map((byte, i) => byte ^ keyBytes[i % 4]));
+import { once } from 'node:events';
+const guid = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
+const accept = key => createHash('sha1').update(key + guid).digest('base64');
+assert.equal(accept('dGhlIHNhbXBsZSBub25jZQ=='), 's3pPLMBiTxaQ9kYGzzhZRbK+xOo=');
+let sawPong; const pong = new Promise(resolve => { sawPong = resolve; });
+const sockets = new Set();
+const server = http.createServer((req, res) => { res.writeHead(426); res.end(); });
+server.on('upgrade', (req, socket, head) => {
+  sockets.add(socket); socket.on('close', () => sockets.delete(socket));
+  socket.on('error', () => {});
+  assert.equal(req.headers.upgrade.toLowerCase(), 'websocket');
+  assert.equal(req.headers['sec-websocket-version'], '13');
+  assert.equal(Buffer.from(req.headers['sec-websocket-key'], 'base64').length, 16);
+  socket.write('HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\n' +
+    'Connection: Upgrade\r\nSec-WebSocket-Accept: ' + accept(req.headers['sec-websocket-key']) + '\r\n\r\n');
+  // Restricted fixture: fragmented text with a ping between fragments.
+  socket.write(Buffer.from([0x01, 3, 104, 101, 108, 0x89, 1, 112, 0x80, 2, 108, 111]));
+  let rest = Buffer.alloc(0), total = 0;
+  function receive(chunk) {
+    total += chunk.length; assert.ok(total <= 1024);
+    rest = Buffer.concat([rest, chunk]);
+    while (rest.length >= 2) {
+      const opcode = rest[0] & 15, n = rest[1] & 127;
+      assert.equal(rest[0] & 0xf0, 0x80); assert.ok(rest[1] & 0x80); assert.ok(n < 126);
+      if (rest.length < 6 + n) return;
+      const mask = rest.subarray(2, 6);
+      const payload = Buffer.from(rest.subarray(6, 6 + n).map((b, i) => b ^ mask[i % 4]));
+      rest = rest.subarray(6 + n);
+      if (opcode === 10) { assert.equal(payload.toString(), 'p'); sawPong(); }
+      else {
+        assert.equal(opcode, 8); assert.equal(payload.readUInt16BE(0), 1000);
+        socket.end(Buffer.concat([Buffer.from([0x88, n]), payload]));
+      }
+    }
+  }
+  socket.on('data', receive); receive(head);
+});
+server.listen(0, '127.0.0.1'); await once(server, 'listening');
+let ws;
+try {
+  const status = await new Promise((resolve, reject) => {
+    http.get({ host: '127.0.0.1', port: server.address().port, agent: false }, res => {
+      res.resume(); res.on('end', () => resolve(res.statusCode));
+    }).on('error', reject);
+  }); assert.equal(status, 426);
+  ws = new WebSocket(`ws://127.0.0.1:${server.address().port}`);
+  const opened = once(ws, 'open'), message = once(ws, 'message'), closed = once(ws, 'close');
+  await opened; assert.equal((await message)[0].data, 'hello'); await pong;
+  ws.close(1000, 'done');
+  const [event] = await closed; assert.equal(event.code, 1000); assert.equal(event.wasClean, true);
+} finally {
+  ws?.close(); for (const socket of sockets) socket.destroy();
+  await new Promise(resolve => server.close(resolve));
 }
-const plain = Buffer.from('hello'), maskKey = Buffer.from([1, 2, 3, 4]);
-assert.deepEqual(mask(mask(plain, maskKey), maskKey), plain);
-assert.notDeepEqual(mask(plain, maskKey), plain);
-console.log('handshake accept vector and reversible masking: ok');
+console.log('actual 101; fragmented text + ping/masked pong; clean 1000 close; ordinary HTTP 426: ok');
 ```
 
-Only a handshake calculation and reversible masking are executed. No socket is upgraded; no browser, WebSocket implementation, fragmentation, close exchange or reconnection is tested. The standard vector is an interoperability check, not a security strength claim.
+A real Node WebSocket client opens against a restricted loopback upgrade peer, reassembles fragmented text, automatically responds to ping with masked pong and completes a clean close exchange. The peer implements only the required short-control subset and is not a general WebSocket server. No browser, reconnect, TLS or compression behavior is tested.
 
 ## Hands-on exercises with expected results
 
@@ -81,12 +140,13 @@ Only a handshake calculation and reversible masking are executed. No socket is u
 - [WebSocket, RFC 6455](https://www.rfc-editor.org/rfc/rfc6455.html), opening, frames and control.
 - [WebSocket over HTTP/2, RFC 8441](https://www.rfc-editor.org/rfc/rfc8441.html), distinct bootstrapping.
 - [WHATWG WebSockets](https://websockets.spec.whatwg.org/), browser API and send buffering.
+- [Node v24 WebSocket client](https://nodejs.org/docs/latest-v24.x/api/globals.html#class-websocket), API used by the actual fixture; this is not a server API.
 - [Node v24 crypto](https://nodejs.org/docs/latest-v24.x/api/crypto.html), hash API used only for the protocol vector.
 
 Node API references use the v24 documentation line. Exact local execution environment, command, output and limitations are in [the execution record](../evidence/educational-execution.md). The canonical command `node scripts/check-d04.mjs` extracts and executes the single JavaScript lab from each lesson; prose exercises and TypeScript modeling tasks are not thereby tested. JavaScript is used so networking behavior is observable without a compiler. TypeScript cannot validate network bytes by annotation: keep input `unknown` or bytes until runtime validation, then narrow into explicit protocol states. No TypeScript compiler checks are claimed.
 
 ## Coverage gaps and review checklist
 
-D04-P06 directly challenges interrupted interactive sessions; WebSocket is optional, not prescribed. Real handshake/refusal, browser behavior, compression and resume interoperability remain unexecuted. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P06 directly challenges interrupted interactive sessions; WebSocket is optional, not prescribed. An actual opening, ordinary-HTTP 426, control exchange and clean close are exercised; malformed-handshake/frame refusal, browser behavior, compression, abrupt-loss recovery and resume interoperability remain unexecuted. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 13](13-quic-and-http3-trade-offs.md) · [Next: Chapter 15](15-server-sent-events-and-resumption.md)

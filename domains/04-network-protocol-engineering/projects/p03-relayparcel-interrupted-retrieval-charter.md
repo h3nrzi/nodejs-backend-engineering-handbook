@@ -30,7 +30,7 @@ The learner should distinguish byte transport, protocol completion and product a
 3. Connectivity is interrupted; the UI preserves partial/incomplete truth rather than displaying success.
 4. The technician returns after the artifact changed; the product explains whether continuation is supported or a clean restart is necessary, without silently mixing versions.
 
-Challenges include incomplete content despite received success headers, slow readers, closed reused connections, a full response where a partial response was expected, inconsistent range metadata, changed representation coding and lost completion acknowledgment. A future solution may support continuity in several ways or explicitly constrain it; the Charter does not require a particular transfer mechanism. The observable invariant is that a completed artifact never silently combines incompatible representations.
+Challenges include incomplete content despite received success headers, slow readers, closed reused connections, a full response where a partial response was expected, inconsistent range metadata, changed representation coding and lost completion acknowledgment. A future solution may support continuity in several ways or explicitly constrain it; the Charter does not require a particular transfer mechanism. The observable invariant is that a completed artifact never silently combines incompatible representations. Integrity of the received representation and authenticity of its publisher are distinct claims; the verification method and authority for each remain learner-led discovery questions.
 
 ## Differentiation and non-goals
 

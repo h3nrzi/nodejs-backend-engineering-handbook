@@ -34,7 +34,7 @@ Compression changes representation bytes. A strong ETag for an uncompressed form
 
 A byte range selects part of the chosen representation. A satisfiable request can receive 206 with Content-Range; an unsatisfiable range can receive 416. Servers may ignore a Range request under applicable rules, so a downloader cannot assume every response is partial. Inspect status and metadata before appending bytes.
 
-Resuming a download requires knowing that the retained prefix belongs to the same representation version. If the origin changed between attempts, blindly appending a range can produce a mixed artifact that never existed. `If-Range` can qualify range use with an appropriate validator; weak tags are not suitable for its strong-validator use. Multipart ranges and compressed representations add complexity. The educational lab does not implement these rules.
+Resuming a download requires knowing that the retained prefix belongs to the same representation version. If the origin changed between attempts, blindly appending a range can produce a mixed artifact that never existed. `If-Range` can qualify range use with an appropriate validator; weak tags are not suitable for its strong-validator use. Multipart ranges and compressed representations add complexity. The educational lab exercises a few fixed range/validator cases; it does not implement their general grammar.
 
 ## Worked scenario and counterexamples
 
@@ -43,6 +43,26 @@ The fixture gives one tiny representation an opaque strong ETag and performs an 
 Counterexample: a client stores bytes for version A, receives an unrelated 304 after losing its cache metadata, and reports that version B was downloaded. The status confirms no new content transfer; it cannot identify an absent local body. Another error is treating `no-cache` as `no-store` and promising that sensitive data never persists.
 
 For backend diagnosis, preserve selected variant, validator, status, age and actual byte counts. A cache can correctly return 200 from storage or 304 after validation, so a status-only graph cannot establish origin traffic or bandwidth. Distinguish lesson-level protocol reasoning from later distributed cache invalidation and application consistency policy in D08/D10.
+
+## Calculate freshness and conditional outcomes
+
+A simplified age example: a response has freshness lifetime 60 seconds and corrected age 45 seconds when stored. Ten seconds later its current age is 55 seconds, leaving roughly five seconds of freshness, not a fresh 60-second allowance. Full calculations include request/response delay and apparent age; [RFC 9111 §4.2.3](https://www.rfc-editor.org/rfc/rfc9111.html#section-4.2.3) defines those terms. Re-receiving an already aged response does not reset origin age. `s-maxage` addresses shared caches; authorization and cacheability rules still matter beyond one directive.
+
+For ETags `"v1"` and `W/"v1"`, weak comparison can match for If-None-Match while strong comparison does not match for If-Match. A matching If-None-Match on GET/HEAD produces 304; on other methods the precondition failure is 412. Lists and `*` have defined meaning; a naive string-equality responder implements only one educational fixture. Relevant preconditions precede Range processing, so a request cannot bypass a failed precondition by asking for fewer bytes.
+
+### Resume timeline with explicit byte identity
+
+Assume version A is `abcdef`, its strong ETag is `"A"`, and the client retains the first three bytes `abc`.
+
+| New request / origin state | Response | Safe client interpretation |
+|---|---|---|
+| `Range: bytes=3-`, `If-Range: "A"`; still A | 206, `Content-Range: bytes 3-5/6`, `def` | Verify identity, start, size and completeness before appending |
+| Same request; origin now version B | Full 200 representation | Replace/restart under policy; never append the full response |
+| Start at 99 for six-byte representation | 416, `Content-Range: bytes */6` | Unsatisfied request; not proof the local file is intact |
+
+Range end offsets are inclusive: `3-5` is three bytes. `Accept-Ranges` is capability metadata, not a promise the next request will return 206. Date-based If-Range has qualified validator rules; an arbitrary Last-Modified date is not automatically a strong identity guarantee. Weak entity tags must not be generated in If-Range. Content coding changes the selected bytes, so a decoded offset cannot blindly address a gzip-coded representation. Full multi-range parsing and automatically decoding clients need separate interoperability testing.
+
+**Advanced exercise:** retain 1000 decoded bytes, then receive a gzip-coded 206 starting at encoded byte 1000 with a different validator. Explain why correct status and transport completion cannot establish safe continuation. Full credit checks coding, validator strength/identity, offset, total length and byte completeness, and handles a returned full 200 separately. The extended fixture now exercises fixed range responses; general range parsing, automatic decompression and CDN behavior remain unverified.
 
 ## Practical Node.js example — bounded educational lab
 
@@ -56,25 +76,35 @@ const tag = '"sample-v1"';
 const server = http.createServer((req, res) => {
   res.setHeader('ETag', tag); res.setHeader('Cache-Control', 'private, max-age=0');
   if (req.headers['if-none-match'] === tag) { res.writeHead(304); res.end(); }
-  else res.end('version one');
+  else if (req.headers.range === 'bytes=3-' && req.headers['if-range'] === tag) {
+    res.writeHead(206, { 'Content-Range': 'bytes 3-10/11', 'Content-Length': 8 });
+    res.end('sion one');
+  } else if (req.headers.range === 'bytes=99-') {
+    res.writeHead(416, { 'Content-Range': 'bytes */11', 'Content-Length': 0 }); res.end();
+  } else res.end('version one');
 });
 server.listen(0, '127.0.0.1'); await once(server, 'listening');
 function get(headers = {}) {
   return new Promise((resolve, reject) => {
     http.get({ host: '127.0.0.1', port: server.address().port, agent: false, headers }, res => {
       let body = ''; res.on('data', c => { body += c; }); res.on('error', reject);
-      res.on('end', () => resolve({ status: res.statusCode, tag: res.headers.etag, body }));
+      res.on('end', () => resolve({ status: res.statusCode, tag: res.headers.etag, body, range: res.headers['content-range'] }));
     }).on('error', reject);
   });
 }
 try {
-  assert.deepEqual(await get(), { status: 200, tag, body: 'version one' });
-  assert.deepEqual(await get({ 'If-None-Match': tag }), { status: 304, tag, body: '' });
+  assert.deepEqual(await get(), { status: 200, tag, body: 'version one', range: undefined });
+  assert.deepEqual(await get({ 'If-None-Match': tag }), { status: 304, tag, body: '', range: undefined });
+  assert.deepEqual(await get({ Range: 'bytes=3-', 'If-Range': tag }),
+    { status: 206, tag, body: 'sion one', range: 'bytes 3-10/11' });
+  assert.equal((await get({ Range: 'bytes=3-', 'If-Range': '"old"' })).status, 200);
+  assert.deepEqual(await get({ Range: 'bytes=99-' }),
+    { status: 416, tag, body: '', range: 'bytes */11' });
 } finally { await new Promise(resolve => server.close(resolve)); }
-console.log('unconditional content then exact-tag 304 without content: ok');
+console.log('exact-tag 304; fixed range 206; stale If-Range full 200; unsatisfied 416: ok');
 ```
 
-The fixture is an explicit conditional responder, not an implementation of a general cache, ETag grammar, range server or CDN. It checks no browser storage behavior.
+The fixture is a narrowly scripted conditional/range responder: only `bytes=3-` with the exact tag and `bytes=99-` have special range handling. It exercises 206/200/416 and byte metadata through actual HTTP, not a general range grammar, multi-range server, cache or CDN. It checks no browser storage behavior.
 
 ## Hands-on exercises with expected results
 

@@ -30,7 +30,7 @@ The learner should distinguish byte transport, protocol completion and product a
 3. The reviewer evaluates a mismatched identity, unsupported negotiation, variant/validator disagreement or missing final protocol status.
 4. The team compares releases and sees exactly which support claims have evidence, contradictions or no execution.
 
-The domain challenge is interoperability across boundaries: desired versus negotiated protocol, representation selection, conditional retrieval, proxy transformation and application status carried beyond HTTP status. Expected failure cases include a selected language without coherent variant metadata, an h2 claim observed only on the front hop, an h3 claim with no h3 execution, and RPC success inferred without final status. The report must preserve the evidence's client/path/release scope.
+The domain challenge is interoperability across boundaries: desired versus negotiated protocol, representation selection, conditional retrieval, proxy transformation and application status carried beyond HTTP status. Expected failure cases include a selected language without coherent variant metadata, an h2 claim observed only on the front hop, an h3 claim with no h3 execution, and RPC success inferred without final status. The report must preserve the evidence's client/path/release scope. Unsupported local tooling, an unrun combination and a failed negotiated exchange must remain distinct outcomes. Optional h3 or RPC claims may be recorded as not-run; this Charter does not require implementing every mapped protocol.
 
 ## Differentiation and non-goals
 

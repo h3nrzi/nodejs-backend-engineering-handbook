@@ -301,5 +301,36 @@
       "status": 200,
       "resolved_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapture.html"
     }
-  ]
+  ],
+  "deep_review": {
+    "checked_on": "2026-10-15",
+    "method": "HTTP GET of new external lesson URL bases (fragments removed), read at most 1024 bytes; 10-second per-fetch timeout; first-session records preserved. Reachability only.",
+    "references": [
+      {
+        "url": "https://docs.openssl.org/3.6/man1/openssl-req/",
+        "status": 200,
+        "resolved_url": "https://docs.openssl.org/3.6/man1/openssl-req/"
+      },
+      {
+        "url": "https://docs.openssl.org/3.6/man1/openssl-x509/",
+        "status": 200,
+        "resolved_url": "https://docs.openssl.org/3.6/man1/openssl-x509/"
+      },
+      {
+        "url": "https://nodejs.org/docs/latest-v24.x/api/util.html",
+        "status": 200,
+        "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/util.html"
+      },
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+        "status": 200,
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc4033.html"
+      },
+      {
+        "url": "https://www.rfc-editor.org/rfc/rfc9002.html",
+        "status": 200,
+        "resolved_url": "https://www.rfc-editor.org/rfc/rfc9002.html"
+      }
+    ]
+  }
 }

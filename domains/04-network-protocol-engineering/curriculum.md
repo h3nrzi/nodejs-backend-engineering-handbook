@@ -1,8 +1,8 @@
 # D04 Curriculum — Network & Protocol Engineering
 
-**Status:** in_review — full draft authored 2026-10-15; no learner approval.
+**Status:** in_review — full draft authored and technically expanded 2026-10-15; no learner approval.
 **Inventory:** 18 substantive lessons, six proposed catalog concepts, six educational Project Charters.
-**Executed examples:** 18 bounded Node.js labs; [actual evidence](evidence/educational-execution.md).
+**Executed examples:** 18 bounded Node.js labs, including expanded lifecycle/failure fixtures; [actual evidence](evidence/educational-execution.md).
 **Portfolio implementation / learner competence:** not_started / not_assessed.
 
 ## Position, prerequisites and purpose
@@ -58,9 +58,9 @@ Specializations deliberately outside this course: implementing an IP/TCP/QUIC st
 
 ## Practice and evidence policy
 
-Each lesson is standalone with outcomes, prerequisites, first-principles mechanisms, normal and failure examples, backend uses, exercises, answer rubric and references. Code uses ESM JavaScript on the exact recorded Node environment; TypeScript modeling tasks retain the static/runtime boundary without requiring a compiler dependency. The one JavaScript lab per lesson is executable using [the retained runner](../../scripts/check-d04.mjs). Additional exercises are authored practice, not recorded learner activity.
+Each lesson is standalone with outcomes, prerequisites, first-principles mechanisms, normal and failure examples, backend uses, exercises, answer rubric and references. Code uses ESM JavaScript on the exact recorded Node environment; Chapter 06 additionally invokes the installed OpenSSL CLI to generate disposable CA/leaf material; TypeScript modeling tasks retain the static/runtime boundary without requiring a compiler dependency. The one JavaScript lab per lesson is executable using [the retained runner](../../scripts/check-d04.mjs). Additional exercises are authored practice, not recorded learner activity.
 
-Reference line: official Node v24 docs, resolved through Context7 `/websites/nodejs_latest-v24_x_api`, supplemented by primary protocol specifications. This is not a claim that v24 is the latest release or an approved runtime for a future product. [Evidence](evidence/educational-execution.md) distinguishes actual socket exchanges, pure models and unexecuted integrations.
+Reference line: official Node v24 docs, resolved through Context7 `/websites/nodejs_latest-v24_x_api`, supplemented by primary protocol specifications and direct official API inspection where indexed snippets were incomplete. The deep review expands all 18 chapters, corrects terminal EOF/missing-evidence errors, and upgrades nine lab blocks (03/04/06/08/09/10/12/14/15) plus cancellation and diagnostic assertions in 17/18; [chapter audit](evidence/educational-execution.md#chapter-by-chapter-technical-audit) records findings and remaining scope. This is not a claim that v24 is the latest release or an approved runtime for a future product. [Evidence](evidence/educational-execution.md) distinguishes actual socket exchanges, pure models and unexecuted integrations.
 
 ## Portfolio and coverage
 

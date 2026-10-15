@@ -54,6 +54,27 @@ A useful report separates observations, hypotheses, experiments, results, remain
 
 The lab classifies finite evidence objects into known boundaries. It deliberately returns insufficient-evidence for a 200 response lacking body completion. This conservative report model ties the curriculum together without becoming a monitoring product or assigning a learner grade.
 
+## Worked diagnostic record: do not turn missing evidence into a fact
+
+At local monotonic t=0 a request is admitted; t=180 ms gets a reused socket; t=210 receives 200 with Content-Length 4096; t=240 has read 2048 bytes; then response error/close occurs with `complete:false`. This establishes a 180 ms local assignment delay, a response header and a short body. It does not establish remote CPU time, the exact network segment that failed, or whether a business action committed. Keep the absent fields absent: no connect/TLS event on a reused socket is not a failed handshake.
+
+The original classification function used `!e.connected`, incorrectly treating an empty object as evidence that connection establishment failed. The revised comparison requires `connected === false` and asserts that `{}` remains insufficient evidence. Even that explicit false needs a trustworthy source and attempt scope. Contradictory evidence, multiple attempts and later reconciliation require a richer report than this tiny classifier; do not silently prioritize inconsistent booleans in a production incident.
+
+| Hypothesis for the short body | Prediction / discriminating evidence |
+|---|---|
+| Origin closed before finishing | Origin byte/completeness and close observation on the corresponding upstream attempt |
+| Intermediary terminated transfer | Complete upstream body but incomplete downstream body at that intermediary |
+| Caller cancelled | Client cancellation causally precedes local teardown; remote action still uncertain |
+| Event loop blocked progress | Local loop-delay evidence overlaps the pause; does not alone explain byte truncation |
+
+Repeat one controlled variable at a time: fresh versus reused connection, direct versus intermediary, identity/authority preserved versus deliberately mismatched, bounded small versus larger response. A changed result narrows a hypothesis under the exact conditions; it does not prove a universal root cause. Header-only command-line probes cannot validate response-body completion, and a HEAD response's semantics differ from a GET truncated to zero bytes.
+
+### Preserve enough evidence to resume safely
+
+Keep request/attempt references, runtime/client stack, network namespace, target and intended identity, actual peer, protocol per hop, bytes at the API's encoding layer, completeness and cancellation cause. Report local durations and causal barriers rather than subtracting unsynchronized host clocks. Sanitize secrets and protect packet/identity metadata. If evidence is unavailable, record the missing boundary and the next minimal authorized observation.
+
+**Advanced incident exercise:** use the Chapter 08 short-body and close-delimited fixtures to write two reports. Full credit notes that the first is HTTP-incomplete while the second can be parser-complete yet application-incomplete, includes at least two competing causes, and names an observation capable of rejecting each. Add a contradiction (complete=false and a claimed complete receipt) and explain why it needs reconciliation rather than arbitrary classifier precedence. Neither running these labs nor reproducing the classifier certifies a production root cause or learner mastery.
+
 ## Practical Node.js example — bounded educational lab
 
 Save the following complete program as `lab-18.mjs`, then run `node lab-18.mjs`. It uses ESM and built-in modules only. It is an educational experiment, not portfolio implementation.
@@ -62,11 +83,12 @@ Save the following complete program as `lab-18.mjs`, then run `node lab-18.mjs`.
 import assert from 'node:assert/strict';
 function classify(e) {
   if (e.lookupFailed) return 'resolution failed';
-  if (!e.connected) return 'connection not established';
+  if (e.connected === false) return 'connection not established';
   if (e.actionObserved && !e.complete) return 'action observed; reply incomplete';
   if (e.complete && Number.isInteger(e.status)) return 'complete HTTP response';
   return 'insufficient evidence';
 }
+assert.equal(classify({}), 'insufficient evidence');
 assert.equal(classify({ lookupFailed: true }), 'resolution failed');
 assert.equal(classify({ connected: false }), 'connection not established');
 assert.equal(classify({ connected: true, actionObserved: true, complete: false }),
@@ -74,7 +96,7 @@ assert.equal(classify({ connected: true, actionObserved: true, complete: false }
 assert.equal(classify({ connected: true, complete: true, status: 404 }),
   'complete HTTP response');
 assert.equal(classify({ connected: true, status: 200 }), 'insufficient evidence');
-console.log('five evidence classifications preserve phase and uncertainty: ok');
+console.log('six evidence classifications preserve phase and uncertainty: ok');
 ```
 
 This is a report-classification model, not an automated root-cause detector. Its output depends on supplied facts; it does not collect or authenticate them. No packet capture, production incident or benchmark is executed.

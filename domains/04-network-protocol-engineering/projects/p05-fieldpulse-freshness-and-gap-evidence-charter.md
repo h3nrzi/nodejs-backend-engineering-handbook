@@ -30,7 +30,7 @@ The learner should distinguish byte transport, protocol completion and product a
 3. The source disconnects, duplicates or reorders readings; the view identifies stale or uncertain state rather than presenting apparent continuity.
 4. The source restarts and reuses a sequence number; the product distinguishes a new session under its approved policy and preserves earlier evidence.
 
-Challenges include messages lost before receipt, duplicates, reordering, sender clock skew, delayed delivery, oversized readings, receiver overload and sequence reuse after restart. Observed gaps are not automatically permanent loss, and a transport address alone does not authenticate a device. Product truth must distinguish received, accepted, rejected, late and not-observed categories under a declared window. These are challenges to solve, not a requirement to use UDP or any particular broker.
+Challenges include messages lost before receipt, duplicates, reordering, sender clock skew, delayed delivery, oversized readings, receiver overload and sequence reuse after restart. Observed gaps are not automatically permanent loss, and a transport address alone does not authenticate a device. Product truth must distinguish received, accepted, rejected, late and not-observed categories under a declared window. Age since local receipt must not silently stand for age since measurement: a newly received reading can already be old, and sender clock uncertainty can prevent a precise event-age claim. These are challenges to solve, not a requirement to use UDP or any particular broker.
 
 ## Differentiation and non-goals
 

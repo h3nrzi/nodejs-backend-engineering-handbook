@@ -34,13 +34,27 @@ The peer advertises settings such as concurrent-stream limits. Treat these as pr
 
 `node:http2` exposes session and stream APIs; it is not merely `node:http` with a different version string. The lab uses the direct stream API and a cleartext loopback session so no certificate fixture is necessary. Real browser h2 commonly negotiates through TLS ALPN; this lab does not prove browser compatibility or encrypted h2 deployment.
 
-Two streams are opened before either is awaited to demonstrate independently addressable exchanges within one session. The lab asserts stream-specific response content and one accepted session. It does not assert response order or a particular frame schedule. Resource ownership closes the client session before closing the server.
+A zero-credit body stream and header-only response demonstrate different progress on one session. The lab increases stream credit, observes body completion and resets another stream. It records one accepted session without claiming a particular frame schedule; owned sessions are closed/destroyed before server closure.
 
 ## Failure reasoning and counterexamples
 
 Counterexample: “h2 lets us send unlimited requests on one socket.” Each active stream consumes memory and work, and shared connection flow control can amplify one slow consumer. A pool limit of one session is not an application concurrency bound. Another mistake is passing HTTP/1.1 connection-specific fields into h2 and treating resulting protocol errors as random network failures.
 
 When downloads stall, inspect stream state, pending bytes, consumed bodies, remote settings and connection health. If all streams stop together after loss, transport ordering is a plausible cause; if one stream alone stops, its application/flow state is another hypothesis. Without window or packet evidence, label these hypotheses rather than conclusions.
+
+## Flow-control arithmetic and the window experiment
+
+If stream A has 4096 bytes of send credit but the connection has 1024, at most 1024 additional DATA payload bytes can be sent before more credit is needed. If stream A instead has zero credit while stream B and the connection have credit, B can continue. DATA flow control counts its defined flow-controlled payload, including padding; frame headers are outside it. WINDOW_UPDATE increases credit for its stream or the connection, while SETTINGS_INITIAL_WINDOW_SIZE changes stream windows, not the connection window. A settings reduction can make an existing stream's window negative; the sender waits for sufficient credit rather than treating it as an unsigned wraparound.
+
+The revised cleartext h2 fixture advertises an initial stream receive window of zero. The server responds on a body-bearing stream, while a header-only response completes on another stream. The client has received headers but no DATA on the first stream. Raising the advertised initial stream window to 1024 then permits its three-byte body to arrive. This demonstrates an actual protocol credit gate without a sleep-based “probably stalled” inference. It does not test connection-window exhaustion, TCP loss or Node's entire buffering strategy; the server can queue bytes locally even while wire DATA is blocked.
+
+### Reset and shutdown need different retry evidence
+
+The fixture resets a separate open stream with CANCEL and observes the server's matching reset code while the session remains shared. A reset scopes protocol termination to that stream; it does not cancel every application resource started by its handler. Owners still stop producers and observe work errors. Graceful session `close()` stops creating new streams and permits existing streams to finish; `destroy()` terminates them. Server close alone does not gracefully end every existing session.
+
+GOAWAY's last-stream identifier describes the highest peer-initiated stream that might have been processed. Streams above the applicable boundary were not processed under that connection's protocol contract; streams at or below it remain potentially processed, not automatically successful. An explicit REFUSED_STREAM carries a different unprocessed signal from a generic CANCEL. Automatic replay still requires reconstructible content, deadline budget and trusted protocol evidence; a generic transport loss supplies no such assurance. See [RFC 9113 §§5.1, 5.2 and 6.8](https://www.rfc-editor.org/rfc/rfc9113.html#section-6.8).
+
+**Advanced exercise:** draw a session with A credit zero, B credit 2048 and connection credit 512. Predict allowable DATA and whether HEADERS can progress. Then distinguish GOAWAY boundary, CANCEL and a broken TCP socket for retry evidence. Full credit identifies shared resources and avoids treating `write(false)` as an HTTP/2 window measurement. GOAWAY replay, TLS ALPN h2 and connection-window fault tests remain unrun.
 
 ## Practical Node.js example — bounded educational lab
 
@@ -50,36 +64,50 @@ Save the following complete program as `lab-12.mjs`, then run `node lab-12.mjs`.
 import assert from 'node:assert/strict';
 import http2 from 'node:http2';
 import { once } from 'node:events';
-let sessions = 0;
+let sessions = 0, resolveReset;
+const resetSeen = new Promise(resolve => { resolveReset = resolve; });
+const owned = new Set();
 const server = http2.createServer();
-server.on('session', () => { sessions++; });
+server.on('session', session => {
+  sessions++; owned.add(session); session.on('error', () => {});
+  session.on('close', () => owned.delete(session));
+});
 server.on('stream', (stream, headers) => {
-  stream.on('error', () => {});
-  stream.respond({ ':status': 200 }); stream.end(`path:${headers[':path']}`);
+  stream.on('error', () => {}); stream.respond({ ':status': 200 });
+  if (headers[':path'] === '/cancel') {
+    stream.on('close', () => resolveReset(stream.rstCode));
+  } else stream.end(headers[':path'] === '/empty' ? undefined : 'abc');
 });
 server.listen(0, '127.0.0.1'); await once(server, 'listening');
-const client = http2.connect(`http://127.0.0.1:${server.address().port}`);
-await once(client, 'connect');
-function request(path) {
-  return new Promise((resolve, reject) => {
-    const stream = client.request({ ':path': path });
-    let body = ''; stream.setEncoding('utf8');
-    stream.on('data', c => { body += c; }); stream.on('error', reject);
-    stream.on('end', () => resolve(body)); stream.end();
-  });
-}
+const client = http2.connect(`http://127.0.0.1:${server.address().port}`,
+  { settings: { initialWindowSize: 0 } });
+client.on('error', () => {});
 try {
-  const a = request('/a'), b = request('/b');
-  assert.deepEqual(await Promise.all([a, b]), ['path:/a', 'path:/b']);
+  await once(client, 'connect');
+  const slow = client.request({ ':path': '/slow' });
+  let body = ''; slow.on('data', c => { body += c; });
+  const headers = once(slow, 'response'), done = once(slow, 'end'); slow.end();
+  const empty = client.request({ ':path': '/empty' });
+  const emptyDone = once(empty, 'end'); empty.resume(); empty.end();
+  await headers; await emptyDone;
+  assert.equal(body, ''); // Zero stream receive credit prevents DATA, not HEADERS.
+  await new Promise((resolve, reject) => client.settings({ initialWindowSize: 1024 },
+    error => error ? reject(error) : resolve()));
+  await done; assert.equal(body, 'abc');
+  const cancel = client.request({ ':path': '/cancel' });
+  const response = once(cancel, 'response'); cancel.end(); await response;
+  const closed = once(cancel, 'close'); cancel.close(http2.constants.NGHTTP2_CANCEL);
+  await closed; assert.equal(await resetSeen, http2.constants.NGHTTP2_CANCEL);
   assert.equal(sessions, 1);
+  const clientClosed = once(client, 'close'); client.close(); await clientClosed;
 } finally {
-  const closed = once(client, 'close'); client.close(); await closed;
+  client.destroy(); for (const session of owned) session.destroy();
   await new Promise(resolve => server.close(resolve));
 }
-console.log('two independent responses on one cleartext h2 session: ok');
+console.log('h2 zero stream window blocks DATA; HEADERS progress; window update releases; reset isolated: ok');
 ```
 
-This is actual local HTTP/2, with no TLS, packet impairment, window exhaustion or GOAWAY replay test. Assertions avoid scheduling and performance guarantees. A failed process is terminated by the runner deadline.
+This is actual local HTTP/2 with a stream receive-credit gate and cancellation reset. TLS, packet impairment, connection-window exhaustion and GOAWAY replay remain untested. Assertions avoid scheduling and performance guarantees. A failed process is terminated by the runner deadline.
 
 ## Hands-on exercises with expected results
 
@@ -103,6 +131,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P04 directly challenges negotiated-protocol compatibility; h2 flow-control internals are supporting knowledge. TLS ALPN interoperability, flow-window fault injection and real-loss behavior remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P04 directly challenges negotiated-protocol compatibility; h2 flow-control internals are supporting knowledge. TLS ALPN h2 interoperability, connection-window exhaustion, GOAWAY replay and real-loss behavior remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 11](11-proxies-routing-and-trust-boundaries.md) · [Next: Chapter 13](13-quic-and-http3-trade-offs.md)
