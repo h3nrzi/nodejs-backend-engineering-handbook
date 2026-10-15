@@ -29,3 +29,7 @@ The Handbook separates [curriculum and competency evidence](docs/learning-eviden
 ## Curriculum quality audit
 
 [D01–D03 coverage and continuity audit](docs/curriculum-coverage-audit-2026-10-15.md) checks the 48 lesson-file/competency mappings, identifies stale editorial metadata and defines a deeper review rubric. It is not a certification or a claim of having reviewed every lesson line by line.
+
+## Content authoring quality
+
+For new D04–D16 lessons, use the [lesson quality standard](docs/lesson-quality-standard.md). [D01–D03 audit](docs/curriculum-coverage-audit-2026-10-15.md) records reviewed gaps; previously approved lesson content remains unchanged except reconciled status metadata.
