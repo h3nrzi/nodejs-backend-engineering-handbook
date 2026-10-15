@@ -7,13 +7,13 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - D01: 14/14 lessons, 4/4 Project Charters editorially approved.
 - D02: 16/16 lessons, 5/5 Project Charters editorially approved.
 - D03: 18/18 lessons, 5/5 Project Charters editorially approved.
-- **48 authored lessons, 14 educational Charters; zero implemented projects or verified learner assessments.**
-- All project implementations, including MediaForge, are `not_started`.
+- **48 authored lessons, 14 educational Charters; zero verified implemented projects or learner assessments.**
+- MediaForge (D03-P02) has externally approved planning through its Module 01 eight-ticket plan; **implementation, tests and learner mastery are not verified**. Other projects have no recorded implementation progress.
 - D04–D16 remain to be authored.
 
 ## Navigation
 
-[AGENTS](AGENTS.md) · [Roadmap](ROADMAP.md) · [Tracker](TRACKER.md) · [Machine state](tracking/state.json) · [Workflow](docs/workflow.md) · [Module-driven ownership](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
+[Architecture](docs/information-architecture.md) · [Audit](docs/restructure-audit-2026-10-15.md) · [MediaForge registry](projects/implementations/mediaforge.md) · [AGENTS](AGENTS.md) · [Roadmap](ROADMAP.md) · [Tracker](TRACKER.md) · [Machine state](tracking/state.json) · [Workflow](docs/workflow.md) · [Module-driven ownership](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
 
 ### Domain catalogs
 
