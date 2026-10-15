@@ -1,4 +1,4 @@
-> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. MediaForge implementation was reset to 0.
+> **Workflow V2 (2026-10-14):** D01–D03 former pre-implementation PRDs were reclassified as educational Project Charters. References and historical approval labels here should be interpreted as **Charter editorial approval**, not Codex-authored Final PRD or implementation readiness. Historical reset applies to earlier implementation claims; since then MediaForge reached approved external Module 01 ticket planning, without verified implementation.
 
 # D03 — Node.js Internals
 
@@ -7,7 +7,7 @@
 **Lessons:** 18/18 authored and approved_by_learner editorially; lesson-authoring gate closed after coverage reconciliation.  
 **Project catalog:** [five concepts](projects/catalog.md) approved on 2026-10-13. **Project Charters:** **5/5 learner-approved at product scope** on 2026-10-13; technical discovery and implementation not_started.  
 **Assessment:** deferred_until_learning_phase.  
-**Implementation:** not_started.
+**External MediaForge planning:** Module 01 tickets approved; implementation/tests not verified. See [registry](../../projects/implementations/mediaforge.md).
 
 ## Purpose and boundary
 
