@@ -1,7 +1,7 @@
 # Chapter 01 — Cost Models and Correctness
 
 **Domain:** D01 — Computer Science Foundations  
-**Status:** drafted; awaiting learner review  
+**Editorial status:** approved_by_learner (per canonical tracking/state.json; metadata reconciled 2026-10-15)  
 **Prerequisites:** variables, arrays, loops, functions and basic arithmetic in JavaScript  
 **Scope:** reasoning about what a program must do, why it is correct, and how its resource cost grows. Later chapters develop the data structures and algorithms themselves.
 
@@ -303,4 +303,4 @@ Suggested sources to verify while studying:
 - Node.js, performance hooks: https://nodejs.org/api/perf_hooks.html
 - OSTEP, systems background: https://pages.cs.wisc.edu/~remzi/OSTEP/
 
-**Coverage audit:** specification ✓; pre/postconditions ✓; invariants ✓; counterexamples ✓; partial/total correctness ✓; time/space ✓; O/Ω/Θ ✓; best/worst/average ✓; amortization ✓; benchmark caveats ✓; worked backend applications ✓; exercises and rubrics ✓. Pending: learner review, code execution evidence, cross-domain application in actual project.
+**Coverage audit:** specification ✓; pre/postconditions ✓; invariants ✓; counterexamples ✓; partial/total correctness ✓; time/space ✓; O/Ω/Θ ✓; best/worst/average ✓; amortization ✓; benchmark caveats ✓; worked backend applications ✓; exercises and rubrics ✓. Pending: learner practice/assessment, independent code execution evidence, cross-domain application in actual project.
