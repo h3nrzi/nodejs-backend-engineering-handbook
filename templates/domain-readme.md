@@ -14,7 +14,7 @@ Link lesson chapters; each chapter must go from first principles to advanced app
 
 ## Valuable project candidates
 
-Link `projects/catalog.md` and approved per-project PRDs. Do not make implementation decisions here.
+Link `projects/catalog.md` and approved educational Project Charters. Final PRDs and technical decisions belong to separately selected implementation repositories; do not make implementation decisions here.
 
 ## Coverage gaps and references
 
