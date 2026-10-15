@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite approval:** D03 Chapters 01–10 learner-approved; Chapter 10 explicitly approved on 2026-10-13.  
 **Educational execution evidence:** Section 16; five standalone ESM fixtures executed three times each on Node v22.16.0 / Linux x64.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes, prerequisites and boundaries
 
@@ -86,9 +86,13 @@ An `ArrayBuffer` may be viewed simultaneously by several `Uint8Array`, `DataView
 
 The safe mental model is a **move** of a known-owned resource. Do not transfer a backing buffer unless its ownership and aliases are established.
 
+Posting cloneable `ArrayBuffer` data **without a transfer list** copies its bytes; explicitly listing a **transferable** backing `ArrayBuffer` moves it and detaches sender aliases. `SharedArrayBuffer` shares memory and **must not appear in the transfer list**.
+
 ### Buffer pooling matters
 
-Node `Buffer` instances are views over underlying `ArrayBuffer` storage. Some Buffer constructors use pooled storage, and a pooled backing store may be marked untransferable. A transfer attempt can instead result in cloning; sending a pooled Buffer can copy more backing memory than expected and inadvertently include unrelated retained bytes. The docs warn against assuming all Buffers are transferable or equally cheap.
+Node `Buffer` instances are views over underlying storage. Transferability depends on allocation provenance: small allocations from constructors such as `Buffer.from()` or `Buffer.allocUnsafe()` may use Node's internal pool, whose backing `ArrayBuffer`s are marked untransferable. Posting such cloneable data without a transfer list can copy the entire pool, with memory and data-exposure costs. Do not infer ownership from the Buffer constructor name alone.
+
+**Explicitly listing untransferable storage is not a fallback-clone request.** The [Node v22.16.0 postMessage history](https://nodejs.org/download/release/v22.16.0/docs/api/worker_threads.html#portpostmessagevalue-transferlist) records throwing for untransferable transfer-list entries since v21.0.0; its [markAsUntransferable example](https://nodejs.org/download/release/v22.16.0/docs/api/worker_threads.html#workermarkasuntransferableobject) catches `DataCloneError`. Older cloning descriptions must not be generalized across versions. The separate [recorded Node v24.22.0 experiment](../../../docs/visual-d03/finding-check.json) observes that error with sender bytes intact, then an independent copy when posted without a transfer list; it does not test every pooled allocation.
 
 Use a dedicated `ArrayBuffer` for the examples below. `markAsUntransferable()` can protect storage from being transferred but does not make an object immutable, encrypted or otherwise secure. [Node Worker docs: transferring TypedArrays and Buffers](https://nodejs.org/download/release/latest-v22.x/docs/api/worker_threads.html#considerations-when-transferring-typedarrays-and-buffers).
 
@@ -472,6 +476,6 @@ The fixtures do not include exhaustive `MessageChannel` port transfer, nested Wo
 | Security/performance | Sections 11–14 discuss bounded admission, copying, pooled buffers, untrusted code and resourceLimits gaps. |
 | Exercises with answer rubric | Section 15; no learner assessment administered. |
 | Versioned references | Official Node release-line docs, exact runtime/OS observations, no cross-platform guarantee. |
-| Coverage mapping | D03-C10 approved editorially; D03-C11 authored/in_review; no D03 catalog/PRD/implemented project evidence. |
+| Coverage mapping | D03-C10 approved editorially; D03-C11 learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C11 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Next: author Chapter 12 — Child Processes, IPC and Cluster Boundaries — only; submit it for learner review before Chapter 13. Learner assessment and implementation remain deferred.
+**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C11 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Learner assessment remains deferred.

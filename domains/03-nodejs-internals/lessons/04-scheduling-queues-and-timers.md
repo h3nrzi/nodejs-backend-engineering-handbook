@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner authorized progression after the Chapter 04 review request on 2026-10-12.  
 **Prerequisite review:** learner authorized continuation after the Chapter 03 review request on 2026-10-12; Chapter 03 is recorded as editorially approved.  
 **Educational execution:** Section 13 records executed fixtures and their limits.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes and prerequisites
 
@@ -269,4 +269,4 @@ Twelve execution scenarios checked relationships, termination and error outcomes
 | Exercises | Eight future-study questions with answer criteria; assessment deferred. |
 | Honest gaps | No fairness/throughput proof, durable scheduler, fatal-error recovery or source-internal audit. |
 
-**Review outcome:** author quality-gate review completed; learner authorized progression after the Chapter 04 review request on 2026-10-12. Chapter 04 is editorially approved. Next: Chapter 05 — EventEmitter and Callback Contracts — is authored/in_review and requires learner review before Chapter 06.
+**Review outcome:** author quality-gate review completed; learner authorized progression after the Chapter 04 review request on 2026-10-12. Chapter 04 is editorially approved. D03 educational authoring is complete; see [current D03 status](../README.md).

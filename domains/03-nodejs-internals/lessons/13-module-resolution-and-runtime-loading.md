@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — explicitly confirmed 2026-10-13.  
 **Prerequisite approval:** D03 Chapters 01–12 learner-approved; Chapter 12 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 17 records 27 checked invocations (nine fixture entry points, three runs each) on Node v22.16.0 / Linux x64. One intentionally failing ESM cycle is a **passed negative-path check**, not a successful application run.  
-**Study assessment / project implementation:** deferred / not_started.
+**Study assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes, prerequisites and scope
 
@@ -584,7 +584,7 @@ Passing future questions does not automatically establish working project implem
 
 **What these checks do not prove:** all package-manager layouts, symlink flags, Windows path/case behavior, Node 18/20/24/26 compatibility, TypeScript compiler transformation, custom loaders, bundler output, native add-ons, browser import maps, complete security or production release readiness. No claims about learner mastery, implemented portfolio projects or comprehensive module-source audit follow from these runs.
 
-## 18. Coverage audit and next editorial gate
+## 18. Coverage audit and editorial closure
 
 | Handbook quality gate | Evidence | Gap / reservation |
 |---|---|---|
@@ -594,6 +594,6 @@ Passing future questions does not automatically establish working project implem
 | Realistic backend diagnosis | Sections 12–14: emitted JS, runtime conditions, startup ordering, ambiguous errors | Not an approved architecture or bundler |
 | Security/performance tradeoffs | Sections 6, 8, 13, 15: export encapsulation, cache growth, module execution authority | Not an untrusted plugin sandbox |
 | Exercises, answers, references | Sections 16–17 | No learner assessment administered |
-| Coverage matrix | D03-C12 learner-approved; D03-C13 authored/in_review; D03 project catalog/PRDs and implementation not_started | No implementation or mastery evidence |
+| Coverage matrix | D03-C12 learner-approved; D03-C13 learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. | No implementation or mastery evidence |
 
-**Author editorial/quality review:** completed against `docs/quality-gates.md`, the D03-C13 curriculum and official release-line module documentation. Versioned fixture outcomes are recorded without universalizing Node v22 behavior. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 14 — V8 Execution, Memory and Garbage Collection — is the next authoring unit, followed by explicit learner review before Chapter 15. Assessments and project implementation remain deferred.
+**Author editorial/quality review:** completed against `docs/quality-gates.md`, the D03-C13 curriculum and official release-line module documentation. Versioned fixture outcomes are recorded without universalizing Node v22 behavior. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Assessments remain deferred.

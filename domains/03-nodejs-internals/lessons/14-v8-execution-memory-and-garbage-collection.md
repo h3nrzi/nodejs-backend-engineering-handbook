@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite approvals:** D03 Chapters 01–13 learner-approved; Chapter 13 approved explicitly on 2026-10-13.  
 **Educational execution:** Section 18 records six independently launched Node v22.16.0/Linux x64 example fixtures, each checked three times (18 successful process runs); GC traces and optimization events are version-specific observations, not contractual results.  
-**Study assessment / project implementation:** deferred / not_started.
+**Study assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Learning outcomes and boundaries
 
@@ -495,6 +495,6 @@ The execution checks prove **only those scoped educational observations**. They 
 | Practical diagnostic case study | Sections 13–15 on memory incidents, snapshot risk and competing causes | No production incident reproduced |
 | Exercises and answer rubric | Section 17; no learner answers, grade or study phase | Assessment deferred |
 | Official docs and versioned evidence | Section 18, exact Node/V8/OS and launch flags | No V8 source-revision proof |
-| Coverage and project status | D03-C13 learner-approved editorially; D03-C14 authored/in_review; D03 catalog/PRDs, implementation and assessments not_started/deferred | No competency certification |
+| Coverage and project status | D03-C13 learner-approved editorially; D03-C14 learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. | No competency certification |
 
-**Author quality review:** complete against `docs/quality-gates.md` and D03-C14 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. The next unit is Chapter 15 — Async Context and Diagnostic Causality — to be authored for a separate learner review; Chapter 16 must not start before that review. Learning assessments and project implementation remain deferred.
+**Author quality review:** complete against `docs/quality-gates.md` and D03-C14 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Learning assessments remain deferred.

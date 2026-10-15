@@ -132,6 +132,8 @@ Project IDs link through the registry above. All gaps below also have **no imple
 **Review — 2026-10-13, MediaForge repository setup:** Verified external [h3nrzi/mediaforge](https://github.com/h3nrzi/mediaforge) and initial Matt setup configuration at commit [`91bcfca`](https://github.com/h3nrzi/mediaforge/commit/91bcfca). **Reviewed; no mapping change.** Agent configuration and issue-tracker choices are process setup, not implementation evidence, tested competency, or any new approved Charter scope. Existing D03-P02 mappings unchanged.
 
 
+**D03 editorial reconciliation — 2026-10-15:** C11 transfer semantics and current-facing D03 status language corrected after Product Owner acceptance of visual commit `09c12651b8087682d87d1bbc7b8201b914f3db5d`. **Reviewed; no mapping change:** all competency IDs, direct/supporting assignments, approved Charter challenges and editorial approvals unchanged. Historical dated reviews retained. Implementation/tests remain unverified and learner assessment deferred. [Correction evidence](../docs/visual-d03/editorial-corrections.md).
+
 ## D04 — Approved editorial coverage
 
 **Current snapshot — 2026-10-15:** The Product Owner explicitly approved the [curriculum and 18 lessons](../domains/04-network-protocol-engineering/curriculum.md), [six catalog concepts and six Educational Project Charters](../domains/04-network-protocol-engineering/projects/catalog.md), domain editorial coverage and educational authoring completion. Total: **66/66 lessons and 20/20 educational Charters editorially approved**, zero in_review. [Approval source, verified baseline and limits](../domains/04-network-protocol-engineering/evidence/editorial-approval.md). Historical dated reviews retain the original counts and statuses at their time.

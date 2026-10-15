@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-12.  
 **Prerequisite approval:** learner approved Chapter 01 on 2026-10-12.  
 **Educational execution evidence:** Section 14 records the actual environment and checked scenarios.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## Outcomes and prerequisites
 
@@ -357,4 +357,4 @@ Additional official references: [ESM](https://github.com/nodejs/node/blob/main/d
 | Version/reference honesty | Exact runtime, dated official checks and scoped observations. |
 | Coverage | D03-C01 and D03-C02 learner-approved editorially; no product, assessment or implementation coverage is inferred. |
 
-**Author quality review:** completed against handbook quality gates. **Next:** author Chapter 03 — The Event Loop and I/O Lifecycle — only, then request its learner editorial review. A chapter's editorial approval does not approve a runtime configuration for an external project.
+**Author quality review:** completed against handbook quality gates. D03 educational authoring is complete; see [current D03 status](../README.md). A chapter's editorial approval does not approve a runtime configuration for an external project.

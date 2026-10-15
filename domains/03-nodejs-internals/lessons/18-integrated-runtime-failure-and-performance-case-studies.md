@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — explicit learner approval on 2026-10-13. Educational examples and author quality review are separate from learner study assessment.  
 **Prerequisites:** D03 Chapters 01–17 learner-approved editorially; Chapter 17 explicitly approved on 2026-10-13.  
 **Educational evidence:** Seven self-contained integration case fixtures each tested three times, plus six additional thread-pool contrast runs: **27 local Node process invocations with expected results** on Node v22.16.0, Linux x64; reproducible commands and numerical limitations in Section 19.  
-**Learner assessment / portfolio implementation:** deferred / not_started.
+**Learner assessment / portfolio implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Purpose: diagnose systems, not memorize APIs
 
@@ -23,7 +23,7 @@ By the end of this chapter, a learner should be able to:
 
 **Prerequisites:** [Event Loop and I/O](03-event-loop-and-io-lifecycle.md), [Scheduling](04-scheduling-queues-and-timers.md), [Stream Mechanics](08-readable-and-writable-stream-mechanics.md), [Pipelines and Cancellation](09-pipelines-transforms-and-cancellation.md), [Native Async Work](10-native-asynchronous-work-and-thread-pool-saturation.md), [Worker Data Ownership](11-worker-threads-and-data-ownership.md), [Child Processes](12-child-processes-ipc-and-cluster-boundaries.md), [Module Loading](13-module-resolution-and-runtime-loading.md), [V8 Memory/GC](14-v8-execution-memory-and-garbage-collection.md), [Async Diagnostic Context](15-async-context-and-diagnostic-causality.md), [Graceful Shutdown](16-runtime-failures-and-graceful-shutdown.md), and [Runtime Diagnostics](17-runtime-diagnostics-and-measurement.md).
 
-**Scope:** Educational Node/runtime observation, not production troubleshooting authority over customer systems. No framework, SQL database, queue, deployment topology, trace vendor, worker count, shutdown budget, retry policy, request size limit or portfolio-product implementation is selected in this lesson. Product catalogs and implementation-neutral PRDs are **separate gates after explicit approval of the completed lessons**.
+**Scope:** Educational Node/runtime observation, not production troubleshooting authority over customer systems. No framework, SQL database, queue, deployment topology, trace vendor, worker count, shutdown budget, retry policy, request size limit or portfolio-product implementation is selected in this lesson. The D03 catalog and educational Project Charters are approved; Codex-authored Final PRDs belong to a separate implementation workflow.
 
 ## 2. The investigation contract
 
@@ -536,7 +536,7 @@ All case examples are intentionally **local and non-production**. The source and
 | “Shutdown callback completed, so provider transaction rolled back.” | Resource closure is a local lifecycle event, not remote outcome authority. |
 | “Same trace ID and sorted timestamps prove global causal order.” | Context correlation is not a reliable distributed happens-before or commit record. |
 | “Educational fixture execution proves the learner mastered the domain.” | Teaching material, learner assessment and real project implementation are separate evidence gates. |
-| “The next step is to implement this lesson's architecture in the handbook.” | Project candidates and implementation-neutral PRDs follow lesson approval; implementation is in separate repos. |
+| “The next step is to implement this lesson's architecture in the handbook.” | Educational project catalog and Charters follow lesson approval; Codex authors Final PRDs and implementation in separate selected-project repos. |
 
 ## 17. Future exercises with answer criteria — not administered
 
@@ -552,6 +552,8 @@ All case examples are intentionally **local and non-production**. The source and
 10. **Security:** why shouldn't you put raw `process.report` or a production heap snapshot in a public issue? **Answer:** sensitive environment/process state and potentially customer data.
 11. **Product boundary:** can this chapter prescribe a mandatory job queue, retry count or shutdown timeout for future PRDs? **Answer:** no; only approved product behavior and later technical discovery have that authority.
 12. **Workflow:** what comes after editorial approval of C18? **Answer:** reconcile full D03 teaching coverage; develop/review distinct D03 project candidate catalog, then implementation-neutral PRDs; study assessments stay deferred and no implementation is implied.
+
+**Workflow V2 clarification for exercise 12:** the historical “implementation-neutral PRDs” step means educational Project Charters in this Handbook. The D03 catalog, Charters and coverage audit are now complete. Codex authors Final PRDs only in separate selected-project repositories, with explicit learner approval; MediaForge has reached approved Module 01 ticket planning without verified implementation/tests.
 
 No learner answers or assessed competency have been recorded. These are **study materials**, not a proficiency exam.
 
@@ -570,7 +572,7 @@ No learner answers or assessed competency have been recorded. These are **study 
 | 17 Diagnostics/measurement | Falsifiable hypotheses, scoped clocks, observer limits | No production APM/security or SLO guarantee |
 | 18 Integrated cases | Seven independent reproducible negative/positive examples and comparison | Editorially approved by learner on 2026-10-13; assessed learner mastery deferred |
 
-This is a **chapter-content audit**, not a claim that all real-world Node/runtime failure modes are exhausted. The D03 learning domain's project-candidate/PRD phase has **not started**, and its content gate must remain open until Chapter 18 receives explicit learner approval plus the required Coverage Matrix reconciliation.
+This is a **chapter-content audit**, not a claim that all real-world Node/runtime failure modes are exhausted. All 18 D03 lessons, the five-concept catalog and five educational Project Charters are editorially approved; the D03 content gate closed after the required Coverage Matrix reconciliation. Implementation and learner competency remain unverified/unassessed.
 
 **Cross-domain future boundaries:** D04 web/API and protocol design, subsequent data/security/distributed systems, D12 performance and capacity, D13 reliability engineering, D15 platform deployment and D16 production observability. A runtime teaching example must not silently preselect architecture for any of those project plans.
 
@@ -610,6 +612,6 @@ This is a **chapter-content audit**, not a claim that all real-world Node/runtim
 | Scientific diagnostic reasoning | Sections 2, 12–14; falsifiable hypotheses, controls, uncertainty and evidence template |
 | Case studies, exercises and answer rubrics | Sections 4–17; 12 future exercises, no learner study assessment |
 | Versioned official references | Section 19, exact Node/V8/OS and release-line docs |
-| Coverage and authority | D03-C17 and D03-C18 **learner-approved editorially**; D03 project catalog subject to separate review; D03 product PRDs, assessments and implementation **not_started/deferred** |
+| Coverage and authority | D03-C17 and D03-C18 **learner-approved editorially**; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the D03-C18 learner-approved curriculum. **Learner editorial approval was explicitly granted on 2026-10-13.** All 18 D03 lessons are learner-approved editorially, subject to global coverage reconciliation recorded in the tracker. The D03 project candidate catalog is the next separate review gate; do not author PRDs until catalog direction is approved. No study assessment, verified learner competence, production result or implemented project is implied.
+**Author quality review:** completed against `docs/quality-gates.md` and the D03-C18 learner-approved curriculum. **Learner editorial approval was explicitly granted on 2026-10-13.** All 18 D03 lessons, five catalog concepts and five educational Project Charters are editorially approved; the D03 authoring gate is closed after coverage reconciliation. See [current D03 status](../README.md). No study assessment, verified learner competence, production result or implemented project is implied.

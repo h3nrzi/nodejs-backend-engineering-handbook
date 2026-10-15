@@ -5,13 +5,13 @@
 **Editorial status:** approved_by_learner — explicit approval recorded on 2026-10-13.  
 **Prerequisite review:** learner explicitly approved Chapter 07 on 2026-10-12.  
 **Educational execution:** Section 12 records executed fixtures and limits.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes and prerequisites
 
 Trace chunks through production, buffering and consumption. Choose one Readable consumption style, explain byte versus object accounting, stop a Writable producer on pressure, and distinguish input exhaustion, successful write completion and resource closure. Diagnose a stalled sink without treating its threshold as a process memory limit.
 
-Prerequisites: [EventEmitter contracts](05-eventemitter-and-callback-contracts.md), [Buffers and encoding](06-buffers-bytes-and-text-encoding.md), [Filesystem ownership](07-filesystem-io-and-resource-ownership.md) and D02 iteration/Promises. These finite educational simulations select no project architecture or implementation. Transforms, coordinated pipeline cleanup, cancellation and Web stream interop belong to Chapter 09, which remains not_started.
+Prerequisites: [EventEmitter contracts](05-eventemitter-and-callback-contracts.md), [Buffers and encoding](06-buffers-bytes-and-text-encoding.md), [Filesystem ownership](07-filesystem-io-and-resource-ownership.md) and D02 iteration/Promises. These finite educational simulations select no project architecture or implementation. Transforms, coordinated pipeline cleanup, cancellation and Web stream interop belong to Chapter 09, which is editorially approved.
 
 ## 2. First principles: incremental work needs a protocol
 
@@ -371,8 +371,8 @@ Future self-assessment: explain all fixture outcomes, distinguish source/sink/re
 - [x] Exercises/rubric, references and coverage reconciliation.
 - [x] Learner editorial approval — explicit confirmation on 2026-10-13.
 
-Gaps: no exhaustive API inventory, `_writev`/cork tuning, native C++ stream internals, production recovery or assessed competency. Transform/Duplex composition, pipeline/finished, cancellation, early consumer exit and Node/Web interoperability belong to Chapter 09. D03 catalog/PRDs and implementation remain not_started.
+Gaps: no exhaustive API inventory, `_writev`/cork tuning, native C++ stream internals, production recovery or assessed competency. Transform/Duplex composition, pipeline/finished, cancellation, early consumer exit and Node/Web interoperability belong to Chapter 09. The D03 catalog and five educational Project Charters are editorially approved; project implementation remains unverified.
 
 **Author review outcome — 2026-10-12:** checked against `docs/quality-gates.md` and the approved D03-C08 scope. Progressive teaching, consumption/accounting/pressure mechanisms, finite failure and lifecycle examples, references, exercises and evidence limits are present. The four exact code blocks passed thirteen scenarios; canonical state, indexes and coverage matrix reconciled. Learner editorial approval recorded on 2026-10-13.
 
-**Review outcome:** learner explicitly approved Chapter 08 on 2026-10-13. Chapter 09 is now authored/in_review; review Chapter 09 before Chapter 10.
+**Review outcome:** learner explicitly approved Chapter 08 on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md).

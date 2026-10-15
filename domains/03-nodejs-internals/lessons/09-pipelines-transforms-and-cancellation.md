@@ -5,13 +5,13 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite review:** learner explicitly approved Chapter 08 on 2026-10-13.  
 **Educational execution:** Section 13 records executed commands, outcomes and limits.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes and prerequisites
 
 Compose incremental stages with one outcome owner; explain independent Duplex sides and Transform output/finalization; observe failure and cleanup across a pipeline; distinguish cancelling a wait from cancelling work; handle early iteration exit; and translate Node/Web stream ownership and queue contracts without assuming their APIs are interchangeable.
 
-Prerequisites: [Chapter 08 — stream mechanics](08-readable-and-writable-stream-mechanics.md), [Chapter 06 — bytes and encoding](06-buffers-bytes-and-text-encoding.md), [Chapter 07 — file/resource ownership](07-filesystem-io-and-resource-ownership.md), and D02 Promise/iteration/cancellation concepts. Fixtures are bounded educational code, not project implementations. No product architecture, storage or deployment choice is made here. Native thread-pool saturation is Chapter 10, which remains not_started.
+Prerequisites: [Chapter 08 — stream mechanics](08-readable-and-writable-stream-mechanics.md), [Chapter 06 — bytes and encoding](06-buffers-bytes-and-text-encoding.md), [Chapter 07 — file/resource ownership](07-filesystem-io-and-resource-ownership.md), and D02 Promise/iteration/cancellation concepts. Fixtures are bounded educational code, not project implementations. No product architecture, storage or deployment choice is made here. Native thread-pool saturation is Chapter 10, which is editorially approved.
 
 ## 2. First principles: a chain has more than one outcome
 
@@ -386,8 +386,8 @@ Future self-assessment: trace success/failure/cancellation through each particip
 - [x] Canonical state, tracker, indexes and coverage matrix reconciliation.
 - [x] Learner editorial approval of Chapter 09 — confirmed 2026-10-13.
 
-Honest gaps: no comprehensive compose API tour, BYOB byte-reader tuning, native stream internals, real transport crash/recovery testing or production fault policies. Thread-pool contention belongs to Chapter 10; comprehensive runtime shutdown to Chapter 16. D03 project catalog/PRDs and implementation remain not_started.
+Honest gaps: no comprehensive compose API tour, BYOB byte-reader tuning, native stream internals, real transport crash/recovery testing or production fault policies. Thread-pool contention belongs to Chapter 10; comprehensive runtime shutdown to Chapter 16. The D03 catalog and five educational Project Charters are editorially approved; project implementation remains unverified.
 
 **Author quality-gate review — 2026-10-13:** progressive teaching, mechanisms, bounded runnable examples, intentional failures, lifecycle ownership, references, exercises and evidence limits checked against `docs/quality-gates.md` and D03-C09 curriculum scope. Learner editorial approval was received on 2026-10-13; technical/project implementation and learning assessment remain deferred.
 
-**Next action:** Chapter 10 — Native Asynchronous Work and Thread-Pool Saturation — is the next lesson to author, then submit for learner editorial review. No approval of Chapter 10 is implied.
+**Current editorial state:** D03 educational authoring is complete; see [current D03 status](../README.md).

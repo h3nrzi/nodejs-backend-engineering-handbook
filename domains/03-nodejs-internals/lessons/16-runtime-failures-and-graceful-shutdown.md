@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisites:** Chapters 01–15 of D03 learner-approved; Chapter 15 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 18 records seven independent ESM fixtures run three times each: **21/21 expected-outcome checks**, Node v22.16.0 / Linux x64.  
-**Learning assessments / project implementation:** deferred / not_started.
+**Learning assessments / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes, prerequisites and scope
 
@@ -579,6 +579,6 @@ No learner answers or grade were collected. A passed educational fixture does no
 | Error, security, resource ownership | Sections 8, 13–16 separate graceful/forced, side effects, retries and misleading success |
 | Version/OS caveats | Exact Node/Linux evidence and Node v22 docs; no Windows guarantee |
 | Backend case and exercises | Sections 15–17; learning assessment not administered |
-| Competency/PRD traceability | D03-C15 learner-approved; D03-C16 authored/in_review; D03 project catalog/PRDs and implementation not_started |
+| Competency/Charter traceability | D03-C15 learner-approved; D03-C16 learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
-**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C16 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 17 — Runtime Diagnostics and Measurement — has been authored/in_review and awaits separate learner approval before Chapter 18. Learning assessments and project implementation remain deferred.
+**Author quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C16 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Learning assessments remain deferred.

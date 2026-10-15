@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — explicitly confirmed by learner on 2026-10-13.  
 **Prerequisite approval:** Chapters 01–14 of D03 learner-approved; Chapter 14 explicitly approved on 2026-10-13.  
 **Educational execution:** Section 17 records five independent ESM fixtures run three times each (15/15 expected outcomes) on Node v22.16.0 / Linux x64.  
-**Learning assessment / product implementation:** deferred / not_started.
+**Learning assessment / product implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Outcomes, boundaries and prerequisites
 
@@ -493,6 +493,6 @@ No learner answers, scores, graded evidence or product implementation have been 
 | Security, errors and resource lifetimes | Sections 11, 13–15: mutable stores, diagnostic IDs not credentials, privacy and retention |
 | Backend case study and transfer | Section 15; educational case not a project requirement |
 | Exercises, official docs and environment | Sections 16–17; 15/15 checked fixture invocations, assessments deferred |
-| Global coverage | D03-C14 and D03-C15 learner-approved editorially (Chapter 15 explicitly approved 2026-10-13); D03 project catalog/PRDs and implementation not_started |
+| Global coverage | D03-C14 and D03-C15 learner-approved editorially (Chapter 15 explicitly approved 2026-10-13); D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
-**Author editorial quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C15 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 16 — Runtime Failures and Graceful Shutdown — is authored/in_review and awaits a separate learner approval before Chapter 17. Learning assessments and product implementation remain deferred.
+**Author editorial quality review:** completed against `docs/quality-gates.md` and the learner-approved D03-C15 curriculum. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Learning assessments remain deferred.

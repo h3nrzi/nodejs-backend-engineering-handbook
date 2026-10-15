@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — learner explicitly approved on 2026-10-13.  
 **Prerequisite review:** D03 Chapters 01–11 editorially approved; Chapter 11 explicitly approved on 2026-10-13.  
 **Educational execution evidence:** Section 17 records exact Node v22.16.0/Linux test fixtures and scoped observations.  
-**Learner assessment / project implementation:** deferred / not_started.
+**Learner assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## 1. Learning outcomes, boundaries and prerequisites
 
@@ -568,8 +568,8 @@ The fixture logs are scoped evidence of **observable behavior**, not proof of na
 | Security/performance and portability | Sections 3, 6, 8, 13–15 show injection, bounded output, OS shell/signal differences and process costs. |
 | Exercises/answer rubric | Section 16; no actual learning assessment. |
 | Documented references and versioned verification | This section and links above; observations restricted to Node v22.16.0/Linux x64. |
-| Coverage matrix | D03-C11 learner-approved editorially; D03-C12 authored/in_review; no D03 PRD or product implementation evidence. |
+| Coverage matrix | D03-C11 learner-approved editorially; D03-C12 learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
 **Remaining gaps:** exhaustive OS process-group semantics, actual process supervisor implementation, high-availability deployment, real-file descriptor transfer, native IPC internals, benchmarked production clustering, and policy for remote side effects. Those are not silently required by this lesson. Deeper error/shutdown lifecycles → Chapter 16; comprehensive diagnostics → Chapter 17; architecture/platform systems → later domains.
 
-**Author quality review:** complete against `docs/quality-gates.md` and approved D03 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. Chapter 13 — Module Resolution and Runtime Loading — is now authored/in_review and awaits learner approval before Chapter 14. Learning assessment and implementation remain deferred.
+**Author quality review:** complete against `docs/quality-gates.md` and approved D03 curriculum scope. **Learner editorial approval:** explicitly confirmed on 2026-10-13. D03 educational authoring is complete; see [current D03 status](../README.md). Learning assessment remains deferred.

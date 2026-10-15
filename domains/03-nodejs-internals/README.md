@@ -5,7 +5,7 @@
 **Status:** completed — **D03 content-authoring gate closed after explicit approval of all 18 lessons, five catalog concepts and five Project Charters and final Coverage Matrix audit**. This does not assess student proficiency or imply a built project.  
 **Curriculum:** [18-chapter plan](curriculum.md), approved_by_learner on 2026-10-12.  
 **Lessons:** 18/18 authored and approved_by_learner editorially; lesson-authoring gate closed after coverage reconciliation.  
-**Project catalog:** [five concepts](projects/catalog.md) approved on 2026-10-13. **Project Charters:** **5/5 learner-approved at product scope** on 2026-10-13; technical discovery and implementation not_started.  
+**Project catalog:** [five concepts](projects/catalog.md) approved on 2026-10-13. **Project Charters:** **5/5 learner-approved educational directions** on 2026-10-13; Charter approval does not establish Final PRD or implementation readiness.\
 **Assessment:** deferred_until_learning_phase.  
 **External MediaForge planning:** Module 01 tickets approved; implementation/tests not verified. See [registry](../../projects/implementations/mediaforge.md).
 
@@ -58,17 +58,17 @@ Runtime architecture/startup → event loop/scheduling/events → buffers/files/
 ## Approved D03 Project Charters
 
 - [P01 — IntakeLedger](projects/p01-intakeledger-verified-file-intake-charter.md) — learner-approved product boundaries; detailed policies open.
-- [P02 — MediaForge](projects/p02-mediaforge-asset-processing-charter.md) — learner-approved product boundaries; detailed policies open.
+- [P02 — MediaForge](projects/p02-mediaforge-asset-processing-charter.md) — learner-approved educational direction; subsequent external planning through Module 01 tickets is recorded in the [registry](../../projects/implementations/mediaforge.md).
 - [P03 — NodeScope](projects/p03-nodescope-runtime-incident-evidence-charter.md) — learner-approved product boundaries; detailed policies open.
 - [P04 — PackageClinic](projects/p04-packageclinic-runtime-preflight-charter.md) — learner-approved **trusted, authorized test execution only**, no public arbitrary-code execution.
 - [P05 — LiveRoom](projects/p05-liveroom-interactive-session-charter.md) — learner-approved product boundaries; detailed policies open.
 
-All five Charters were approved together on **2026-10-13**; each remains a separately traceable product. None is implementation-ready solely because its product scope is approved. Technical architecture belongs to Codex's skill-guided discovery in an independent project repository **only if the learner later selects a product to implement**.
+All five Charters were approved together on **2026-10-13**; each remains a separately traceable product. None is implementation-ready solely because its educational direction is approved. Technical architecture belongs to Codex's module-scoped discovery in an independent project repository after project selection and learner-approved product planning. MediaForge has reached approved Module 01 ticket planning; implementation and tests remain unverified.
 
 ## Next action and handoff
 
-D03 content-authoring is **complete**: 18/18 lesson chapters, 5/5 catalog concepts and 5/5 educational Project Charters approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) audits all 48 D01–D03 lesson mappings and **14 approved Charters**; all actual product implementations remain not_started, and learner assessments deferred. The next handbook content phase is **D04 — Network & Protocol Engineering**, beginning with curriculum/outline creation and learner review—not project implementation or assumed study assessment.
+D03 content-authoring is **complete**: 18/18 lesson chapters, 5/5 catalog concepts and 5/5 educational Project Charters approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) now records **66 approved lessons and 20 approved educational Charters across D01–D04**. D04's educational authoring gate closed on 2026-10-15; D05 remains not_started and requires a separate instruction. MediaForge has approved external planning through Module 01 tickets, without verified implementation/tests; learner assessments remain deferred. No new domain authoring or project selection is initiated by this status reconciliation.
 
 [Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
-**Coverage review — 2026-10-13:** All 18 D03 chapter mappings learner-approved editorially, with 30 approved D01/D02 mappings unchanged; **14 Project Charters approved** (nine D01/D02 unchanged plus five D03 batch approvals). D03 competency challenges mapped to actual approved PRD scope without mandating technical methods; no learner assessment, product implementation or architecture evidence.
+**Historical coverage review — 2026-10-13:** All 18 D03 chapter mappings learner-approved editorially, with 30 approved D01/D02 mappings unchanged; **14 Project Charters approved** (nine D01/D02 unchanged plus five D03 batch approvals). Under Workflow V2, the scope reviewed here is educational Charter scope, formerly labeled pre-V2 PRD scope, without mandated technical methods; this review supplies no learner assessment, product implementation or architecture evidence.

@@ -5,7 +5,7 @@
 **Editorial status:** approved_by_learner — explicitly confirmed on 2026-10-12.  
 **Curriculum approval:** learner confirmed the 18-chapter plan on 2026-10-12.  
 **Educational example execution:** see Section 14 for exact environment and observations.  
-**Assessment / project implementation:** deferred / not_started.
+**Assessment / project implementation:** deferred / no verified implementation (see [D03 status](../README.md)).
 
 ## Outcomes and prerequisites
 
@@ -326,8 +326,8 @@ Additional official entry points for the next chapters: [Node API reference](htt
 | Edge cases and trade-offs | Read rejection, JS/native congestion, preparation cost, ownership/isolation and instrumentation limits. |
 | Exercises and answer guidance | Seven future-study exercises; no active assessment. |
 | References and version honesty | Official references, dated checks and exact execution manifest. |
-| Coverage and gaps | D03-C01 authored and learner-approved editorially; no assessed competency or PRD/implementation mapping. |
+| Coverage and gaps | D03-C01 authored and learner-approved editorially; D03 catalog and five educational Project Charters approved; no verified implementation or assessed competency. |
 
 **Remaining coverage:** startup details → Chapter 02; loop/queue order → 03–04; events → 05; byte and file ownership → 06–07; stream internals → 08–09; pool contention → 10; Worker/process lifecycle and shared-memory synchronization → 11–12; runtime module loading → 13; V8/GC → 14; async context → 15; failure/shutdown → 16; detailed profiling → 17; integrated investigations → 18. This chapter does not claim exhaustive Node internals, native-addon safety or formal correctness.
 
-**Review outcome:** author quality-gate review completed and learner editorial approval explicitly confirmed on 2026-10-12. Chapter 02 is now authored and awaiting its own review; learner assessment remains deferred.
+**Review outcome:** author quality-gate review completed and learner editorial approval explicitly confirmed on 2026-10-12. D03 educational authoring is complete; see [current D03 status](../README.md). Learner assessment remains deferred.

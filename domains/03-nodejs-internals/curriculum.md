@@ -10,7 +10,7 @@
 
 Teach how Node.js runs code, schedules callbacks, handles bytes and I/O, manages memory and resources, isolates CPU work and exposes evidence for diagnosis. Move from execution models to mechanisms, failure modes and measured case studies. Prerequisites: D01 correctness, OS/memory/I/O/concurrency fundamentals and D02 language, async, type/runtime and module distinctions.
 
-The learner-approved breadth is **18 chapters**. Each is a self-contained beginner-to-advanced lesson to be written and reviewed individually under the approved plan. The list defines teaching objectives, not an implementation stack or requirements for future products.
+The learner-approved breadth is **18 chapters**. Each self-contained beginner-to-advanced lesson has been authored and editorially approved under the plan. The list defines teaching objectives, not an implementation stack or requirements for future products.
 
 ## Version and evidence policy
 
@@ -76,21 +76,21 @@ Each chapter must include:
 
 Scheduling exercises must distinguish guaranteed order from permitted alternatives. Stream exercises must separate pressure thresholds from hard memory guarantees. Worker exercises must distinguish cloned, transferred and shared ownership. Diagnostic exercises must separate observed evidence from inferred causes.
 
-## Project planning after lessons
+## Project planning after lessons — historical sequence
 
-Do not finalize project candidates now. After all approved lessons, develop a distinct catalog around real user problems, then review concepts and author educational Project Charters individually. Compare candidate coverage and non-goals against D01/D02's nine products to avoid duplicating the workload observatory, allocation/dependency simulators, dataset workspace, contract studio, dispatch console, policy workspace, package registry or subscription console.
+The approved authoring sequence was lessons → distinct catalog around real user problems → concept review → educational Project Charters → coverage audit. That sequence is complete: five concepts and five Charters were approved on 2026-10-13. Candidate coverage and non-goals were compared against D01/D02's nine products to avoid duplicating the workload observatory, allocation/dependency simulators, dataset workspace, contract studio, dispatch console, policy workspace, package registry or subscription console.
 
-A runtime learning objective does not force a particular worker, stream, queue or storage design in a PRD. Product boundaries and observable outcomes remain authoritative; consequential product decisions stay with the learner, with Matt/Codex discovery in the separate implementation repository.
+A runtime learning objective does not force a particular worker, stream, queue or storage design. Educational Charters frame learning challenges; Codex authors Product Discovery, Final PRD and Module Plan in the separate implementation repository, with explicit learner approval of consequential decisions, then conducts module-scoped technical discovery.
 
 ## Approval, tracking and next action
 
 1. **Completed 2026-10-12:** learner explicitly approved the 18-chapter breadth, sequence and domain boundaries.
 2. **All Chapters 01–18 approved editorially:** D03 lesson gate is complete following full coverage reconciliation. The five-candidate catalog and five educational Charters were approved; the D03 editorial gate is closed. Curriculum approval does not automatically approve any lesson.
 3. Reconcile the global coverage matrix whenever a lesson/project mapping changes, record it with both trackers, and keep planned versus authored/approved/evidenced progress separate.
-4. After lesson authoring: catalog review → educational Project Charters → coverage audit → domain content closure.
-5. Study assessments and project implementations remain deferred until explicitly initiated.
+4. **Completed:** catalog review → educational Project Charters → coverage audit → domain content closure.
+5. Study assessments remain deferred. MediaForge has approved external Module 01 planning through tickets; implementation/tests remain unverified. Other projects have no recorded implementation progress.
 
-**Next content-authoring gate:** D04 — Network & Protocol Engineering curriculum planning and explicit learner approval. D03 all 18 lessons and five educational Project Charters were approved on 2026-10-13; overall content-authoring gate completed after global Coverage Matrix review. Remaining numeric policies and detailed first-version behavior are resolved at optional separate project kickoff, with learner approval. Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapters 10–18 separately record Node v22.16.0/Linux observations. No project runtime is prescribed and no assessment/implementation evidence claimed.
+**Current content-authoring state:** D03 all 18 lessons and five educational Project Charters were approved on 2026-10-13; overall content-authoring gate completed after global Coverage Matrix review. D04's educational authoring gate also closed on 2026-10-15. D05 remains not_started; await a separate instruction before new domain authoring or project selection. Detailed product policies belong to separate learner-approved Codex planning; MediaForge's progress is recorded in the [implementation registry](../../projects/implementations/mediaforge.md). Chapters 01–09 report Node v26.4.0/macOS educational execution; Chapters 10–18 separately record Node v22.16.0/Linux observations. No project runtime is prescribed and no assessment/implementation evidence claimed.
 
 ## Starting official references
 
