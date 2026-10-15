@@ -25,3 +25,7 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 ## Learning versus project delivery
 
 The Handbook separates [curriculum and competency evidence](docs/learning-evidence.md) from [external engineering progress](projects/implementations/README.md). Learner-approved lessons/Charters do not prove mastery; approved project plans do not prove implemented behavior. [Information architecture](docs/information-architecture.md) defines these boundaries.
+
+## Curriculum quality audit
+
+[D01–D03 coverage and continuity audit](docs/curriculum-coverage-audit-2026-10-15.md) checks the 48 lesson-file/competency mappings, identifies stale editorial metadata and defines a deeper review rubric. It is not a certification or a claim of having reviewed every lesson line by line.
