@@ -1,6 +1,6 @@
 # Engineering competency coverage matrix
 
-**Status:** 48/48 D01–D03 lesson mappings approved editorially; **14/14 educational Project Charters approved by learner** (nine D01/D02 + five D03); no learner competency assessment or product implementation.  
+**Status:** 48/48 D01–D03 lesson mappings approved editorially; **14/14 educational Project Charters approved by learner** (nine D01/D02 + five D03); no verified learner competency assessment or project implementation. D03-P02 MediaForge has approved external Module 01 planning.  
 
 
 ## Interpretation and authority
@@ -8,9 +8,9 @@
 - Competency IDs below are local chapter-level traceability IDs introduced by this audit, not a pre-existing certification taxonomy or exhaustive subtopic checklist.
 - “Taught” means authored lesson content with editorial approval recorded in [canonical state](../tracking/state.json); it does not certify mastery or independent execution of educational examples.
 - “Charter challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
-- Every project remains an optional portfolio candidate with `approved_by_learner` educational-direction status, open product questions and `not_started` implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
+- Charters remain approved educational directions, not executable PRDs. MediaForge (D03-P02) has separately approved external project planning; no implementation evidence is yet verified. All other listed projects remain `not_started` for implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No implementation, assessed competence or learner study exercises. D04–D16 content authoring remains not_started.
+- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04–D16 content authoring remains not_started.
 
 ## Project traceability — D01/D02 nine approved Charters (plus five D03 below)
 
@@ -31,7 +31,7 @@
 | Project ID | Authoritative Charter — **approved_by_learner** | Approved observable product challenge | Implementation evidence |
 |---|---|---|---|
 | D03-P01 IntakeLedger | [Project Charter](../domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md) — approved_by_learner | accepted/rejected/incomplete file outcomes, retrievable verified artifacts, authorized handoff acknowledgment | None — not_started |
-| D03-P02 MediaForge | [Project Charter](../domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md) — approved_by_learner | source/preset-output provenance, mixed transformation outcomes, trustworthy cancellation/retry states | None — not_started |
+| D03-P02 MediaForge | [Project Charter](../domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md) — approved_by_learner | source/preset-output provenance, mixed transformation outcomes, trustworthy cancellation/retry states | [Module 01 ticket plan approved; implementation not verified](implementations/mediaforge.md) |
 | D03-P03 NodeScope | [Project Charter](../domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md) — approved_by_learner | scoped/attributed diagnostic evidence, provenance, redaction and inconclusive case reports | None — not_started |
 | D03-P04 PackageClinic | [Project Charter](../domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md) — approved_by_learner | trusted and authorized runtime preflight execution, versioned failure evidence and not-run honesty | None — not_started |
 | D03-P05 LiveRoom | [Project Charter](../domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md) — approved_by_learner | host-governed response windows, accepted vote counts, reconnect and closure outcomes | None — not_started |
