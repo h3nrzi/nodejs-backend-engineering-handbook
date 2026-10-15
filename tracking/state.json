@@ -1,16 +1,33 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-14",
+  "updated_on": "2026-10-15",
   "phase": "domain_authoring",
   "review": "approved_by_learner",
   "active_domain_id": null,
   "next_domain_id": "D04",
-  "active_deliverable": "Domain authoring: D01–D03 complete; D04 next",
-  "last_completed_step": "D01–D03: 48 editorially approved lessons and 14 educational Project Charters.",
-  "next_action": "Continue D04 domain lessons and Charters; when choosing a project, transfer its Charter to Codex for fresh Product Discovery.",
+  "active_deliverable": "D01–D03 curricula complete; MediaForge external planning active; D04 next for authoring",
+  "last_completed_step": "MediaForge D03-P02 Module 01 eight-ticket plan approved by learner; implementation not verified.",
+  "next_action": "MediaForge: collect implementation/testing evidence after learner runs tickets; curriculum authoring: D04 remains next.",
   "blockers": [],
   "open_decisions": [],
-  "current_implementation_project": null,
+  "current_implementation_project": {
+    "project_id": "D03-P02",
+    "name": "MediaForge",
+    "repository": "https://github.com/h3nrzi/mediaforge",
+    "charter": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+    "progress_stage": "module_01_ticket_plan_approved",
+    "source": "learner_reported_codex_handoffs",
+    "final_prd": "approved_by_learner",
+    "module_plan": "approved_by_learner",
+    "module_01_technical_discovery": "Q1-Q14_approved_by_learner",
+    "module_01_spec": "approved_by_learner",
+    "module_01_tickets": "8_ticket_plan_approved_by_learner",
+    "implementation_status": "not_verified",
+    "application_tests": "not_verified",
+    "module_acceptance": "not_verified",
+    "learner_competency": "not_assessed",
+    "registry": "projects/implementations/mediaforge.md"
+  },
   "domains": [
     {
       "id": "D01",
@@ -90,7 +107,7 @@
       "status": "content_complete",
       "lesson_status": "completed",
       "project_specs_status": "5_project_charters_approved_collectively_not_final_prds",
-      "implementation_status": "not_started",
+      "implementation_status": "external_planning_active_no_verified_implementation",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
       "curriculum_blueprint_path": "domains/03-nodejs-internals/curriculum.md",
@@ -368,7 +385,7 @@
       "project_prds_approved_count": 5,
       "project_progress": {
         "P01": "charter_approved_implementation_not_started",
-        "P02": "charter_approved_implementation_not_started",
+        "P02": "module_01_ticket_plan_approved_implementation_unverified",
         "P03": "charter_approved_implementation_not_started",
         "P04": "charter_approved_implementation_not_started",
         "P05": "charter_approved_implementation_not_started"
@@ -548,7 +565,13 @@
       "source_outline": null
     }
   ],
-  "history": [],
+  "history": [
+    {
+      "date": "2026-10-15",
+      "event": "Handbook restructuring audit, information architecture and external MediaForge implementation registry; D03-P02 planning progress reconciled without implementation or learner mastery claims.",
+      "evidence": "docs/restructure-audit-2026-10-15.md; projects/implementations/mediaforge.md"
+    }
+  ],
   "domain_authoring_sequence": [
     "curriculum_blueprint_and_approval",
     "lesson_authoring_and_reviews",
