@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "structural/status/code-hash verification against HEAD plus authored changes",
+  "results": {
+    "json_parse": "pass",
+    "lesson_count": 18,
+    "chapter_numbering_and_competency_ids": "pass",
+    "required_lesson_sections": "pass",
+    "charter_count": 6,
+    "project_identifiers_and_in_review_status": "pass",
+    "lab_sha256_matches_executed_manifest": "pass",
+    "non_D04_domain_records_unchanged": 15,
+    "external_MediaForge_state_unchanged": true,
+    "approved_D01_D03_lesson_and_Charter_files_unchanged": true,
+    "git_diff_check": "pass"
+  },
+  "limits": "Section presence is not independent educational certification; human review remains not_run."
+}

@@ -44,4 +44,4 @@ This was a **document consistency audit**, not a runtime test, independent verif
 
 ## Coverage limitation discovered in follow-up audit
 
-This report’s scope was the nine PRDs. It did not establish that the global `projects/coverage-matrix.md` or domain catalog/handoff prose had been reconciled. The matrix remained an empty scaffold and stale catalog/next-step wording survived. See [coverage follow-up audit](coverage-matrix-audit-2026-10-12.md) for the evidence, corrections and new mandatory review gate. The nine PRD product-scope approvals remain unchanged.
+This report’s scope was the nine PRDs. It did not establish that the global `projects/coverage-matrix.md` or domain catalog/handoff prose had been reconciled. The matrix remained an empty scaffold and stale catalog/next-step wording survived. The historical `docs/coverage-matrix-audit-2026-10-12.md` recorded the evidence, corrections and new mandatory review gate; it was later removed in commit `2ef8774` and remains recoverable from earlier Git history. See the [current coverage matrix](../projects/coverage-matrix.md) for maintained mappings. The nine PRD product-scope approvals remain unchanged.

@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-15",
   "phase": "domain_authoring",
-  "review": "approved_by_learner",
-  "active_domain_id": null,
-  "next_domain_id": "D04",
-  "active_deliverable": "D01–D03 curricula complete; MediaForge external planning active; D04 next for authoring",
-  "last_completed_step": "MediaForge D03-P02 Module 01 eight-ticket plan approved by learner; implementation not verified.",
-  "next_action": "MediaForge: collect implementation/testing evidence after learner runs tickets; curriculum authoring: D04 remains next.",
+  "review": "pending_learner_review",
+  "active_domain_id": "D04",
+  "next_domain_id": "D05",
+  "active_deliverable": "D04 complete educational draft: 18 lessons, catalog and six proposed Charters in_review",
+  "last_completed_step": "D04 authoring and 18 bounded educational labs completed; editorial approval pending.",
+  "next_action": "Learner reviews D04 curriculum, lessons, catalog and six Charters; stop at the educational review gate. Do not begin D05.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -438,11 +438,259 @@
       "id": "D04",
       "name": "Network & Protocol Engineering",
       "slug": "network-protocol-engineering",
-      "status": "not_started",
-      "lesson_status": "not_started",
-      "project_specs_status": "not_started",
+      "status": "in_review",
+      "lesson_status": "in_review",
+      "project_specs_status": "6_educational_charters_in_review_not_final_prds",
       "implementation_status": "not_started",
-      "source_outline": "prior_conversation_outline_only"
+      "source_outline": "authored_curriculum_2026-10-15",
+      "curriculum_blueprint_status": "in_review",
+      "curriculum_blueprint_path": "domains/04-network-protocol-engineering/curriculum.md",
+      "proposed_chapter_count": 18,
+      "chapter_progress": {
+        "01": "in_review",
+        "02": "in_review",
+        "03": "in_review",
+        "04": "in_review",
+        "05": "in_review",
+        "06": "in_review",
+        "07": "in_review",
+        "08": "in_review",
+        "09": "in_review",
+        "10": "in_review",
+        "11": "in_review",
+        "12": "in_review",
+        "13": "in_review",
+        "14": "in_review",
+        "15": "in_review",
+        "16": "in_review",
+        "17": "in_review",
+        "18": "in_review"
+      },
+      "assessment_status": "not_assessed",
+      "project_catalog_status": "in_review",
+      "project_catalog_path": "domains/04-network-protocol-engineering/projects/catalog.md",
+      "project_catalog_candidate_count": 6,
+      "project_catalog_approved_candidate_count": 0,
+      "project_charters_authored_count": 6,
+      "project_charters_in_review_count": 6,
+      "project_charters_approved_count": 0,
+      "project_progress": {
+        "P01": "charter_in_review_implementation_not_started",
+        "P02": "charter_in_review_implementation_not_started",
+        "P03": "charter_in_review_implementation_not_started",
+        "P04": "charter_in_review_implementation_not_started",
+        "P05": "charter_in_review_implementation_not_started",
+        "P06": "charter_in_review_implementation_not_started"
+      },
+      "project_charters": [
+        {
+          "id": "P01",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P02",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P03",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P04",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P05",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        },
+        {
+          "id": "P06",
+          "status": "in_review_educational_charter_not_final_prd",
+          "path": "domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md",
+          "concept_status": "in_review",
+          "implementation_status": "not_started"
+        }
+      ],
+      "chapter_execution_checks": {
+        "01": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "No routing/NAT capture or production throughput measurement."
+        },
+        "02": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Numeric lookup only; no actual wire DNS or family-failover test."
+        },
+        "03": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Half-close exercised; no real loss, congestion tuning or drain-pressure fixture."
+        },
+        "04": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "32 partitions of one small fixture; no broad fuzzing or optimized parser proof."
+        },
+        "05": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "One datagram plus gap model; no MTU, reorder or loss injection on the wire."
+        },
+        "06": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Synthetic name matching only; no certificate chain/handshake or mTLS test."
+        },
+        "07": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "URL/octet lab only; no browser CORS or authorization validation."
+        },
+        "08": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "One malformed-framing refusal; no intermediary parser-differential audit."
+        },
+        "09": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Local Agent reuse only; fetch pools, stale races and queue limits untested."
+        },
+        "10": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Exact-tag 304 only; ranges, compression variants and general cache untested."
+        },
+        "11": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Trust/removal model only; no authenticated ingress or real proxy."
+        },
+        "12": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Actual cleartext h2 streams; no TLS, flow-window fault or GOAWAY replay."
+        },
+        "13": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Pure ordering model; no actual QUIC/h3 execution or runtime qualification."
+        },
+        "14": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Handshake/mask calculations only; no complete WebSocket implementation."
+        },
+        "15": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "LF-only text subset; full grammar/browser/replay unexecuted."
+        },
+        "16": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "One opaque envelope/status model; protobuf/gRPC integration unexecuted."
+        },
+        "17": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Controlled action-before-client-failure; no durability, retry or remote rollback proof."
+        },
+        "18": {
+          "status": "bounded_educational_lab_passed",
+          "checked_on": "2026-10-15",
+          "node": "v24.22.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "limits": "Finite classification model; no production root cause or packet capture."
+        }
+      },
+      "review_guide": "domains/04-network-protocol-engineering/evidence/review-guide.md"
     },
     {
       "id": "D05",
@@ -570,6 +818,11 @@
       "date": "2026-10-15",
       "event": "Handbook restructuring audit, information architecture and external MediaForge implementation registry; D03-P02 planning progress reconciled without implementation or learner mastery claims.",
       "evidence": "docs/restructure-audit-2026-10-15.md; projects/implementations/mediaforge.md"
+    },
+    {
+      "date": "2026-10-15",
+      "event": "D04 full educational draft authored: 18 lessons and six proposed Charters in_review; 18 bounded local labs passed. No learner approval, portfolio implementation or competency assessment.",
+      "evidence": "domains/04-network-protocol-engineering/README.md; domains/04-network-protocol-engineering/evidence/educational-execution.md"
     }
   ],
   "domain_authoring_sequence": [
@@ -587,29 +840,33 @@
     "status": "learner_agreed_2026-10-12"
   },
   "coverage_matrix_review": {
-    "reviewed_on": "2026-10-13",
-    "status": "workflow_v2_charter_reclassification_reviewed_no_implementation_evidence",
+    "reviewed_on": "2026-10-15",
+    "status": "D04_draft_mapping_reviewed_pending_learner_approval",
     "path": "projects/coverage-matrix.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
     "domains": [
       "D01",
       "D02",
-      "D03"
+      "D03",
+      "D04"
     ],
     "prd_count": 14,
-    "chapter_mapping_count": 48,
+    "chapter_mapping_count": 66,
     "implementation_evidence": "No active implementation or verified acceptance evidence.",
     "assessment": "deferred",
     "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
     "latest_review_evidence": [
       "projects/coverage-matrix.md",
-      "docs/workflow.md"
+      "domains/04-network-protocol-engineering/evidence/educational-execution.md"
     ],
-    "mapping_change": "No mapping change: configuration setup is not implementation or assessed competency.",
+    "mapping_change": "Added 18 in_review D04 lesson mappings and six proposed, unapproved Charter challenge maps; approved D01–D03 mappings preserved.",
     "approved_chapter_mapping_count": 48,
-    "in_review_chapter_mapping_count": 0,
+    "in_review_chapter_mapping_count": 18,
     "approved_prd_count": 14,
     "authored_prd_count": 14,
-    "in_review_prd_count": 0
+    "in_review_prd_count": 0,
+    "authored_charter_count": 20,
+    "approved_charter_count": 14,
+    "in_review_charter_count": 6
   }
 }

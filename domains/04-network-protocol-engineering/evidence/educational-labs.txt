@@ -1,0 +1,19 @@
+PASS 01 address families, loopback exchange, serialization bound: ok
+PASS 02 numeric lookup and explicit cache/family models: ok
+PASS 03 half-close permits a response after request EOF: ok
+PASS 04 32 chunk partitions, empty frame, oversize and truncation: ok
+PASS 05 one loopback datagram; duplicate/gap accounting model: ok
+PASS 06 synthetic certificate hostname matches and mismatches: ok
+PASS 07 URL components, repeated keys, origins and octet length: ok
+PASS 08 complete UTF-8 response; ambiguous request rejected before handler: ok
+PASS 09 two consumed responses, one reused connection, complete 404: ok
+PASS 10 unconditional content then exact-tag 304 without content: ok
+PASS 11 untrusted assertion ignored; explicit trust and hop-field model: ok
+PASS 12 two independent responses on one cleartext h2 session: ok
+PASS 13 model only: independent stream ordering; shared budget can still stall: ok
+PASS 14 handshake accept vector and reversible masking: ok
+PASS 15 LF-only SSE model: bytewise UTF-8, multiline event, incomplete tail: ok
+PASS 16 one bounded opaque envelope; truncation and final-status model: ok
+PASS 17 caller failure coexists with server action; shared budget arithmetic: ok
+PASS 18 five evidence classifications preserve phase and uncertainty: ok
+18/18 educational labs passed

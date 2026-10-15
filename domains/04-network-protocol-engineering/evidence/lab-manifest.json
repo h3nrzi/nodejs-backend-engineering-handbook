@@ -1,0 +1,124 @@
+{
+  "checked_on": "2026-10-15",
+  "baseline_commit": "088d956494b23545c80fdac72c1adab14fd14cad",
+  "revision": "baseline plus uncommitted D04 educational authoring changes",
+  "environment": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "uv": "1.52.1",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "command": "node scripts/check-d04.mjs",
+  "labs": [
+    {
+      "chapter": "01",
+      "lesson": "domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md",
+      "lab_sha256": "bd1aaa41ff8270535235e7e98ad30e9da75cffe9d27f4a68953239aa010bf844",
+      "result": "pass"
+    },
+    {
+      "chapter": "02",
+      "lesson": "domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md",
+      "lab_sha256": "66f880fbc32a4eb826024ae40e4f0dfdb250d6b90c4924cc2cb734efe134263d",
+      "result": "pass"
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+      "lab_sha256": "3de1ec0db42662b27677c7031562503934b67ed525e31e23d7abdf1ce3e254c8",
+      "result": "pass"
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md",
+      "lab_sha256": "4866aff4eda8dedd23f635d40d2c96587c0a356df7ee8601b0fc071bcea6132d",
+      "result": "pass"
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md",
+      "lab_sha256": "ace261429e8352b0a62f13a8c0479acd6294342904ffc0dbeb681e73791e4ff8",
+      "result": "pass"
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+      "lab_sha256": "73fa1b2cab1b2176034a08cb309042ff97f4208793b4959757119356f4822e07",
+      "result": "pass"
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md",
+      "lab_sha256": "dfece33a981ca9a9b3e57cf83e92ffafb186cdca09679dcb315c679f1e08d349",
+      "result": "pass"
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md",
+      "lab_sha256": "d5d0681931e84717bcb43eeb66580b6501f4ea8c8c6a77f94844616207529128",
+      "result": "pass"
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md",
+      "lab_sha256": "b237ebf1530f5082522c4c69fae12a06e666c65b863311b2a02de846c166a83b",
+      "result": "pass"
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md",
+      "lab_sha256": "44943858fa250e308bc16e67ef6731e004f8047adce45c355bd940d19a4841f3",
+      "result": "pass"
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md",
+      "lab_sha256": "92d5502f8d8e06ab2bbaf2b931b61bde2574b6ee672fb10397ab132e5464ca6f",
+      "result": "pass"
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md",
+      "lab_sha256": "899b7f79e740625e8cd2165b9f7a5667058a06ef4c83801774581adca3c269d2",
+      "result": "pass"
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md",
+      "lab_sha256": "b4013b824d36e77cd9fd68152170fbe79a4036a2b9bbc2d6da4dfd8ae0e2de70",
+      "result": "pass"
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md",
+      "lab_sha256": "e45cb84ee6e785327e6dedba496e57ff6b3e939a9ca10a232b70ebe7cb42d100",
+      "result": "pass"
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md",
+      "lab_sha256": "641d150a5b3b858a1519e6274384c801f50cc7fcd7d8c07d22982163794e437d",
+      "result": "pass"
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md",
+      "lab_sha256": "dfeff2a8540bfafcefd5e9bc7b43803e501cf4e5c3f31888fa341a5f71ddd2ba",
+      "result": "pass"
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md",
+      "lab_sha256": "21f1d16006e0dd7e5547d1879ae5915dc227ecfffa0267d2672b7f200f7492e1",
+      "result": "pass"
+    },
+    {
+      "chapter": "18",
+      "lesson": "domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md",
+      "lab_sha256": "f829563bbc8a9fdd87a76aed403095b63b6999b5a6edd8f5ccfcf0186dc498eb",
+      "result": "pass"
+    }
+  ]
+}

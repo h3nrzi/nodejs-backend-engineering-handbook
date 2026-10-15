@@ -1,0 +1,305 @@
+{
+  "checked_on": "2026-10-15",
+  "method": "Initial HTTP GET of 55 distinct references; read at most 1024 bytes. Five direct TLS timeouts verified through web tool; one obsolete Wireshark URL corrected and rechecked. Initial failures retained.",
+  "references": [
+    {
+      "url": "https://fetch.spec.whatwg.org/#http-cors-protocol",
+      "initial_direct_fetch_error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+      "browser_verification": {
+        "checked_on": "2026-10-15",
+        "result": "opened successfully with web tool; page content returned",
+        "scope": "accessibility only; no direct-HTTP status inferred"
+      }
+    },
+    {
+      "url": "https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md",
+      "status": 200,
+      "resolved_url": "https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md"
+    },
+    {
+      "url": "https://grpc.io/docs/guides/deadlines/",
+      "initial_direct_fetch_error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+      "browser_verification": {
+        "checked_on": "2026-10-15",
+        "result": "opened successfully with web tool; page content returned",
+        "scope": "accessibility only; no direct-HTTP status inferred"
+      }
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
+      "initial_direct_fetch_error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+      "browser_verification": {
+        "checked_on": "2026-10-15",
+        "result": "opened successfully with web tool; page content returned",
+        "scope": "accessibility only; no direct-HTTP status inferred"
+      }
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/buffer.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/buffer.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/dgram.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/dgram.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/dns.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/dns.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/globals.html#class-abortcontroller",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/globals.html#class-abortcontroller"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/globals.html#fetch",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/globals.html#fetch"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/http.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/http.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/http.html#class-httpagent",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/http.html#class-httpagent"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/http2.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/http2.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/net.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/net.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/perf_hooks.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/perf_hooks.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/stream.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/stream.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/string_decoder.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/string_decoder.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/tls.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/tls.html"
+    },
+    {
+      "url": "https://nodejs.org/docs/latest-v24.x/api/url.html",
+      "status": 200,
+      "resolved_url": "https://nodejs.org/docs/latest-v24.x/api/url.html"
+    },
+    {
+      "url": "https://protobuf.dev/programming-guides/proto3/#updating",
+      "status": 200,
+      "resolved_url": "https://protobuf.dev/programming-guides/proto3/#updating"
+    },
+    {
+      "url": "https://url.spec.whatwg.org/",
+      "initial_direct_fetch_error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+      "browser_verification": {
+        "checked_on": "2026-10-15",
+        "result": "opened successfully with web tool; page content returned",
+        "scope": "accessibility only; no direct-HTTP status inferred"
+      }
+    },
+    {
+      "url": "https://websockets.spec.whatwg.org/",
+      "initial_direct_fetch_error": "<urlopen error _ssl.c:1064: The handshake operation timed out>",
+      "browser_verification": {
+        "checked_on": "2026-10-15",
+        "result": "opened successfully with web tool; page content returned",
+        "scope": "accessibility only; no direct-HTTP status inferred"
+      }
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc1034.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1812.html#section-5",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc1812.html#section-5"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2308.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc2308.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5482.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc5482.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5681.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc5681.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6455.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc6455.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7239.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc7239.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7301.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc7301.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7464.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc7464.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7541.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc7541.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7578.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc7578.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc768.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8085.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8085.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8200.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8259.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8305.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8305.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8441.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8441.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8446.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8899.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc8899.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9000.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9000.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9001.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9001.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9110.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-13",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-13"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-7.6",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-7.6"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9111.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9112.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9112.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9113.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9113.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9114.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9204.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9204.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9293.html"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9525.html",
+      "status": 200,
+      "resolved_url": "https://www.rfc-editor.org/rfc/rfc9525.html"
+    },
+    {
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapture.html",
+      "initial_attempt": {
+        "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapturing.html",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "status": 200,
+      "resolved_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapture.html"
+    }
+  ]
+}
