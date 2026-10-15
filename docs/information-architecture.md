@@ -39,3 +39,7 @@ Only assign the strongest status supported by a link to the actual artifact, che
 ## How MediaForge validates the workflow
 
 D03-P02 is the first active external implementation planning case. The project has approved module-one tickets; ticket implementation and tests must be tracked separately as evidence arrives. Subsequent findings from Codex should improve templates and procedural guidance, not retroactively rewrite its approved Charter or Product Owner product contract.
+
+## Learning checkpoint convention
+
+When assessment actually begins, use [learning evidence guidance](learning-evidence.md) and [the optional checkpoint template](../templates/learning-checkpoint.md). Do not create fake results or backfill grades from completed project tickets.
