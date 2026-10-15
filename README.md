@@ -21,3 +21,7 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/projects/catalog.md)
 - [D03 — Node.js Internals](domains/03-nodejs-internals/projects/catalog.md)
 
+
+## Learning versus project delivery
+
+The Handbook separates [curriculum and competency evidence](docs/learning-evidence.md) from [external engineering progress](projects/implementations/README.md). Learner-approved lessons/Charters do not prove mastery; approved project plans do not prove implemented behavior. [Information architecture](docs/information-architecture.md) defines these boundaries.
