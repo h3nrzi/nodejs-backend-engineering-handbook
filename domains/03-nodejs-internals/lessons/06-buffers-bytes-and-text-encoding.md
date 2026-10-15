@@ -70,6 +70,14 @@ Original becomes 10,99,30,40; view becomes 99,30; snapshot remains 20,30. The se
 
 Choose a view when sharing is intentional and the owner keeps the bytes stable for the required lifetime. Choose a content copy when a later mutation must not change an observation. Copies have allocation and CPU cost. A copy preserves byte values at a point in time; it does not validate them, make them immutable or solve synchronization with concurrently shared storage.
 
+**Visual question:** Why does view change original while snapshot keeps 20,30?
+
+![original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30.](../assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg)
+
+*Figure D03-V05 — Ownership relationships after Example A’s mutation, not physical addresses. subarray shares the range; Buffer.from(view) copied it before mutation. A small view can retain a larger backing allocation. The second half of the example separately demonstrates byteOffset and byteLength; pooled capacity and allocation strategy are not pictured. [Reference](https://nodejs.org/docs/latest-v24.x/api/buffer.html#buffers-and-typedarrays).*
+
+[Full-size SVG](../assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg) · [Editable Mermaid source](../assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd).
+
 ## 5. Retention and asynchronous handoff
 
 Suppose a request stores a small subarray of a large payload in a long-lived cache. The small view can keep its backing storage reachable. Its visible length is therefore insufficient evidence of the total retained allocation. Copying the required bytes can release that particular large-storage dependency once no other references remain; it does not guarantee immediate garbage collection or a particular RSS decrease.

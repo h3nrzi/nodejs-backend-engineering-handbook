@@ -39,6 +39,14 @@ The table is a responsibility map, not a literal sequence that every API follows
 
 libuv distinguishes long-lived **handles** from usually shorter-lived **requests**. Its loop is associated with a thread; its native work pool is a different resource. Network readiness and filesystem work need different execution-path models, with platform/version details checked for the selected operation. [libuv design overview](https://docs.libuv.org/en/v1.x/design.html).
 
+**Visual question:** Which responsibilities belong to V8, and which require the Node host?
+
+![Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.](../assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg)
+
+*Figure D03-V01 — This responsibility map complements the operation trace below. A synchronous host call can block its caller; a native boundary does not imply offload. Arrows label relationships, not a mandatory call stack. Native libraries, explicit Workers and OS details are omitted; the pool is only one possible native resource. [Reference](https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop).*
+
+[Full-size SVG](../assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg) · [Editable Mermaid source](../assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd).
+
 ## 3. Process, thread, isolate and execution turn
 
 A **process** is an OS-managed running program with resources such as address space and file descriptors. A **thread** is an execution path scheduled by the OS inside a process. A **V8 isolate** separates engine-managed JavaScript state; it is not synonymous with an OS process or a security sandbox.

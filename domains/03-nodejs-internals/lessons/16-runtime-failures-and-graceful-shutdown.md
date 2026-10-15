@@ -205,6 +205,14 @@ Questions to ask at each transition:
 
 A retry policy must not infer “safe to replay” from a local forced shutdown. Where externally visible effects are possible, a missing response after timeout is **unknown**, not automatically failed or rolled back.
 
+**Visual question:** Which transition establishes local closure, and which abandons remaining work?
+
+![Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.](../assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg)
+
+*Figure D03-V16 — An illustrative service lifecycle that application code must implement, not automatic Node states. The successful branch requires the relevant owners’ observed completion; HTTP server.close alone does not close an entire application. The deadline branch may abandon work and cannot prove rollback. A hard crash or kill can bypass these transitions and user cleanup. Budgets, repeated-signal behavior and supervisor policy remain product and operational decisions. [Reference](https://nodejs.org/docs/latest-v24.x/api/http.html#serverclosecallback).*
+
+[Full-size SVG](../assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg) · [Editable Mermaid source](../assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd).
+
 ## 9. Worked example D — an active HTTP request drains after `server.close()`
 
 Save as `d-drain.mjs`:

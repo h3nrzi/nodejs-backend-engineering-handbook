@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: An engine is one part of the Node runtime
+  accDescr: Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.
+A["Application JavaScript"] -->|executes in| V["V8 engine
+JS and managed objects"]
+  A -->|calls| N["Node host APIs"]
+  N -->|operation-specific integration| O["Native / OS facilities
+I/O, libraries, pool work"]
+  class V success;
+  class N control;
+  class O neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

@@ -1,0 +1,22 @@
+---
+config:
+  sequence:
+    useMaxWidth: false
+    width: 125
+    diagramMarginX: 12
+    actorMargin: 45
+    wrap: true
+  themeVariables:
+    fontSize: 20px
+---
+sequenceDiagram
+  accTitle: emit returns before an async listener completes
+  accDescr: In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.
+participant C as Emitter caller
+  participant L as Async listener
+  C->>L: emit work: invoke
+  L->>L: async-start then await yieldLoop
+  L-->>C: returns pending Promise
+  C->>C: second listener runs
+  C->>C: emit returns true
+  L->>L: later: async-end

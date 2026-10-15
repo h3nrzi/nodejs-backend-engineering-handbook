@@ -231,6 +231,14 @@ Run `node c-fork.mjs`. Three verified runs yielded:
 
 **Scope of the demo:** one in-flight request, no timeout, kill/retry logic or exactly-once guarantee. If the child exits before replying, the parent must reconcile unknown task status; this minimalist example does not implement that policy.
 
+**Visual question:** What additional evidence does task-1’s result provide beyond send returning true?
+
+![The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.](../assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg)
+
+*Figure D03-V11 — Example C’s successful application exchange. The local send return is not a receiver acknowledgment and has no implied ordering against the child’s execution. The later task-1 result is explicit task-level evidence, still not a durable commit. Advanced serialization creates receiver values rather than sharing a heap. IPC disconnection and child exit follow in the fixture; exit/close and stream drainage are separate boundaries. No fairness, replay or exactly-once guarantee is drawn. [Reference](https://nodejs.org/docs/latest-v24.x/api/child_process.html#subprocesssendmessage-sendhandle-options-callback).*
+
+[Full-size SVG](../assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg) · [Editable Mermaid source](../assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd).
+
 ## 8. Example D — output backpressure can stop a child
 
 A pipe has finite OS capacity. Node's Readable/Writable stream abstractions also have bounded buffer thresholds. A subprocess that produces data faster than its parent consumes it can stall or accumulate memory; ignoring `stdout` while it is piped is not a safe “discard” policy.

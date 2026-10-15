@@ -131,6 +131,14 @@ A small wrapper JS `Buffer` object can refer to a large byte backing store that 
 
 In **Worker threads**, Node documents `rss` as referring to the **entire process**, whereas the other `process.memoryUsage()` fields refer to the **current thread**. A per-Worker heap graph cannot be compared directly with process RSS as though both measure the same scope. Node notes that obtaining full memory usage by iterating pages can be costly; `process.memoryUsage.rss()` provides faster RSS-only sampling. See [Node process memoryUsage](https://nodejs.org/download/release/v22.16.0/docs/api/process.html#processmemoryusage).
 
+**Visual question:** Why can external and arrayBuffers both rise by 32 MiB without 64 MiB of new bytes?
+
+![arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.](../assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg)
+
+*Figure D03-V13 — Labels describe accounting relationships, not areas proportional to bytes. arrayBuffers is included in external, so adding them double-counts those bytes. RSS overlaps resident portions across categories; it is not their sum or a direct allocation total. Under Workers, RSS is process-wide while other memoryUsage fields refer to the current thread. Native allocations and allocator behavior prevent a complete partition from these counters alone. [Reference](https://nodejs.org/docs/latest-v24.x/api/process.html#processmemoryusage).*
+
+[Full-size SVG](../assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg) · [Editable Mermaid source](../assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd).
+
 ## 6. Worked example B — retained object graph versus released graph
 
 Garbage collection identifies **reachability**, not whether an object is “still useful to the business.” If a global `Map`, closure, listener or cache references data that will never be used again, that data can remain **reachable** and cannot be reclaimed merely because a request finished.
@@ -175,6 +183,14 @@ Three observed runs produced approximately:
 **Interpretation:** while `globalThis.retained` referenced the objects, the retained object graph occupied about **10 MiB** more JS heap on this machine. After deleting that root and explicitly requesting GC twice, `heapUsed` dropped by roughly the same amount.
 
 **Limits:** `--expose-gc` and `gc()` are **educational/debug controls**, not a production memory-management algorithm; a GC request does not specify an engine-wide, universal “fully compact and return every page to the OS” outcome. The exact byte count is affected by object representations, metadata and engine version. `heapUsed` falling does **not** promise RSS falls. Root references elsewhere, WeakRefs, finalization and native resources have additional lifetime rules. The check's 3 MiB thresholds are **only for the bounded fixture**, not product capacity limits.
+
+**Visual question:** What changes when the global retaining reference is removed?
+
+![A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events.](../assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg)
+
+*Figure D03-V14 — A before/after model of Example B, assuming no other strong retaining path. The labeled arrow first denotes a reference; later arrows denote changed eligibility and possible reclamation. Deleting a root does not itself run GC. The debug fixture requests GC and observes heapUsed falling; no immediate RSS decrease or fixed collector timing follows. Generational, concurrent and incremental collection are omitted. [Reference](https://v8.dev/blog/trash-talk).*
+
+[Full-size SVG](../assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg) · [Editable Mermaid source](../assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd).
 
 ## 7. Worked example C — large Buffer backing store is externally accounted
 

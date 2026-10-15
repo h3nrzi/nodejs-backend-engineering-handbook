@@ -1,0 +1,1749 @@
+{
+  "date": "2026-10-15T17:16:45.959Z",
+  "baseline": "4a492f6deb6315ca57ce5d9eac435321f034b097",
+  "environment": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "uv": "1.52.1",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "scope": "Focused exact-fence replays across all 18 chapters, not every example/exercise. New Node v24/macOS observations do not revalidate historical v22/Linux or v26/macOS numerical claims. Synthetic local files, threads, processes and loopback sockets only. Expected nonzero child outcomes are checked failures, not business successes. No production performance, rollback, complete memory bound, portability or learner-competency claim.",
+  "sources": [
+    {
+      "chapter": "01",
+      "lesson": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "filename": "runtime.mjs",
+      "marker": "isMainThread, threadId",
+      "sha256": "eab4e97302140cc8be92106b20187c1790d28a1baa4f0666f8159d8183e0a8e0",
+      "exactFence": true
+    },
+    {
+      "chapter": "01",
+      "lesson": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "filename": "read-and-block.mjs",
+      "marker": "record('start')",
+      "sha256": "dd1c0088c753d13d10f7968504f8491094955c89943e0f68d90ccccd6335d589",
+      "exactFence": true
+    },
+    {
+      "chapter": "02",
+      "lesson": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+      "filename": "launch.mjs",
+      "marker": "cwdResource:",
+      "sha256": "8301451f0b0f26a166af7773bbd6dba4397737a8e100ece0072f86c03965dc96",
+      "exactFence": true
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "filename": "timer-and-work.mjs",
+      "marker": "log('work-started')",
+      "sha256": "477c71319159af0cbd7c0b2fd7eb29e356b951786ad7ce6c51ca311f9e1febe7",
+      "exactFence": true
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "filename": "after-read.mjs",
+      "marker": "event: 'read-callback'",
+      "sha256": "f557482d1e74120dd2ec0cd8f70031315d59f5a33e28f1a9b9e60864791f4a60",
+      "exactFence": true
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "filename": "timer-liveness.mjs",
+      "marker": "const mode = process.argv[2] ?? 'ref'",
+      "sha256": "50bed3f3c855440503f0f382777725b726d011979151949fba4bdedce39249a6",
+      "exactFence": true
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "filename": "entry.cjs",
+      "marker": "console.log('sync-start')",
+      "sha256": "95b6b62c450da37592d1a396eb7879dc0f9887408ef7be06b9ee86b58b8bc8f1",
+      "exactFence": true
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "filename": "entry.mjs",
+      "marker": "console.log('sync-start')",
+      "sha256": "95b6b62c450da37592d1a396eb7879dc0f9887408ef7be06b9ee86b58b8bc8f1",
+      "exactFence": true
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "filename": "nested-io.mjs",
+      "marker": "console.log('io')",
+      "sha256": "d09395b809a60319f345a76ac65a6100c866d6ad2de36ba7556aeeb34e509861",
+      "exactFence": true
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "filename": "batching.mjs",
+      "marker": "let checksum = 0",
+      "sha256": "c5ba03b5f89f4a75eb5097438e2d242634a98b7c8cac9ae22bf5dc04ec9074eb",
+      "exactFence": true
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+      "filename": "mutation-once.mjs",
+      "marker": "const first = new EventEmitter()",
+      "sha256": "b6ed88f3f4506a8bb8ef20e358c3da77678d59349c46882c9308c721702635b2",
+      "exactFence": true
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+      "filename": "async-errors.mjs",
+      "marker": "captureRejections: mode === 'capture'",
+      "sha256": "3a01fd2616a4f8a29dc1439ad944106c0341a1cdeceb50692cff967373af9e8e",
+      "exactFence": true
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "filename": "ownership.mjs",
+      "marker": "const original = Buffer.from",
+      "sha256": "7389a7d0ff224cefdf5b50ade4ee2d55ccfb34e8d7884590d90617272abfae65",
+      "exactFence": true
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "filename": "decode.mjs",
+      "marker": "mode === 'partitions'",
+      "sha256": "58b550030d4b3f80baeb670d0c69928d08f5fafb2ba8b23da0dc782cece2971c",
+      "exactFence": true
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+      "filename": "handle-reads.mjs",
+      "marker": "d03-read-",
+      "sha256": "7df177df28b0ae38e73a238d9cf19acccca18eee52ea209014f01fd93b834751",
+      "exactFence": true
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+      "filename": "write-progress.mjs",
+      "marker": "d03-write-",
+      "sha256": "a458ad7f5d3cb79fd15c30d25bdba0c4c414cc35dd52a8581c668f51f15bdf41",
+      "exactFence": true
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "filename": "writable-pressure.mjs",
+      "marker": "let calls = 0, drains",
+      "sha256": "7606518e0e32549f877df17f1236c4487c9335764bb86368cb57327df748bdfa",
+      "exactFence": true
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "filename": "threshold-units.mjs",
+      "marker": "['bytes', 'objects', 'text']",
+      "sha256": "da3df67c801973d3eefa99ab64f20f73becf10c7ab4d62a9ee1d08d5808722f8",
+      "exactFence": true
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "filename": "writable-lifecycle.mjs",
+      "marker": "let owned = true",
+      "sha256": "ddcb14c425a7814e68d271b5cb9a94e39b45a315ac2c5c6600b2851ad7885c3b",
+      "exactFence": true
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "filename": "pipeline-outcomes.mjs",
+      "marker": "['normal', 'source', 'transform', 'sink', 'flush']",
+      "sha256": "488c292247cb8f44d996591b9eefb48b273f6d2fcc2ed5530d25e466a6c8a779",
+      "exactFence": true
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "filename": "pipeline-abort.mjs",
+      "marker": "let finalized = false",
+      "sha256": "f9f1ea7574fac7480c9e7637e06081a34f507c5e0e4b489bbf1436be3e8ae77a",
+      "exactFence": true
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "filename": "finished-observation.mjs",
+      "marker": "['normal', 'premature', 'wait-abort']",
+      "sha256": "5b89bf305eef78aa4cb7423fb4351cf25c2a031410acde2baff91f0059afd73f",
+      "exactFence": true
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "filename": "pool-contend.mjs",
+      "marker": "derive('derive-A')",
+      "sha256": "6c033c9a0ae8f0195e891e1353b90cdf2e2812ebb10da9cd40ff2cb2ec926238",
+      "exactFence": true
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "filename": "timeout-is-not-cancellation.mjs",
+      "marker": "let nativeCompleted = false",
+      "sha256": "b564449492e80f616eeb9179d7c139506ca4dec8d2155e17a0f5baeb3ccd6cf2",
+      "exactFence": true
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "filename": "clone-transfer.mjs",
+      "marker": "const exchange =",
+      "sha256": "5c17f32c7d68df97c88ddb564c60adeaf159e2a76db565de42d856f254ebdea0",
+      "exactFence": true
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "filename": "shared-atomics.mjs",
+      "marker": "Atomics.add(shared",
+      "sha256": "46161026497368f59cfd27631315fc6be97624ed0d470081654b814b240e0085",
+      "exactFence": true
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "filename": "worker-failure.mjs",
+      "marker": "deliberate-child-failure",
+      "sha256": "d3855d4e717a522b084eb009d45708eb91c1d21559864d5eb2fc07cb79c7abf3",
+      "exactFence": true
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "filename": "fork.mjs",
+      "marker": "serialization: 'advanced'",
+      "sha256": "7351984c6cbfd5e20b67f00cfb1c253895b0e9c03f0487103220da1cf97276c2",
+      "exactFence": true
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "filename": "spawn.mjs",
+      "marker": "events.push('close:'",
+      "sha256": "431cbd2ac8231cf6c9ce0a2650671b36fa5fa1b67a2e2f75d053729ff847b0ef",
+      "exactFence": true
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "filename": "missing.mjs",
+      "marker": "__handbook_missing_executable_20261013__",
+      "sha256": "519bca25f3bd1523c8fc8593dcb1bac6eaa89422c0d7302daf3f63d76693d507",
+      "exactFence": true
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "filename": "cluster.mjs",
+      "marker": "respondingPids: ids.size",
+      "sha256": "44ad33c0e836e6225a92e1276d50c3e7173de880c04c7a30ee4364adf252bb7f",
+      "exactFence": true
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "filename": "cache/counter.cjs",
+      "marker": "// cache/counter.cjs",
+      "sha256": "3cadc6597cde74df93fca429d198ef08c4abb0d582393da85b5451fa7483a000",
+      "exactFence": true
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "filename": "cache/counter.mjs",
+      "marker": "// cache/counter.mjs",
+      "sha256": "0aedc0a5de37684b67c07fae7750e7247086c65fd019ef054d3428d9600467c4",
+      "exactFence": true
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "filename": "cache/demo.mjs",
+      "marker": "// cache/demo.mjs",
+      "sha256": "2cb6d2e1c445af7f4aa112a86ee5c0c98a47b11a7311a82ccb0767a79d94e2ba",
+      "exactFence": true
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "filename": "retention.mjs",
+      "marker": "const count = globalThis.retained.length",
+      "sha256": "7208b8552f4df56549054f8df0c25737322d38bbfa948c30f2a73fcf32312ebe",
+      "exactFence": true
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "filename": "external.mjs",
+      "marker": "const bytes = 32 * 1024",
+      "sha256": "731cd939943db61e4e54747b70d066fbda5a1127cd88da7df3c1869aef9e364f",
+      "exactFence": true
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "filename": "als-isolation.mjs",
+      "marker": "const seen = [];",
+      "sha256": "4d254082f5c3abbf7a08d0200def3e10df2afa5f8a5fb9d5a87140e2be58c92b",
+      "exactFence": true
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "filename": "als-emitter.mjs",
+      "marker": "const snapshot = als.run",
+      "sha256": "7679b73c5f80c60c9aa8791759c885f46fd5ecd9a56a64c808158ab75518a7db",
+      "exactFence": true
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "filename": "als-resource.mjs",
+      "marker": "new AsyncResource('EducationalJob')",
+      "sha256": "7b0b0d041699cbd993ec199200dab96ef41761cecd6bd652de50b6285756b303",
+      "exactFence": true
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "filename": "als-worker.mjs",
+      "marker": "id: 'explicit-A'",
+      "sha256": "3717f65bc22a1b2b2fcab4f9791853960559a4080a0f74d06bac46de58ed8687",
+      "exactFence": true
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "filename": "als-mutation.mjs",
+      "marker": "mutable.id = 'changed'",
+      "sha256": "eb577c0a5cd683938da4e3e5a917c61309f98ff5b9988a392c8edb0ce92a504b",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-events.mjs",
+      "marker": "['microtask', 'beforeExit:0'",
+      "sha256": "65b500ebd4456b2c9f33878179509164fb6c6f56fc0136c9c29b3086a70a495e",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-exit.mjs",
+      "marker": "const forced = spawnSync",
+      "sha256": "90337c4c227556592c7fc9ba7f88f9287f44a481f96a01c22e8354db62533a30",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-failures.mjs",
+      "marker": "const cases = [",
+      "sha256": "59f363762820a82b8204e834144a92fc39d551676b13aba906180773d3652ca6",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-drain.mjs",
+      "marker": "let acceptRequest;",
+      "sha256": "3a58aee07a9bb57e2be5121d3c0c78a364ab412e77f5161a524f4c951c8eb720",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-signal.mjs",
+      "marker": "const watchdog =",
+      "sha256": "e27df2d7d7f897aab03373b66694e9334cd8bd3ced2f48b62f3458efa557f37c",
+      "exactFence": true
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "filename": "shutdown-deadline.mjs",
+      "marker": "const sockets = new Set()",
+      "sha256": "a59d6622451636715be24a72479a576237eaafeffe0e42daf658069d49dec41a",
+      "exactFence": true
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "filename": "diagnostic-delay.mjs",
+      "marker": "const h = monitorEventLoopDelay",
+      "sha256": "43883991f3683eaad334995b176211db5cc9d089737b5734c2993bf3176d5484",
+      "exactFence": true
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "filename": "diagnostic-blocking-native.mjs",
+      "marker": "const child = spawnSync(",
+      "sha256": "5bb139df7f6a7eb099485c6e72cc9ab228310e5070311f7985a50db3b8caca32",
+      "exactFence": true
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "filename": "diagnostic-profiler.mjs",
+      "marker": "Profiler.enable",
+      "sha256": "72e31f180de62fb42b907f7e1bda3c868e700466bda7d98d3056db397ad94e89",
+      "exactFence": true
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "filename": "diagnostic-channel.mjs",
+      "marker": "channel('handbook-d03-c17:demo')",
+      "sha256": "b50cd5f8f5334c002f151f58be5ae59ea39103e279299d34b68baf13b8569e15",
+      "exactFence": true
+    },
+    {
+      "chapter": "18",
+      "lesson": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+      "filename": "integrated-transfer.mjs",
+      "marker": "const dataView = new DataView",
+      "sha256": "1ae70989def85ccb0a3b8e16cf82db35da78ec120b131570bb640cde31e1f248",
+      "exactFence": true
+    },
+    {
+      "chapter": "18",
+      "lesson": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+      "filename": "integrated-shutdown.mjs",
+      "marker": "let committed = 0",
+      "sha256": "399a4bf49a2e61cb2e329ddd09478111f683ebd3a1677125a2948d7a8084b40a",
+      "exactFence": true
+    }
+  ],
+  "results": [
+    {
+      "chapter": "01",
+      "file": "runtime.mjs",
+      "command": [
+        "node",
+        "<temporary>/runtime.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"node\": \"v24.22.0\",\n  \"v8\": \"13.6.233.17-node.57\",\n  \"uv\": \"1.52.1\",\n  \"platform\": \"darwin\",\n  \"arch\": \"arm64\",\n  \"isMainThread\": true,\n  \"threadId\": 0\n}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "01",
+      "file": "read-and-block.mjs",
+      "command": [
+        "node",
+        "<temporary>/read-and-block.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"event\":\"start\",\"elapsedMs\":0}\n{\"event\":\"submitted\",\"elapsedMs\":2.1}\n{\"event\":\"blocking-segment-ended\",\"elapsedMs\":122.2}\n{\"event\":\"read-observed\",\"elapsedMs\":122.9,\"characters\":866}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "02",
+      "file": "launch.mjs",
+      "command": [
+        "node",
+        "--trace-warnings",
+        "<temporary>/launch.mjs",
+        "--mode=demo"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"node\": \"v24.22.0\",\n  \"v8\": \"13.6.233.17-node.57\",\n  \"uv\": \"1.52.1\",\n  \"platform\": \"darwin\",\n  \"arch\": \"arm64\",\n  \"execPath\": \"/Users/hossein/.nvm/versions/node/v24.22.0/bin/node\",\n  \"argv0\": \"/Users/hossein/.nvm/versions/node/v24.22.0/bin/node\",\n  \"entry\": \"/private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/launch.mjs\",\n  \"applicationArguments\": [\n    \"--mode=demo\"\n  ],\n  \"nodeCliArguments\": [\n    \"--trace-warnings\"\n  ],\n  \"cwd\": \"/private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X\",\n  \"cwdResource\": \"/private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/fixture.txt\",\n  \"moduleResource\": \"file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/fixture.txt\"\n}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "file": "timer-and-work.mjs",
+      "command": [
+        "node",
+        "<temporary>/timer-and-work.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"event\":\"work-started\",\"elapsedMs\":0}\n{\"event\":\"work-ended\",\"elapsedMs\":82}\n{\"event\":\"timer-observed\",\"elapsedMs\":82.2}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "file": "after-read.mjs",
+      "command": [
+        "node",
+        "<temporary>/after-read.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"event\":\"read-callback\",\"characters\":595}\n{\"event\":\"immediate-after-read\"}\n{\"event\":\"timeout-after-read\"}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "file": "after-read.mjs",
+      "command": [
+        "node",
+        "<temporary>/after-read.mjs",
+        "missing-fixture.txt"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "{\"event\":\"read-failed\",\"code\":\"ENOENT\"}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "read-failed",
+        "ENOENT"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "file": "timer-liveness.mjs",
+      "command": [
+        "node",
+        "<temporary>/timer-liveness.mjs",
+        "ref"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"event\":\"timer-created\",\"mode\":\"ref\",\"hasRef\":true}\n{\"event\":\"timer-ran\",\"mode\":\"ref\"}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "03",
+      "file": "timer-liveness.mjs",
+      "command": [
+        "node",
+        "<temporary>/timer-liveness.mjs",
+        "unref"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"event\":\"timer-created\",\"mode\":\"unref\",\"hasRef\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "entry.cjs",
+      "command": [
+        "node",
+        "<temporary>/entry.cjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "sync-start\nsync-end\nnextTick\npromise\nmicrotask\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "entry.mjs",
+      "command": [
+        "node",
+        "<temporary>/entry.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "sync-start\nsync-end\npromise\nmicrotask\nnextTick\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "nested-io.mjs",
+      "command": [
+        "node",
+        "<temporary>/nested-io.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "io\ntick-1\npromise-1\nmicro-1\nmicro-from-promise\ntick-from-promise\nimmediate\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "batching.mjs",
+      "command": [
+        "node",
+        "<temporary>/batching.mjs",
+        "micro"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "done 5000 497464\nobserver 5000\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observer 5000",
+        "done 5000"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "batching.mjs",
+      "command": [
+        "node",
+        "<temporary>/batching.mjs",
+        "tick"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "done 5000 497464\nobserver 5000\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observer 5000",
+        "done 5000"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "04",
+      "file": "batching.mjs",
+      "command": [
+        "node",
+        "<temporary>/batching.mjs",
+        "yield"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "observer 1\ndone 5000 497464\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observer 1",
+        "done 5000"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "mutation-once.mjs",
+      "command": [
+        "node",
+        "<temporary>/mutation-once.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "remover\nlater\nagain\nremover\nonce outer\npersistent nested\npersistent outer\nremaining 1\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "async-errors.mjs",
+      "command": [
+        "node",
+        "<temporary>/async-errors.mjs",
+        "await"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "async-start\nsecond\nreturned true\nasync-end\n",
+      "stderr": "",
+      "expectedOutput": [
+        "async-start\nsecond\nreturned true\nasync-end"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "async-errors.mjs",
+      "command": [
+        "node",
+        "<temporary>/async-errors.mjs",
+        "capture"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "returned true\ncaptured async-failure\n",
+      "stderr": "",
+      "expectedOutput": [
+        "returned true\ncaptured async-failure"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "async-errors.mjs",
+      "command": [
+        "node",
+        "<temporary>/async-errors.mjs",
+        "throw"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:19\n  emitter.on('work', () => { throw new Error('sync-failure'); });\n                                   ^\n\nError: sync-failure\n    at EventEmitter.<anonymous> (file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:19:36)\n    at EventEmitter.emit (node:events:526:24)\n    at file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:21:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.22.0\n",
+      "expectedOutput": [
+        "sync-failure"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "async-errors.mjs",
+      "command": [
+        "node",
+        "<temporary>/async-errors.mjs",
+        "unhandled"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26\n  emitter.emit('error', new Error('emitted-failure'));\n                        ^\n\nError: emitted-failure\n    at file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26:25\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\nEmitted 'error' event at:\n    at file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.22.0\n",
+      "expectedOutput": [
+        "emitted-failure"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "05",
+      "file": "async-errors.mjs",
+      "command": [
+        "node",
+        "<temporary>/async-errors.mjs",
+        "monitor"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "monitored emitted-failure\n",
+      "stderr": "file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26\n  emitter.emit('error', new Error('emitted-failure'));\n                        ^\n\nError: emitted-failure\n    at file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26:25\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\nEmitted 'error' event at:\n    at file:///private/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-d03-replay-n7GK8X/async-errors.mjs:26:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.22.0\n",
+      "expectedOutput": [
+        "emitted-failure"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "06",
+      "file": "ownership.mjs",
+      "command": [
+        "node",
+        "<temporary>/ownership.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "original 10,99,30,40\nview 99,30\nsnapshot 20,30\nbounded 77,4\nbroad 1,2,77,4,5,6\nwindow 77,4\n",
+      "stderr": "",
+      "expectedOutput": [
+        "original 10,99,30,40",
+        "view 99,30",
+        "snapshot 20,30",
+        "bounded 77,4",
+        "broad 1,2,77,4,5,6"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "06",
+      "file": "decode.mjs",
+      "command": [
+        "node",
+        "<temporary>/decode.mjs",
+        "partitions"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "lengths 5 9 9\npartitions 256 naive-failures 248\n",
+      "stderr": "",
+      "expectedOutput": [
+        "partitions 256 naive-failures 248"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "06",
+      "file": "decode.mjs",
+      "command": [
+        "node",
+        "<temporary>/decode.mjs",
+        "incomplete"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "pending \"\"\nflushed \"�\"\nstrict-pending \"\"\nstrict-rejected TypeError\n",
+      "stderr": "",
+      "expectedOutput": [
+        "strict-rejected TypeError"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "06",
+      "file": "decode.mjs",
+      "command": [
+        "node",
+        "<temporary>/decode.mjs",
+        "invalid"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "replacement \"�\"\nstrict-rejected TypeError\n",
+      "stderr": "",
+      "expectedOutput": [
+        "strict-rejected TypeError"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "file": "handle-reads.mjs",
+      "command": [
+        "node",
+        "<temporary>/handle-reads.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "range 2 de\ncapacity deXXXXXX\ncursor a\neof 0\nclosed\nclosed-read-rejected EBADF\ntemporary-files-removed\n",
+      "stderr": "",
+      "expectedOutput": [
+        "range 2 de",
+        "closed-read-rejected EBADF",
+        "temporary-files-removed",
+        "cursor a",
+        "eof 0"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "file": "handle-reads.mjs",
+      "command": [
+        "node",
+        "<temporary>/handle-reads.mjs",
+        "fail"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "range 2 de\ncapacity deXXXXXX\nclosed\noperation-failed simulated-consumer-failure\nclosed-read-rejected EBADF\ntemporary-files-removed\n",
+      "stderr": "",
+      "expectedOutput": [
+        "range 2 de",
+        "closed-read-rejected EBADF",
+        "temporary-files-removed",
+        "operation-failed simulated-consumer-failure"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "file": "write-progress.mjs",
+      "command": [
+        "node",
+        "<temporary>/write-progress.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "completed 7 calls 4\nclosed\nobserved-file \"ABCDEFG\"\ntemporary-files-removed\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observed-file \"ABCDEFG\"",
+        "closed",
+        "temporary-files-removed"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "file": "write-progress.mjs",
+      "command": [
+        "node",
+        "<temporary>/write-progress.mjs",
+        "zero"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "write-rejected invalid-write-progress\nclosed\nobserved-file \"\"\ntemporary-files-removed\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observed-file \"\"",
+        "closed",
+        "temporary-files-removed"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "07",
+      "file": "write-progress.mjs",
+      "command": [
+        "node",
+        "<temporary>/write-progress.mjs",
+        "fail"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 1,
+      "exit": 1,
+      "stdout": "write-rejected injected-write-failure\nclosed\nobserved-file \"AB\"\ntemporary-files-removed\n",
+      "stderr": "",
+      "expectedOutput": [
+        "observed-file \"AB\"",
+        "closed",
+        "temporary-files-removed"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-pressure.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-pressure.mjs",
+        "respect"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"respect\",\"submitted\":6,\"processed\":[\"0000\",\"0001\",\"0002\",\"0003\",\"0004\",\"0005\"],\"peak\":4,\"drains\":6,\"events\":[\"finish\",\"close\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-pressure.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-pressure.mjs",
+        "ignore"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"ignore\",\"submitted\":6,\"processed\":[\"0000\",\"0001\",\"0002\",\"0003\",\"0004\",\"0005\"],\"peak\":24,\"drains\":0,\"events\":[\"finish\",\"close\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-pressure.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-pressure.mjs",
+        "fail"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"fail\",\"submitted\":3,\"processed\":[\"0000\",\"0001\"],\"peak\":4,\"drains\":2,\"events\":[\"error\",\"close\"],\"failure\":\"sink failed\"}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "threshold-units.mjs",
+      "command": [
+        "node",
+        "<temporary>/threshold-units.mjs",
+        "bytes"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"bytes\",\"first\":false,\"accounted\":8,\"finished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "threshold-units.mjs",
+      "command": [
+        "node",
+        "<temporary>/threshold-units.mjs",
+        "objects"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"objects\",\"first\":true,\"second\":false,\"accounted\":2,\"finished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "threshold-units.mjs",
+      "command": [
+        "node",
+        "<temporary>/threshold-units.mjs",
+        "text"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"text\",\"sourceBytes\":7,\"bufferedCodeUnits\":3}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-lifecycle.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-lifecycle.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"normal\",\"events\":[\"final\",\"finish\",\"close\"],\"cleanups\":1,\"owned\":false,\"completedWrites\":1,\"finished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-lifecycle.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-lifecycle.mjs",
+        "destroy"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"destroy\",\"events\":[\"error:stopped\",\"close\"],\"cleanups\":1,\"owned\":false,\"completedWrites\":0,\"finished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-lifecycle.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-lifecycle.mjs",
+        "final-fail"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"final-fail\",\"events\":[\"final\",\"error:final failed\",\"close\"],\"cleanups\":1,\"owned\":false,\"completedWrites\":1,\"finished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "08",
+      "file": "writable-lifecycle.mjs",
+      "command": [
+        "node",
+        "<temporary>/writable-lifecycle.mjs",
+        "no-close"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"no-close\",\"events\":[\"final\",\"finish\"],\"cleanups\":1,\"owned\":false,\"completedWrites\":1,\"finished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-outcomes.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-outcomes.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"normal\",\"outcome\":\"success\",\"output\":[2,4,6,\"done\"],\"released\":{\"source\":1,\"transform\":1,\"sink\":1},\"sinkFinished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-outcomes.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-outcomes.mjs",
+        "source"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"source\",\"outcome\":\"source failed\",\"output\":[2],\"released\":{\"source\":1,\"transform\":1,\"sink\":1},\"sinkFinished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-outcomes.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-outcomes.mjs",
+        "transform"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"transform\",\"outcome\":\"transform failed\",\"output\":[2],\"released\":{\"source\":1,\"transform\":1,\"sink\":1},\"sinkFinished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-outcomes.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-outcomes.mjs",
+        "sink"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"sink\",\"outcome\":\"sink failed\",\"output\":[2],\"released\":{\"source\":1,\"transform\":1,\"sink\":1},\"sinkFinished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-outcomes.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-outcomes.mjs",
+        "flush"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"flush\",\"outcome\":\"flush failed\",\"output\":[2,4,6],\"released\":{\"source\":1,\"transform\":1,\"sink\":1},\"sinkFinished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-abort.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-abort.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"normal\",\"outcome\":\"success\",\"causes\":[],\"output\":[1,2],\"finalized\":true,\"cleanups\":1,\"finished\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "pipeline-abort.mjs",
+      "command": [
+        "node",
+        "<temporary>/pipeline-abort.mjs",
+        "abort"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"abort\",\"outcome\":\"ABORT_ERR\",\"errorName\":\"AggregateError\",\"causes\":[\"ABORT_ERR\",\"ABORT_ERR\"],\"output\":[1],\"finalized\":true,\"cleanups\":1,\"finished\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "finished-observation.mjs",
+      "command": [
+        "node",
+        "<temporary>/finished-observation.mjs",
+        "normal"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"normal\",\"outcome\":\"success\",\"finished\":true,\"cleanups\":1,\"listenerCounts\":[1,0,0,0]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "finished-observation.mjs",
+      "command": [
+        "node",
+        "<temporary>/finished-observation.mjs",
+        "premature"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"premature\",\"outcome\":\"ERR_STREAM_PREMATURE_CLOSE\",\"finished\":false,\"cleanups\":1,\"listenerCounts\":[1,0,0,0]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "09",
+      "file": "finished-observation.mjs",
+      "command": [
+        "node",
+        "<temporary>/finished-observation.mjs",
+        "wait-abort"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"mode\":\"wait-abort\",\"outcome\":\"ABORT_ERR\",\"finished\":true,\"cleanups\":1,\"listenerCounts\":[1,0,0,0]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "10",
+      "file": "pool-contend.mjs",
+      "command": [
+        "node",
+        "<temporary>/pool-contend.mjs"
+      ],
+      "environmentOverrides": {
+        "UV_THREADPOOL_SIZE": "1"
+      },
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"threadpoolSize\": \"1\",\n  \"ticks\": 4,\n  \"events\": [\n    {\n      \"name\": \"derive-A\",\n      \"elapsedMs\": 50,\n      \"bytes\": 32\n    },\n    {\n      \"name\": \"derive-B\",\n      \"elapsedMs\": 90,\n      \"bytes\": 32\n    },\n    {\n      \"name\": \"file-stat\",\n      \"elapsedMs\": 91,\n      \"isFile\": true\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "10",
+      "file": "pool-contend.mjs",
+      "command": [
+        "node",
+        "<temporary>/pool-contend.mjs"
+      ],
+      "environmentOverrides": {
+        "UV_THREADPOOL_SIZE": "4"
+      },
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\n  \"threadpoolSize\": \"4\",\n  \"ticks\": 2,\n  \"events\": [\n    {\n      \"name\": \"file-stat\",\n      \"elapsedMs\": 1,\n      \"isFile\": true\n    },\n    {\n      \"name\": \"derive-B\",\n      \"elapsedMs\": 46,\n      \"bytes\": 32\n    },\n    {\n      \"name\": \"derive-A\",\n      \"elapsedMs\": 47,\n      \"bytes\": 32\n    }\n  ]\n}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "10",
+      "file": "timeout-is-not-cancellation.mjs",
+      "command": [
+        "node",
+        "<temporary>/timeout-is-not-cancellation.mjs"
+      ],
+      "environmentOverrides": {
+        "UV_THREADPOOL_SIZE": "1"
+      },
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "first outcome deadline-observed nativeCompleted false\nnative callback 64 ms\nfinal nativeCompleted true\n",
+      "stderr": "",
+      "expectedOutput": [
+        "final nativeCompleted true"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "11",
+      "file": "clone-transfer.mjs",
+      "command": [
+        "node",
+        "<temporary>/clone-transfer.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "clone {\"kind\":\"clone\",\"workerFirst\":99} parentFirst 1\nafter-transfer {\"senderLength\":0,\"aliasLength\":0}\nworker-received {\"kind\":\"transfer\",\"received\":[4,5,6,7],\"receivedLength\":4}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "parentFirst 1",
+        "\"senderLength\":0,\"aliasLength\":0",
+        "\"received\":[4,5,6,7]"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "11",
+      "file": "shared-atomics.mjs",
+      "command": [
+        "node",
+        "<temporary>/shared-atomics.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"expected\":20000,\"observed\":20000}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "\"observed\":20000"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "11",
+      "file": "worker-failure.mjs",
+      "command": [
+        "node",
+        "<temporary>/worker-failure.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"sawError\":true,\"sawResult\":false,\"exitCode\":1}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "12",
+      "file": "fork.mjs",
+      "command": [
+        "node",
+        "<temporary>/fork.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"accepted\":true,\"differentPid\":true,\"id\":\"task-1\",\"total\":5,\"code\":0,\"signal\":null}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "\"id\":\"task-1\",\"total\":5"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "12",
+      "file": "spawn.mjs",
+      "command": [
+        "node",
+        "<temporary>/spawn.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"out\":\"output\",\"err\":\"diagnostic\",\"events\":[\"exit:7:null\",\"close:7:null\"]}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "\"exit:7:null\",\"close:7:null\""
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "12",
+      "file": "missing.mjs",
+      "command": [
+        "node",
+        "<temporary>/missing.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "[\"error:ENOENT\",\"close:-2:null\"]\n",
+      "stderr": "",
+      "expectedOutput": [
+        "error:ENOENT"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "12",
+      "file": "cluster.mjs",
+      "command": [
+        "node",
+        "<temporary>/cluster.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"samePort\":true,\"respondingPids\":2,\"separateFromPrimary\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "13",
+      "file": "cache/demo.mjs",
+      "command": [
+        "node",
+        "<temporary>/cache/demo.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"cjsSame\":true,\"cjsCount\":1,\"esmSame\":true,\"esmCount\":1,\"esmVariantCount\":2}\n",
+      "stderr": "",
+      "expectedOutput": [
+        "\"cjsSame\":true",
+        "\"esmSame\":true",
+        "\"esmVariantCount\":2"
+      ],
+      "pass": true
+    },
+    {
+      "chapter": "14",
+      "file": "retention.mjs",
+      "command": [
+        "node",
+        "--expose-gc",
+        "<temporary>/retention.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"count\":120000,\"baseMiB\":4.01,\"keptMiB\":14.08,\"releasedMiB\":4.02,\"gainedMiB\":10.07,\"droppedMiB\":10.06}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "14",
+      "file": "external.mjs",
+      "command": [
+        "node",
+        "<temporary>/external.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"byteLength\":33554432,\"heapUsedDeltaMiB\":0,\"externalDeltaMiB\":32,\"arrayBuffersDeltaMiB\":32,\"rssDeltaMiB\":32.03,\"firstByte\":90}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "15",
+      "file": "als-isolation.mjs",
+      "command": [
+        "node",
+        "<temporary>/als-isolation.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"isolated\":true,\"outside\":null,\"seen\":[\"A:start:A\",\"B:start:B\",\"B:after:B\",\"B:promise:B\",\"A:after:A\",\"A:promise:A\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "15",
+      "file": "als-emitter.mjs",
+      "command": [
+        "node",
+        "<temporary>/als-emitter.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"observed\":[[\"plain\",null],[\"bound\",\"A\"]],\"snapResult\":\"B\",\"outside\":null}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "15",
+      "file": "als-resource.mjs",
+      "command": [
+        "node",
+        "<temporary>/als-resource.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"outside\":null,\"withoutBinding\":[null,null],\"restored\":[\"A\",\"B\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "15",
+      "file": "als-worker.mjs",
+      "command": [
+        "node",
+        "<temporary>/als-worker.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"result\":{\"before\":null,\"inside\":\"explicit-A\"},\"parentOutside\":null}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "15",
+      "file": "als-mutation.mjs",
+      "command": [
+        "node",
+        "<temporary>/als-mutation.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "seenAfterMutation changed\n{\"result\":\"changed\",\"stable\":\"immutable\",\"outside\":null}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-events.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-events.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"events\":[\"microtask\",\"beforeExit:0\",\"exit:0\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-exit.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-exit.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"forced\":{\"code\":7,\"stdout\":\"\"},\"natural\":{\"code\":7,\"stdout\":\"late\"}}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-failures.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-failures.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "[{\"case\":\"throw\",\"code\":1,\"observed\":true},{\"case\":\"rejection\",\"code\":1,\"observed\":true},{\"case\":\"unhandled-error-event\",\"code\":1,\"observed\":true},{\"case\":\"handled-error-event\",\"code\":0,\"observed\":true}]\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-drain.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-drain.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"events\":[\"request-start\",\"draining\",\"response-ended\",\"server-closed\"],\"response\":{\"code\":200,\"body\":\"finished\"}}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-signal.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-signal.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"started\":true,\"body\":\"done\",\"exit\":{\"code\":0,\"signal\":null},\"drained\":[\"request-start\",\"sigterm\",\"response-finished\",\"close\"]}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "16",
+      "file": "shutdown-deadline.mjs",
+      "command": [
+        "node",
+        "<temporary>/shutdown-deadline.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"beforeDeadlineClosed\":false,\"afterForceClosed\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "17",
+      "file": "diagnostic-delay.mjs",
+      "command": [
+        "node",
+        "<temporary>/diagnostic-delay.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"samples\":6,\"maxMs\":79.3,\"elu\":0.666}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "17",
+      "file": "diagnostic-blocking-native.mjs",
+      "command": [
+        "node",
+        "<temporary>/diagnostic-blocking-native.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"elapsedMs\":120.4,\"parentCpuMs\":1.4,\"elu\":1,\"childCode\":0}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "17",
+      "file": "diagnostic-profiler.mjs",
+      "command": [
+        "node",
+        "<temporary>/diagnostic-profiler.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"nodes\":11,\"samples\":69,\"calculationFinite\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "17",
+      "file": "diagnostic-channel.mjs",
+      "command": [
+        "node",
+        "<temporary>/diagnostic-channel.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"subscribedInvocationWasSynchronous\":true,\"seen\":[{\"name\":\"handbook-d03-c17:demo\",\"value\":42,\"context\":\"A\"},{\"name\":\"after-publish\"}],\"afterUnsubscribe\":false}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "18",
+      "file": "integrated-transfer.mjs",
+      "command": [
+        "node",
+        "<temporary>/integrated-transfer.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"senderLength\":0,\"aliasLength\":0,\"dataViewError\":\"TypeError\",\"received\":{\"bytes\":[1,2,3,4],\"length\":4}}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    },
+    {
+      "chapter": "18",
+      "file": "integrated-shutdown.mjs",
+      "command": [
+        "node",
+        "<temporary>/integrated-shutdown.mjs"
+      ],
+      "environmentOverrides": {},
+      "expectedExit": 0,
+      "exit": 0,
+      "stdout": "{\"committed\":1,\"clientError\":true,\"gotResponse\":false,\"clientDestroyed\":true,\"serverClosed\":true}\n",
+      "stderr": "",
+      "expectedOutput": [],
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Different API families contend for one native resource
+  accDescr: Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.
+C["Async PBKDF2"] -->|native request| P["Process-shared
+libuv work pool"]
+  F["Async filesystem"] -->|native requests| P
+  P -->|native completion notification| J["Associated JS loop
+later observes callbacks"]
+  T["Timer eligibility"] -->|loop scheduling| J
+  class P pending;
+  class J control;
+  class T neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

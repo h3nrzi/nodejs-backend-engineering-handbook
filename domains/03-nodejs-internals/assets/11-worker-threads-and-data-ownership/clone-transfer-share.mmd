@@ -1,0 +1,31 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Clone transfer and share create different ownership relationships
+  accDescr: Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.
+C["Clone ordinary bytes"] --> C1["Sender: original usable
+Receiver: independent copy"]
+  C1 ~~~ T["Transfer dedicated
+ArrayBuffer"]
+  T --> T1["Receiver owns storage
+All sender views detached"]
+  T1 ~~~ S["Share SharedArrayBuffer"]
+  S --> S1["Both access same region
+Coordinate with Atomics"]
+  class C,T,S control;
+  class C1 success;
+  class T1,S1 pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

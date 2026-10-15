@@ -1,0 +1,22 @@
+---
+config:
+  sequence:
+    useMaxWidth: false
+    width: 125
+    diagramMarginX: 12
+    actorMargin: 45
+    wrap: true
+  themeVariables:
+    fontSize: 20px
+---
+sequenceDiagram
+  accTitle: Local IPC sending and child task completion differ
+  accDescr: The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.
+participant P as Parent process
+  participant C as Child process
+  Note over P,C: send Boolean: local flow control<br/>not child acknowledgment
+  C-->>P: ready message
+  P->>C: send job task-1
+  C->>C: receive and compute total
+  C-->>P: result task-1: total 5
+  P->>P: validate matching result

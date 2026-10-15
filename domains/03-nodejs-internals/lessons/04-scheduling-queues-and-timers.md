@@ -65,6 +65,14 @@ The [documented comparison](https://github.com/nodejs/node/blob/main/doc/api/pro
 
 This is a counterexample to the blanket statement “nextTick always comes first.” Equally, ESM entry order does not mean nextTick is permanently behind every Promise in the process. Identify where the scheduling call happens. A test runner, dynamic import, REPL or wrapper may change that context; record how the fixture was launched.
 
+**Visual question:** Which ordering changes between the identical CJS and ESM entry fixtures?
+
+![Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.](../assets/04-scheduling-queues-and-timers/entry-context-order.svg)
+
+*Figure D03-V03 — Two independent traces of Example A, after sync-start and sync-end. Promise and queueMicrotask jobs were registered in that order. ESM evaluation already runs in a microtask context. These finite entry traces are not loop phases, a global queue priority, or a prediction for the later I/O callback in Example B. The lesson records Node v26.4.0/macOS; the new replay separately records this host. [Reference](https://nodejs.org/docs/latest-v24.x/api/process.html#when-to-use-queuemicrotask-vs-processnexttick).*
+
+[Full-size SVG](../assets/04-scheduling-queues-and-timers/entry-context-order.svg) · [Editable Mermaid source](../assets/04-scheduling-queues-and-timers/entry-context-order.mmd).
+
 ## 5. Example B — nested scheduling inside an I/O callback
 
 Save as `nested-io.mjs`. Reading this fixture's own file creates a real asynchronous callback without requiring a server or an external service.

@@ -1,0 +1,31 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: A blocked loop can consume little parent CPU
+  accDescr: During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.
+S["Parent calls spawnSync
+child waits on a timer"] --> B["Parent loop blocked
+no callback dispatch"]
+  B --> E["Outside event provider
+ELU can approach 1"]
+  S --> W["Parent mostly waits
+child has separate CPU account"]
+  W --> C["Parent process CPU
+can remain low"]
+  class S,B control;
+  class E pending;
+  class W,C neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

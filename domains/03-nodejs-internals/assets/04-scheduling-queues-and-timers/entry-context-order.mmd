@@ -1,0 +1,25 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Entry context changes the queue relationship
+  accDescr: Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.
+C["CJS entry
+after sync-end"] --> C1["nextTick"] --> C2["promise"] --> C3["microtask"]
+  C3 ~~~ E["ESM entry
+after sync-end"]
+  E --> E1["promise"] --> E2["microtask"] --> E3["nextTick"]
+  class C,E control;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

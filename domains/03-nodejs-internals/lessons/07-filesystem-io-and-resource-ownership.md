@@ -146,6 +146,14 @@ Both modes observe range 2/de while the deterministic full capacity is deXXXXXX.
 
 This exercises successful closure under two operation paths, not an injected close failure. In general, close can also fail. An exception from finally can mask an earlier operation failure; a real error policy should preserve the original and cleanup errors, for example as structured diagnostic evidence, rather than silently dropping either. Avoid starting new work while closing, and do not close a handle still owned by another component.
 
+**Visual question:** Which read bytes are valid, and which paths still close the FileHandle?
+
+![Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.](../assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg)
+
+*Figure D03-V06 — This is Example B’s observed path for the unchanged five-byte regular file. Explicit position 3 does not advance the handle cursor. Only the first bytesRead bytes belong to this result. Both consumer paths enter finally; close can itself fail, so the diagram says attempt, not guaranteed release. The fixture verifies successful closure and EBADF afterward; concurrent file changes and cleanup failure are outside that replay. [Reference](https://nodejs.org/docs/latest-v24.x/api/fs.html#class-filehandle).*
+
+[Full-size SVG](../assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg) · [Editable Mermaid source](../assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd).
+
 ## 7. Partial writes and explicit progress
 
 `bytesWritten` identifies progress, not necessarily the entire intended result. A low-level write loop needs to advance the buffer offset and file position by observed progress and stop on failure. Zero progress for a nonempty remaining range must not become an endless retry loop.

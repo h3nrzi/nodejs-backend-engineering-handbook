@@ -308,6 +308,14 @@ Three independent `node cache/demo.mjs` runs printed:
 
 The same symbolic package name can also resolve to different filenames from different parents, so CJS cache identity cannot be inferred from spelling alone. ESM file URL identity and filesystem symlink/case conventions can differ across platforms and flags. Use controlled reproductions to identify actual resolved locations.
 
+**Visual question:** Why does adding a query make this module execute again?
+
+![Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.](../assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg)
+
+*Figure D03-V12 — Identity relationships after Example C’s sequential awaits. x and y reuse the same ESM URL record; z uses the distinct query URL and triggers this module’s side effect again. The numbers are this fixture’s global evaluation counter, not cache size or an algorithm for all graphs. CJS uses its own cache rules and some interop bridges have special cases. Query changes are not a bounded reload policy; Workers and processes have separate evaluation contexts. [Reference](https://nodejs.org/docs/latest-v24.x/api/esm.html#urls).*
+
+[Full-size SVG](../assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg) · [Editable Mermaid source](../assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd).
+
 ## 9. Worked example D — cycles expose initialization order
 
 Dependency cycles are **not** intrinsically an exception in all module systems. Their danger is partially initialized state or access before a binding has been initialized.

@@ -1,0 +1,2053 @@
+{
+  "baseline": "4a492f6deb6315ca57ce5d9eac435321f034b097",
+  "date": "2026-10-15T17:25:06.940Z",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packages": {
+      "@mermaid-js/mermaid-cli": "12.0.0",
+      "mermaid": "12.2.0",
+      "puppeteer": "25.14.0",
+      "marked": "4.3.0"
+    },
+    "browser": "Chrome/155.0.8059.79"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097:domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097",
+        "--",
+        "tracking/state.json",
+        "TRACKER.md",
+        "projects/coverage-matrix.md",
+        "domains/01-computer-science-foundations",
+        "domains/02-javascript-typescript",
+        "domains/03-nodejs-internals/README.md",
+        "domains/03-nodejs-internals/curriculum.md",
+        "domains/03-nodejs-internals/projects",
+        "domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle",
+        "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+        "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+        "domains/04-network-protocol-engineering",
+        "tools",
+        "scripts",
+        "package.json",
+        "package-lock.json"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "4a492f6deb6315ca57ce5d9eac435321f034b097"
+      ],
+      "exit": 0,
+      "stdout": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md\ndomains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md\ndomains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md\ndomains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md\ndomains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md\ndomains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md\ndomains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md\ndomains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md\ndomains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md\ndomains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md\ndomains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md\ndomains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md\ndomains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md\ndomains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md\ndomains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md\ndomains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit": 0,
+      "stdout": "docs/visual-d03/changed-files.txt\ndocs/visual-d03/finding-check.json\ndocs/visual-d03/finding-check.mjs\ndocs/visual-d03/guide.md\ndocs/visual-d03/lab-replay.json\ndocs/visual-d03/plan.json\ndocs/visual-d03/references.json\ndocs/visual-d03/replay.mjs\ndocs/visual-d03/review.md\ndocs/visual-d03/technical-findings.md\ndocs/visual-d03/validation.txt\ndocs/visual-d03/verification.json\ndocs/visual-d03/verify.mjs\ndomains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd\ndomains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg\ndomains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd\ndomains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg\ndomains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd\ndomains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.svg\ndomains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd\ndomains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg\ndomains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd\ndomains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg\ndomains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd\ndomains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg\ndomains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd\ndomains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg\ndomains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd\ndomains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg\ndomains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd\ndomains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg\ndomains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd\ndomains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg\ndomains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd\ndomains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg\ndomains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd\ndomains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg\ndomains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd\ndomains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg\ndomains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd\ndomains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg\ndomains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd\ndomains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg\ndomains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd\ndomains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg\ndomains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd\ndomains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:smoke"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:smoke\n> node scripts/check-visuals.mjs\n\nDisposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-xScxBJ\ntcp-handshake: PNG 507 x 357, 16388 bytes\nevent-loop-scheduling: PNG 236 x 725, 30572 bytes\nrequest-lifecycle: PNG 451 x 536, 25604 bytes\nMarkdown: 3 fences validated; 3 relative SVG image references resolve.\nMath: KaTeX typeset output verified with an explicit HTML-label config.\nRefusal checks: invalid fence reports block/line; missing browser exits 2.\nPASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-xScxBJ; remove only this directory after review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "--self-test-styles"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check --self-test-styles\n\nOK  <style-self-test> (5 colored Mermaid blocks)\n\nValidation passed: checked 5 Mermaid blocks across 1 target.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+        "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+        "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+        "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+        "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+        "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+        "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+        "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+        "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+        "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+        "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+        "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+        "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+        "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+        "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+        "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+        "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+        "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+        "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd",
+        "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd",
+        "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd",
+        "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd",
+        "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd",
+        "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd",
+        "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd",
+        "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd",
+        "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd",
+        "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd",
+        "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd",
+        "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd",
+        "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd",
+        "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd",
+        "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd",
+        "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd",
+        "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd\n\nOK  domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd (1 Mermaid block)\nOK  domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md (1 Mermaid block)\nOK  domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md (1 Mermaid block)\nOK  domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md (1 Mermaid block)\n\nValidation passed: checked 20 Mermaid blocks across 35 targets.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/runtime-responsibility-boundaries.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/runtime-responsibility-boundaries.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/cwd-versus-module-base.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/cwd-versus-module-base.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/entry-context-order.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/entry-context-order.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/listener-invocation-versus-completion.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/listener-invocation-versus-completion.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/buffer-view-and-copy.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/buffer-view-and-copy.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/handle-read-and-release.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/handle-read-and-release.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/write-false-admission.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/write-false-admission.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/wait-versus-pipeline-abort.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/wait-versus-pipeline-abort.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/shared-native-pool.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/shared-native-pool.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/clone-transfer-share.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/clone-transfer-share.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/ipc-send-versus-result.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/ipc-send-versus-result.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/esm-url-cache-identity.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/esm-url-cache-identity.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/memory-counter-overlap.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/memory-counter-overlap.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/reachable-retention-and-release.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/reachable-retention-and-release.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/emitter-context-capture.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/emitter-context-capture.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/drain-versus-forced-cutoff.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/drain-versus-forced-cutoff.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/elu-is-not-process-cpu.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/elu-is-not-process-cpu.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "11.19.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.14.7\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sw_vers"
+      ],
+      "exit": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.1\nBuildVersion:\t\t25B78\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-handbook-links.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"checked_internal_links\": 1328,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "lessons": [
+    {
+      "path": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "sha256": "4d1dec8d71b2f9f5acf64e0402fa25d74dff88ee8c3509b1de1d98730b4b96eb",
+      "baselineSha256": "57f3bc318171898baa69bc3bc3130450c06fa4a318460dfe5c77bb190a9ddcf9",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg",
+              "alt": "Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.",
+              "loaded": true,
+              "width": 430,
+              "naturalWidth": 430
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg",
+              "alt": "Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 430
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+      "sha256": "f6d71b2e51c0c57b3e05749ec37b9ac5c8b5fe4aff9a358bbd6d92bd3f01918c",
+      "baselineSha256": "90da0913b4150b53127d47275d2b3158bdd43d1da005d43f71d0d844c2185549",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg",
+              "alt": "A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example.",
+              "loaded": true,
+              "width": 205,
+              "naturalWidth": 205
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg",
+              "alt": "A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example.",
+              "loaded": true,
+              "width": 205,
+              "naturalWidth": 205
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "sha256": "ab348de295d9948208295e44570cd43d0ff954c3a271fe3e02e05e7898d2d1bf",
+      "baselineSha256": "ab348de295d9948208295e44570cd43d0ff954c3a271fe3e02e05e7898d2d1bf",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg",
+              "alt": "JavaScript submits async I/O and continues; operation-specific native paths notify the runtime, and callback dispatch requires both an available outcome and the JavaScript thread.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 81
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg",
+              "alt": "JavaScript submits async I/O and continues; operation-specific native paths notify the runtime, and callback dispatch requires both an available outcome and the JavaScript thread.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "sha256": "d94e44b4bf6af2f61e3796dafc684df96c69e3af1eb99072ad571d6a0362fd6e",
+      "baselineSha256": "b6da8e6b240b60745dd4fe791b67b3bf73f0458620dfec7d8d140bd67f72f2d8",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/04-scheduling-queues-and-timers/entry-context-order.svg",
+              "alt": "Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.",
+              "loaded": true,
+              "width": 175,
+              "naturalWidth": 175
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/04-scheduling-queues-and-timers/entry-context-order.svg",
+              "alt": "Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.",
+              "loaded": true,
+              "width": 175,
+              "naturalWidth": 175
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+      "sha256": "fc54139bee0b12ad25f9509dc4dbad2db2c05e5a5952c364750a8468d67a6b39",
+      "baselineSha256": "4fe34232ccbe35242c2773e051ca3d71bf35683a75212c3eef7dc74b2f99fb2d",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg",
+              "alt": "In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg",
+              "alt": "In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "sha256": "0a8fb01cd0c28a71028d65a395b707dcbc1dcd1d4cd039a7703e2455098de05c",
+      "baselineSha256": "5db8f5df9f8e561dd89409a5d1eafd3823d6dfceeaca519e1f878826da08edd9",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg",
+              "alt": "original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30.",
+              "loaded": true,
+              "width": 363,
+              "naturalWidth": 363
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg",
+              "alt": "original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+      "sha256": "c4d2dad5385f16ec65b5c2af75916ed3024549d5d6cfd90bada73337fcc1e843",
+      "baselineSha256": "11d5ae2bc849d4ec71bc33055e25ebcf5dcb1417aaf70465793bcad9b6ef7041",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg",
+              "alt": "Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.",
+              "loaded": true,
+              "width": 426,
+              "naturalWidth": 426
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg",
+              "alt": "Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 426
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "sha256": "0cce82dcd92cc5ac2f556ee517583437a3a753807ff299171b0317bda94f71e4",
+      "baselineSha256": "f0868498e95e0d39070cbfeb56abad2b02e729c0782828464844203c8ebe47a7",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg",
+              "alt": "On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.",
+              "loaded": true,
+              "width": 341,
+              "naturalWidth": 341
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg",
+              "alt": "On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.",
+              "loaded": true,
+              "width": 341,
+              "naturalWidth": 341
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "sha256": "39da35eecbba2283d4381b551a7339fbf8c482ebca4314ec1d78e2921a47e04f",
+      "baselineSha256": "4fcf429c6e2c6635f54793adbb5088896caeba19f0a67a5ac57b50659325ca87",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg",
+              "alt": "Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up.",
+              "loaded": true,
+              "width": 221,
+              "naturalWidth": 222
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg",
+              "alt": "Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up.",
+              "loaded": true,
+              "width": 221,
+              "naturalWidth": 222
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "sha256": "7711043720adbd134508607dca2637470357079dc42b9900ba1bc75f4cef1752",
+      "baselineSha256": "df534b3f784ac6cfa63f8aac1b70896af1f8100e8c4cc8d9527f64343e55dfc8",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg",
+              "alt": "Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.",
+              "loaded": true,
+              "width": 498,
+              "naturalWidth": 498
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg",
+              "alt": "Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 498
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "sha256": "444382f898ebd1fa05a79ec0489b2be4f1fe54bcc2f19021417a084ab7703317",
+      "baselineSha256": "678793c51d3f33ecff7db85195a8de05e4ce5dbd30394a1e62e56d57f1abffaf",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg",
+              "alt": "Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.",
+              "loaded": true,
+              "width": 214,
+              "naturalWidth": 214
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg",
+              "alt": "Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.",
+              "loaded": true,
+              "width": 214,
+              "naturalWidth": 214
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "sha256": "8a782aed032fa3f5c5264df4b8be291a6a1065c857c09f53d94928e327c3bcc9",
+      "baselineSha256": "8917f85651ac1cc4bf60b8e3f3664687a63d1cf9ada81b1d03a59fb77024ea28",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg",
+              "alt": "The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg",
+              "alt": "The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "sha256": "b6a940899db23826c765d092bf2523e2f810e1dccc3a5a92043a4b26831cadfc",
+      "baselineSha256": "e2f05b2ced16bbb32892b27c7a0cf38ad7cb2d2d73b5f504944dab632e9e9bcc",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg",
+              "alt": "Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.",
+              "loaded": true,
+              "width": 367,
+              "naturalWidth": 367
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg",
+              "alt": "Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 367
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "sha256": "1173ce8efcf8988d999ef6a51582b45e718c1a8e2e8c6616d1e7cc875ad7a9c5",
+      "baselineSha256": "fc415c14651b9b75827a4a2063a1156da436fba02f9b731a7695002fbfd96c1f",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg",
+              "alt": "arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.",
+              "loaded": true,
+              "width": 212,
+              "naturalWidth": 212
+            },
+            {
+              "src": "../assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg",
+              "alt": "A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events.",
+              "loaded": true,
+              "width": 218,
+              "naturalWidth": 218
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg",
+              "alt": "arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.",
+              "loaded": true,
+              "width": 212,
+              "naturalWidth": 212
+            },
+            {
+              "src": "../assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg",
+              "alt": "A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events.",
+              "loaded": true,
+              "width": 218,
+              "naturalWidth": 218
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "sha256": "44a0291d00c49c630b146e104fe977fb48569d2456d00f3d7bccf3e6002391dd",
+      "baselineSha256": "b4350cbd1775e2bb8effaa2ab9b4a1b5aa2c39048e75aad7c5dfb2456025eb4b",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg",
+              "alt": "Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.",
+              "loaded": true,
+              "width": 386,
+              "naturalWidth": 386
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg",
+              "alt": "Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 386
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "sha256": "50c1f797e9e10a4a0e0955443d533b0b130a853d29953672bd4e9093ea18dd89",
+      "baselineSha256": "eae612a3e30b8104a7bde5efa5c2c13adb79150576e488daae86d3b86119169a",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg",
+              "alt": "Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.",
+              "loaded": true,
+              "width": 353,
+              "naturalWidth": 353
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg",
+              "alt": "Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.",
+              "loaded": true,
+              "width": 353,
+              "naturalWidth": 353
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "sha256": "1de3b6e6612c89281a8875544325204babf73f1be50f7b41e9fabdd85ce9115c",
+      "baselineSha256": "16302ef117f742ef21f8b4e1ab3bbe0b37b08eab178fa9e450847c7cc5e3a06b",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg",
+              "alt": "During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.",
+              "loaded": true,
+              "width": 470,
+              "naturalWidth": 470
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg",
+              "alt": "During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 470
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+      "sha256": "628ef15d66b775a92880e4d4884d19d6e7468851eff6289c9bf1af4a4071be82",
+      "baselineSha256": "628ef15d66b775a92880e4d4884d19d6e7468851eff6289c9bf1af4a4071be82",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": []
+        },
+        {
+          "columnWidth": 360,
+          "images": []
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "source": "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd",
+      "sourceSha256": "71e57a1c2bf3107fd337e94e0b5c07e6b906f099ccb52e38e62264a2170c89a0",
+      "svg": "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg",
+      "svgSha256": "84a392389157d7f9044a84d7d6cad28afad868a9efd17f87cb2a7a038f133dd6",
+      "xmlValid": true,
+      "title": "An engine is one part of the Node runtime",
+      "description": "Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 429.6796875 498.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 429.671875,
+          "minimumFontPx": 19.999636357024674,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.756668303060057,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd",
+      "sourceSha256": "1385c6fdbd21d461437f450a7784f9d9d00b0ee1d7b82b58b362dccdf35c7101",
+      "svg": "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg",
+      "svgSha256": "5997944933446e4ee78fd6e7d83cd5f849c511a46e6e06b6de1dfff8b2fd9568",
+      "xmlValid": true,
+      "title": "Two different bases for a resource path",
+      "description": "A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 204.75 540.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 204.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 204.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd",
+      "sourceSha256": "e8464c52e85162059b3c84ba62bd3d38959b448fea901700b9258ad17c035d3a",
+      "svg": "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.svg",
+      "svgSha256": "bf3bf3da68074b377812567ace5b2d96f53675f1df5acf4d304f69db5177674a",
+      "xmlValid": true,
+      "title": "Entry context changes the queue relationship",
+      "description": "Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 174.75 708.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 174.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 174.75,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd",
+      "sourceSha256": "895ee39162126468b159ec183304c9f254602732d021c2c9b89cbbb1d2b737e2",
+      "svg": "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg",
+      "svgSha256": "1dbe5ed31cd043beebe2756206e932abece594e574f10caef75db7c658b092df",
+      "xmlValid": true,
+      "title": "emit returns before an async listener completes",
+      "description": "In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-12 -10 320 633",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 320,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 320,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd",
+      "sourceSha256": "d563570370c0e2c53c14d5ca7a54b521cb1b9e32252e88d7c9a326800592956c",
+      "svg": "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg",
+      "svgSha256": "bfac8376b2dea3add8831d7b1858859320c7c5bccdbe2724a70c6ae568484e47",
+      "xmlValid": true,
+      "title": "A view aliases bytes while a copy owns separate storage",
+      "description": "original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 363.3125 540.626953125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 363.3125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 19.817650094615516,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd",
+      "sourceSha256": "e8f9697aaa363fa070923b0b80b86b87fc2cd47618c510da0c0e7a936250bf84",
+      "svg": "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg",
+      "svgSha256": "a0af10f5510f8d4a591703a26c9fe09083a72bd7d8bf3875afd2dc4b785547bd",
+      "xmlValid": true,
+      "title": "Valid bytes and handle release are separate obligations",
+      "description": "Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 425.939453125 516.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 425.9375,
+          "minimumFontPx": 19.999908290956114,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.90381096931874,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(254, 226, 226)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd",
+      "sourceSha256": "ee99b9cdc71a2bfa22a1d1934da2345f7101af7ae6696f388b7ce0466d5e7f22",
+      "svg": "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg",
+      "svgSha256": "f0806f9af5d42d43087545fc0d94659530b5efd7c3502b1136a84fe13665496e",
+      "xmlValid": true,
+      "title": "Pressure follows admission of the current chunk",
+      "description": "On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 340.85546875 800.740234375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 340.84375,
+          "minimumFontPx": 19.999312391844967,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 340.84375,
+          "minimumFontPx": 19.999312391844967,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd",
+      "sourceSha256": "24437bb4b392b0ee417a85e100c18b19dbc6b8cb135cbf96c207123227bd8707",
+      "svg": "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg",
+      "svgSha256": "5ba1a5c978ec925e009f484a3fee5b0577ef24371128aca4680fc0deb14905cd",
+      "xmlValid": true,
+      "title": "The signal target determines cancellation scope",
+      "description": "Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 221.5 690.626953125",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 221.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 221.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd",
+      "sourceSha256": "fb0d3619526b2258e3ebb01f6b1b6e6fbd597b9fcffdf763b6665892a1a09a05",
+      "svg": "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg",
+      "svgSha256": "c8ee4dbf710f3c7f89bfcf935c110eb4216593c8ed9e33b4bc81c9c8382101d2",
+      "xmlValid": true,
+      "title": "Different API families contend for one native resource",
+      "description": "Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 498.197265625 454.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 498.1875,
+          "minimumFontPx": 19.9996079615175,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.4521066187857,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(245, 243, 255)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd",
+      "sourceSha256": "d652690ec9c4e2cbcd4c140c69d0880d7d867cff1187a53544055ca71a3ee1af",
+      "svg": "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg",
+      "svgSha256": "3df5e4d022f122c72c30c93fbcfca3cf4df0beed9e91bb40c8296f3a14560125",
+      "xmlValid": true,
+      "title": "Clone transfer and share create different ownership relationships",
+      "description": "Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 214.03125 756.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 214.03125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.152599053671153
+        },
+        {
+          "columnWidth": 360,
+          "width": 214.03125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.152599053671153
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd",
+      "sourceSha256": "c92cfeab701a89fbd331535a92e0329458cefc3db05715606cd0d6cafb80fa80",
+      "svg": "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg",
+      "svgSha256": "bb980857603f39c3d944dc7e18957d74d5ca65ebc929c06f5aff4921ca7b5bfc",
+      "xmlValid": true,
+      "title": "Local IPC sending and child task completion differ",
+      "description": "The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-12 -10 320 609",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 320,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 320,
+          "minimumFontPx": 16,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd",
+      "sourceSha256": "af0fecf5465e99437fa0a67174dcccee102b7809d28dd3e0d6a0ce2335163e6d",
+      "svg": "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg",
+      "svgSha256": "fdfa8514be43f3caec7dc2d32046c69667ea7365ece8bac153b52f5eae05db23",
+      "xmlValid": true,
+      "title": "URL identity controls reuse in the ESM cache fixture",
+      "description": "Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 366.78125 540.208984375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 366.78125,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 19.630229189741843,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd",
+      "sourceSha256": "27529a922a2d95afe39274cc484963337ad0552f957d2c0a9d77cac530eb6c31",
+      "svg": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg",
+      "svgSha256": "f002f0ce11a7c2bb63cc593a6200ac92355d9cb266aa118c6989a2cf5c687cb7",
+      "xmlValid": true,
+      "title": "Memory counters are overlapping observations",
+      "description": "arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 211.5 584",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 211.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 211.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(243, 244, 246)",
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd",
+      "sourceSha256": "ce5e11b819ec39b47ffd78680d7be989ba2232362088af51a6237fee5f0847a5",
+      "svg": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg",
+      "svgSha256": "184462ea0e340155b503657427623bb8a9b68388675719b1f563914ee5f023d0",
+      "xmlValid": true,
+      "title": "Unneeded data can remain reachable",
+      "description": "A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 218.140625 716.8359375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 218.140625,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 218.140625,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)",
+            "rgb(220, 252, 231)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd",
+      "sourceSha256": "c9a5147714151bb33718620bf8618dde697f6f3373cc16fef6f166a83de4be99",
+      "svg": "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg",
+      "svgSha256": "af3be781988b9c550093339b77700cf1144ab10e4166bb9cba15f9b93ce4b20e",
+      "xmlValid": true,
+      "title": "Invocation context differs from registration context",
+      "description": "Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 385.697265625 430",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 385.6875,
+          "minimumFontPx": 19.9994936119143,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 18.667490391286073,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd",
+      "sourceSha256": "7e41276331945fcb60f31956ffd598ba9ea8ed99356f4d4f835a1f93b38665a5",
+      "svg": "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg",
+      "svgSha256": "ead62c60a9fb6469afb318a3b37b28e42a39259f050559075f7e124fc7b82f50",
+      "xmlValid": true,
+      "title": "Draining and forced cutoff are different outcomes",
+      "description": "Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 353 508.41796875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 353,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)",
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 14.521990846538632
+        },
+        {
+          "columnWidth": 360,
+          "width": 353,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(220, 252, 231)",
+            "rgb(255, 251, 235)",
+            "rgb(254, 226, 226)",
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 14.521990846538632
+        }
+      ]
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd",
+      "sourceSha256": "d4b58637beee5a970f6540df874a46476f0eb3fae09f31347c850a2a4d96714f",
+      "svg": "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg",
+      "svgSha256": "d7254eef4619c925eccce83858f35b4e382b9c8846d2d03f5fe922f524500e10",
+      "xmlValid": true,
+      "title": "A blocked loop can consume little parent CPU",
+      "description": "During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 470.21875 410",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 470.21875,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 15.312022330032564,
+          "clipped": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(245, 243, 255)",
+            "rgb(255, 251, 235)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 16.119468339438853
+        }
+      ]
+    }
+  ],
+  "trackingAndCoverage": "Reviewed; no mapping/status/Charter change. Protected files unchanged from baseline.",
+  "regeneration": [
+    {
+      "source": "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd",
+      "byteIdentical": true,
+      "sha256": "84a392389157d7f9044a84d7d6cad28afad868a9efd17f87cb2a7a038f133dd6"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd",
+      "byteIdentical": true,
+      "sha256": "5997944933446e4ee78fd6e7d83cd5f849c511a46e6e06b6de1dfff8b2fd9568"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd",
+      "byteIdentical": true,
+      "sha256": "bf3bf3da68074b377812567ace5b2d96f53675f1df5acf4d304f69db5177674a"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd",
+      "byteIdentical": true,
+      "sha256": "1dbe5ed31cd043beebe2756206e932abece594e574f10caef75db7c658b092df"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd",
+      "byteIdentical": true,
+      "sha256": "bfac8376b2dea3add8831d7b1858859320c7c5bccdbe2724a70c6ae568484e47"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd",
+      "byteIdentical": true,
+      "sha256": "a0af10f5510f8d4a591703a26c9fe09083a72bd7d8bf3875afd2dc4b785547bd"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd",
+      "byteIdentical": true,
+      "sha256": "f0806f9af5d42d43087545fc0d94659530b5efd7c3502b1136a84fe13665496e"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd",
+      "byteIdentical": true,
+      "sha256": "5ba1a5c978ec925e009f484a3fee5b0577ef24371128aca4680fc0deb14905cd"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd",
+      "byteIdentical": true,
+      "sha256": "c8ee4dbf710f3c7f89bfcf935c110eb4216593c8ed9e33b4bc81c9c8382101d2"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd",
+      "byteIdentical": true,
+      "sha256": "3df5e4d022f122c72c30c93fbcfca3cf4df0beed9e91bb40c8296f3a14560125"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd",
+      "byteIdentical": true,
+      "sha256": "bb980857603f39c3d944dc7e18957d74d5ca65ebc929c06f5aff4921ca7b5bfc"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd",
+      "byteIdentical": true,
+      "sha256": "fdfa8514be43f3caec7dc2d32046c69667ea7365ece8bac153b52f5eae05db23"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd",
+      "byteIdentical": true,
+      "sha256": "f002f0ce11a7c2bb63cc593a6200ac92355d9cb266aa118c6989a2cf5c687cb7"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd",
+      "byteIdentical": true,
+      "sha256": "184462ea0e340155b503657427623bb8a9b68388675719b1f563914ee5f023d0"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd",
+      "byteIdentical": true,
+      "sha256": "af3be781988b9c550093339b77700cf1144ab10e4166bb9cba15f9b93ce4b20e"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd",
+      "byteIdentical": true,
+      "sha256": "ead62c60a9fb6469afb318a3b37b28e42a39259f050559075f7e124fc7b82f50"
+    },
+    {
+      "source": "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd",
+      "byteIdentical": true,
+      "sha256": "d7254eef4619c925eccce83858f35b4e382b9c8846d2d03f5fe922f524500e10"
+    }
+  ]
+}

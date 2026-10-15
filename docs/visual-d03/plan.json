@@ -1,0 +1,422 @@
+{
+  "baseline": "4a492f6deb6315ca57ce5d9eac435321f034b097",
+  "startingWorkingTree": "clean (git status --short produced no paths)",
+  "reviewedChapters": [
+    {
+      "chapter": "01",
+      "lesson": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V01"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "02",
+      "lesson": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V02"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "03",
+      "lesson": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+      "decision": "unchanged",
+      "figures": [],
+      "reason": "Keep the accepted pilot SVG/source and authoritative inline phase dependency diagram byte-identical. The existing handoff map already answers the chapter\u2019s central readiness/completion and JS-yield question; more phase graphics risk implying universal scheduling."
+    },
+    {
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V03"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "05",
+      "lesson": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V04"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "06",
+      "lesson": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V05"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "07",
+      "lesson": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V06"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "08",
+      "lesson": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V07"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "09",
+      "lesson": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V08"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "10",
+      "lesson": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V09"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "11",
+      "lesson": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V10"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V11"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "13",
+      "lesson": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V12"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "14",
+      "lesson": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V13",
+        "D03-V14"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V15"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V16"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "decision": "enhanced",
+      "figures": [
+        "D03-V17"
+      ],
+      "reason": "Added only the selected distinct learning question(s); remaining tables/code explain other details without another figure."
+    },
+    {
+      "chapter": "18",
+      "lesson": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+      "decision": "unchanged",
+      "figures": [],
+      "reason": "Case map, exact controlled examples and the investigation-contract tables already expose competing hypotheses and outcome boundaries. Additional diagrams would repeat C06/C09/C10/C11/C14/C16/C17; preserve the integrative reading and future exercises without another overview."
+    }
+  ],
+  "figures": [
+    {
+      "id": "D03-V01",
+      "chapter": "01",
+      "lesson": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+      "source": "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd",
+      "svg": "domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg",
+      "type": "flowchart",
+      "title": "An engine is one part of the Node runtime",
+      "question": "Which responsibilities belong to V8, and which require the Node host?",
+      "misconception": "V8 alone supplies filesystem APIs, or every native call goes through the libuv pool.",
+      "placement": "Immediately before ## 3. Process, thread, isolate and execution turn",
+      "alt": "Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities.",
+      "caption": "This responsibility map complements the operation trace below. A synchronous host call can block its caller; a native boundary does not imply offload. Arrows label relationships, not a mandatory call stack. Native libraries, explicit Workers and OS details are omitted; the pool is only one possible native resource.",
+      "reference": "https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop"
+    },
+    {
+      "id": "D03-V02",
+      "chapter": "02",
+      "lesson": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+      "source": "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd",
+      "svg": "domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg",
+      "type": "flowchart",
+      "title": "Two different bases for a resource path",
+      "question": "Why can the same absolute entry find a different cwd-relative resource?",
+      "misconception": "An absolute entry path automatically changes the working directory.",
+      "placement": "Immediately before ## 4. Worked example A: launch identity and argument boundaries",
+      "alt": "A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example.",
+      "caption": "The two paths are alternative policies, not fallback search steps. Launching the same module from another cwd changes the upper resolution but preserves the module-relative URL. Neither constructed location proves a file exists. This conceptual map uses an ordinary file module; URL conversion and platform path rules still apply.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/esm.html#importmetaurl"
+    },
+    {
+      "id": "D03-V03",
+      "chapter": "04",
+      "lesson": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+      "source": "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd",
+      "svg": "domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.svg",
+      "type": "flowchart",
+      "title": "Entry context changes the queue relationship",
+      "question": "Which ordering changes between the identical CJS and ESM entry fixtures?",
+      "misconception": "nextTick always precedes every Promise, or ESM entry order governs every later callback.",
+      "placement": "Immediately before ## 5. Example B \u2014 nested scheduling inside an I/O callback",
+      "alt": "Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts.",
+      "caption": "Two independent traces of Example A, after sync-start and sync-end. Promise and queueMicrotask jobs were registered in that order. ESM evaluation already runs in a microtask context. These finite entry traces are not loop phases, a global queue priority, or a prediction for the later I/O callback in Example B. The lesson records Node v26.4.0/macOS; the new replay separately records this host.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/process.html#when-to-use-queuemicrotask-vs-processnexttick"
+    },
+    {
+      "id": "D03-V04",
+      "chapter": "05",
+      "lesson": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+      "source": "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd",
+      "svg": "domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg",
+      "type": "sequenceDiagram",
+      "title": "emit returns before an async listener completes",
+      "question": "What has completed when await mode prints returned true?",
+      "misconception": "An async listener turns emit into a Promise that waits for every effect.",
+      "placement": "Immediately before ## 8. Example D \u2014 avoid missed events when awaiting",
+      "alt": "In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.",
+      "caption": "This sequence traces only Example C\u2019s await mode. Both lifelines execute JavaScript on the same thread; the listener lane is a call boundary, not another thread. emit invokes listeners synchronously and ignores their returned Promises. true reports listener presence. The later continuation completes after the immediate boundary in this fixture; elapsed time and other emissions are omitted.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/events.html#asynchronous-vs-synchronous"
+    },
+    {
+      "id": "D03-V05",
+      "chapter": "06",
+      "lesson": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+      "source": "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd",
+      "svg": "domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg",
+      "type": "flowchart",
+      "title": "A view aliases bytes while a copy owns separate storage",
+      "question": "Why does view change original while snapshot keeps 20,30?",
+      "misconception": "A new Buffer object always means independent storage.",
+      "placement": "Immediately before ## 5. Retention and asynchronous handoff",
+      "alt": "original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30.",
+      "caption": "Ownership relationships after Example A\u2019s mutation, not physical addresses. subarray shares the range; Buffer.from(view) copied it before mutation. A small view can retain a larger backing allocation. The second half of the example separately demonstrates byteOffset and byteLength; pooled capacity and allocation strategy are not pictured.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/buffer.html#buffers-and-typedarrays"
+    },
+    {
+      "id": "D03-V06",
+      "chapter": "07",
+      "lesson": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+      "source": "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd",
+      "svg": "domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg",
+      "type": "flowchart",
+      "title": "Valid bytes and handle release are separate obligations",
+      "question": "Which read bytes are valid, and which paths still close the FileHandle?",
+      "misconception": "A fulfilled read validates the full capacity or automatically releases an explicitly opened handle.",
+      "placement": "Immediately before ## 7. Partial writes and explicit progress",
+      "alt": "Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.",
+      "caption": "This is Example B\u2019s observed path for the unchanged five-byte regular file. Explicit position 3 does not advance the handle cursor. Only the first bytesRead bytes belong to this result. Both consumer paths enter finally; close can itself fail, so the diagram says attempt, not guaranteed release. The fixture verifies successful closure and EBADF afterward; concurrent file changes and cleanup failure are outside that replay.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/fs.html#class-filehandle"
+    },
+    {
+      "id": "D03-V07",
+      "chapter": "08",
+      "lesson": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+      "source": "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd",
+      "svg": "domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg",
+      "type": "flowchart",
+      "title": "Pressure follows admission of the current chunk",
+      "question": "After write returns false, should the producer retry that chunk?",
+      "misconception": "false means chunk rejection, or highWaterMark caps all process memory.",
+      "placement": "Immediately before ## 6. Example B \u2014 slow sink and a bounded pressure counterexample",
+      "alt": "On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.",
+      "caption": "The current chunk has already entered a valid live Writable when false signals pressure. Retrying it duplicates data. The upward arrow resumes new submissions only after drain; errors or premature closure need their own outcome handling and may prevent drain. highWaterMark is an accounting threshold, not a hard chunk-size or total-memory limit. This is a protocol model, not a universal event trace or durable-delivery receipt.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/stream.html#writablewritechunk-encoding-callback"
+    },
+    {
+      "id": "D03-V08",
+      "chapter": "09",
+      "lesson": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+      "source": "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd",
+      "svg": "domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg",
+      "type": "flowchart",
+      "title": "The signal target determines cancellation scope",
+      "question": "Why can a stream still finish after finished rejects ABORT_ERR?",
+      "misconception": "Every signal abort destroys underlying work and reverses accepted output.",
+      "placement": "Immediately before ## 9. Early async iteration exit and ownership transfer",
+      "alt": "Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up.",
+      "caption": "These are separate API contracts, not two stages of one operation. Example C\u2019s wait-abort branch leaves the sink live and then ends it successfully. Pipeline cancellation instead asks participants to terminate and reports cancellation. Custom generators must cooperate and external operations have their own contracts. Neither path proves rollback, immediate native interruption, or that every cleanup has already finished.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/stream.html#streamfinishedstream-options-callback"
+    },
+    {
+      "id": "D03-V09",
+      "chapter": "10",
+      "lesson": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+      "source": "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd",
+      "svg": "domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg",
+      "type": "flowchart",
+      "title": "Different API families contend for one native resource",
+      "question": "Why can filesystem results be late while JavaScript timers still run?",
+      "misconception": "Every API has its own pool or a late filesystem callback measures disk service time.",
+      "placement": "Immediately before ## 5. Worked example A: unrelated tasks can share a bottleneck",
+      "alt": "Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.",
+      "caption": "This resource map labels representative pool-backed APIs, not a FIFO algorithm or one-task-per-Promise rule. Queue wait, native work and callback observation are separate intervals. Timer progress can coexist with pool contention but proves neither native completion time nor fairness. libuv shares this pool across relevant loops in a process; a JavaScript Worker does not obtain a private filesystem pool. Counts and performance are intentionally omitted.",
+      "reference": "https://docs.libuv.org/en/v1.x/threadpool.html"
+    },
+    {
+      "id": "D03-V10",
+      "chapter": "11",
+      "lesson": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+      "source": "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd",
+      "svg": "domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg",
+      "type": "flowchart",
+      "title": "Clone transfer and share create different ownership relationships",
+      "question": "Which memory remains usable by the sender after each message mode?",
+      "misconception": "Transfer affects only one view, or shared storage is automatically synchronized.",
+      "placement": "Immediately before ## 5. Worked example A \u2014 CPU offload without blocking the main timer",
+      "alt": "Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.",
+      "caption": "Three alternative relationships for known-owned storage, not three steps or exact copy costs. Ordinary cloneable ArrayBuffer data is copied; a transferred dedicated ArrayBuffer detaches all sender aliases; SharedArrayBuffer is shared and is not transferable. Examples B and C exercise the latter ownership boundaries. Pooled Buffers and untransferable storage have version-sensitive restrictions and are excluded here. Worker termination does not reverse messages or external effects.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/worker_threads.html#considerations-when-transferring-typedarrays-and-buffers"
+    },
+    {
+      "id": "D03-V11",
+      "chapter": "12",
+      "lesson": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+      "source": "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd",
+      "svg": "domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg",
+      "type": "sequenceDiagram",
+      "title": "Local IPC sending and child task completion differ",
+      "question": "What additional evidence does task-1\u2019s result provide beyond send returning true?",
+      "misconception": "Local IPC send success proves child acceptance, durable execution or shared heap.",
+      "placement": "Immediately before ## 8. Example D \u2014 output backpressure can stop a child",
+      "alt": "The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data.",
+      "caption": "Example C\u2019s successful application exchange. The local send return is not a receiver acknowledgment and has no implied ordering against the child\u2019s execution. The later task-1 result is explicit task-level evidence, still not a durable commit. Advanced serialization creates receiver values rather than sharing a heap. IPC disconnection and child exit follow in the fixture; exit/close and stream drainage are separate boundaries. No fairness, replay or exactly-once guarantee is drawn.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/child_process.html#subprocesssendmessage-sendhandle-options-callback"
+    },
+    {
+      "id": "D03-V12",
+      "chapter": "13",
+      "lesson": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+      "source": "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd",
+      "svg": "domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg",
+      "type": "flowchart",
+      "title": "URL identity controls reuse in the ESM cache fixture",
+      "question": "Why does adding a query make this module execute again?",
+      "misconception": "The same file always has exactly one module instance or require.cache controls ESM.",
+      "placement": "Immediately before ## 9. Worked example D \u2014 cycles expose initialization order",
+      "alt": "Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.",
+      "caption": "Identity relationships after Example C\u2019s sequential awaits. x and y reuse the same ESM URL record; z uses the distinct query URL and triggers this module\u2019s side effect again. The numbers are this fixture\u2019s global evaluation counter, not cache size or an algorithm for all graphs. CJS uses its own cache rules and some interop bridges have special cases. Query changes are not a bounded reload policy; Workers and processes have separate evaluation contexts.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/esm.html#urls"
+    },
+    {
+      "id": "D03-V13",
+      "chapter": "14",
+      "lesson": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd",
+      "svg": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg",
+      "type": "flowchart",
+      "title": "Memory counters are overlapping observations",
+      "question": "Why can external and arrayBuffers both rise by 32 MiB without 64 MiB of new bytes?",
+      "misconception": "All reported counters are disjoint and sum to process memory.",
+      "placement": "Immediately before ## 6. Worked example B \u2014 retained object graph versus released graph",
+      "alt": "arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.",
+      "caption": "Labels describe accounting relationships, not areas proportional to bytes. arrayBuffers is included in external, so adding them double-counts those bytes. RSS overlaps resident portions across categories; it is not their sum or a direct allocation total. Under Workers, RSS is process-wide while other memoryUsage fields refer to the current thread. Native allocations and allocator behavior prevent a complete partition from these counters alone.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/process.html#processmemoryusage"
+    },
+    {
+      "id": "D03-V14",
+      "chapter": "14",
+      "lesson": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+      "source": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd",
+      "svg": "domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg",
+      "type": "flowchart",
+      "title": "Unneeded data can remain reachable",
+      "question": "What changes when the global retaining reference is removed?",
+      "misconception": "Request completion or GC immediately frees every unused object and returns RAM to the OS.",
+      "placement": "Immediately before ## 7. Worked example C \u2014 large Buffer backing store is externally accounted",
+      "alt": "A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events.",
+      "caption": "A before/after model of Example B, assuming no other strong retaining path. The labeled arrow first denotes a reference; later arrows denote changed eligibility and possible reclamation. Deleting a root does not itself run GC. The debug fixture requests GC and observes heapUsed falling; no immediate RSS decrease or fixed collector timing follows. Generational, concurrent and incremental collection are omitted.",
+      "reference": "https://v8.dev/blog/trash-talk"
+    },
+    {
+      "id": "D03-V15",
+      "chapter": "15",
+      "lesson": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+      "source": "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd",
+      "svg": "domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg",
+      "type": "flowchart",
+      "title": "Invocation context differs from registration context",
+      "question": "Why does the plain listener see no store while the bound listener sees A?",
+      "misconception": "EventEmitter automatically remembers the ALS store present during registration.",
+      "placement": "Immediately before ## 7. `AsyncResource`: connecting custom lifecycle to execution context",
+      "alt": "Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.",
+      "caption": "The branches are two listener invocations in Example B, not parallel execution or two threads. Plain listeners inherit the emission\u2019s calling context; the bound callback intentionally restores the context captured in A. Binding changes attribution semantics and can retain data, so it is not a universal listener policy. ALS associates values, does not freeze stores, and does not cross Worker/process boundaries automatically or prove authorization or distributed causality.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/async_context.html#static-method-asynclocalstoragebindfn"
+    },
+    {
+      "id": "D03-V16",
+      "chapter": "16",
+      "lesson": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+      "source": "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd",
+      "svg": "domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg",
+      "type": "stateDiagram-v2",
+      "title": "Draining and forced cutoff are different outcomes",
+      "question": "Which transition establishes local closure, and which abandons remaining work?",
+      "misconception": "Signal receipt, server close or an exit code proves all business effects completed.",
+      "placement": "Immediately before ## 9. Worked example D \u2014 an active HTTP request drains after `server.close()`",
+      "alt": "Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.",
+      "caption": "An illustrative service lifecycle that application code must implement, not automatic Node states. The successful branch requires the relevant owners\u2019 observed completion; HTTP server.close alone does not close an entire application. The deadline branch may abandon work and cannot prove rollback. A hard crash or kill can bypass these transitions and user cleanup. Budgets, repeated-signal behavior and supervisor policy remain product and operational decisions.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/http.html#serverclosecallback"
+    },
+    {
+      "id": "D03-V17",
+      "chapter": "17",
+      "lesson": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+      "source": "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd",
+      "svg": "domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg",
+      "type": "flowchart",
+      "title": "A blocked loop can consume little parent CPU",
+      "question": "How can the blocking-child example show high ELU and low parent CPU together?",
+      "misconception": "ELU is CPU utilization or establishes the unique cause of a slow request.",
+      "placement": "Immediately before ## 7. Process CPU versus wall time and live resource hints",
+      "alt": "During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.",
+      "caption": "A causal explanation of Section 6\u2019s deliberately blocking fixture, not a new measured chart. ELU tracks time outside the loop event provider; process.cpuUsage measures parent process CPU, excluding its child. Both observations can coexist. The child\u2019s timer duration, startup and host scheduling affect elapsed time. For an unknown incident, align scopes/windows and collect discriminating evidence; high ELU alone does not establish a root cause or native-pool saturation.",
+      "reference": "https://nodejs.org/docs/latest-v24.x/api/perf_hooks.html#performanceeventlooputilizationutilization1-utilization2"
+    }
+  ]
+}

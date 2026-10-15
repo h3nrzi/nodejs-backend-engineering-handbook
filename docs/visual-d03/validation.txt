@@ -1,0 +1,287 @@
+$ git diff --name-only 4a492f6deb6315ca57ce5d9eac435321f034b097 -- tracking/state.json TRACKER.md projects/coverage-matrix.md domains/01-computer-science-foundations domains/02-javascript-typescript domains/03-nodejs-internals/README.md domains/03-nodejs-internals/curriculum.md domains/03-nodejs-internals/projects domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md domains/04-network-protocol-engineering tools scripts package.json package-lock.json
+exit 0
+
+$ git diff --name-only 4a492f6deb6315ca57ce5d9eac435321f034b097
+exit 0
+domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md
+domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md
+domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md
+domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md
+domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md
+domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md
+domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md
+domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md
+domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md
+domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md
+domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md
+domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md
+domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md
+domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md
+domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md
+domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md
+
+$ git ls-files --others --exclude-standard
+exit 0
+docs/visual-d03/changed-files.txt
+docs/visual-d03/finding-check.json
+docs/visual-d03/finding-check.mjs
+docs/visual-d03/guide.md
+docs/visual-d03/lab-replay.json
+docs/visual-d03/plan.json
+docs/visual-d03/references.json
+docs/visual-d03/replay.mjs
+docs/visual-d03/review.md
+docs/visual-d03/technical-findings.md
+docs/visual-d03/validation.txt
+docs/visual-d03/verification.json
+docs/visual-d03/verify.mjs
+domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd
+domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.svg
+domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd
+domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg
+domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd
+domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.svg
+domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd
+domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg
+domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd
+domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.svg
+domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd
+domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.svg
+domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd
+domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg
+domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd
+domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg
+domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd
+domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg
+domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd
+domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg
+domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd
+domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.svg
+domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd
+domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.svg
+domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd
+domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.svg
+domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd
+domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.svg
+domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd
+domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg
+domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd
+domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.svg
+domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd
+domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg
+
+$ npm run visuals:smoke
+exit 0
+
+> visuals:smoke
+> node scripts/check-visuals.mjs
+
+Disposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-xScxBJ
+tcp-handshake: PNG 507 x 357, 16388 bytes
+event-loop-scheduling: PNG 236 x 725, 30572 bytes
+request-lifecycle: PNG 451 x 536, 25604 bytes
+Markdown: 3 fences validated; 3 relative SVG image references resolve.
+Math: KaTeX typeset output verified with an explicit HTML-label config.
+Refusal checks: invalid fence reports block/line; missing browser exits 2.
+PASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-xScxBJ; remove only this directory after review.
+
+$ npm run visuals:check -- --self-test-styles
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check --self-test-styles
+
+OK  <style-self-test> (5 colored Mermaid blocks)
+
+Validation passed: checked 5 Mermaid blocks across 1 target.
+
+$ npm run visuals:check -- domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd
+
+OK  domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md (1 Mermaid block)
+OK  domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md (1 Mermaid block)
+OK  domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md (1 Mermaid block)
+
+Validation passed: checked 20 Mermaid blocks across 35 targets.
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/runtime-responsibility-boundaries.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/runtime-responsibility-boundaries.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/cwd-versus-module-base.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/cwd-versus-module-base.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/entry-context-order.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/entry-context-order.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/listener-invocation-versus-completion.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/listener-invocation-versus-completion.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/buffer-view-and-copy.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/buffer-view-and-copy.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/handle-read-and-release.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/handle-read-and-release.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/write-false-admission.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/write-false-admission.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/wait-versus-pipeline-abort.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/wait-versus-pipeline-abort.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/shared-native-pool.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/shared-native-pool.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/clone-transfer-share.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/clone-transfer-share.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/ipc-send-versus-result.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/ipc-send-versus-result.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/esm-url-cache-identity.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/esm-url-cache-identity.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/memory-counter-overlap.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/memory-counter-overlap.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/reachable-retention-and-release.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/reachable-retention-and-release.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/emitter-context-capture.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/emitter-context-capture.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/drain-versus-forced-cutoff.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/drain-versus-forced-cutoff.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/elu-is-not-process-cpu.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d03-vuE29F/elu-is-not-process-cpu.svg
+
+Generating single mermaid chart
+
+$ npm --version
+exit 0
+11.19.1
+
+$ python3 --version
+exit 0
+Python 3.14.7
+
+$ sw_vers
+exit 0
+ProductName:		macOS
+ProductVersion:		26.1
+BuildVersion:		25B78
+
+$ python3 scripts/check-handbook-links.py
+exit 0
+{
+  "checked_internal_links": 1328,
+  "current_issues": [],
+  "pre_existing_issues": [],
+  "new_issues": []
+}
+
+$ git diff --check
+exit 0

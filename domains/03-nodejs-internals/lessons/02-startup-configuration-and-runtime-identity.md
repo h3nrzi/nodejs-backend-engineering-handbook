@@ -69,6 +69,14 @@ Module URLs are URLs, not arbitrary OS pathname strings. Preserve URL/path disti
 
 `process.chdir()` changes process-level cwd where supported; it does not relocate the module. Changing cwd midway through asynchronous work can make later relative operations target a different resource. This chapter does not recommend mutable cwd as a configuration mechanism.
 
+**Visual question:** Why can the same absolute entry find a different cwd-relative resource?
+
+![A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example.](../assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg)
+
+*Figure D03-V02 — The two paths are alternative policies, not fallback search steps. Launching the same module from another cwd changes the upper resolution but preserves the module-relative URL. Neither constructed location proves a file exists. This conceptual map uses an ordinary file module; URL conversion and platform path rules still apply. [Reference](https://nodejs.org/docs/latest-v24.x/api/esm.html#importmetaurl).*
+
+[Full-size SVG](../assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.svg) · [Editable Mermaid source](../assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd).
+
 ## 4. Worked example A: launch identity and argument boundaries
 
 Save as `launch-identity.mjs`:

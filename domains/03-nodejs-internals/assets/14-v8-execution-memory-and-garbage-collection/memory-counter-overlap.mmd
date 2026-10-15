@@ -1,0 +1,28 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Memory counters are overlapping observations
+  accDescr: arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket.
+A["arrayBuffers counter"] -->|included in| E["external counter"]
+  E ~~~ H["heapUsed / heapTotal
+V8 managed heap counters"]
+  H ~~~ R["RSS: process resident pages
+overlaps resident portions
+Do not sum these counters"]
+  class A,E neutral;
+  class H control;
+  class R pending;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

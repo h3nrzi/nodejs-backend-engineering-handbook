@@ -1,0 +1,30 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Pressure follows admission of the current chunk
+  accDescr: On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.
+W["Submit next chunk
+with write(chunk)"] --> A["Current chunk admitted"]
+  A --> P{"Return value?"}
+  P -->|true| W
+  P -->|false: pressure| S["Stop new writes
+do not retry current chunk"]
+  S -->|drain| W
+  S -->|error / premature close| F["Stop and handle outcome"]
+  class A success;
+  class P,S pending;
+  class F failure;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

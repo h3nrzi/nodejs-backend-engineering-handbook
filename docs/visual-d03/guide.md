@@ -1,0 +1,63 @@
+# D03 visual evaluation guide
+
+Purpose: review the D03 runtime diagrams as teaching material. Product Owner visual acceptance is **pending**; all user results start **not_run**. Editorial approval and learner competence are separate.
+
+## Starting point
+
+Use the commit containing this package (`git log -1 --format=%H -- docs/visual-d03/review.md`), from repository root `/Users/hossein/Projects/nodejs-backend-engineering-handbook`. The [review](review.md), [plan](plan.json), [validation](validation.txt), [SVG/Markdown measurements](verification.json), [79 replays](lab-replay.json) and [separate technical concern](technical-findings.md) preserve the context.
+
+First action: open [C01](../../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md) in your Markdown preview and scroll to **Visual question** immediately before §3. Expect an engine/host responsibility map, teaching caption, full-size SVG and editable source links. Answer the printed question using the arrows and caption.
+
+For a browser preview with the exact local review setup, run:
+
+```sh
+node docs/visual-d03/verify.mjs
+```
+
+The verifier prints an OS-temporary directory containing lesson HTML previews, paired 720/360 px screenshots, dark-surrounding and grayscale variants. Open its `01-runtime-architecture-and-execution-boundaries.html` in Chrome; then open `D03-V01-pair.png`. No server, account, network reader, secret or production data is needed. Dependencies and Chrome already exist here; on another host use the existing tooling setup and set PUPPETEER_EXECUTABLE_PATH to an installed browser. This command checks existing SVGs and does not overwrite retained evidence. Preflight results below were actually run by the agent, not by the user.
+
+## Common visual scenario actions
+
+Actor: Product Owner/reader. Prerequisite: checked-out delivery with local assets. For each V scenario below, open the lesson at its Visual question, read the preceding explanation, and answer the question. Follow the full-size SVG and editable source links. Compare at a 720 px desktop reading column and 360 px mobile column; inspect arrowheads, labels, spacing, clipping and agreement with the caption. Also inspect white figures against dark surroundings and in grayscale. Expect the relationship described in the table, selectable SVG text and source metadata (accTitle/accDescr). Observe the lesson's text alternative and caption even when the image is unavailable. No scenario changes application data; later scenarios have no state dependency.
+
+Record pass/fail plus figure ID, viewport, browser and a short observation. If an arrow, claim or label fails, mark that scenario fail and continue independent scenarios. Do not infer all-version execution, business completion or learning competence from a visual pass.
+
+| Scenario / coverage | Lesson and learning question | Expected visible relationship | User result |
+| --- | --- | --- | --- |
+| D03-V01 | [C01](../../domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md): Which responsibilities belong to V8, and which require the Node host? | Application JavaScript executes in V8 and calls Node host APIs. Those APIs connect to operation-specific native and OS facilities. V8 execution and host facilities are distinct responsibilities. | not_run |
+| D03-V02 | [C02](../../domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md): Why can the same absolute entry find a different cwd-relative resource? | A relative filesystem path uses the process working directory. A URL constructed from import.meta.url uses the module location. Changing cwd changes only the former base in this example. | not_run |
+| D03-V03 | [C04](../../domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md): Which ordering changes between the identical CJS and ESM entry fixtures? | Both entries print sync-start then sync-end. The CJS entry next runs nextTick, promise, microtask. The ESM entry instead runs promise, microtask, nextTick. These are separate fixture contexts. | not_run |
+| D03-V04 | [C05](../../domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md): What has completed when await mode prints returned true? | In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end. | not_run |
+| D03-V05 | [C06](../../domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md): Why does view change original while snapshot keeps 20,30? | original and view reference the same backing bytes. view covers indices 1 and 2, now 99 and 30. snapshot references an independent copy containing 20 and 30. | not_run |
+| D03-V06 | [C07](../../domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md): Which read bytes are valid, and which paths still close the FileHandle? | Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally. | not_run |
+| D03-V07 | [C08](../../domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md): After write returns false, should the producer retry that chunk? | On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path. | not_run |
+| D03-V08 | [C09](../../domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md): Why can a stream still finish after finished rejects ABORT_ERR? | Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up. | not_run |
+| D03-V09 | [C10](../../domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md): Why can filesystem results be late while JavaScript timers still run? | Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer. | not_run |
+| D03-V10 | [C11](../../domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md): Which memory remains usable by the sender after each message mode? | Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol. | not_run |
+| D03-V11 | [C12](../../domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md): What additional evidence does task-1’s result provide beyond send returning true? | The child reports ready, the parent sends task-1, and send returns a local flow-control result. A later child message reports task-1 total 5. Parent and child are separate processes with deserialized data. | not_run |
+| D03-V12 | [C13](../../domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md): Why does adding a query make this module execute again? | Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture. | not_run |
+| D03-V13 | [C14](../../domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md): Why can external and arrayBuffers both rise by 32 MiB without 64 MiB of new bytes? | arrayBuffers is included in external. V8 heap counters describe managed memory. RSS observes resident pages across the process and is not another disjoint allocation bucket. | not_run |
+| D03-V14 | [C14](../../domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md): What changes when the global retaining reference is removed? | A global retaining root keeps the object graph reachable. Removing its last retaining path makes that graph eligible for collection. Collection and release of resident pages to the OS are later distinct events. | not_run |
+| D03-V15 | [C15](../../domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md): Why does the plain listener see no store while the bound listener sees A? | Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored. | not_run |
+| D03-V16 | [C16](../../domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md): Which transition establishes local closure, and which abandons remaining work? | Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes. | not_run |
+| D03-V17 | [C17](../../domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md): How can the blocking-child example show high ELU and low parent CPU together? | During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU. | not_run |
+
+| P03 — pilot preservation | [C03](../../domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md), §5 | Accepted handoff image and source are unchanged, alongside authoritative inline Mermaid. No duplicate phase clock is added. | not_run |
+| O18 — justified omission | [C18](../../domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md), case map and investigation contract | Existing case tables, code and exercises remain; review report explains omission rather than requiring a diagram quota. | not_run |
+| T01 — text and scope | [Review](review.md), preservation checks in verification.json | Original lesson text/fences and pilot hashes match baseline; D01/D02/D04, curriculum, Charters and tracking unchanged. | not_run |
+| A01 — accessibility and publication | All V scenarios and actual publication viewer | Alt/caption equivalents, readable labels, source/full-size links and local metadata are available. GitHub and assistive-technology observations remain for human review; local measurements alone cannot establish those results. | not_run |
+| F01 — technical concern boundary | [Separate finding](technical-findings.md) and V10 | Pooled/untransferable storage concern is separate from unchanged approved text; new diagram explicitly excludes it. | not_run |
+
+## Agent preflight versus user evaluation
+
+Agent preflight: 79/79 expected-outcome educational replays across 18 lessons passed on Node v24.22.0/darwin arm64. SVG syntax/rendering, preservation, bounds/contrast and local Markdown are recorded in verification.json and validation.txt. Manual rendered inspection outcomes are in review.md. These are supporting evidence, not user acceptance. Exact environment and limitations are retained with each result.
+
+User evaluation: **not_run** for every scenario; no Product Owner D03 visual acceptance inferred. No learner assessment performed. The original lessons' educational status is unchanged.
+
+## Checkpoint, cleanup and resume
+
+Current scenario: D03-V01. Next safe action: open C01 at the first Visual question; expect separate V8 and Node host responsibilities. Retain your observation with the delivery revision and browser/viewport. Resume at any independent V scenario using the table. Report a failing figure's ID and expected versus observed relationship; do not need to rerun all educational fixtures to report a visual defect.
+
+No background service needs stopping. Close browser tabs when done. Disposable preview directories can be removed after review; keep the repository's canonical sources, SVGs and review package. The replay cleans its own isolated files/threads/processes; the verifier intentionally leaves previews available. Do not delete unrelated temporary files.
+
+Known later-review item: F01, explicit untransferable transfer-list behavior. Known access limits: no full screen-reader, PDF or GitHub publication-rendering audit. Browser/font/platform changes may alter rendering. Stop after D03. D04 visual work requires explicit Product Owner visual acceptance and further authorization.

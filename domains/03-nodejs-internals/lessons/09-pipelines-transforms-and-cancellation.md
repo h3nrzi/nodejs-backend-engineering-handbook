@@ -214,6 +214,14 @@ console.log(JSON.stringify({ mode, outcome, finished: sink.writableFinished,
 
 The normal sink finishes; premature destruction rejects with premature-close evidence; cancelling the wait reports ABORT_ERR without destroying the stream, which then finishes. Registered observer counts return to baseline. This is a listener-count assertion, not a heap-leak proof or blanket permission to ignore errors.
 
+**Visual question:** Why can a stream still finish after finished rejects ABORT_ERR?
+
+![Aborting finished cancels its observation while the stream stays live for its owner. Aborting pipeline requests destruction of its participating streams; cooperative custom work must still clean up.](../assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg)
+
+*Figure D03-V08 — These are separate API contracts, not two stages of one operation. Example C’s wait-abort branch leaves the sink live and then ends it successfully. Pipeline cancellation instead asks participants to terminate and reports cancellation. Custom generators must cooperate and external operations have their own contracts. Neither path proves rollback, immediate native interruption, or that every cleanup has already finished. [Reference](https://nodejs.org/docs/latest-v24.x/api/stream.html#streamfinishedstream-options-callback).*
+
+[Full-size SVG](../assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.svg) · [Editable Mermaid source](../assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd).
+
 ## 9. Early async iteration exit and ownership transfer
 
 Default Node Readable async iteration destroys the stream when a loop exits via break, return or throw. That protects the usual one-consumer lifecycle but can surprise a caller intending to resume later. `readable.iterator({ destroyOnReturn: false })` preserves the stream on an early return; the next consumer or explicit owner must eventually consume/destroy it. Do not confuse stopping iteration with full source consumption or sink success.

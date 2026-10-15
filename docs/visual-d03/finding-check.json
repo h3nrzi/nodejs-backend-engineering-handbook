@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-15T17:20:22.886Z",
+  "command": "node docs/visual-d03/finding-check.mjs --record",
+  "environment": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "errorName": "DataCloneError",
+  "senderLength": 4,
+  "senderFirst": 1,
+  "receiverFirst": 99,
+  "portsClosedInFinally": true
+}

@@ -1,0 +1,30 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Invocation context differs from registration context
+  accDescr: Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.
+R["Under A: register plain
+and bound listeners"] --> E["Later: emit outside A"]
+  E --> P["Plain listener
+no store"]
+  E --> B["Bound listener
+captured store A"]
+  P --> O["Return: outer scope
+still has no store"]
+  B --> O
+  class R,B control;
+  class P,O neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

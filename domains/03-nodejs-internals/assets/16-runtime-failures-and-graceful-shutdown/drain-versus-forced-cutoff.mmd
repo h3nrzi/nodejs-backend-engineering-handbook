@@ -1,0 +1,24 @@
+---
+config:
+  state:
+    useMaxWidth: false
+  themeVariables:
+    fontSize: 20px
+---
+stateDiagram-v2
+  accTitle: Draining and forced cutoff are different outcomes
+  accDescr: Ready service enters Draining after a handled stop trigger and admission is stopped. Completed owned work and cleanup permit local closure. A drain deadline can instead lead to forced cutoff with unfinished or unknown outcomes.
+direction TB
+  state "Locally closed" as Closed
+  state "Deadline exceeded" as Expired
+  state "Forced cutoff" as Forced
+  Ready --> Draining : stop admission
+  Draining --> Closed : drain / cleanup done
+  Draining --> Expired : deadline
+  Expired --> Forced : cut off
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;
+  class Draining,Expired pending
+  class Closed success
+  class Forced failure

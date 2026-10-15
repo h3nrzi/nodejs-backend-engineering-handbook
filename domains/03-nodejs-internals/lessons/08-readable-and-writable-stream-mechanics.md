@@ -110,6 +110,14 @@ Custom Writable `_write(chunk, encoding, callback)` calls are serialized for tha
 
 Queuing a Buffer does not promise a deep copy. A delayed sink may retain its reference, so mutation before processing completes can change observed content. Objects similarly retain references. Copies cost allocations; borrowing requires a defined lifetime agreement.
 
+**Visual question:** After write returns false, should the producer retry that chunk?
+
+![On the successful pressure path the chunk is admitted before false is returned. The producer pauses new writes and resumes with the next chunk after drain. Error or premature close stops this path.](../assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg)
+
+*Figure D03-V07 — The current chunk has already entered a valid live Writable when false signals pressure. Retrying it duplicates data. The upward arrow resumes new submissions only after drain; errors or premature closure need their own outcome handling and may prevent drain. highWaterMark is an accounting threshold, not a hard chunk-size or total-memory limit. This is a protocol model, not a universal event trace or durable-delivery receipt. [Reference](https://nodejs.org/docs/latest-v24.x/api/stream.html#writablewritechunk-encoding-callback).*
+
+[Full-size SVG](../assets/08-readable-and-writable-stream-mechanics/write-false-admission.svg) · [Editable Mermaid source](../assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd).
+
 ## 6. Example B — slow sink and a bounded pressure counterexample
 
 Save as `writable-pressure.mjs`. Respect stops on false; ignore submits only six chunks despite false; fail injects error on chunk three. The bad case is deliberately tiny. One lifecycle owner registers outcome listeners before writing and stops on failure/close instead of waiting indefinitely for drain.

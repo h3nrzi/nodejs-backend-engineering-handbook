@@ -212,6 +212,14 @@ The **parent's event loop was blocked** during `spawnSync`, so its measured ELU 
 
 The sample process executes `spawnSync()` only as a deliberately **bad server-side blocking behavior** with a finite child timer and 3-second emergency timeout. Never add synchronous subprocess waits to a request handler as an “ELU control.” Exact startup/timer values vary across hosts. [Node v22 perf_hooks](https://nodejs.org/download/release/v22.16.0/docs/api/perf_hooks.html); [child_process](https://nodejs.org/download/release/v22.16.0/docs/api/child_process.html).
 
+**Visual question:** How can the blocking-child example show high ELU and low parent CPU together?
+
+![During spawnSync the parent loop cannot dispatch callbacks and stays outside its event provider. ELU can be near 1 while the parent mostly waits for the separate child, consuming little parent CPU.](../assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg)
+
+*Figure D03-V17 — A causal explanation of Section 6’s deliberately blocking fixture, not a new measured chart. ELU tracks time outside the loop event provider; process.cpuUsage measures parent process CPU, excluding its child. Both observations can coexist. The child’s timer duration, startup and host scheduling affect elapsed time. For an unknown incident, align scopes/windows and collect discriminating evidence; high ELU alone does not establish a root cause or native-pool saturation. [Reference](https://nodejs.org/docs/latest-v24.x/api/perf_hooks.html#performanceeventlooputilizationutilization1-utilization2).*
+
+[Full-size SVG](../assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.svg) · [Editable Mermaid source](../assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd).
+
 ## 7. Process CPU versus wall time and live resource hints
 
 Save as `f-resource-cpu.mjs`:

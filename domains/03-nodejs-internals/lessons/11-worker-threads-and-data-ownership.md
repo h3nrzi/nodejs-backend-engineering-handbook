@@ -92,6 +92,14 @@ Node `Buffer` instances are views over underlying `ArrayBuffer` storage. Some Bu
 
 Use a dedicated `ArrayBuffer` for the examples below. `markAsUntransferable()` can protect storage from being transferred but does not make an object immutable, encrypted or otherwise secure. [Node Worker docs: transferring TypedArrays and Buffers](https://nodejs.org/download/release/latest-v22.x/docs/api/worker_threads.html#considerations-when-transferring-typedarrays-and-buffers).
 
+**Visual question:** Which memory remains usable by the sender after each message mode?
+
+![Clone produces independent receiver bytes. Transfer moves a dedicated ArrayBuffer and detaches every sender view. SharedArrayBuffer permits both threads to access the same region with an explicit synchronization protocol.](../assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg)
+
+*Figure D03-V10 — Three alternative relationships for known-owned storage, not three steps or exact copy costs. Ordinary cloneable ArrayBuffer data is copied; a transferred dedicated ArrayBuffer detaches all sender aliases; SharedArrayBuffer is shared and is not transferable. Examples B and C exercise the latter ownership boundaries. Pooled Buffers and untransferable storage have version-sensitive restrictions and are excluded here. Worker termination does not reverse messages or external effects. [Reference](https://nodejs.org/docs/latest-v24.x/api/worker_threads.html#considerations-when-transferring-typedarrays-and-buffers).*
+
+[Full-size SVG](../assets/11-worker-threads-and-data-ownership/clone-transfer-share.svg) · [Editable Mermaid source](../assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd).
+
 ## 5. Worked example A — CPU offload without blocking the main timer
 
 Save as `a-cpu.mjs`. This one file conditionally executes either the main context or the Worker code:

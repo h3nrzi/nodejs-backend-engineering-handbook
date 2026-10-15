@@ -1,0 +1,27 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: URL identity controls reuse in the ESM cache fixture
+  accDescr: Two imports of counter.mjs use the same module record with count 1. Importing counter.mjs with query variant=1 uses another record with count 2 in this sequential fixture.
+X["x: counter.mjs"] -->|same URL| R["ESM record
+count = 1"]
+  Y["y: counter.mjs"] -->|same URL| R
+  R ~~~ Z["z: counter.mjs
+?variant=1"]
+  Z -->|distinct URL| Q["Another ESM record
+count = 2"]
+  class R,Q neutral;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

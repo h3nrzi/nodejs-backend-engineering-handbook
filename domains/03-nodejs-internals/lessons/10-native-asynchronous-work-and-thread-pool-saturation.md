@@ -83,6 +83,14 @@ The documented environment variable `UV_THREADPOOL_SIZE` configures the libuv po
 
 Changing this setting can alter queueing and interference, but also changes memory overhead, CPU pressure, context switching and potential storage contention. It is not a universal speed-up knob, a fairness guarantee, a separate per-module pool, or permission to raise a product's committed capacity.
 
+**Visual question:** Why can filesystem results be late while JavaScript timers still run?
+
+![Async PBKDF2 and filesystem requests use the process shared libuv pool. Their native completions return to their associated JavaScript loop. Timer callbacks use loop scheduling rather than consuming one pool worker per timer.](../assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg)
+
+*Figure D03-V09 — This resource map labels representative pool-backed APIs, not a FIFO algorithm or one-task-per-Promise rule. Queue wait, native work and callback observation are separate intervals. Timer progress can coexist with pool contention but proves neither native completion time nor fairness. libuv shares this pool across relevant loops in a process; a JavaScript Worker does not obtain a private filesystem pool. Counts and performance are intentionally omitted. [Reference](https://docs.libuv.org/en/v1.x/threadpool.html).*
+
+[Full-size SVG](../assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.svg) · [Editable Mermaid source](../assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd).
+
 ## 5. Worked example A: unrelated tasks can share a bottleneck
 
 Save as `pool-contend.mjs`. It submits two bounded native PBKDF2 tasks and an asynchronous filesystem metadata request. These are **synthetic educational inputs**, not a password-storage prescription or a production concurrency benchmark.

@@ -151,6 +151,14 @@ Await mode prints async-start → second → returned true → async-end. The wo
 
 A caller who needs one completion outcome should use a contract that exposes it, such as an explicitly returned Promise or an error-first callback. Multiple independent event subscribers may be appropriate for notifications, but they do not automatically define one combined operation result. Do not infer success from emit's boolean or absence of an error log.
 
+**Visual question:** What has completed when await mode prints returned true?
+
+![In await mode emit invokes the async listener through async-start and suspension, then invokes the second listener and returns true. The async listener later resumes and prints async-end.](../assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg)
+
+*Figure D03-V04 — This sequence traces only Example C’s await mode. Both lifelines execute JavaScript on the same thread; the listener lane is a call boundary, not another thread. emit invokes listeners synchronously and ignores their returned Promises. true reports listener presence. The later continuation completes after the immediate boundary in this fixture; elapsed time and other emissions are omitted. [Reference](https://nodejs.org/docs/latest-v24.x/api/events.html#asynchronous-vs-synchronous).*
+
+[Full-size SVG](../assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.svg) · [Editable Mermaid source](../assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd).
+
 ## 8. Example D — avoid missed events when awaiting
 
 An ordinary emitter does not replay earlier events for late listeners. Promise resumption happens after the emitting stack completes, so sequential awaits may register the second listener too late. Save as `waits.mjs`.

@@ -1,0 +1,30 @@
+---
+config:
+  themeVariables:
+    fontSize: 20px
+  flowchart:
+    nodeSpacing: 20
+    rankSpacing: 35
+    wrappingWidth: 180
+    useMaxWidth: false
+---
+flowchart TB
+  accTitle: Valid bytes and handle release are separate obligations
+  accDescr: Example B opens a handle and reads at file position 3. bytesRead is 2, exposing de from capacity deXXXXXX. Normal and simulated consumer-failure paths both attempt close in finally.
+O["Open FileHandle"] --> R["Read at file position 3
+into capacity 8"]
+  R --> V["bytesRead = 2
+valid prefix: de"]
+  V --> N["Normal consumer"]
+  V --> F["Simulated consumer failure"]
+  N --> C["finally: attempt close"]
+  F --> C
+  class V success;
+  class F failure;
+  class C control;
+
+  classDef control fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#15803D,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#B45309,color:#111827;
+  classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#111827;

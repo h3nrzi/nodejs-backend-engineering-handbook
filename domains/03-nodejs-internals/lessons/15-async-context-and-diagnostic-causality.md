@@ -170,6 +170,14 @@ The ordinary listener emitted outside a store observes `null` in the report. `As
 
 **Additional failure boundary:** an untrusted emitter or callback can still pass false IDs in message payloads. A bound context helps correlation, **not validation or authorization**.
 
+**Visual question:** Why does the plain listener see no store while the bound listener sees A?
+
+![Example B registers both listeners under A. Later emit outside A invokes the plain listener with no store, while the bound wrapper restores captured context A. After either call the outer context is restored.](../assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg)
+
+*Figure D03-V15 — The branches are two listener invocations in Example B, not parallel execution or two threads. Plain listeners inherit the emission’s calling context; the bound callback intentionally restores the context captured in A. Binding changes attribution semantics and can retain data, so it is not a universal listener policy. ALS associates values, does not freeze stores, and does not cross Worker/process boundaries automatically or prove authorization or distributed causality. [Reference](https://nodejs.org/docs/latest-v24.x/api/async_context.html#static-method-asynclocalstoragebindfn).*
+
+[Full-size SVG](../assets/15-async-context-and-diagnostic-causality/emitter-context-capture.svg) · [Editable Mermaid source](../assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd).
+
 ## 7. `AsyncResource`: connecting custom lifecycle to execution context
 
 Most ordinary Node Promise/timer APIs preserve ALS context without custom code. A library that stores a callback and later invokes it through a foreign event loop, custom thenable or manual queue can lose its original association. A lower-level tool is `AsyncResource`: create a resource **under the intended origin context** and later invoke a callback through `resource.runInAsyncScope()`.
