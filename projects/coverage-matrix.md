@@ -12,6 +12,8 @@
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
 - D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04–D16 content authoring remains not_started.
 
+**Coverage granularity:** these 48 mappings operate at chapter level, not every advanced subtopic. Some D03 lessons report bounded educational test executions; the `Implemented evidence` column refers specifically to external portfolio project implementation, not lesson-fixture execution or learner mastery. See [curriculum audit](../docs/curriculum-coverage-audit-2026-10-15.md).
+
 ## Project traceability — D01/D02 nine approved Charters (plus five D03 below)
 
 | Project ID | Authoritative Charter | Approved product challenge | Implemented evidence |
