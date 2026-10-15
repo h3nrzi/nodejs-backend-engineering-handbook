@@ -13,3 +13,7 @@ Status: not_started
 ## Self-assessment and solutions or answer rubric
 ## Reliable references and version notes
 ## Coverage gaps and review checklist
+
+## Editorial and evidence rules
+
+For new lessons, follow [the quality standard](../docs/lesson-quality-standard.md). Record editorial approval separately from examples actually run and the learner's own assessment. This template does not authorize prescribing technical architecture in Project Charters.
