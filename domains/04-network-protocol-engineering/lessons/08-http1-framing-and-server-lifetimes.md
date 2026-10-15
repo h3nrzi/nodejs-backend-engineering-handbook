@@ -1,7 +1,7 @@
 # Chapter 08 — HTTP/1.1 framing and server lifetimes
 
 **Domain / competency:** D04 / D04-C08
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -160,6 +160,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P02 directly challenges malformed boundary reporting and P03 incomplete transfers. Proxy parser agreement and adversarial multi-hop testing remain unverified; D09 owns the complete security review. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P02 directly challenges malformed boundary reporting and P03 incomplete transfers. Proxy parser agreement and adversarial multi-hop testing remain unverified; D09 owns the complete security review. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 07](07-http-semantics-and-representations.md) · [Next: Chapter 09](09-http-clients-and-connection-pools.md)

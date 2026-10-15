@@ -1,7 +1,7 @@
 # Project Charter — D04-P03 — RelayParcel: Interrupted retrieval for field teams
 
 **Domain:** D04 — Network & Protocol Engineering
-**Educational review:** in_review — proposed concept and Charter; no learner approval recorded.
+**Educational review:** approved_by_learner — concept and Educational Project Charter explicitly approved by the Product Owner on 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Product Discovery / Final PRD / Module Plan / implementation:** not_started.
 **Learner competency:** not_assessed.
 
@@ -48,4 +48,4 @@ All examples in these journeys are proposed evaluation cases. No portfolio behav
 
 Only after explicit learner editorial approval and project selection, import this Charter into a separate repository. Codex authors `product-discovery.md` using installed `grill-with-docs` with product focus; the learner approves consequential policies. Codex then authors an explicitly owner-approved `final-prd.md`, followed by an explicitly owner-approved `module-plan.md`. For each selected module: module-scoped technical discovery (`grill-with-docs`) → `to-spec` → `to-tickets` → `implement` → verification and acceptance. Verify the installed skill names at kickoff; this Charter claims none have run.
 
-Do not write Final PRD, Module Plan, ADRs or implementation architecture in the Handbook. [Workflow V2](../../../docs/workflow.md) governs the handoff. Current gate: learner review of this proposed concept and educational Charter.
+Do not write Final PRD, Module Plan, ADRs or implementation architecture in the Handbook. [Workflow V2](../../../docs/workflow.md) governs the handoff. Educational authoring gate closed. Project selection and separate-repository discovery remain future actions.

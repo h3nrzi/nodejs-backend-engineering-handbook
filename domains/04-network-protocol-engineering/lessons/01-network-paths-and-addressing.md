@@ -1,7 +1,7 @@
 # Chapter 01 — Network paths and addressing
 
 **Domain / competency:** D04 / D04-C01
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -115,6 +115,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-Routing-protocol administration, BGP policy and subnet deployment labs are outside this backend domain. D04-P01 offers a direct path-diagnosis challenge; packet engineering remains supporting knowledge. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+Routing-protocol administration, BGP policy and subnet deployment labs are outside this backend domain. D04-P01 offers a direct path-diagnosis challenge; packet engineering remains supporting knowledge. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Next: Chapter 02](02-dns-and-service-discovery.md)

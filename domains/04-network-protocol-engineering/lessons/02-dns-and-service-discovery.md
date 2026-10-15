@@ -1,7 +1,7 @@
 # Chapter 02 — DNS and service discovery
 
 **Domain / competency:** D04 / D04-C02
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -106,6 +106,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-No public DNS availability, DNSSEC validation, service-mesh discovery or multi-host failover is tested. D04-P01 directly challenges phase-qualified discovery evidence; DNSSEC operations remain later specialization. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+No public DNS availability, DNSSEC validation, service-mesh discovery or multi-host failover is tested. D04-P01 directly challenges phase-qualified discovery evidence; DNSSEC operations remain later specialization. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 01](01-network-paths-and-addressing.md) · [Next: Chapter 03](03-tcp-delivery-and-connection-lifecycle.md)

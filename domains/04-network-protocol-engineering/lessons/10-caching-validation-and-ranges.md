@@ -1,7 +1,7 @@
 # Chapter 10 — Caching, validation and ranges
 
 **Domain / competency:** D04 / D04-C10
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -128,6 +128,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P03 directly challenges consistent partial retrieval; P04 challenges variant compatibility. General range parsing, multi-range abuse, CDN behavior and distributed invalidation remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P03 directly challenges consistent partial retrieval; P04 challenges variant compatibility. General range parsing, multi-range abuse, CDN behavior and distributed invalidation remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 09](09-http-clients-and-connection-pools.md) · [Next: Chapter 11](11-proxies-routing-and-trust-boundaries.md)

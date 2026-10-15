@@ -1,7 +1,7 @@
 # Chapter 18 — Network diagnostics and case studies
 
 **Domain / competency:** D04 / D04-C18
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -141,6 +141,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P01 directly challenges scoped diagnostic evidence. All production diagnosis, impaired-network captures and learner assessments remain unverified; later D12–D16 deepen measurement, reliability and operations. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P01 directly challenges scoped diagnostic evidence. All production diagnosis, impaired-network captures and learner assessments remain unverified; later D12–D16 deepen measurement, reliability and operations. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 17](17-deadlines-retries-and-uncertain-outcomes.md)

@@ -7,10 +7,10 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - D01: 14/14 lessons, 4/4 Project Charters editorially approved.
 - D02: 16/16 lessons, 5/5 Project Charters editorially approved.
 - D03: 18/18 lessons, 5/5 Project Charters editorially approved.
-- D04: curriculum, 18 lessons, six concepts and six educational Charters authored/in_review; learner editorial approval pending.
-- **66 authored lessons (48 approved, 18 in_review), 20 educational Charters (14 approved, six in_review); zero verified implemented projects or learner assessments.**
+- D04: curriculum, 18/18 lessons, six concepts and 6/6 educational Charters editorially approved; educational authoring gate closed 2026-10-15.
+- **66/66 authored lessons and 20/20 educational Charters editorially approved; zero verified implemented projects or learner assessments.**
 - MediaForge (D03-P02) has externally approved planning through its Module 01 eight-ticket plan; **implementation, tests and learner mastery are not verified**. Other projects have no recorded implementation progress.
-- D05–D16 remain to be authored; D04 stops at its educational review gate.
+- D05–D16 remain to be authored; D04’s educational authoring gate is closed; D05 has not started.
 
 ## Navigation
 
@@ -21,7 +21,7 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - [D01 — Computer Science Foundations](domains/01-computer-science-foundations/projects/catalog.md)
 - [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/projects/catalog.md)
 - [D03 — Node.js Internals](domains/03-nodejs-internals/projects/catalog.md)
-- [D04 — Network & Protocol Engineering](domains/04-network-protocol-engineering/README.md) — in_review; [review guide](domains/04-network-protocol-engineering/evidence/review-guide.md)
+- [D04 — Network & Protocol Engineering](domains/04-network-protocol-engineering/README.md) — editorially approved; [review guide](domains/04-network-protocol-engineering/evidence/review-guide.md)
 
 
 ## Learning versus project delivery

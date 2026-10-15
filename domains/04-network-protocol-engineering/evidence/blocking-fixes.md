@@ -1,5 +1,7 @@
 # D04 — Two blocking editorial fixes
 
+> Historical technical evidence from before editorial approval. Statuses and counts below describe that run. The Product Owner subsequently approved D04’s educational authoring gate on 2026-10-15; see the [current approval record](editorial-approval.md). Retained lab inputs and outputs are unchanged.
+
 **Date:** 2026-10-15. **Scope:** the two blocking findings in the independent D04 Final Editorial Review and their verification only. **Editorial:** in_review. **Human evaluation:** not_run. **Competency:** not_assessed.
 
 ## Revision and source identity

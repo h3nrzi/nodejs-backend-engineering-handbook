@@ -1,7 +1,7 @@
 # Chapter 17 — Deadlines, retries and uncertain outcomes
 
 **Domain / competency:** D04 / D04-C17
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -133,6 +133,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P03 and P06 directly challenge interruption truth; retry mechanisms are supporting knowledge. Durable deduplication, distributed transactions and production breaker policies belong to D10/D13 and are not implemented. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P03 and P06 directly challenge interruption truth; retry mechanisms are supporting knowledge. Durable deduplication, distributed transactions and production breaker policies belong to D10/D13 and are not implemented. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 16](16-rpc-envelopes-and-protocol-evolution.md) · [Next: Chapter 18](18-network-diagnostics-and-case-studies.md)

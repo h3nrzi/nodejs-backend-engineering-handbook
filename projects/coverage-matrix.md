@@ -1,6 +1,6 @@
 # Engineering competency coverage matrix
 
-**Status:** 48/48 D01–D03 lesson mappings approved editorially; 18 new D04 mappings in_review; **14/14 educational Project Charters approved by learner** (nine D01/D02 + five D03); no verified learner competency assessment or project implementation. D03-P02 MediaForge has approved external Module 01 planning.
+**Status:** 66/66 D01–D04 lesson mappings approved editorially; **20/20 educational Project Charters approved by learner** (D01 four, D02 five, D03 five, D04 six); no verified learner competency assessment or project implementation. D03-P02 MediaForge has approved external Module 01 planning.
 
 
 ## Interpretation and authority
@@ -10,7 +10,7 @@
 - “Charter challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Charters remain approved educational directions, not executable PRDs. MediaForge (D03-P02) has separately approved external project planning; no implementation evidence is yet verified. All other listed projects remain `not_started` for implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04 is now authored/in_review (see the separate proposed section below); D05–D16 remain not_started.
+- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04 is editorially approved and its educational authoring gate is closed (see its section below); D05–D16 remain not_started.
 
 **Coverage granularity:** these 48 mappings operate at chapter level, not every advanced subtopic. Some D03 lessons report bounded educational test executions; the `Implemented evidence` column refers specifically to external portfolio project implementation, not lesson-fixture execution or learner mastery. See [curriculum audit](../docs/curriculum-coverage-audit-2026-10-15.md).
 
@@ -132,22 +132,22 @@ Project IDs link through the registry above. All gaps below also have **no imple
 **Review — 2026-10-13, MediaForge repository setup:** Verified external [h3nrzi/mediaforge](https://github.com/h3nrzi/mediaforge) and initial Matt setup configuration at commit [`91bcfca`](https://github.com/h3nrzi/mediaforge/commit/91bcfca). **Reviewed; no mapping change.** Agent configuration and issue-tracker choices are process setup, not implementation evidence, tested competency, or any new approved Charter scope. Existing D03-P02 mappings unchanged.
 
 
-## D04 — Proposed coverage pending learner review
+## D04 — Approved editorial coverage
 
-**Current snapshot — 2026-10-15:** [18 authored lessons](../domains/04-network-protocol-engineering/curriculum.md), curriculum, [catalog](../domains/04-network-protocol-engineering/projects/catalog.md) and six Charters are **in_review**, not approved. Total authored lessons: 66 (48 previously approved, 18 in_review). Total educational Charters: 20 (14 previously approved, six in_review). Historical dated reviews elsewhere in this matrix retain their original counts at the time.
+**Current snapshot — 2026-10-15:** The Product Owner explicitly approved the [curriculum and 18 lessons](../domains/04-network-protocol-engineering/curriculum.md), [six catalog concepts and six Educational Project Charters](../domains/04-network-protocol-engineering/projects/catalog.md), domain editorial coverage and educational authoring completion. Total: **66/66 lessons and 20/20 educational Charters editorially approved**, zero in_review. [Approval source, verified baseline and limits](../domains/04-network-protocol-engineering/evidence/editorial-approval.md). Historical dated reviews retain the original counts and statuses at their time.
 
-“Direct” below means a **proposed observable product challenge** exercises that competency. “Supporting” means useful reasoning, with no required mechanism/feature. Neither is approved challenge evidence yet. Every row has portfolio implementation **not_started** and learner competency **not_assessed**. [18 educational lab results](../domains/04-network-protocol-engineering/evidence/educational-execution.md) are separate from these statuses.
+“Direct” below means an **approved observable educational product challenge** exercises that competency. “Supporting” means useful reasoning without a required mechanism or feature. These mappings approve educational direction only. Every D04 project has implementation **not_started** and learner competency **not_assessed**. [18 educational lab results](../domains/04-network-protocol-engineering/evidence/educational-execution.md) remain separate evidence.
 
-| Project | Proposed challenge / Charter status | Implementation |
+| Project | Approved educational challenge / Charter status | Implementation |
 |---|---|---|
-| [D04-P01 PathWitness](../domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md) | Endpoint incident evidence; in_review | not_started |
-| [D04-P02 PartnerWire](../domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md) | Partner message compatibility workbench; in_review | not_started |
-| [D04-P03 RelayParcel](../domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md) | Interrupted retrieval for field teams; in_review | not_started |
-| [D04-P04 OriginProof](../domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md) | Release interoperability review; in_review | not_started |
-| [D04-P05 FieldPulse](../domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md) | Field observation freshness and gaps; in_review | not_started |
-| [D04-P06 SessionTrail](../domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md) | Interrupted assistance sessions; in_review | not_started |
+| [D04-P01 PathWitness](../domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md) | Endpoint incident evidence; approved_by_learner | not_started |
+| [D04-P02 PartnerWire](../domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md) | Partner message compatibility workbench; approved_by_learner | not_started |
+| [D04-P03 RelayParcel](../domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md) | Interrupted retrieval for field teams; approved_by_learner | not_started |
+| [D04-P04 OriginProof](../domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md) | Release interoperability review; approved_by_learner | not_started |
+| [D04-P05 FieldPulse](../domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md) | Field observation freshness and gaps; approved_by_learner | not_started |
+| [D04-P06 SessionTrail](../domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md) | Interrupted assistance sessions; approved_by_learner | not_started |
 
-| Competency / authored lesson — in_review | Direct proposed challenge | Supporting proposed relevance | Genuine gap / qualification |
+| Competency / authored lesson — approved_by_learner | Direct approved challenge | Supporting relevance | Genuine gap / qualification |
 |---|---|---|---|
 | [D04-C01 — Network paths and addressing](../domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md) | P01 | P05 | No routing/NAT capture or production throughput measurement. |
 | [D04-C02 — DNS and service discovery](../domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md) | P01 | P04; P05 | Numeric lookup only; no actual wire DNS or family-failover test. |
@@ -168,11 +168,15 @@ Project IDs link through the registry above. All gaps below also have **no imple
 | [D04-C17 — Deadlines, retries and uncertain outcomes](../domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md) | P03; P05; P06 | P01; P02 | AbortSignal after full receipt/action plus response-close cleanup; no durability, retry, timer-race or remote rollback proof. |
 | [D04-C18 — Network diagnostics and case studies](../domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md) | P01 | P03; P04; P05; P06 | Missing connection/completion evidence remains unknown in finite classifier; no production root cause or packet capture. |
 
-The lesson/reference boundary and practical gaps are intentional and visible; no project must implement every concept. BGP, authoritative DNS operations, full transport-stack implementations, WebRTC and production security/operations certification are outside D04 scope. No approved D01–D03 challenge was expanded to manufacture coverage. Review and approval are pending for every new D04 artifact.
+The lesson/reference boundary and practical gaps are intentional and visible; no project must implement every concept. BGP, authoritative DNS operations, full transport-stack implementations, WebRTC and production security/operations certification are outside D04 scope. No approved D01–D03 challenge was expanded to manufacture coverage. The educational authoring gate is closed; project implementation and learner assessment remain outside this approval.
+
+The dated technical-review and blocking-fix entries below retain their pre-approval statuses as historical evidence.
 
 **Deep technical review — 2026-10-15:** All 18 D04 lessons substantively expanded; nine lab blocks upgraded plus AbortSignal/diagnostic corrections in C17/C18. Five Charters clarified evidence semantics without changing audience, journeys or technology neutrality; P01 required no correction. **Reviewed; no competency identifiers or direct/supporting mappings changed.** Updated practical gaps above reflect bounded execution, not approved product challenges, implementation or learner mastery. All D04 artifacts remain `in_review`; D01–D03 approvals and MediaForge tracking are unchanged. See [chapter audit and actual evidence](../domains/04-network-protocol-engineering/evidence/educational-execution.md).
 
 **Blocking-fix verification — 2026-10-15:** Corrected C14 HTTP 426 headers and C18 explicit complete/incomplete/unknown evidence handling. **Reviewed; no mapping change.** Only those two lesson blocks changed; 2/2 focused labs and 18/18 suite processes passed. [Scoped evidence](../domains/04-network-protocol-engineering/evidence/blocking-fixes.md). All D04 artifacts remain in_review; no learner approval, implementation or competency assessment.
+
+**Editorial approval and closure — 2026-10-15:** Explicit Product Owner approval promotes all D04 editorial statuses and closes the educational authoring gate. Reviewed against all six Charters: **no competency identifiers, direct/supporting assignments, audience, scope or mandated mechanisms changed**. Both blocking fixes verified at `612b777`; all retained source/output hashes matched and a fresh 18/18 educational suite passed. No Final PRD, Module Plan, implementation, competency or provider qualification is approved. D01–D03 approvals and MediaForge evidence are preserved; D05 remains not_started. [Approval record](../domains/04-network-protocol-engineering/evidence/editorial-approval.md).
 
 ## Mandatory maintenance
 

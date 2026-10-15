@@ -2,7 +2,9 @@
 
 **Source:** [domain-completion scope](../curriculum.md) and [Workflow V2](../../../docs/workflow.md).
 **Prepared:** 2026-10-15. **Current revision:** baseline `86d2ef1176998a4e73e32cf5f502cd163fbf48b6` plus the two C14/C18 blocking fixes; exact source hashes in [manifest](lab-manifest.json). The containing Git commit identifies the delivered fixes. Earlier guide/evidence remains versioned at baseline.
-**Human editorial evaluation:** not_run. **Learner competency:** not_assessed.
+**Product Owner editorial decision:** approved_by_learner on 2026-10-15; [scope and evidence](editorial-approval.md). **Individual hands-on observations:** not_run unless explicitly recorded below. **Learner competency:** not_assessed.
+
+> The original review scenarios below retain their pre-approval wording and checkpoints as historical evaluation instructions. The Product Owner has now explicitly approved all named educational artifacts and authoring closure; R04’s editorial decision is approved. No individual R/L/P/F hands-on result is inferred. Use [Closure record evaluation](#closure-record-evaluation) for the current checkpoint; its optional checks do not reopen editorial approval.
 
 This guide applies the installed `ticket-walkthrough` workflow to authored educational artifacts. There is no implemented portfolio ticket or product to accept. Its purpose is reproducible editorial review of the curriculum, each lesson, six proposed concepts/Charters and coverage/evidence integrity. Your editorial approval does not establish learner mastery or authorize project implementation.
 
@@ -79,7 +81,7 @@ For each row, open its Charter from [the catalog](../projects/catalog.md). Revie
 
 ## R02 — Coverage and tracking integrity
 
-Open [coverage](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review), [state](../../../tracking/state.json) and [tracker](../../../TRACKER.md). Expected: C01–C18 and P01–P06 agree; six Charters and eighteen lessons are in_review; D01–D03 approvals and MediaForge external planning remain intact. Review each direct versus supporting mapping against the real Charter problem, rather than assuming a listed technology is required. Refusal/no-effect: no proposed mapping called approved or implemented. Keep mismatched ID/status/path if any. Agent preflight: reconciliation checked. Your evaluation: **not_run**.
+Open [coverage](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage), [state](../../../tracking/state.json) and [tracker](../../../TRACKER.md). Expected: C01–C18 and P01–P06 agree; six Charters and eighteen lessons are in_review; D01–D03 approvals and MediaForge external planning remain intact. Review each direct versus supporting mapping against the real Charter problem, rather than assuming a listed technology is required. Refusal/no-effect: no proposed mapping called approved or implemented. Keep mismatched ID/status/path if any. Agent preflight: reconciliation checked. Your evaluation: **not_run**.
 
 ## R03 — Example reproducibility and limits
 
@@ -117,3 +119,28 @@ For F14, open [Chapter 14](../lessons/14-websocket-sessions-and-control.md) and 
 Prerequisites: the recorded Node v24 API line and permitted loopback binding; no accounts, credentials or shared IDs. F18 is a model; F14 owns disposable sockets and exits after cleanup. These two standalone scenarios do not need OpenSSL; the optional complete suite does, as documented above. Stop a foreground replay with Ctrl-C and delete only your saved lab files after exit. Resume at your first unreviewed F scenario; do not replace observations with automated passes.
 
 **Checkpoint:** current scenario F18; agent preflight ready, both user results not_run. First action: predict the three completion classifications above. Product Owner editorial approval remains pending; no approval, portfolio work or D05 activity follows automatically.
+
+## Closure record evaluation
+
+**Task:** Handbook — D04 Editorial Approval & Tracking Closure. **Revision:** `612b777` plus the editorial/tracking changes in this working tree; the containing commit will identify the delivered closure. **Prepared:** 2026-10-15, using `ticket-walkthrough`. **Editorial approval:** already explicit. **User evaluation of recording changes:** not_run.
+
+This optional evaluation checks whether the Handbook faithfully records the approved scope. It creates no new approval gate. The original R04 decision is approved from the Product Owner’s instruction; individual R01–R03, L01–L18, P01–P06 and F14/F18 scenario observations remain not_run. No learner lab execution or competency observation was reported.
+
+Start in a Markdown viewer at [the approval record](editorial-approval.md), “Named approval and exclusions.” No server, account, credentials, setup or mutable shared data is required. Working directory for optional commands: `/Users/hossein/Projects/mediaforge/nodejs-backend-engineering-handbook`.
+
+| Criterion | Scenario | Agent preflight | User result |
+|---|---|---|---|
+| Explicit authority, scope and exclusions | A01 | Product Owner instruction matched to approval record | not_run |
+| All statuses, dates, totals and educational coverage reconciled | A02 | Canonical state and Markdown checked; 66 lessons, 20 Charters | not_run |
+| Resolved blocking fixes and honest technical evidence retained | A03 | Retained hashes verified; fresh 18/18 labs including C14/C18 passed | not_run |
+| Earlier approvals, MediaForge and next-domain boundaries preserved | A04 | Baseline comparison; no D05 activity or new implementation claims | not_run |
+
+For **A01**, act as Product Owner: read the approval record’s named scope and exclusions. Expected: curriculum, C01–C18, six concepts, P01–P06 Charters, editorial coverage and authoring completion approved on 2026-10-15; no implementation, Final PRD, Module Plan or learner competency approval. Retain any incorrect or missing scope wording.
+
+For **A02**, open [state](../../../tracking/state.json), [tracker](../../../TRACKER.md), [domain index](../README.md), [catalog](../projects/catalog.md) and [coverage](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage). Expected: D04 content_complete, all 18 lessons and six concepts/Charters approved, 66/66 lessons and 20/20 Charters approved across D01–D04, zero in_review. Check any lesson and Charter header against the canonical record. Supporting knowledge must not become a prescribed technology. Keep any mismatched ID/status/count/path. Reading changes no state.
+
+For **A03**, read the approval record’s two-row findings table and [closure verification](closure-verification.json). Expected: C18’s unknown/false/true distinction and C14’s Upgrade/Connection fields are verified. The historical manifest’s whole-file hashes bind the pre-approval revision; executable hashes still match current lessons. Optional replay uses the commands under “Start here” above; it must retain all practical limits and cannot establish learner competency. Keep the actual runtime and sanitized output if replayed.
+
+For **A04**, read the approval record’s next-state section and [MediaForge registry](../../../projects/implementations/mediaforge.md). Expected: D01–D03 and external planning evidence preserved, MediaForge implementation/tests unverified, D04 implementation not_started and competency not_assessed, D05 next but not_started. The closure must not start discovery or implementation. Keep any overclaim.
+
+**Checkpoint:** A01; all A01–A04 user results not_run, agent preflight complete. First concrete action: open the approval record at “Named approval and exclusions” and compare it with your approval instruction. Report a mismatch or your observation if you choose to evaluate; no additional approval is required to close D04. Scenarios are independent read-only checks. No cleanup is needed for reading; optional lab replay exits and cleans its own fixtures. Resume at the first unobserved A scenario without overwriting prior evidence. All browser/proxy/h3/gRPC and other practical gaps remain as documented; their unrun status does not change this editorial closure.

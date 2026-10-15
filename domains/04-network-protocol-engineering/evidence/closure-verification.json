@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-10-15",
+  "baseline_commit": "612b777f204a19801d6b1eb5ba209497d7f12065",
+  "revision": "Baseline plus editorial approval/tracking changes; containing Git commit identifies delivered closure.",
+  "historical_lesson_file_hashes_verified": 18,
+  "current_executable_block_hashes_verified": 18,
+  "runner_and_retained_output_hashes": "pass",
+  "lesson_changes": "approval metadata and coverage anchors only; all teaching content and code unchanged",
+  "charter_changes": "approval metadata and current handoff gate only; educational product scope unchanged",
+  "state_and_coverage_checks": "pass: 18 D04 lessons, six concepts and six Charters approved; 66 lessons and 20 Charters total; zero in_review",
+  "direct_supporting_assignments": "unchanged",
+  "prior_domain_and_mediaforge_records": "unchanged",
+  "historical_execution_and_evidence_outputs": "unchanged",
+  "fresh_suite_command": "node scripts/check-d04.mjs",
+  "fresh_suite_exit_code": 0,
+  "fresh_suite_stdout": [
+    "PASS 01 address families, loopback exchange, serialization bound: ok",
+    "PASS 02 numeric lookup and explicit cache/family models: ok",
+    "PASS 03 half-close reply; explicit RST -> ECONNRESET; idle timeout needs destroy: ok",
+    "PASS 04 1056 partitions; UTF-8, empty frames, bounds, EOF and terminal states: ok",
+    "PASS 05 one loopback datagram; duplicate/gap accounting model: ok",
+    "PASS 06 TLS1.3 + ALPN; trusted CA success; wrong name and untrusted CA refused: ok",
+    "PASS 07 URL components, repeated keys, origins and octet length: ok",
+    "PASS 08 HTTP refusal; short length and missing zero chunk incomplete; close-delimited complete: ok",
+    "PASS 09 occupied pool queues; queued abort not sent; consumption permits reuse; complete 404: ok",
+    "PASS 10 exact-tag 304; fixed range 206; stale If-Range full 200; unsatisfied 416: ok",
+    "PASS 11 untrusted assertion ignored; explicit trust and hop-field model: ok",
+    "PASS 12 h2 zero stream window blocks DATA; HEADERS progress; window update releases; reset isolated: ok",
+    "PASS 13 model only: independent stream ordering; shared budget can still stall: ok",
+    "PASS 14 426 + required Upgrade/Connection headers, complete empty HTTP refusal; actual 101, fragmented text + ping/masked pong, clean 1000 close: ok",
+    "PASS 15 SSE bytewise BOM/CRLF/UTF-8 grammar; actual HTTP cursor replay, partial tail, abort cleanup: ok",
+    "PASS 16 one bounded opaque envelope; truncation and final-status model: ok",
+    "PASS 17 AbortSignal after full receipt preserves action; response close cleanup; shared budget: ok",
+    "PASS 18 23 evidence cases: explicit complete/incomplete; missing or invalid completion remains unknown: ok",
+    "18/18 educational labs passed"
+  ],
+  "environment": {
+    "node": "v24.22.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "human_closure_evaluation": "not_run",
+  "editorial_approval": "explicit Product Owner instruction; independent of automated checks",
+  "limits": "Bounded educational labs only; no project implementation, Final PRD, Module Plan or learner competency approval.",
+  "internal_links": {
+    "checked_internal_links": 848,
+    "current_issues": [],
+    "pre_existing_issues": [],
+    "new_issues": []
+  },
+  "json_and_diff_whitespace": "pass"
+}

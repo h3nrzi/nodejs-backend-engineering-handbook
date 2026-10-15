@@ -1,7 +1,7 @@
 # Chapter 03 — TCP delivery and connection lifecycle
 
 **Domain / competency:** D04 / D04-C03
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -153,6 +153,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-No kernel tuning or production transport benchmark is provided. D04-P03 offers direct partial-transfer and acknowledgment challenges; transport tuning is supporting knowledge, never a required project mechanism. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+No kernel tuning or production transport benchmark is provided. D04-P03 offers direct partial-transfer and acknowledgment challenges; transport tuning is supporting knowledge, never a required project mechanism. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 02](02-dns-and-service-discovery.md) · [Next: Chapter 04](04-framing-and-incremental-parsers.md)

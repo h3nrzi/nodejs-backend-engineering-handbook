@@ -1,7 +1,7 @@
 # Chapter 12 — HTTP/2 streams and flow control
 
 **Domain / competency:** D04 / D04-C12
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -131,6 +131,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P04 directly challenges negotiated-protocol compatibility; h2 flow-control internals are supporting knowledge. TLS ALPN h2 interoperability, connection-window exhaustion, GOAWAY replay and real-loss behavior remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P04 directly challenges negotiated-protocol compatibility; h2 flow-control internals are supporting knowledge. TLS ALPN h2 interoperability, connection-window exhaustion, GOAWAY replay and real-loss behavior remain unverified. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 11](11-proxies-routing-and-trust-boundaries.md) · [Next: Chapter 13](13-quic-and-http3-trade-offs.md)

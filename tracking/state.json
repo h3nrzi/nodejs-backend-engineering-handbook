@@ -2,12 +2,12 @@
   "schema_version": 1,
   "updated_on": "2026-10-15",
   "phase": "domain_authoring",
-  "review": "pending_learner_review",
+  "review": "approved",
   "active_domain_id": "D04",
   "next_domain_id": "D05",
-  "active_deliverable": "D04 two blocking editorial fixes verified: 18 lessons, catalog and six proposed Charters remain in_review",
-  "last_completed_step": "D04 C14/C18 blocking fixes and focused/full educational lab verification; Product Owner editorial approval pending.",
-  "next_action": "Learner reviews D04 curriculum, lessons, catalog and six Charters; stop at the educational review gate. Do not begin D05.",
+  "active_deliverable": "D04 educational authoring complete: curriculum, 18 lessons, six concepts and six Educational Project Charters explicitly approved by the Product Owner",
+  "last_completed_step": "D04 Product Owner editorial approval recorded after baseline, blocking-fix and educational evidence verification; coverage and tracking reconciled.",
+  "next_action": "D04 educational authoring gate closed. Await a separate instruction for D05 (next in roadmap, not_started) or project selection; do not begin either in this closure.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -438,92 +438,98 @@
       "id": "D04",
       "name": "Network & Protocol Engineering",
       "slug": "network-protocol-engineering",
-      "status": "in_review",
-      "lesson_status": "in_review",
-      "project_specs_status": "6_educational_charters_in_review_not_final_prds",
+      "status": "content_complete",
+      "lesson_status": "completed",
+      "project_specs_status": "6_project_charters_approved_collectively_not_final_prds",
       "implementation_status": "not_started",
       "source_outline": "authored_curriculum_2026-10-15",
-      "curriculum_blueprint_status": "in_review",
+      "curriculum_blueprint_status": "approved_by_learner",
       "curriculum_blueprint_path": "domains/04-network-protocol-engineering/curriculum.md",
       "proposed_chapter_count": 18,
       "chapter_progress": {
-        "01": "in_review",
-        "02": "in_review",
-        "03": "in_review",
-        "04": "in_review",
-        "05": "in_review",
-        "06": "in_review",
-        "07": "in_review",
-        "08": "in_review",
-        "09": "in_review",
-        "10": "in_review",
-        "11": "in_review",
-        "12": "in_review",
-        "13": "in_review",
-        "14": "in_review",
-        "15": "in_review",
-        "16": "in_review",
-        "17": "in_review",
-        "18": "in_review"
+        "01": "approved_by_learner",
+        "02": "approved_by_learner",
+        "03": "approved_by_learner",
+        "04": "approved_by_learner",
+        "05": "approved_by_learner",
+        "06": "approved_by_learner",
+        "07": "approved_by_learner",
+        "08": "approved_by_learner",
+        "09": "approved_by_learner",
+        "10": "approved_by_learner",
+        "11": "approved_by_learner",
+        "12": "approved_by_learner",
+        "13": "approved_by_learner",
+        "14": "approved_by_learner",
+        "15": "approved_by_learner",
+        "16": "approved_by_learner",
+        "17": "approved_by_learner",
+        "18": "approved_by_learner"
       },
       "assessment_status": "not_assessed",
-      "project_catalog_status": "in_review",
+      "project_catalog_status": "approved_by_learner",
       "project_catalog_path": "domains/04-network-protocol-engineering/projects/catalog.md",
       "project_catalog_candidate_count": 6,
-      "project_catalog_approved_candidate_count": 0,
+      "project_catalog_approved_candidate_count": 6,
       "project_charters_authored_count": 6,
-      "project_charters_in_review_count": 6,
-      "project_charters_approved_count": 0,
+      "project_charters_in_review_count": 0,
+      "project_charters_approved_count": 6,
       "project_progress": {
-        "P01": "charter_in_review_implementation_not_started",
-        "P02": "charter_in_review_implementation_not_started",
-        "P03": "charter_in_review_implementation_not_started",
-        "P04": "charter_in_review_implementation_not_started",
-        "P05": "charter_in_review_implementation_not_started",
-        "P06": "charter_in_review_implementation_not_started"
+        "P01": "charter_approved_implementation_not_started",
+        "P02": "charter_approved_implementation_not_started",
+        "P03": "charter_approved_implementation_not_started",
+        "P04": "charter_approved_implementation_not_started",
+        "P05": "charter_approved_implementation_not_started",
+        "P06": "charter_approved_implementation_not_started"
       },
       "project_charters": [
         {
           "id": "P01",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         },
         {
           "id": "P02",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         },
         {
           "id": "P03",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         },
         {
           "id": "P04",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         },
         {
           "id": "P05",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         },
         {
           "id": "P06",
-          "status": "in_review_educational_charter_not_final_prd",
+          "status": "approved_educational_charter_not_final_prd",
           "path": "domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md",
-          "concept_status": "in_review",
-          "implementation_status": "not_started"
+          "concept_status": "approved_by_learner",
+          "implementation_status": "not_started",
+          "approved_on": "2026-10-15"
         }
       ],
       "chapter_execution_checks": {
@@ -692,7 +698,7 @@
       },
       "review_guide": "domains/04-network-protocol-engineering/evidence/review-guide.md",
       "technical_review": {
-        "status": "completed_pending_learner_editorial_review",
+        "status": "completed",
         "reviewed_on": "2026-10-15",
         "baseline_commit": "713e05b199750d775ad6e71fd595bd6c6df91196",
         "substantively_expanded_chapters": 18,
@@ -701,7 +707,7 @@
         "charter_scope_change": false
       },
       "blocking_fixes": {
-        "status": "verified_pending_learner_editorial_review",
+        "status": "verified",
         "checked_on": "2026-10-15",
         "baseline_commit": "86d2ef1176998a4e73e32cf5f502cd163fbf48b6",
         "chapters": [
@@ -713,6 +719,50 @@
         "regression_labs_passed": 18,
         "evidence": "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
         "human_evaluation": "not_run"
+      },
+      "curriculum_approved_on": "2026-10-15",
+      "project_catalog_approved_on": "2026-10-15",
+      "content_authoring_completed_on": "2026-10-15",
+      "chapter_approval_dates": {
+        "01": "2026-10-15",
+        "02": "2026-10-15",
+        "03": "2026-10-15",
+        "04": "2026-10-15",
+        "05": "2026-10-15",
+        "06": "2026-10-15",
+        "07": "2026-10-15",
+        "08": "2026-10-15",
+        "09": "2026-10-15",
+        "10": "2026-10-15",
+        "11": "2026-10-15",
+        "12": "2026-10-15",
+        "13": "2026-10-15",
+        "14": "2026-10-15",
+        "15": "2026-10-15",
+        "16": "2026-10-15",
+        "17": "2026-10-15",
+        "18": "2026-10-15"
+      },
+      "editorial_approval": {
+        "status": "approved_by_learner",
+        "approved_on": "2026-10-15",
+        "source": "explicit_product_owner_instruction_in_chat",
+        "verified_baseline_commit": "612b777",
+        "scope": [
+          "curriculum",
+          "D04-C01\u2013D04-C18",
+          "six_project_concepts",
+          "D04-P01\u2013D04-P06_educational_project_charters",
+          "domain_editorial_coverage",
+          "educational_authoring_completion"
+        ],
+        "excludes": [
+          "project_implementations",
+          "final_prds",
+          "module_plans",
+          "learner_competency"
+        ],
+        "evidence": "domains/04-network-protocol-engineering/evidence/editorial-approval.md"
       }
     },
     {
@@ -856,6 +906,11 @@
       "date": "2026-10-15",
       "event": "D04 two blocking editorial fixes verified: C14 required HTTP 426 headers; C18 explicit complete/incomplete/unknown classification. 2/2 focused labs and 18/18 suite processes passed; all editorial approvals pending, no scope/mapping/Charter or external project changes.",
       "evidence": "domains/04-network-protocol-engineering/evidence/blocking-fixes.md"
+    },
+    {
+      "date": "2026-10-15",
+      "event": "Product Owner explicitly approved D04 curriculum, all 18 lessons, six concepts and six Educational Project Charters, domain editorial coverage and authoring completion. Both blocking fixes verified at 612b777; retained hashes match and 18/18 labs replayed. Educational gate closed only; no Final PRD, Module Plan, project implementation or learner competency approval. D05 not started; MediaForge and D01\u2013D03 unchanged.",
+      "evidence": "domains/04-network-protocol-engineering/evidence/editorial-approval.md"
     }
   ],
   "domain_authoring_sequence": [
@@ -874,7 +929,7 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-15",
-    "status": "D04_blocking_fixes_no_mapping_change_pending_learner_approval",
+    "status": "D04_editorial_approval_recorded_authoring_gate_closed",
     "path": "projects/coverage-matrix.md",
     "baseline_commit": "7a8ab5144b9684a8df1e27ee28c1e9c65db7d94a",
     "domains": [
@@ -891,16 +946,17 @@
     "latest_review_evidence": [
       "projects/coverage-matrix.md",
       "domains/04-network-protocol-engineering/evidence/educational-execution.md",
-      "domains/04-network-protocol-engineering/evidence/blocking-fixes.md"
+      "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
+      "domains/04-network-protocol-engineering/evidence/editorial-approval.md"
     ],
-    "mapping_change": "Two C14/C18 blocking fixes verified; no competency IDs or direct/supporting mappings changed. D04 remains in_review; D01\u2013D03 approvals and MediaForge state preserved.",
-    "approved_chapter_mapping_count": 48,
-    "in_review_chapter_mapping_count": 18,
+    "mapping_change": "D04 editorial status promoted by explicit Product Owner approval; no competency IDs, direct/supporting assignments, Charter scope or earlier-domain/external-project evidence changed.",
+    "approved_chapter_mapping_count": 66,
+    "in_review_chapter_mapping_count": 0,
     "approved_prd_count": 14,
     "authored_prd_count": 14,
     "in_review_prd_count": 0,
     "authored_charter_count": 20,
-    "approved_charter_count": 14,
-    "in_review_charter_count": 6
+    "approved_charter_count": 20,
+    "in_review_charter_count": 0
   }
 }

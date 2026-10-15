@@ -1,7 +1,7 @@
 # D04 Curriculum — Network & Protocol Engineering
 
-**Status:** in_review — full draft authored and technically expanded 2026-10-15; no learner approval.
-**Inventory:** 18 substantive lessons, six proposed catalog concepts, six educational Project Charters.
+**Status:** approved_by_learner — Product Owner editorial approval and educational authoring closure recorded 2026-10-15; [approval record](evidence/editorial-approval.md).
+**Inventory:** 18 substantive lessons, six approved catalog concepts, six educational Project Charters.
 **Executed examples:** 18 bounded Node.js labs, including expanded lifecycle/failure fixtures; [actual evidence](evidence/educational-execution.md).
 **Portfolio implementation / learner competence:** not_started / not_assessed.
 
@@ -64,8 +64,8 @@ Reference line: official Node v24 docs, resolved through Context7 `/websites/nod
 
 ## Portfolio and coverage
 
-[Six proposed Charters](projects/catalog.md) span incident evidence, partner-wire compatibility, retrieval continuity, release interoperability, observation freshness and assistance-session continuity. Each maps direct product challenges separately from supporting knowledge in [the matrix](../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review). No project must implement every protocol, and no architecture is selected to force coverage.
+[Six approved educational Charters](projects/catalog.md) span incident evidence, partner-wire compatibility, retrieval continuity, release interoperability, observation freshness and assistance-session continuity. Each maps direct product challenges separately from supporting knowledge in [the matrix](../../projects/coverage-matrix.md#d04--approved-editorial-coverage). No project must implement every protocol, and no architecture is selected to force coverage.
 
 ## Review gate
 
-All artifacts are `in_review`. Review breadth, sequencing, factual qualifications and individual Charter direction using [the review guide](evidence/review-guide.md). Editorial approval is pending; portfolio delivery and learner assessment remain separate. Do not start D05 or create Final PRDs/Module Plans from this draft.
+The Product Owner explicitly approved the curriculum, D04-C01–C18, all six concepts and D04-P01–P06 Charters, domain editorial coverage and authoring completion on 2026-10-15. The educational authoring gate is closed; [scope and verified baseline](evidence/editorial-approval.md) preserve the evidence limits. Final PRDs, Module Plans, project implementation and learner competency are outside this approval. D05 remains not_started; this closure does not start further work.

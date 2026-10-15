@@ -1,5 +1,7 @@
 # D04 educational execution and technical review evidence
 
+> Historical technical evidence from before editorial approval. Statuses and counts below describe that run. The Product Owner subsequently approved D04’s educational authoring gate on 2026-10-15; see the [current approval record](editorial-approval.md). Retained lab inputs and outputs are unchanged.
+
 **Date:** 2026-10-15. **Editorial:** in_review for curriculum, all 18 lessons, catalog and six Charters. **Learner editorial evaluation / competency:** not_run / not_assessed. **Portfolio implementation:** not_started.
 
 ## Current blocking-fix verification

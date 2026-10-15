@@ -10,7 +10,7 @@ Read [Workflow](docs/workflow.md), [Tracking](tracking/state.json), [Tracker](TR
 4. Each module goes through **module-scoped** Codex Technical Discovery (`grill-with-docs`) → `to-spec` → `to-tickets` → `implement` → acceptance. Do not conduct unbounded whole-product Technical Discovery.
 5. The learner approves all consequential product and technical decisions. ChatGPT guides, explains trade-offs, reviews consistency and learning evidence; Codex proposes and implements.
 6. Preserve versioned evidence and avoid claiming unrun tests, implementation, verified learning or provider qualification.
-7. D01–D03 curricula and all 14 Charters are editorially approved. MediaForge D03-P02 has approved external Module 01 planning through tickets; implementation/tests and learner competence remain unverified.
+7. D01–D04 curricula, all 66 lessons and all 20 educational Charters are editorially approved; D04’s educational authoring gate closed on 2026-10-15. D05 remains not_started. MediaForge D03-P02 has approved external Module 01 planning through tickets; implementation/tests and learner competence remain unverified.
 8. For every authoring milestone reconcile `tracking/state.json`, `TRACKER.md`, domain indexes, and `projects/coverage-matrix.md`.
 9. Do not create technical architecture or force use of a Node.js mechanism just for educational coverage; domain challenges belong in the Charter, solution selection belongs to Codex per module.
 

@@ -7,7 +7,7 @@
 | D01 — Computer Science Foundations | 14/14 | 4/4 | 0 |
 | D02 — JavaScript & TypeScript | 16/16 | 5/5 | 0 |
 | D03 — Node.js Internals | 18/18 | 5/5 | 0 |
-| D04 — Network & Protocol Engineering | 0/18 — all 18 authored/in_review | 0/6 — all six proposed/in_review | 0 |
+| D04 — Network & Protocol Engineering | 18/18 | 6/6 | 0 |
 | D05 — API Engineering | Not started | Not started | 0 |
 | D06 — Software Architecture | Not started | Not started | 0 |
 | D07 — Database Engineering | Not started | Not started | 0 |

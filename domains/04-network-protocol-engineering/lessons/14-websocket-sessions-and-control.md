@@ -1,7 +1,7 @@
 # Chapter 14 — WebSocket sessions and control
 
 **Domain / competency:** D04 / D04-C14
-**Editorial status:** in_review — authored 2026-10-15; no learner approval recorded.
+**Editorial status:** approved_by_learner — Product Owner editorial approval recorded 2026-10-15; [approval scope](../evidence/editorial-approval.md).
 **Learner assessment / portfolio implementation:** not_assessed / not_started.
 
 ## Outcomes and prerequisites
@@ -159,6 +159,6 @@ Node API references use the v24 documentation line. Exact local execution enviro
 
 ## Coverage gaps and review checklist
 
-D04-P06 directly challenges interrupted interactive sessions; WebSocket is optional, not prescribed. An actual opening, ordinary-HTTP 426, control exchange and clean close are exercised; malformed-handshake/frame refusal, browser behavior, compression, abrupt-loss recovery and resume interoperability remain unexecuted. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--proposed-coverage-pending-learner-review) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
+D04-P06 directly challenges interrupted interactive sessions; WebSocket is optional, not prescribed. An actual opening, ordinary-HTTP 426, control exchange and clean close are exercised; malformed-handshake/frame refusal, browser behavior, compression, abrupt-loss recovery and resume interoperability remain unexecuted. See [the coverage matrix](../../../projects/coverage-matrix.md#d04--approved-editorial-coverage) for direct versus supporting project relevance. Example execution proves only its recorded assertions; editorial review, learner competence and portfolio delivery remain separate.
 
 [Previous: Chapter 13](13-quic-and-http3-trade-offs.md) · [Next: Chapter 15](15-server-sent-events-and-resumption.md)
