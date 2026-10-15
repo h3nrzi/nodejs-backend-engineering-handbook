@@ -1,0 +1,79 @@
+$ git diff --name-only 8a4fc26 -- tracking/state.json TRACKER.md projects/coverage-matrix.md domains/03-nodejs-internals/README.md domains/04-network-protocol-engineering/README.md domains/03-nodejs-internals/projects domains/04-network-protocol-engineering/projects
+exit 0
+
+$ npm run visuals:check -- domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd
+
+OK  domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd (1 Mermaid block)
+OK  domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd (1 Mermaid block)
+
+Validation passed: checked 6 Mermaid blocks across 8 targets.
+
+$ npm run visuals:render -- -i domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd -o domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd -o domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd -o domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd -o domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg
+
+Generating single mermaid chart
+
+$ python3 scripts/check-handbook-links.py
+exit 0
+{
+  "checked_internal_links": 918,
+  "current_issues": [],
+  "pre_existing_issues": [],
+  "new_issues": []
+}
+
+$ git diff --check
+exit 0
+
+Final Markdown check after review/guide edits:
+$ python3 scripts/check-handbook-links.py
+exit 0
+{
+  "checked_internal_links": 917,
+  "current_issues": [],
+  "pre_existing_issues": [],
+  "new_issues": []
+}

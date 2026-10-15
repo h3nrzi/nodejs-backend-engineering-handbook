@@ -1,0 +1,21 @@
+---
+config:
+  fontSize: 18
+  sequence:
+    diagramMarginX: 20
+---
+sequenceDiagram
+  accTitle: TCP handshake and two independent byte streams
+  accDescr: Client sends SYN with sequence 100. Server sends SYN ACK with sequence 300 and acknowledgment 101. Client acknowledges 301. After establishment, three client bytes advance the server acknowledgment to 104, two server bytes advance the client acknowledgment to 303. Transport acknowledgments do not establish application consumption or business completion.
+  participant C as Client TCP
+  participant S as Server TCP
+  C->>S: SYN seq=100
+  S->>C: SYN + ACK<br/>seq=300, ack=101
+  C->>S: ACK seq=101, ack=301
+  Note over C,S: ESTABLISHED at both ends
+  C->>S: 3 bytes: seq=101
+  S->>C: ACK ack=104
+  Note over C,S: ACK = next byte expected<br/>Application may not have read it
+  S->>C: 2 bytes: seq=301
+  C->>S: ACK ack=303
+  Note over C,S: Independent byte sequences<br/>Business completion is separate

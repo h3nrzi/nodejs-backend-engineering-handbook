@@ -51,6 +51,22 @@ For a full certificate-authenticated TLS 1.3 handshake without a HelloRetryReque
 
 A certificate match without key possession is insufficient; encryption with an untrusted peer does not establish the requested service. Resumed handshakes can omit the full certificate exchange, so this trace must not be applied mechanically to every connection. Early-data acceptance has its own replay limits. See [RFC 8446 §2](https://www.rfc-editor.org/rfc/rfc8446.html#section-2).
 
+Where do the offered name, negotiated protocol and verified server identity enter this exchange?
+
+![A full TLS 1.3 exchange over connected TCP: ClientHello offers SNI and ALPN; protected server messages select ALPN and present certificate and handshake proofs; verification and Finished precede this example's encrypted application exchange.](../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg)
+
+*Figure 1 — One full, server-authenticated TLS 1.3 exchange over TCP, without retry, resumption, early data or client certificates. SNI guides server selection; ALPN offers become a selected protocol in EncryptedExtensions. Messages after ServerHello use handshake protection until application traffic keys apply. This example delays application traffic until both Finished messages are verified; TLS 1.3 permits the server to send application data after its own Finished, before receiving Client Finished. Arrows group logical messages, not packets or measured delays. TLS 1.2 message order and extension placement differ; this is not a universal TLS timeline. See [RFC 8446 §2](https://www.rfc-editor.org/rfc/rfc8446.html#section-2) and [ALPN, RFC 7301](https://www.rfc-editor.org/rfc/rfc7301.html).*
+
+[Full-size SVG](../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg) · [Editable Mermaid source](../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd).
+
+Which success claims remain separate even when a connection is encrypted?
+
+![TCP connection establishes transport only; chain, hostname and cryptographic checks must pass and the handshake complete for verified TLS; application policy separately allows or refuses an action.](../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg)
+
+*Figure 2 — A logical boundary map for the same server-authenticated model, not an implementation's exact check order. Configured chain trust, validity and usage, the expected hostname, and cryptographic handshake verification must all succeed; a trusted chain with the wrong name fails. Completing TLS establishes a protected session with the verified service under those checks, not permission for a requested action. Application authorization can still refuse the request. SNI and ALPN do not grant that permission; client authentication and authorization policy are outside this map. See [service identity, RFC 9525](https://www.rfc-editor.org/rfc/rfc9525.html) and [RFC 8446 §4.4](https://www.rfc-editor.org/rfc/rfc8446.html#section-4.4).*
+
+[Full-size SVG](../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg) · [Editable Mermaid source](../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd).
+
 ### Separate trust, name, negotiation and authorization experimentally
 
 The revised lab creates a disposable CA and a signed DNS-SAN leaf with the local OpenSSL executable, binds TLS to IPv4 loopback, and requests `local.test` through SNI while connecting to its numeric address. Explicit CA trust, TLS 1.3 and ALPN `lab/1` produce a real handshake and protected application reply. The same leaf fails with `wrong.test` despite trusted signing; an empty trust list fails with the correct name. Verification remains enabled in all three cases.
