@@ -15,3 +15,7 @@ Read [Workflow](docs/workflow.md), [Tracking](tracking/state.json), [Tracker](TR
 9. Do not create technical architecture or force use of a Node.js mechanism just for educational coverage; domain challenges belong in the Charter, solution selection belongs to Codex per module.
 
 Use actual installed skill names. See [Role ownership](docs/module-driven-engineering.md) and [Quality gates](docs/quality-gates.md).
+
+## Educational visuals
+
+Follow [visual authoring standards](docs/visual-authoring.md) and [tooling setup](docs/visual-tooling.md). Use the repository-local [mermaid-diagrams](.agents/skills/mermaid-diagrams/SKILL.md) skill for Mermaid work; run `npm run visuals:check -- <changed-file>` and inspect the rendered result. Prefer editable Mermaid/SVG for technical precision; use the existing `imagegen` skill only when a raster illustration serves the learning objective and its tool is available in that session. Tooling setup does not authorize changes to approved lessons or starting D05.

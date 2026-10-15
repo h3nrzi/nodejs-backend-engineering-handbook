@@ -1,0 +1,16 @@
+{
+  "securityLevel": "strict",
+  "htmlLabels": false,
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Arial, Helvetica, sans-serif",
+    "fontSize": "18px",
+    "primaryColor": "#E0F2FE",
+    "primaryTextColor": "#111827",
+    "primaryBorderColor": "#0369A1",
+    "lineColor": "#374151",
+    "secondaryColor": "#F3F4F6",
+    "tertiaryColor": "#FFFBEB",
+    "background": "#FFFFFF"
+  }
+}

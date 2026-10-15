@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/championswimmer/tech-doc-skills",
+  "commit": "860bbf9d483deff584f57b09f85072a7b44bb8f9",
+  "path": "skills/mermaid-diagrams",
+  "installed_on": "2026-10-15",
+  "scope": "repository .agents/skills",
+  "license": "MIT; upstream root LICENSE copied alongside skill",
+  "local_modifications": [],
+  "sha256": {
+    "LICENSE": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+    "SKILL.md": "85b3dc36be6dbbd2fe27a1fede742e0163135e3817b9cb19b46395489d8ea5d3",
+    "references/diagram-types.md": "ee33c316e6a15cf03ecc876ff1a37b544730285e150a3ab65878e7e19c647754",
+    "references/er-keywords.md": "15725228abb3f2fed185d3778ca71fb34479e26244b3837ff87c847611ed8a44",
+    "references/flowchart-keywords.md": "735c0390ab6a0dc799d0e45fb82599d94b31b72f1cded738ecd27d71c80bdd76",
+    "references/gantt-keywords.md": "f42ac8beaad86c02ee0ca5ae2e4e820a711927524e13dfe218f3862c62d21d50",
+    "references/official-sources.md": "0b4d8cc42e3fbd042c54f95c5b652ad3ba113e7bcd47dc047e8f6eeb2a1ae28b",
+    "references/rfc-diagram-patterns.md": "844bb33c4181bf04d44cdb426cc54ae677cc35bba7ca1eba8426765c0c4b2528",
+    "scripts/new-mermaid-template.js": "12e8708763ae498ba6f9ca24cc55217ad3c04f0bf1996131731405aba9425d19",
+    "scripts/validate-mermaid.js": "0ccf9ab61a4c77a7d3518c29ba205d2b0c8f4baac054e4c8163f2703710c57a1"
+  }
+}

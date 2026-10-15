@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-backend-engineering-handbook",
+  "private": true,
+  "description": "Local educational diagram authoring tools; no application runtime.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "visuals:render": "node scripts/visuals.mjs render",
+    "visuals:check": "node scripts/visuals.mjs check",
+    "visuals:smoke": "node scripts/check-visuals.mjs"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "12.0.0"
+  },
+  "overrides": {
+    "@mermaid-js/mermaid-cli": {
+      "katex": "0.18.10"
+    }
+  }
+}
