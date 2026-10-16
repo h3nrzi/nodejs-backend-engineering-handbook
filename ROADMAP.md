@@ -8,7 +8,7 @@
 | D02 — JavaScript & TypeScript | 16/16 | 5/5 | 0 |
 | D03 — Node.js Internals | 18/18 | 5/5 | 0 |
 | D04 — Network & Protocol Engineering | 18/18 | 6/6 | 0 |
-| D05 — API Engineering | Not started | Not started | 0 |
+| [D05 — API Engineering](domains/05-api-engineering/README.md) | None authored; 25 proposed chapters, curriculum in_review | Not started | 0 |
 | D06 — Software Architecture | Not started | Not started | 0 |
 | D07 — Database Engineering | Not started | Not started | 0 |
 | D08 — Data & Storage Systems | Not started | Not started | 0 |

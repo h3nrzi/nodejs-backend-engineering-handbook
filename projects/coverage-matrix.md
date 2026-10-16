@@ -10,9 +10,9 @@
 - “Charter challenge” maps approved observable behavior and explicitly identified educational relevance. Supporting knowledge and optional techniques do not become mandated architecture, libraries, algorithms or new features.
 - Charters remain approved educational directions, not executable PRDs. MediaForge (D03-P02) has separately approved external project planning; no implementation evidence is yet verified. All other listed projects remain `not_started` for implementation. Necessary first-version policies are resolved with installed Matt Pocock skills/Codex and learner approval at separate project kickoff.
 - Implemented evidence requires a canonical external repository plus relevant commit/test/report evidence. None is recorded for these projects. Missing evidence never means passing.
-- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04 is editorially approved and its educational authoring gate is closed (see its section below); D05–D16 remain not_started.
+- D03 curriculum, all 18 lessons, [five product concepts](../domains/03-nodejs-internals/projects/catalog.md) **and five linked Charters** are explicitly learner-approved editorially (batch approval 2026-10-13); product policies not essential to V1 boundary remain open. No verified implementation, assessed competence or learner study exercises. MediaForge's external planning progress is tracked separately. D04 is editorially approved and its educational authoring gate is closed (see its section below); D05 curriculum discovery is in_review with no authored lessons or Charters, and D06–D16 remain not_started.
 
-**Coverage granularity:** these 48 mappings operate at chapter level, not every advanced subtopic. Some D03 lessons report bounded educational test executions; the `Implemented evidence` column refers specifically to external portfolio project implementation, not lesson-fixture execution or learner mastery. See [curriculum audit](../docs/curriculum-coverage-audit-2026-10-15.md).
+**Coverage granularity:** the original 48 D01–D03 mappings and 18 D04 mappings operate at chapter level, not every advanced subtopic. D05's proposed mechanism-level depth profiles below are separate from those 66 approved taught mappings. Some lessons report bounded educational test executions; the `Implemented evidence` column refers specifically to external portfolio project implementation, not lesson-fixture execution or learner mastery. See [curriculum audit](../docs/curriculum-coverage-audit-2026-10-15.md).
 
 ## Project traceability — D01/D02 nine approved Charters (plus five D03 below)
 
@@ -179,6 +179,22 @@ The dated technical-review and blocking-fix entries below retain their pre-appro
 **Blocking-fix verification — 2026-10-15:** Corrected C14 HTTP 426 headers and C18 explicit complete/incomplete/unknown evidence handling. **Reviewed; no mapping change.** Only those two lesson blocks changed; 2/2 focused labs and 18/18 suite processes passed. [Scoped evidence](../domains/04-network-protocol-engineering/evidence/blocking-fixes.md). All D04 artifacts remain in_review; no learner approval, implementation or competency assessment.
 
 **Editorial approval and closure — 2026-10-15:** Explicit Product Owner approval promotes all D04 editorial statuses and closes the educational authoring gate. Reviewed against all six Charters: **no competency identifiers, direct/supporting assignments, audience, scope or mandated mechanisms changed**. Both blocking fixes verified at `612b777`; all retained source/output hashes matched and a fresh 18/18 educational suite passed. No Final PRD, Module Plan, implementation, competency or provider qualification is approved. D01–D03 approvals and MediaForge evidence are preserved; D05 remains not_started. [Approval record](../domains/04-network-protocol-engineering/evidence/editorial-approval.md).
+
+## D05 — Proposed curriculum coverage
+
+**Review — 2026-10-16:** Authorized curriculum discovery only. [25-chapter proposal](../domains/05-api-engineering/curriculum.md) and [depth matrix/profiles](../domains/05-api-engineering/depth-specification.md) in_review; Product Owner approval pending. No authored D05 lessons, concepts, Charters, implementation or learner evidence. All 66 approved D01–D04 mappings and 20 approved Charters retain their assignments/statuses. Historical dated D05-not-started statements above describe the closure context before this separate authorization.
+
+| Proposed competency IDs | Planned mechanism coverage | Taught / editorially approved | Charter challenge | External / learner evidence |
+|---|---|---|---|---|
+| D05-C01–C06 | Contract/REST, resource models, representations, HTTP mutations, validation and errors | None — lessons not_started | None — catalog not_started | None / deferred |
+| D05-C07–C12 | Collection traversal, read consistency, conditional writes, idempotency, access and admission | None — lessons not_started | None — catalog not_started | None / deferred |
+| D05-C13–C15 | Description/dialects, directional compatibility and consumer documentation/clients | None — lessons not_started | None — catalog not_started | None / deferred |
+| D05-C16–C21 | Long-running/bulk/webhook lifecycles, GraphQL, gRPC and persistent interfaces | None — lessons not_started | None — catalog not_started | None / deferred |
+| D05-C22–C25 | Intermediary policy, API verification, diagnosis and integrated contract reasoning | None — lessons not_started | None — catalog not_started | None / deferred |
+
+These 25 proposed IDs do not increase the **66 taught/approved lesson mappings**. The [curriculum coverage/gap analysis](../domains/05-api-engineering/curriculum.md#educational-coverage-and-gap-analysis) and [chapter depth matrix](../domains/05-api-engineering/depth-specification.md#chapter-by-chapter-depth-matrix) provide individual mechanism/experiment/rubric traceability. Future Charter relevance must remain direct, supporting or genuinely unmapped according to authentic product challenges; no project architecture or feature is manufactured here.
+
+[Review evidence and pending evaluation](../domains/05-api-engineering/evidence/review-guide.md) record source lookup limitations, structural checks and the stop before lesson authoring.
 
 ## Mandatory maintenance
 

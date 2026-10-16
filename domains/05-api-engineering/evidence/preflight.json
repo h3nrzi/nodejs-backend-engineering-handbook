@@ -1,0 +1,91 @@
+{
+  "checked_on": "2026-10-16",
+  "baseline_commit": "1ffd64b5d4e167a8fd621185dd0fe89c89b1a5b3",
+  "baseline_working_tree": "clean; observed before edits",
+  "baseline_internal_links": 1561,
+  "baseline_link_issues": 0,
+  "scope": "curriculum design and structural/editorial review only",
+  "structural_check": {
+    "result": "pass",
+    "chapter_profiles": 25,
+    "dimensions_per_profile": 15,
+    "named_fields_per_profile": 14,
+    "depth_matrix_rows": 25,
+    "sequence_rows": 25,
+    "titles_match": true,
+    "instructional_dependency_edges": 168,
+    "dependencies_all_backward": true,
+    "source_entries": 26,
+    "open_decisions_pending": 7
+  },
+  "preservation_check": {
+    "result": "pass",
+    "D01_D04_domain_objects_unchanged": true,
+    "approved_lesson_count": 66,
+    "approved_charter_file_count": 20,
+    "approved_tracking_counts_unchanged": true,
+    "protected_domain_and_implementation_diff": "empty",
+    "MediaForge_state_unchanged": true
+  },
+  "D05": {
+    "curriculum": "in_review",
+    "depth_specification": "in_review",
+    "authored_lessons": 0,
+    "authored_charters": 0,
+    "experiments": "not_run",
+    "lesson_authoring_authorized": false,
+    "Product_Owner_approval": "pending_learner_review",
+    "human_evaluation": "not_run"
+  },
+  "legacy_scaffolding": {
+    "remaining_future_domain_files": 22,
+    "domains": "D06-D16",
+    "disposition": "identified; deferred outside D05 curriculum scope"
+  },
+  "documentation_lookup": {
+    "Context7_MCP_tools": "not_exposed",
+    "Context7_CLI": "OpenAPI resolve and GraphQL resolve failed; system-CA OpenAPI retry failed; no query-docs result",
+    "fallback": "primary specifications and official documentation via web tool; see references.md"
+  },
+  "diagram_validation": "not_applicable; candidate visual questions only, no Mermaid/SVG/raster authored",
+  "educational_or_application_tests": "not_run; no lesson or product code authored",
+  "final_checks": {
+    "guide_structural_command": {
+      "exit_code": 0,
+      "output": "25 profiles; 15 dimensions each; 168 backward edges; prior domain/project states preserved"
+    },
+    "handbook_links": {
+      "checked_internal_links": 1697,
+      "current_issues": [],
+      "pre_existing_issues": [],
+      "new_issues": []
+    },
+    "git_diff_check": {
+      "exit_code": 0,
+      "output": ""
+    },
+    "new_D05_markdown_trailing_whitespace": "none",
+    "protected_diff_exit_code": 0,
+    "remote_main_fetched_and_matches_initial_baseline": true,
+    "editorial_review": "completed by author; no independent reviewer or Product Owner approval claimed",
+    "review_findings_resolved": [
+      "Normalized Markdown trailing spaces before final validation",
+      "Expanded explicit error-status distinctions and search-semantics obligations",
+      "Added matching D05-CD01-CD07 decision IDs to proposal and canonical state"
+    ],
+    "remaining_limits": [
+      "22 legacy scaffold files in D06-D16 deferred",
+      "No library tool or runtime qualification",
+      "All educational experiments and human evaluation not_run"
+    ]
+  },
+  "artifact_sha256": {
+    "domains/05-api-engineering/curriculum.md": "5c5ed61d624b0b10cc83ac33eb4fd8a8ad60d755336d477a76494bd0c196cc34",
+    "domains/05-api-engineering/depth-specification.md": "d16143c3e03eee17f69e43460ca190d2bfbf6c4a5229be6bf89c02f9c9bfb5db",
+    "domains/05-api-engineering/references.md": "503ed66ecd80a264a78477bc0197a3876b1bf8425c0f7bee93ca20200bc9f006",
+    "domains/05-api-engineering/README.md": "1dda6afea080c4e71f98dbaf7150e382ad569ecae639dc9b460b04ebd53e3264",
+    "domains/05-api-engineering/projects/catalog.md": "ef80253e697f0d96e4595b045ecc565a3960b93de718eb4ec797670e6e5f3ef6",
+    "domains/05-api-engineering/evidence/review-guide.md": "747adb3cb4d60ef384d4aff1836d49ae49f7f409e00385ec5989680679987b71",
+    "tracking/state.json": "5daefba0445d87cbeefdcd678f19d62ce46ac92f6f430eb04b60c2e968ae985f"
+  }
+}
