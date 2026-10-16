@@ -24,6 +24,14 @@ Multiplexing removes HTTP/1.1's requirement to deliver complete responses in req
 
 HPACK compresses headers using static and dynamic tables. Compression state is session-scoped, and decoding remains a separate resource concern from encoded bytes. Large expanded headers, excessive stream creation and rapid reset activity can consume work even if response bodies are small. Current security maintenance and admission controls matter; this lesson does not certify a hardened HTTP/2 service.
 
+**Visual question:** Why can one HTTP/2 stream wait while another progresses, yet both share a limit?
+
+![With A credit zero, B credit 2048 and connection credit 512, A waits and B can send at most 512 DATA payload bytes; HEADERS and TCP have separate constraints.](../assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg)
+
+*Figure D04-V11 — A snapshot of server-to-client DATA allowance before any further credit arrives: A has 0 stream credit; B has 2048; the shared connection has 512. A waits, and B can use at most 512 flow-controlled payload bytes, consuming shared allowance. HEADERS are outside DATA flow control, but still face metadata and other resource limits. TCP ordering/loss and shared congestion can constrain every stream independently of these windows. This is protocol arithmetic, not a measured Node buffer state or a schedule. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9113.html#section-5.2).*
+
+[Full-size SVG](../assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg) · [Editable Mermaid source](../assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd).
+
 ## Lifetime, reset and GOAWAY
 
 A stream reset ends one stream under its error semantics. A connection failure can affect every active stream. Neither automatically proves that an application action did not occur. GOAWAY communicates session shutdown information, including a boundary used to reason about which streams might have been processed; application retry safety still needs request semantics and evidence. Draining active streams differs from destroying the session immediately.

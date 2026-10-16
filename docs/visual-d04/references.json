@@ -1,0 +1,107 @@
+{
+  "consultedOn": "2026-10-15T19:04:06.841057+00:00",
+  "references": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+      "sha256": "d6b10a71441df879cc2817d23f2dad120c8a5f87e74eba1e4ed4b743a76a891a",
+      "bytes": 126103
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2308.txt",
+      "sha256": "7fdfca474a92f7dfee13e70998c40c263104087da46cac91944f643562ce3fba",
+      "bytes": 41428
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5681.txt",
+      "sha256": "a2d99a2421d5c57b248394f26ba44fc364aa546680fbf10ff0aa7034dad8b87d",
+      "bytes": 44339
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6455.txt",
+      "sha256": "765775326aee0ecca9b04bde3fd1f52932d498e33e34e428bd61b8a24da0fa3b",
+      "bytes": 162067
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7301.txt",
+      "sha256": "ba122aee58871c604c9e98e2c9f81d5042e4056bd497cd41e23ad80fe3123222",
+      "bytes": 17439
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc768.txt",
+      "sha256": "7dc8880e1ecef9c3f9da0db4b876a16e96bfa4f0953cc9d977d414f8f680c2f0",
+      "bytes": 5896
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8085.txt",
+      "sha256": "9fc8fa172098ef296040c6e3708d56ff5941fdeda3faf4071c58c68059629f3c",
+      "bytes": 145359
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8446.txt",
+      "sha256": "47871bc8820a2c3b6ea89f061055577058862cf543686b82d10131239702b3bd",
+      "bytes": 337736
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9000.txt",
+      "sha256": "f88aae47f8b18e102024916e975e919201d8dde689cba79b01079eaedd402e22",
+      "bytes": 403442
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9001.txt",
+      "sha256": "3bbaecdf5afd278052a2c48348ce118c4ff8d0cf6b9915549858171b3f98a591",
+      "bytes": 126175
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+      "sha256": "21c1cdce6ab0e5509b04d84a28000836c7a087cf786efe6f04877ebfff47232a",
+      "bytes": 502941
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9112.txt",
+      "sha256": "e4f426bac6206b67fdf9e0da826154f70588db2133a0a86b15cde4ff725d8937",
+      "bytes": 109913
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9113.txt",
+      "sha256": "a00ef91b64e111a282e77ec66980f5242e77c0bb5e33e0927e3b6757080506de",
+      "bytes": 191811
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9114.txt",
+      "sha256": "6b84555c88eeebcf5d2b2e1d9d7b58630abc97ab877b2cf62dee4cd635db34e4",
+      "bytes": 155206
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9204.txt",
+      "sha256": "926b4d7e9772b5c316fe87a1e160f5ced118101459ede5b13d11bf9a9273c931",
+      "bytes": 99258
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.txt",
+      "sha256": "6d9ac8be4b0286f8c3d337addf442b2eb6a9b14e1366594ea7fbc273f93dc2d9",
+      "bytes": 263696
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9525.txt",
+      "sha256": "ed8116c2435376dffe37ec2ca688c3a8515e36820852b29e0b6cdfbe92abd2c5",
+      "bytes": 69260
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/server-sent-events.html#event-stream-interpretation",
+      "retrieval": "web tool open succeeded; content reviewed in session"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/grpc/grpc/master/doc/PROTOCOL-HTTP2.md",
+      "retrieval": "web tool open succeeded; content reviewed in session"
+    },
+    {
+      "url": "https://protobuf.dev/programming-guides/proto3/#updating",
+      "retrieval": "web tool open succeeded; content reviewed in session"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7239.html#section-8.1",
+      "retrieval": "web tool open succeeded; integrity/trust section reviewed"
+    }
+  ],
+  "limitations": "Additional urllib retrieval of WHATWG timed out in TLS handshake; web tool content used. Context7 v24 HTTP Agent/completion/cancellation queries also reviewed."
+}

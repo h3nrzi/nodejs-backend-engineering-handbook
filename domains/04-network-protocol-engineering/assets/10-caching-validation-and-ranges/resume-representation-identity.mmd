@@ -1,0 +1,22 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: Range continuation depends on representation identity
+  accDescr: A retained abc prefix and If-Range A can lead to validated 206 def, or a full 200 after change; the full response cannot be appended to the old prefix.
+participant C as Client
+  participant O as Origin
+  Note over C,O: Retained abc, strong ETag A
+  C->>O: Range: bytes=3-<br/>If-Range: "A"
+  alt Same representation, range honored
+    O-->>C: 206, bytes 3-5/6<br/>def
+    Note over C,O: Validate, then append
+  else Representation changed
+    O-->>C: 200, full new representation
+    Note over C,O: Replace or restart<br/>Do not append full 200
+  end

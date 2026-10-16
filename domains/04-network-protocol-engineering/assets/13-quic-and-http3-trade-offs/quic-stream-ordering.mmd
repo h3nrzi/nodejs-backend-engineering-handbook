@@ -1,0 +1,21 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: QUIC ordering is per stream while other constraints remain
+  accDescr: A waits for missing offset zero while B can deliver xy from its own contiguous offsets; shared connection resources and QPACK dependencies remain separate possible stalls.
+subgraph A["Reliable stream A"]
+    A1["Offset 0 missing<br/>Offset 1: b available"] --> A2["Contiguous delivery: wait"]
+  end
+  subgraph B["Reliable stream B"]
+    B1["Offset 0: x, offset 1: y"] --> B2["Contiguous delivery: xy"]
+  end
+  A2 ~~~ B1
+  B2 ~~~ S["Still shared: congestion, path,<br/>connection credit and resources"]
+  S ~~~ Q["Separate h3 dependency:<br/>QPACK may block header decoding"]
+  classDef meta fill:#F3F4F6,stroke:#6B7280,color:#111827;
+  class S,Q meta;

@@ -1,0 +1,15 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: HTTP client ownership lasts through response cleanup
+  accDescr: Admission and pool wait precede socket assignment and headers; the caller still owns bounded body consumption or cancellation before resources can be released.
+A["Admitted: total budget starts"] --> Q["Pool queue<br/>socket cap does not cap queue"]
+  Q --> S["Socket assigned<br/>new: setup / reused: skip setup"]
+  S --> H["Response headers received<br/>body still owned"]
+  H --> B["Bounded body consumption<br/>or deliberate cancellation"]
+  B --> E["Release resources<br/>reusable only if eligible"]

@@ -1,0 +1,16 @@
+---
+config:
+  fontSize: 20
+  state:
+    useMaxWidth: false
+---
+stateDiagram-v2
+  accTitle: Incremental parser has two terminal outcomes
+  accDescr: Open retains or emits frames on valid pushes; clean EOF enters Ended, residual EOF or a bound violation enters Failed; neither terminal state reopens.
+[*] --> Open
+  Open --> Open: push / retain or emit
+  Open --> Ended: EOF, empty tail
+  Open --> Failed: EOF, partial frame
+  Open --> Failed: bound violation
+  state "Ended" as Ended
+  state "Failed" as Failed

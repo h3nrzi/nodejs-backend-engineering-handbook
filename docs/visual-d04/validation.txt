@@ -1,0 +1,338 @@
+$ git ls-tree -r --name-only ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e -- domains/04-network-protocol-engineering/assets
+exit 0
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg
+domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd
+domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg
+domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd
+domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg
+
+$ git diff --name-only ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e -- AGENTS.md tracking TRACKER.md projects domains/01-computer-science-foundations domains/02-javascript-typescript domains/03-nodejs-internals domains/04-network-protocol-engineering/README.md domains/04-network-protocol-engineering/curriculum.md domains/04-network-protocol-engineering/projects domains/04-network-protocol-engineering/evidence domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md tools scripts package.json package-lock.json domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg
+exit 0
+
+$ git diff --name-only ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e
+exit 0
+domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md
+domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md
+domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md
+domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md
+domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md
+domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md
+domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md
+domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md
+domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md
+domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md
+domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md
+domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md
+domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md
+domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md
+domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md
+domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md
+domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md
+
+$ git ls-files --others --exclude-standard
+exit 0
+docs/visual-d04/changed-files.txt
+docs/visual-d04/guide.md
+docs/visual-d04/lab-replay.json
+docs/visual-d04/plan.json
+docs/visual-d04/references.json
+docs/visual-d04/review.md
+docs/visual-d04/technical-findings.md
+docs/visual-d04/validation.txt
+docs/visual-d04/verification.json
+docs/visual-d04/verify.mjs
+domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd
+domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.svg
+domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd
+domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd
+domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg
+domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd
+domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.svg
+domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd
+domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg
+domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd
+domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.svg
+domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd
+domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg
+domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd
+domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.svg
+domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd
+domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.svg
+domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd
+domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg
+domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd
+domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg
+domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd
+domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg
+domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd
+domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg
+domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd
+domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg
+domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd
+domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg
+domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd
+domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg
+domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd
+domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg
+domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd
+domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg
+domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd
+domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg
+
+$ npm run visuals:smoke
+exit 0
+
+> visuals:smoke
+> node scripts/check-visuals.mjs
+
+Disposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-mt5vf6
+tcp-handshake: PNG 507 x 357, 16388 bytes
+event-loop-scheduling: PNG 236 x 725, 30572 bytes
+request-lifecycle: PNG 451 x 536, 25604 bytes
+Markdown: 3 fences validated; 3 relative SVG image references resolve.
+Math: KaTeX typeset output verified with an explicit HTML-label config.
+Refusal checks: invalid fence reports block/line; missing browser exits 2.
+PASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-mt5vf6; remove only this directory after review.
+
+$ npm run visuals:check -- --self-test-styles
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check --self-test-styles
+
+OK  <style-self-test> (5 colored Mermaid blocks)
+
+Validation passed: checked 5 Mermaid blocks across 1 target.
+
+$ npm run visuals:check -- domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd
+exit 0
+
+> visuals:check
+> node scripts/visuals.mjs check domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd
+
+OK  domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd (1 Mermaid block)
+OK  domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd (1 Mermaid block)
+
+Validation passed: checked 19 Mermaid blocks across 37 targets.
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/success-boundaries.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/success-boundaries.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/cache-and-connection-lifetimes.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/cache-and-connection-lifetimes.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/flow-and-congestion-limits.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/flow-and-congestion-limits.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/parser-terminal-states.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/parser-terminal-states.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/datagram-gaps-and-reordering.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/datagram-gaps-and-reordering.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/accepted-versus-completed.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/accepted-versus-completed.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/response-framing-at-eof.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/response-framing-at-eof.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/pool-response-ownership.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/pool-response-ownership.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/resume-representation-identity.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/resume-representation-identity.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/proxy-hop-trust.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/proxy-hop-trust.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/stream-and-connection-credit.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/stream-and-connection-credit.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/http-version-dependencies.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/http-version-dependencies.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/quic-stream-ordering.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/quic-stream-ordering.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/fragmented-message-and-control.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/fragmented-message-and-control.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/sse-dispatch-and-replay.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/sse-dispatch-and-replay.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/grpc-final-status.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/grpc-final-status.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/compatibility-directions.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/compatibility-directions.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/timeout-and-unknown-outcome.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/timeout-and-unknown-outcome.svg
+
+Generating single mermaid chart
+
+$ npm run visuals:render -- -i domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/evidence-before-root-cause.svg
+exit 0
+
+> visuals:render
+> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/evidence-before-root-cause.svg
+
+Generating single mermaid chart
+
+$ openssl version
+exit 0
+OpenSSL 3.6.3 9 Jun 2026 (Library: OpenSSL 3.6.3 9 Jun 2026)
+
+$ npm --version
+exit 0
+11.19.1
+
+$ python3 --version
+exit 0
+Python 3.14.7
+
+$ sw_vers
+exit 0
+ProductName:		macOS
+ProductVersion:		26.1
+BuildVersion:		25B78
+
+$ python3 scripts/check-handbook-links.py
+exit 0
+{
+  "checked_internal_links": 1561,
+  "current_issues": [],
+  "pre_existing_issues": [],
+  "new_issues": []
+}
+
+$ git diff --check
+exit 0
+
+Final follow-up after evidence completion (2026-10-16 local):
+$ node docs/visual-d04/verify.mjs --review-only
+exit 0
+PASS: preserved content, metadata/safety/bounds, note containment, mobile legibility and all local Markdown images. Disposable previews: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-9aRh06
+$ python3 scripts/check-handbook-links.py
+exit 0
+{"checked_internal_links":1561,"current_issues":[],"pre_existing_issues":[],"new_issues":[]}
+$ node --check docs/visual-d04/verify.mjs
+exit 0
+$ git diff --check
+exit 0
+Supplementary identity check: all 18 lesson, 38 asset, 18 executable block and runner hashes match retained evidence. The extracted lab-code hash excludes the surrounding fence newlines, matching scripts/check-d04.mjs; an initial ad hoc comparison included one extra newline and was corrected.
+Agent visual follow-up: inspected corrected V06/V14/V15/V16/V18 desktop/mobile pairs, all 19 grayscale and dark-surround contact figures, actual V06/V14/V15 Markdown context at 360 px. No blocking issue remains. Human evaluation remains not_run.
+
+Pre-commit concurrency/scope check:
+$ git fetch origin main
+exit 0
+HEAD and origin/main both ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e; branch main. No unexpected concurrent changes. Exact inventory: 65 files (17 lessons, 38 new assets, 10 review/evidence files).

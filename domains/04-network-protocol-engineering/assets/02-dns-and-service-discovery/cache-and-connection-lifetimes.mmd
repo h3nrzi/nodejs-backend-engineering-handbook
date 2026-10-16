@@ -1,0 +1,27 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: DNS cache expiry does not end existing connections
+  accDescr: Client queries a recursive resolver, which queries the authority on a miss or expiry; an authority update leaves the eligible cached answer and an existing socket with independent lifetimes.
+participant C as Client
+  participant R as Resolver
+  participant A as Authority
+  C->>R: t=0: A query
+  R->>A: Cache miss
+  A-->>R: old, TTL 60
+  R-->>C: old
+  Note over C,A: t=5: client opens connection to old
+  Note over C,A: t=10: authority changes to new
+  C->>R: t=30: A query
+  R-->>C: Cached old
+  C->>R: t=61: A query
+  R->>A: Expired, refresh
+  A-->>R: new
+  R-->>C: new
+  Note over C,A: Existing old connection has its own lifetime

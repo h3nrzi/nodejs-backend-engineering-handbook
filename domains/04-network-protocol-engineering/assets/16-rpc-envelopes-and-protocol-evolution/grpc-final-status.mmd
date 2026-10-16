@@ -1,0 +1,20 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: gRPC final protocol status is separate from HTTP status
+  accDescr: HTTP 200 and two messages precede grpc-status 7 with end of stream; partial results remain observed while final protocol status reports call failure.
+participant C as RPC client
+  participant S as RPC server
+  C->>S: Server-streaming request
+  S-->>C: HTTP 200 metadata
+  S-->>C: Length-prefixed message 1
+  S-->>C: Length-prefixed message 2
+  Note over C,S: Partial results observed<br/>Final call status still awaited
+  S-->>C: Trailers: grpc-status 7<br/>END_STREAM
+  Note over C,S: Call failed: grpc-status 7<br/>HTTP 200 was insufficient

@@ -1,0 +1,22 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: Compatibility evidence has a writer-reader direction
+  accDescr: Old-to-new, new-to-old and intermediary rewrite paths are separate tests; each needs wire decoding, field preservation and semantic interpretation evidence.
+subgraph A["Old data into new reader"]
+    A1["Old writer"] --> A2["New reader: decode + meaning"]
+  end
+  subgraph B["New data into old reader"]
+    B1["New writer"] --> B2["Old reader: unknown fields/values?"]
+  end
+  subgraph C["Read and rewrite path"]
+    C1["Writer"] --> C2["Intermediary: preserve meaning?"]
+    C2 --> C3["Reader: retained fields + meaning?"]
+  end
+  A2 ~~~ B1
+  B2 ~~~ C1

@@ -32,6 +32,14 @@ A product needs a visible gap policy: for example, state that history is unavail
 
 An event emitted by the backend is not necessarily dispatched by the browser yet, and browser dispatch is not equivalent to durable application processing. If an acknowledgment is required, it needs a separate application contract. Duplicate handling and ordering are scoped to that contract, not supplied by SSE syntax alone.
 
+**Visual question:** What survives incomplete EOF, and what must the server provide after reconnect?
+
+![Blank-line termination dispatches event 7, incomplete EOF does not dispatch its tail, and a new request with Last-Event-ID 7 receives retained event 8 under this server contract.](../assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg)
+
+*Figure D04-V15 — A logical event/connection trace based on the local fixture: a blank line dispatches event 7, an interrupted tail at EOF dispatches nothing, and a new request can send Last-Event-ID 7. The shown server has retained event 8 and chooses to replay it. Reconnect transport behavior does not create history: expired/invalid cursors need an explicit gap policy, and repeated delivery remains possible. Arrows group text, not HTTP chunks. The lab reconnects manually with Node HTTP; browser EventSource scheduling, acknowledgment, durable retention and proxy flushing are untested. See [authoritative reference](https://html.spec.whatwg.org/multipage/server-sent-events.html#event-stream-interpretation).*
+
+[Full-size SVG](../assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg) · [Editable Mermaid source](../assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd).
+
 ## Backend lifecycle and intermediary effects
 
 Set the correct media type and design cache behavior deliberately. An intermediary can buffer response bytes, apply compression or close idle streams. Writing a heartbeat at the origin does not prove that it traversed every buffering layer. Verify user-visible incremental delivery through the actual supported path later. HTTP/1.1 browser connection limits and h2 stream limits differ; avoid universal per-origin numeric claims across versions and clients.

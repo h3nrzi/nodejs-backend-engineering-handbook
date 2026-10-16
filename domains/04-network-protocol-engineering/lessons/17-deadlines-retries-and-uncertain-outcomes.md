@@ -16,6 +16,14 @@ A deadline says when a caller stops waiting or admitting further work. It does n
 
 An idle timeout bounds a period without relevant progress. A total deadline bounds the whole operation, including continued trickle progress. Header receipt, request-body receipt and application processing are separate phases. Timers execute when the event loop can run them; they are not hard real-time preemption. If CPU blocks the loop, cleanup callbacks may run late.
 
+**Visual question:** What can the caller conclude when its deadline expires after the server acted?
+
+![Service action precedes a response the caller does not observe in time; local deadline cleanup leaves the caller uncertain and does not erase the action or establish retry safety.](../assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg)
+
+*Figure D04-V18 — A permitted lost-reply ordering: the service receives a command, performs an action, and its response does not reach the caller before the caller stops waiting. The caller requests local cleanup but lacks a complete receipt, so its remote outcome remains unknown. The prior action is drawn as scenario knowledge, not client evidence or a durable-commit claim. A retry additionally needs replayable content, suitable idempotent/product semantics, remaining total budget and bounded policy; adding an idempotency header alone guarantees nothing. No cancellation propagation, rollback or timer measurement is implied. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2).*
+
+[Full-size SVG](../assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg) · [Editable Mermaid source](../assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd).
+
 ## Budget composition
 
 Start one monotonic budget at the actual operation boundary, including local admission and pool wait. Each later phase receives the remaining budget rather than a fresh full timeout. Otherwise three serial five-second phases can consume fifteen seconds despite a claimed five-second request limit. Reserving cleanup time and refusing to start hopeless work may be sensible under an explicit policy.

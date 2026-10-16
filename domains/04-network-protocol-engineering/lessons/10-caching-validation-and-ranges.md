@@ -36,6 +36,14 @@ A byte range selects part of the chosen representation. A satisfiable request ca
 
 Resuming a download requires knowing that the retained prefix belongs to the same representation version. If the origin changed between attempts, blindly appending a range can produce a mixed artifact that never existed. `If-Range` can qualify range use with an appropriate validator; weak tags are not suitable for its strong-validator use. Multipart ranges and compressed representations add complexity. The educational lab exercises a few fixed range/validator cases; it does not implement their general grammar.
 
+**Visual question:** When may a retained prefix safely be extended rather than replaced?
+
+![A retained abc prefix and If-Range A can lead to validated 206 def, or a full 200 after change; the full response cannot be appended to the old prefix.](../assets/10-caching-validation-and-ranges/resume-representation-identity.svg)
+
+*Figure D04-V09 — Two alternatives from the later abcdef example: the client retains abc with strong tag A and asks for bytes 3 onward using If-Range A. An applicable matching response can provide def as 206 with inclusive range 3–5/6; validate identity, coding, offset, length and completeness before appending. A changed representation yields full 200 in this example and must be handled as replacement/restart, never appended. Servers can ignore Range under the rules, and 416 is a separate outcome; this is not a general downloader algorithm. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9110.html#section-13.1.5).*
+
+[Full-size SVG](../assets/10-caching-validation-and-ranges/resume-representation-identity.svg) · [Editable Mermaid source](../assets/10-caching-validation-and-ranges/resume-representation-identity.mmd).
+
 ## Worked scenario and counterexamples
 
 The fixture gives one tiny representation an opaque strong ETag and performs an unconditional GET followed by an exact-match conditional GET. The second response carries no content. It deliberately supports only this one exact tag, rather than claiming to parse every legal conditional field value.

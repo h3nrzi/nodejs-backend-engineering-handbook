@@ -32,6 +32,14 @@ Suppose a DNS response with TTL 60 was cached at t=0. An operator updates the au
 
 A misleading counterexample is “resolve again before every request to ensure security.” A later client connection might perform a second lookup and use a different address. Validating one resolution while connecting with another creates a time-of-check/time-of-use gap. Redirects and proxy routing create additional destinations. D09 owns the complete outbound-request security policy; D04 supplies the resolution and connection facts needed to implement that policy later.
 
+**Visual question:** Why can old-endpoint traffic continue after an authoritative DNS update?
+
+![Client queries a recursive resolver, which queries the authority on a miss or expiry; an authority update leaves the eligible cached answer and an existing socket with independent lifetimes.](../assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg)
+
+*Figure D04-V02 — One ordinary positive A-record cache example from the lesson: the resolver caches old for 60 seconds at t=0, the authority changes at t=10, and t=30 can still return old. Refresh after expiry can select new while the t=5 connection remains independently usable. Time labels are illustrative seconds, not observations or synchronized update guarantees. Delegations, local/OS caches, aliases, negative caching and qualified stale answers are omitted; NXDOMAIN, NODATA and SERVFAIL remain distinct outcomes as explained below. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc1034.html#section-4.3.4).*
+
+[Full-size SVG](../assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg) · [Editable Mermaid source](../assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd).
+
 ## Debugging sequence and backend relevance
 
 When only some callers fail, compare resolver path, query type, response codes, cached age, candidate addresses, selected endpoint and connection phase. Inspect the same namespace and network as the failing process. A laptop's answer cannot certify an isolated job runner's answer. Avoid logging entire resolver configuration if it contains internal infrastructure information.

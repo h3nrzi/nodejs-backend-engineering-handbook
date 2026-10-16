@@ -1,0 +1,16 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: TLS termination creates separate protocol and trust boundaries
+  accDescr: Client h2 TLS ends at ingress, which opens a separate HTTP/1.1 hop; backend sees ingress as peer and must evaluate original-caller assertions and upstream protection separately.
+C["Original caller"] -->|h2 over TLS, front hop| P["Ingress terminates TLS<br/>interprets HTTP"]
+  P -->|separate HTTP/1.1 upstream hop| B["Backend sees ingress<br/>as socket peer"]
+  B --> T["Original-caller fields are assertions<br/>Trust and sanitize at known boundary"]
+  T --> U["Check upstream protection separately<br/>Front TLS proves neither hop's permissions"]
+  classDef check fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  class T,U check;

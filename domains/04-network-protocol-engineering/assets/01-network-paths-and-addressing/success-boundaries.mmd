@@ -1,0 +1,16 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: Separate network, identity and application evidence
+  accDescr: DNS candidates lead to TCP connection, verified TLS, HTTP interpretation and application outcome checks; each arrow requires new evidence.
+D["DNS answer: address candidates"] -->|attempt selected endpoint| T["TCP connected: byte stream"]
+  T -->|verify identity and handshake| S["TLS verified: protected session"]
+  S -->|interpret complete exchange| H["HTTP status and representation"]
+  H -->|apply product contract| A["Application outcome evidence"]
+  classDef check fill:#F5F3FF,stroke:#7C3AED,color:#111827;
+  class S,A check;

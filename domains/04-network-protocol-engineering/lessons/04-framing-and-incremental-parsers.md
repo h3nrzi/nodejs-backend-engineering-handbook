@@ -24,6 +24,14 @@ Validate the announced length before waiting for or allocating that payload. An 
 
 On EOF, an empty parser buffer can mean an orderly frame boundary. Residual header or payload bytes mean truncation. Do not silently discard them and report success. On a malformed header, fail closed for this protocol; attempting to “find the next likely header” can turn untrusted payload into commands unless resynchronization is explicitly defined.
 
+**Visual question:** When may more bytes advance the parser, and when is this exchange terminal?
+
+![Open retains or emits frames on valid pushes; clean EOF enters Ended, residual EOF or a bound violation enters Failed; neither terminal state reopens.](../assets/04-framing-and-incremental-parsers/parser-terminal-states.svg)
+
+*Figure D04-V04 — This is the lab parser lifecycle, with header/payload waiting inside Open. A valid push can retain a partial frame or emit complete frames and remain Open. Clean EOF requires no residual bytes; incomplete EOF and any fixture bound violation fail terminally. Ended and Failed reject later input without reopening. The adjacent text supplies the two-byte/eight-byte format, per-push bounds and the partial-result caveat; the drawing does not promise partition-independent visibility on invalid input or production parser safety. See [authoritative reference](https://nodejs.org/docs/latest-v24.x/api/net.html).*
+
+[Full-size SVG](../assets/04-framing-and-incremental-parsers/parser-terminal-states.svg) · [Editable Mermaid source](../assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd).
+
 ## Worked partitions and counterexamples
 
 For payload `abc`, the wire bytes are `00 03 61 62 63`. Valid chunkings include `[00] [03 61] [62 63]` and the entire sequence at once. Both must emit exactly one identical payload. Concatenating another frame must emit both in order. The experiment enumerates every split pattern of two small fixtures, because one convenient chunk pattern is weak evidence.

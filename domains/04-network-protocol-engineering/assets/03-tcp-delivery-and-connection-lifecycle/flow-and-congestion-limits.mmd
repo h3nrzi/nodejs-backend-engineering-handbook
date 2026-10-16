@@ -1,0 +1,17 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: TCP receiver flow control and network congestion control
+  accDescr: Receiver window rwnd and congestion window cwnd jointly limit flight; outstanding bytes reduce new allowance, while Node write pressure is a separate local boundary.
+R["Receiver window: rwnd<br/>capacity protection"] --> L["Flight limited by min(rwnd, cwnd)"]
+  C["Sender window: cwnd<br/>congestion response"] --> L
+  L --> N["New allowance also subtracts<br/>bytes already outstanding"]
+  N --> A["Application and host limits<br/>can constrain sending further"]
+  A ~~~ W["Separate local boundary:<br/>Node write(false) = buffering pressure"]
+  classDef meta fill:#F3F4F6,stroke:#6B7280,color:#111827;
+  class W meta;

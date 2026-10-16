@@ -1,0 +1,25 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: Response framing determines the meaning of EOF
+  accDescr: Length-delimited and chunked responses can be incomplete at EOF; a close-delimited response can be HTTP-complete while application content remains insufficient.
+subgraph L["Content-Length framing"]
+    A["Declared 3 octets<br/>Received ab, then EOF"] --> B["HTTP incomplete: 2 of 3"]
+  end
+  subgraph T["Chunked framing"]
+    C["Received chunk with ab<br/>EOF before terminator"] --> D["HTTP incomplete"]
+  end
+  subgraph E["Close-delimited framing"]
+    F["Received ab, then EOF"] --> G["HTTP complete at EOF<br/>Application integrity still unproved"]
+  end
+  B ~~~ C
+  D ~~~ F
+  classDef bad fill:#FEF2F2,stroke:#DC2626,color:#111827;
+  classDef pending fill:#FFFBEB,stroke:#D97706,color:#111827;
+  class B,D bad;
+  class G pending;

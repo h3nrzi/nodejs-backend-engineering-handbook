@@ -1,0 +1,17 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: HTTP/2 stream credit and shared connection credit
+  accDescr: With A credit zero, B credit 2048 and connection credit 512, A waits and B can send at most 512 DATA payload bytes; HEADERS and TCP have separate constraints.
+A["Stream A credit: 0<br/>A DATA must wait"] ~~~ B["Stream B credit: 2048<br/>Connection credit: 512"]
+  B -->|both credits required| D["B may send at most 512<br/>flow-controlled payload bytes"]
+  D --> C["Connection credit is shared<br/>Exhaustion can stall all DATA"]
+  C ~~~ H["HEADERS: outside DATA credit<br/>Other limits still apply"]
+  H ~~~ T["Underlying TCP ordering and<br/>congestion remain shared"]
+  classDef meta fill:#F3F4F6,stroke:#6B7280,color:#111827;
+  class H,T meta;

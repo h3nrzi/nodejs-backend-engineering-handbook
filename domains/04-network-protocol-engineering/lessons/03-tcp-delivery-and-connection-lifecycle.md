@@ -32,6 +32,14 @@ Node's `socket.write()` return value exposes local buffering pressure. False doe
 
 Nagle's algorithm can combine small writes while acknowledgments are outstanding; delayed acknowledgments can affect short exchanges. `setNoDelay()` changes one behavior, not propagation, congestion or application scheduling. Benchmark the relevant workload before tuning. The lab avoids claiming anything about packet counts from writes.
 
+**Visual question:** Which constraint protects the receiver, and which responds to the network path?
+
+![Receiver window rwnd and congestion window cwnd jointly limit flight; outstanding bytes reduce new allowance, while Node write pressure is a separate local boundary.](../assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg)
+
+*Figure D04-V03 — Receiver-advertised rwnd protects receive capacity; sender-maintained cwnd limits flight according to congestion control. A simplified ordinary sender allows flight up to min(rwnd, cwnd), with already outstanding bytes reducing new allowance. Application supply and host limits can constrain it further. Node write(false) concerns a separate local buffering boundary, not a measurement of either window. No algorithm, tuning value, packet timing or drain-pressure experiment is implied. This adds a different mechanism beside the preserved TCP pilot figures. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc5681.html#section-2).*
+
+[Full-size SVG](../assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg) · [Editable Mermaid source](../assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd).
+
 ## Connection lifecycle and ownership
 
 `end()` finishes the writable direction after pending output; receiving an EOF means the peer finished its sending direction. TCP supports half-close: one direction can remain useful after the other ends. Node's `allowHalfOpen` controls automatic handling when the readable side ends. A request protocol can deliberately use EOF as a delimiter, though that sacrifices convenient reuse and needs a clear truncation rule.

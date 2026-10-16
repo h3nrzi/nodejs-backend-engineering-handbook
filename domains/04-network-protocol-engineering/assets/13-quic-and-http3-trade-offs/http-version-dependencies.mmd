@@ -1,0 +1,22 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: HTTPS versions share semantics but use different transport mappings
+  accDescr: Separate groups map HTTP/1.1 and HTTP/2 to TLS over TCP, while HTTP/3 maps to QUIC streams with integrated TLS handshake and packet protection over UDP.
+subgraph V1["HTTPS with HTTP/1.1"]
+    A["HTTP/1.1 messages"] --> B["TLS records over TCP"]
+  end
+  subgraph V2["HTTPS with HTTP/2"]
+    C["h2 frames and streams"] --> D["TLS records over TCP"]
+  end
+  subgraph V3["HTTPS with HTTP/3"]
+    E["h3 frames on QUIC streams"] --> F["QUIC: TLS 1.3 handshake<br/>and packet protection"]
+    F --> G["UDP datagram carriage"]
+  end
+  B ~~~ C
+  D ~~~ E

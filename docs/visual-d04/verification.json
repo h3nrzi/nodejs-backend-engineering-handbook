@@ -1,0 +1,2344 @@
+{
+  "baseline": "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e",
+  "date": "2026-10-15T19:11:25.967Z",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "opensslCli": "OpenSSL 3.6.3 9 Jun 2026 (Library: OpenSSL 3.6.3 9 Jun 2026)",
+    "packages": {
+      "@mermaid-js/mermaid-cli": "12.0.0",
+      "mermaid": "12.2.0",
+      "puppeteer": "25.14.0",
+      "marked": "4.3.0"
+    },
+    "browser": "Chrome/155.0.8059.79"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e:domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md"
+      ],
+      "exit": 0,
+      "stdout": "Baseline content read (omitted).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-tree",
+        "-r",
+        "--name-only",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e",
+        "--",
+        "domains/04-network-protocol-engineering/assets"
+      ],
+      "exit": 0,
+      "stdout": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd\ndomains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg\ndomains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd\ndomains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg\ndomains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd\ndomains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg\ndomains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd\ndomains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e",
+        "--",
+        "AGENTS.md",
+        "tracking",
+        "TRACKER.md",
+        "projects",
+        "domains/01-computer-science-foundations",
+        "domains/02-javascript-typescript",
+        "domains/03-nodejs-internals",
+        "domains/04-network-protocol-engineering/README.md",
+        "domains/04-network-protocol-engineering/curriculum.md",
+        "domains/04-network-protocol-engineering/projects",
+        "domains/04-network-protocol-engineering/evidence",
+        "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+        "tools",
+        "scripts",
+        "package.json",
+        "package-lock.json",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd",
+        "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only",
+        "ad31526dbd9675d3f2b0dd0f2337ad77e7b7625e"
+      ],
+      "exit": 0,
+      "stdout": "domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md\ndomains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md\ndomains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md\ndomains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md\ndomains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md\ndomains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md\ndomains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md\ndomains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md\ndomains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md\ndomains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md\ndomains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md\ndomains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md\ndomains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md\ndomains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md\ndomains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md\ndomains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md\ndomains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit": 0,
+      "stdout": "docs/visual-d04/changed-files.txt\ndocs/visual-d04/guide.md\ndocs/visual-d04/lab-replay.json\ndocs/visual-d04/plan.json\ndocs/visual-d04/references.json\ndocs/visual-d04/review.md\ndocs/visual-d04/technical-findings.md\ndocs/visual-d04/validation.txt\ndocs/visual-d04/verification.json\ndocs/visual-d04/verify.mjs\ndomains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd\ndomains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.svg\ndomains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd\ndomains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg\ndomains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd\ndomains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg\ndomains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd\ndomains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.svg\ndomains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd\ndomains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg\ndomains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd\ndomains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.svg\ndomains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd\ndomains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg\ndomains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd\ndomains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.svg\ndomains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd\ndomains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.svg\ndomains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd\ndomains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg\ndomains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd\ndomains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg\ndomains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd\ndomains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg\ndomains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd\ndomains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg\ndomains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd\ndomains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg\ndomains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd\ndomains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg\ndomains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd\ndomains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg\ndomains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd\ndomains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg\ndomains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd\ndomains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg\ndomains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd\ndomains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:smoke"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:smoke\n> node scripts/check-visuals.mjs\n\nDisposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-mt5vf6\ntcp-handshake: PNG 507 x 357, 16388 bytes\nevent-loop-scheduling: PNG 236 x 725, 30572 bytes\nrequest-lifecycle: PNG 451 x 536, 25604 bytes\nMarkdown: 3 fences validated; 3 relative SVG image references resolve.\nMath: KaTeX typeset output verified with an explicit HTML-label config.\nRefusal checks: invalid fence reports block/line; missing browser exits 2.\nPASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-mt5vf6; remove only this directory after review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "--self-test-styles"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check --self-test-styles\n\nOK  <style-self-test> (5 colored Mermaid blocks)\n\nValidation passed: checked 5 Mermaid blocks across 1 target.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:check",
+        "--",
+        "domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md",
+        "domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md",
+        "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+        "domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md",
+        "domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md",
+        "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+        "domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md",
+        "domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md",
+        "domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md",
+        "domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md",
+        "domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md",
+        "domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md",
+        "domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md",
+        "domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md",
+        "domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md",
+        "domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md",
+        "domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md",
+        "domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md",
+        "domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd",
+        "domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd",
+        "domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd",
+        "domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd",
+        "domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd",
+        "domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd",
+        "domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd",
+        "domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd",
+        "domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd",
+        "domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd",
+        "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd",
+        "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd",
+        "domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd",
+        "domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd",
+        "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd",
+        "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd",
+        "domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd",
+        "domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:check\n> node scripts/visuals.mjs check domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd\n\nOK  domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd (1 Mermaid block)\nOK  domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd (1 Mermaid block)\n\nValidation passed: checked 19 Mermaid blocks across 37 targets.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/success-boundaries.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/success-boundaries.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/cache-and-connection-lifetimes.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/cache-and-connection-lifetimes.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/flow-and-congestion-limits.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/flow-and-congestion-limits.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/parser-terminal-states.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/parser-terminal-states.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/datagram-gaps-and-reordering.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/datagram-gaps-and-reordering.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/accepted-versus-completed.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/accepted-versus-completed.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/response-framing-at-eof.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/response-framing-at-eof.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/pool-response-ownership.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/pool-response-ownership.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/resume-representation-identity.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/resume-representation-identity.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/proxy-hop-trust.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/proxy-hop-trust.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/stream-and-connection-credit.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/stream-and-connection-credit.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/http-version-dependencies.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/http-version-dependencies.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/quic-stream-ordering.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/quic-stream-ordering.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/fragmented-message-and-control.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/fragmented-message-and-control.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/sse-dispatch-and-replay.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/sse-dispatch-and-replay.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/grpc-final-status.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/grpc-final-status.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/compatibility-directions.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/compatibility-directions.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/timeout-and-unknown-outcome.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/timeout-and-unknown-outcome.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "visuals:render",
+        "--",
+        "-i",
+        "domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd",
+        "-o",
+        "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/evidence-before-root-cause.svg"
+      ],
+      "exit": 0,
+      "stdout": "\n> visuals:render\n> node scripts/visuals.mjs render -i domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd -o /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT/evidence-before-root-cause.svg\n\nGenerating single mermaid chart\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "openssl",
+        "version"
+      ],
+      "exit": 0,
+      "stdout": "OpenSSL 3.6.3 9 Jun 2026 (Library: OpenSSL 3.6.3 9 Jun 2026)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "11.19.1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Python 3.14.7\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sw_vers"
+      ],
+      "exit": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.1\nBuildVersion:\t\t25B78\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-handbook-links.py"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"checked_internal_links\": 1561,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "lessons": [
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md",
+      "sha256": "c7c0621fb27e5845ca4fa087203453651e323c83a17708078ae82e109d95b8f4",
+      "baselineSha256": "80160c8b335ff22abb4bb15bc1cf4893d60112b7633c5b42e2e537a0f388b697",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/01-network-paths-and-addressing/success-boundaries.svg",
+              "alt": "DNS candidates lead to TCP connection, verified TLS, HTTP interpretation and application outcome checks; each arrow requires new evidence.",
+              "loaded": true,
+              "width": 303,
+              "naturalWidth": 303
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/01-network-paths-and-addressing/success-boundaries.svg",
+              "alt": "DNS candidates lead to TCP connection, verified TLS, HTTP interpretation and application outcome checks; each arrow requires new evidence.",
+              "loaded": true,
+              "width": 303,
+              "naturalWidth": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md",
+      "sha256": "3126188f2ae804f8ac8ab242168a22a003682ae663f4eda5f4abbf50cd69f480",
+      "baselineSha256": "17d024c948e3076e1001c2e0e182168f49f2c8f0d5dd3bcd0c6537d00a25727b",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg",
+              "alt": "Client queries a recursive resolver, which queries the authority on a miss or expiry; an authority update leaves the eligible cached answer and an existing socket with independent lifetimes.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 80
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg",
+              "alt": "Client queries a recursive resolver, which queries the authority on a miss or expiry; an authority update leaves the eligible cached answer and an existing socket with independent lifetimes.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+      "sha256": "cbb963b4dfa545755a548fd55a2d67c5cdefba473fe5d031dae368591c5493d6",
+      "baselineSha256": "36b0a8235b711f46bb4c6dfff9ca79ae0934e2303275ffd8d1d1bed9491b2941",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+              "alt": "Client and server complete SYN, SYN-ACK and ACK, then exchange independently sequenced bytes; cumulative TCP acknowledgments do not establish application consumption or business completion.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 80
+            },
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg",
+              "alt": "Receiver window rwnd and congestion window cwnd jointly limit flight; outstanding bytes reduce new allowance, while Node write pressure is a separate local boundary.",
+              "loaded": true,
+              "width": 480,
+              "naturalWidth": 480
+            },
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+              "alt": "Alternative TCP endings: client FIN leaves server sending open until server FIN; orderly client-first close retains TIME_WAIT, while an accepted reset aborts transport with prior business effects unknown.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 71
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+              "alt": "Client and server complete SYN, SYN-ACK and ACK, then exchange independently sequenced bytes; cumulative TCP acknowledgments do not establish application consumption or business completion.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 80
+            },
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg",
+              "alt": "Receiver window rwnd and congestion window cwnd jointly limit flight; outstanding bytes reduce new allowance, while Node write pressure is a separate local boundary.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 480
+            },
+            {
+              "src": "../assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+              "alt": "Alternative TCP endings: client FIN leaves server sending open until server FIN; orderly client-first close retains TIME_WAIT, while an accepted reset aborts transport with prior business effects unknown.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md",
+      "sha256": "1357ad818f3138079b9abfd5455701493fb6705a200898fd811a1fcfb7a74f7d",
+      "baselineSha256": "cd2595a524805828189e08c2afa36ddc99329d5315561c06d01d81e18b4c1c7c",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/04-framing-and-incremental-parsers/parser-terminal-states.svg",
+              "alt": "Open retains or emits frames on valid pushes; clean EOF enters Ended, residual EOF or a bound violation enters Failed; neither terminal state reopens.",
+              "loaded": true,
+              "width": 490,
+              "naturalWidth": 490
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/04-framing-and-incremental-parsers/parser-terminal-states.svg",
+              "alt": "Open retains or emits frames on valid pushes; clean EOF enters Ended, residual EOF or a bound violation enters Failed; neither terminal state reopens.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 490
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md",
+      "sha256": "01e3549b271126d36d3cb9df087e8f6a01f8be3814026dc43ab4beaed446940f",
+      "baselineSha256": "917df53caf04b1121aee3b8cfacc91dd45832830cbc3347526e0838f215eb0f8",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg",
+              "alt": "Receiver observes X:10, X:12, then X:11 and another X:12; the provisional gap fills and the final arrival is a duplicate within session X.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 81
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg",
+              "alt": "Receiver observes X:10, X:12, then X:11 and another X:12; the provisional gap fills and the final arrival is a duplicate within session X.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+      "sha256": "f89818bfb0db4f442301f73c292a2a889718f9df617f19edd035361bfaa2ae40",
+      "baselineSha256": "f89818bfb0db4f442301f73c292a2a889718f9df617f19edd035361bfaa2ae40",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg",
+              "alt": "A full TLS 1.3 exchange over connected TCP: ClientHello offers SNI and ALPN; protected server messages select ALPN and present certificate and handshake proofs; verification and Finished precede this example's encrypted application exchange.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 70
+            },
+            {
+              "src": "../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+              "alt": "TCP connection establishes transport only; chain, hostname and cryptographic checks must pass and the handshake complete for verified TLS; application policy separately allows or refuses an action.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 54
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg",
+              "alt": "A full TLS 1.3 exchange over connected TCP: ClientHello offers SNI and ALPN; protected server messages select ALPN and present certificate and handshake proofs; verification and Finished precede this example's encrypted application exchange.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 70
+            },
+            {
+              "src": "../assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+              "alt": "TCP connection establishes transport only; chain, hostname and cryptographic checks must pass and the handshake complete for verified TLS; application policy separately allows or refuses an action.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md",
+      "sha256": "7849a6a3723b6875c6b8b6cd2491f574218687a32317a76d43ae758942dab2c2",
+      "baselineSha256": "314585aece55db733a257f68619c1ffccf19275694cfdbd61bdcfe31e3ba136b",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/07-http-semantics-and-representations/accepted-versus-completed.svg",
+              "alt": "Caller receives complete 202 acceptance, later retrieves a complete 200 whose representation says rejected; status and framing completion do not decide the business outcome.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 93
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/07-http-semantics-and-representations/accepted-versus-completed.svg",
+              "alt": "Caller receives complete 202 acceptance, later retrieves a complete 200 whose representation says rejected; status and framing completion do not decide the business outcome.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md",
+      "sha256": "8ecaaf81fab73930d7d8631d7b2b01678c67dab7cd8fa7290a007437618df304",
+      "baselineSha256": "f1aae9b099d1c423483e14e4db77a387f4f4585791a48e17edeb682f328e32b0",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg",
+              "alt": "Length-delimited and chunked responses can be incomplete at EOF; a close-delimited response can be HTTP-complete while application content remains insufficient.",
+              "loaded": true,
+              "width": 290,
+              "naturalWidth": 290
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg",
+              "alt": "Length-delimited and chunked responses can be incomplete at EOF; a close-delimited response can be HTTP-complete while application content remains insufficient.",
+              "loaded": true,
+              "width": 290,
+              "naturalWidth": 290
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md",
+      "sha256": "0739513f8334d7adce519031a47e1e0e470390cb5441afc5ef5dcfcdc5fa38a5",
+      "baselineSha256": "f68cf60835d22c8e913c44f8c848a93075a9f95e28e71e3f123121afacdf717f",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/09-http-clients-and-connection-pools/pool-response-ownership.svg",
+              "alt": "Admission and pool wait precede socket assignment and headers; the caller still owns bounded body consumption or cancellation before resources can be released.",
+              "loaded": true,
+              "width": 297,
+              "naturalWidth": 297
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/09-http-clients-and-connection-pools/pool-response-ownership.svg",
+              "alt": "Admission and pool wait precede socket assignment and headers; the caller still owns bounded body consumption or cancellation before resources can be released.",
+              "loaded": true,
+              "width": 297,
+              "naturalWidth": 297
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md",
+      "sha256": "3021ded8c1232218271642ce98a1365b6cbbbdd8fbce928f8c29ae82491f1cd1",
+      "baselineSha256": "e8fe070858b8c431c8da17d440624601ffa1c3a334522a54a67a709aa288223e",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/10-caching-validation-and-ranges/resume-representation-identity.svg",
+              "alt": "A retained abc prefix and If-Range A can lead to validated 206 def, or a full 200 after change; the full response cannot be appended to the old prefix.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 81
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/10-caching-validation-and-ranges/resume-representation-identity.svg",
+              "alt": "A retained abc prefix and If-Range A can lead to validated 206 def, or a full 200 after change; the full response cannot be appended to the old prefix.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 81
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md",
+      "sha256": "fdc90fb0556e4eec4741821e67196a04237ad7ccf3cab40567b5abb0195aba17",
+      "baselineSha256": "07a95b1cd1c830e227579923be0fbcd027b069a8b8226af7730fa636314bc3cf",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg",
+              "alt": "Client h2 TLS ends at ingress, which opens a separate HTTP/1.1 hop; backend sees ingress as peer and must evaluate original-caller assertions and upstream protection separately.",
+              "loaded": true,
+              "width": 294,
+              "naturalWidth": 294
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg",
+              "alt": "Client h2 TLS ends at ingress, which opens a separate HTTP/1.1 hop; backend sees ingress as peer and must evaluate original-caller assertions and upstream protection separately.",
+              "loaded": true,
+              "width": 294,
+              "naturalWidth": 294
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md",
+      "sha256": "4b43ba580224ed930f0ca054db1d7859afa66700677c0cd457535d30da824dd3",
+      "baselineSha256": "bb6082e72aa2ef9586e201c34aeb7d6dc17b979def8e0d0dbc793bd3ca040cd9",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg",
+              "alt": "With A credit zero, B credit 2048 and connection credit 512, A waits and B can send at most 512 DATA payload bytes; HEADERS and TCP have separate constraints.",
+              "loaded": true,
+              "width": 301,
+              "naturalWidth": 301
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg",
+              "alt": "With A credit zero, B credit 2048 and connection credit 512, A waits and B can send at most 512 DATA payload bytes; HEADERS and TCP have separate constraints.",
+              "loaded": true,
+              "width": 301,
+              "naturalWidth": 301
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md",
+      "sha256": "a5921100f3f7f90795818be53720d3f7b2d10cb1ca3e71c55b4872185dc1edd1",
+      "baselineSha256": "aa267e159d426cd1a7faa0a070d9a5582157a6e47f948e858acdf761fc395bd0",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg",
+              "alt": "Separate groups map HTTP/1.1 and HTTP/2 to TLS over TCP, while HTTP/3 maps to QUIC streams with integrated TLS handshake and packet protection over UDP.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            },
+            {
+              "src": "../assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg",
+              "alt": "A waits for missing offset zero while B can deliver xy from its own contiguous offsets; shared connection resources and QPACK dependencies remain separate possible stalls.",
+              "loaded": true,
+              "width": 303,
+              "naturalWidth": 303
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg",
+              "alt": "Separate groups map HTTP/1.1 and HTTP/2 to TLS over TCP, while HTTP/3 maps to QUIC streams with integrated TLS handshake and packet protection over UDP.",
+              "loaded": true,
+              "width": 320,
+              "naturalWidth": 320
+            },
+            {
+              "src": "../assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg",
+              "alt": "A waits for missing offset zero while B can deliver xy from its own contiguous offsets; shared connection resources and QPACK dependencies remain separate possible stalls.",
+              "loaded": true,
+              "width": 303,
+              "naturalWidth": 303
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md",
+      "sha256": "65bb4385c6b5a891bd0e80940063f512c88393aa0b5fb43337a2224a9e7f6ca1",
+      "baselineSha256": "80aec1ec756ba9d7bda7687e445bd33a979e6e92f69c6ee3a82f1d7fb172c213",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg",
+              "alt": "After valid 101 opening, text fragments hel and lo surround a ping and pong; one hello message results, and a later close exchange does not certify business processing.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 69
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg",
+              "alt": "After valid 101 opening, text fragments hel and lo surround a ping and pong; one hello message results, and a later close exchange does not certify business processing.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md",
+      "sha256": "47f70dafe191d76bbd9b911131d60282ca286da942db5b819400a9d62df45d64",
+      "baselineSha256": "ba0bd381c4a3c361ac76083243a1f1fe0a5762af2e4f15e0ef69f5e2ac9d7321",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg",
+              "alt": "Blank-line termination dispatches event 7, incomplete EOF does not dispatch its tail, and a new request with Last-Event-ID 7 receives retained event 8 under this server contract.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 90
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg",
+              "alt": "Blank-line termination dispatches event 7, incomplete EOF does not dispatch its tail, and a new request with Last-Event-ID 7 receives retained event 8 under this server contract.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md",
+      "sha256": "6bc4d4c9d2f39935a667c91589058ac50cb088c55395664ae5853ba838622e6e",
+      "baselineSha256": "fe191ac3fdf64791fabcdd3de4e7b79c0b97ab44814b5071ef15d64bc50b5229",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg",
+              "alt": "HTTP 200 and two messages precede grpc-status 7 with end of stream; partial results remain observed while final protocol status reports call failure.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 90
+            },
+            {
+              "src": "../assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg",
+              "alt": "Old-to-new, new-to-old and intermediary rewrite paths are separate tests; each needs wire decoding, field preservation and semantic interpretation evidence.",
+              "loaded": true,
+              "width": 348,
+              "naturalWidth": 348
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg",
+              "alt": "HTTP 200 and two messages precede grpc-status 7 with end of stream; partial results remain observed while final protocol status reports call failure.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 90
+            },
+            {
+              "src": "../assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg",
+              "alt": "Old-to-new, new-to-old and intermediary rewrite paths are separate tests; each needs wire decoding, field preservation and semantic interpretation evidence.",
+              "loaded": true,
+              "width": 348,
+              "naturalWidth": 348
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md",
+      "sha256": "9cbe9a169195c6b8195d45c39a755c85463696f7e27a000db5ceaf51670e9a4d",
+      "baselineSha256": "fe5646191e46ff679b2531efa4fa9f27394813d16910882d9b67df1b952d7a56",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg",
+              "alt": "Service action precedes a response the caller does not observe in time; local deadline cleanup leaves the caller uncertain and does not erase the action or establish retry safety.",
+              "loaded": true,
+              "width": 720,
+              "naturalWidth": 100
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg",
+              "alt": "Service action precedes a response the caller does not observe in time; local deadline cleanup leaves the caller uncertain and does not erase the action or establish retry safety.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md",
+      "sha256": "1445dfc282c29bfb6e31ff2c1e6364f5038c3c4f9f182c146e8698d5a11f4da4",
+      "baselineSha256": "e058acf78f0ebbb09d8542ab469a0def12d7099910f93b9fef0abdaefda1cd32",
+      "originalLinesPreserved": true,
+      "existingCodePreserved": true,
+      "markdownPreviews": [
+        {
+          "columnWidth": 720,
+          "images": [
+            {
+              "src": "../assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg",
+              "alt": "Observed boundary evidence leads to competing predictions and a scoped observation; inconclusive evidence loops back without converting uncertainty into a root-cause claim.",
+              "loaded": true,
+              "width": 509,
+              "naturalWidth": 509
+            }
+          ]
+        },
+        {
+          "columnWidth": 360,
+          "images": [
+            {
+              "src": "../assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg",
+              "alt": "Observed boundary evidence leads to competing predictions and a scoped observation; inconclusive evidence loops back without converting uncertainty into a root-cause claim.",
+              "loaded": true,
+              "width": 360,
+              "naturalWidth": 509
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "source": "domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd",
+      "sourceSha256": "151466be1555ab1b14a20b2b0e06179ed4f7d45d4769e97a10ccaae85ec359ae",
+      "svg": "domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.svg",
+      "svgSha256": "a11273d2a57fb3cc51ec70062939ccd1a7291da3c2bb4ba05c671a00629f4a36",
+      "xmlValid": true,
+      "title": "Separate network, identity and application evidence",
+      "description": "DNS candidates lead to TCP connection, verified TLS, HTTP interpretation and application outcome checks; each arrow requires new evidence.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 302.828125 731.2000122070312",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 302.828125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 302.828125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd",
+      "sourceSha256": "c9bd63ec045cc973d5becb861a1972b102eb9e729f2fda67de741a69d8d3b80e",
+      "svg": "domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.svg",
+      "svgSha256": "60463fd287edad1c36eaf26e5db5372285a31c881fd868306403d815c9cb8421",
+      "xmlValid": true,
+      "title": "DNS cache expiry does not end existing connections",
+      "description": "Client queries a recursive resolver, which queries the authority on a miss or expiry; an authority update leaves the eligible cached answer and an existing socket with independent lifetimes.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 506 945",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 506,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 14.229249011857707,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd",
+      "sourceSha256": "55748f8e352637f08fab741f0457416ccfcadb2ee6690d982c6cfb569fa79764",
+      "svg": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.svg",
+      "svgSha256": "a0699723872fd3744d8acbf33e9d83edbba8d0e92e18ce86f21ab898bed1a551",
+      "xmlValid": true,
+      "title": "TCP receiver flow control and network congestion control",
+      "description": "Receiver window rwnd and congestion window cwnd jointly limit flight; outstanding bytes reduce new allowance, while Node write pressure is a separate local boundary.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 480.1875 514.8000183105469",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 480.1875,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.494728621632175,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd",
+      "sourceSha256": "89964a003b8b9ec756ae7d60b99a08798860aa6afd6131d44f3473d420718c13",
+      "svg": "domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.svg",
+      "svgSha256": "3b5fc014082fbefd805b4d57645f4e2f0ec8db520f2dd8bcfb7cfa9f04352651",
+      "xmlValid": true,
+      "title": "Incremental parser has two terminal outcomes",
+      "description": "Open retains or emits frames on valid pushes; clean EOF enters Ended, residual EOF or a bound violation enters Failed; neither terminal state reopens.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 490.296875 246",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 490.296875,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 13.216482360814558,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd",
+      "sourceSha256": "5e9c9a1c8779753ba2a3907e72cd6ff2b1a8731410e53d9e53508ca83116557b",
+      "svg": "domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg",
+      "svgSha256": "b380c60476fa25b33e54777e7ba1f6343c46447fb25e44227937efbbe8d634e2",
+      "xmlValid": true,
+      "title": "UDP sequence observations do not prove permanent loss",
+      "description": "Receiver observes X:10, X:12, then X:11 and another X:12; the provisional gap fills and the final arrival is a duplicate within session X.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 325 601",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 325,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 325,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd",
+      "sourceSha256": "988c18fa0d6ddbae6c62ab7679250daa08ff5e3d709df45394f344a8c7ea3501",
+      "svg": "domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.svg",
+      "svgSha256": "24b685af4aa1d3d8f74b8ddb349b2b181d757d52e5efe2f1adbb535cffd1041b",
+      "xmlValid": true,
+      "title": "HTTP acceptance, completion and domain result are separate",
+      "description": "Caller receives complete 202 acceptance, later retrieves a complete 200 whose representation says rejected; status and framing completion do not decide the business outcome.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 388 624",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 388,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 18.556701030927837,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd",
+      "sourceSha256": "8ffc6344848386f3982d0a87f2fc770db165cf8d8284b68d1ea7dff9948116fd",
+      "svg": "domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg",
+      "svgSha256": "cbd9f36f72eff0773acded5fda9adf292ceabfaaf663df3053da9f921fac2f8e",
+      "xmlValid": true,
+      "title": "Response framing determines the meaning of EOF",
+      "description": "Length-delimited and chunked responses can be incomplete at EOF; a close-delimited response can be HTTP-complete while application content remains insufficient.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 289.78125 764.199951171875",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 289.78125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(254, 242, 242)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 289.78125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(254, 242, 242)",
+            "rgb(255, 251, 235)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd",
+      "sourceSha256": "90a8d6f33c012dd45daf8776a155b06a2f85def12de36a4930e16e978bcbbb04",
+      "svg": "domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.svg",
+      "svgSha256": "35d9a351ec8b9a1451278ea4ea0a60f2f094ede6f179244099ed610b71e1bc53",
+      "xmlValid": true,
+      "title": "HTTP client ownership lasts through response cleanup",
+      "description": "Admission and pool wait precede socket assignment and headers; the caller still owns bounded body consumption or cancellation before resources can be released.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 297.234375 579.0000610351562",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 297.234375,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 297.234375,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd",
+      "sourceSha256": "776f94dc0e1f37e9bbf3950b091e98cbea54f9e547c0521bcacfcf14f5da6abf",
+      "svg": "domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.svg",
+      "svgSha256": "c2c29dfb7e98af386419a791ee8bb9677aab021288d6916760d321b819ad7dbf",
+      "xmlValid": true,
+      "title": "Range continuation depends on representation identity",
+      "description": "A retained abc prefix and If-Range A can lead to validated 206 def, or a full 200 after change; the full response cannot be appended to the old prefix.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 404 750",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 404,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 17.821782178217823,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd",
+      "sourceSha256": "4a0fe813ddc26f4cffccd5b668f7bd31b3042489039e21bbac39c88b60de8a14",
+      "svg": "domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg",
+      "svgSha256": "c17003a1ea85d8ac9e5d69d2663cbadb671ff3e36cafd97818ffedae7996fa91",
+      "xmlValid": true,
+      "title": "TLS termination creates separate protocol and trust boundaries",
+      "description": "Client h2 TLS ends at ingress, which opens a separate HTTP/1.1 hop; backend sees ingress as peer and must evaluate original-caller assertions and upstream protection separately.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 294.265625 702.2000122070312",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 294.265625,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 294.265625,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(245, 243, 255)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd",
+      "sourceSha256": "11fad1875a14cb1a61b00f054d5ebf211ef4b8a90d861bee3720c90401e87569",
+      "svg": "domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.svg",
+      "svgSha256": "51a4b9c3505c1daf7f0c65cde8fc4f63e098befdc2bbf0c9bd0c43ea975df2ed",
+      "xmlValid": true,
+      "title": "HTTP/2 stream credit and shared connection credit",
+      "description": "With A credit zero, B credit 2048 and connection credit 512, A waits and B can send at most 512 DATA payload bytes; HEADERS and TCP have separate constraints.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 301.453125 662.7999877929688",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 301.453125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 301.453125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd",
+      "sourceSha256": "47e7addec7e99156c11d91d7f5ed9f35e9b463e506b033b16fd47e5d078b56f7",
+      "svg": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg",
+      "svgSha256": "de303f0b7183897cfe593c8b16ddbd65e809bd784b56cf83aeb6942e4f10c356",
+      "xmlValid": true,
+      "title": "HTTPS versions share semantics but use different transport mappings",
+      "description": "Separate groups map HTTP/1.1 and HTTP/2 to TLS over TCP, while HTTP/3 maps to QUIC streams with integrated TLS handshake and packet protection over UDP.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 320.109375 777.8624877929688",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 320.109375,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 320.109375,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd",
+      "sourceSha256": "506ec4b5a362013bc8a1e7d758b96cdf02cdf2cbd969acbc242671638a70a10a",
+      "svg": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg",
+      "svgSha256": "cacd148ac8ab595aa116faad8bcd25ce14275307c217d08d6577335e49573ce7",
+      "xmlValid": true,
+      "title": "QUIC ordering is per stream while other constraints remain",
+      "description": "A waits for missing offset zero while B can deliver xy from its own contiguous offsets; shared connection resources and QPACK dependencies remain separate possible stalls.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 303.203125 699.2000122070312",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 303.203125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 303.203125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(243, 244, 246)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd",
+      "sourceSha256": "69ddea79a93f2b60c31222f455669543e8b7bae0cdf596c7945d4bbfd807bef4",
+      "svg": "domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg",
+      "svgSha256": "4ca7b768750c6c93efdd317de86d6ac327f71dd523d560977734f9d2f88f2abb",
+      "xmlValid": true,
+      "title": "WebSocket message fragmentation permits interleaved control",
+      "description": "After valid 101 opening, text fragments hel and lo surround a ping and pong; one hello message results, and a later close exchange does not certify business processing.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 391 855",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 391,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 18.414322250639387,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd",
+      "sourceSha256": "85327c6e982780b0c74fb2a053b1f93a72d7bc7e279c1022b9d65b595efe01ca",
+      "svg": "domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.svg",
+      "svgSha256": "f3cd74a043a3e8d72f6567a61e384aa8261a6329049237d6bd92e9697d0ecc6f",
+      "xmlValid": true,
+      "title": "SSE event dispatch, reconnection cursor and server replay",
+      "description": "Blank-line termination dispatches event 7, incomplete EOF does not dispatch its tail, and a new request with Last-Event-ID 7 receives retained event 8 under this server contract.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 426.5 710",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 426.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 16.881594372801874,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd",
+      "sourceSha256": "01e36d48e4ae60105ab538c6283fb231e464e8c1585c87b4a683ede121da5a66",
+      "svg": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg",
+      "svgSha256": "26b4ac0575bd754a169500f1b5c684615517ce178b06e9a13ec9300c9526e90c",
+      "xmlValid": true,
+      "title": "gRPC final protocol status is separate from HTTP status",
+      "description": "HTTP 200 and two messages precede grpc-status 7 with end of stream; partial results remain observed while final protocol status reports call failure.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-15 -10 406.5 680",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 406.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 17.71217712177122,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd",
+      "sourceSha256": "5760074212264b96482118c14cb2e34b3439754fbe0e0b2f5cf514b810372f61",
+      "svg": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg",
+      "svgSha256": "2a6e3b9e5e2b4a646cff1359420b7e9daedde9eb2873e587ec4224f5a6e68444",
+      "xmlValid": true,
+      "title": "Compatibility evidence has a writer-reader direction",
+      "description": "Old-to-new, new-to-old and intermediary rewrite paths are separate tests; each needs wire decoding, field preservation and semantic interpretation evidence.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 347.703125 840.4066162109375",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 347.703125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 347.703125,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(0, 4, 20)",
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd",
+      "sourceSha256": "5763ef482c315b021c01007e3282c5bd9bb7c9301761053cdf153f28137edc33",
+      "svg": "domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.svg",
+      "svgSha256": "bfb8974559254af208965e0fdf629435ea9f61b8af3dac6dcbe9e138037588d4",
+      "xmlValid": true,
+      "title": "Caller timeout and server action can coexist",
+      "description": "Service action precedes a response the caller does not observe in time; local deadline cleanup leaves the caller uncertain and does not erase the action or establish retry safety.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "-55.5 -10 473.5 707",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 473.5,
+          "minimumFontPx": 20,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 15.205913410770854,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)",
+            "rgb(51, 51, 51)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)",
+            "rgb(255, 245, 173)"
+          ],
+          "minimumContrast": 11.011078642385288
+        }
+      ]
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd",
+      "sourceSha256": "bbc7dd8bb8a7c83191a93e031266ca625ff27ec549c9299bd0244f1d37159108",
+      "svg": "domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg",
+      "svgSha256": "7d42ca8b7b726efadfec47839309fa413c6e7eb8509199f3a08aceeb23f12e79",
+      "xmlValid": true,
+      "title": "Network diagnosis needs discriminating evidence",
+      "description": "Observed boundary evidence leads to competing predictions and a scoped observation; inconclusive evidence loops back without converting uncertainty into a root-cause claim.",
+      "labelled": true,
+      "unsafeCount": 0,
+      "viewBox": "4 4 509.265625 735.9249877929688",
+      "sizes": [
+        {
+          "columnWidth": 720,
+          "width": 509.265625,
+          "minimumFontPx": 18,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        },
+        {
+          "columnWidth": 360,
+          "width": 360,
+          "minimumFontPx": 12.724204583806339,
+          "clipped": [],
+          "noteOverflow": [],
+          "textColors": [
+            "rgb(17, 24, 39)"
+          ],
+          "backgroundColors": [
+            "rgb(224, 242, 254)"
+          ],
+          "minimumContrast": 15.460131611055852
+        }
+      ]
+    }
+  ],
+  "previewDirectory": "/var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visual-d04-oU5hxT",
+  "preservedPilotAssets": [
+    {
+      "path": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd",
+      "sha256": "6b8173c8b00d9dbc475d47dd469988d2d2e69a3fd97df80d25df5ba6edfbd2c5",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.svg",
+      "sha256": "16177a83a8f2f4e93da618b7ec3a675f795f2a1dd30b7f96c76cf9fcdad28d0e",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd",
+      "sha256": "15931a9697d0ae60cdb69b8e023087e918340ea78eb9b3e59c6ab941e12c47f3",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.svg",
+      "sha256": "9391949134d936095adae9ed145ce0662fbf92d1c6572fe9c82a02878c94b479",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd",
+      "sha256": "f015dd05f4c51afbb2bd94906cb765548fe864c88d230e99bf0a52c33b1ccade",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.svg",
+      "sha256": "c1ae30aef8bd516ba85fb877cd08870a7d9abdeea8eda801a8f126471317d702",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd",
+      "sha256": "5f0fcd14e4352afe760e7af8c6974ed937b445a20832f980979ddc8955fadbed",
+      "unchanged": true
+    },
+    {
+      "path": "domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.svg",
+      "sha256": "a0fbb71e71508c87a3018be3205c666dd11aa3cfdeec5210b6ea327ad4159f36",
+      "unchanged": true
+    }
+  ],
+  "trackingAndCoverage": "Reviewed; no mapping/status/Charter change. Protected files unchanged from baseline.",
+  "regeneration": [
+    {
+      "source": "domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd",
+      "byteIdentical": true,
+      "sha256": "a11273d2a57fb3cc51ec70062939ccd1a7291da3c2bb4ba05c671a00629f4a36"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd",
+      "byteIdentical": true,
+      "sha256": "60463fd287edad1c36eaf26e5db5372285a31c881fd868306403d815c9cb8421"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd",
+      "byteIdentical": true,
+      "sha256": "a0699723872fd3744d8acbf33e9d83edbba8d0e92e18ce86f21ab898bed1a551"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd",
+      "byteIdentical": true,
+      "sha256": "3b5fc014082fbefd805b4d57645f4e2f0ec8db520f2dd8bcfb7cfa9f04352651"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd",
+      "byteIdentical": true,
+      "sha256": "b380c60476fa25b33e54777e7ba1f6343c46447fb25e44227937efbbe8d634e2"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd",
+      "byteIdentical": true,
+      "sha256": "24b685af4aa1d3d8f74b8ddb349b2b181d757d52e5efe2f1adbb535cffd1041b"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd",
+      "byteIdentical": true,
+      "sha256": "cbd9f36f72eff0773acded5fda9adf292ceabfaaf663df3053da9f921fac2f8e"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd",
+      "byteIdentical": true,
+      "sha256": "35d9a351ec8b9a1451278ea4ea0a60f2f094ede6f179244099ed610b71e1bc53"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd",
+      "byteIdentical": true,
+      "sha256": "c2c29dfb7e98af386419a791ee8bb9677aab021288d6916760d321b819ad7dbf"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd",
+      "byteIdentical": true,
+      "sha256": "c17003a1ea85d8ac9e5d69d2663cbadb671ff3e36cafd97818ffedae7996fa91"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd",
+      "byteIdentical": true,
+      "sha256": "51a4b9c3505c1daf7f0c65cde8fc4f63e098befdc2bbf0c9bd0c43ea975df2ed"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd",
+      "byteIdentical": true,
+      "sha256": "de303f0b7183897cfe593c8b16ddbd65e809bd784b56cf83aeb6942e4f10c356"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd",
+      "byteIdentical": true,
+      "sha256": "cacd148ac8ab595aa116faad8bcd25ce14275307c217d08d6577335e49573ce7"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd",
+      "byteIdentical": true,
+      "sha256": "4ca7b768750c6c93efdd317de86d6ac327f71dd523d560977734f9d2f88f2abb"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd",
+      "byteIdentical": true,
+      "sha256": "f3cd74a043a3e8d72f6567a61e384aa8261a6329049237d6bd92e9697d0ecc6f"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd",
+      "byteIdentical": true,
+      "sha256": "26b4ac0575bd754a169500f1b5c684615517ce178b06e9a13ec9300c9526e90c"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd",
+      "byteIdentical": true,
+      "sha256": "2a6e3b9e5e2b4a646cff1359420b7e9daedde9eb2873e587ec4224f5a6e68444"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd",
+      "byteIdentical": true,
+      "sha256": "bfb8974559254af208965e0fdf629435ea9f61b8af3dac6dcbe9e138037588d4"
+    },
+    {
+      "source": "domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd",
+      "byteIdentical": true,
+      "sha256": "7d42ca8b7b726efadfec47839309fa413c6e7eb8509199f3a08aceeb23f12e79"
+    }
+  ]
+}

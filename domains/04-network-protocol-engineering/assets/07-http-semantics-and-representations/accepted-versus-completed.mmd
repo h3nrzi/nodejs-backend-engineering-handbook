@@ -1,0 +1,19 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: HTTP acceptance, completion and domain result are separate
+  accDescr: Caller receives complete 202 acceptance, later retrieves a complete 200 whose representation says rejected; status and framing completion do not decide the business outcome.
+participant C as Caller
+  participant S as Service
+  C->>S: POST /imports
+  S-->>C: Complete 202 + reference
+  Note over C,S: Accepted processing<br/>Completion not established
+  C->>S: GET result reference
+  S-->>C: Complete 200<br/>domain state: rejected
+  Note over C,S: HTTP completion and status<br/>Product outcome is separate

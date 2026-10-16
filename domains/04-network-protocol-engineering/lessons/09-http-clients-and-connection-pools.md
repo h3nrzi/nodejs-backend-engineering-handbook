@@ -24,6 +24,14 @@ An idle pooled socket can become stale between eligibility checks and the next w
 
 Consuming or deliberately cancelling a response body is part of request ownership. Receiving status 200 and then abandoning the body can hold a connection or other resources. Blindly draining an unbounded hostile body is also unsafe. Decide bounded consumption, cancellation and whether the connection remains reusable. An intentional destroy can sacrifice reuse to terminate work promptly; that is a trade-off, not automatically a bug.
 
+**Visual question:** Why can receiving headers leave a pool slot occupied?
+
+![Admission and pool wait precede socket assignment and headers; the caller still owns bounded body consumption or cancellation before resources can be released.](../assets/09-http-clients-and-connection-pools/pool-response-ownership.svg)
+
+*Figure D04-V08 — A normal HTTP/1.1 client ownership path: queue wait belongs to total elapsed time, new sockets need setup, and reused sockets can skip it. Headers transfer body-cleanup responsibility rather than proving completion. Bounded successful consumption may permit reuse when framing and connection policy allow it; cancellation can sacrifice the connection. The map does not promise fairness, prompt queued-abort events or an API shared with fetch. The exact Agent fixture below remains the execution authority. See [authoritative reference](https://nodejs.org/docs/latest-v24.x/api/http.html#class-httpagent).*
+
+[Full-size SVG](../assets/09-http-clients-and-connection-pools/pool-response-ownership.svg) · [Editable Mermaid source](../assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd).
+
 ## Node APIs and version boundaries
 
 `node:http` uses `http.Agent` for its connection-management model. The built-in `fetch` uses a different client implementation and is not configured by passing an `http.Agent` as though both APIs shared pool knobs. Do not mix instructions from unrelated clients. The lab chooses `http.Agent` with explicit keepAlive and maxSockets to make the observed scope clear.

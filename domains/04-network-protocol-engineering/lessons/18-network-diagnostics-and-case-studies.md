@@ -16,6 +16,14 @@ Prerequisites: Chapters [01](01-network-paths-and-addressing.md)–[17](17-deadl
 
 Evidence has scope. A client trace measures the client experience. A backend log records what that backend observed. A packet capture records packets visible at its capture point, subject to capture loss and offload effects. A successful response in one environment cannot establish behavior for a different namespace, proxy path or runtime.
 
+**Visual question:** What extra step turns a plausible network story into a falsifiable investigation?
+
+![Observed boundary evidence leads to competing predictions and a scoped observation; inconclusive evidence loops back without converting uncertainty into a root-cause claim.](../assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg)
+
+*Figure D04-V19 — A diagnostic reasoning loop: preserve observer/attempt/phase evidence, state competing hypotheses with predictions, collect a scoped discriminating observation, and retain alternatives when it cannot decide. Explicit HTTP-completion evidence answers a different question from business outcome or root cause; missing/invalid completion remains unknown. Changed conditions narrow only the tested case. This diagram gathers no telemetry, invents no packet trace and establishes no production cause or learner competence. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.6).*
+
+[Full-size SVG](../assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.svg) · [Editable Mermaid source](../assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd).
+
 ## Evidence ladder and diagnostic tools
 
 Start with a minimal reproducible exchange and a runtime/configuration manifest. Capture phase timings, chosen address/family, protocol, response status, bytes, completeness and terminal error. Correlate application references across hops where available, but do not assume wall-clock timestamps are perfectly synchronized. Monotonic durations are local; cross-machine ordering needs qualified clock or causal evidence.

@@ -32,6 +32,14 @@ Choose a bounded window and a definition of finality. For example, a collector c
 
 For commands with side effects, timeout plus retry is dangerous: the first command might have executed and only its response was lost. Authentication, anti-replay rules and reconciliation must be product decisions. D04 teaches the transport uncertainty, without prescribing a storage or delivery architecture.
 
+**Visual question:** When is a sequence gap provisional, and how does a duplicate change the count?
+
+![Receiver observes X:10, X:12, then X:11 and another X:12; the provisional gap fills and the final arrival is a duplicate within session X.](../assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg)
+
+*Figure D04-V05 — Illustrative arrivals for one known producer/session X, matching the later worked example. After X:12, X:11 is only not yet observed; its later arrival fills the gap. The second X:12 is a duplicate within this scope: four arrivals, three unique references. Arrows show application observations, not measured packet paths or UDP reliability. A different session needs its own sequence scope; cutoff, retention and authentication still require an application contract. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc8085.html#section-3.3).*
+
+[Full-size SVG](../assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.svg) · [Editable Mermaid source](../assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd).
+
 ## Failure modes and troubleshooting
 
 Small datagrams can still overload a receiver by rate. Bound parsing cost and admitted work; source-address spoofing and amplification are concerns for publicly reachable UDP responders. Do not return a large response to arbitrary unauthenticated input merely to demonstrate the protocol. Multicast and broadcast have routing, membership and scope rules; they do not provide automatic discovery across arbitrary networks.

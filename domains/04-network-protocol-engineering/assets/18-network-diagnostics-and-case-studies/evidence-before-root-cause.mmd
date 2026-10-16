@@ -1,0 +1,16 @@
+---
+config:
+  fontSize: 20
+  flowchart:
+    useMaxWidth: false
+    wrappingWidth: 260
+---
+flowchart
+  accTitle: Network diagnosis needs discriminating evidence
+  accDescr: Observed boundary evidence leads to competing predictions and a scoped observation; inconclusive evidence loops back without converting uncertainty into a root-cause claim.
+O["Record observer, attempt, phase<br/>and last confirmed boundary"] --> H["State competing hypotheses<br/>with different predictions"]
+  H --> E["Collect scoped evidence<br/>that can distinguish predictions"]
+  E --> D{"Does it distinguish<br/>these hypotheses?"}
+  D -->|yes: scoped evidence| R["Reject contradicted causes<br/>Keep scope and limits"]
+  D -->|no| U["Keep uncertainty<br/>Plan next observation"]
+  U --> H

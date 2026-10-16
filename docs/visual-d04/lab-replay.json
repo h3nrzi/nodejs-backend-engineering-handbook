@@ -1,0 +1,115 @@
+{
+  "command": "node scripts/check-d04.mjs",
+  "stdout": "PASS 01 address families, loopback exchange, serialization bound: ok\nPASS 02 numeric lookup and explicit cache/family models: ok\nPASS 03 half-close reply; explicit RST -> ECONNRESET; idle timeout needs destroy: ok\nPASS 04 1056 partitions; UTF-8, empty frames, bounds, EOF and terminal states: ok\nPASS 05 one loopback datagram; duplicate/gap accounting model: ok\nPASS 06 TLS1.3 + ALPN; trusted CA success; wrong name and untrusted CA refused: ok\nPASS 07 URL components, repeated keys, origins and octet length: ok\nPASS 08 HTTP refusal; short length and missing zero chunk incomplete; close-delimited complete: ok\nPASS 09 occupied pool queues; queued abort not sent; consumption permits reuse; complete 404: ok\nPASS 10 exact-tag 304; fixed range 206; stale If-Range full 200; unsatisfied 416: ok\nPASS 11 untrusted assertion ignored; explicit trust and hop-field model: ok\nPASS 12 h2 zero stream window blocks DATA; HEADERS progress; window update releases; reset isolated: ok\nPASS 13 model only: independent stream ordering; shared budget can still stall: ok\nPASS 14 426 + required Upgrade/Connection headers, complete empty HTTP refusal; actual 101, fragmented text + ping/masked pong, clean 1000 close: ok\nPASS 15 SSE bytewise BOM/CRLF/UTF-8 grammar; actual HTTP cursor replay, partial tail, abort cleanup: ok\nPASS 16 one bounded opaque envelope; truncation and final-status model: ok\nPASS 17 AbortSignal after full receipt preserves action; response close cleanup; shared budget: ok\nPASS 18 23 evidence cases: explicit complete/incomplete; missing or invalid completion remains unknown: ok\n18/18 educational labs passed\n",
+  "environment": {
+    "node": "v24.22.0",
+    "uv": "1.52.1",
+    "v8": "13.6.233.17-node.57",
+    "openssl": "3.5.8",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packages": {
+      "@mermaid-js/mermaid-cli": "12.0.0",
+      "mermaid": "12.2.0",
+      "puppeteer": "25.14.0",
+      "marked": "4.3.0"
+    }
+  },
+  "limitations": "18 bounded lesson processes, not learner acceptance or protocol conformance. See original execution evidence for each fixture scope.",
+  "exit": 0,
+  "scope": "unchanged JavaScript lab from each of 18 D04 lessons",
+  "date": "2026-10-15",
+  "inputs": [
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/01-network-paths-and-addressing.md",
+      "javascriptSha256": "bd1aaa41ff8270535235e7e98ad30e9da75cffe9d27f4a68953239aa010bf844",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/02-dns-and-service-discovery.md",
+      "javascriptSha256": "66f880fbc32a4eb826024ae40e4f0dfdb250d6b90c4924cc2cb734efe134263d",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/03-tcp-delivery-and-connection-lifecycle.md",
+      "javascriptSha256": "c9afae12d17555c348af805131b0edbe5d8c10798b890bccea5d9449ad9dbca3",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/04-framing-and-incremental-parsers.md",
+      "javascriptSha256": "77b8ba9b058519c84986e6dafffc06d73141f0023731caa64d633b5ea168dc86",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/05-udp-loss-and-path-mtu.md",
+      "javascriptSha256": "ace261429e8352b0a62f13a8c0479acd6294342904ffc0dbeb681e73791e4ff8",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/06-tls-identity-and-negotiation.md",
+      "javascriptSha256": "f56a174101bcf966c36470fc795851415476c7a58b5dd5a299e976b20916771f",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/07-http-semantics-and-representations.md",
+      "javascriptSha256": "dfece33a981ca9a9b3e57cf83e92ffafb186cdca09679dcb315c679f1e08d349",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/08-http1-framing-and-server-lifetimes.md",
+      "javascriptSha256": "d8c74f13b5c9aef0cacba73f7c241ddfeead9c9148dc5fef1a43a4a036e33a3f",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/09-http-clients-and-connection-pools.md",
+      "javascriptSha256": "852e6d39a05c9408df21057ba1a3af7efee084ad360db544fa5676e4d90d1b74",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/10-caching-validation-and-ranges.md",
+      "javascriptSha256": "d88b5e005ee4a641c5102f28bc43fe347510ce4882599a0906e4d837e14d64b3",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/11-proxies-routing-and-trust-boundaries.md",
+      "javascriptSha256": "92d5502f8d8e06ab2bbaf2b931b61bde2574b6ee672fb10397ab132e5464ca6f",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/12-http2-streams-and-flow-control.md",
+      "javascriptSha256": "1aa8401d1e4df1302904f2069d9466530f3c6ebefeac7f40346f2dbaa55e3e89",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/13-quic-and-http3-trade-offs.md",
+      "javascriptSha256": "b4013b824d36e77cd9fd68152170fbe79a4036a2b9bbc2d6da4dfd8ae0e2de70",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/14-websocket-sessions-and-control.md",
+      "javascriptSha256": "b123c1cc159eace44255546fedb4ec28a93e5f0b432cd27f344aab9496daa509",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/15-server-sent-events-and-resumption.md",
+      "javascriptSha256": "02b8f164d90cc208539dfa39db579d334f5dc24c0f12fc8a9691f5549d7b789c",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/16-rpc-envelopes-and-protocol-evolution.md",
+      "javascriptSha256": "dfeff2a8540bfafcefd5e9bc7b43803e501cf4e5c3f31888fa341a5f71ddd2ba",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/17-deadlines-retries-and-uncertain-outcomes.md",
+      "javascriptSha256": "f2010e4105362f6f65bf3f8c835750ea72ac28ec8cb2ca2bed6557f48186f3dd",
+      "baselineBlockIdentical": true
+    },
+    {
+      "lesson": "domains/04-network-protocol-engineering/lessons/18-network-diagnostics-and-case-studies.md",
+      "javascriptSha256": "fcf29da4abd44cf9fa4754a61be36e01f8a81d8ebb69e3e608d74a913671799d",
+      "baselineBlockIdentical": true
+    }
+  ],
+  "runnerSha256": "1090daa5c7b4ca718278fa386febfb7adcfdeeb6813701ac2648b696af84249e"
+}

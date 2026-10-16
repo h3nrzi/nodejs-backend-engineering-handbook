@@ -1,0 +1,19 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: Caller timeout and server action can coexist
+  accDescr: Service action precedes a response the caller does not observe in time; local deadline cleanup leaves the caller uncertain and does not erase the action or establish retry safety.
+participant C as Caller
+  participant S as Service
+  C->>S: Command
+  S->>S: Action occurs
+  S--xC: Response not observed in time
+  C->>C: Deadline: stop waiting<br/>request owned cleanup
+  Note over C,S: Caller outcome: unknown<br/>Earlier action is not erased
+  Note over C,S: Retry: suitable semantics<br/>Replayable body, budget<br/>Bounded retry policy

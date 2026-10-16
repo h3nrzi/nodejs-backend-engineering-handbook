@@ -26,6 +26,14 @@ Status codes describe the response semantics, not a universal business-state mac
 
 Content length counts encoded octets, not JavaScript characters, and compressed versus decoded lengths can differ dramatically. A boundary should enforce limits at the relevant stages. Field names are case-insensitive, but arbitrary lowercasing of field values, paths or tokens is incorrect. Duplicate fields have field-specific combination rules; `Set-Cookie` is a familiar case that cannot be treated as an ordinary comma-joined list.
 
+**Visual question:** How can complete HTTP responses still report unfinished or rejected work?
+
+![Caller receives complete 202 acceptance, later retrieves a complete 200 whose representation says rejected; status and framing completion do not decide the business outcome.](../assets/07-http-semantics-and-representations/accepted-versus-completed.svg)
+
+*Figure D04-V06 — A conceptual version of the import example below: the complete 202 reports acceptance and supplies a reference, then a later complete 200 representation reports a rejected domain result. A reference is an illustrative product contract, not a mandatory HTTP workflow. Informational responses, headers/body delivery detail, method safety and idempotence rules are covered in the retained text; neither 2xx status certifies durable product success. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.3.3).*
+
+[Full-size SVG](../assets/07-http-semantics-and-representations/accepted-versus-completed.svg) · [Editable Mermaid source](../assets/07-http-semantics-and-representations/accepted-versus-completed.mmd).
+
 ## URL and origin reasoning
 
 Parse URLs structurally. Scheme, authority, path, query and fragment have different jobs; fragments are client-side and are not sent as the HTTP request target. Percent-encoding is component-specific. Decoding the whole path before identifying segment boundaries can turn encoded data into routing separators. Repeated query keys are real inputs; choosing first, last or all values is an application policy, not a fact implied by a TypeScript type.

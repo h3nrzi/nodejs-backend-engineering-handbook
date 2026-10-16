@@ -1,0 +1,24 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: WebSocket message fragmentation permits interleaved control
+  accDescr: After valid 101 opening, text fragments hel and lo surround a ping and pong; one hello message results, and a later close exchange does not certify business processing.
+participant C as Client
+  participant S as Server
+  C->>S: Valid Upgrade opening
+  S-->>C: 101 + accept value
+  Note over C,S: WebSocket OPEN
+  S->>C: Text fragment: hel, FIN=0
+  S->>C: Ping: p
+  C->>S: Pong: p
+  S->>C: Continuation: lo, FIN=1
+  Note over C,S: One message: hello
+  C->>S: Close: 1000
+  S->>C: Close: 1000
+  Note over C,S: Connection ends<br/>Business outcome is separate

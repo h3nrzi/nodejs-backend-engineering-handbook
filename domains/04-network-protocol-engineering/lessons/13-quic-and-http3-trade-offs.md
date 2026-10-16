@@ -16,6 +16,14 @@ QUIC builds reliable streams, loss recovery, flow control and protected transpor
 
 QUIC integrates TLS 1.3 handshake mechanisms while protecting transport packets rather than carrying ordinary TLS records over a TCP byte stream. Connection IDs permit an endpoint to relate packets to connection state without relying solely on a stable address/port tuple. This enables qualified migration behavior, but does not imply every implementation accepts every path change or that all network middleboxes cooperate.
 
+**Visual question:** Which transport and protection boundaries change between HTTPS versions?
+
+![Separate groups map HTTP/1.1 and HTTP/2 to TLS over TCP, while HTTP/3 maps to QUIC streams with integrated TLS handshake and packet protection over UDP.](../assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg)
+
+*Figure D04-V12 — Three ordinary HTTPS mappings, grouped separately rather than connected as a migration sequence. HTTP/1.1 and h2 use TLS over ordered TCP; h3 uses QUIC over UDP. QUIC integrates TLS 1.3 handshake mechanisms and packet protection rather than putting ordinary TLS records on a TCP stream. HTTP semantics remain shared. Cleartext HTTP variants, tunnels and optional datagrams are omitted; the diagram claims no runtime support, deployment choice or performance advantage. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9001.html#section-4).*
+
+[Full-size SVG](../assets/13-quic-and-http3-trade-offs/http-version-dependencies.svg) · [Editable Mermaid source](../assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd).
+
 ## Stream independence and remaining coupling
 
 Reliable QUIC streams deliver ordered bytes within each stream. Missing bytes on one stream need not block delivery of available data on another solely because of a shared TCP sequence. This removes a particular transport head-of-line effect. It does not make all streams independent in every respect: congestion control, connection flow control, CPU, memory and the path remain shared resources.
@@ -23,6 +31,14 @@ Reliable QUIC streams deliver ordered bytes within each stream. Missing bytes on
 HTTP/3 also has control streams and QPACK header compression. Compression dependencies can block decoding until required state arrives, subject to protocol limits. A statement that h3 “has no head-of-line blocking” is therefore too broad. Name the exact layer and dependency when comparing protocols.
 
 A QUIC datagram extension can provide unreliable messages within a QUIC connection, but ordinary reliable streams and optional datagrams have different contracts. HTTP/3 does not silently turn normal request bodies into best-effort telemetry. WebTransport and specialized datagram uses require separate capability and security review; they are not implemented in this curriculum.
+
+**Visual question:** Which missing byte blocks its own QUIC stream, and which dependencies remain shared?
+
+![A waits for missing offset zero while B can deliver xy from its own contiguous offsets; shared connection resources and QPACK dependencies remain separate possible stalls.](../assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg)
+
+*Figure D04-V13 — The single-byte-offset model from this lesson, shown before A offset 0 arrives. A has offset 1 = b and cannot deliver a contiguous prefix; B has offsets 0 = x and 1 = y and can deliver xy. Independent stream ordering removes the shared TCP-sequence dependency, not connection credit, congestion, path or CPU constraints. QPACK can separately block header decoding. Boxes represent stream bytes, not QUIC packets; one packet can contain several streams and recovery uses newly numbered packets. No QUIC traffic or latency is measured. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9000.html#section-2.2).*
+
+[Full-size SVG](../assets/13-quic-and-http3-trade-offs/quic-stream-ordering.svg) · [Editable Mermaid source](../assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd).
 
 ## Handshake, migration and replay trade-offs
 

@@ -24,6 +24,14 @@ HTTP 200 alone is insufficient to declare a gRPC call successful; the gRPC statu
 
 Unary, client-streaming, server-streaming and bidirectional-streaming calls have different lifetime and flow needs. A transport reset does not establish business rollback. Deadlines can propagate as protocol metadata, but service work must cooperate with cancellation and preserve truthful outcomes. Complete library integration belongs to a later selected project, not this envelope lesson.
 
+**Visual question:** Which later evidence is still needed after HTTP 200 and two RPC messages?
+
+![HTTP 200 and two messages precede grpc-status 7 with end of stream; partial results remain observed while final protocol status reports call failure.](../assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg)
+
+*Figure D04-V16 — One conceptual gRPC server-streaming response over h2: initial HTTP 200 metadata, two length-prefixed messages that need not align with DATA frames, then nonzero final grpc-status and stream completion. The messages remain observed partial results while the call fails at its protocol boundary. Missing final status is not zero. A trailers-only response is another legal shape omitted here; this is a wire-contract illustration, not an executed gRPC integration, complete status-mapping algorithm or claim about durable business effects. See [authoritative reference](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md).*
+
+[Full-size SVG](../assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.svg) · [Editable Mermaid source](../assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd).
+
 ## Schema evolution and compatibility direction
 
 Backward compatibility asks whether a new reader can handle old data; forward compatibility asks whether an old reader can handle new data, with precise definitions for the system being studied. Producer/consumer roles and deployment order matter. A field added to a schema can still break old readers if they reject unknown fields or if the new producer stops sending information old readers require.
@@ -31,6 +39,14 @@ Backward compatibility asks whether a new reader can handle old data; forward co
 For tagged binary formats, stable field numbers are part of the wire contract. Removing a field does not make its number safe to reuse for another meaning. Unknown-field preservation can matter for intermediaries that read and rewrite messages. Default values, field presence, oneof changes, enums and integer precision need specific format/version review rather than a generic “adding fields is safe” rule.
 
 JSON has different risks: numbers may exceed JavaScript's safe-integer range, missing differs from explicit null under many contracts, and unknown enum strings may be rejected by exhaustive application switches. TypeScript unions compiled into one client version do not prevent new remote values. Validate unknown values and define fallback/refusal behavior at runtime.
+
+**Visual question:** Which mixed-version direction and rewrite path must compatibility evidence name?
+
+![Old-to-new, new-to-old and intermediary rewrite paths are separate tests; each needs wire decoding, field preservation and semantic interpretation evidence.](../assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg)
+
+*Figure D04-V17 — Three distinct test paths, with no success asserted: old writer to new reader, new writer to old reader, and a read/rewrite path through an intermediary. Specify supported versions and verify decoding, retained fields and application interpretation in each. Wire acceptance can coexist with enum/default/presence meaning failures. The arrows express test direction, not guaranteed compatibility or deployment order; no schema or generated SDK is executed by this visual. See [authoritative reference](https://protobuf.dev/programming-guides/proto3/#updating).*
+
+[Full-size SVG](../assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.svg) · [Editable Mermaid source](../assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd).
 
 ## Compatibility matrix and test evidence
 

@@ -1,0 +1,19 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: UDP sequence observations do not prove permanent loss
+  accDescr: Receiver observes X:10, X:12, then X:11 and another X:12; the provisional gap fills and the final arrival is a duplicate within session X.
+participant P as Producer X
+  participant R as Receiver
+  P->>R: X:10
+  P->>R: X:12
+  Note over P,R: X:11 not observed yet<br/>Gap is provisional
+  P->>R: X:11 arrives later
+  P->>R: X:12 again
+  Note over P,R: At cutoff: 4 arrivals<br/>3 unique, 1 duplicate

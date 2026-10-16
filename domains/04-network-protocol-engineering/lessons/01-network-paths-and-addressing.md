@@ -16,6 +16,14 @@ A program sends bytes through an operating-system interface. The transport relat
 
 Use a concrete request path: caller → local socket → host routing decision → next hop → destination listener → accepted connection → application parser. A successful step does not certify the next one. Resolving a name does not prove reachability; reaching a host does not prove a process listens on the port; accepting TCP does not prove HTTP or TLS is healthy. This layered reasoning is a debugging method, not a claim that real implementations fit neatly into seven isolated OSI boxes.
 
+**Visual question:** What does each successful boundary still leave unproved?
+
+![DNS candidates lead to TCP connection, verified TLS, HTTP interpretation and application outcome checks; each arrow requires new evidence.](../assets/01-network-paths-and-addressing/success-boundaries.svg)
+
+*Figure D04-V01 — Read downward as increasingly strong, separate evidence. DNS supplies candidates, TCP establishes a byte-stream connection, verified TLS establishes the intended service under configured checks, and HTTP/application checks establish their own outcomes. Success at one boundary does not certify the next. This HTTPS-over-TCP example omits routing/link details and optional proxy hops; it is a responsibility map, not a packet trace or a universal protocol stack. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9110.html#section-4.3).*
+
+[Full-size SVG](../assets/01-network-paths-and-addressing/success-boundaries.svg) · [Editable Mermaid source](../assets/01-network-paths-and-addressing/success-boundaries.mmd).
+
 ## Addressing, routing and service identity
 
 IPv4 addresses are 32-bit values; IPv6 addresses are 128-bit values. A prefix denotes a set of addresses, not an application. Routers choose a next hop using forwarding information, typically preferring the longest matching prefix. The return path can differ from the outbound path. A default route is a fallback, not a guarantee that the destination or return path works.

@@ -30,6 +30,14 @@ Ping/pong can test protocol responsiveness, while an application heartbeat may e
 
 The close exchange has its own states; abrupt transport loss may prevent a clean close handshake. A close code helps categorize an observed closure, not certify delivery of prior application messages. Closing locally and observing no error cannot establish that the other application committed the last update.
 
+**Visual question:** Can ping progress before a fragmented message ends, and what does close establish?
+
+![After valid 101 opening, text fragments hel and lo surround a ping and pong; one hello message results, and a later close exchange does not certify business processing.](../assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg)
+
+*Figure D04-V14 — One HTTP/1.1 WebSocket opening and control path from the lab: a valid 101 opens the channel, hel plus lo form one text message, and ping/pong can progress between fragments. The displayed pong-before-continuation order is one permitted illustrative ordering, not a claimed measured packet order. The client-initiated Close/Close exchange ends this connection; a new opening does not restore subscriptions or missed business state. Masking details, errors, simultaneous close, TLS and extension variants are omitted; a pong and code 1000 supply no durable business acknowledgment. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc6455.html#section-5.4).*
+
+[Full-size SVG](../assets/14-websocket-sessions-and-control/fragmented-message-and-control.svg) · [Editable Mermaid source](../assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd).
+
 ## Application sessions and reconnect
 
 A newly opened connection is not automatically the continuation of the old session. Define identity, subscription state, acknowledged position and gap handling at the application layer. Reconnect can duplicate a command whose response was lost, miss events emitted during downtime or receive an old message late. Sequence references need scope and retention; a connection-local counter alone does not survive process or session restart.

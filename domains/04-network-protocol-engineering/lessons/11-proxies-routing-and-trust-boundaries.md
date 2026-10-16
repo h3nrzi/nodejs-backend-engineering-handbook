@@ -16,6 +16,14 @@ A forward proxy acts on behalf of a client; a reverse proxy fronts an origin ser
 
 With termination, client-to-proxy and proxy-to-backend are distinct sessions. The backend sees the proxy as transport peer. A healthy front-side TLS session does not prove encrypted or authenticated upstream transport. A client-facing h2 connection may become HTTP/1.1 upstream; version-sensitive behavior must be evaluated on both hops.
 
+**Visual question:** Which identity and protocol facts survive TLS termination as evidence?
+
+![Client h2 TLS ends at ingress, which opens a separate HTTP/1.1 hop; backend sees ingress as peer and must evaluate original-caller assertions and upstream protection separately.](../assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg)
+
+*Figure D04-V10 — An illustrative terminating ingress: h2 over TLS at the front can become HTTP/1.1 on a separate upstream connection. Backend socket-peer evidence identifies the ingress, while original-caller fields remain assertions requiring established ingress trust and sanitization. Upstream encryption/identity must be checked on that hop; the drawing deliberately does not assume them. Pass-through, NAT and full forwarding-chain parsing differ and are omitted. This is a boundary illustration, not a prescribed deployment. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc7239.html#section-8.1).*
+
+[Full-size SVG](../assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.svg) · [Editable Mermaid source](../assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd).
+
 ## Routing and identity claims
 
 HTTP authority helps select an origin or tenant. SNI participates earlier in TLS selection. Path rewriting can alter routes, encoded separators and query handling. If a signature covers the original target, an intermediary transformation can invalidate it or, worse, cause different components to verify different meanings. Canonicalization must be explicitly defined, not inferred from convenient string operations.

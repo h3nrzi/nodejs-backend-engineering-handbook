@@ -36,6 +36,14 @@ For a three-byte UTF-8 euro sign, Content-Length must be 3 even though JavaScrip
 
 A superficial “fix” for malformed requests is to ignore parse errors and keep using the socket. That can preserve a poisoned byte boundary. The lab's clientError handler terminates its disposable connection. This is an educational refusal path, not a complete production error policy or security qualification.
 
+**Visual question:** Why does the same EOF establish different HTTP completion results?
+
+![Length-delimited and chunked responses can be incomplete at EOF; a close-delimited response can be HTTP-complete while application content remains insufficient.](../assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg)
+
+*Figure D04-V07 — Three separate ordinary HTTP/1.1 response examples, after applying the body-length precedence rules below. Content-Length 3 plus only ab is incomplete; chunked content without its final chunk and trailer-section termination is incomplete. A response genuinely delimited by close can be HTTP-complete with ab at EOF, while still failing an application expectation of abc. The groups are alternatives, not three stages of one connection. HEAD, no-body statuses, CONNECT and ambiguous framing are intentionally outside these examples. See [authoritative reference](https://www.rfc-editor.org/rfc/rfc9112.html#section-8).*
+
+[Full-size SVG](../assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.svg) · [Editable Mermaid source](../assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd).
+
 ## Backend troubleshooting
 
 If uploads hang only through a proxy, compare body limits, request-receipt timeouts, buffering and forwarding behavior on both hops. If responses truncate, preserve declared versus received length, message completeness, connection reuse and which hop closed. A server-side success log alone cannot establish client receipt. If memory grows during slow uploads, inspect application retention as well as stream pressure: buffering the entire body bypasses incremental processing benefits.

@@ -1,0 +1,21 @@
+---
+config:
+  fontSize: 20
+  sequence:
+    diagramMarginX: 15
+    actorMargin: 30
+    width: 100
+---
+sequenceDiagram
+  accTitle: SSE event dispatch, reconnection cursor and server replay
+  accDescr: Blank-line termination dispatches event 7, incomplete EOF does not dispatch its tail, and a new request with Last-Event-ID 7 receives retained event 8 under this server contract.
+participant C as Client parser
+  participant S as Server
+  C->>S: GET event stream
+  S-->>C: id: 7 + data + blank line
+  Note over C,S: Dispatch 7, cursor 7
+  S-->>C: data: interrupted + EOF
+  Note over C,S: No blank line: no tail event
+  C->>S: New GET<br/>Last-Event-ID: 7
+  S-->>C: Retained event 8 + blank line
+  Note over C,S: Dispatch 8 in this example<br/>Replay needs server history
