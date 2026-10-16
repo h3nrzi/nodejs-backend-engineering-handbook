@@ -1,0 +1,6 @@
+A: guided and conventional -> cancelled
+B guided: /cancellation-requests/R41 -> cancelled
+B conventional: /reservations/R41/cancellation -> retired-target
+B unavailable: no-action
+B stale control: state-refusal
+B unsupported control: refused locally

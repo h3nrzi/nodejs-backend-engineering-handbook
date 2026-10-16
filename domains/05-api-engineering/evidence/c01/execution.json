@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-10-16",
+  "baseline_commit": "6e7048b0c89e7fc4ad3700711edbfe583760c784",
+  "source_revision": "exact fixture hashes below; delivery revision is commit containing this record",
+  "runtime": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "module_mode": "ESM .mjs",
+  "flags": [],
+  "runs": [
+    {
+      "command": [
+        "node",
+        "domains/05-api-engineering/examples/c01/contract-traces.mjs"
+      ],
+      "source_sha256": "4614ed7ee698dc6c6f9e802c65b66dbf28f2b84503872897a343d93a910800db",
+      "exit_code": 0,
+      "stdout": "A: guided and conventional -> cancelled\nB guided: /cancellation-requests/R41 -> cancelled\nB conventional: /reservations/R41/cancellation -> retired-target\nB unavailable: no-action\nB stale control: state-refusal\nB unsupported control: refused locally\n",
+      "stdout_sha256": "e4aa44af9f1c67bea89d2fe9f27eb9391298c6a16a70ab3067e1b3443f320110",
+      "stderr": "",
+      "kind": "pure synchronous model, not HTTP/schema/database/external integration"
+    },
+    {
+      "command": [
+        "node",
+        "domains/05-api-engineering/examples/c01/correctness-boundaries.mjs"
+      ],
+      "source_sha256": "8c2503166d80b2dd0a6edeed51579b01d4218366a0565134b42f3b11b36e2c8f",
+      "exit_code": 0,
+      "stdout": "malformed/invalid: refused; effects=0\nunqualified retry: effects=2; replay agreement: effects=1\nsplit check/write: stale overwrite; atomic condition: second refused\nper-object versions: both pass; shared capacity violated\n",
+      "stdout_sha256": "ee0955b4ff3452b9f32674f3ea99b196f00ddd7231a6ad53a941a730306d55d4",
+      "stderr": "",
+      "kind": "pure synchronous model, not HTTP/schema/database/external integration"
+    }
+  ],
+  "limits": [
+    "single bounded execution of each final fixture",
+    "no network or real concurrent processes",
+    "no durable storage, production replay or REST conformance certification",
+    "fixed parser inputs do not qualify HTTP limits or duplicate-member handling",
+    "no learner assessment or project implementation"
+  ]
+}

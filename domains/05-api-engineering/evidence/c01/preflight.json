@@ -1,0 +1,75 @@
+{
+  "checked_on": "2026-10-16",
+  "baseline_commit": "6e7048b0c89e7fc4ad3700711edbfe583760c784",
+  "checks": {
+    "all_prior_domain_objects_external_project_and_history_preserved": true,
+    "seven_curriculum_decision_definitions_unchanged_and_approved": true,
+    "unchanged_sequence_profiles_and_backward_edges": {
+      "chapters": 25,
+      "edges": 168
+    },
+    "canonical_counts_statuses_and_C01_only_authorization": true,
+    "protected_files_byte_identical": {
+      "files": 253,
+      "historical_discovery_preflight_unchanged": true
+    },
+    "inline_canonical_example_sync_json_and_exercise_trace_inventory": {
+      "traces": 28,
+      "independent_exercises": 15,
+      "integrated_exercise": 1
+    },
+    "depth_ledger_inventory": {
+      "reasoned_rows": 16,
+      "rating_source": "author review, not automated quality grading"
+    },
+    "svg_xml_accessible_names_and_no_scripts_or_external_hrefs": true,
+    "external_chapter_targets_available": {
+      "targets": 31,
+      "all_HTTP_200_and_fragments_present": true,
+      "not_source_truth_or_conformance_proof": true
+    },
+    "execution_hashes_and_zero_exit_codes": true,
+    "internal_links": {
+      "command": "python3 scripts/check-handbook-links.py",
+      "exit_code": 0,
+      "result": {
+        "checked_internal_links": 1791,
+        "current_issues": [],
+        "pre_existing_issues": [],
+        "new_issues": []
+      }
+    },
+    "canonical_json_parses": {
+      "command": "python3 -m json.tool tracking/state.json",
+      "exit_code": 0
+    },
+    "staged_whitespace": {
+      "command": "git diff --cached --check",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "staged_manifest_matches": {
+      "paths": 27,
+      "manifest": "domains/05-api-engineering/evidence/c01/changed-files.txt",
+      "result": true
+    }
+  },
+  "artifact_sha256": {
+    "domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md": "5fa1215dd7d9e7e79664fdfcedd91e7be554e45870f6d330e48cba53e1db8cfc",
+    "domains/05-api-engineering/curriculum.md": "df95ccbd1b275be30434625e16f9ccc5a1a7693265c26b31ccdf7cf90c936327",
+    "domains/05-api-engineering/depth-specification.md": "73001973c8a904a92a722e15b552b110bbb64fd68ed57e1175538ba62aa92593",
+    "domains/05-api-engineering/evidence/curriculum-approval.md": "f011fac4d93ba693a595311747c3f28e37ce9e63eca0fc68a5ccfba319db1ff1",
+    "domains/05-api-engineering/evidence/c01/depth-ledger.md": "6f1b8cf467428148ac8538e3afb13ef068e2082542edd0d8e67b5cf060128e66",
+    "domains/05-api-engineering/evidence/c01/review-guide.md": "73008bb3bb7edc262d6a194db4c11c9583ba96ebc35e3be35871c8dfb84d446f",
+    "domains/05-api-engineering/evidence/c01/validation.md": "a6c125c7bae905c51020367a615f182906b154c96fb5f608b27eae09fa6dfc2e",
+    "domains/05-api-engineering/evidence/c01/execution.json": "e511447552fef1cfedd15d5470ff7803399056d7fe9d7d916c2ff295746de589",
+    "domains/05-api-engineering/evidence/c01/source-links.json": "bab05388820e846990b8d972548f6898f3823260e30ea49d5a513f693f9cb1e8",
+    "tracking/state.json": "516f146770b1ba847d984864a712ce1e644689b39fccd489ad0a1a17dc9e1ab0",
+    "domains/05-api-engineering/assets/01-api-contracts-and-rest/state-boundaries.mmd": "65839ffea9f32d8e442f49740b7621dc827a89b6c355083ac66598f4e94020e0",
+    "domains/05-api-engineering/assets/01-api-contracts-and-rest/state-boundaries.svg": "a0f2754a83a7db2e208cae85a177790fd40c96a4de7616754745483ef9873e3d",
+    "domains/05-api-engineering/assets/01-api-contracts-and-rest/transition-change.mmd": "9da5c9e725a78051f40c389eeb091a662e3694e494883d047afdf37e116579ce",
+    "domains/05-api-engineering/assets/01-api-contracts-and-rest/transition-change.svg": "a5a4961595723f8a5eae6bcd1103e23e06b536a3dfbc9a44f1549786ab05c001"
+  },
+  "limits": "Structural assertions and author review; no automated inference of Product Owner approval, depth quality or learner competency. Manifest excludes its own hash."
+}

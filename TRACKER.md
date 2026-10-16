@@ -1,7 +1,7 @@
 # Handbook Progress — Workflow V2
 
 **Updated:** 2026-10-16
-**Phase:** Educational Content Authoring — D05 curriculum discovery proposal in_review; D01–D04 approvals and D04 closure preserved.
+**Phase:** Educational Content Authoring — D05 curriculum/depth gate approved; C01 complete draft in_review; D01–D04 approvals and D04 closure preserved.
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Domain status
@@ -10,7 +10,7 @@
 - **D02:** 16 approved lessons and 5 approved educational Project Charters.
 - **D03:** 18 approved lessons and 5 approved educational Project Charters.
 - **D04:** curriculum, all 18 lessons, six catalog concepts and six Educational Project Charters approved_by_learner on 2026-10-15; domain editorial coverage approved and educational authoring complete. 18/18 bounded educational labs passed on Node v24.22.0 / darwin arm64; expanded real TLS/HTTP/h2/WebSocket/SSE cases and corrected EOF/missing-evidence handling. OpenSSL CLI 3.6.3 is required for the TLS fixture.
-- **D05:** 25-chapter [curriculum proposal](domains/05-api-engineering/curriculum.md), [depth matrix/profiles](domains/05-api-engineering/depth-specification.md), prerequisite/domain maps, coverage/gaps and open decisions in_review; Product Owner approval pending. Zero authored lessons, concepts or Charters; experiments not_run and learner assessment deferred. Commit/push requested; stop before lesson authoring. [Review evidence and guide](domains/05-api-engineering/evidence/review-guide.md).
+- **D05:** [25-chapter curriculum](domains/05-api-engineering/curriculum.md) and [depth contract](domains/05-api-engineering/depth-specification.md) approved_by_learner, 2026-10-16, with [CD01–CD07 reconciliation](domains/05-api-engineering/evidence/curriculum-approval.md). [C01 complete draft](domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) in_review; C02–C25 not_started. Two bounded pure-model scripts executed; no D05 lesson/Charter approval, project implementation or learner assessment. [Depth ledger](domains/05-api-engineering/evidence/c01/depth-ledger.md) · [Validation](domains/05-api-engineering/evidence/c01/validation.md) · [Current guide](domains/05-api-engineering/evidence/c01/review-guide.md). Stop before C02 pending explicit Product Owner approval and authorization.
 - **D06–D16:** not_started.
 
 **Implementations:** D03-P02 MediaForge has an approved external Module 01 specification and eight-ticket plan, but **no implementation or application-test completion is verified**. Other projects have no recorded implementation progress. No learner competency assessment is claimed.
@@ -25,7 +25,7 @@ When starting any project, import its approved Charter into a separate Codex rep
 
 ## D04 educational authoring closure
 
-This section and its dated entries retain the 2026-10-15 closure context. The separate 2026-10-16 instruction now authorizes D05 curriculum discovery only; it does not reopen D04 or authorize D05 lesson authoring.
+This section and its dated entries retain the 2026-10-15 closure context. D05 discovery and the subsequent curriculum-approval/C01 authorization are recorded separately below; neither reopens D04.
 
 [Domain index](domains/04-network-protocol-engineering/README.md) · [Curriculum](domains/04-network-protocol-engineering/curriculum.md) · [Catalog / six Charters](domains/04-network-protocol-engineering/projects/catalog.md) · [Execution evidence](domains/04-network-protocol-engineering/evidence/educational-execution.md) · [Review guide](domains/04-network-protocol-engineering/evidence/review-guide.md)
 
@@ -50,3 +50,14 @@ Authorized curriculum design only, with commit/push and a stop before lessons. P
 **Tracking/coverage review:** 25 proposed D05 competencies, zero D05 taught/approved mappings and zero Charters; **66 approved lessons / 20 approved Charters unchanged**. D01–D04 domain objects and MediaForge registry preserved. Active D05 scaffolding, shared catalog template and canonical authoring sequence now use educational Charter terminology. D06–D16 legacy scaffold references are identified as deferred maintenance, not authorization to start those domains. [Actual review/preflight evidence](domains/05-api-engineering/evidence/review-guide.md).
 
 **Next:** Product Owner reviews the named proposal and open decisions. Editorial approval and human review observations remain pending; stop after publishing the proposal, without Chapter 01 or technical implementation.
+
+
+## D05 curriculum approval and C01 authoring — 2026-10-16
+
+This later explicit Product Owner instruction supersedes the discovery-only stop above. Reconciled all seven IDs with their original definitions; CD01–CD07, the 25-chapter sequence and controlling depth contract are approved for educational authoring only. [Approval record](domains/05-api-engineering/evidence/curriculum-approval.md) preserves authority, baseline and exclusions.
+
+C01 is a complete standalone draft **in_review**, including all REST constraints and four separate uniform-interface mechanisms, contract audiences/ownership, normal/adverse histories, independent exercises/rubrics and source qualifications. Two bounded Node ESM pure-model fixtures passed; two Mermaid sources have rendered SVGs and visual review. Actual command/source/output evidence and review limits are retained with the chapter. Human chapter evaluation remains **not_run**; no lesson editorial approval inferred.
+
+**Tracking/coverage review:** 67 authored chapters = 66 approved D01–D04 + one D05-C01 in_review; 24 unstarted D05 chapters. All 20 approved Charters retain mappings/scopes/statuses; zero D05 Charters and no D05 direct/supporting project mapping. D01–D04 canonical domain objects and MediaForge record preserved. No portfolio architecture, Product/Technical Discovery, Final PRD, Module Plan, implementation or competence claim.
+
+**Next:** begin [C01 review scenario C01-R01](domains/05-api-engineering/evidence/c01/review-guide.md#c01-r01--approval-reconciliation-and-stop-boundary). Keep C01 in_review; stop before C02 and wait for explicit Product Owner approval and authorization.

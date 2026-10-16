@@ -1,0 +1,22 @@
+flowchart TD
+  accTitle: Request context, resource state and hidden conversation
+  accDescr: Client application state selects R41. A request names R41 and supplies authority context. The provider evaluates resource state and current policy. A dashed arrow shows the extra dependency created by a hidden current-selection session.
+  C["Client application state<br/>viewing R41; wants cancellation"]
+  R["Request<br/>target R41; intent; authority context"]
+  P["Provider evaluates request"]
+  S["Resource state<br/>R41 held; owner; expiry"]
+  A["Current authority and policy"]
+  H["Hidden conversation<br/>session remembers current selection"]
+  C -->|"select and describe intent"| R
+  R -->|"interpret this interaction"| P
+  S -->|"evaluate current facts"| P
+  A -->|"check permission and conditions"| P
+  H -.->|"extra dependency if target is omitted"| P
+  classDef actor fill:#E0F2FE,stroke:#0369A1,color:#0C4A6E;
+  classDef runtime fill:#DCFCE7,stroke:#166534,color:#14532D;
+  classDef neutral fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  classDef warning fill:#FEF3C7,stroke:#92400E,color:#78350F;
+  class C,R actor;
+  class P runtime;
+  class S,A neutral;
+  class H warning;

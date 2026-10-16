@@ -1,0 +1,254 @@
+{
+  "checked_on": "2026-10-16",
+  "method": "Python urllib GET; fragment ID/name presence; availability is not claim verification",
+  "results": [
+    {
+      "url": "https://github.com/nodejs/node/blob/main/doc/api/assert.md",
+      "status": 200,
+      "final_url": "https://github.com/nodejs/node/blob/main/doc/api/assert.md",
+      "bytes": 1095383,
+      "sha256": "a0cf7e2ede131d0b077b610350dbb35355a15e07ea39f9bc9995eed93842be53",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm",
+      "bytes": 75958,
+      "sha256": "ecdb33b2cf0cff057d5ea91f3f1c4a9fdb65d41f4f079aa8c153b9167ba2f061",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_2",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_2",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_3",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_3",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_6",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_6",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "fragment_present": true
+    },
+    {
+      "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_7",
+      "status": 200,
+      "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_7",
+      "bytes": 53025,
+      "sha256": "81df71b62240941f8545a175869129e77c7c45a959c1a76e1eb7e37c8e340a41",
+      "fragment_present": true
+    },
+    {
+      "url": "https://json-schema.org/draft/2020-12",
+      "status": 200,
+      "final_url": "https://json-schema.org/draft/2020-12",
+      "bytes": 89502,
+      "sha256": "9eba28ab9e0fdcf13e5e9e504ec221a3662c263a9ea5286f1de4c039b2bbe424",
+      "fragment_present": true
+    },
+    {
+      "url": "https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven",
+      "status": 200,
+      "final_url": "https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven",
+      "bytes": 114766,
+      "sha256": "e6c4fe2bfaa3c0d723d696b5439093e727002732b46826062194792cb946077c",
+      "fragment_present": true
+    },
+    {
+      "url": "https://spec.openapis.org/oas/v3.2.1.html",
+      "status": 200,
+      "final_url": "https://spec.openapis.org/oas/v3.2.1.html",
+      "bytes": 678358,
+      "sha256": "68a1729054df3707288f1907094de77c64b6f68107da1eb14dbbaa318dcc5e8b",
+      "fragment_present": true
+    },
+    {
+      "url": "https://spec.openapis.org/oas/v3.2.1.html#introduction",
+      "status": 200,
+      "final_url": "https://spec.openapis.org/oas/v3.2.1.html#introduction",
+      "bytes": 678358,
+      "sha256": "68a1729054df3707288f1907094de77c64b6f68107da1eb14dbbaa318dcc5e8b",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc3986.html",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3986.html",
+      "bytes": 171264,
+      "sha256": "28869fb6d1a48e86b4faaf03f9f1b1391ecd191cc619a51931a04cfaf328caac",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc3986.html#section-1.1",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3986.html#section-1.1",
+      "bytes": 171264,
+      "sha256": "28869fb6d1a48e86b4faaf03f9f1b1391ecd191cc619a51931a04cfaf328caac",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc3986.html#section-1.2.2",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3986.html#section-1.2.2",
+      "bytes": 171264,
+      "sha256": "28869fb6d1a48e86b4faaf03f9f1b1391ecd191cc619a51931a04cfaf328caac",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "bytes": 37946,
+      "sha256": "5302d6ccb6cf221817bdd1f8cd7221661d4519372e0ac0b4cf641e11e8037de7",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html#section-4",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8259.html#section-4",
+      "bytes": 37946,
+      "sha256": "5302d6ccb6cf221817bdd1f8cd7221661d4519372e0ac0b4cf641e11e8037de7",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8288.html",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8288.html",
+      "bytes": 66429,
+      "sha256": "4f64e853e1a6031ee8adba0ba69330e047b695958bc7021b6a343c75327fa7f4",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8288.html#section-2",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8288.html#section-2",
+      "bytes": 66429,
+      "sha256": "4f64e853e1a6031ee8adba0ba69330e047b695958bc7021b6a343c75327fa7f4",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-13",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-13",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.1",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.1",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3.2",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3.2",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3.7",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-3.7",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-6",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-6",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.1",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.1",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2",
+      "bytes": 1187554,
+      "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9111.html",
+      "bytes": 232630,
+      "sha256": "ce91ee9848d2b9ac46386b0f0cbd4bfd9c0cd1948ebc363834cadc7e0997f3d7",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-3",
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-3",
+      "bytes": 232630,
+      "sha256": "ce91ee9848d2b9ac46386b0f0cbd4bfd9c0cd1948ebc363834cadc7e0997f3d7",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.w3.org/TR/webarch/",
+      "status": 200,
+      "final_url": "https://www.w3.org/TR/webarch/",
+      "bytes": 195391,
+      "sha256": "4a0c3ddc4f71c348dc8b4d8796ffe62a1763e19f49442bd14fa5f9e44a5a492d",
+      "fragment_present": true
+    },
+    {
+      "url": "https://www.w3.org/TR/webarch/#identification",
+      "status": 200,
+      "final_url": "https://www.w3.org/TR/webarch/#identification",
+      "bytes": 195391,
+      "sha256": "4a0c3ddc4f71c348dc8b4d8796ffe62a1763e19f49442bd14fa5f9e44a5a492d",
+      "fragment_present": true
+    }
+  ]
+}

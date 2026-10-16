@@ -8,9 +8,9 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - D02: 16/16 lessons, 5/5 Project Charters editorially approved.
 - D03: 18/18 lessons, 5/5 Project Charters editorially approved.
 - D04: curriculum, 18/18 lessons, six concepts and 6/6 educational Charters editorially approved; educational authoring gate closed 2026-10-15.
-- **66/66 authored lessons and 20/20 educational Charters editorially approved; zero verified implemented projects or learner assessments.**
+- **67 authored lessons: 66 editorially approved and D05-C01 in_review. All 20 educational Charters remain approved; zero verified implemented projects or learner assessments.**
 - MediaForge (D03-P02) has externally approved planning through its Module 01 eight-ticket plan; **implementation, tests and learner mastery are not verified**. Other projects have no recorded implementation progress.
-- D05: [25-chapter curriculum discovery proposal](domains/05-api-engineering/curriculum.md) in_review; [depth matrix/profiles](domains/05-api-engineering/depth-specification.md) and [review evidence](domains/05-api-engineering/evidence/review-guide.md) ready for Product Owner review. Zero D05 lessons or Charters authored; approval pending. D06–D16 not_started.
+- D05: [25-chapter curriculum](domains/05-api-engineering/curriculum.md) and [depth contract](domains/05-api-engineering/depth-specification.md) approved_by_learner. [Chapter 01 complete draft](domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) in_review with [review evidence](domains/05-api-engineering/evidence/c01/review-guide.md); C02–C25 not_started, zero D05 Charters. Stop before C02 pending explicit Product Owner approval and authorization. D06–D16 not_started.
 
 ## Navigation
 
@@ -22,7 +22,7 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/projects/catalog.md)
 - [D03 — Node.js Internals](domains/03-nodejs-internals/projects/catalog.md)
 - [D04 — Network & Protocol Engineering](domains/04-network-protocol-engineering/README.md) — editorially approved; [review guide](domains/04-network-protocol-engineering/evidence/review-guide.md)
-- [D05 — API Engineering](domains/05-api-engineering/README.md) — curriculum discovery proposal in_review; lesson authoring not authorized by this proposal.
+- [D05 — API Engineering](domains/05-api-engineering/README.md) — curriculum approved; C01 in_review; stop before C02.
 
 
 ## Learning versus project delivery

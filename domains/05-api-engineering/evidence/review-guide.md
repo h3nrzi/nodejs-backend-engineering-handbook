@@ -1,4 +1,6 @@
-# D05 curriculum discovery — Review evidence and evaluation guide
+# D05 curriculum discovery — Historical review evidence and evaluation guide
+
+**Historical snapshot:** the pending states and reproduction checks below describe the discovery commit. On 2026-10-16 the Product Owner subsequently approved CD01–CD07 and authorized C01. See [the approval record](curriculum-approval.md) and [current C01 guide](c01/review-guide.md). The original preflight and unreported human observations are preserved; this historical guide is not the current stop condition.
 
 **Source:** Product Owner's D05 Curriculum Discovery request and continuation in this chat, 2026-10-16.
 **Artifact status:** in_review. **Product Owner approval:** pending_learner_review.

@@ -5,54 +5,11 @@
   "review": "pending_learner_review",
   "active_domain_id": "D05",
   "next_domain_id": "D06",
-  "active_deliverable": "D05 curriculum discovery: 25-chapter proposal and chapter-level depth specification in_review; no lessons authored",
-  "last_completed_step": "D05 curriculum proposal prepared with depth matrix/profiles, dependency/domain boundaries, coverage/gaps, source register and review guide; Product Owner approval pending.",
-  "next_action": "Product Owner reviews the committed curriculum proposal, depth specification and seven open curriculum decisions; keep approval pending and stop before any lesson authoring or technical implementation.",
+  "active_deliverable": "D05-C01 complete chapter draft in_review; 25-chapter curriculum and depth specification approved_by_learner",
+  "last_completed_step": "Reconciled and recorded explicit Product Owner approval of D05-CD01-CD07; authored C01 with mechanism depth ledger, bounded pure-model execution, diagrams and validation evidence; earlier approvals preserved.",
+  "next_action": "Product Owner reviews D05-C01 using its depth ledger and reproducible guide; keep C01 in_review and stop before C02 pending explicit approval and authorization. No project work or learner assessment.",
   "blockers": [],
-  "open_decisions": [
-    {
-      "id": "D05-CD01",
-      "status": "pending_learner_review",
-      "decision": "25-chapter breadth and partition",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD02",
-      "status": "pending_learner_review",
-      "decision": "Full mechanism depth for GraphQL and gRPC",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD03",
-      "status": "pending_learner_review",
-      "decision": "Framework-neutral contract teaching",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD04",
-      "status": "pending_learner_review",
-      "decision": "OpenAPI reference line and later executable tool qualification",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD05",
-      "status": "pending_learner_review",
-      "decision": "Recurring fictional examples plus transfer cases",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD06",
-      "status": "pending_learner_review",
-      "decision": "Legacy interface specialization boundaries",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    },
-    {
-      "id": "D05-CD07",
-      "status": "pending_learner_review",
-      "decision": "Mechanism-level depth/completion rubric",
-      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions"
-    }
-  ],
+  "open_decisions": [],
   "current_implementation_project": {
     "project_id": "D03-P02",
     "name": "MediaForge",
@@ -813,17 +770,17 @@
       "name": "API Engineering",
       "slug": "api-engineering",
       "status": "in_review",
-      "lesson_status": "not_started",
+      "lesson_status": "in_review",
       "project_specs_status": "not_started",
       "implementation_status": "not_started",
       "source_outline": "authored_curriculum_discovery_2026-10-16",
-      "curriculum_blueprint_status": "in_review",
+      "curriculum_blueprint_status": "approved_by_learner",
       "curriculum_blueprint_path": "domains/05-api-engineering/curriculum.md",
       "proposed_chapter_count": 25,
-      "depth_specification_status": "in_review",
+      "depth_specification_status": "approved_by_learner",
       "depth_specification_path": "domains/05-api-engineering/depth-specification.md",
       "chapter_progress": {
-        "01": "not_started",
+        "01": "in_review",
         "02": "not_started",
         "03": "not_started",
         "04": "not_started",
@@ -849,15 +806,41 @@
         "24": "not_started",
         "25": "not_started"
       },
-      "authored_lesson_count": 0,
+      "authored_lesson_count": 1,
       "assessment_status": "deferred_until_learning_phase",
       "project_catalog_status": "not_started",
       "project_catalog_path": "domains/05-api-engineering/projects/catalog.md",
       "project_catalog_candidate_count": 0,
       "project_charters_authored_count": 0,
       "project_charters_approved_count": 0,
-      "review_guide": "domains/05-api-engineering/evidence/review-guide.md",
-      "lesson_authoring_authorized": false
+      "review_guide": "domains/05-api-engineering/evidence/c01/review-guide.md",
+      "lesson_authoring_authorized": true,
+      "curriculum_approved_on": "2026-10-16",
+      "curriculum_approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md",
+      "lesson_authoring_authorized_chapters": [
+        "01"
+      ],
+      "lesson_authoring_stop_before": "02",
+      "chapter_review_evidence": {
+        "01": {
+          "depth_ledger": "domains/05-api-engineering/evidence/c01/depth-ledger.md",
+          "validation": "domains/05-api-engineering/evidence/c01/validation.md",
+          "human_evaluation": "not_run"
+        }
+      },
+      "chapter_execution_evidence": {
+        "01": {
+          "status": "two_bounded_pure_model_scripts_passed",
+          "checked_on": "2026-10-16",
+          "node": "v24.22.0",
+          "v8": "13.6.233.17-node.57",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "ESM .mjs; synchronous pure models; no flags or packages",
+          "evidence": "domains/05-api-engineering/evidence/c01/execution.json",
+          "limits": "No actual HTTP/schema-tool/provider/database integration, durable or concurrent implementation, production qualification, learner assessment or portfolio project evidence."
+        }
+      }
     },
     {
       "id": "D06",
@@ -1005,6 +988,11 @@
       "date": "2026-10-16",
       "event": "Product Owner authorized D05 curriculum discovery only, then clarified all fifteen chapter dimensions and requested commit/push with approval pending. Prepared a 25-chapter proposal, mechanism-level depth matrix/profiles, dependency/domain maps, coverage/gaps, seven open curriculum decisions and review evidence. Zero lessons/Charters or implementations authored. Corrected active D05/shared catalog/canonical sequence PRD scaffolding to educational Charter terminology; deferred D06-D16 legacy scaffolding. D01-D04 approvals, counts and MediaForge evidence preserved. Stop before lesson authoring.",
       "evidence": "domains/05-api-engineering/evidence/review-guide.md"
+    },
+    {
+      "date": "2026-10-16",
+      "event": "Product Owner explicitly approved D05-CD01-CD07 without redefining their recorded proposals, authorizing educational curriculum/depth gate and C01 only. C01 complete draft remains in_review with mechanism ledger, source checks, two bounded Node pure-model runs and editable/rendered diagrams. No D05 lesson/Charter approval, project architecture, discovery, implementation or learner competence claimed. Stop before C02 for explicit Product Owner approval and authorization; D01-D04 and MediaForge preserved.",
+      "evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     }
   ],
   "domain_authoring_sequence": [
@@ -1023,9 +1011,9 @@
   },
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-16",
-    "status": "D05_curriculum_planned_coverage_in_review_earlier_approvals_preserved",
+    "status": "D05_curriculum_approved_C01_authored_in_review_earlier_approvals_preserved",
     "path": "projects/coverage-matrix.md",
-    "baseline_commit": "1ffd64b5d4e167a8fd621185dd0fe89c89b1a5b3",
+    "baseline_commit": "6e7048b0c89e7fc4ad3700711edbfe583760c784",
     "domains": [
       "D01",
       "D02",
@@ -1034,7 +1022,7 @@
       "D05"
     ],
     "prd_count": 14,
-    "chapter_mapping_count": 66,
+    "chapter_mapping_count": 67,
     "implementation_evidence": "No active implementation or verified acceptance evidence.",
     "assessment": "deferred",
     "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
@@ -1043,18 +1031,79 @@
       "domains/04-network-protocol-engineering/evidence/educational-execution.md",
       "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
       "domains/04-network-protocol-engineering/evidence/editorial-approval.md",
-      "domains/05-api-engineering/evidence/review-guide.md"
+      "domains/05-api-engineering/evidence/review-guide.md",
+      "domains/05-api-engineering/evidence/curriculum-approval.md",
+      "domains/05-api-engineering/evidence/c01/depth-ledger.md",
+      "domains/05-api-engineering/evidence/c01/validation.md"
     ],
-    "mapping_change": "Added 25 proposed D05 competencies separately from 66 taught/approved mappings. No existing competency assignment, Charter scope, editorial approval or external-project evidence changed.",
+    "mapping_change": "D05 curriculum approved; C01 moved from proposed to authored in_review, C02-C25 unstarted. No D05 Charter mappings. Existing 66 approved chapter assignments, 20 Charter scopes/approvals and external project evidence unchanged.",
     "approved_chapter_mapping_count": 66,
-    "in_review_chapter_mapping_count": 0,
+    "in_review_chapter_mapping_count": 1,
     "approved_prd_count": 14,
     "authored_prd_count": 14,
     "in_review_prd_count": 0,
     "authored_charter_count": 20,
     "approved_charter_count": 20,
     "in_review_charter_count": 0,
-    "proposed_chapter_mapping_count": 25,
+    "proposed_chapter_mapping_count": 24,
     "proposed_chapter_mapping_domain": "D05"
-  }
+  },
+  "curriculum_decisions": [
+    {
+      "id": "D05-CD01",
+      "status": "approved_by_learner",
+      "decision": "25-chapter breadth and partition",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD02",
+      "status": "approved_by_learner",
+      "decision": "Full mechanism depth for GraphQL and gRPC",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD03",
+      "status": "approved_by_learner",
+      "decision": "Framework-neutral contract teaching",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD04",
+      "status": "approved_by_learner",
+      "decision": "OpenAPI reference line and later executable tool qualification",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD05",
+      "status": "approved_by_learner",
+      "decision": "Recurring fictional examples plus transfer cases",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD06",
+      "status": "approved_by_learner",
+      "decision": "Legacy interface specialization boundaries",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "id": "D05-CD07",
+      "status": "approved_by_learner",
+      "decision": "Mechanism-level depth/completion rubric",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "approved_on": "2026-10-16",
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    }
+  ]
 }

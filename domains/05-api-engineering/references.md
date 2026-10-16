@@ -1,10 +1,10 @@
 # D05 primary-source register
 
-**Status:** in_review; curriculum planning references, checked 2026-10-16. Product Owner approval pending.
+**Status:** source register; curriculum approved 2026-10-16. C01 source checks are recorded separately; chapter editorial approval remains pending.
 
 The links below were opened during discovery for the named concepts. This is a scoped planning check, not an exhaustive standards/errata audit or a claim that every future example conforms. Pin exact specification/tool/runtime revisions and recheck relevant sections before lesson authoring. Stable publication links are used where available. Living pages and source branches require a dated revision when an executable example relies on them.
 
-Context7 MCP `resolve-library-id`/`query-docs` tools were not exposed in this session. Following the documentation skills' fallback, the Context7 CLI was attempted with resolve queries for OpenAPI and GraphQL; all returned `fetch failed`, including an OpenAPI retry using system CA support. No library ID was resolved and no Context7 query result is claimed. Primary specifications and official documentation were therefore consulted directly through the web tool. Retry the canonical Context7 workflow when library-specific authoring begins; do not treat this availability limitation as permission to invent API details.
+**Historical discovery lookup:** Context7 MCP `resolve-library-id`/`query-docs` tools were not exposed in the discovery session. Following the documentation skills' fallback, the Context7 CLI was attempted with resolve queries for OpenAPI and GraphQL; all returned `fetch failed`, including an OpenAPI retry using system CA support. No library ID was resolved and no Context7 query result is claimed. Primary specifications and official documentation were therefore consulted directly through the web tool. Retry the canonical Context7 workflow when library-specific authoring begins; do not treat this availability limitation as permission to invent API details.
 
 <a id="s01"></a>
 ## S01 — REST constraints
@@ -136,6 +136,10 @@ Context7 MCP `resolve-library-id`/`query-docs` tools were not exposed in this se
 
 [W3C Trace Context](https://www.w3.org/TR/trace-context/), including security/privacy considerations. Consult propagation and untrusted incoming context; it does not make identifiers authorization credentials or prove causal ordering from sampled observations. C24. Production instrumentation libraries and semantic-convention versions remain unselected.
 
+## C01 authoring update — 2026-10-16
+
+Context7 MCP is available in the C01 session. Resolved Node.js to `/nodejs/node` (official repository, High reputation) and queried strict assertion imports/equality/throws. Resolved Mermaid CLI to `/mermaid-js/mermaid-cli` and queried rendering flags. Actual local versions are Node v24.22.0 and Mermaid CLI 12.0.0; living documentation is not represented as an exact runtime source pin. Primary REST/HTTP/URI/link/JSON sources were consulted directly for architectural/specification claims. [C01 validation](evidence/c01/validation.md) records section-level checks, link availability, rendering and limitations. No GraphQL/gRPC/schema tool is used or qualified by C01; future source register entries retain their discovery scope.
+
 ## Deferred reference work
 
-Before authoring, recheck errata and update status for the sources actually used, resolve current library documentation through Context7, select exact supported Node/TypeScript and tool versions, and retain section-level citations for mechanism claims. No current Node runtime, validator, generator, gateway, storage engine, identity provider or broker has been selected here. The register is a starting authority map, not a package recommendation or implementation dependency list.
+For each later chapter, recheck errata/status for the sources actually used, resolve current library documentation through Context7, qualify its supported Node/TypeScript and tool versions, and retain section-level citations. C01 qualifies only its named educational Node/renderer versions; no project runtime, validator, generator, gateway, storage engine, identity provider or broker has been selected. The register is a starting authority map, not a package recommendation or implementation dependency list.

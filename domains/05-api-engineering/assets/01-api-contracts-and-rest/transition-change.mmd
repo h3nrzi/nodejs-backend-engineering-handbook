@@ -1,0 +1,17 @@
+sequenceDiagram
+  accTitle: Release B moves the cancellation target
+  accDescr: In separate disposable cases, a guided client retrieves R41 and follows the current cancel control to the new target, while a convention-dependent client constructs the retired target and receives a refusal. The provider rechecks current eligibility before cancellation.
+  participant G as Guided client
+  participant P as Provider release B
+  participant C as Convention client
+  Note over G,C: Independent disposable cases
+  G->>P: Retrieve R41
+  P-->>G: cancel relation with target B
+  G->>P: Submit reason to target B
+  Note right of P: Recheck current eligibility
+  P-->>G: Cancellation acknowledged
+  C->>P: Retrieve R41
+  P-->>C: Same current control
+  Note left of C: Construct target A
+  C->>P: Submit to target A
+  P-->>C: Retired target refused

@@ -1,11 +1,11 @@
-# D05 Curriculum proposal — API Engineering
+# D05 Curriculum — API Engineering
 
-**Status:** in_review — Product Owner approval pending.
-**Designed:** 2026-10-16. **Proposed inventory:** 25 chapters; zero authored lessons.
-**Phase:** Educational Content Authoring, curriculum discovery only.
+**Status:** approved_by_learner — curriculum approval recorded 2026-10-16; lesson approval is separate.
+**Designed:** 2026-10-16. **Approved inventory:** 25 chapters; D05-C01 authored `in_review`, C02–C25 `not_started`.
+**Phase:** Educational Content Authoring; only C01 authoring authorized in this session.
 **Project catalog / Charters / implementation:** not_started. **Learner assessment:** deferred_until_learning_phase.
 
-This is a book and course blueprint. Its chapter profiles specify what future teaching must explain and demonstrate; they are not lessons, implementation specifications or evidence of acquired competence. The Product Owner requested curriculum design, review evidence, commit and push, followed by a stop before lesson authoring. Neither publication nor agent review supplies editorial approval.
+This is a book and course blueprint. Its chapter profiles specify what future teaching must explain and demonstrate; they are not lessons, implementation specifications or evidence of acquired competence. The initial discovery stopped before lessons. The subsequent explicit Product Owner instruction approves CD01–CD07 and authorizes C01 only. [Approval and reconciliation record](evidence/curriculum-approval.md). Neither publication nor agent review supplies lesson editorial approval.
 
 ## Purpose and exit capabilities
 
@@ -109,9 +109,9 @@ These are depth boundaries, not excuses to omit mechanisms needed for API correc
 | Async work, bulk/file interfaces and webhooks | C16–C18 | C21, C23–C25 | Broker/storage/provider integrations absent by design |
 | GraphQL, RPC/gRPC and persistent interfaces | C19–C21 | C22–C25 | Full execution mechanisms required; transport integration remains future practice |
 | Gateway and intermediary policy | C22 | C08, C10–C12, C24 | No deployment or gateway vendor course |
-| Verification, docs usability and incident diagnosis | C15, C23–C25 | Failure/evidence duties in every chapter | No lesson examples, consumer tests or learner exercises run in discovery |
+| Verification, docs usability and incident diagnosis | C15, C23–C25 | Failure/evidence duties in every chapter | No examples ran in discovery; C01 pure-model runs recorded separately; learner exercises remain unrun |
 
-Every area above has a named mechanism, adverse trace and completion gate in the depth profiles. This is **planned coverage**. There is no D05 taught, approved, externally implemented or learner-demonstrated coverage yet. [Global coverage](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) tracks these separately.
+Every area above has a named mechanism, adverse trace and completion gate in the depth profiles. This is **planned coverage**. D05-C01 now has authored coverage `in_review`; there is no D05 approved lesson, externally implemented or learner-demonstrated coverage yet. [Global coverage](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) tracks these separately.
 
 Deliberately outside core depth: SOAP/WSDL and legacy XML integration courses; OData/JSON:API conformance courses; GraphQL federation platform construction; WebRTC/media transport; protocol-stack implementation; payment/provider qualification; a complete identity service; and an API-management vendor certification. C01/C19/C20 should signpost where these alternatives matter without claiming complete treatment. A concrete later audience need may reopen scope through an explicit curriculum decision.
 
@@ -123,22 +123,22 @@ Five part reviews follow C06, C12, C15, C21 and C25. They check contract interpr
 
 ## Open curriculum decisions
 
-These are proposals for Product Owner review, not implementation-blocking project decisions. Recommended defaults make the proposal concrete while preserving approval authority.
+Historical anchor retained for existing citations. The following seven original proposals were explicitly approved by the Product Owner on 2026-10-16. Definitions and alternatives are preserved; [reconciliation and scope](evidence/curriculum-approval.md) distinguish curriculum approval from all later gates.
 
 | Decision ID / topic | Recommended proposal | Alternative / trade-off | Status |
 |---|---|---|---|
-| D05-CD01 — Breadth and partition | 25 chapters with separate C08/C09/C10 and C16/C17/C18 | Merging reduces navigation but risks burying different invariants and failure paths | pending_learner_review |
-| D05-CD02 — Alternative interfaces | Full C19 GraphQL and C20 gRPC mechanism chapters, bounded by consumer-facing contract depth | A survey is shorter but insufficient for senior reasoning; separate advanced multi-chapter tracks increase scope | pending_learner_review |
-| D05-CD03 — Framework coupling | Framework-neutral contracts with bounded Node/TypeScript teaching examples | A framework-led route adds concrete tooling but can obscure protocol and policy distinctions | pending_learner_review |
-| D05-CD04 — Specification line | Consult OpenAPI 3.2.1 and JSON Schema 2020-12; compare 3.1.2/3.0 when teaching dialect differences | Tool compatibility may justify an older executable fixture line; choose and record it during lesson authoring | pending_learner_review |
-| D05-CD05 — Example continuity | Reuse a small fictional reservation/booking context, plus inventory, artifact and notification counterexamples | One product alone narrows transfer; unrelated examples everywhere make cumulative reasoning harder | pending_learner_review |
-| D05-CD06 — Legacy breadth | Signpost SOAP/OData/federation; retain no full specialization chapter initially | Add scoped coverage if the intended professional audience needs it | pending_learner_review |
-| D05-CD07 — Depth enforcement | Require the shared gate plus chapter-specific adverse trace and independent rubric | Topic checklists alone cannot establish explanatory depth | pending_learner_review |
+| D05-CD01 — Breadth and partition | 25 chapters with separate C08/C09/C10 and C16/C17/C18 | Merging reduces navigation but risks burying different invariants and failure paths | approved_by_learner |
+| D05-CD02 — Alternative interfaces | Full C19 GraphQL and C20 gRPC mechanism chapters, bounded by consumer-facing contract depth | A survey is shorter but insufficient for senior reasoning; separate advanced multi-chapter tracks increase scope | approved_by_learner |
+| D05-CD03 — Framework coupling | Framework-neutral contracts with bounded Node/TypeScript teaching examples | A framework-led route adds concrete tooling but can obscure protocol and policy distinctions | approved_by_learner |
+| D05-CD04 — Specification line | Consult OpenAPI 3.2.1 and JSON Schema 2020-12; compare 3.1.2/3.0 when teaching dialect differences | Tool compatibility may justify an older executable fixture line; choose and record it during lesson authoring | approved_by_learner |
+| D05-CD05 — Example continuity | Reuse a small fictional reservation/booking context, plus inventory, artifact and notification counterexamples | One product alone narrows transfer; unrelated examples everywhere make cumulative reasoning harder | approved_by_learner |
+| D05-CD06 — Legacy breadth | Signpost SOAP/OData/federation; retain no full specialization chapter initially | Add scoped coverage if the intended professional audience needs it | approved_by_learner |
+| D05-CD07 — Depth enforcement | Require the shared gate plus chapter-specific adverse trace and independent rubric | Topic checklists alone cannot establish explanatory depth | approved_by_learner |
 
-Exact runtimes, libraries, authentication providers, persistence, gateways and example harnesses remain unselected. Decisions about a project belong to its separate learner-approved discovery. No proposed numeric API policy is binding on a future Charter.
+Project runtimes, libraries, authentication providers, persistence and gateways remain unselected. C01 uses a separately qualified Node v24.22.0 pure-model harness for education only. Decisions about a project belong to its separate learner-approved discovery. No proposed numeric API policy is binding on a future Charter.
 
 ## Review and stop condition
 
-Review this curriculum with the [25 chapter depth profiles](depth-specification.md), [source register](references.md) and [review evidence and guide](evidence/review-guide.md). Approve or request changes to named artifacts and decisions. Keep status `in_review` until explicit approval is recorded.
+The curriculum and depth gate are approved; D05-C01 is a complete draft `in_review`. Review [the chapter](lessons/01-apis-as-contracts-and-rest.md) with its [mechanism ledger](evidence/c01/depth-ledger.md) and [evaluation guide](evidence/c01/review-guide.md). Only actual Product Owner approval can promote its editorial status.
 
-Stop after the curriculum proposal is committed and pushed. **Do not author Chapter 01 or any other lesson in this session.** After explicit Product Owner approval and authorization to author, draft one chapter at a time using the existing [lesson template](../../templates/lesson.md), the [quality standard](../../docs/lesson-quality-standard.md) and this depth specification. Review actual execution evidence separately from editorial quality and future human learning. Only later propose differentiated project concepts and educational Charters using Workflow V2; no Final PRDs or technical implementation plans belong here.
+Stop after committing/pushing the C01 deliverable. **Do not begin C02.** Later lesson authoring requires explicit Product Owner approval and authorization. Continue to use the [lesson template](../../templates/lesson.md), [quality standard](../../docs/lesson-quality-standard.md) and exact depth profiles. Project concepts/Charters remain not_started; no Final PRDs, Module Plans or technical project discovery belong here.

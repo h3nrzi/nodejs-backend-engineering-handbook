@@ -1,0 +1,4 @@
+malformed/invalid: refused; effects=0
+unqualified retry: effects=2; replay agreement: effects=1
+split check/write: stale overwrite; atomic condition: second refused
+per-object versions: both pass; shared capacity violated
