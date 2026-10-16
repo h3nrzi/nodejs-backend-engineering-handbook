@@ -1,7 +1,7 @@
 # Handbook Progress — Workflow V2
 
-**Updated:** 2026-10-16
-**Phase:** Educational Content Authoring — D05 curriculum/depth gate approved; C01 complete draft in_review; D01–D04 approvals and D04 closure preserved.
+**Updated:** 2026-10-17
+**Phase:** Educational Content Authoring — D05 curriculum/depth gate approved; C01 editorially approved; C02 complete draft in_review; D01–D04 approvals and D04 closure preserved.
 **Canonical state:** [tracking/state.json](tracking/state.json)
 
 ## Domain status
@@ -10,7 +10,7 @@
 - **D02:** 16 approved lessons and 5 approved educational Project Charters.
 - **D03:** 18 approved lessons and 5 approved educational Project Charters.
 - **D04:** curriculum, all 18 lessons, six catalog concepts and six Educational Project Charters approved_by_learner on 2026-10-15; domain editorial coverage approved and educational authoring complete. 18/18 bounded educational labs passed on Node v24.22.0 / darwin arm64; expanded real TLS/HTTP/h2/WebSocket/SSE cases and corrected EOF/missing-evidence handling. OpenSSL CLI 3.6.3 is required for the TLS fixture.
-- **D05:** [25-chapter curriculum](domains/05-api-engineering/curriculum.md) and [depth contract](domains/05-api-engineering/depth-specification.md) approved_by_learner, 2026-10-16, with [CD01–CD07 reconciliation](domains/05-api-engineering/evidence/curriculum-approval.md). [C01 complete draft](domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) in_review; C02–C25 not_started. Two bounded pure-model scripts executed; no D05 lesson/Charter approval, project implementation or learner assessment. [Depth ledger](domains/05-api-engineering/evidence/c01/depth-ledger.md) · [Validation](domains/05-api-engineering/evidence/c01/validation.md) · [Current guide](domains/05-api-engineering/evidence/c01/review-guide.md). Stop before C02 pending explicit Product Owner approval and authorization.
+- **D05:** [25-chapter curriculum](domains/05-api-engineering/curriculum.md), [depth contract](domains/05-api-engineering/depth-specification.md) and CD01–CD07 remain approved. [C01](domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) explicitly editorially approved_by_learner on 2026-10-16; [approval and preserved-snapshot reconciliation](domains/05-api-engineering/evidence/c01/editorial-approval.md). [C02 complete draft](domains/05-api-engineering/lessons/02-resources-operations-and-workflow-modeling.md) in_review; C03–C25 not_started; zero D05 Charters. [18-mechanism ledger](domains/05-api-engineering/evidence/c02/depth-ledger.md) · [Validation](domains/05-api-engineering/evidence/c02/validation.md) · [Current guide](domains/05-api-engineering/evidence/c02/review-guide.md). Stop before C03 pending explicit Product Owner approval and authorization; no implementation or learner competence inferred.
 - **D06–D16:** not_started.
 
 **Implementations:** D03-P02 MediaForge has an approved external Module 01 specification and eight-ticket plan, but **no implementation or application-test completion is verified**. Other projects have no recorded implementation progress. No learner competency assessment is claimed.
@@ -61,3 +61,13 @@ C01 is a complete standalone draft **in_review**, including all REST constraints
 **Tracking/coverage review:** 67 authored chapters = 66 approved D01–D04 + one D05-C01 in_review; 24 unstarted D05 chapters. All 20 approved Charters retain mappings/scopes/statuses; zero D05 Charters and no D05 direct/supporting project mapping. D01–D04 canonical domain objects and MediaForge record preserved. No portfolio architecture, Product/Technical Discovery, Final PRD, Module Plan, implementation or competence claim.
 
 **Next:** begin [C01 review scenario C01-R01](domains/05-api-engineering/evidence/c01/review-guide.md#c01-r01--approval-reconciliation-and-stop-boundary). Keep C01 in_review; stop before C02 and wait for explicit Product Owner approval and authorization.
+
+## D05 C01 approval and C02 authoring — 2026-10-17
+
+The Product Owner's 2026-10-16 instruction explicitly approves C01 educational content and separately authorizes C02. Verified clean `main` and `origin/main` baseline `dfe397acbaed6326190dbda1e12b76c54854c6ed`. [C01 approval](domains/05-api-engineering/evidence/c01/editorial-approval.md) supersedes its submitted pending labels; lesson and original evidence bytes remain preserved. Earlier dated entries above remain historical snapshots.
+
+C02 is a complete standalone draft **in_review**, with eighteen reasoned mechanism rows, two reservation models under identical requirements, inventory/file transfer exercises, legal/illegal transitions, authority, lifecycle, partial effect/observation and evolution reasoning. Two bounded Node ESM pure-model fixtures passed, including 720 state/event/actor/time/payment combinations; three Mermaid source/SVG pairs have rendering/inspection evidence. These runs are neither external implementation nor human acceptance.
+
+**Current tracking/coverage:** 68 authored chapters = 67 approved (66 D01–D04 + C01) + C02 in_review; 23 unstarted D05 chapters. All 20 earlier approved Charters retain scopes, mappings and statuses; zero D05 Charters. Curriculum/depth-profile definitions, all earlier approvals, D04 closure and MediaForge's qualified planning record are preserved. No project discovery, architecture, Final PRD, Module Plan, implementation, production readiness or learner competency is claimed.
+
+**Next:** begin [C02-R01](domains/05-api-engineering/evidence/c02/review-guide.md#c02-r01--compare-the-same-journey-through-two-models). C02 human evaluation remains **not_run** and editorial approval pending. Stop after this chapter; wait for explicit Product Owner approval and authorization before C03.

@@ -1,0 +1,4 @@
+normal: R41 held -> confirmed -> cancelled; refund pending -> settled
+boundaries: deadline/authority/payment/terminal/cutoff refused unchanged; expiry releases only a hold
+finite table: 720 state/event/actor/time/payment combinations match declared guards
+counterexample: raw status update says cancelled but has no refund obligation

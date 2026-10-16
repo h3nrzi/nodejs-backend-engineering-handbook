@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-10-17",
+  "baseline_commit": "dfe397acbaed6326190dbda1e12b76c54854c6ed",
+  "tested_revision": "Source SHA-256 values below; published revision is the commit containing this record.",
+  "runtime": {
+    "node": "v24.22.0",
+    "v8": "13.6.233.17-node.57",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "module_context": "ESM .mjs; no flags or packages; explicit integer teaching clock",
+  "runs": [
+    {
+      "command": "node domains/05-api-engineering/examples/c02/reservation-model.mjs",
+      "source": "domains/05-api-engineering/examples/c02/reservation-model.mjs",
+      "source_sha256": "c17f083fcef9b473f9999aff6d8fc1e92f237b4bd87bf0f5d8914ff621b9c724",
+      "kind": "pure_synchronous_finite_model",
+      "expected": "All assertions pass; printed categories match chapter section 19; not a transport/integration test.",
+      "exit_code": 0,
+      "stdout_path": "domains/05-api-engineering/evidence/c02/reservation-model.stdout.txt",
+      "stdout_sha256": "a422fe5e81365d8284f54ef3cddf817d4c36f7e4416b5693cacd7c60cc1e6900",
+      "actual_stdout": [
+        "normal: R41 held -> confirmed -> cancelled; refund pending -> settled",
+        "boundaries: deadline/authority/payment/terminal/cutoff refused unchanged; expiry releases only a hold",
+        "finite table: 720 state/event/actor/time/payment combinations match declared guards",
+        "counterexample: raw status update says cancelled but has no refund obligation"
+      ],
+      "stderr": ""
+    },
+    {
+      "command": "node domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs",
+      "source": "domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs",
+      "source_sha256": "19d9a940cfa358a3cfd038a607dcf7399c227f6c29e0573524a030bbce7f46b2",
+      "kind": "pure_synchronous_finite_model",
+      "expected": "All assertions pass; printed categories match chapter section 19; not a transport/integration test.",
+      "exit_code": 0,
+      "stdout_path": "domains/05-api-engineering/evidence/c02/boundaries-and-observations.stdout.txt",
+      "stdout_sha256": "91c9e50fab2bee2178e0e9ee141d9202d0da3e8fdda3c7b4267c8f38a7b96ff9",
+      "actual_stdout": [
+        "models: coherent H8 -> B6 conversion keeps 1 allocation; split conversion can lose it",
+        "ownership: transfer keeps H8 identity/deadline; former owner cannot confirm",
+        "affordance: same target survives; changed authority or deadline refuses stale control",
+        "restoration: R41 visible again but cancelled; pending obligation and Bob allocation unchanged",
+        "shared invariant: one common admission refuses second claim; independent snapshots admit 2",
+        "aggregate: per-item R41 accepted/R42 refused; all-or-none alternative refuses group",
+        "knowledge: timeout matches no effect and accepted cancellation; retained I9/C9 evidence distinguishes them"
+      ],
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "Only fixed sequential inputs and explicitly enumerated combinations.",
+    "No HTTP, database, payment provider, storage durability, actual fault injection or genuine parallel execution.",
+    "Authority is trusted input representing a decision, not credential verification.",
+    "Model B conversion assumes accepted confirmation/payment context; shared-seat case abstracts active records and does not implement expiry materialization.",
+    "Aggregate witness isolates cutoff/acknowledgment, assuming authority already satisfied.",
+    "No learner execution, grading, competency, production readiness or project implementation."
+  ]
+}

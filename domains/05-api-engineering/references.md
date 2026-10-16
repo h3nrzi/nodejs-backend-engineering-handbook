@@ -1,6 +1,6 @@
 # D05 primary-source register
 
-**Status:** source register; curriculum approved 2026-10-16. C01 source checks are recorded separately; chapter editorial approval remains pending.
+**Status:** source register; curriculum approved 2026-10-16. C01/C02 source checks are recorded separately; C01 editorial approval is recorded, C02 remains in_review.
 
 The links below were opened during discovery for the named concepts. This is a scoped planning check, not an exhaustive standards/errata audit or a claim that every future example conforms. Pin exact specification/tool/runtime revisions and recheck relevant sections before lesson authoring. Stable publication links are used where available. Living pages and source branches require a dated revision when an executable example relies on them.
 
@@ -143,3 +143,9 @@ Context7 MCP is available in the C01 session. Resolved Node.js to `/nodejs/node`
 ## Deferred reference work
 
 For each later chapter, recheck errata/status for the sources actually used, resolve current library documentation through Context7, qualify its supported Node/TypeScript and tool versions, and retain section-level citations. C01 qualifies only its named educational Node/renderer versions; no project runtime, validator, generator, gateway, storage engine, identity provider or broker has been selected. The register is a starting authority map, not a package recommendation or implementation dependency list.
+
+## C02 authoring update — 2026-10-17
+
+C02 uses S01/S02/S12 within their architectural/protocol/risk boundaries, plus [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986.html), [W3C Web Architecture](https://www.w3.org/TR/webarch/), [RFC 8288](https://www.rfc-editor.org/rfc/rfc8288.html) and [SCXML §§3.5/3.13](https://www.w3.org/TR/scxml/#transition) for identification, links and guarded transitions. Google [AIP-121](https://google.aip.dev/121), [122](https://google.aip.dev/122), [136](https://google.aip.dev/136), [151](https://google.aip.dev/151), [164](https://google.aip.dev/164) and [180](https://google.aip.dev/180) are comparison conventions, not universal requirements. Fictional business policies are original teaching assumptions.
+
+Context7 resolved Node.js to `/websites/nodejs_latest-v24_x_api` (official v24 documentation, High reputation) and queried strict assertion imports/equality; Mermaid CLI resolved to `/mermaid-js/mermaid-cli` and its input/output/configuration usage was queried. These are living indexes, not exact implementation pins. Actual Node v24.22.0 / Mermaid CLI 12.0.0 and source/render/output hashes are qualified in [C02 validation](evidence/c02/validation.md). No new project framework or runtime is selected; no SCXML engine, HTTP service, payment provider or storage implementation was run.

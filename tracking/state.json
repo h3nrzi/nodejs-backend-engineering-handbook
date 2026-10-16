@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-16",
+  "updated_on": "2026-10-17",
   "phase": "domain_authoring",
   "review": "pending_learner_review",
   "active_domain_id": "D05",
   "next_domain_id": "D06",
-  "active_deliverable": "D05-C01 complete chapter draft in_review; 25-chapter curriculum and depth specification approved_by_learner",
-  "last_completed_step": "Reconciled and recorded explicit Product Owner approval of D05-CD01-CD07; authored C01 with mechanism depth ledger, bounded pure-model execution, diagrams and validation evidence; earlier approvals preserved.",
-  "next_action": "Product Owner reviews D05-C01 using its depth ledger and reproducible guide; keep C01 in_review and stop before C02 pending explicit approval and authorization. No project work or learner assessment.",
+  "active_deliverable": "D05-C02 complete chapter draft in_review; C01 editorially approved_by_learner; 25-chapter curriculum/depth contract preserved",
+  "last_completed_step": "Recorded explicit Product Owner C01 editorial approval against clean dfe397a baseline; authored C02 with mechanism ledger, bounded pure models, diagrams and validation; earlier approvals preserved.",
+  "next_action": "Product Owner reviews D05-C02 using its mechanism ledger and reproducible guide. Keep C02 in_review; stop before C03 pending explicit approval and authorization. No project work or learner assessment.",
   "blockers": [],
   "open_decisions": [],
   "current_implementation_project": {
@@ -780,8 +780,8 @@
       "depth_specification_status": "approved_by_learner",
       "depth_specification_path": "domains/05-api-engineering/depth-specification.md",
       "chapter_progress": {
-        "01": "in_review",
-        "02": "not_started",
+        "01": "approved_by_learner",
+        "02": "in_review",
         "03": "not_started",
         "04": "not_started",
         "05": "not_started",
@@ -806,25 +806,31 @@
         "24": "not_started",
         "25": "not_started"
       },
-      "authored_lesson_count": 1,
+      "authored_lesson_count": 2,
       "assessment_status": "deferred_until_learning_phase",
       "project_catalog_status": "not_started",
       "project_catalog_path": "domains/05-api-engineering/projects/catalog.md",
       "project_catalog_candidate_count": 0,
       "project_charters_authored_count": 0,
       "project_charters_approved_count": 0,
-      "review_guide": "domains/05-api-engineering/evidence/c01/review-guide.md",
+      "review_guide": "domains/05-api-engineering/evidence/c02/review-guide.md",
       "lesson_authoring_authorized": true,
       "curriculum_approved_on": "2026-10-16",
       "curriculum_approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md",
       "lesson_authoring_authorized_chapters": [
-        "01"
+        "01",
+        "02"
       ],
-      "lesson_authoring_stop_before": "02",
+      "lesson_authoring_stop_before": "03",
       "chapter_review_evidence": {
         "01": {
           "depth_ledger": "domains/05-api-engineering/evidence/c01/depth-ledger.md",
           "validation": "domains/05-api-engineering/evidence/c01/validation.md",
+          "human_evaluation": "not_run"
+        },
+        "02": {
+          "depth_ledger": "domains/05-api-engineering/evidence/c02/depth-ledger.md",
+          "validation": "domains/05-api-engineering/evidence/c02/validation.md",
           "human_evaluation": "not_run"
         }
       },
@@ -839,6 +845,26 @@
           "module_context": "ESM .mjs; synchronous pure models; no flags or packages",
           "evidence": "domains/05-api-engineering/evidence/c01/execution.json",
           "limits": "No actual HTTP/schema-tool/provider/database integration, durable or concurrent implementation, production qualification, learner assessment or portfolio project evidence."
+        },
+        "02": {
+          "status": "two_bounded_pure_model_scripts_passed",
+          "checked_on": "2026-10-17",
+          "node": "v24.22.0",
+          "v8": "13.6.233.17-node.57",
+          "platform": "darwin",
+          "arch": "arm64",
+          "module_context": "ESM .mjs; explicit-clock synchronous finite models; no flags or packages",
+          "evidence": "domains/05-api-engineering/evidence/c02/execution.json",
+          "limits": "No actual HTTP/schema/provider/database integration, true concurrent or durable implementation, production qualification, learner assessment or portfolio evidence."
+        }
+      },
+      "approved_lesson_count": 1,
+      "chapter_approval_evidence": {
+        "01": {
+          "status": "approved_by_learner",
+          "approved_on": "2026-10-16",
+          "gate": "educational_editorial_only",
+          "evidence": "domains/05-api-engineering/evidence/c01/editorial-approval.md"
         }
       }
     },
@@ -993,6 +1019,11 @@
       "date": "2026-10-16",
       "event": "Product Owner explicitly approved D05-CD01-CD07 without redefining their recorded proposals, authorizing educational curriculum/depth gate and C01 only. C01 complete draft remains in_review with mechanism ledger, source checks, two bounded Node pure-model runs and editable/rendered diagrams. No D05 lesson/Charter approval, project architecture, discovery, implementation or learner competence claimed. Stop before C02 for explicit Product Owner approval and authorization; D01-D04 and MediaForge preserved.",
       "evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
+    },
+    {
+      "date": "2026-10-17",
+      "event": "Recorded Product Owner explicit C01 editorial approval (instruction 2026-10-16) against clean dfe397a baseline; preserved submitted C01 content/evidence. Separately authorized C02 authored in_review with 18-mechanism depth ledger, two bounded Node pure models, three editable/rendered diagrams and review evidence. 68 authored lessons = 67 approved + one in_review; 23 D05 chapters unstarted, zero D05 Charters. No C02 approval, D05 completion, implementation or learner competence inferred. Stop before C03 pending explicit approval and authorization; D01-D04, CD01-CD07 and MediaForge preserved.",
+      "evidence": "domains/05-api-engineering/evidence/c02/validation.md"
     }
   ],
   "domain_authoring_sequence": [
@@ -1010,10 +1041,10 @@
     "handbook_charter_editorial_approval": "Educational Project Charter: clear problem, intended users, learning purpose, initial in/out/deferred scope and observable engineering challenges, without finalized V1 policies or a technical solution. Final PRDs belong to separate selected implementation repositories under Workflow V2."
   },
   "coverage_matrix_review": {
-    "reviewed_on": "2026-10-16",
-    "status": "D05_curriculum_approved_C01_authored_in_review_earlier_approvals_preserved",
+    "reviewed_on": "2026-10-17",
+    "status": "D05_C01_editorially_approved_C02_in_review_earlier_approvals_preserved",
     "path": "projects/coverage-matrix.md",
-    "baseline_commit": "6e7048b0c89e7fc4ad3700711edbfe583760c784",
+    "baseline_commit": "dfe397acbaed6326190dbda1e12b76c54854c6ed",
     "domains": [
       "D01",
       "D02",
@@ -1022,7 +1053,7 @@
       "D05"
     ],
     "prd_count": 14,
-    "chapter_mapping_count": 67,
+    "chapter_mapping_count": 68,
     "implementation_evidence": "No active implementation or verified acceptance evidence.",
     "assessment": "deferred",
     "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
@@ -1034,10 +1065,13 @@
       "domains/05-api-engineering/evidence/review-guide.md",
       "domains/05-api-engineering/evidence/curriculum-approval.md",
       "domains/05-api-engineering/evidence/c01/depth-ledger.md",
-      "domains/05-api-engineering/evidence/c01/validation.md"
+      "domains/05-api-engineering/evidence/c01/validation.md",
+      "domains/05-api-engineering/evidence/c01/editorial-approval.md",
+      "domains/05-api-engineering/evidence/c02/depth-ledger.md",
+      "domains/05-api-engineering/evidence/c02/validation.md"
     ],
-    "mapping_change": "D05 curriculum approved; C01 moved from proposed to authored in_review, C02-C25 unstarted. No D05 Charter mappings. Existing 66 approved chapter assignments, 20 Charter scopes/approvals and external project evidence unchanged.",
-    "approved_chapter_mapping_count": 66,
+    "mapping_change": "C01 editorially approved by explicit Product Owner instruction; C02 moved from proposed to authored in_review; C03-C25 unstarted. No D05 Charter mappings. Existing 66 D01-D04 assignments, 20 Charter scopes/approvals and external project evidence unchanged.",
+    "approved_chapter_mapping_count": 67,
     "in_review_chapter_mapping_count": 1,
     "approved_prd_count": 14,
     "authored_prd_count": 14,
@@ -1045,7 +1079,7 @@
     "authored_charter_count": 20,
     "approved_charter_count": 20,
     "in_review_charter_count": 0,
-    "proposed_chapter_mapping_count": 24,
+    "proposed_chapter_mapping_count": 23,
     "proposed_chapter_mapping_domain": "D05"
   },
   "curriculum_decisions": [

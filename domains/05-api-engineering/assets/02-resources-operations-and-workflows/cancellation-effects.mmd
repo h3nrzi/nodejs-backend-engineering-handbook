@@ -1,0 +1,24 @@
+---
+config:
+  layout: dagre
+  look: classic
+  flowchart:
+    nodeSpacing: 12
+    rankSpacing: 40
+    padding: 8
+    minNodeWidth: 0
+---
+flowchart TB
+  accTitle: Cancellation acknowledgment and settlement
+  accDescr: Evaluate current cancellation guards. Refusal has no new effect. Acceptance releases the seat and records a refund obligation. Later the refund is settled or needs attention. A local timeout changes observer knowledge rather than provider state.
+  G["Evaluate current guards"] -->|fail| F["Refused\nNo new effect"]
+  G -->|pass| A["Seat released\nRefund pending"]
+  A -->|acknowledge| R["Receipt:\nrelease + obligation"]
+  R --> S["Later: settled"]
+  R --> H["Later: needs attention"]
+  classDef pending fill:#FFFBEB,stroke:#92400E,color:#111827;
+  classDef success fill:#DCFCE7,stroke:#166534,color:#111827;
+  classDef refusal fill:#FEE2E2,stroke:#991B1B,color:#111827;
+  class A,R,H pending;
+  class S success;
+  class F refusal;

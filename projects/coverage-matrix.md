@@ -182,20 +182,21 @@ The dated technical-review and blocking-fix entries below retain their pre-appro
 
 ## D05 — Proposed curriculum coverage
 
-**Current review — 2026-10-16:** The Product Owner explicitly approved [CD01–CD07, the 25-chapter curriculum and depth gate](../domains/05-api-engineering/evidence/curriculum-approval.md), and authorized C01 only. One authored D05 lesson `in_review`, 24 unstarted chapters, zero concepts/Charters. No D05 lesson approval, implementation or learner evidence. All 66 approved D01–D04 mappings and 20 approved Charters retain assignments/statuses. The retained heading is a stable historical anchor; proposed and authored coverage are distinguished below.
+**Current review — 2026-10-17:** CD01–CD07 and the 25-chapter curriculum/depth contract remain approved. The Product Owner explicitly approved C01 editorially in the 2026-10-16 C02-authoring instruction; [approval and preserved-snapshot reconciliation](../domains/05-api-engineering/evidence/c01/editorial-approval.md). C02 is authored **in_review**; C03–C25 not_started. No D05 concept/Charter, implementation or learner evidence. All 66 D01–D04 approved assignments and 20 Charters preserve scope and status. The heading remains a stable historical anchor.
 
-| Competency IDs | Required educational coverage | Authored lesson evidence | Direct / supporting Charter relevance | Implemented / learner evidence |
+| Competency group | Proposed learning challenge | Authored coverage / evidence | Direct / supporting project coverage | Verified learning / implementation |
 |---|---|---|---|---|
-| D05-C01 | Contract promises/boundaries, resource versus operation interfaces, REST constraints and causal coupling, correctness under adverse observations | [Complete chapter in_review](../domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md); [per-mechanism ledger](../domains/05-api-engineering/evidence/c01/depth-ledger.md); two bounded pure-model scripts | Unmapped — no D05 Charter exists; existing approved Charters unchanged | None / deferred |
-| D05-C02–C06 | Resource models, representations, HTTP mutations, validation and errors | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
-| D05-C07–C12 | Collection traversal, read consistency, conditional writes, idempotency, access and admission | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
-| D05-C13–C15 | Description/dialects, directional compatibility and consumer documentation/clients | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
+| D05-C01 | Contract promises, REST constraints and causal coupling | [Editorially approved chapter](../domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md); [approval](../domains/05-api-engineering/evidence/c01/editorial-approval.md); original ledger/execution preserved | Unmapped — no D05 Charter | None / deferred |
+| D05-C02 | Stable identity, resources/representations/entities, guarded lifecycle, ownership/relationships, competing workflows and acknowledged effects | [Complete chapter in_review](../domains/05-api-engineering/lessons/02-resources-operations-and-workflow-modeling.md); [18-mechanism ledger](../domains/05-api-engineering/evidence/c02/depth-ledger.md); [pure-model/visual validation](../domains/05-api-engineering/evidence/c02/validation.md) | Unmapped — no D05 Charter; existing mappings unchanged | None / deferred |
+| D05-C03–C06 | Representations, HTTP mutations, validation and errors | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
+| D05-C07–C12 | Collections, consistency, concurrency, retries, authority and admission | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
+| D05-C13–C15 | Description/dialects, compatibility and consumer documentation | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
 | D05-C16–C21 | Long-running/bulk/webhook lifecycles, GraphQL, gRPC and persistent interfaces | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
-| D05-C22–C25 | Intermediary policy, API verification, diagnosis and integrated contract reasoning | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
+| D05-C22–C25 | Intermediary policy, verification, diagnosis and integrated reasoning | None — lessons not_started | Unmapped — catalog not_started | None / deferred |
 
-Current authored chapter mappings: **67 = 66 approved + one in_review**; the remaining **24 D05 profiles** are approved curriculum plans, not authored lessons. [The approved depth specification](../domains/05-api-engineering/depth-specification.md#chapter-by-chapter-depth-matrix) controls future authoring. C01's educational model execution is not external project implementation or demonstrated learning. No project architecture or feature is manufactured for coverage. Coverage reviewed: no existing direct/supporting assignment, Charter scope or approval changed.
+Current authored mappings: **68 = 67 approved + one in_review**. Remaining **23 D05 profiles** are approved curriculum plans, not authored lessons. The [unchanged depth profiles](../domains/05-api-engineering/depth-specification.md#chapter-by-chapter-depth-matrix) control authoring. Model execution establishes no project implementation or demonstrated learning. No architecture or feature is manufactured for coverage.
 
-[Current C01 review and pending evaluation](../domains/05-api-engineering/evidence/c01/review-guide.md) records the stop before C02. [Historical discovery evidence](../domains/05-api-engineering/evidence/review-guide.md) retains the earlier pending proposal context.
+[Current C02 review and pending evaluation](../domains/05-api-engineering/evidence/c02/review-guide.md) records the stop before C03. Historical discovery and C01 review guides retain their original pending states, superseded only by explicit later approval records.
 
 ## Mandatory maintenance
 

@@ -1,11 +1,11 @@
 # D05 Curriculum — API Engineering
 
 **Status:** approved_by_learner — curriculum approval recorded 2026-10-16; lesson approval is separate.
-**Designed:** 2026-10-16. **Approved inventory:** 25 chapters; D05-C01 authored `in_review`, C02–C25 `not_started`.
-**Phase:** Educational Content Authoring; only C01 authoring authorized in this session.
+**Designed:** 2026-10-16. **Approved inventory:** 25 chapters; D05-C01 `approved_by_learner`, D05-C02 authored `in_review`, C03–C25 `not_started`.
+**Phase:** Educational Content Authoring; C02 authoring authorized by the Product Owner; stop before C03 pending explicit approval and authorization.
 **Project catalog / Charters / implementation:** not_started. **Learner assessment:** deferred_until_learning_phase.
 
-This is a book and course blueprint. Its chapter profiles specify what future teaching must explain and demonstrate; they are not lessons, implementation specifications or evidence of acquired competence. The initial discovery stopped before lessons. The subsequent explicit Product Owner instruction approves CD01–CD07 and authorizes C01 only. [Approval and reconciliation record](evidence/curriculum-approval.md). Neither publication nor agent review supplies lesson editorial approval.
+This is a book and course blueprint. Its chapter profiles specify what future teaching must explain and demonstrate; they are not lessons, implementation specifications or evidence of acquired competence. The initial discovery stopped before lessons. The subsequent explicit Product Owner instruction approved CD01–CD07 and authorized C01. [Curriculum approval record](evidence/curriculum-approval.md). A later instruction explicitly approves C01 editorially and authorizes C02; [C01 approval and scope reconciliation](evidence/c01/editorial-approval.md). C02 remains in_review. Neither publication nor agent review supplies lesson editorial approval.
 
 ## Purpose and exit capabilities
 
@@ -109,9 +109,9 @@ These are depth boundaries, not excuses to omit mechanisms needed for API correc
 | Async work, bulk/file interfaces and webhooks | C16–C18 | C21, C23–C25 | Broker/storage/provider integrations absent by design |
 | GraphQL, RPC/gRPC and persistent interfaces | C19–C21 | C22–C25 | Full execution mechanisms required; transport integration remains future practice |
 | Gateway and intermediary policy | C22 | C08, C10–C12, C24 | No deployment or gateway vendor course |
-| Verification, docs usability and incident diagnosis | C15, C23–C25 | Failure/evidence duties in every chapter | No examples ran in discovery; C01 pure-model runs recorded separately; learner exercises remain unrun |
+| Verification, docs usability and incident diagnosis | C15, C23–C25 | Failure/evidence duties in every chapter | No examples ran in discovery; C01/C02 pure-model runs recorded separately; learner exercises remain unrun |
 
-Every area above has a named mechanism, adverse trace and completion gate in the depth profiles. This is **planned coverage**. D05-C01 now has authored coverage `in_review`; there is no D05 approved lesson, externally implemented or learner-demonstrated coverage yet. [Global coverage](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) tracks these separately.
+Every area above has a named mechanism, adverse trace and completion gate in the depth profiles. This is **planned coverage**. D05-C01 has approved editorial coverage and D05-C02 authored coverage `in_review`; no external implementation or learner-demonstrated coverage is established. [Global coverage](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) tracks these separately.
 
 Deliberately outside core depth: SOAP/WSDL and legacy XML integration courses; OData/JSON:API conformance courses; GraphQL federation platform construction; WebRTC/media transport; protocol-stack implementation; payment/provider qualification; a complete identity service; and an API-management vendor certification. C01/C19/C20 should signpost where these alternatives matter without claiming complete treatment. A concrete later audience need may reopen scope through an explicit curriculum decision.
 
@@ -135,10 +135,10 @@ Historical anchor retained for existing citations. The following seven original 
 | D05-CD06 — Legacy breadth | Signpost SOAP/OData/federation; retain no full specialization chapter initially | Add scoped coverage if the intended professional audience needs it | approved_by_learner |
 | D05-CD07 — Depth enforcement | Require the shared gate plus chapter-specific adverse trace and independent rubric | Topic checklists alone cannot establish explanatory depth | approved_by_learner |
 
-Project runtimes, libraries, authentication providers, persistence and gateways remain unselected. C01 uses a separately qualified Node v24.22.0 pure-model harness for education only. Decisions about a project belong to its separate learner-approved discovery. No proposed numeric API policy is binding on a future Charter.
+Project runtimes, libraries, authentication providers, persistence and gateways remain unselected. C01/C02 use separately qualified Node v24.22.0 pure-model harnesses for education only. Decisions about a project belong to its separate learner-approved discovery. No proposed numeric API policy is binding on a future Charter.
 
 ## Review and stop condition
 
-The curriculum and depth gate are approved; D05-C01 is a complete draft `in_review`. Review [the chapter](lessons/01-apis-as-contracts-and-rest.md) with its [mechanism ledger](evidence/c01/depth-ledger.md) and [evaluation guide](evidence/c01/review-guide.md). Only actual Product Owner approval can promote its editorial status.
+The curriculum, depth gate and C01 editorial content are approved; [C01 approval](evidence/c01/editorial-approval.md) preserves the submitted text/evidence. D05-C02 is a complete draft `in_review`. Review [C02](lessons/02-resources-operations-and-workflow-modeling.md) with its [mechanism ledger](evidence/c02/depth-ledger.md) and [evaluation guide](evidence/c02/review-guide.md). Only explicit Product Owner approval can promote C02 editorial status.
 
-Stop after committing/pushing the C01 deliverable. **Do not begin C02.** Later lesson authoring requires explicit Product Owner approval and authorization. Continue to use the [lesson template](../../templates/lesson.md), [quality standard](../../docs/lesson-quality-standard.md) and exact depth profiles. Project concepts/Charters remain not_started; no Final PRDs, Module Plans or technical project discovery belong here.
+Stop after committing/pushing the C02 deliverable. **Do not begin C03.** Later lesson authoring requires explicit Product Owner approval and authorization. Continue to use the [lesson template](../../templates/lesson.md), [quality standard](../../docs/lesson-quality-standard.md) and exact depth profiles. Project concepts/Charters remain not_started; no Final PRDs, Module Plans or technical project discovery belong here.

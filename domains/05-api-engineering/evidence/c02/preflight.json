@@ -1,0 +1,102 @@
+{
+  "checked_on": "2026-10-17",
+  "baseline_commit": "dfe397acbaed6326190dbda1e12b76c54854c6ed",
+  "tested_revision": "Exact working-tree artifact hashes below; publication revision is the commit containing this evidence.",
+  "checks": {
+    "python3 domains/05-api-engineering/evidence/c02/check-authoring.py": {
+      "exit_code": 0,
+      "stdout": "{\n  \"baseline\": \"dfe397acbaed6326190dbda1e12b76c54854c6ed\",\n  \"protected_files_byte_identical\": 274,\n  \"prior_domain_objects_external_project_decisions_history_preserved\": true,\n  \"approved_profiles_sequence_unchanged\": true,\n  \"canonical_counts\": {\n    \"authored\": 68,\n    \"approved\": 67,\n    \"in_review\": 1,\n    \"unstarted_D05\": 23,\n    \"approved_charters\": 20\n  },\n  \"named_case_and_exercise_inventory\": {\n    \"normal\": 18,\n    \"adverse\": 18,\n    \"exercises_with_rubrics\": 18,\n    \"integrated\": 1\n  },\n  \"reasoned_rows\": 18,\n  \"execution_hashes_match\": true,\n  \"svg_accessibility_structure\": [\n    {\n      \"source\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.mmd\",\n      \"svg\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.svg\",\n      \"viewBox\": \"0 0 295.125 336\"\n    },\n    {\n      \"source\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.mmd\",\n      \"svg\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.svg\",\n      \"viewBox\": \"0 0 380.375 446.79998779296875\"\n    },\n    {\n      \"source\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.mmd\",\n      \"svg\": \"domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.svg\",\n      \"viewBox\": \"4 4 360 395.60003662109375\"\n    }\n  ],\n  \"limits\": \"Structural audit and retained evidence consistency; not automated depth grading, implementation correctness, external review or learner acceptance.\"\n}\n",
+      "stderr": ""
+    },
+    "python3 scripts/check-handbook-links.py": {
+      "exit_code": 0,
+      "stdout": "{\n  \"checked_internal_links\": 1888,\n  \"current_issues\": [],\n  \"pre_existing_issues\": [],\n  \"new_issues\": []\n}\n",
+      "stderr": ""
+    },
+    "python3 -m json.tool tracking/state.json": {
+      "exit_code": 0,
+      "stdout": "JSON parsed; full state output omitted.",
+      "stderr": ""
+    },
+    "node --check domains/05-api-engineering/examples/c02/reservation-model.mjs": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "node --check domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "git diff --check": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "git diff --cached --check": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "manifest": {
+    "path": "domains/05-api-engineering/evidence/c02/changed-files.txt",
+    "count": 31,
+    "matches_staged_paths": true
+  },
+  "visuals": {
+    "validated_blocks": 3,
+    "targets": 4,
+    "fresh_exports_byte_identical": 3,
+    "preview_widths": [
+      800,
+      390
+    ],
+    "minimum_scaled_mobile_font_px": 16.941176470588236,
+    "all_text_within_viewbox_and_no_horizontal_overflow": true,
+    "human_agent_inspection": "Final SVG-derived normal/grayscale/dark-surround screenshots inspected; chapter Markdown locally rendered and reviewed. Not Product Owner evaluation."
+  },
+  "source_availability": {
+    "unique_targets": 27,
+    "all_200_and_fragments_present": true,
+    "semantic_claim_review": "validation.md#source-claim-review"
+  },
+  "artifact_sha256": {
+    "AGENTS.md": "c4a13ab22865e31fe4b3f6b943e81181aa264bd0b56656bc1421f472479d5d02",
+    "README.md": "f921e9db7ef2d81934195a6a0a09f8fa396883c259c35322380253f8a4dccc02",
+    "TRACKER.md": "fee1b3fe250624efacad44b1821c23ba37d4ea37ab0c288ea75fc097b683defd",
+    "domains/05-api-engineering/README.md": "0cbf69b39ebc06121f438d466b46cb8848c8984db5e848f6c45e58d0d74801f8",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.mmd": "7dc1db6934f50232f1bb880eb0f34ccb76f1a406adaa19e8228fb53fb30ef42c",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.svg": "0f682d1386696f514b73c09d5c2a71b33f5bd926bd0ccd00092d82a3a68d51b6",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.mmd": "d20a8bf3991e32eb557b899d90ea0aa8fae11476bda7a4fb8d925b388dfea350",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.svg": "da9d450a2b8c1b969d253f0776d0104b74135e7deb69972d79d420c1c11b680c",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.mmd": "abceaa4c149ddc824cb7f4bf2cc95c1d7518c64dd9e18d7312cdec5858016fa2",
+    "domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.svg": "6a969952ef42bd1809948243589b23b6fd62780f783cb17f32ef3d78abe5d2c1",
+    "domains/05-api-engineering/curriculum.md": "dd5cc618bc72f5fd1ddd9edf1905aa88b95ee6ce2f21180fdad1ddeef0943b02",
+    "domains/05-api-engineering/depth-specification.md": "653d1f42a4c6fbb97ba6c878d379df56005456cb47c0dcbb1d571f6b175653ca",
+    "domains/05-api-engineering/evidence/c01/editorial-approval.md": "d34f05da2495a8acebd93ce589600943d2f5d5b9d9daac103bd6de662b0a2474",
+    "domains/05-api-engineering/evidence/c02/boundaries-and-observations.stdout.txt": "91c9e50fab2bee2178e0e9ee141d9202d0da3e8fdda3c7b4267c8f38a7b96ff9",
+    "domains/05-api-engineering/evidence/c02/changed-files.txt": "664c35a8a9d55a30ae49c9c743a19c52074e8ecab30963abd3a2842206b74630",
+    "domains/05-api-engineering/evidence/c02/check-authoring.py": "88fcfff4e0a0bb32b9b4c972da247981ddb5fef06bfd83d0510a06199e3229f9",
+    "domains/05-api-engineering/evidence/c02/depth-ledger.md": "5071c457ac0ff562c9aab3dc2f8c2c36fa1130e5e2470e3be48f1553c62f8a57",
+    "domains/05-api-engineering/evidence/c02/execution.json": "a2f89727575fb91b6fe71f61d7a6e1971f78d120307e67aa866d33ecd369c108",
+    "domains/05-api-engineering/evidence/c02/reservation-model.stdout.txt": "a422fe5e81365d8284f54ef3cddf817d4c36f7e4416b5693cacd7c60cc1e6900",
+    "domains/05-api-engineering/evidence/c02/review-guide.md": "16d724e52b8bf5dfdb29c69a1f6f7a03f1a72bc06160ada0e9945a5f2c29473c",
+    "domains/05-api-engineering/evidence/c02/source-links.json": "89542df83b225f53ae1dcb6e2536aa1139b255aa28819542c40a285e48b09459",
+    "domains/05-api-engineering/evidence/c02/svg-consistency.json": "dd8624e3c8fab4ba25c555f443470f4ad96d1518c76a4f91d11732a432ae88aa",
+    "domains/05-api-engineering/evidence/c02/validation.md": "6e587b4fa96a59bbcb38d8faa45cb0e8ba421dbc968b8fe3072d6f3f1006e0a3",
+    "domains/05-api-engineering/evidence/c02/visual-review.json": "d8d36ae7806c08553a40b305f0ac246bb1544329d36f2f5e4c4077e85f69bd69",
+    "domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs": "19d9a940cfa358a3cfd038a607dcf7399c227f6c29e0573524a030bbce7f46b2",
+    "domains/05-api-engineering/examples/c02/reservation-model.mjs": "c17f083fcef9b473f9999aff6d8fc1e92f237b4bd87bf0f5d8914ff621b9c724",
+    "domains/05-api-engineering/lessons/02-resources-operations-and-workflow-modeling.md": "736bf69a858d816e7641c834f8b31b766d3cabb77db566a7760948438ca9941b",
+    "domains/05-api-engineering/references.md": "d603bd9b58fd12619b9d55840dca1adf752eb316a4d4be5e63764eecb5e0c11c",
+    "projects/coverage-matrix.md": "ab405b9977707bc59ddae6f35ccbb7d18f6fb09620f053ff66be469914caa145",
+    "tracking/state.json": "534b9c6971f012b1846ce117e081bb6b94e49f94a84ac9ffa1d736367ff03c66"
+  },
+  "limitations": [
+    "Structural checks do not grade depth or establish external review, learner competency or Product Owner approval.",
+    "No HTTP/storage/payment-provider/true concurrent integration.",
+    "Native GitHub/physical mobile/assistive technology not tested.",
+    "This manifest excludes its own preflight hash to avoid self-reference; Git records the full file."
+  ]
+}

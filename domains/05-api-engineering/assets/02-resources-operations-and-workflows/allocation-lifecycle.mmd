@@ -1,0 +1,19 @@
+---
+config:
+  layout: dagre
+  look: classic
+  state:
+    nodeSpacing: 12
+    rankSpacing: 42
+    padding: 8
+    minNodeWidth: 0
+---
+stateDiagram-v2
+  accTitle: Allocation lifecycle with guarded transitions
+  accDescr: Creation produces held. Before its deadline an owner may confirm or release. At the deadline a hold expires. Confirmed may become cancelled before the cutoff. Cancelled releases the seat and accepts a refund obligation; it does not mean the refund is settled. Full authority and input guards are in the chapter table.
+  direction TB
+  [*] --> held: eligible acquire
+  held --> confirmed: confirm
+  held --> released: release
+  held --> expired: deadline
+  confirmed --> cancelled: cancel

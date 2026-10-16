@@ -1,0 +1,7 @@
+models: coherent H8 -> B6 conversion keeps 1 allocation; split conversion can lose it
+ownership: transfer keeps H8 identity/deadline; former owner cannot confirm
+affordance: same target survives; changed authority or deadline refuses stale control
+restoration: R41 visible again but cancelled; pending obligation and Bob allocation unchanged
+shared invariant: one common admission refuses second claim; independent snapshots admit 2
+aggregate: per-item R41 accepted/R42 refused; all-or-none alternative refuses group
+knowledge: timeout matches no effect and accepted cancellation; retained I9/C9 evidence distinguishes them

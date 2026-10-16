@@ -1,0 +1,11 @@
+flowchart TB
+  accTitle: R41 identity and relationships
+  accDescr: Venue V1 has a view containing reservation R41. Tenant T1 currently owns R41. R41 references seat-session S7 and its history contains cancellation C9. View membership and current ownership may change without implicitly renaming R41.
+  V["V1 venue view"] -->|includes| R["R41 reservation"]
+  T["T1 tenant"] -->|current owner of| R
+  R -->|seat reference| S["S7 seat-session"]
+  R -->|history contains| C["C9 cancellation"]
+  classDef identity fill:#E0F2FE,stroke:#0369A1,color:#111827;
+  classDef relation fill:#F3F4F6,stroke:#4B5563,color:#111827;
+  class R identity;
+  class V,T,S,C relation;

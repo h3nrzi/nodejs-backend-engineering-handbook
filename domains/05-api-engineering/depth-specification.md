@@ -1,14 +1,14 @@
 # D05 chapter depth specification
 
 **Status:** approved_by_learner — controlling curriculum authoring contract, 2026-10-16; [approval record](evidence/curriculum-approval.md).
-**Date:** 2026-10-16. **Inventory:** D05-C01–C25; C01 draft `in_review`, C02–C25 `not_started`.
+**Date:** 2026-10-16. **Inventory:** D05-C01–C25; C01 `approved_by_learner`, C02 draft `in_review`, C03–C25 `not_started`.
 **Companion:** [curriculum, dependencies, coverage, boundaries and decisions](curriculum.md).
 
 ## Shared depth and completion gate
 
 The failure to avoid is a chapter that names many topics but leaves the reader unable to explain why a mechanism works or predict its failure. A glossary, API tour, checklist, generated schema or happy-path demo alone does not meet this specification.
 
-Every profile below specifies the chapter ID/title, prerequisites, observable outcomes, foundations, technical subtopics, advanced mechanisms/edge cases, misconceptions, trade-offs, backend failure scenarios, educational experiments, candidate visuals, exercises/rubrics, references, boundaries and explicit completion criteria. These are required teaching obligations, not lesson text or execution evidence; C01 fulfillment is audited separately. Visuals are candidates chosen by a learning question; do not draw one merely to satisfy a quota.
+Every profile below specifies the chapter ID/title, prerequisites, observable outcomes, foundations, technical subtopics, advanced mechanisms/edge cases, misconceptions, trade-offs, backend failure scenarios, educational experiments, candidate visuals, exercises/rubrics, references, boundaries and explicit completion criteria. These are required teaching obligations, not lesson text or execution evidence; C01/C02 fulfillment is audited separately; profile obligations remain unchanged. Visuals are candidates chosen by a learning question; do not draw one merely to satisfy a quota.
 
 For each chapter's required mechanism, future authoring must retain a depth ledger with these fields:
 
@@ -28,11 +28,11 @@ Apply four editorial ratings to each ledger row: **absent**, **named**, **explai
 
 Completion also requires accurate backward prerequisites, no hidden dependence on a future domain, source/version qualification, bounded resources and cleanup in executable examples, direct/supporting/unmapped Charter relevance when Charters later exist, and reconciliation of tracking/index/coverage. Keep proposed examples `not_run` until actual command, exact source revision, runtime/OS/module mode, expected/observed outcomes and limitations are retained. Label untested integrations explicitly. The learner's eventual work and acceptance remain separate from author checks.
 
-Future diagrams follow [visual standards](../../docs/visual-authoring.md): question, precise arrows/guards, accessible textual equivalent and caption. Use the repository `mermaid-diagrams` skill for actual Mermaid work, validate and visually inspect its render. The historical discovery authored no diagram source or lesson code; C01 now has separately recorded sources and bounded execution.
+Future diagrams follow [visual standards](../../docs/visual-authoring.md): question, precise arrows/guards, accessible textual equivalent and caption. Use the repository `mermaid-diagrams` skill for actual Mermaid work, validate and visually inspect its render. The historical discovery authored no diagram source or lesson code; C01/C02 now have separately recorded sources and bounded execution.
 
 ## Chapter-by-chapter depth matrix
 
-This is the compact review surface. The matching profile below contains all fifteen requested dimensions, including prerequisites, foundational concepts, misconceptions, trade-offs, references and boundaries. This matrix retains plans. C01 actual pure-model execution is recorded in [validation](evidence/c01/validation.md); all learner assessments and C02–C25 experiments remain `not_run`.
+This is the compact review surface. The matching profile below contains all fifteen requested dimensions, including prerequisites, foundational concepts, misconceptions, trade-offs, references and boundaries. This matrix retains plans. C01 actual pure-model execution is recorded in [validation](evidence/c01/validation.md), and C02 in [its validation](evidence/c02/validation.md). C01 has [explicit editorial approval](evidence/c01/editorial-approval.md); C02 remains in_review. All learner assessments and C03–C25 experiments remain `not_run`.
 
 | Chapter | Mechanism that must be reasoned through | Required adverse case | Planned evidence boundary | Independent rubric anchor |
 |---|---|---|---|---|

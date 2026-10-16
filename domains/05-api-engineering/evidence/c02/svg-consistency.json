@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-10-17",
+  "method": "Fresh export using repository wrapper/config; compare exact bytes or all SVG id attribute values normalized by declaration order, including their references. No geometry, styles, labels or bounds removed.",
+  "results": [
+    {
+      "file": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.svg",
+      "fresh_export": "/tmp/d05-c02-consistency/relationships.svg",
+      "stored_sha256": "6a969952ef42bd1809948243589b23b6fd62780f783cb17f32ef3d78abe5d2c1",
+      "fresh_sha256": "6a969952ef42bd1809948243589b23b6fd62780f783cb17f32ef3d78abe5d2c1",
+      "byte_identical": true,
+      "equal_after_generated_id_normalization": true
+    },
+    {
+      "file": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.svg",
+      "fresh_export": "/tmp/d05-c02-consistency/allocation-lifecycle.svg",
+      "stored_sha256": "0f682d1386696f514b73c09d5c2a71b33f5bd926bd0ccd00092d82a3a68d51b6",
+      "fresh_sha256": "0f682d1386696f514b73c09d5c2a71b33f5bd926bd0ccd00092d82a3a68d51b6",
+      "byte_identical": true,
+      "equal_after_generated_id_normalization": true
+    },
+    {
+      "file": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.svg",
+      "fresh_export": "/tmp/d05-c02-consistency/cancellation-effects.svg",
+      "stored_sha256": "da9d450a2b8c1b969d253f0776d0104b74135e7deb69972d79d420c1c11b680c",
+      "fresh_sha256": "da9d450a2b8c1b969d253f0776d0104b74135e7deb69972d79d420c1c11b680c",
+      "byte_identical": true,
+      "equal_after_generated_id_normalization": true
+    }
+  ]
+}
