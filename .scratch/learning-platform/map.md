@@ -12,18 +12,18 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 - This is a planning effort. The platform spans subjects, audiences, and experience levels; the Node.js Backend Engineering Handbook is its first educational content source and initial use case.
 - The owner and team initially publish and manage courses under one organization. Independent instructors are a future possibility to evaluate when relevant to the product phases.
 - Next.js and the existing repository structure are established. The web application belongs in `client/`; `handbook/` remains authoritative for the Handbook course. Other courses' formats and authoring workflows remain open.
-- The first-release audience and scope are discovery decisions. Do not assume JavaScript/TypeScript experience or a backend-engineering-only product.
+- Follow the resolved audience and learning-context decision indexed below. Remaining first-release scope decisions are open; do not assume JavaScript/TypeScript experience or a backend-engineering-only product.
 - Launch timeline, budget, monetization, hosting, languages, and other operating constraints have no fixed commitments yet.
-- Long-term capabilities to evaluate include independent courses, educational materials, structured and personalized learning paths, exercises, assessments, and learner progress. Their inclusion in the first release is undecided.
+- Capability priorities established by resolved tickets constrain later release decisions. The detailed boundaries of courses, educational materials, learning paths, personalization, exercises, assessments, and learner progress remain to be specified by the relevant child tickets.
 - Consult the wayfinder, grilling, and domain-modeling skills when working decisions. Use prototype for experience questions and research when a specific decision needs external facts. Verify library/API behavior using Context7 and relevant repository instructions when those questions arise.
 - Use root `GLOSSARY.md` for settled language. Preserve the Handbook's distinction between editorial approval, project delivery, and learner competency; its existing tracking state is not learner progress.
 - Planning assets belong beside this map: `blueprint.md` and `spec.md` when ready to author. Link supporting research and prototypes from the tickets that use them. The map indexes resolutions rather than duplicating their detail.
 - Local tracker rules: child tickets live in `issues/`; `Type:` and `wayfinder:` labels identify their workflow. Open, unblocked, unclaimed tickets form the frontier in numeric filename order. Save `Status: claimed` before work; record an answer and set `Status: resolved` on resolution. Blocking uses the local `Blocked by:` convention. Resolve at most one non-research ticket per session.
-- This charting session resolves no tickets. Scoped external research will be added when a decision exposes a concrete factual dependency; none is assumed necessary before the initial owner-led discovery.
+- Scoped external research will be added when a decision exposes a concrete factual dependency; none was assumed necessary before the initial owner-led discovery.
 
 ## Decisions so far
 
-<!-- No decision tickets have been resolved. Approved charting boundaries are recorded in Notes. -->
+- [Choose the first learner segment and learning outcome](issues/01-first-learner-and-outcome.md#answer): Serve self-paced learners across subjects through structured courses and visible progress; course outcomes stay course-specific, and real-learner validation remains open.
 
 ## Not yet specified
 

@@ -12,3 +12,5 @@ Prerequisites: [Choose the course authoring and publishing workflow](03-authorin
 What is the smallest coherent first release that delivers the chosen learner outcome within the agreed publishing and operating constraints, and how should the product evolve after it?
 
 Set explicit included and excluded learner and publisher journeys, course and material coverage, and release success criteria. Decide whether and how a second course or contrasting subject must validate general-purpose behavior in the first release. Explain the value and prerequisites of later phases without turning uncertain future capabilities into detailed commitments. Identify the remaining decisions needed to specify the first release.
+
+Respect the self-paced first-release context and core learning priorities resolved in [Choose the first learner segment and learning outcome](01-first-learner-and-outcome.md#answer). Instructor-led courses, live classes, and scheduled learning are part of the long-term vision, beyond the first release. Consider their direction and prerequisites without assuming that future expansion requires building their infrastructure in the first release.
