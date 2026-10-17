@@ -4,7 +4,7 @@ Purpose: evaluate all 17 figures across 15 enhanced chapters and the intentional
 
 ## Starting point and setup
 
-Actor for every scenario: Product Owner/reviewer. In this repository, open [C02](../../domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md), §5, and find **Closures share bindings within one invocation**. Your first action: follow both Counter A arrows and explain which count they share, then compare Counter B. Expected: A’s two methods share count 2; B has its own count 0. Report R01 with the first confusing label/arrow, if any.
+Actor for every scenario: Product Owner/reviewer. In this repository, open [C02](../../handbook/domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md), §5, and find **Closures share bindings within one invocation**. Your first action: follow both Counter A arrows and explain which count they share, then compare Counter B. Expected: A’s two methods share count 2; B has its own count 0. Report R01 with the first confusing label/arrow, if any.
 
 Use Markdown preview in your editor or the repository’s rendered lesson, then adjacent full-size SVG/source links. Assets are local, require no account/service and change no application state. Agent preflight used Chrome and actual Markdown at 720/360 px; commands and measurements are versioned. For disposable local previews, run `node docs/visual-d02/verify.mjs` from `/Users/hossein/Projects/nodejs-backend-engineering-handbook`; the printed temp directory contains lesson HTML and per-figure pair/dark/grayscale PNGs. This read/check command does not rewrite lessons/assets/evidence. Existing locked dependencies and an installed browser are required. It does run repository smoke/render checks into temporary directories.
 
@@ -25,7 +25,7 @@ For each R01–R17, prerequisites are the named lesson and source/SVG pair linke
 
 ### R01 — Closures share bindings within one invocation
 
-Open [C02](../../domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md), Before ## 6. Capture in loops and asynchronous callbacks. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg) and [its editable source](../../domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd).
+Open [C02](../../handbook/domains/02-javascript-typescript/lessons/02-variables-scope-and-closures.md), Before ## 6. Capture in loops and asynchronous callbacks. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd).
 
 Action: Which returned methods share count, and which counter is independent? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -35,7 +35,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R02 — Call syntax supplies the ordinary-function receiver
 
-Open [C03](../../domains/02-javascript-typescript/lessons/03-functions-and-invocation.md), Before ## 5. Arrow functions and lexical `this`. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg) and [its editable source](../../domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd).
+Open [C03](../../handbook/domains/02-javascript-typescript/lessons/03-functions-and-invocation.md), Before ## 5. Arrow functions and lexical `this`. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd).
 
 Action: Why does the same read function work as a method and fail when detached? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -45,7 +45,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R03 — Lookup delegates until an own property is found
 
-Open [C04](../../domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md), Before ## 4. Constructor functions and new. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg) and [its editable source](../../domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd).
+Open [C04](../../handbook/domains/02-javascript-typescript/lessons/04-objects-prototypes-and-classes.md), Before ## 4. Constructor functions and new. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd).
 
 Action: Why is account.role readable even though account does not own role? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -55,7 +55,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R04 — A new array can retain the same element objects
 
-Open [C05](../../domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md), Before ## 3. map, filter, reduce, find and some/every. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg) and [its editable source](../../domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd).
+Open [C05](../../handbook/domains/02-javascript-typescript/lessons/05-collections-iteration-and-data-handling.md), Before ## 3. map, filter, reduce, find and some/every. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd).
 
 Action: What changes when sorted has a different order but shares original’s objects? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -65,7 +65,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R05 — A live import follows the exporter’s binding
 
-Open [C06](../../domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md), Before ## 4. Linking, instantiation and evaluation. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg) and [its editable source](../../domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd).
+Open [C06](../../handbook/domains/02-javascript-typescript/lessons/06-modules-and-package-boundaries.md), Before ## 4. Linking, instantiation and evaluation. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd).
 
 Action: Why does a live count read change while a primitive snapshot stays 0? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -75,7 +75,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R06 — Cleanup can preserve or replace a pending outcome
 
-Open [C07](../../domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md), Before ## 3. catch bindings and unknown failure shapes. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg) and [its editable source](../../domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd).
+Open [C07](../../handbook/domains/02-javascript-typescript/lessons/07-exceptions-errors-and-resource-lifetimes.md), Before ## 3. catch bindings and unknown failure shapes. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd).
 
 Action: How does finally decide which return or throw leaves the function? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -85,7 +85,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R07 — Resolution can lock an outcome while settlement waits
 
-Open [C08](../../domains/02-javascript-typescript/lessons/08-promises-and-async-await.md), Before ## 2. Synchronous executors, asynchronous reactions. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg) and [its editable source](../../domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd).
+Open [C08](../../handbook/domains/02-javascript-typescript/lessons/08-promises-and-async-await.md), Before ## 2. Synchronous executors, asynchronous reactions. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd).
 
 Action: Can outer already follow inner while still being pending? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -95,7 +95,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R08 — The executor runs now and the reaction runs later
 
-Open [C08](../../domains/02-javascript-typescript/lessons/08-promises-and-async-await.md), Before ## 3. Chaining and recovery. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg) and [its editable source](../../domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd).
+Open [C08](../../handbook/domains/02-javascript-typescript/lessons/08-promises-and-async-await.md), Before ## 3. Chaining and recovery. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd).
 
 Action: Why does C appear before D even though p is already fulfilled? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -105,7 +105,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R09 — Aborting observation cannot undo a confirmed effect
 
-Open [C09](../../domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md), Before ## 5. Deadline and timeout. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg) and [its editable source](../../domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd).
+Open [C09](../../handbook/domains/02-javascript-typescript/lessons/09-asynchronous-composition-and-cancellation.md), Before ## 5. Deadline and timeout. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd).
 
 Action: What if cancellation happens after remote success but before confirmation arrives? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -115,7 +115,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R10 — Awaiting each save delays the next pull
 
-Open [C10](../../domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md), Before ## 8. Event subscriptions and lifetimes. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg) and [its editable source](../../domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd).
+Open [C10](../../handbook/domains/02-javascript-typescript/lessons/10-iteration-streams-and-event-abstractions.md), Before ## 8. Event subscriptions and lifetimes. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd).
 
 Action: What does this loop bound, and what can the source still buffer? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -125,7 +125,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R11 — Structural compatibility preserves the runtime object
 
-Open [C11](../../domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md), Before ## 7. Function signatures. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg) and [its editable source](../../domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd).
+Open [C11](../../handbook/domains/02-javascript-typescript/lessons/11-typescript-type-system-fundamentals.md), Before ## 7. Function signatures. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd).
 
 Action: Does assigning record to Identified strip category or create a new identity? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -135,7 +135,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R12 — Branches narrow the checker’s view of Booking
 
-Open [C12](../../domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md), Before ## 5. Exhaustiveness and never. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg) and [its editable source](../../domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd).
+Open [C12](../../handbook/domains/02-javascript-typescript/lessons/12-unions-narrowing-and-domain-modeling.md), Before ## 5. Exhaustiveness and never. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd).
 
 Action: What type remains after each returning status branch? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -145,7 +145,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R13 — The chosen key determines the returned type
 
-Open [C13](../../domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md), Before ## 4. Generic interfaces and reusable result contracts. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg) and [its editable source](../../domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd).
+Open [C13](../../handbook/domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md), Before ## 4. Generic interfaces and reusable result contracts. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd).
 
 Action: How does K connect a permitted property name to T[K]? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -155,7 +155,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R14 — Distribution changes where the union appears
 
-Open [C13](../../domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md), Before ## 7. Mapped types and modifiers. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg) and [its editable source](../../domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd).
+Open [C13](../../handbook/domains/02-javascript-typescript/lessons/13-generics-constraints-and-advanced-types.md), Before ## 7. Mapped types and modifiers. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd).
 
 Action: Why do Wrap and WrapTogether produce different object alternatives? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -165,7 +165,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R15 — Checking, emission and loading answer separate questions
 
-Open [C14](../../domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md), Before ## 2. tsconfig.json and project boundaries. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg) and [its editable source](../../domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd).
+Open [C14](../../handbook/domains/02-javascript-typescript/lessons/14-typescript-modules-configuration-and-interop.md), Before ## 2. tsconfig.json and project boundaries. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd).
 
 Action: Where can a checked module still fail before or during execution? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -175,7 +175,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R16 — Only executed checks establish this parser’s input contract
 
-Open [C15](../../domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md), Before ## 3. Separate syntax, representation and business rules. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg) and [its editable source](../../domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd).
+Open [C15](../../handbook/domains/02-javascript-typescript/lessons/15-runtime-validation-and-boundary-safety.md), Before ## 3. Separate syntax, representation and business rules. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd).
 
 Action: What must pass before parseCustomerInput constructs its result? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -185,7 +185,7 @@ State afterward: unchanged. **User result: not_run.**
 
 ### R17 — Promise settlement and domain outcome are separate layers
 
-Open [C16](../../domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md), Before ## 6. Case study: asynchronous cleanup. Inspect [the actual SVG](../../domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg) and [its editable source](../../domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd).
+Open [C16](../../handbook/domains/02-javascript-typescript/lessons/16-backend-language-case-studies-and-transfer.md), Before ## 6. Case study: asynchronous cleanup. Inspect [the actual SVG](../../handbook/domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.svg) and [its editable source](../../handbook/domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd).
 
 Action: How can allSettled report fulfilled when a delivery was rejected? Follow every relevant arrow and branch, then explain the result in your own words.
 
@@ -204,7 +204,7 @@ Expected: all 17 lesson images load and remain readable, and words/arrow directi
 Read the C01 omission rationale in review.md, then inspect the lesson diff:
 
 ```sh
-git diff d3828398597238741e14147685bc172a7c50f7b1 HEAD -- domains/02-javascript-typescript/lessons
+git diff d3828398597238741e14147685bc172a7c50f7b1 HEAD -- handbook/domains/02-javascript-typescript/lessons
 ```
 
 Expected: only 136 added lines, forming 17 question/image/caption/source-link blocks; all original content retained. C01 is byte-identical. Check that examples, exercises, references and approval labels survive and that no Charters or D01/D03/D04 lessons changed. Consult the preservation/scope assertions in verification.json and the changed-path inventory. Reconciliation records no mapping/status changes; no learner competency or Product Owner acceptance is claimed. Refuse any removed/abbreviated approved material or implicit D03/D05 authorization. State afterward: unchanged. **User result: not_run.**
@@ -215,7 +215,7 @@ Prerequisites: repository root, existing locked tools and installed Chrome/Chrom
 
 ```sh
 d02_preview_dir=$(mktemp -d)
-npm run visuals:render -- -i domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd -o "$d02_preview_dir/shared.svg"
+npm run visuals:render -- -i handbook/domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd -o "$d02_preview_dir/shared.svg"
 open "$d02_preview_dir/shared.svg"
 ```
 

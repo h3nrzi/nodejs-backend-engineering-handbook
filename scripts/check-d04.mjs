@@ -4,7 +4,7 @@ import { readdir, readFile, mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-const root = new URL('../domains/04-network-protocol-engineering/', import.meta.url);
+const root = new URL('../handbook/domains/04-network-protocol-engineering/', import.meta.url);
 const lessons = (await readdir(new URL('lessons/', root))).filter(x => x.endsWith('.md')).sort();
 const temporary = await mkdtemp(path.join(tmpdir(), 'd04-labs-'));
 let failures = 0;

@@ -1,6 +1,6 @@
 # State protocol
 
-`tracking/state.json` is the source of truth. `TRACKER.md` is its human-readable projection. Git history is evidence of changes, not proof of educational approval.
+`handbook/tracking/state.json` is the source of truth. `TRACKER.md` is its human-readable projection. Git history is evidence of changes, not proof of educational approval.
 
 - `phase`: repository_infrastructure | domain_authoring | project_guidance | paused.
 - `review`: pending_learner_review | changes_requested | approved.

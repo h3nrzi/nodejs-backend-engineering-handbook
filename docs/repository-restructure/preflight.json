@@ -1,0 +1,167 @@
+{
+  "baseline": "aa3114ff357fd297a95f6a3fe32382abc3a2bb53",
+  "prepared_on": "2026-10-17",
+  "revision": "baseline plus restructuring; containing Git commit identifies final revision",
+  "environment": {
+    "node": "v24.22.0",
+    "npm": "11.19.1",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "human_evaluation": "not_run",
+  "checks": {
+    "build": {
+      "command": "cd app && npm run build",
+      "result": "pass",
+      "output": "\n> my-app@0.1.0 build\n> next build\n\n\u25b2 Next.js 16.4.2 (Turbopack)\n\u2713 Running next.config.ts took 17ms\n- Cache Components enabled\n- Partial Prefetching enabled\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 2.6s\n  Running TypeScript ...\n  Finished TypeScript in 1029ms ...\n  Collecting page data using 5 workers ...\n  Generating static pages using 5 workers (0/4) ...\n  Generating static pages using 5 workers (1/4) \n  Generating static pages using 5 workers (2/4) \n  Generating static pages using 5 workers (3/4) \n\u2713 Generating static pages using 5 workers (4/4) in 300ms\n  Finalizing page optimization ...\n\nRoute (app)\n\u250c \u25cb /\n\u2514 \u25cb /_not-found\n\n\n\u25cb  (Static)  prerendered as static content\n\n"
+    },
+    "lint": {
+      "command": "cd app && npm run lint",
+      "result": "pass",
+      "output": "\n> my-app@0.1.0 lint\n> eslint\n\n"
+    },
+    "development": {
+      "command": "cd app && npm run dev -- --hostname 127.0.0.1 --port 3100",
+      "result": "pass",
+      "output": "\n> my-app@0.1.0 dev\n> next dev --hostname 127.0.0.1 --port 3100\n\n\u25b2 Next.js 16.4.2 (Turbopack)\n- Local:         http://127.0.0.1:3100\n- Network:       http://127.0.0.1:3100\n\u2713 Ready in 333ms\n\u2713 Running next.config.ts took 130ms\n- Cache Components enabled\n- Partial Prefetching enabled\n\n\u25cb Compiling / ...\n GET / 200 in 626ms (next.js: 247ms, application-code: 379ms)\n GET /restructure-missing 404 in 668ms (next.js: 623ms, application-code: 45ms)\n GET / 200 in 87ms (next.js: 3ms, application-code: 83ms)\n",
+      "stopped_before_handoff": true
+    },
+    "d04_labs": {
+      "command": "node scripts/check-d04.mjs",
+      "result": "pass",
+      "output": "PASS 01 address families, loopback exchange, serialization bound: ok\nPASS 02 numeric lookup and explicit cache/family models: ok\nPASS 03 half-close reply; explicit RST -> ECONNRESET; idle timeout needs destroy: ok\nPASS 04 1056 partitions; UTF-8, empty frames, bounds, EOF and terminal states: ok\nPASS 05 one loopback datagram; duplicate/gap accounting model: ok\nPASS 06 TLS1.3 + ALPN; trusted CA success; wrong name and untrusted CA refused: ok\nPASS 07 URL components, repeated keys, origins and octet length: ok\nPASS 08 HTTP refusal; short length and missing zero chunk incomplete; close-delimited complete: ok\nPASS 09 occupied pool queues; queued abort not sent; consumption permits reuse; complete 404: ok\nPASS 10 exact-tag 304; fixed range 206; stale If-Range full 200; unsatisfied 416: ok\nPASS 11 untrusted assertion ignored; explicit trust and hop-field model: ok\nPASS 12 h2 zero stream window blocks DATA; HEADERS progress; window update releases; reset isolated: ok\nPASS 13 model only: independent stream ordering; shared budget can still stall: ok\nPASS 14 426 + required Upgrade/Connection headers, complete empty HTTP refusal; actual 101, fragmented text + ping/masked pong, clean 1000 close: ok\nPASS 15 SSE bytewise BOM/CRLF/UTF-8 grammar; actual HTTP cursor replay, partial tail, abort cleanup: ok\nPASS 16 one bounded opaque envelope; truncation and final-status model: ok\nPASS 17 AbortSignal after full receipt preserves action; response close cleanup; shared budget: ok\nPASS 18 23 evidence cases: explicit complete/incomplete; missing or invalid completion remains unknown: ok\n18/18 educational labs passed\n"
+    },
+    "mermaid_validation": {
+      "command": "npm run visuals:check -- handbook/domains",
+      "result": "pass",
+      "output": "\n> visuals:check\n> node scripts/visuals.mjs check handbook/domains\n\nOK  handbook/domains/01-computer-science-foundations/assets/01-cost-models-and-correctness/resize-cost-trace.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/02-linear-and-associative-data-structures/ring-buffer-wraparound.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/dependency-readiness.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/03-trees-heaps-and-graphs/heap-index-relationships.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/04-algorithmic-problem-solving/lower-bound-interval-trace.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/06-computer-architecture-and-performance/sequential-critical-path.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/07-operating-systems-and-scheduling/scheduler-state-transitions.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/08-memory-models-and-management/reachability-and-cycles.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/09-file-systems-and-io/bounded-buffer-feedback.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/10-concurrent-execution/await-race-interleaving.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/11-liveness-and-coordination/circular-wait.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/12-state-machines-and-formal-reasoning/job-attempt-state-machine.mmd (1 Mermaid block)\nOK  handbook/domains/01-computer-science-foundations/assets/13-backend-case-study-workshop/outcome-versus-caller-knowledge.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/02-variables-scope-and-closures/closure-binding-sharing.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/03-functions-and-invocation/receiver-at-call-site.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/04-objects-prototypes-and-classes/prototype-property-lookup.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/05-collections-iteration-and-data-handling/sorted-array-shared-elements.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/06-modules-and-package-boundaries/live-import-versus-snapshot.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/07-exceptions-errors-and-resource-lifetimes/finally-completion-replacement.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-adoption.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/08-promises-and-async-await/promise-reaction-order.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/09-asynchronous-composition-and-cancellation/abort-after-remote-effect.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/10-iteration-streams-and-event-abstractions/paced-consumer.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/11-typescript-type-system-fundamentals/structural-assignment.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/12-unions-narrowing-and-domain-modeling/control-flow-narrowing.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/conditional-distribution.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/13-generics-constraints-and-advanced-types/generic-key-value-relation.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/14-typescript-modules-configuration-and-interop/type-emit-runtime-boundaries.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/15-runtime-validation-and-boundary-safety/runtime-parser-boundary.mmd (1 Mermaid block)\nOK  handbook/domains/02-javascript-typescript/assets/16-backend-language-case-studies-and-transfer/promise-versus-domain-rejection.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/01-runtime-architecture-and-execution-boundaries/runtime-responsibility-boundaries.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/02-startup-configuration-and-runtime-identity/cwd-versus-module-base.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/03-event-loop-and-io-lifecycle/async-io-handoff.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/04-scheduling-queues-and-timers/entry-context-order.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/05-eventemitter-and-callback-contracts/listener-invocation-versus-completion.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/06-buffers-bytes-and-text-encoding/buffer-view-and-copy.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/07-filesystem-io-and-resource-ownership/handle-read-and-release.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/08-readable-and-writable-stream-mechanics/write-false-admission.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/09-pipelines-transforms-and-cancellation/wait-versus-pipeline-abort.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/10-native-asynchronous-work-and-thread-pool-saturation/shared-native-pool.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/11-worker-threads-and-data-ownership/clone-transfer-share.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/12-child-processes-ipc-and-cluster-boundaries/ipc-send-versus-result.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/13-module-resolution-and-runtime-loading/esm-url-cache-identity.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/memory-counter-overlap.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/14-v8-execution-memory-and-garbage-collection/reachable-retention-and-release.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/15-async-context-and-diagnostic-causality/emitter-context-capture.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/16-runtime-failures-and-graceful-shutdown/drain-versus-forced-cutoff.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/assets/17-runtime-diagnostics-and-measurement/elu-is-not-process-cpu.mmd (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md (1 Mermaid block)\nOK  handbook/domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/01-network-paths-and-addressing/success-boundaries.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/02-dns-and-service-discovery/cache-and-connection-lifetimes.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/flow-and-congestion-limits.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/half-close-and-reset.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/03-tcp-delivery-and-connection-lifecycle/handshake-and-byte-acknowledgment.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/04-framing-and-incremental-parsers/parser-terminal-states.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/05-udp-loss-and-path-mtu/datagram-gaps-and-reordering.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/identity-and-authorization-boundaries.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/06-tls-identity-and-negotiation/tls13-server-authenticated-handshake.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/07-http-semantics-and-representations/accepted-versus-completed.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/08-http1-framing-and-server-lifetimes/response-framing-at-eof.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/09-http-clients-and-connection-pools/pool-response-ownership.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/10-caching-validation-and-ranges/resume-representation-identity.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/11-proxies-routing-and-trust-boundaries/proxy-hop-trust.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/12-http2-streams-and-flow-control/stream-and-connection-credit.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/http-version-dependencies.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/13-quic-and-http3-trade-offs/quic-stream-ordering.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/14-websocket-sessions-and-control/fragmented-message-and-control.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/15-server-sent-events-and-resumption/sse-dispatch-and-replay.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/compatibility-directions.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/16-rpc-envelopes-and-protocol-evolution/grpc-final-status.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/17-deadlines-retries-and-uncertain-outcomes/timeout-and-unknown-outcome.mmd (1 Mermaid block)\nOK  handbook/domains/04-network-protocol-engineering/assets/18-network-diagnostics-and-case-studies/evidence-before-root-cause.mmd (1 Mermaid block)\nOK  handbook/domains/05-api-engineering/assets/01-api-contracts-and-rest/state-boundaries.mmd (1 Mermaid block)\nOK  handbook/domains/05-api-engineering/assets/01-api-contracts-and-rest/transition-change.mmd (1 Mermaid block)\nOK  handbook/domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.mmd (1 Mermaid block)\nOK  handbook/domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.mmd (1 Mermaid block)\nOK  handbook/domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.mmd (1 Mermaid block)\n\nValidation passed: checked 79 Mermaid blocks across 216 targets.\n"
+    },
+    "visualization_smoke": {
+      "command": "npm run visuals:smoke",
+      "result": "pass",
+      "output": "\n> visuals:smoke\n> node scripts/check-visuals.mjs\n\nDisposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-T81WTB\ntcp-handshake: PNG 507 x 357, 16388 bytes\nevent-loop-scheduling: PNG 236 x 725, 30572 bytes\nrequest-lifecycle: PNG 451 x 536, 25604 bytes\nMarkdown: 3 fences validated; 3 relative SVG image references resolve.\nMath: KaTeX typeset output verified with an explicit HTML-label config.\nRefusal checks: invalid fence reports block/line; missing browser exits 2.\nPASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-T81WTB; remove only this directory after review.\n"
+    },
+    "preservation": {
+      "baseline": "aa3114ff357fd297a95f6a3fe32382abc3a2bb53",
+      "moved_files": 341,
+      "byte_identical": 306,
+      "markdown_path_or_tooling_only": 33,
+      "state_path_only": 1,
+      "application_path_config": 1,
+      "approval_and_tracking_values_unchanged_except_paths": true
+    },
+    "examples": [
+      {
+        "command": "node handbook/domains/05-api-engineering/examples/c01/contract-traces.mjs",
+        "exit_code": 0,
+        "stdout": "A: guided and conventional -> cancelled\nB guided: /cancellation-requests/R41 -> cancelled\nB conventional: /reservations/R41/cancellation -> retired-target\nB unavailable: no-action\nB stale control: state-refusal\nB unsupported control: refused locally\n",
+        "stderr": ""
+      },
+      {
+        "command": "node handbook/domains/05-api-engineering/examples/c01/correctness-boundaries.mjs",
+        "exit_code": 0,
+        "stdout": "malformed/invalid: refused; effects=0\nunqualified retry: effects=2; replay agreement: effects=1\nsplit check/write: stale overwrite; atomic condition: second refused\nper-object versions: both pass; shared capacity violated\n",
+        "stderr": ""
+      },
+      {
+        "command": "node handbook/domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs",
+        "exit_code": 0,
+        "stdout": "models: coherent H8 -> B6 conversion keeps 1 allocation; split conversion can lose it\nownership: transfer keeps H8 identity/deadline; former owner cannot confirm\naffordance: same target survives; changed authority or deadline refuses stale control\nrestoration: R41 visible again but cancelled; pending obligation and Bob allocation unchanged\nshared invariant: one common admission refuses second claim; independent snapshots admit 2\naggregate: per-item R41 accepted/R42 refused; all-or-none alternative refuses group\nknowledge: timeout matches no effect and accepted cancellation; retained I9/C9 evidence distinguishes them\n",
+        "stderr": ""
+      },
+      {
+        "command": "node handbook/domains/05-api-engineering/examples/c02/reservation-model.mjs",
+        "exit_code": 0,
+        "stdout": "normal: R41 held -> confirmed -> cancelled; refund pending -> settled\nboundaries: deadline/authority/payment/terminal/cutoff refused unchanged; expiry releases only a hold\nfinite table: 720 state/event/actor/time/payment combinations match declared guards\ncounterexample: raw status update says cancelled but has no refund obligation\n",
+        "stderr": ""
+      }
+    ],
+    "browser": {
+      "status": 200,
+      "title": "Create Next App",
+      "heading": "To get started, edit the page.tsx file.",
+      "images": [
+        {
+          "source": "/next.svg",
+          "loaded": true
+        },
+        {
+          "source": "/vercel.svg",
+          "loaded": true
+        }
+      ],
+      "errors": []
+    },
+    "historical_c02_audit": {
+      "baseline": "dfe397acbaed6326190dbda1e12b76c54854c6ed",
+      "protected_files_byte_identical": 274,
+      "prior_domain_objects_external_project_decisions_history_preserved": true,
+      "approved_profiles_sequence_unchanged": true,
+      "canonical_counts": {
+        "authored": 68,
+        "approved": 67,
+        "in_review": 1,
+        "unstarted_D05": 23,
+        "approved_charters": 20
+      },
+      "named_case_and_exercise_inventory": {
+        "normal": 18,
+        "adverse": 18,
+        "exercises_with_rubrics": 18,
+        "integrated": 1
+      },
+      "reasoned_rows": 18,
+      "execution_hashes_match": true,
+      "svg_accessibility_structure": [
+        {
+          "source": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.mmd",
+          "svg": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.svg",
+          "viewBox": "0 0 295.125 336"
+        },
+        {
+          "source": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.mmd",
+          "svg": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/cancellation-effects.svg",
+          "viewBox": "0 0 380.375 446.79998779296875"
+        },
+        {
+          "source": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.mmd",
+          "svg": "domains/05-api-engineering/assets/02-resources-operations-and-workflows/relationships.svg",
+          "viewBox": "4 4 360 395.60003662109375"
+        }
+      ],
+      "limits": "Structural audit and retained evidence consistency; not automated depth grading, implementation correctness, external review or learner acceptance."
+    },
+    "http": {
+      "home": 200,
+      "next_svg": 200,
+      "missing_route": 404
+    },
+    "exports": {
+      "source": "handbook/domains/05-api-engineering/assets/02-resources-operations-and-workflows/allocation-lifecycle.mmd",
+      "svg": "/tmp/handbook-allocation-lifecycle.svg",
+      "png": "/tmp/handbook-allocation-lifecycle.png",
+      "result": "pass",
+      "visual_inspection": "actual PNG inspected: labels, transitions and bounds readable"
+    },
+    "whitespace": {
+      "command": "git -c core.whitespace=-blank-at-eol diff --cached --check",
+      "result": "pass",
+      "note": "Existing two-space Markdown hard breaks remain; default diff --check flags the preserved hard break on a path-edited D01 metadata line."
+    },
+    "markdown_links": {
+      "checked_internal_links": 1954,
+      "current_issues": [],
+      "pre_existing_issues": [],
+      "new_issues": []
+    },
+    "review": {
+      "standards": "0 findings",
+      "spec": "0 remaining findings; P2 historical audit command fixed and independently rechecked"
+    }
+  },
+  "initial_issues_resolved": [
+    "Set turbopack.root to the application directory after multiple-lockfile warning.",
+    "Moved disposable nested build output from the initial inferred-root build outside the repository; final lint passes without source suppressions.",
+    "Excluded inline-code Markdown examples and ignored generated output from link checking."
+  ]
+}

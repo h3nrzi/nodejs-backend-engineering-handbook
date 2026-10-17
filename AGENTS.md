@@ -1,6 +1,6 @@
 # Handbook agent operating contract — Workflow V2
 
-Read [Workflow](docs/workflow.md), [Tracking](tracking/state.json), [Tracker](TRACKER.md), [Coverage matrix](projects/coverage-matrix.md), then selected domain lessons and Charter.
+Read [Workflow](docs/workflow.md), [Tracking](handbook/tracking/state.json), [Tracker](TRACKER.md), [Coverage matrix](handbook/projects/coverage-matrix.md), then selected domain lessons and Charter.
 
 ## Nonnegotiable boundaries
 
@@ -11,7 +11,7 @@ Read [Workflow](docs/workflow.md), [Tracking](tracking/state.json), [Tracker](TR
 5. The learner approves all consequential product and technical decisions. ChatGPT guides, explains trade-offs, reviews consistency and learning evidence; Codex proposes and implements.
 6. Preserve versioned evidence and avoid claiming unrun tests, implementation, verified learning or provider qualification.
 7. D01–D04 curricula, all 66 lessons and all 20 educational Charters are editorially approved; D04’s educational authoring gate closed on 2026-10-15. D05 curriculum and depth specification are approved_by_learner as of 2026-10-16 (CD01–CD07); 25 chapters; C01 editorially approved_by_learner on 2026-10-16, C02 complete draft in_review, C03–C25 not_started, zero D05 Charters. C02 authoring is explicitly authorized; stop before C03 pending explicit Product Owner editorial approval and authorization. C01 submitted text/evidence are preserved; its later editorial-approval record supersedes historical pending labels. MediaForge D03-P02 has approved external Module 01 planning through tickets; implementation/tests and learner competence remain unverified.
-8. For every authoring milestone reconcile `tracking/state.json`, `TRACKER.md`, domain indexes, and `projects/coverage-matrix.md`.
+8. For every authoring milestone reconcile `handbook/tracking/state.json`, `TRACKER.md`, domain indexes, and `handbook/projects/coverage-matrix.md`.
 9. Do not create technical architecture or force use of a Node.js mechanism just for educational coverage; domain challenges belong in the Charter, solution selection belongs to Codex per module.
 
 Use actual installed skill names. See [Role ownership](docs/module-driven-engineering.md) and [Quality gates](docs/quality-gates.md).

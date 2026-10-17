@@ -14,9 +14,9 @@
 
 ### A. Confirmed stale editorial metadata (priority high)
 
-1. `domains/01-computer-science-foundations/curriculum.md` describes Chapter 01 as a **draft**, although the canonical state records all 14 D01 lessons as editorially approved.
-2. `domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md` itself says **drafted; awaiting learner review**. This conflicts with the current tracker. Treat it as an editorial-status discrepancy requiring reconciliation against the approval record, **not** as evidence that approval never happened.
-3. `domains/03-nodejs-internals/curriculum.md` includes historical **approved PRDs** and `implementation: not_started` language. Workflow V2 treats those former PRD drafts as superseded by approved educational **Charters**. D03-P02 MediaForge has separately progressed through approved external Module 01 ticket planning; application implementation remains unverified.
+1. `handbook/domains/01-computer-science-foundations/curriculum.md` describes Chapter 01 as a **draft**, although the canonical state records all 14 D01 lessons as editorially approved.
+2. `handbook/domains/01-computer-science-foundations/lessons/01-cost-models-and-correctness.md` itself says **drafted; awaiting learner review**. This conflicts with the current tracker. Treat it as an editorial-status discrepancy requiring reconciliation against the approval record, **not** as evidence that approval never happened.
+3. `handbook/domains/03-nodejs-internals/curriculum.md` includes historical **approved PRDs** and `implementation: not_started` language. Workflow V2 treats those former PRD drafts as superseded by approved educational **Charters**. D03-P02 MediaForge has separately progressed through approved external Module 01 ticket planning; application implementation remains unverified.
 
 **Action:** Reconcile historical status labels without changing lesson content or retroactively redefining approval. Keep legacy text discoverable and explicitly historical where necessary.
 

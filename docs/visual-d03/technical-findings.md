@@ -4,7 +4,7 @@ This visual pass preserves approved D03 text. The following concern does not aut
 
 ## F01 — Explicit transfer lists and untransferable Buffer storage
 
-Location: [C11 §4, Buffer pooling matters](../../domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md). The statement that a transfer attempt can instead result in cloning needs a sharper distinction between **posting without transferring**, **an explicit transfer list**, and historical runtime behavior.
+Location: [C11 §4, Buffer pooling matters](../../handbook/domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md). The statement that a transfer attempt can instead result in cloning needs a sharper distinction between **posting without transferring**, **an explicit transfer list**, and historical runtime behavior.
 
 The [Node v22.16.0 postMessage history](https://nodejs.org/download/release/v22.16.0/docs/api/worker_threads.html#portpostmessagevalue-transferlist) says that since v21.0.0 an untransferable object in the transfer list throws. The same release's markAsUntransferable example catches DataCloneError, while its Buffer considerations also use broad cloning language. That combination can mislead readers into expecting fallback cloning for an explicit untransferable transfer-list entry. Current Context7 v24 documentation independently returns the throwing contract.
 

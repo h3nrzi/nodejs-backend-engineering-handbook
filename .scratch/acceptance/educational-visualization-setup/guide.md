@@ -93,7 +93,7 @@ Expected: first command exits 1 with block 1 near line 3 and a parse error; seco
 Read [visual standards](../../../docs/visual-authoring.md) and [tooling limitations](../../../docs/visual-tooling.md#session-discovery-and-limitations). Expected: purpose-driven diagram choice with no image quota, preserved sources, captions/alternatives, relative paths, technical review and explicit tool limitations. Check that approved lessons/statuses and D05 remain untouched:
 
 ```sh
-git diff -- domains tracking/state.json TRACKER.md projects/coverage-matrix.md
+git diff -- domains handbook/tracking/state.json TRACKER.md handbook/projects/coverage-matrix.md
 ```
 
 Expected: no output. `imagegen` is already installed and its built-in tool was exposed, but live raster generation, account quotas and scientific accuracy are not verified. Do not add a key/paid fallback as part of this evaluation. Math test uses a separate temporary HTML-label config; portable default remains SVG text. Agent preflight: documentation and protected-path review passed. Your evaluation: `not_run`.

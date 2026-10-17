@@ -39,7 +39,7 @@ Use `not_started`, `in_progress`, `drafted`, `in_review`, `approved_by_learner`,
 
 ## Tracking integrity
 
-Maintain `tracking/state.json`, `TRACKER.md`, domain indexes, catalogs and competency matrix in agreement. Deleted legacy files must have no active references. Historical interview archives may remain explicitly superseded, but are not current authority.
+Maintain `handbook/tracking/state.json`, `TRACKER.md`, domain indexes, catalogs and competency matrix in agreement. Deleted legacy files must have no active references. Historical interview archives may remain explicitly superseded, but are not current authority.
 ## Competency assessment boundary
 
 Follow [learning evidence rules](learning-evidence.md). Content editorial approval, external implementation evidence, and the learner's demonstrated competence are separate statuses. Assessments remain deferred until the learner begins that phase.

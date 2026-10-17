@@ -30,6 +30,7 @@ def check(files):
             continue
         # Fenced sample paths are not active Markdown links.
         clean = re.sub(r'^```[^\n]*\n.*?^```\s*$', '', text, flags=re.M | re.S)
+        clean = re.sub(r'(`+).*?\1', '', clean, flags=re.S)
         destinations = re.findall(r'!?\[[^\]\n]*\]\(([^)\n]+)\)', clean)
         destinations += re.findall(r'^\[[^\]\n]+\]:\s*(\S+)', clean, re.M)
         for raw in destinations:
@@ -57,7 +58,7 @@ def check(files):
                     issues.append((source, target, 'missing anchor'))
     return issues, count
 
-tracked = git('ls-files', '-z').split('\0')
+tracked = git('ls-tree', '-r', '--name-only', '-z', 'HEAD').split('\0')
 baseline = {}
 for name in tracked:
     if name:
@@ -65,9 +66,9 @@ for name in tracked:
             baseline[name] = git('show', f'HEAD:{name}') if name.endswith('.md') else ''
         except subprocess.CalledProcessError:
             pass
-current = {p.relative_to(ROOT).as_posix(): p.read_text() if p.suffix == '.md' else ''
-           for p in ROOT.rglob('*') if p.is_file() and '.git' not in p.parts
-           and 'node_modules' not in p.parts}
+names = git('ls-files', '--cached', '--others', '--exclude-standard', '-z').split('\0')
+current = {name: (ROOT / name).read_text() if name.endswith('.md') else ''
+           for name in names if name and (ROOT / name).is_file()}
 old, _ = check(baseline)
 issues, count = check(current)
 new = [issue for issue in issues if issue not in old]

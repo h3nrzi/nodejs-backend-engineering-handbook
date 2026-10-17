@@ -10,8 +10,8 @@ Status: Phase 1 structural audit; no curriculum/Charter rewrites.
 - D03: 18 editorially approved lessons, 5 approved educational Project Charters.
 - D04–D16 are future curriculum work, not completed lesson sets.
 - Workflow V2 already defines Handbook Charter ownership versus separate Codex product and implementation artifacts.
-- `tracking/state.json` is the canonical tracking state and `TRACKER.md` its reader-oriented projection.
-- `projects/coverage-matrix.md` records instructional coverage, not verified learner mastery.
+- `handbook/tracking/state.json` is the canonical tracking state and `TRACKER.md` its reader-oriented projection.
+- `handbook/projects/coverage-matrix.md` records instructional coverage, not verified learner mastery.
 
 ## Findings and prioritized actions
 
@@ -30,7 +30,7 @@ Status: Phase 1 structural audit; no curriculum/Charter rewrites.
 | Product Discovery, Final PRD, Module Plan | Separate project repository | Direct link, explicit owner approval/evidence |
 | Technical Discovery, ADR, specification, ticket files, tests | Separate project repository | Links and verified status only |
 | Learner study/assessment | Handbook learning tracking | Evidence-linked, default unassessed |
-| Live progress | `tracking/state.json` | `TRACKER.md` projection and project registry |
+| Live progress | `handbook/tracking/state.json` | `TRACKER.md` projection and project registry |
 
 ## Non-goals of this phase
 

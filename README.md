@@ -10,24 +10,26 @@ A progressive learning curriculum and portfolio **Project Charter** catalog, usi
 - D04: curriculum, 18/18 lessons, six concepts and 6/6 educational Charters editorially approved; educational authoring gate closed 2026-10-15.
 - **68 authored lessons: 67 editorially approved and D05-C02 in_review. All 20 educational Charters remain approved; zero verified implemented projects or learner assessments.**
 - MediaForge (D03-P02) has externally approved planning through its Module 01 eight-ticket plan; **implementation, tests and learner mastery are not verified**. Other projects have no recorded implementation progress.
-- D05: [25-chapter curriculum](domains/05-api-engineering/curriculum.md) and [depth contract](domains/05-api-engineering/depth-specification.md) approved_by_learner. [Chapter 01](domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) editorially approved with [approval evidence](domains/05-api-engineering/evidence/c01/editorial-approval.md); [Chapter 02 complete draft](domains/05-api-engineering/lessons/02-resources-operations-and-workflow-modeling.md) in_review with [review evidence](domains/05-api-engineering/evidence/c02/review-guide.md); C03–C25 not_started, zero D05 Charters. Stop before C03 pending explicit Product Owner approval and authorization. D06–D16 not_started.
+- D05: [25-chapter curriculum](handbook/domains/05-api-engineering/curriculum.md) and [depth contract](handbook/domains/05-api-engineering/depth-specification.md) approved_by_learner. [Chapter 01](handbook/domains/05-api-engineering/lessons/01-apis-as-contracts-and-rest.md) editorially approved with [approval evidence](handbook/domains/05-api-engineering/evidence/c01/editorial-approval.md); [Chapter 02 complete draft](handbook/domains/05-api-engineering/lessons/02-resources-operations-and-workflow-modeling.md) in_review with [review evidence](handbook/domains/05-api-engineering/evidence/c02/review-guide.md); C03–C25 not_started, zero D05 Charters. Stop before C03 pending explicit Product Owner approval and authorization. D06–D16 not_started.
 
 ## Navigation
 
-[Architecture](docs/information-architecture.md) · [Audit](docs/restructure-audit-2026-10-15.md) · [MediaForge registry](projects/implementations/mediaforge.md) · [AGENTS](AGENTS.md) · [Roadmap](ROADMAP.md) · [Tracker](TRACKER.md) · [Machine state](tracking/state.json) · [Workflow](docs/workflow.md) · [Module-driven ownership](docs/module-driven-engineering.md) · [Coverage matrix](projects/coverage-matrix.md)
+[Repository layout and commands](docs/repository-layout.md) · [Next.js application](app/README.md)
+
+[Architecture](docs/information-architecture.md) · [Audit](docs/restructure-audit-2026-10-15.md) · [MediaForge registry](handbook/projects/implementations/mediaforge.md) · [AGENTS](AGENTS.md) · [Roadmap](ROADMAP.md) · [Tracker](TRACKER.md) · [Machine state](handbook/tracking/state.json) · [Workflow](docs/workflow.md) · [Module-driven ownership](docs/module-driven-engineering.md) · [Coverage matrix](handbook/projects/coverage-matrix.md)
 
 ### Domain catalogs
 
-- [D01 — Computer Science Foundations](domains/01-computer-science-foundations/projects/catalog.md)
-- [D02 — JavaScript & TypeScript](domains/02-javascript-typescript/projects/catalog.md)
-- [D03 — Node.js Internals](domains/03-nodejs-internals/projects/catalog.md)
-- [D04 — Network & Protocol Engineering](domains/04-network-protocol-engineering/README.md) — editorially approved; [review guide](domains/04-network-protocol-engineering/evidence/review-guide.md)
-- [D05 — API Engineering](domains/05-api-engineering/README.md) — curriculum and C01 approved; C02 in_review; stop before C03.
+- [D01 — Computer Science Foundations](handbook/domains/01-computer-science-foundations/projects/catalog.md)
+- [D02 — JavaScript & TypeScript](handbook/domains/02-javascript-typescript/projects/catalog.md)
+- [D03 — Node.js Internals](handbook/domains/03-nodejs-internals/projects/catalog.md)
+- [D04 — Network & Protocol Engineering](handbook/domains/04-network-protocol-engineering/README.md) — editorially approved; [review guide](handbook/domains/04-network-protocol-engineering/evidence/review-guide.md)
+- [D05 — API Engineering](handbook/domains/05-api-engineering/README.md) — curriculum and C01 approved; C02 in_review; stop before C03.
 
 
 ## Learning versus project delivery
 
-The Handbook separates [curriculum and competency evidence](docs/learning-evidence.md) from [external engineering progress](projects/implementations/README.md). Learner-approved lessons/Charters do not prove mastery; approved project plans do not prove implemented behavior. [Information architecture](docs/information-architecture.md) defines these boundaries.
+The Handbook separates [curriculum and competency evidence](docs/learning-evidence.md) from [external engineering progress](handbook/projects/implementations/README.md). Learner-approved lessons/Charters do not prove mastery; approved project plans do not prove implemented behavior. [Information architecture](docs/information-architecture.md) defines these boundaries.
 
 ## Curriculum quality audit
 

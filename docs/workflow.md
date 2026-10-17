@@ -33,6 +33,6 @@ Cross-cutting changes require traceability, conflict review and learner approval
 
 ## Historical migration
 
-D01–D03 pre-V2 documents formerly called PRDs are superseded by the 14 learner-approved educational Charters; original detailed drafts remain recoverable via Git history. Historical MediaForge Product/Technical Discovery archives remain educational artifacts **only**, not authority for a fresh implementation. The historical restart reset earlier implementation claims; since then, MediaForge has reached explicitly learner-approved planning through the Module 01 ticket plan. Implementation and application tests remain unverified. See [the current project registry](../projects/implementations/mediaforge.md). No approved curriculum chapters or learning assessments are reset.
+D01–D03 pre-V2 documents formerly called PRDs are superseded by the 14 learner-approved educational Charters; original detailed drafts remain recoverable via Git history. Historical MediaForge Product/Technical Discovery archives remain educational artifacts **only**, not authority for a fresh implementation. The historical restart reset earlier implementation claims; since then, MediaForge has reached explicitly learner-approved planning through the Module 01 ticket plan. Implementation and application tests remain unverified. See [the current project registry](../handbook/projects/implementations/mediaforge.md). No approved curriculum chapters or learning assessments are reset.
 
 For role details see `docs/module-driven-engineering.md`.
