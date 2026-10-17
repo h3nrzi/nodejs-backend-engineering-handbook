@@ -14,7 +14,7 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 - Next.js and the existing repository structure are established. The web application belongs in `client/`; `handbook/` remains authoritative for the Handbook course. Follow the resolved authoring and publishing workflow indexed below; first-release format and tooling selections remain open.
 - Follow the resolved audience and learning-context decision indexed below. Remaining first-release scope decisions are open; do not assume JavaScript/TypeScript experience or a backend-engineering-only product.
 - Launch timeline, budget, monetization, hosting, languages, and other operating constraints have no fixed commitments yet.
-- Capability priorities established by resolved tickets constrain later release decisions. The detailed boundaries of courses, educational materials, learning paths, personalization, exercises, assessments, and learner progress remain to be specified by the relevant child tickets.
+- Capability priorities and product boundaries established by resolved tickets constrain later release decisions. Select first-release capabilities and specify their delivery contracts through the remaining child tickets; conceptual support does not commit the release to every capability.
 - Consult the wayfinder, grilling, and domain-modeling skills when working decisions. Use prototype for experience questions and research when a specific decision needs external facts. Verify library/API behavior using Context7 and relevant repository instructions when those questions arise.
 - Use root `GLOSSARY.md` for settled language. Preserve the Handbook's distinction between editorial approval, project delivery, and learner competency; its existing tracking state is not learner progress.
 - Planning assets belong beside this map: `blueprint.md` and `spec.md` when ready to author. Link supporting research and prototypes from the tickets that use them. The map indexes resolutions rather than duplicating their detail.
@@ -26,11 +26,12 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 - [Choose the first learner segment and learning outcome](issues/01-first-learner-and-outcome.md#answer): Serve self-paced learners across subjects through structured courses and visible progress; course outcomes stay course-specific, and real-learner validation remains open.
 - [Define courses, educational materials, and learning paths](issues/02-course-and-learning-path-model.md#answer): Independent courses contain course-specific lessons using reusable materials; paths connect courses, ordering is advisory by default, and completion remains distinct from competency.
 - [Choose the course authoring and publishing workflow](issues/03-authoring-and-publishing.md#answer): Support varied authoring sources with explicit, version-specific review and publication; independently adopt shared revisions, preserve history, and enforce retirement and access rules during recovery.
+- [Choose the learner journey and evidence of learning](issues/04-learner-experience-and-evidence.md#answer): Prioritize self-paced continuity and explicit requirement fulfillment; share qualifying course progress across paths while distinguishing current fulfillment, historical completion, obstacles, and assessed competency.
 
 ## Not yet specified
 
 - Which audience assumptions will need validation beyond the owner's discovery conversation, and what evidence or access will make that validation possible.
-- Capability-specific rules and feasibility questions exposed by selected practice, assessment, personalization, or progress experiences; their shape depends on the learner journey and release boundary.
+- Activity-specific designs, assessment rubrics, and further feasibility dependencies that cannot yet be specified without selected release capabilities and actual course activities; revisit advanced adaptive personalization only when its educational value and evidence justify it.
 - Material-specific ingestion, conversion, and compatibility problems that become visible after first-release material formats and authoring sources are selected.
 - External-provider qualification, content migration detail, and jurisdiction-specific obligations that may emerge from the release's actual data, access, and operating decisions.
 - The depth of subsequent product phases and the circumstances under which independent instructors become relevant; revisit after the first learner proposition and release boundary are clear.
