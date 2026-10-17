@@ -11,7 +11,7 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 
 - This is a planning effort. The platform spans subjects, audiences, and experience levels; the Node.js Backend Engineering Handbook is its first educational content source and initial use case.
 - The owner and team initially publish and manage courses under one organization. Independent instructors are a future possibility to evaluate when relevant to the product phases.
-- Next.js and the existing repository structure are established. The web application belongs in `client/`; `handbook/` remains authoritative for the Handbook course. Other courses' formats and authoring workflows remain open.
+- Next.js and the existing repository structure are established. The web application belongs in `client/`; `handbook/` remains authoritative for the Handbook course. Follow the resolved authoring and publishing workflow indexed below; first-release format and tooling selections remain open.
 - Follow the resolved audience and learning-context decision indexed below. Remaining first-release scope decisions are open; do not assume JavaScript/TypeScript experience or a backend-engineering-only product.
 - Launch timeline, budget, monetization, hosting, languages, and other operating constraints have no fixed commitments yet.
 - Capability priorities established by resolved tickets constrain later release decisions. The detailed boundaries of courses, educational materials, learning paths, personalization, exercises, assessments, and learner progress remain to be specified by the relevant child tickets.
@@ -25,12 +25,13 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 
 - [Choose the first learner segment and learning outcome](issues/01-first-learner-and-outcome.md#answer): Serve self-paced learners across subjects through structured courses and visible progress; course outcomes stay course-specific, and real-learner validation remains open.
 - [Define courses, educational materials, and learning paths](issues/02-course-and-learning-path-model.md#answer): Independent courses contain course-specific lessons using reusable materials; paths connect courses, ordering is advisory by default, and completion remains distinct from competency.
+- [Choose the course authoring and publishing workflow](issues/03-authoring-and-publishing.md#answer): Support varied authoring sources with explicit, version-specific review and publication; independently adopt shared revisions, preserve history, and enforce retirement and access rules during recovery.
 
 ## Not yet specified
 
 - Which audience assumptions will need validation beyond the owner's discovery conversation, and what evidence or access will make that validation possible.
 - Capability-specific rules and feasibility questions exposed by selected practice, assessment, personalization, or progress experiences; their shape depends on the learner journey and release boundary.
-- Material-specific ingestion, conversion, and compatibility problems that become visible after supported material needs and publishing workflows are selected.
+- Material-specific ingestion, conversion, and compatibility problems that become visible after first-release material formats and authoring sources are selected.
 - External-provider qualification, content migration detail, and jurisdiction-specific obligations that may emerge from the release's actual data, access, and operating decisions.
 - The depth of subsequent product phases and the circumstances under which independent instructors become relevant; revisit after the first learner proposition and release boundary are clear.
 

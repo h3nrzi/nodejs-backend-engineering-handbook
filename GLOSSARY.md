@@ -61,6 +61,30 @@ A learner's ability to apply relevant knowledge or skills, established through a
 **Editorial approval**:
 A judgment that educational content is ready for publication. It is separate from individual learner progress, completion, and demonstrated competency.
 
+**Author**:
+A responsibility for preparing and revising educational content. The same person may also act as publisher.
+
+**Publisher**:
+A responsibility for reviewing, approving, publishing, and withdrawing educational content. It does not require a different person from the author.
+
+**Draft**:
+Educational content or changes being prepared for publication, unavailable to learners until explicitly published.
+
+**Published course version**:
+A coherent, reviewed course structure and its selected educational material revisions made available together through publication.
+
+**Publication recovery**:
+Explicit republication of a previously approved course version as a new publication event, subject to current publication eligibility and access restrictions.
+
+**Course retirement**:
+Withdrawal of a course from new discovery and enrollment while preserving access for existing learners and retaining historical learning records.
+
+**Material retirement**:
+Withdrawal of an educational material from selection for future publications while preserving its existing published uses.
+
+**Access removal**:
+Making affected educational content unavailable when necessary, with a recorded reason. It does not automatically delete historical learning records.
+
 **Course learning outcome**:
 What a learner is intended to know or be able to do through a particular course. Learning outcomes belong to individual courses rather than defining the platform's subject or audience.
 
