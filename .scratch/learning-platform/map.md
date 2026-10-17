@@ -30,6 +30,7 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 - [Choose the business and operating constraints for launch](issues/05-business-and-operating-constraints.md#answer): Plan a free, invited adult pilot for learners in Iran with a Persian RTL interface, accessibility and privacy requirements, and owner-led support; operating arrangement and spending approval remain follow-up decisions.
 
 - [Define the first release and later product phases](issues/06-first-release-and-phases.md#answer): Select repository-published self-paced study with learner-confirmed completion and revision history; allow a Handbook-first pilot, require multi-course/path validation before public rollout, and establish four evidence-led phases.
+- [Validate the first-release learner and publisher experience](issues/07-first-release-experience-prototype.md#answer): Accept ten Stitch screens as temporary visual references with approved learner behavior and a separate repository publisher workflow; document scope overrides and retain technical, implementation and pilot verification obligations.
 
 ## Not yet specified
 

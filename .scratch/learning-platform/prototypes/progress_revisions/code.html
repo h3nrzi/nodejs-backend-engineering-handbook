@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#d8e3fb","on-tertiary-fixed":"#2f1500","tertiary-fixed-dim":"#ffb77d","on-surface":"#111c2d","secondary-fixed":"#85f8c4","secondary-fixed-dim":"#68dba9","inverse-surface":"#263143","error-container":"#ffdad6","on-background":"#111c2d","error":"#ba1a1a","surface-container-high":"#dee8ff","on-error-container":"#93000a","secondary":"#006c4a","on-tertiary-container":"#ffcba3","on-error":"#ffffff","on-secondary-container":"#00714e","on-primary":"#ffffff","tertiary-fixed":"#ffdcc3","inverse-on-surface":"#ecf1ff","secondary-container":"#82f5c1","surface-container-lowest":"#ffffff","surface-tint":"#2151da","outline-variant":"#c4c5d7","surface-dim":"#cfdaf2","primary-fixed":"#dce1ff","on-primary-container":"#cad3ff","surface-variant":"#d8e3fb","surface-container-low":"#f0f3ff","on-tertiary":"#ffffff","tertiary":"#6b3700","inverse-primary":"#b7c4ff","on-primary-fixed":"#001551","primary":"#0037b0","on-tertiary-fixed-variant":"#6e3900","outline":"#747686","on-secondary":"#ffffff","on-secondary-fixed":"#002114","primary-container":"#1d4ed8","primary-fixed-dim":"#b7c4ff","surface-bright":"#f9f9ff","on-surface-variant":"#434655","surface":"#f9f9ff","background":"#f9f9ff","on-secondary-fixed-variant":"#005137","on-primary-fixed-variant":"#0039b5","tertiary-container":"#8d4b00","surface-container":"#e7eeff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-sm":"0.5rem","gutter-sm":"1rem",gutter:"1.5rem","space-xs":"0.25rem","margin-lg":"3rem","space-md":"1rem","gutter-lg":"2rem","space-xl":"2.5rem","margin-sm":"1rem",margin:"1.5rem","space-lg":"1.5rem"},fontFamily:{display:["Vazirmatn"],"label-lg":["Vazirmatn"],"headline-lg":["Vazirmatn"],"body-sm":["Vazirmatn"],"display-mobile":["Vazirmatn"],"headline-md":["Vazirmatn"],"body-md":["Vazirmatn"],"label-sm":["Vazirmatn"],"headline-lg-mobile":["Vazirmatn"],"label-md":["Vazirmatn"],"headline-sm":["Vazirmatn"],"body-lg":["Vazirmatn"]},fontSize:{display:["36px",{lineHeight:"54px",fontWeight:"800"}],"label-lg":["15px",{lineHeight:"22px",fontWeight:"600"}],"headline-lg":["28px",{lineHeight:"44px",fontWeight:"700"}],"body-sm":["14px",{lineHeight:"24px",fontWeight:"400"}],"display-mobile":["28px",{lineHeight:"42px",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"36px",fontWeight:"700"}],"body-md":["16px",{lineHeight:"28px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"16px",fontWeight:"500"}],"headline-lg-mobile":["22px",{lineHeight:"34px",fontWeight:"700"}],"label-md":["13px",{lineHeight:"20px",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"30px",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"32px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-lg mb-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary font-bold">روشن</span><span class="px-space-xs py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">سرفصل‌ها</span></div></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-surface-container text-primary font-bold rounded-lg"><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-all gap-space-sm bg-surface-container text-primary font-bold rounded-lg" data-path="syllabus-overview" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span>نمای کلی سرفصل‌ها</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="lesson-player" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span>محیط درس و آزمون</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="course-resources" href="#"><span class="material-symbols-outlined text-[20px]">attachment</span>منابع و مستندات</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all gap-space-sm font-label-md text-label-md" data-path="learner-notes" href="#"><span class="material-symbols-outlined text-[20px]">edit_note</span>یادداشت‌ها و نشانک‌ها</a></nav><div class="px-space-md pt-space-md"><div class="bg-surface p-space-md rounded-lg flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">سارا محمدی</span><span class="font-label-sm text-label-sm text-secondary">دعوت‌شده به پایلوت</span></div></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">جریان مطالعه پیوسته</span></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span><span class="material-symbols-outlined text-on-surface-variant text-[20px]">bookmark</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background"><div class="w-full px-gutter py-space-md"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow -->
+<div class="relative w-full overflow-hidden pb-space-xl">
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-12 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="breadcrumbs" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-space-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>یادگیری‌های من</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant rotate-180">chevron_left</span>
+<a class="hover:text-primary transition-colors" href="#">مدیریت تغییرات سرفصل</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant rotate-180">chevron_left</span>
+<span class="font-bold text-on-surface">راهنمای مهندسی بک‌اند با Node.js</span>
+</nav>
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+<span>سامانه ردیابی نسخه و تطبیق استاندارد مهارتی</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          پیشرفت و تغییرات دوره
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          سوابق احراز صلاحیت پیشین در برابر ویراست جدید محتوای علمی تطبیق داده شده است.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="text-right">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">نسخه ثبت‌شده گواهی</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">v1.1 (معتبر)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="text-right">
+<span class="block font-label-sm text-label-sm text-primary">نسخه سرفصل جاری</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">v2.0 (فعال)</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">new_releases</span>
+</div>
+</div>
+</div>
+<!-- Alert / Notice Banner (Restrained, Academic Dignity) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md mb-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start md:items-center gap-space-md pr-space-xs">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[26px]">update</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">به‌روزرسانی سرفصل دوره شناسایی شد</span>
+<span class="px-space-xs py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">تغییر ماژور</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            نسخه دوره از <span class="font-bold text-on-surface">v1.1</span> به <span class="font-bold text-primary">v2.0</span> ارتقا یافته است. دستاوردهای تاریخی شما کاملاً دست‌نخورده باقی مانده‌اند.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-auto">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+<span>شیوه‌نامه تغییرات</span>
+</button>
+</div>
+</div>
+<!-- Comparison and Dual-State Perspective -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Historical State Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">سوابق تاریخی قبلی</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>تکمیل الزامات در نسخه قبلی (۲ از ۲ درس ضروری در تاریخ ۱۲ بهمن ۱۴۰۲)</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            شما الزامات پیش‌نیاز نسخه v1.1 این دوره را با موفقیت پشت سر گذاشته بودید. سابقه تاریخی احراز صلاحیت شما همواره معتبر و محفوظ است و صدور مجدد آن تحت تأثیر آپدیت‌ها باطل نمی‌گردد.
+          </p>
+<!-- Historical Metric Mini-Display -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-around text-center">
+<div>
+<span class="block font-headline-md text-headline-md font-extrabold text-secondary">۱۰۰٪</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تکمیل نسخه v1.1</span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div>
+<span class="block font-headline-md text-headline-md font-extrabold text-on-surface">۲ از ۲</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مباحث الزامی وقت</span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div>
+<span class="block font-headline-md text-headline-md font-extrabold text-on-surface">۱۲ بهمن ۱۴۰۲</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ثبت نهایی شایستگی</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>وضعیت گواهی تاریخی: دارای اصالت و مهر دیجیتال سازمانی</span>
+</div>
+</div>
+<!-- Current Requirement Fulfillment Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">انطباق با الزامات جدید جاری</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">pending</span>
+<span>۲ از ۳ درس ضروری نسخه جاری</span>
+</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-xs">
+<div class="flex justify-between items-center text-on-surface font-label-md text-label-md">
+<span class="font-bold">درصد انطباق با استاندارد v2.0</span>
+<span class="font-bold text-primary">۶۷٪</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 67.7%; margin-right: 0;"></div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            یک درس ضروری جدید تحت عنوان «درس ۴: کار با جریان‌ها (Streams) و مدیریت رم» به دوره اضافه شده است. برای انطباق ۱۰۰٪ با ویرایش جاری دوره، کافی است این درس را مطالعه کرده و دکمه «انجام دادم» را ثبت کنید.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">info</span>
+<span>تطبیق با نسخه جدید اختیاری است اما نشان تخصصی شما را به‌روز می‌کند.</span>
+</div>
+</div>
+</div>
+<!-- Targeted Action Hero Card (Bento Mosaic Focus) -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-lg mb-space-lg shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-lg relative">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-16 h-16 rounded-xl bg-primary flex items-center justify-center shrink-0 text-on-primary shadow-md">
+<span class="material-symbols-outlined text-[32px]">difference</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-lg bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">تنها اقدام موردنیاز</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">زمان تخمینی: ۲۵ دقیقه</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-extrabold text-on-surface">
+            درس ۴: کار با جریان‌ها (Streams) و مدیریت بهینه رم
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            با اتمام این ماژول آموزشی تازه تدوین شده، شاخص مهارت شما در موتور مرکزی پلتفرم به نسخه v2.0 ارتقا می‌یابد و نشان مهارت جاری به پروفایل شما افزوده می‌گردد.
+          </p>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock_reset</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">
+              سوابق درس‌های گذشته بازنشانی نشده‌اند.
+            </span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full lg:w-auto shrink-0">
+<a class="px-space-lg py-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-space-sm text-center" href="#">
+<span>مشاهده درس جدید و ثبت تکمیل</span>
+<span class="material-symbols-outlined text-[20px] rotate-180">arrow_forward</span>
+</a>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors text-center" type="button">
+          مرور کلیات ویرایش v2.0
+        </button>
+</div>
+</div>
+<!-- Syllabus Revision Log (Comprehensive Table) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            جدول مقایسه‌ای شفاف از تغییرات سرفصل (Changelog)
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            بررسی بند‌به‌بند مفاد درسی و وضعیت تطبیق آنها میان نسخه v1.1 و نسخه v2.0
+          </p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>آخرین پایش خودکار: امروز، ۱۰:۳۰</span>
+</div>
+</div>
+<!-- Modern Data Display Structure -->
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-space-sm px-space-md rounded-r-lg">عنوان و شناسه درس</th>
+<th class="py-space-sm px-space-md">وضعیت در نسخه v1.1</th>
+<th class="py-space-sm px-space-md">تحول در نسخه v2.0</th>
+<th class="py-space-sm px-space-md">وضعیت احراز شما</th>
+<th class="py-space-sm px-space-md rounded-l-lg text-left">عملیات پیگیری</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-container">
+<!-- Row 1: Event Loop -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-primary font-label-md text-label-md shrink-0">
+                    ۱
+                  </div>
+<div>
+<span class="font-bold text-on-surface block">درس ۱: چرخه رویدادها (Event Loop)</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">معماری غیرهمگام در موتور V8 و libuv</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface">ضروری (الزامی)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>بدون تغییر در محتوا</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md font-bold px-space-sm py-0.5 rounded-full bg-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>تکمیل شده ✓</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-left">
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">مرور مجدد درس</a>
+</td>
+</tr>
+<!-- Row 2: V8 History (Changed Requirement) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface-variant font-label-md text-label-md shrink-0">
+                    ۲
+                  </div>
+<div>
+<span class="font-bold text-on-surface block">درس ۲: تاریخچه و مبانی زیرساخت V8</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">تکامل کامپایلر Just-in-Time و حافظه Heap</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface-variant">اختیاری (پیشنیاز تجربی)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-medium text-tertiary">از ضروری به اختیاری تغییر یافت</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-md text-label-md px-space-sm py-0.5 rounded-full bg-surface-container">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>مطالعه تکمیلی اختیاری</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-left">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface" href="#">مشاهده جزوه</a>
+</td>
+</tr>
+<!-- Row 3: HTTP Server -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-primary font-label-md text-label-md shrink-0">
+                    ۳
+                  </div>
+<div>
+<span class="font-bold text-on-surface block">درس ۳: ساخت سرور HTTP بدون وابستگی جانبی</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">استفاده محض از پکیج هسته http و پروتکل‌بندی</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-label-md text-label-md text-on-surface">ضروری (الزامی)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>بدون تغییر در محتوا</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md font-bold px-space-sm py-0.5 rounded-full bg-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>تکمیل شده ✓</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-left">
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">بازبینی کد منبع</a>
+</td>
+</tr>
+<!-- Row 4: Streams (Newly Added) -->
+<tr class="bg-primary-fixed/20 hover:bg-primary-fixed/30 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold font-label-md text-label-md shrink-0 shadow-sm">
+                    ۴
+                  </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-bold text-primary block">درس ۴: کار با جریان‌ها (Streams) و مدیریت رم</span>
+<span class="px-space-xs py-0.2 rounded bg-primary text-on-primary font-label-sm text-label-sm">جدید</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm">مدیریت Backpressure و پردازش فایل‌های کلان</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface-variant font-label-md text-label-md">— (در v1.1 وجود نداشت)</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>افزوده شده در v2.0 (ضروری)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 text-tertiary-container font-label-md text-label-md font-bold px-space-sm py-0.5 rounded-full bg-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>نیازمند تکمیل</span>
+</span>
+</td>
+<td class="py-space-md px-space-md text-left">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md bg-primary text-on-primary px-space-sm py-1 rounded-lg hover:bg-primary-container transition-colors shadow-sm" href="#">
+<span>شروع یادگیری</span>
+<span class="material-symbols-outlined text-[14px] rotate-180">arrow_forward</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Assurance and FAQ Accordion Footprint -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+<span>آیا گواهی قبلی باطل می‌شود؟</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          خیر؛ مدرک صادره با شناسه هش v1.1 همواره در سامانه‌های دانشگاهی و اعتبارسنجی رزومه معتبر است و هرگز منقضی نمی‌شود.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px]">savings</span>
+<span>آیا دوره جدید هزینه مازاد دارد؟</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          تمامی فراگیران پیشین واجد شرایط، دسترسی دائمی به الحاقیه‌ها، اصلاحیه‌ها و آزمون‌های ارتقای نسخه را به رایگان دارند.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-1">
+<div class="flex items-center gap-space-xs text-primary font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>نحوه ثبت گواهی ارتقایافته</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          پس از تکمیل درس ۴، مهر دیجیتال گواهینامه شما بدون هیچ فرم اداری به نسخه ۲ ارتقا یافته و نسخه چاپی جدید در دسترس قرار می‌گیرد.
+        </p>
+</div>
+</div>
+</div>
+</div></div></main></div></body></html>
