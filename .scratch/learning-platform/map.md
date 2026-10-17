@@ -29,13 +29,13 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 - [Choose the learner journey and evidence of learning](issues/04-learner-experience-and-evidence.md#answer): Prioritize self-paced continuity and explicit requirement fulfillment; share qualifying course progress across paths while distinguishing current fulfillment, historical completion, obstacles, and assessed competency.
 - [Choose the business and operating constraints for launch](issues/05-business-and-operating-constraints.md#answer): Plan a free, invited adult pilot for learners in Iran with a Persian RTL interface, accessibility and privacy requirements, and owner-led support; operating arrangement and spending approval remain follow-up decisions.
 
+- [Define the first release and later product phases](issues/06-first-release-and-phases.md#answer): Select repository-published self-paced study with learner-confirmed completion and revision history; allow a Handbook-first pilot, require multi-course/path validation before public rollout, and establish four evidence-led phases.
+
 ## Not yet specified
 
 - Further audience-validation needs and recruitment beyond the initial community pilot, once its findings expose gaps in the broad learning proposition.
-- Activity-specific designs, assessment rubrics, and further feasibility dependencies that cannot yet be specified without selected release capabilities and actual course activities; revisit advanced adaptive personalization only when its educational value and evidence justify it.
 - Material-specific ingestion, conversion, and compatibility problems that become visible after first-release material formats and authoring sources are selected.
 - Content migration detail and additional external-service or jurisdiction questions exposed by selected material formats and capabilities beyond the operating-arrangement and cost qualification already assigned to live tickets.
-- The depth of subsequent product phases and the circumstances under which independent instructors become relevant; revisit after the first learner proposition and release boundary are clear.
 
 ## Out of scope
 

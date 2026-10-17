@@ -67,6 +67,9 @@ A learner's recorded advancement through a structured educational journey. It is
 **Completion**:
 Fulfillment of explicitly defined learning requirements for a lesson, course, or learning path. Completion alone does not establish demonstrated competency.
 
+**Learner-confirmed completion**:
+Completion recorded through a learner's explicit confirmation where the declared learning requirements permit that evidence. It does not establish assessed performance or demonstrated competency.
+
 **Current requirement fulfillment**:
 The extent to which a learner's completion and evidence satisfy the requirements currently published for a lesson, course, or learning path. It is distinct from historical completion under earlier requirements.
 
