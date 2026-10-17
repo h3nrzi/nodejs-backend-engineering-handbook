@@ -12,3 +12,5 @@ Prerequisites: [Define courses, educational materials, and learning paths](02-co
 How should the owner and team create, review, publish, revise, and withdraw courses and educational materials under one publishing organization?
 
 Determine the initial publisher roles, supported material needs, publication boundaries, and what learners should experience when content changes. Preserve the Handbook's source authority while deciding which authoring needs future courses introduce. Decide which workflow capabilities need product support and which can remain an operational process; do not presume an in-platform editor or a repository-only workflow for every course.
+
+Use the approved course, lesson, and material boundaries in [Define courses, educational materials, and learning paths](02-course-and-learning-path-model.md#answer). Determine how revisions to a reused material affect the courses and course-specific lessons using it, including review and publication responsibility.

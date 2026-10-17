@@ -24,6 +24,7 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 ## Decisions so far
 
 - [Choose the first learner segment and learning outcome](issues/01-first-learner-and-outcome.md#answer): Serve self-paced learners across subjects through structured courses and visible progress; course outcomes stay course-specific, and real-learner validation remains open.
+- [Define courses, educational materials, and learning paths](issues/02-course-and-learning-path-model.md#answer): Independent courses contain course-specific lessons using reusable materials; paths connect courses, ordering is advisory by default, and completion remains distinct from competency.
 
 ## Not yet specified
 
