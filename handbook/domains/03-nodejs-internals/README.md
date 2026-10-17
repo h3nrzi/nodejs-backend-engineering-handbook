@@ -69,6 +69,6 @@ All five Charters were approved together on **2026-10-13**; each remains a separ
 
 D03 content-authoring is **complete**: 18/18 lesson chapters, 5/5 catalog concepts and 5/5 educational Project Charters approved editorially. The [Coverage Matrix](../../projects/coverage-matrix.md) now records **66 approved lessons and 20 approved educational Charters across D01–D04**. D04's educational authoring gate closed on 2026-10-15; D05 remains not_started and requires a separate instruction. MediaForge has approved external planning through Module 01 tickets, without verified implementation/tests; learner assessments remain deferred. No new domain authoring or project selection is initiated by this status reconciliation.
 
-[Canonical state](../../tracking/state.json) · [Human tracker](../../../TRACKER.md) · [Workflow](../../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
+[Canonical state](../../tracking/state.json) · [Human tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md) · [Coverage matrix](../../projects/coverage-matrix.md).
 
 **Historical coverage review — 2026-10-13:** All 18 D03 chapter mappings learner-approved editorially, with 30 approved D01/D02 mappings unchanged; **14 Project Charters approved** (nine D01/D02 unchanged plus five D03 batch approvals). Under Workflow V2, the scope reviewed here is educational Charter scope, formerly labeled pre-V2 PRD scope, without mandated technical methods; this review supplies no learner assessment, product implementation or architecture evidence.

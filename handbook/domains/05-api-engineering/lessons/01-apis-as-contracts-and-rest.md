@@ -383,7 +383,7 @@ console.log('B unsupported control: refused locally');
 ```
 
 ```sh
-node handbook/domains/05-api-engineering/examples/c01/contract-traces.mjs
+node domains/05-api-engineering/examples/c01/contract-traces.mjs
 ```
 
 Expected and actually observed output is the six printed lines above: release A succeeds for both clients; release B selects different targets; the convention client fails; an unavailable action yields no request; a stale action is refused; an unsupported method is refused locally. `submit` is a deliberately tiny oracle: it compares the supplied target and current state. It does not check actual POST handling, credentials, JSON validity or transport completion. In particular its atomic-looking function call is not evidence for a concurrent server.
@@ -393,7 +393,7 @@ Expected and actually observed output is the six printed lines above: release A 
 The second canonical source, [correctness-boundaries.mjs](../examples/c01/correctness-boundaries.mjs), is a complete bounded script. Read it before running. It models four cases: syntax/shape refusal before effects, a lost observation followed by a fresh intent versus a replayed intent, split check/write versus indivisible conditional change, and two per-object checks failing to protect a shared capacity invariant. Its outputs are intentionally educational categories rather than fabricated HTTP statuses. The retry fixture deliberately permits independent creates for the same seat to isolate duplicate-intent effects; it does not implement the earlier uniqueness promise. The parsing fixture uses a fixed small input list and does not qualify the 1 KiB HTTP bound or duplicate-member handling.
 
 ```sh
-node handbook/domains/05-api-engineering/examples/c01/correctness-boundaries.mjs
+node domains/05-api-engineering/examples/c01/correctness-boundaries.mjs
 ```
 
 Expected observations: `malformed/invalid: refused; effects=0`; `unqualified retry: effects=2; replay agreement: effects=1`; `split check/write: stale overwrite; atomic condition: second refused`; `per-object versions: both pass; shared capacity violated`. The script's assertions check these concrete outcomes. These passing assertions demonstrate counterexamples and model behavior; they do not prove a storage design correct.

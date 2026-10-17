@@ -24,10 +24,10 @@ C01 and C02 each supply independent exercises/rubrics and two executed bounded N
 
 ## Project catalog and coverage
 
-[Catalog](projects/catalog.md) remains `not_started`, with zero D05 Charters and no direct/supporting project mappings. The [global matrix](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) reconciles **68 authored lessons = 67 approved + C02 in_review**, including the unchanged 66 approved D01–D04 lessons and 20 approved Charters. No existing scope or mapping changes. Final PRDs, Module Plans and implementation belong to separately authorized project repositories under [Workflow V2](../../../docs/workflow.md).
+[Catalog](projects/catalog.md) remains `not_started`, with zero D05 Charters and no direct/supporting project mappings. The [global matrix](../../projects/coverage-matrix.md#d05--proposed-curriculum-coverage) reconciles **68 authored lessons = 67 approved + C02 in_review**, including the unchanged 66 approved D01–D04 lessons and 20 approved Charters. No existing scope or mapping changes. Final PRDs, Module Plans and implementation belong to separately authorized project repositories under [Workflow V2](../../docs/workflow.md).
 
 ## Review and next action
 
 Open [C02 §17 — competing models](lessons/02-resources-operations-and-workflow-modeling.md#17-compare-two-complete-models-for-the-same-reservation-journey), predict what happens if conversion consumes a hold before its booking exists, and follow [C02-R01](evidence/c02/review-guide.md#c02-r01--compare-the-same-journey-through-two-models). Human evaluation remains `not_run`; C02 editorial approval is pending. **Stop before C03 until explicit Product Owner approval and authorization.** No project implementation, Product/Technical Discovery, Final PRD or Module Plan is authorized.
 
-[Canonical state](../../tracking/state.json) · [Tracker](../../../TRACKER.md).
+[Canonical state](../../tracking/state.json) · [Tracker](../../TRACKER.md).

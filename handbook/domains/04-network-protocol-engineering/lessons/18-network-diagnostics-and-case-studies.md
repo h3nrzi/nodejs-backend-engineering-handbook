@@ -143,7 +143,7 @@ This is a report-classification model, not an automated root-cause detector. Its
 - [Node v24 performance hooks](https://nodejs.org/docs/latest-v24.x/api/perf_hooks.html), runtime delay versus remote timing.
 - [Wireshark capture limitations](https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapture.html), capture scope and conditions.
 - [TCP, RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html), transport evidence vocabulary.
-- [Learning evidence policy](../../../../docs/learning-evidence.md), observations versus assessed competency.
+- [Learning evidence policy](../../../docs/learning-evidence.md), observations versus assessed competency.
 
 Node API references use the v24 documentation line. Exact local execution environment, command, output and limitations are in [the execution record](../evidence/educational-execution.md). The canonical command `node scripts/check-d04.mjs` extracts and executes the single JavaScript lab from each lesson; prose exercises and TypeScript modeling tasks are not thereby tested. JavaScript is used so networking behavior is observable without a compiler. TypeScript cannot validate network bytes by annotation: keep input `unknown` or bytes until runtime validation, then narrow into explicit protocol states. No TypeScript compiler checks are claimed.
 

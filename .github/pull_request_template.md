@@ -1,12 +1,6 @@
-## Scope and reason
+## Purpose and changes
 
-## Files and tracking status changed
+## Validation and evidence
 
-## Requirements-versus-implementation boundary checked
-- [ ] Project PRDs contain no predetermined architecture or technology choices
-- [ ] Lessons and technical examples are clearly educational, not mandates
-- [ ] Tracker matches machine state
-- [ ] Evidence and next action recorded
-- [ ] No review/implementation claimed without evidence
-
-## Review requested
+Run checks from each affected project and follow its local AGENTS.md.
+For Handbook changes, use the [Handbook checklist](../handbook/.github/pull_request_template.md).

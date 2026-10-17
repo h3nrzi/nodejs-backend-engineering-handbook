@@ -35,6 +35,6 @@ Never aggregate `planned` into `exercised`, nor `exercised` into `demonstrated b
 
 ## Workflow integration
 
-Use [Workflow V2](workflow.md) and [module ownership](module-driven-engineering.md) for production work. [External project registry](../handbook/projects/implementations/README.md) tracks engineering progress. The [coverage matrix](../handbook/projects/coverage-matrix.md) tracks taught/challenged relevance. Do not duplicate implementation PRDs, ADRs or tickets in this repository.
+Use [Workflow V2](workflow.md) and [module ownership](module-driven-engineering.md) for production work. [External project registry](../projects/implementations/README.md) tracks engineering progress. The [coverage matrix](../projects/coverage-matrix.md) tracks taught/challenged relevance. Do not duplicate implementation PRDs, ADRs or tickets in this repository.
 
 Assessments remain deferred by learner choice; this document defines future evidence integrity only and does not start a quiz or grade any current learner.

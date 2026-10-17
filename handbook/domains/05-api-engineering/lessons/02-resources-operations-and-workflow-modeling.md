@@ -355,8 +355,8 @@ The canonical examples are [reservation-model.mjs](../examples/c02/reservation-m
 Before execution, write down three predictions: whether confirmation at 600 is allowed; whether a generic state assignment creates a refund obligation; and whether two provider histories can produce the same observer timeout. Predictions make the exercise about causal reasoning rather than recognizing passing output.
 
 ```sh
-node handbook/domains/05-api-engineering/examples/c02/reservation-model.mjs
-node handbook/domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs
+node domains/05-api-engineering/examples/c02/reservation-model.mjs
+node domains/05-api-engineering/examples/c02/boundaries-and-observations.mjs
 ```
 
 The first program models only Model A's allocation/refund boundary. A selected core fragment shows why changing a string is not equivalent to a domain transition; the complete canonical source includes the guards and checks used here:

@@ -14,7 +14,7 @@
     "project_id": "D03-P02",
     "name": "MediaForge",
     "repository": "https://github.com/h3nrzi/mediaforge",
-    "charter": "handbook/domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+    "charter": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
     "progress_stage": "module_01_ticket_plan_approved",
     "source": "learner_reported_codex_handoffs",
     "final_prd": "approved_by_learner",
@@ -26,7 +26,7 @@
     "application_tests": "not_verified",
     "module_acceptance": "not_verified",
     "learner_competency": "not_assessed",
-    "registry": "handbook/projects/implementations/mediaforge.md"
+    "registry": "projects/implementations/mediaforge.md"
   },
   "domains": [
     {
@@ -110,7 +110,7 @@
       "implementation_status": "external_planning_active_no_verified_implementation",
       "source_outline": "prior_conversation_outline_only",
       "curriculum_blueprint_status": "approved_by_learner",
-      "curriculum_blueprint_path": "handbook/domains/03-nodejs-internals/curriculum.md",
+      "curriculum_blueprint_path": "domains/03-nodejs-internals/curriculum.md",
       "proposed_chapter_count": 18,
       "assessment_status": "deferred_until_learning_phase",
       "curriculum_approved_on": "2026-10-12",
@@ -137,7 +137,7 @@
       "chapter_execution_evidence": {
         "10": {
           "status": "14_local_educational_process_invocations_recorded",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
+          "evidence": "domains/03-nodejs-internals/lessons/10-native-asynchronous-work-and-thread-pool-saturation.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -150,7 +150,7 @@
         },
         "11": {
           "status": "five_worker_fixtures_three_runs_each_15_successful_executions",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
+          "evidence": "domains/03-nodejs-internals/lessons/11-worker-threads-and-data-ownership.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -162,7 +162,7 @@
         },
         "12": {
           "status": "seven_standalone_subprocess_fixtures_three_runs_each_21_successful_educational_executions",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
+          "evidence": "domains/03-nodejs-internals/lessons/12-child-processes-ipc-and-cluster-boundaries.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -174,7 +174,7 @@
         },
         "13": {
           "status": "nine_esm_cjs_module_fixtures_three_runs_each_27_of_27_expected_outcomes_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
+          "evidence": "domains/03-nodejs-internals/lessons/13-module-resolution-and-runtime-loading.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -186,7 +186,7 @@
         },
         "14": {
           "status": "six_esm_educational_fixtures_three_runs_each_18_expected_outcomes_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
+          "evidence": "domains/03-nodejs-internals/lessons/14-v8-execution-memory-and-garbage-collection.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -198,7 +198,7 @@
         },
         "15": {
           "status": "five_esm_context_fixtures_three_runs_each_15_of_15_expected_outcomes_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
+          "evidence": "domains/03-nodejs-internals/lessons/15-async-context-and-diagnostic-causality.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -210,7 +210,7 @@
         },
         "16": {
           "status": "seven_esm_educational_fixtures_three_runs_each_21_of_21_expected_outcomes_documented",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
+          "evidence": "domains/03-nodejs-internals/lessons/16-runtime-failures-and-graceful-shutdown.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -222,7 +222,7 @@
         },
         "17": {
           "status": "seven_standalone_diagnostic_esm_fixtures_three_runs_each_21_of_21_expected_outcomes_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
+          "evidence": "domains/03-nodejs-internals/lessons/17-runtime-diagnostics-and-measurement.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -234,7 +234,7 @@
         },
         "18": {
           "status": "seven_bounded_esm_cases_3_runs_each_plus_six_additional_native_pool_comparison_27_final_expected_outcomes",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
+          "evidence": "domains/03-nodejs-internals/lessons/18-integrated-runtime-failure-and-performance-case-studies.md",
           "checked_on": "2026-10-13",
           "node": "v22.16.0",
           "v8": "12.4.254.21-node.26",
@@ -246,7 +246,7 @@
         },
         "01": {
           "status": "three_educational_examples_executed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
+          "evidence": "domains/03-nodejs-internals/lessons/01-runtime-architecture-and-execution-boundaries.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -258,7 +258,7 @@
         },
         "02": {
           "status": "16_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
+          "evidence": "domains/03-nodejs-internals/lessons/02-startup-configuration-and-runtime-identity.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -270,7 +270,7 @@
         },
         "03": {
           "status": "7_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
+          "evidence": "domains/03-nodejs-internals/lessons/03-event-loop-and-io-lifecycle.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -282,7 +282,7 @@
         },
         "04": {
           "status": "12_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
+          "evidence": "domains/03-nodejs-internals/lessons/04-scheduling-queues-and-timers.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -294,7 +294,7 @@
         },
         "05": {
           "status": "17_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
+          "evidence": "domains/03-nodejs-internals/lessons/05-eventemitter-and-callback-contracts.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -306,7 +306,7 @@
         },
         "06": {
           "status": "12_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
+          "evidence": "domains/03-nodejs-internals/lessons/06-buffers-bytes-and-text-encoding.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -319,7 +319,7 @@
         },
         "07": {
           "status": "15_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
+          "evidence": "domains/03-nodejs-internals/lessons/07-filesystem-io-and-resource-ownership.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -332,7 +332,7 @@
         },
         "08": {
           "status": "13_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
+          "evidence": "domains/03-nodejs-internals/lessons/08-readable-and-writable-stream-mechanics.md",
           "checked_on": "2026-10-12",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -344,7 +344,7 @@
         },
         "09": {
           "status": "15_educational_execution_scenarios_passed",
-          "evidence": "handbook/domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
+          "evidence": "domains/03-nodejs-internals/lessons/09-pipelines-transforms-and-cancellation.md",
           "checked_on": "2026-10-13",
           "node": "v26.4.0",
           "v8": "14.6.202.34-node.21",
@@ -376,7 +376,7 @@
         "09": "2026-10-13"
       },
       "project_catalog_status": "approved_by_learner",
-      "project_catalog_path": "handbook/domains/03-nodejs-internals/projects/catalog.md",
+      "project_catalog_path": "domains/03-nodejs-internals/projects/catalog.md",
       "project_catalog_candidate_count": 5,
       "project_catalog_approved_candidate_count": 5,
       "project_catalog_approved_on": "2026-10-13",
@@ -395,7 +395,7 @@
         {
           "id": "P01",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
+          "path": "domains/03-nodejs-internals/projects/p01-intakeledger-verified-file-intake-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-13"
@@ -403,7 +403,7 @@
         {
           "id": "P02",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
+          "path": "domains/03-nodejs-internals/projects/p02-mediaforge-asset-processing-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-13"
@@ -411,7 +411,7 @@
         {
           "id": "P03",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
+          "path": "domains/03-nodejs-internals/projects/p03-nodescope-runtime-incident-evidence-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-13"
@@ -419,7 +419,7 @@
         {
           "id": "P04",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
+          "path": "domains/03-nodejs-internals/projects/p04-packageclinic-runtime-preflight-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-13"
@@ -427,7 +427,7 @@
         {
           "id": "P05",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
+          "path": "domains/03-nodejs-internals/projects/p05-liveroom-interactive-session-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-13"
@@ -444,7 +444,7 @@
       "implementation_status": "not_started",
       "source_outline": "authored_curriculum_2026-10-15",
       "curriculum_blueprint_status": "approved_by_learner",
-      "curriculum_blueprint_path": "handbook/domains/04-network-protocol-engineering/curriculum.md",
+      "curriculum_blueprint_path": "domains/04-network-protocol-engineering/curriculum.md",
       "proposed_chapter_count": 18,
       "chapter_progress": {
         "01": "approved_by_learner",
@@ -468,7 +468,7 @@
       },
       "assessment_status": "not_assessed",
       "project_catalog_status": "approved_by_learner",
-      "project_catalog_path": "handbook/domains/04-network-protocol-engineering/projects/catalog.md",
+      "project_catalog_path": "domains/04-network-protocol-engineering/projects/catalog.md",
       "project_catalog_candidate_count": 6,
       "project_catalog_approved_candidate_count": 6,
       "project_charters_authored_count": 6,
@@ -486,7 +486,7 @@
         {
           "id": "P01",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p01-pathwitness-endpoint-incident-evidence-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -494,7 +494,7 @@
         {
           "id": "P02",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p02-partnerwire-message-compatibility-workbench-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -502,7 +502,7 @@
         {
           "id": "P03",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p03-relayparcel-interrupted-retrieval-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -510,7 +510,7 @@
         {
           "id": "P04",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p04-originproof-release-interoperability-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -518,7 +518,7 @@
         {
           "id": "P05",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p05-fieldpulse-freshness-and-gap-evidence-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -526,7 +526,7 @@
         {
           "id": "P06",
           "status": "approved_educational_charter_not_final_prd",
-          "path": "handbook/domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md",
+          "path": "domains/04-network-protocol-engineering/projects/p06-sessiontrail-interrupted-assistance-charter.md",
           "concept_status": "approved_by_learner",
           "implementation_status": "not_started",
           "approved_on": "2026-10-15"
@@ -539,7 +539,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "No routing/NAT capture or production throughput measurement."
         },
         "02": {
@@ -548,7 +548,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Numeric lookup only; no actual wire DNS or family-failover test."
         },
         "03": {
@@ -557,7 +557,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Half-close, explicit RST and idle-timeout ownership exercised; no real loss, congestion or drain-pressure fixture."
         },
         "04": {
@@ -566,7 +566,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "1056 partitions across two fixtures, UTF-8, bounds and terminal EOF; no broad fuzzing or optimized parser proof."
         },
         "05": {
@@ -575,7 +575,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "One datagram plus gap model; no MTU, reorder or loss injection on the wire."
         },
         "06": {
@@ -584,7 +584,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Local CA/name/ALPN TLS1.3 exercised; no mTLS, expiration, revocation, resumption or deployed-provider qualification."
         },
         "07": {
@@ -593,7 +593,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "URL/octet lab only; no browser CORS or authorization validation."
         },
         "08": {
@@ -602,7 +602,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Ambiguous request refusal and incomplete length/chunked responses exercised; no intermediary parser-differential audit."
         },
         "09": {
@@ -611,7 +611,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Local Agent queue/abort/body-release/reuse exercised; fetch pools, stale races and fairness untested."
         },
         "10": {
@@ -620,7 +620,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Exact-tag 304 and fixed 206/If-Range 200/416 exercised; no general range grammar, compression or CDN test."
         },
         "11": {
@@ -629,7 +629,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Trust/removal model only; no authenticated ingress or real proxy."
         },
         "12": {
@@ -638,7 +638,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Actual cleartext h2 zero stream credit/release/reset; no TLS h2, connection-window exhaustion or GOAWAY replay."
         },
         "13": {
@@ -647,7 +647,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Pure ordering model; no actual QUIC/h3 execution or runtime qualification."
         },
         "14": {
@@ -656,7 +656,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Actual Node WebSocket lifecycle plus complete ordinary HTTP 426 with required Upgrade/Connection headers; no browser, TLS, compression or reconnect."
         },
         "15": {
@@ -665,7 +665,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "Incremental UTF-8/BOM/line/ID cases plus actual HTTP manual cursor replay/abort; no EventSource scheduling or proxy/browser conformance."
         },
         "16": {
@@ -674,7 +674,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "One opaque envelope/status model; protobuf/gRPC integration unexecuted."
         },
         "17": {
@@ -683,7 +683,7 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "AbortSignal after full receipt/action plus response-close cleanup; no durability, retry, timer-race or remote rollback proof."
         },
         "18": {
@@ -692,17 +692,17 @@
           "node": "v24.22.0",
           "platform": "darwin",
           "arch": "arm64",
-          "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+          "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
           "limits": "23 finite evidence cases distinguish explicit complete/incomplete from missing or invalid completion; no production root cause or packet capture."
         }
       },
-      "review_guide": "handbook/domains/04-network-protocol-engineering/evidence/review-guide.md",
+      "review_guide": "domains/04-network-protocol-engineering/evidence/review-guide.md",
       "technical_review": {
         "status": "completed",
         "reviewed_on": "2026-10-15",
         "baseline_commit": "713e05b199750d775ad6e71fd595bd6c6df91196",
         "substantively_expanded_chapters": 18,
-        "evidence": "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
+        "evidence": "domains/04-network-protocol-engineering/evidence/educational-execution.md",
         "competency_mapping_change": false,
         "charter_scope_change": false
       },
@@ -717,7 +717,7 @@
         "focused_labs_passed": 2,
         "classifier_cases_passed": 23,
         "regression_labs_passed": 18,
-        "evidence": "handbook/domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
+        "evidence": "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
         "human_evaluation": "not_run"
       },
       "curriculum_approved_on": "2026-10-15",
@@ -762,7 +762,7 @@
           "module_plans",
           "learner_competency"
         ],
-        "evidence": "handbook/domains/04-network-protocol-engineering/evidence/editorial-approval.md"
+        "evidence": "domains/04-network-protocol-engineering/evidence/editorial-approval.md"
       }
     },
     {
@@ -775,10 +775,10 @@
       "implementation_status": "not_started",
       "source_outline": "authored_curriculum_discovery_2026-10-16",
       "curriculum_blueprint_status": "approved_by_learner",
-      "curriculum_blueprint_path": "handbook/domains/05-api-engineering/curriculum.md",
+      "curriculum_blueprint_path": "domains/05-api-engineering/curriculum.md",
       "proposed_chapter_count": 25,
       "depth_specification_status": "approved_by_learner",
-      "depth_specification_path": "handbook/domains/05-api-engineering/depth-specification.md",
+      "depth_specification_path": "domains/05-api-engineering/depth-specification.md",
       "chapter_progress": {
         "01": "approved_by_learner",
         "02": "in_review",
@@ -809,14 +809,14 @@
       "authored_lesson_count": 2,
       "assessment_status": "deferred_until_learning_phase",
       "project_catalog_status": "not_started",
-      "project_catalog_path": "handbook/domains/05-api-engineering/projects/catalog.md",
+      "project_catalog_path": "domains/05-api-engineering/projects/catalog.md",
       "project_catalog_candidate_count": 0,
       "project_charters_authored_count": 0,
       "project_charters_approved_count": 0,
-      "review_guide": "handbook/domains/05-api-engineering/evidence/c02/review-guide.md",
+      "review_guide": "domains/05-api-engineering/evidence/c02/review-guide.md",
       "lesson_authoring_authorized": true,
       "curriculum_approved_on": "2026-10-16",
-      "curriculum_approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md",
+      "curriculum_approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md",
       "lesson_authoring_authorized_chapters": [
         "01",
         "02"
@@ -824,13 +824,13 @@
       "lesson_authoring_stop_before": "03",
       "chapter_review_evidence": {
         "01": {
-          "depth_ledger": "handbook/domains/05-api-engineering/evidence/c01/depth-ledger.md",
-          "validation": "handbook/domains/05-api-engineering/evidence/c01/validation.md",
+          "depth_ledger": "domains/05-api-engineering/evidence/c01/depth-ledger.md",
+          "validation": "domains/05-api-engineering/evidence/c01/validation.md",
           "human_evaluation": "not_run"
         },
         "02": {
-          "depth_ledger": "handbook/domains/05-api-engineering/evidence/c02/depth-ledger.md",
-          "validation": "handbook/domains/05-api-engineering/evidence/c02/validation.md",
+          "depth_ledger": "domains/05-api-engineering/evidence/c02/depth-ledger.md",
+          "validation": "domains/05-api-engineering/evidence/c02/validation.md",
           "human_evaluation": "not_run"
         }
       },
@@ -843,7 +843,7 @@
           "platform": "darwin",
           "arch": "arm64",
           "module_context": "ESM .mjs; synchronous pure models; no flags or packages",
-          "evidence": "handbook/domains/05-api-engineering/evidence/c01/execution.json",
+          "evidence": "domains/05-api-engineering/evidence/c01/execution.json",
           "limits": "No actual HTTP/schema-tool/provider/database integration, durable or concurrent implementation, production qualification, learner assessment or portfolio project evidence."
         },
         "02": {
@@ -854,7 +854,7 @@
           "platform": "darwin",
           "arch": "arm64",
           "module_context": "ESM .mjs; explicit-clock synchronous finite models; no flags or packages",
-          "evidence": "handbook/domains/05-api-engineering/evidence/c02/execution.json",
+          "evidence": "domains/05-api-engineering/evidence/c02/execution.json",
           "limits": "No actual HTTP/schema/provider/database integration, true concurrent or durable implementation, production qualification, learner assessment or portfolio evidence."
         }
       },
@@ -864,7 +864,7 @@
           "status": "approved_by_learner",
           "approved_on": "2026-10-16",
           "gate": "educational_editorial_only",
-          "evidence": "handbook/domains/05-api-engineering/evidence/c01/editorial-approval.md"
+          "evidence": "domains/05-api-engineering/evidence/c01/editorial-approval.md"
         }
       }
     },
@@ -1043,7 +1043,7 @@
   "coverage_matrix_review": {
     "reviewed_on": "2026-10-17",
     "status": "D05_C01_editorially_approved_C02_in_review_earlier_approvals_preserved",
-    "path": "handbook/projects/coverage-matrix.md",
+    "path": "projects/coverage-matrix.md",
     "baseline_commit": "dfe397acbaed6326190dbda1e12b76c54854c6ed",
     "domains": [
       "D01",
@@ -1058,17 +1058,17 @@
     "assessment": "deferred",
     "required_after": "Any Charter/catalog/lesson mapping change or verified implementation outcome; update matrix and tracking.",
     "latest_review_evidence": [
-      "handbook/projects/coverage-matrix.md",
-      "handbook/domains/04-network-protocol-engineering/evidence/educational-execution.md",
-      "handbook/domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
-      "handbook/domains/04-network-protocol-engineering/evidence/editorial-approval.md",
-      "handbook/domains/05-api-engineering/evidence/review-guide.md",
-      "handbook/domains/05-api-engineering/evidence/curriculum-approval.md",
-      "handbook/domains/05-api-engineering/evidence/c01/depth-ledger.md",
-      "handbook/domains/05-api-engineering/evidence/c01/validation.md",
-      "handbook/domains/05-api-engineering/evidence/c01/editorial-approval.md",
-      "handbook/domains/05-api-engineering/evidence/c02/depth-ledger.md",
-      "handbook/domains/05-api-engineering/evidence/c02/validation.md"
+      "projects/coverage-matrix.md",
+      "domains/04-network-protocol-engineering/evidence/educational-execution.md",
+      "domains/04-network-protocol-engineering/evidence/blocking-fixes.md",
+      "domains/04-network-protocol-engineering/evidence/editorial-approval.md",
+      "domains/05-api-engineering/evidence/review-guide.md",
+      "domains/05-api-engineering/evidence/curriculum-approval.md",
+      "domains/05-api-engineering/evidence/c01/depth-ledger.md",
+      "domains/05-api-engineering/evidence/c01/validation.md",
+      "domains/05-api-engineering/evidence/c01/editorial-approval.md",
+      "domains/05-api-engineering/evidence/c02/depth-ledger.md",
+      "domains/05-api-engineering/evidence/c02/validation.md"
     ],
     "mapping_change": "C01 editorially approved by explicit Product Owner instruction; C02 moved from proposed to authored in_review; C03-C25 unstarted. No D05 Charter mappings. Existing 66 D01-D04 assignments, 20 Charter scopes/approvals and external project evidence unchanged.",
     "approved_chapter_mapping_count": 67,
@@ -1087,57 +1087,57 @@
       "id": "D05-CD01",
       "status": "approved_by_learner",
       "decision": "25-chapter breadth and partition",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD02",
       "status": "approved_by_learner",
       "decision": "Full mechanism depth for GraphQL and gRPC",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD03",
       "status": "approved_by_learner",
       "decision": "Framework-neutral contract teaching",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD04",
       "status": "approved_by_learner",
       "decision": "OpenAPI reference line and later executable tool qualification",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD05",
       "status": "approved_by_learner",
       "decision": "Recurring fictional examples plus transfer cases",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD06",
       "status": "approved_by_learner",
       "decision": "Legacy interface specialization boundaries",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     },
     {
       "id": "D05-CD07",
       "status": "approved_by_learner",
       "decision": "Mechanism-level depth/completion rubric",
-      "evidence": "handbook/domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
+      "evidence": "domains/05-api-engineering/curriculum.md#open-curriculum-decisions",
       "approved_on": "2026-10-16",
-      "approval_evidence": "handbook/domains/05-api-engineering/evidence/curriculum-approval.md"
+      "approval_evidence": "domains/05-api-engineering/evidence/curriculum-approval.md"
     }
   ]
 }

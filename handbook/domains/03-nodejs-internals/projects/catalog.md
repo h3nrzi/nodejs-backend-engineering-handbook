@@ -5,7 +5,7 @@
 **Status:** `approved_by_learner` — all five distinct product concepts explicitly approved on 2026-10-13; no active implementation project.
 **Prerequisite:** all 18 D03 lesson chapters are `approved_by_learner` editorially; education is not assessed mastery.
 **Phase:** catalog and **all five individual Project Charters approved_by_learner** (batch approval 2026-10-13). No active implementation after learner-requested MediaForge reset; implementation and learner study assessments not_started/deferred.
-**Authority:** [D03 curriculum](../curriculum.md) · [Coverage Matrix](../../../projects/coverage-matrix.md) · [Workflow](../../../../docs/workflow.md).
+**Authority:** [D03 curriculum](../curriculum.md) · [Coverage Matrix](../../../projects/coverage-matrix.md) · [Workflow](../../../docs/workflow.md).
 
 ## Purpose and selection rule
 

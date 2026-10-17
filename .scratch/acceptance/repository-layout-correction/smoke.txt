@@ -1,0 +1,12 @@
+
+> visuals:smoke
+> node scripts/check-visuals.mjs
+
+Disposable output: /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-vleLpL
+tcp-handshake: PNG 507 x 357, 16388 bytes
+event-loop-scheduling: PNG 236 x 725, 30572 bytes
+request-lifecycle: PNG 451 x 536, 25604 bytes
+Markdown: 3 fences validated; 3 relative SVG image references resolve.
+Math: KaTeX typeset output verified with an explicit HTML-label config.
+Refusal checks: invalid fence reports block/line; missing browser exits 2.
+PASS. Inspect PNGs and export.md in /var/folders/bp/pmw9frnx1r5b0bm78bz93d6h0000gn/T/handbook-visuals-vleLpL; remove only this directory after review.

@@ -21,4 +21,4 @@ Read the [approved 16-chapter curriculum blueprint](curriculum.md), covering lan
 
 All five Charters have product-scope editorial approval, not technical implementation approval. Open product policies and numerical thresholds remain unresolved. Learning assessments and independent code execution remain deferred.
 
-[Canonical state](../../tracking/state.json) · [Tracker](../../../TRACKER.md) · [Workflow](../../../docs/workflow.md).
+[Canonical state](../../tracking/state.json) · [Tracker](../../TRACKER.md) · [Workflow](../../docs/workflow.md).

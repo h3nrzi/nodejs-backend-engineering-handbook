@@ -44,6 +44,6 @@ Approvals cover the product direction and documented requirements, not resolutio
 
 ## Handoff
 
-[Canonical state](../../tracking/state.json) · [Human-readable tracker](../../../TRACKER.md) · [Workflow rules](../../../docs/workflow.md). D03 curriculum planning is the next authoring step; study and practical tests remain deferred.
+[Canonical state](../../tracking/state.json) · [Human-readable tracker](../../TRACKER.md) · [Workflow rules](../../docs/workflow.md). D03 curriculum planning is the next authoring step; study and practical tests remain deferred.
 
 [Coverage matrix](../../projects/coverage-matrix.md) reconciled on 2026-10-12; educational mapping is separate from implementation and assessment evidence.

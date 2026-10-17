@@ -27,4 +27,4 @@ This project explores Node.js backend challenges through real product behavior. 
 
 ## Next checkpoint
 
-Collect actual Module 01 execution reports, code-review and test evidence; reconcile all eight tickets and full module-local acceptance, then update `handbook/tracking/state.json`, `TRACKER.md`, this entry and relevant competency links. Do not claim whole-product acceptance from Module 01 tests.
+Collect actual Module 01 execution reports, code-review and test evidence; reconcile all eight tickets and full module-local acceptance, then update `tracking/state.json`, `TRACKER.md`, this entry and relevant competency links. Do not claim whole-product acceptance from Module 01 tests.

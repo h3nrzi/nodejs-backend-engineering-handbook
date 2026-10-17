@@ -56,7 +56,7 @@ Do not give an implementation tutorial unless actual implementation artifacts ar
 
 ## Source recommendation
 
-- Required: `handbook/projects/implementation-studies/<project-id>/round-XX-product-discovery.md` OR `round-XX-technical-discovery.md`.
+- Required: `projects/implementation-studies/<project-id>/round-XX-product-discovery.md` OR `round-XX-technical-discovery.md`.
 - Required: canonical approved project PRD or its verbatim educational copy.
 - Optional: currently approved product policies, verified ADRs and directly relevant domain glossary.
 - If NotebookLM cannot access a GitHub link directly, import the file content as a supported source instead.
