@@ -97,6 +97,9 @@ Guidance that helps a learner understand their performance and improve their kno
 **Editorial approval**:
 A judgment that educational content is ready for publication. It is separate from individual learner progress, completion, and demonstrated competency.
 
+**Platform operator**:
+The person or organization responsible for running the learning platform, its service-provider relationships and operating expenses, learner support, and personal-data requests. This responsibility is distinct from authoring and publishing, even when held by the same person.
+
 **Author**:
 A responsibility for preparing and revising educational content. The same person may also act as publisher.
 

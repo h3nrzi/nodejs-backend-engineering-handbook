@@ -10,16 +10,17 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 ## Notes
 
 - This is a planning effort. The platform spans subjects, audiences, and experience levels; the Node.js Backend Engineering Handbook is its first educational content source and initial use case.
-- The owner and team initially publish and manage courses under one organization. Independent instructors are a future possibility to evaluate when relevant to the product phases.
+- The owner and team initially publish and manage courses under one shared publishing operation; this does not imply a registered legal entity or a separate operational team. Independent instructors are a future possibility to evaluate when relevant to the product phases.
 - Next.js and the existing repository structure are established. The web application belongs in `client/`; `handbook/` remains authoritative for the Handbook course. Follow the resolved authoring and publishing workflow indexed below; first-release format and tooling selections remain open.
 - Follow the resolved audience and learning-context decision indexed below. Remaining first-release scope decisions are open; do not assume JavaScript/TypeScript experience or a backend-engineering-only product.
-- Follow the resolved business and operating constraints indexed below when planning the release. Open operating-arrangement and budget decisions permit continued product planning but block final hosting, deployment, and jurisdiction-dependent technical choices; no launch date is committed.
+- Follow [Choose the pilot operating arrangement](issues/10-operating-arrangement.md#answer): the Iran-based individual arrangement is accepted conditionally for planning. Legal suitability, provider eligibility and operation are not approved.
+- Follow the resolved business and operating constraints indexed below. Conditional estimates can proceed; the budget decision and targeted technical qualification still govern final hosting/data contracts. Carry explicit pre-launch compliance gates without treating them as generic planning blockers; no launch date is committed.
 - Capability priorities and product boundaries established by resolved tickets constrain later release decisions. Select first-release capabilities and specify their delivery contracts through the remaining child tickets; conceptual support does not commit the release to every capability.
 - Consult the wayfinder, grilling, and domain-modeling skills when working decisions. Use prototype for experience questions and research when a specific decision needs external facts. Verify library/API behavior using Context7 and relevant repository instructions when those questions arise.
 - Use root `GLOSSARY.md` for settled language. Preserve the Handbook's distinction between editorial approval, project delivery, and learner competency; its existing tracking state is not learner progress.
 - Planning assets belong beside this map: `blueprint.md` and `spec.md` when ready to author. Link supporting research and prototypes from the tickets that use them. The map indexes resolutions rather than duplicating their detail.
 - Local tracker rules: child tickets live in `issues/`; `Type:` and `wayfinder:` labels identify their workflow. Open, unblocked, unclaimed tickets form the frontier in numeric filename order. Save `Status: claimed` before work; record an answer and set `Status: resolved` on resolution. Blocking uses the local `Blocked by:` convention. Resolve at most one non-research ticket per session.
-- Scoped external research will be added when a decision exposes a concrete factual dependency; none was assumed necessary before the initial owner-led discovery.
+- Use the [legal qualification register](issues/14-individual-pilot-regulatory-clarification.md#legal-qualification-register--verified-text-versus-unsettled-applicability) to distinguish specific decision blockers, pre-launch obligations and later verification triggers. Target research to the affected decision; do not seek indefinite generic legal clearance. Public authoritative sources are the current evidence route; no local advisor/contact is confirmed, and paid consultations or external communications require explicit owner approval.
 
 ## Decisions so far
 
@@ -31,6 +32,10 @@ Establish a phased product blueprint for a general-purpose, multi-course learnin
 
 - [Define the first release and later product phases](issues/06-first-release-and-phases.md#answer): Select repository-published self-paced study with learner-confirmed completion and revision history; allow a Handbook-first pilot, require multi-course/path validation before public rollout, and establish four evidence-led phases.
 - [Validate the first-release learner and publisher experience](issues/07-first-release-experience-prototype.md#answer): Accept ten Stitch screens as temporary visual references with approved learner behavior and a separate repository publisher workflow; document scope overrides and retain technical, implementation and pilot verification obligations.
+
+- [Choose the pilot operating arrangement](issues/10-operating-arrangement.md#answer): Accept the Iran-based individual arrangement for conditional planning/costing; retain targeted technical qualification and pre-launch duties without declaring legal suitability.
+- [Investigate Iranian individual-operator and learner-data obligations](issues/12-iran-operator-and-data-obligations.md#answer): Verify privacy/data instruments and a digital-cultural licensing route, while preserving exact individual-coverage, activity-classification and app-versus-host evidence gaps.
+- [Investigate service eligibility and feasible hosting routes for the Iran-based operator](issues/13-iran-provider-and-service-feasibility.md#answer): Establish a conditional domestic costing route, separate repository eligibility from hosting and billing, and retain explicit legal, data-contract and operational qualification gates.
 
 ## Not yet specified
 
